@@ -95,14 +95,32 @@ header .sub{color:var(--muted);font-size:13px}
 .links a:hover{text-decoration:underline}
 .pmid{float:right;color:var(--muted);font-size:12px}
 .foot{margin-top:30px;color:var(--muted);font-size:12px;border-top:0.5px solid var(--line);padding-top:14px}
+.foot .reportbtn{display:inline-block;margin-top:8px;border:0.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:7px;padding:6px 12px;font-size:13px;cursor:pointer}
+.foot .reportbtn:hover{background:var(--soft)}
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;align-items:center;justify-content:center;z-index:50;padding:16px}
+.modal-bg.show{display:flex}
+.modal{background:var(--surface);border:0.5px solid var(--line);border-radius:12px;max-width:460px;width:100%;padding:18px 20px}
+.modal h3{margin:0 0 4px;font-size:16px;font-weight:600}
+.modal p{margin:0 0 12px;font-size:13px;color:var(--muted)}
+.modal textarea{width:100%;min-height:120px;padding:10px 12px;border:0.5px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit;font-size:14px;resize:vertical}
+.modal .mrow{display:flex;gap:8px;justify-content:flex-end;margin-top:12px}
+.modal button{border:0.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:8px 16px;font-size:14px;cursor:pointer}
+.modal button.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.modal button:hover{opacity:.9}
+.modal .msg{font-size:13px;margin-top:10px;min-height:18px}
+.modal .msg.ok{color:var(--accent)} .modal .msg.err{color:var(--pa)}
+.hp{position:absolute;left:-9999px;top:-9999px}
 .empty{text-align:center;color:var(--muted);padding:36px;font-size:14px}
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>PedEndoLit</h1>
-    <div class="sub">Pediatric endocrinology literature dashboard · <span id="period"></span></div>
+  <header style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
+    <div>
+      <h1>PedEndoLit</h1>
+      <div class="sub">Pediatric endocrinology literature dashboard · <span id="period"></span></div>
+    </div>
+    <button class="reportbtn" id="open-report">Report a bug or leave a comment</button>
   </header>
 
   <div class="metrics" id="metrics"></div>
@@ -143,6 +161,22 @@ header .sub{color:var(--muted);font-size:13px}
     Data source: PubMed (NCBI E-utilities). Classified with PedEndoLit classifier v2.4.2.
     Generated <span id="gen"></span>. Article links open PubMed; DOI / Full Text open the publisher.
     This is a literature-surveillance aid, not medical advice.
+  </div>
+</div>
+
+<div class="modal-bg" id="report-modal">
+  <div class="modal">
+    <h3>Report a bug or comment</h3>
+    <p>Tell me what's wrong or share a suggestion. Submissions are emailed to the maintainer.</p>
+    <form id="report-form">
+      <textarea id="report-msg" placeholder="Describe the bug or your comment…" required></textarea>
+      <input type="text" id="report-hp" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true"/>
+      <div class="mrow">
+        <button type="button" id="report-cancel">Cancel</button>
+        <button type="submit" class="primary" id="report-send">Send</button>
+      </div>
+      <div class="msg" id="report-status"></div>
+    </form>
   </div>
 </div>
 
@@ -364,6 +398,48 @@ document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{
   document.getElementById('tab-analytics').style.display= which==='analytics'?'block':'none';
   if(which==='analytics')drawCharts();
 }));
+
+// ---- feedback / bug-report modal ----
+const W3KEY="bb727558-afe2-4799-9fda-90cd430b6a40";
+const rmodal=document.getElementById('report-modal');
+const rstatus=document.getElementById('report-status');
+function openReport(){rstatus.textContent='';rstatus.className='msg';rmodal.classList.add('show');document.getElementById('report-msg').focus();}
+function closeReport(){rmodal.classList.remove('show');}
+document.getElementById('open-report').addEventListener('click',openReport);
+document.getElementById('report-cancel').addEventListener('click',closeReport);
+rmodal.addEventListener('click',e=>{if(e.target===rmodal)closeReport();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeReport();});
+document.getElementById('report-form').addEventListener('submit',async e=>{
+  e.preventDefault();
+  const msg=document.getElementById('report-msg').value.trim();
+  if(!msg)return;
+  if(document.getElementById('report-hp').value){closeReport();return;} // honeypot: silently drop bots
+  if(W3KEY==='YOUR_ACCESS_KEY'){
+    rstatus.textContent='Reporting is not set up yet (no access key configured).';
+    rstatus.className='msg err';return;
+  }
+  const btn=document.getElementById('report-send');
+  btn.disabled=true;rstatus.textContent='Sending…';rstatus.className='msg';
+  try{
+    const res=await fetch('https://api.web3forms.com/submit',{
+      method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify({
+        access_key:W3KEY,
+        subject:'PedEndoLit dashboard — bug/comment',
+        from_name:'PedEndoLit dashboard',
+        message:msg,
+        page_url:location.href
+      })
+    });
+    const data=await res.json();
+    if(data.success){
+      rstatus.textContent='Thanks — your report was sent.';rstatus.className='msg ok';
+      document.getElementById('report-msg').value='';
+      setTimeout(closeReport,1500);
+    }else{rstatus.textContent='Could not send: '+(data.message||'unknown error');rstatus.className='msg err';}
+  }catch(err){rstatus.textContent='Network error — please try again.';rstatus.className='msg err';}
+  btn.disabled=false;
+});
 
 metrics();render();
 </script>
