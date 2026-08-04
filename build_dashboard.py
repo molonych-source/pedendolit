@@ -26,17 +26,16 @@ WEB3FORMS_KEY = "bb727558-afe2-4799-9fda-90cd430b6a40"
 
 # ---------------------------------------------------------------------------
 # Phase 2: user accounts + personal saved-article lists (Supabase).
-# Paste the two values from your Supabase project here:
-#   Supabase dashboard -> Project Settings -> API
-#     SUPABASE_URL      = "Project URL"      (looks like https://abcd1234.supabase.co)
-#     SUPABASE_ANON_KEY = "anon public" key  (a long token starting with "eyJ")
-# The anon key is DESIGNED to be public in a web page. It grants no access on its
+# Both values come from the Supabase dashboard -> Project Settings -> API.
+# SUPABASE_ANON_KEY holds the "publishable" key (sb_publishable_...); the older
+# "anon public" JWT starting with "eyJ" also works if this one ever needs swapping.
+# The key is DESIGNED to be public in a web page. It grants no access on its
 # own — Row-Level Security decides what each signed-in user may read or write.
 # Never paste the "service_role" key here; that one bypasses RLS.
 # While these are left empty, the dashboard builds exactly as before: no Sign in
 # button, no Saved tab, no Save buttons.
-SUPABASE_URL = ""
-SUPABASE_ANON_KEY = ""
+SUPABASE_URL = "https://oiafndmmdplvitrttene.supabase.co"
+SUPABASE_ANON_KEY = "sb_publishable_nPy9JRVfAiCN0HXhSHkckQ_XG4llewm"
 # ---------------------------------------------------------------------------
 
 # Optional entry-date override: Perplexity's export dates articles by PubMed ENTRY
@@ -90,7 +89,10 @@ def month_key_label(pub_date):
 DATA = os.path.join(HERE, "pedendolit-data.json")
 OUT_LOCAL = os.path.join(HERE, "PedEndoLit-Dashboard.html")
 OUT_ROOT = os.path.normpath(os.path.join(HERE, "..", "..", "PedEndoLit-Dashboard.html"))
-OUT_INDEX = os.path.normpath(os.path.join(HERE, "..", "..", "index.html"))
+# The published copy must live inside this folder — it is the git repo GitHub
+# Pages serves from. Writing it to the 01_Clinical_Research level would put it
+# outside version control and it would never reach the live site.
+OUT_INDEX = os.path.join(HERE, "index.html")
 
 
 def build():
@@ -273,8 +275,9 @@ header .sub{color:var(--muted);font-size:13px}
 .toast.err{background:var(--pa);color:#fff}
 </style>
 <!-- Supabase browser client (auth + saved lists). Loaded from CDN; if it fails
-     to load the dashboard still works, just without accounts. -->
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+     to load the dashboard still works, just without accounts. Version is pinned
+     so an upstream release cannot silently break sign-in; bump deliberately. -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.112.0"></script>
 </head>
 <body>
 <div class="wrap">

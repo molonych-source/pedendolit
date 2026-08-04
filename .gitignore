@@ -2,3 +2,7 @@ __pycache__/
 *.pyc
 _tmp_batches/
 .DS_Store
+
+# Byte-identical to the published index.html, so only that one is versioned.
+# Kept on disk as the familiar double-click filename.
+PedEndoLit-Dashboard.html
