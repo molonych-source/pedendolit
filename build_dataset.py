@@ -15,6 +15,11 @@ import json, os, sys, argparse, datetime, importlib.util, html as _html, re as _
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
+# Days after an article's review_date before it is hidden from the dashboard.
+# None = never archive (current behavior). See the archive block in build().
+ARCHIVE_AFTER_DAYS = None
+
+
 def _clean(s):
     """Decode HTML/XML character entities from PubMed text (e.g. &#xa0; -> nbsp,
     &#xb1; -> +/-, &#x3b1; -> alpha) and normalize odd whitespace to plain spaces
@@ -126,12 +131,27 @@ def build(run_date=None, raw_path=None, verbose=True, rebuild=False):
         stats["by_impact"][c["impact"]] = stats["by_impact"].get(c["impact"], 0) + 1
         stats["by_study"][c["study_type"]] = stats["by_study"].get(c["study_type"], 0) + 1
 
-    # 60-day archive + is_new reset (applied to whole store)
-    cutoff = (datetime.datetime.strptime(run_date, "%Y-%m-%d") - datetime.timedelta(days=60)).date().isoformat()
+    # Archive + is_new reset (applied to whole store).
+    #
+    # Archiving is OFF. It used to hide anything whose review_date was more than
+    # ARCHIVE_AFTER_DAYS old, but review_date is when an article was ADDED to the
+    # store, not when it was published. The whole historical backfill shares one
+    # date (2026-06-28, 1029 articles), so every one of them would have crossed a
+    # 60-day cutoff on the same weekly run — the site would have dropped from 1287
+    # articles to 258 on 2026-08-30 and to 35 by late September.
+    #
+    # The dashboard is a searchable corpus, not a rolling window, so nothing ages
+    # out. "What's new" is answered per-user from a last-seen timestamp instead of
+    # by hiding articles from everyone. Set ARCHIVE_AFTER_DAYS to an int to
+    # re-enable; leave it None to keep every article visible.
     for a in store["articles"]:
         a["is_new"] = (a.get("review_date") == run_date)  # True only for articles added this run
-        if a.get("review_date", "9999") < cutoff:
-            a["is_archived"] = True
+        if ARCHIVE_AFTER_DAYS is None:
+            a["is_archived"] = False
+        else:
+            cutoff = (datetime.datetime.strptime(run_date, "%Y-%m-%d")
+                      - datetime.timedelta(days=ARCHIVE_AFTER_DAYS)).date().isoformat()
+            a["is_archived"] = a.get("review_date", "9999") < cutoff
 
     store["generated"] = datetime.datetime.now().isoformat(timespec="seconds")
     store["review_period"] = datetime.datetime.strptime(run_date, "%Y-%m-%d").strftime("%B %Y")
