@@ -1,6 +1,7 @@
-# PedEndoLit Dashboard — Memory
+# PedsEndoBrief — Memory
 
-Project memory for the PedEndoLit pediatric endocrinology literature dashboard.
+Project memory for PedsEndoBrief, the pediatric endocrinology literature dashboard
+(named PedEndoLit until 2026-08-04; internal filenames still use the old name).
 Durable facts, decisions, and architecture. For open ideas and to-dos see `TASKS.md`
 in this same folder. For the weekly run procedure see `WEEKLY_REFRESH_RUNBOOK.md`.
 
@@ -47,7 +48,7 @@ Recently added: **Gender Medicine** (ABP Domain 16, pre-check before Puberty/DSD
 DSD-context guard) and **Calcium/Parathyroid** split out of Bone/Calcium (both 2026-05-29).
 
 ## Publishing
-- **Live at https://molonych-source.github.io/pedendolit/** — GitHub Pages, serving `main` branch root of https://github.com/molonych-source/pedendolit (public). Enabled 2026-08-04; before that the repo existed but Pages had never actually been switched on, so the site was never live despite handoff docs assuming it was.
+- **Live at https://pedsendobrief.org** — GitHub Pages serving `main` branch root of https://github.com/molonych-source/pedendolit (public repo, name unchanged). The old `molonych-source.github.io/pedendolit/` URL 301-redirects here. Pages was first enabled 2026-08-04; before that the repo existed but Pages had never been switched on, so the site was never live despite handoff docs assuming it was.
 - **This folder is the git repo.** Re-publishing = `git add`, `git commit`, `git push`; Pages redeploys automatically (~10 min CDN cache). No more manual file upload. Auto-publish on a schedule is still a TASKS.md item.
 - **Bug/comment form**: Web3Forms (key `bb727558-...` is in `build_dashboard.py`; safe to expose — send-only). Reports email to Christian. First submission triggers a one-time Web3Forms verification email. Sandbox can't test the POST (proxy blocks api.web3forms.com) — test from a real browser.
 
@@ -80,6 +81,14 @@ DSD-context guard) and **Calcium/Parathyroid** split out of Bone/Calcium (both 2
 - **Do NOT add character-class password rules.** (An earlier version of this file recommended them; that was wrong.) NIST SP 800-63B: *"Verifiers and CSPs SHALL NOT impose other composition rules (e.g., requiring mixtures of different character types) for passwords."* They push people to `Password1!` — apparent strength, real usability cost. Length is the lever that works; the normative floor for password-only sign-in is 15 characters. If raising it, note `"at least 6 characters"` is hardcoded in **three** places (`build_dashboard.py` modal placeholder and client-side check, plus the Phase 2 setup guide) and they must move together or the page accepts a password Supabase then rejects.
 - **Password reset is not merely rate-limited, it is blocked.** Supabase's built-in sender *"will refuse to deliver messages to addresses that are not part of the project's team"* — everyone else gets *"Email address not authorized"* — on top of a fixed 2 messages/hour. **Trap: the project owner's own address IS on the team**, so testing reset on yourself succeeds and then fails for every colleague. Requires custom SMTP, which requires a verified sending domain.
 - **When reset is built, use the six-digit `{{ .Token }}` template, not a magic link.** Hospital mail security (Defender Safe Links etc.) pre-clicks links and consumes the one-time token before the human does; Supabase has a dedicated troubleshooting page for it and this audience is exactly the affected population.
+
+## Name and domain (2026-08-04)
+- **The product is PedsEndoBrief, at https://pedsendobrief.org** (Cloudflare Registrar, ~$10/yr, auto-renew on). Renamed from "PedEndoLit" before any colleague had been given the address — the cheapest possible moment.
+- **Why "Peds" not "Ped":** the specialty says "peds endo" aloud; "Ped" is a written truncation nobody speaks. The name is meant to be passed along at conferences, so matching speech matters. "Brief" promises the filtering-down, which is the actual value, rather than just naming the contents.
+- **Only user-facing strings were renamed** — page title, header, sign-in heading, footer, bug-report subject. Internal filenames (`pedendolit-data.json`, `PedEndoLit-Dashboard.html`, the scripts, the repo name `pedendolit`) are deliberately unchanged: invisible to users, and renaming them risks the pipeline for nothing.
+- **DNS:** 4 A records at the apex to GitHub Pages (185.199.108-111.153) plus a `www` CNAME to `molonych-source.github.io`. **All must be "DNS only" (grey cloud), NOT proxied** — Cloudflare's proxy prevents GitHub from issuing the TLS certificate. Cloudflare nags you to enable proxying; ignore it.
+- The old `molonych-source.github.io/pedendolit/` URL now 301-redirects to the custom domain, so nothing that was shared earlier breaks.
+- **Supabase redirect URLs and the Google OAuth origin were added additively**, keeping the old URL valid through the transition rather than cutting it over.
 
 ## Google sign-in (live 2026-08-04)
 - **Google Cloud project `indigo-cider-471318-p8`**, OAuth client "PedEndoLit web (Supabase)", client ID `774609386490-c3vucn75ttkggi9rsjvkufhdtr696tb5.apps.googleusercontent.com` (public by design). The **client secret lives only in the Supabase dashboard** — never in this repo. Google no longer lets you view a secret after creation; if lost, use **Add secret** on the client's "Additional information" panel rather than recreating the client (two secrets can coexist for rotation).

@@ -163,8 +163,14 @@ the generated HTML**, which is overwritten on every build.
 
 ## Publishing
 
-Live at **https://molonych-source.github.io/pedendolit/**, served by GitHub Pages from
-the `main` branch root of https://github.com/molonych-source/pedendolit (public).
+Live at **https://pedsendobrief.org**, served by GitHub Pages from the `main` branch root
+of https://github.com/molonych-source/pedendolit (public; repo name deliberately unchanged).
+The old github.io URL 301-redirects. DNS is at Cloudflare: four apex A records to GitHub
+Pages plus a `www` CNAME, all **DNS only** — Cloudflare's proxy blocks GitHub's TLS cert.
+
+**The product is PedsEndoBrief** (renamed from PedEndoLit, 2026-08-04). Internal filenames,
+the repo name, and `pedendolit-data.json` still use the old name on purpose — renaming them
+is churn with real pipeline risk and no user-visible benefit.
 
 This folder **is** the git repo. `build_dashboard.py` writes `index.html` here (the
 published artifact, versioned) plus two identical convenience copies:
