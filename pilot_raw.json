@@ -1,0 +1,1469 @@
+[
+ {
+  "identifiers": {
+   "pmid": "41054822",
+   "pmc": "PMC13017617",
+   "doi": "10.1210/clinem/dgaf549",
+   "pii": "8276517"
+  },
+  "title": "Effects of Puberty Suppression and Sex Steroids on Weight, BMI, and Lipid Profiles in Danish Transgender Adolescents.",
+  "abstract": "Cardiovascular health of the transgender population receiving hormone therapy (HT) has been a concern.\n\nTo investigate weight, body mass index (BMI), and lipid profiles in a national cohort of transgender adolescents starting HT before 18 years of age.\n\nIn this observational study, 164 trans boys and 55 trans girls were followed longitudinally during HT. Gonadotropin-releasing hormone analog (GnRHa) was initiated either before or alongside sex steroid therapy. Anthropometry and lipid profiles were analyzed at the start of HT and at routine visits.\n\nBefore HT, overweight (BMI 1-2 standard deviation score [SDS]) and obesity (BMI &#x2265;&#x202f;2&#x202f;SDS) were found in 26.8% and 22.0% of trans boys, and in 5.7% and 5.7% of trans girls, respectively. BMI SDS correlated positively with total cholesterol, low-density lipoprotein (LDL), and triglycerides, and negatively with high-density lipoprotein (HDL). In trans boys and girls, high percentages had lipids above normal reference intervals; total cholesterol (12.5% and 6.1%), LDL (21.8% and 12.5%), and triglycerides (3.4% and 6.3%), and HDL below normal reference intervals (9.0% and 18.4%), respectively. During GnRHa monotherapy, there was a trend toward declining weight SDS, but BMI SDS and lipid profiles did not change consistently. After initiation of sex steroids, weight SDS, BMI SDS, and HDL decreased along with increased triglycerides in trans boys, and HDL increased in trans girls.\n\nOverweight, obesity, and dyslipidemia were common in transgender adolescents before HT initiation. BMI did not deteriorate, but dyslipidemia worsened slightly during sex steroid therapy in trans boys but not in trans girls.",
+  "doi": "10.1210/clinem/dgaf549",
+  "journal": {
+   "title": "The Journal of clinical endocrinology and metabolism",
+   "iso_abbreviation": "J Clin Endocrinol Metab"
+  },
+  "authors": [
+   {
+    "last_name": "Kvernebo Sunnergren",
+    "fore_name": "Kjersti",
+    "initials": "K",
+    "affiliations": [
+     "Department of Pediatrics, G&#xf6;teborg Pediatric Growth Research Center (GP-GRC), Institute of Sciences, Sahlgrenska Academy, University of Gothenburg, Gothenburg 405 30, Sweden.",
+     "Department of Pediatrics, Ryhov County Hospital, Region J&#xf6;nk&#xf6;ping County, 553 05 J&#xf6;nk&#xf6;ping, Sweden."
+    ]
+   },
+   {
+    "last_name": "Norup",
+    "fore_name": "Pernille Badsberg",
+    "initials": "PB",
+    "affiliations": [
+     "Department of Growth and Reproduction, Copenhagen University Hospital-Rigshospitalet, 2100 Copenhagen, Denmark.",
+     "International Centre for Research and Research Training in Endocrine Disruption of Male Reproduction and Child Health, Copenhagen University Hospital-Rigshospitalet, 2100 Copenhagen, Denmark."
+    ]
+   },
+   {
+    "last_name": "Haahr",
+    "fore_name": "Mette Ewers",
+    "initials": "ME",
+    "affiliations": [
+     "Sexological Clinic, Mental Health Center Copenhagen, Copenhagen University Hospital - Mental Health Services CPH, 2100 Copenhagen, Denmark.",
+     "Department of Clinical Medicine, University of Copenhagen, 2100 Copenhagen, Denmark."
+    ]
+   },
+   {
+    "last_name": "Giraldi",
+    "fore_name": "Annamaria",
+    "initials": "A",
+    "affiliations": [
+     "Sexological Clinic, Mental Health Center Copenhagen, Copenhagen University Hospital - Mental Health Services CPH, 2100 Copenhagen, Denmark.",
+     "Department of Clinical Medicine, University of Copenhagen, 2100 Copenhagen, Denmark."
+    ]
+   },
+   {
+    "last_name": "Pagsberg",
+    "fore_name": "Anne Katrine",
+    "initials": "AK",
+    "affiliations": [
+     "Department of Clinical Medicine, University of Copenhagen, 2100 Copenhagen, Denmark.",
+     "Child and Adolescent Mental Health Centre, Mental Health Services, Capital Region of Denmark, 2900 Hellerup, Denmark."
+    ]
+   },
+   {
+    "last_name": "Christiansen",
+    "fore_name": "Peter",
+    "initials": "P",
+    "affiliations": [
+     "Department of Growth and Reproduction, Copenhagen University Hospital-Rigshospitalet, 2100 Copenhagen, Denmark.",
+     "International Centre for Research and Research Training in Endocrine Disruption of Male Reproduction and Child Health, Copenhagen University Hospital-Rigshospitalet, 2100 Copenhagen, Denmark."
+    ]
+   },
+   {
+    "last_name": "Aksglaede",
+    "fore_name": "Lise",
+    "initials": "L",
+    "affiliations": [
+     "Department of Growth and Reproduction, Copenhagen University Hospital-Rigshospitalet, 2100 Copenhagen, Denmark.",
+     "International Centre for Research and Research Training in Endocrine Disruption of Male Reproduction and Child Health, Copenhagen University Hospital-Rigshospitalet, 2100 Copenhagen, Denmark."
+    ]
+   },
+   {
+    "last_name": "Cleemann",
+    "fore_name": "Line",
+    "initials": "L",
+    "affiliations": [
+     "Department of Growth and Reproduction, Copenhagen University Hospital-Rigshospitalet, 2100 Copenhagen, Denmark.",
+     "International Centre for Research and Research Training in Endocrine Disruption of Male Reproduction and Child Health, Copenhagen University Hospital-Rigshospitalet, 2100 Copenhagen, Denmark."
+    ]
+   },
+   {
+    "last_name": "Juul",
+    "fore_name": "Anders",
+    "initials": "A",
+    "affiliations": [
+     "Department of Growth and Reproduction, Copenhagen University Hospital-Rigshospitalet, 2100 Copenhagen, Denmark.",
+     "International Centre for Research and Research Training in Endocrine Disruption of Male Reproduction and Child Health, Copenhagen University Hospital-Rigshospitalet, 2100 Copenhagen, Denmark.",
+     "Department of Clinical Medicine, University of Copenhagen, 2100 Copenhagen, Denmark."
+    ]
+   },
+   {
+    "last_name": "Main",
+    "fore_name": "Katharina M",
+    "initials": "KM",
+    "affiliations": [
+     "Department of Growth and Reproduction, Copenhagen University Hospital-Rigshospitalet, 2100 Copenhagen, Denmark.",
+     "International Centre for Research and Research Training in Endocrine Disruption of Male Reproduction and Child Health, Copenhagen University Hospital-Rigshospitalet, 2100 Copenhagen, Denmark.",
+     "Department of Clinical Medicine, University of Copenhagen, 2100 Copenhagen, Denmark."
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2026",
+   "month": "Mar",
+   "day": "17"
+  },
+  "keywords": [
+   "body mass index",
+   "gonadotropin-releasing hormone analog",
+   "lipid profiles",
+   "sex steroids",
+   "transgender",
+   "weight"
+  ],
+  "mesh_terms": [
+   "Humans",
+   "Adolescent",
+   "Male",
+   "Female",
+   "Body Mass Index",
+   "Lipids",
+   "Gonadal Steroid Hormones",
+   "Transgender Persons",
+   "Puberty",
+   "Body Weight",
+   "Denmark",
+   "Longitudinal Studies",
+   "Gonadotropin-Releasing Hormone",
+   "Obesity",
+   "Overweight",
+   "Transsexualism",
+   "Puberty Suppression"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Observational Study"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "111",
+   "issue": "4",
+   "pages": "1066-1074"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "41186191",
+   "doi": "10.1210/clinem/dgaf605",
+   "pii": "8313678"
+  },
+  "title": "Recent Findings on Psychosocial Outcomes of Gender-Affirming Medical Care for Transgender Youth.",
+  "abstract": "Many transgender and gender-diverse (TGD) youth experience gender dysphoria, which can exacerbate mental health risk. Gender-affirming medical interventions, such as pubertal suppression using gonadotropin-releasing hormone agonists (GnRHas) and gender-affirming hormone therapy (GAHT), primarily aim to alleviate gender dysphoria, with overall goals of optimizing well-being. Here we discuss prospective, longitudinal studies published in the last 5 years examining mental health outcomes of GnRHas and GAHT for TGD youth and young adults, contextualize these findings within the current sociopolitical climate, and elaborate on the need for robust and comprehensive gender-affirming care for TGD youth.",
+  "doi": "10.1210/clinem/dgaf605",
+  "journal": {
+   "title": "The Journal of clinical endocrinology and metabolism",
+   "iso_abbreviation": "J Clin Endocrinol Metab"
+  },
+  "authors": [
+   {
+    "last_name": "Weixel",
+    "fore_name": "Tara",
+    "initials": "T",
+    "affiliations": [
+     "Department of Psychological Sciences, Kent State University, Kent, OH 44242, USA."
+    ]
+   },
+   {
+    "last_name": "Whitehead",
+    "fore_name": "Jax",
+    "initials": "J",
+    "affiliations": [
+     "Division of Endocrinology, Ann & Robert H. Lurie Children's Hospital of Chicago, Chicago, IL 60611, USA.",
+     "Department of Pediatrics, Northwestern University Feinberg School of Medicine, Chicago, IL 60611, USA."
+    ]
+   },
+   {
+    "last_name": "Chen",
+    "fore_name": "Diane",
+    "initials": "D",
+    "affiliations": [
+     "Department of Pediatrics, Northwestern University Feinberg School of Medicine, Chicago, IL 60611, USA.",
+     "Pritzker Department of Psychiatry and Behavioral Health, Ann & Robert H. Lurie Children's Hospital of Chicago, Chicago, IL 60611, USA.",
+     "Potocsnak Family Division of Adolescent and Young Adult Medicine, Ann & Robert H. Lurie Children's Hospital of Chicago, Chicago, IL 60611, USA.",
+     "Department of Psychiatry & Behavioral Sciences, Northwestern University Feinberg School of Medicine, Chicago, IL 60611, USA.",
+     "Department of Medical Social Sciences, Northwestern University Feinberg School of Medicine, Chicago, IL 60611, USA."
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2026",
+   "month": "Jan",
+   "day": "21"
+  },
+  "keywords": [
+   "adolescents",
+   "exogenous hormones",
+   "gender diverse",
+   "mental health",
+   "psychological functioning",
+   "pubertal suppression"
+  ],
+  "mesh_terms": [
+   "Adolescent",
+   "Female",
+   "Humans",
+   "Male",
+   "Young Adult",
+   "Gender Dysphoria",
+   "Gender-Affirming Procedures",
+   "Gonadotropin-Releasing Hormone",
+   "Longitudinal Studies",
+   "Mental Health",
+   "Transgender Persons",
+   "Transsexualism"
+  ],
+  "article_types": [
+   "Journal Article"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "111",
+   "issue": "2",
+   "pages": "e640-e645"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "41928888",
+   "pmc": "PMC13038501",
+   "doi": "10.3389/fendo.2026.1793245"
+  },
+  "title": "Effects of gender-affirming hormone therapy from adolescence to adulthood on cardiovascular function: a cross-sectional study.",
+  "abstract": "Increased cardiovascular risk in transgender adults might be linked in part to metabolic changes associated with gender-affirming hormone therapy (GAHT) and lifestyle factors. However, the cardiovascular effects of long-term GAHT, particularly when initiated during adolescence, remain poorly understood.\n\nEchocardiographic evaluations were performed in 47 trans men (TM) and 6 trans women (TW) who had undergone GAHT for 5-10 years. Assessments included systolic and diastolic function, ventricular and aortic diameters, and aortic elasticity parameters. Cardiovascular risk factors (e.g., hypertension, obesity, impaired glucose tolerance, dyslipidemia, smoking, and alcohol use) were also analyzed.\n\nMedian (IQR) GAHT duration was 6.0 (2.8) years in TM and 7.8 (2.6) years in TW; median ages were 23.4 (2.2) and 25.3 (2.7) years, respectively. Most of the cardiovascular parameters were within normal range, as all participants showed normal systolic function, and only one TM exhibited grade 2 diastolic dysfunction. Additionally, left ventricle (LV) diameters, LV mass indexed for BSA and aortic diameters were also within normal reference ranges in both groups. Nevertheless, GAHT was associated with significant reduction of aortic distensibility and strain in comparison to normal reference values, while increasing aortic stiffness index in both TM and TW. In TM, reduced aortic distensibility was independently associated with increases in systolic blood pressure.\n\nLong-term GAHT initiated during adolescence in both TW and TM shows no apparent cardiac complications with regard to cardiac function, hypertrophy, or chamber dimensions, and does not significantly affect aortic diameters. However, alterations in aortic elasticity were observed, the long-term clinical significance of which remains to be determined.",
+  "doi": "10.3389/fendo.2026.1793245",
+  "journal": {
+   "title": "Frontiers in endocrinology",
+   "iso_abbreviation": "Front Endocrinol (Lausanne)"
+  },
+  "authors": [
+   {
+    "last_name": "Ciancia",
+    "fore_name": "Silvia",
+    "initials": "S",
+    "affiliations": [
+     "Department of Internal Medicine and Pediatrics, Ghent University, Ghent,&#xa0;Belgium.",
+     "Pediatric Endocrinology Service, Department of Pediatrics, Ghent University Hospital, Ghent,&#xa0;Belgium."
+    ]
+   },
+   {
+    "last_name": "D'hulst",
+    "fore_name": "Simon",
+    "initials": "S",
+    "affiliations": [
+     "Department of Internal Medicine and Pediatrics, Ghent University, Ghent,&#xa0;Belgium.",
+     "Pediatric Cardiology Service, Department of Pediatrics, Ghent University Hospital, Ghent,&#xa0;Belgium."
+    ]
+   },
+   {
+    "last_name": "Vervalcke",
+    "fore_name": "Jeroen",
+    "initials": "J",
+    "affiliations": [
+     "Department of Endocrinology, Ghent University Hospital, Ghent,&#xa0;Belgium."
+    ]
+   },
+   {
+    "last_name": "Klink",
+    "fore_name": "Daniel",
+    "initials": "D",
+    "affiliations": [
+     "Department of Internal Medicine and Pediatrics, Ghent University, Ghent,&#xa0;Belgium.",
+     "Pediatric Endocrinology Service, Department of Pediatrics, Ghent University Hospital, Ghent,&#xa0;Belgium."
+    ]
+   },
+   {
+    "last_name": "T'Sjoen",
+    "fore_name": "Guy",
+    "initials": "G",
+    "affiliations": [
+     "Department of Endocrinology & Center for Sexology and Gender, Ghent University Hospital, Ghent,&#xa0;Belgium."
+    ]
+   },
+   {
+    "last_name": "De Groote",
+    "fore_name": "Katya",
+    "initials": "K",
+    "affiliations": [
+     "Department of Internal Medicine and Pediatrics, Ghent University, Ghent,&#xa0;Belgium.",
+     "Pediatric Cardiology Service, Department of Pediatrics, Ghent University Hospital, Ghent,&#xa0;Belgium."
+    ]
+   },
+   {
+    "last_name": "Cools",
+    "fore_name": "Martine",
+    "initials": "M",
+    "affiliations": [
+     "Department of Internal Medicine and Pediatrics, Ghent University, Ghent,&#xa0;Belgium.",
+     "Pediatric Endocrinology Service, Department of Pediatrics, Ghent University Hospital, Ghent,&#xa0;Belgium."
+    ]
+   },
+   {
+    "last_name": "Mui&#xf1;o Mosquera",
+    "fore_name": "Laura",
+    "initials": "L",
+    "affiliations": [
+     "Department of Internal Medicine and Pediatrics, Ghent University, Ghent,&#xa0;Belgium.",
+     "Pediatric Cardiology Service, Department of Pediatrics, Ghent University Hospital, Ghent,&#xa0;Belgium."
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2026",
+   "month": "03",
+   "day": "18"
+  },
+  "keywords": [
+   "GAHT",
+   "aortic distensibility",
+   "aortic stiffness",
+   "cardiovascular",
+   "transgender"
+  ],
+  "mesh_terms": [
+   "Humans",
+   "Male",
+   "Cross-Sectional Studies",
+   "Female",
+   "Adult",
+   "Adolescent",
+   "Echocardiography",
+   "Young Adult",
+   "Hormone Replacement Therapy",
+   "Transgender Persons",
+   "Cardiovascular Diseases",
+   "Vascular Stiffness",
+   "Transsexualism"
+  ],
+  "article_types": [
+   "Journal Article"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "17",
+   "pages": "1793245"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "42175714",
+   "doi": "10.1210/endrev/bnag015",
+   "pii": "8691253"
+  },
+  "title": "Glucocorticoids in pregnancy: A master-switch for fetal maturation.",
+  "abstract": "The prepartum surge in plasma glucocorticoids is a critical signal for fetal organ maturation, facilitating the transition from fetal reliance on the placenta for functions including respiration, nutrition, and waste removal to newborn use of their own physiological systems. The fetal glucocorticoid surge is conserved across mammalian species, but mechanisms driving the surge differ. Preterm birth interrupts fetal maturation because babies are born before the rise in endogenous glucocorticoids occurs, placing the newborn at greater risk of morbidity and mortality. In particular, lung immaturity increases risk of short-term and long-term respiratory disease. Antenatal corticosteroids (ACS) are routinely administered to women at risk of preterm birth to mimic the missed maturational signal of elevated glucocorticoids. Consequently, ACS improve neonatal survival and respiratory outcomes. Clinical guidelines universally recommend ACS use, but recommended regimens, gestational age limits, and use in settings of pre-existing maternal conditions vary. Importantly, preterm infants have variable responsiveness to ACS treatment, and do not benefit equally. While male fetal sex and fetal growth restriction may be associated with lower ACS responsiveness, there is limited understanding of underlying factors. Emerging evidence points to differential glucocorticoid receptor isoform expression and elevated pre-treatment plasma cortisol concentrations as potential contributors to variable ACS response. Improved insight into underlying mechanisms is crucial for identifying responsive subgroups and optimising ACS treatment beyond the current one-size-fits-all approach to enhance health outcomes for preterm infants.",
+  "doi": "10.1210/endrev/bnag015",
+  "journal": {
+   "title": "Endocrine reviews",
+   "iso_abbreviation": "Endocr Rev"
+  },
+  "authors": [
+   {
+    "last_name": "Tan",
+    "fore_name": "Yoshi",
+    "initials": "Y",
+    "affiliations": [
+     "Robinson Research Institute, College of Health, Adelaide University, Adelaide, SA, Australia.",
+     "School of Pharmacy and Biomedical Sciences, College of Health, Adelaide University, Adelaide, SA, Australia.",
+     "Early Origins of Adult Health Research Group, School of Pharmacy and Biomedical Sciences, College of Health, Adelaide University, Adelaide, SA, Australia."
+    ]
+   },
+   {
+    "last_name": "Stark",
+    "fore_name": "Michael J",
+    "initials": "MJ",
+    "affiliations": [
+     "Robinson Research Institute, College of Health, Adelaide University, Adelaide, SA, Australia.",
+     "Adelaide Medical School, Adelaide University, Adelaide, SA, Australia."
+    ]
+   },
+   {
+    "last_name": "Clifton",
+    "fore_name": "Vicki L",
+    "initials": "VL",
+    "affiliations": [
+     "Pregnancy and Development, Mater Medical Research Institute, University of Queensland, Brisbane, QLD, Australia."
+    ]
+   },
+   {
+    "last_name": "Wiese",
+    "fore_name": "Michael D",
+    "initials": "MD",
+    "affiliations": [
+     "Centre for Pharmaceutical Innovation, Clinical and Health Sciences, Adelaide University, Adelaide, SA, Australia."
+    ]
+   },
+   {
+    "last_name": "Morrison",
+    "fore_name": "Janna L",
+    "initials": "JL",
+    "affiliations": [
+     "Early Origins of Adult Health Research Group, School of Pharmacy and Biomedical Sciences, College of Health, Adelaide University, Adelaide, SA, Australia."
+    ]
+   },
+   {
+    "last_name": "Gatford",
+    "fore_name": "Kathryn L",
+    "initials": "KL",
+    "affiliations": [
+     "Robinson Research Institute, College of Health, Adelaide University, Adelaide, SA, Australia.",
+     "School of Pharmacy and Biomedical Sciences, College of Health, Adelaide University, Adelaide, SA, Australia."
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2026",
+   "month": "05",
+   "day": "23"
+  },
+  "keywords": [
+   "corticosteroid",
+   "fetal development",
+   "pregnancy",
+   "respiratory system"
+  ],
+  "article_types": [
+   "Journal Article"
+  ],
+  "language": "eng"
+ },
+ {
+  "identifiers": {
+   "pmid": "40105472",
+   "pmc": "PMC13197104",
+   "doi": "10.4274/jcrpe.galenos.2024.2024-8-4"
+  },
+  "title": "Clinical and Molecular Landscape of Weiss-Kruszka Syndrome: A Case Report and Literature Review.",
+  "abstract": "Weiss-Kruszka syndrome (WSKA; OMIM#618619) is a rare condition with multiple congenital anomalies. This study describes a patient with WSKA from Northern China. The patient was a 9.75-year-old boy who presented with growth retardation (growth velocity: 3-4 cm/year at school age), delayed motor and speech development, and eating difficulty. The patient&#x2019;s weight was 22 kg (<3percentile), and his height was 125.6 cm (<3percentile) at the first visit. He had craniofacial anomalies characterized by heavily arched eyebrows, mild bilateral ptosis, inner epicanthal folds, uneven teeth, macrodontia of the upper central incisors, and low-set ears. A transverse palmar crease was observed on the right palm. The serum insulin-like growth factor-1 level was 73.1 ng/mL (normal range: 74-388 ng/mL). His bone age was appropriate at 9-10 years. Cranial magnetic resonance imaging results revealed a small pituitary gland. Trio whole-exome sequencing was performed because of the patient&#x2019;s non-specific dysmorphic features and a phenotype indistinguishable from many other inherited disorders with growth retardation. A de novo splicing variant, c.6833-2A>T, was identified in thegene (NM_021224). Recombinant human growth hormone therapy was started (dose, 0.15 IU/kg/day) and administered as daily subcutaneous injections. His growth velocity increased (5 cm/6 months). This case has been added to the limited number of publications reporting WSKA. This study also reports the genotypic and phenotypic landscape of WKSA, providing clinical and genetic data to support the etiology of haploinsufficiency of thegene, as postulated by previous studies.",
+  "doi": "10.4274/jcrpe.galenos.2024.2024-8-4",
+  "journal": {
+   "title": "Journal of clinical research in pediatric endocrinology",
+   "iso_abbreviation": "J Clin Res Pediatr Endocrinol"
+  },
+  "authors": [
+   {
+    "last_name": "Li",
+    "fore_name": "Lele",
+    "initials": "L",
+    "affiliations": [
+     "Beijing Children&#x2019;s Hospital, the Capital Medical University, National Center for Children&#x2019;s Health, Department of Endocrinology, Genetics, Metabolism and Adolescent Medicine, Beijing, China"
+    ]
+   },
+   {
+    "last_name": "Gong",
+    "fore_name": "Chunxiu",
+    "initials": "C",
+    "affiliations": [
+     "Beijing Children&#x2019;s Hospital, the Capital Medical University, National Center for Children&#x2019;s Health, Department of Endocrinology, Genetics, Metabolism and Adolescent Medicine, Beijing, China"
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2025",
+   "month": "03",
+   "day": "19"
+  },
+  "keywords": [
+   "ZNF462 gene",
+   "genotypic",
+   "phenotypic",
+   "Weiss-Kruszka syndrome"
+  ],
+  "mesh_terms": [
+   "Humans",
+   "Male",
+   "Child",
+   "Abnormalities, Multiple",
+   "Growth Disorders",
+   "Phenotype"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Case Reports",
+   "Review"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "18",
+   "issue": "Suppl 1",
+   "pages": "59-63"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "40045579",
+   "pmc": "PMC13197098",
+   "doi": "10.4274/jcrpe.galenos.2024.2024-8-9"
+  },
+  "title": "A NovelLoss-of-Function Variant in a Chinese Child with 5&#x3b1;-reductase Type 2 Deficiency.",
+  "abstract": "Differences or disorders of sex development (DSD) represent a range of congenital conditions that lead to discrepancies among a person&#x2019;s sex chromosomes, gonads, and anatomical sex. Variants in thegene can lead to 5-alpha-reductase type 2 (5&#x3b1;-RD2) deficiency, a condition within the DSD spectrum. Here, we report a case of 5&#x3b1;-RD2 deficiency in a Chinese child, resulting from a newly identified compound heterozygous variant in. The proband, a 2-month-old child assigned female at birth, was initially observed to have bilateral hypertrophy of the labial folds during routine child healthcare visits at a local hospital. An ultrasound scan revealed testicular structures on both sides of the labial folds. The testosterone/dihydrotestosterone ratio after stimulation was 37, consistent with 5&#x3b1;-RD2 deficiency. Whole-exome sequencing and copy number variation analysis identified a novel compound heterozygous variant in, consisting of a 175.06 Kb deletion (including exon 1) located at chr2:31802204-31977267 and a c.607G>A (p.G203S) point mutation. Cytogenetic analysis confirmed a 46,XY karyotype. This case highlights a previously unreported compound heterozygous variant inassociated with 5&#x3b1;-RD2 deficiency in a Chinese child.",
+  "doi": "10.4274/jcrpe.galenos.2024.2024-8-9",
+  "journal": {
+   "title": "Journal of clinical research in pediatric endocrinology",
+   "iso_abbreviation": "J Clin Res Pediatr Endocrinol"
+  },
+  "authors": [
+   {
+    "last_name": "Zhou",
+    "fore_name": "Peng",
+    "initials": "P",
+    "affiliations": [
+     "Sichuan University, West China Second University Hospital, Department of Pediatrics, Chengdu, China",
+     "Sichuan University, West China Second University Hospital, Key Laboratory of Birth Defects and Related Diseases of Women and Children, Ministry of Education, Chengdu, China"
+    ]
+   },
+   {
+    "last_name": "Lyu",
+    "fore_name": "Juanjuan",
+    "initials": "J",
+    "affiliations": [
+     "Sichuan University, West China Second University Hospital, Department of Pediatrics, Chengdu, China",
+     "Sichuan University, West China Second University Hospital, Key Laboratory of Birth Defects and Related Diseases of Women and Children, Ministry of Education, Chengdu, China"
+    ]
+   },
+   {
+    "last_name": "Sun",
+    "fore_name": "Xiaomei",
+    "initials": "X",
+    "affiliations": [
+     "Sichuan University, West China Second University Hospital, Department of Pediatrics, Chengdu, China",
+     "Sichuan University, West China Second University Hospital, Key Laboratory of Birth Defects and Related Diseases of Women and Children, Ministry of Education, Chengdu, China"
+    ]
+   },
+   {
+    "last_name": "Liu",
+    "fore_name": "Ying",
+    "initials": "Y",
+    "affiliations": [
+     "Sichuan University, West China Second University Hospital, Department of Pediatrics, Chengdu, China",
+     "Sichuan University, West China Second University Hospital, Key Laboratory of Birth Defects and Related Diseases of Women and Children, Ministry of Education, Chengdu, China"
+    ]
+   },
+   {
+    "last_name": "Yuan",
+    "fore_name": "Chuanjie",
+    "initials": "C",
+    "affiliations": [
+     "Sichuan University, West China Second University Hospital, Department of Pediatrics, Chengdu, China",
+     "Sichuan University, West China Second University Hospital, Key Laboratory of Birth Defects and Related Diseases of Women and Children, Ministry of Education, Chengdu, China"
+    ]
+   },
+   {
+    "last_name": "Wu",
+    "fore_name": "Jin",
+    "initials": "J",
+    "affiliations": [
+     "Sichuan University, West China Second University Hospital, Department of Pediatrics, Chengdu, China",
+     "Sichuan University, West China Second University Hospital, Key Laboratory of Birth Defects and Related Diseases of Women and Children, Ministry of Education, Chengdu, China"
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2025",
+   "month": "03",
+   "day": "06"
+  },
+  "keywords": [
+   "5&#x3b1;-reductase type 2 deficiency",
+   "SRD5A2",
+   "disorders of sex development (DSD)",
+   "gene deletion"
+  ],
+  "mesh_terms": [
+   "Humans",
+   "3-Oxo-5-alpha-Steroid 4-Dehydrogenase",
+   "Infant",
+   "Female",
+   "Membrane Proteins",
+   "Male",
+   "Loss of Function Mutation",
+   "Disorders of Sex Development",
+   "China",
+   "East Asian People"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Case Reports"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "18",
+   "issue": "Suppl 1",
+   "pages": "50-53"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "39311599",
+   "pmc": "PMC13197089",
+   "doi": "10.4274/jcrpe.galenos.2024.2024-2-1"
+  },
+  "title": "Hereditary Pheochromocytoma as a Major Manifestation of von Hippel Lindau Disease (vHL) in Childhood: Long-term Follow-up of Five Patients with vHL from One Family.",
+  "abstract": "Von Hippel-Lindau disease (vHL) is a hereditary, autosomal dominant syndrome manifested by a predisposition to the occurrence of benign and malignant neoplasms. The spectrum of vHL-related neoplasms includes: pheochromocytoma (PHEO), central nervous system and retinal hemangioblastomas, renal clear cell carcinoma, epididymal cystadenomas, and pancreatic neuroendocrine tumors, as well as visceral, especially renal and pancreatic, cysts. We report a single family including five patients with genetically confirmed vHL in which every member had PHEO diagnosed during pediatric care. The presented family had a missense variant in thegene (exon 1, g.A451G, p.S80G) which has been connected with an increased risk of PHEO. Performing screening laboratory and imaging tests in patients with genetically confirmed vHL may help to avoid the occurrence of disease symptoms and to perform elective surgery under safe conditions. Due to the risk of coexisting pathologies and the complexity of the disease, patients with vHL require long-term care.",
+  "doi": "10.4274/jcrpe.galenos.2024.2024-2-1",
+  "journal": {
+   "title": "Journal of clinical research in pediatric endocrinology",
+   "iso_abbreviation": "J Clin Res Pediatr Endocrinol"
+  },
+  "authors": [
+   {
+    "last_name": "Pasternak-Pietrzak",
+    "fore_name": "Katarzyna",
+    "initials": "K",
+    "affiliations": [
+     "The Children&#x2019;s Memorial Health Institute (CMHI), Department of Endocrinology and Diabetology, Warsaw, Poland"
+    ]
+   },
+   {
+    "last_name": "Koz&#x142;owska",
+    "fore_name": "Agata",
+    "initials": "A",
+    "affiliations": [
+     "The Children&#x2019;s Memorial Health Institute (CMHI), Department of Endocrinology and Diabetology, Warsaw, Poland"
+    ]
+   },
+   {
+    "last_name": "Moszczy&#x144;ska",
+    "fore_name": "El&#x17c;bieta",
+    "initials": "E",
+    "affiliations": [
+     "The Children&#x2019;s Memorial Health Institute (CMHI), Department of Endocrinology and Diabetology, Warsaw, Poland"
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2024",
+   "month": "09",
+   "day": "23"
+  },
+  "keywords": [
+   "adrenal paraganglioma",
+   "metanephrines",
+   "pheochromocytoma",
+   "von Hippel-Lindau syndrome"
+  ],
+  "mesh_terms": [
+   "Humans",
+   "von Hippel-Lindau Disease",
+   "Pheochromocytoma",
+   "Male",
+   "Adrenal Gland Neoplasms",
+   "Female",
+   "Child",
+   "Follow-Up Studies",
+   "Adolescent",
+   "Von Hippel-Lindau Tumor Suppressor Protein",
+   "Pedigree",
+   "Mutation, Missense",
+   "Adult"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Case Reports"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "18",
+   "issue": "Suppl 1",
+   "pages": "12-19"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "39415662",
+   "pmc": "PMC13197100",
+   "doi": "10.4274/jcrpe.galenos.2024.2024-3-5"
+  },
+  "title": "Unraveling a Genetic Puzzle: CouldBe a Candidate Gene for RASopathies?",
+  "abstract": "Noonan syndrome (NS) diagnosis may be challenging because of diverse clinical manifestations. This case report highlights a novel role forin NS. A 10.4-year-old female patient presented with short stature and clinical findings suggestive of RASopathy. Despite atypical facial features, the patient met two major van der Burgt diagnostic criteria. Initial genetic testing for known NS-associated genes did not find any variants. Later, whole exome sequencing identified a uniqueheterozygous variant [c.65C>A, p.(P22H)] in. This variant, categorized as a variant of uncertain significance by the American College of Medical Genetics and Genomics criteria, raised questions about its potential role in NS. The patient&#x2019;s clinical presentation deviated from classical manifestations of-associated syndromes, highlighting the complexity ofgenetic and molecular mechanisms. Notably, this is the first case reported to associatevariants with NS. Despite the known challenges in NS diagnosis, proper management, including recombinant growth hormone therapy, is important to optimize growth potential. The case suggests thatmay be a potential candidate gene for NS, but more functional genetic investigations are required to clarify the delicate interaction between genetic abnormalities, the RAS/mitogen-activated protein kinase pathway, and clinical manifestations observed in NS cases.",
+  "doi": "10.4274/jcrpe.galenos.2024.2024-3-5",
+  "journal": {
+   "title": "Journal of clinical research in pediatric endocrinology",
+   "iso_abbreviation": "J Clin Res Pediatr Endocrinol"
+  },
+  "authors": [
+   {
+    "last_name": "K&#x131;z&#x131;lcan &#xc7;etin",
+    "fore_name": "Sirmen",
+    "initials": "S",
+    "affiliations": [
+     "Ankara University Faculty of Medicine, Department of Pediatric Endocrinology, Ankara, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "&#x15e;&#x131;klar",
+    "fore_name": "Zeynep",
+    "initials": "Z",
+    "affiliations": [
+     "Ankara University Faculty of Medicine, Department of Pediatric Endocrinology, Ankara, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Aycan",
+    "fore_name": "Zehra",
+    "initials": "Z",
+    "affiliations": [
+     "Ankara University Faculty of Medicine, Department of Pediatric Endocrinology, Ankara, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "&#xd6;zsu",
+    "fore_name": "Elif",
+    "initials": "E",
+    "affiliations": [
+     "Ankara University Faculty of Medicine, Department of Pediatric Endocrinology, Ankara, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Ceylaner",
+    "fore_name": "Serdar",
+    "initials": "S",
+    "affiliations": [
+     "Intergen Genetic Diagnosis and Research Center, Department of Medical Genetics, Ankara, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Berbero&#x11f;lu",
+    "fore_name": "Merih",
+    "initials": "M",
+    "affiliations": [
+     "Ankara University Faculty of Medicine, Department of Pediatric Endocrinology, Ankara, T&#xfc;rkiye"
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2024",
+   "month": "10",
+   "day": "17"
+  },
+  "keywords": [
+   "MAP3K7",
+   "short stature",
+   "Noonan syndrome"
+  ],
+  "mesh_terms": [
+   "Humans",
+   "Female",
+   "Noonan Syndrome",
+   "Child",
+   "Exome Sequencing",
+   "Mutation"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Case Reports"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "18",
+   "issue": "Suppl 1",
+   "pages": "30-36"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "40099975",
+   "pmc": "PMC13197092",
+   "doi": "10.4274/jcrpe.galenos.2025.2024-10-12"
+  },
+  "title": "Thauvin-Robinet-Faivre Syndrome: AVariant in an Adolescent with Segmental Overgrowth and Thyroid Carcinoma.",
+  "abstract": "Overgrowth syndromes are rare genetic disorders arising from alterations in the growth factors pathway. These syndromes can present as generalized overgrowth, characterized by macrosomia and excessive height compared to peers, or partial overgrowth syndromes, where specific body regions exhibit disproportionate growth often accompanied by vascular anomalies. Both forms are associated with an increased risk of tumor development. Thegene plays a critical role in cell proliferation and differentiation by interacting with growth factors. In this article, we present a case of Thauvin-Robinet-Faivre syndrome (TROFAS) in a 16-year-old girl, diagnosed with homozygous NM_004214.5 c.412-3_415dup (p. Asp139AIafsTer3) variant in thegene. This case exhibits phenotypic features and tumor development, including thyroid follicular carcinoma and parotid mucoepidermoid carcinoma, that have not been previously reported in association with this syndrome. Recent studies have implicatedgene defects in overgrowth syndromes, with only a limited number of cases described globally. This case expands the known clinical and tumor spectrum associated with TROFAS, providing new insights into the pathophysiology of this rare disorder.",
+  "doi": "10.4274/jcrpe.galenos.2025.2024-10-12",
+  "journal": {
+   "title": "Journal of clinical research in pediatric endocrinology",
+   "iso_abbreviation": "J Clin Res Pediatr Endocrinol"
+  },
+  "authors": [
+   {
+    "last_name": "&#x15e;iraz",
+    "fore_name": "&#xdc;lk&#xfc; G&#xfc;l",
+    "initials": "&#xdc;G",
+    "affiliations": [
+     "Erciyes University Faculty of Medicine, Department of Pediatric Endocrinology, Kayseri, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Ko&#xe7;ak G&#xf6;l",
+    "fore_name": "Deniz",
+    "initials": "D",
+    "affiliations": [
+     "Erciyes University Faculty of Medicine, Department of Pediatric Hematology-Oncology, Kayseri, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Rohlfs",
+    "fore_name": "Meino",
+    "initials": "M",
+    "affiliations": [
+     "Ludwig-Maximilians-University, Genetic Dr. Von Hauner Children&#x2019;s Hospital, Department of Pediatrics, Lindwurmstr, Munich, Germany"
+    ]
+   },
+   {
+    "last_name": "Klein",
+    "fore_name": "Christoph",
+    "initials": "C",
+    "affiliations": [
+     "Ludwig-Maximilians-University, Genetic Dr. Von Hauner Children&#x2019;s Hospital, Department of Pediatrics, Lindwurmstr, Munich, Germany"
+    ]
+   },
+   {
+    "last_name": "&#xdc;nal",
+    "fore_name": "Ekrem",
+    "initials": "E",
+    "affiliations": [
+     "Hasan Kalyoncu University Faculty of Health Sciences; Medical Point Hospital, Department of Pediatric Hematology Oncology and Bone Marrow Transplantation Unit, Gaziantep, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Hatipo&#x11f;lu",
+    "fore_name": "Nihal",
+    "initials": "N",
+    "affiliations": [
+     "Erciyes University Faculty of Medicine, Department of Pediatric Endocrinology, Kayseri, T&#xfc;rkiye"
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2025",
+   "month": "03",
+   "day": "18"
+  },
+  "keywords": [
+   "FGF-1 intracellular binding protein (FIBP) gene",
+   "Overgrowth syndromes",
+   "cancer"
+  ],
+  "mesh_terms": [
+   "Humans",
+   "Adolescent",
+   "Female",
+   "Thyroid Neoplasms",
+   "Growth Disorders"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Case Reports"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "18",
+   "issue": "Suppl 1",
+   "pages": "75-82"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "38912718",
+   "pmc": "PMC13197102",
+   "doi": "10.4274/jcrpe.galenos.2024.2024-3-13"
+  },
+  "title": "A Rare Presentation of 17&#x3b1;-Hydroxylase/17,20-Lyase Deficiency in a Patient with Non-Hodgkin&#x2019;s Lymphoma: A Case Report.",
+  "abstract": "17&#x3b1;&#x2011;hydroxylase/17,20&#x2011;lyase deficiency (17OHD) is a rare form of congenital adrenal hyperplasia that causes decreased cortisol and sex steroid levels and leads to high production of adrenocorticotropic hormone. Although affected patients have absolute cortisol deficiency, they do not show clinical signs of cortisol deficiency or hyperpigmentation. These patients most commonly present with delayed puberty and amenorrhea at late pubertal age. Impaired production of sex steroids leads to ambiguous or female external genitalia in affected 46, XY individuals. In this report, we describe a patient with 17OHD who presented with hyperpigmentation and hypergonadotropic hypogonadism while receiving chemotherapy.",
+  "doi": "10.4274/jcrpe.galenos.2024.2024-3-13",
+  "journal": {
+   "title": "Journal of clinical research in pediatric endocrinology",
+   "iso_abbreviation": "J Clin Res Pediatr Endocrinol"
+  },
+  "authors": [
+   {
+    "last_name": "Tekkeli",
+    "fore_name": "Niran",
+    "initials": "N",
+    "affiliations": [
+     "Yeditepe University Faculty of Medicine, Department of Pediatrics, &#x130;stanbul, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Kurt",
+    "fore_name": "&#x130;lknur",
+    "initials": "&#x130;",
+    "affiliations": [
+     "Marmara University Faculty of Medicine, Department of Pediatric Endocrinology, &#x130;stanbul, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Yalman",
+    "fore_name": "Nevin",
+    "initials": "N",
+    "affiliations": [
+     "Yeditepe University Faculty of Medicine, Department of Pediatric Hematology, &#x130;stanbul, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Timur",
+    "fore_name": "&#xc7;etin",
+    "initials": "&#xc7;",
+    "affiliations": [
+     "Yeditepe University Faculty of Medicine, Department of Pediatric Hematology, &#x130;stanbul, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Demir",
+    "fore_name": "&#x15e;enol",
+    "initials": "&#x15e;",
+    "affiliations": [
+     "Marmara University Faculty of Medicine, Department of Medical Genetics, &#x130;stanbul, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Sa&#x11f;sak",
+    "fore_name": "Elif",
+    "initials": "E",
+    "affiliations": [
+     "Yeditepe University Faculty of Medicine, Department of Pediatric Endocrinology, &#x130;stanbul, T&#xfc;rkiye"
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2024",
+   "month": "10",
+   "day": "10"
+  },
+  "keywords": [
+   "CYP17A1 gene",
+   "disorders/differences in sex development",
+   "hyperpigmentation",
+   "17&#x3b1;-hydroxylase deficiency",
+   "hypergonadotropic hypogonadism"
+  ],
+  "mesh_terms": [
+   "Humans",
+   "Adrenal Hyperplasia, Congenital",
+   "Steroid 17-alpha-Hydroxylase",
+   "Lymphoma, Non-Hodgkin",
+   "Female",
+   "Adolescent",
+   "Hyperpigmentation",
+   "Hypogonadism"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Case Reports"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "18",
+   "issue": "Suppl 1",
+   "pages": "1-5"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "39462987",
+   "pmc": "PMC13197095",
+   "doi": "10.4274/jcrpe.galenos.2024.2024-6-25"
+  },
+  "title": "A Rare Coexistence of Turner Syndrome and Mycosis Fungoides: A Case Report.",
+  "abstract": "Turner syndrome (TS) is the most common sex chromosome abnormality among females, characterized by short stature, hypergonadotropic hypogonadism, congenital heart anomalies, and an increased risk of autoimmune diseases. Although TS does not typically increase the absolute risk of malignancy, specific cancers, such as those affecting the nervous system and gastrointestinal tract and malignant melanoma, may occur more frequently. Mycosis fungoides (MF) is the most common type of primary cutaneous T-cell lymphoma, generally affecting otherwise healthy adults but also seen in children and adolescents. We report an 11.2-year-old girl with TS presenting with substantial weight gain and short stature. Clinical examination revealed characteristic TS features and karyotype analysis confirmed mosaic TS. Following growth hormone (GH) therapy, the patient developed persistent, erythematous, itchy skin lesions diagnosed as folliculotropic MF. GH therapy was discontinued, and topical steroids controlled the skin lesions effectively. MF in TS is very rare and unexpected, especially in a child. This is the first reported case of MF in a child with TS. This case highlights the importance of carefully evaluating skin lesions in patients with TS and suggests considering MF as a differential diagnosis.",
+  "doi": "10.4274/jcrpe.galenos.2024.2024-6-25",
+  "journal": {
+   "title": "Journal of clinical research in pediatric endocrinology",
+   "iso_abbreviation": "J Clin Res Pediatr Endocrinol"
+  },
+  "authors": [
+   {
+    "last_name": "Bayrak Demirel",
+    "fore_name": "Ozge",
+    "initials": "O",
+    "affiliations": [
+     "&#x130;stanbul University, &#x130;stanbul Faculty of Medicine, Department of Pediatrics, Division of Pediatric Endocrinology, &#x130;stanbul, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Karakilic-Ozturan",
+    "fore_name": "Esin",
+    "initials": "E",
+    "affiliations": [
+     "&#x130;stanbul University, &#x130;stanbul Faculty of Medicine, Department of Pediatrics, Division of Pediatric Endocrinology, &#x130;stanbul, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Atci",
+    "fore_name": "Tugba",
+    "initials": "T",
+    "affiliations": [
+     "&#x130;stanbul University, &#x130;stanbul Faculty of Medicine, Department of Dermatology and Venereology, &#x130;stanbul, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Ozturk Sari",
+    "fore_name": "Sule",
+    "initials": "S",
+    "affiliations": [
+     "&#x130;stanbul University, &#x130;stanbul Faculty of Medicine, Department of Pathology, &#x130;stanbul, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Baykal",
+    "fore_name": "Can",
+    "initials": "C",
+    "affiliations": [
+     "&#x130;stanbul University, &#x130;stanbul Faculty of Medicine, Department of Dermatology and Venereology, &#x130;stanbul, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Kardelen",
+    "fore_name": "Asli Derya",
+    "initials": "AD",
+    "affiliations": [
+     "&#x130;stanbul University, &#x130;stanbul Faculty of Medicine, Department of Pediatrics, Division of Pediatric Endocrinology, &#x130;stanbul, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Yildiz",
+    "fore_name": "Melek",
+    "initials": "M",
+    "affiliations": [
+     "&#x130;stanbul University, &#x130;stanbul Faculty of Medicine, Department of Pediatrics, Division of Pediatric Endocrinology, &#x130;stanbul, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Poyrazoglu",
+    "fore_name": "Sukran",
+    "initials": "S",
+    "affiliations": [
+     "&#x130;stanbul University, &#x130;stanbul Faculty of Medicine, Department of Pediatrics, Division of Pediatric Endocrinology, &#x130;stanbul, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Bas",
+    "fore_name": "Firdevs",
+    "initials": "F",
+    "affiliations": [
+     "&#x130;stanbul University, &#x130;stanbul Faculty of Medicine, Department of Pediatrics, Division of Pediatric Endocrinology, &#x130;stanbul, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Darendeliler",
+    "fore_name": "Feyza",
+    "initials": "F",
+    "affiliations": [
+     "&#x130;stanbul University, &#x130;stanbul Faculty of Medicine, Department of Pediatrics, Division of Pediatric Endocrinology, &#x130;stanbul, T&#xfc;rkiye"
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2024",
+   "month": "10",
+   "day": "28"
+  },
+  "keywords": [
+   "Turner syndrome",
+   "malignancy",
+   "mycosis fungoides",
+   "primary cutaneous T-cell lymphoma"
+  ],
+  "mesh_terms": [
+   "Humans",
+   "Female",
+   "Turner Syndrome",
+   "Mycosis Fungoides",
+   "Child",
+   "Skin Neoplasms",
+   "Human Growth Hormone"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Case Reports"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "18",
+   "issue": "Suppl 1",
+   "pages": "25-29"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "39710984",
+   "pmc": "PMC13197094",
+   "doi": "10.4274/jcrpe.galenos.2024.2024-7-11"
+  },
+  "title": "Permanent Neonatal Diabetes with High Insulin Requirements due to a New Variant in theGene.",
+  "abstract": "Neonatal diabetes is an infrequent disorder that may present as transient, permanent, or syndromic. It is most commonly caused by pathogenic variants involving the,, andgenes. This report describes a neonate with permanent diabetes mellitus due to a previously unreported variant in thegene, outlining the diagnostic complexities, therapeutic interventions, and related clinical challenges. The neonate with a history of symmetrical intrauterine growth restriction presented with severe hyperglycemia not associated with ketosis or infectious. He had high insulin requirements and did not respond to sulfonylurea management. Anti-insulin and anti-islet pancreatic antibodies were negative. Genetic sequencing revealed a homozygous missense variant (c.3G>A, p.Met1Ile) in, which had not been previously reported. Timely molecular diagnosis of neonatal diabetes enabled optimization of management strategies, mitigating the long-term impact on growth, neurodevelopment, and the occurrence of hypoglycemic episodes.",
+  "doi": "10.4274/jcrpe.galenos.2024.2024-7-11",
+  "journal": {
+   "title": "Journal of clinical research in pediatric endocrinology",
+   "iso_abbreviation": "J Clin Res Pediatr Endocrinol"
+  },
+  "authors": [
+   {
+    "last_name": "Hern&#xe1;ndez",
+    "fore_name": "Johana Andrea Botero",
+    "initials": "JAB",
+    "affiliations": [
+     "University of Antioquia Faculty of Medicine, Department of Pediatric Endocrinology, Medell&#xed;n, Colombia"
+    ]
+   },
+   {
+    "last_name": "Gonz&#xe1;lez-Valencia",
+    "fore_name": "Gina",
+    "initials": "G",
+    "affiliations": [
+     "University of Antioquia Faculty of Medicine, Department of Pediatric Endocrinology, Medell&#xed;n, Colombia"
+    ]
+   },
+   {
+    "last_name": "Suarez",
+    "fore_name": "Vanessa",
+    "initials": "V",
+    "affiliations": [
+     "Fundaci&#xf3;n Hospital Infantil Los &#xc1;ngeles, Clinic of Pediatric Endocrinology, Pasto, Nari&#xf1;o, Colombia"
+    ]
+   },
+   {
+    "last_name": "del Castillo",
+    "fore_name": "Gabriel",
+    "initials": "G",
+    "affiliations": [
+     "Fundaci&#xf3;n Hospital Infantil Los &#xc1;ngeles, Clinic of Pediatric Endocrinology, Pasto, Nari&#xf1;o, Colombia"
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2024",
+   "month": "12",
+   "day": "23"
+  },
+  "keywords": [
+   "Neonatal diabetes mellitus",
+   "newborn",
+   "insulin gene"
+  ],
+  "mesh_terms": [
+   "Humans",
+   "Infant, Newborn",
+   "Diabetes Mellitus",
+   "Male",
+   "Insulin",
+   "Mutation, Missense",
+   "Infant, Newborn, Diseases",
+   "Hypoglycemic Agents"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Case Reports"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "18",
+   "issue": "Suppl 1",
+   "pages": "45-49"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "39012089",
+   "pmc": "PMC13197086",
+   "doi": "10.4274/jcrpe.galenos.2024.2024-3-8"
+  },
+  "title": "Autosomal Recessive Hypophosphatemic Rickets Type 2 Associated with a NovelVariant in a Taiwanese Girl.",
+  "abstract": "Autosomal recessive hypophosphatemic rickets (ARHR) type 2 (ARHR2) is a rare form of hypophosphatemic rickets (HR) caused by a variant of the gene encoding ectonucleotide pyrophosphatase/phosphodiesterase 1 (). Our patient presented with a history of unsteady gait and progressively bowing legs that had commenced at the age of one year. Laboratory tests revealed elevated fibroblast growth factor 23 level, hypophosphatemia, and high urine phosphate level. Radiography revealed the typical features of rickets. Next-generation sequencing identified a previously reported c.783C>G (p.Tyr261Ter) and a novel c.1092-42A>G variant in. The patient was prescribed oral phosphates and active vitamin D and underwent guided growth of both distal femora and proximal tibiae commencing at the age of three years. No evidence of generalized arterial calcification was apparent during follow-up, and growth rate was satisfactory.",
+  "doi": "10.4274/jcrpe.galenos.2024.2024-3-8",
+  "journal": {
+   "title": "Journal of clinical research in pediatric endocrinology",
+   "iso_abbreviation": "J Clin Res Pediatr Endocrinol"
+  },
+  "authors": [
+   {
+    "last_name": "Lin",
+    "fore_name": "Han-Yi",
+    "initials": "HY",
+    "affiliations": [
+     "National Taiwan University Hospital Hsinchu Branch, Department of Pediatrics, Hsinchu, Taiwan"
+    ]
+   },
+   {
+    "last_name": "Lee",
+    "fore_name": "Ni-Chung",
+    "initials": "NC",
+    "affiliations": [
+     "National Taiwan University Hospital, Department of Medical Genetics, Taipei, Taiwan"
+    ]
+   },
+   {
+    "last_name": "Melody Tsai",
+    "fore_name": "Meng-Ju",
+    "initials": "MJ",
+    "affiliations": [
+     "National Taiwan University Hospital Yunlin Branch, Department of Pediatrics, Douliu, Yunlin, Taiwan"
+    ]
+   },
+   {
+    "last_name": "Wang",
+    "fore_name": "Ting-Ming",
+    "initials": "TM",
+    "affiliations": [
+     "National Taiwan University Hospital, Department of Orthopedic Surgery, Taipei, Taiwan"
+    ]
+   },
+   {
+    "last_name": "Tung",
+    "fore_name": "Yi-Ching",
+    "initials": "YC",
+    "affiliations": [
+     "National Taiwan University Hospital, Department of Pediatrics, Taipei, Taiwan"
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2024",
+   "month": "07",
+   "day": "16"
+  },
+  "keywords": [
+   "Encoding ectonucleotide pyrophosphatase/phosphodiesterase 1 (ENPP1)",
+   "fibroblast growth factor 23 (FGF23)",
+   "hypophosphatemic rickets"
+  ],
+  "mesh_terms": [
+   "Humans",
+   "Female",
+   "Pyrophosphatases",
+   "Phosphoric Diester Hydrolases",
+   "Familial Hypophosphatemic Rickets",
+   "Taiwan",
+   "Fibroblast Growth Factor-23",
+   "Mutation",
+   "Child, Preschool",
+   "Infant",
+   "Rickets, Hypophosphatemic"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Case Reports"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "18",
+   "issue": "Suppl 1",
+   "pages": "6-11"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "40103355",
+   "pmc": "PMC13197103",
+   "doi": "10.4274/jcrpe.galenos.2025.2024-12-4"
+  },
+  "title": "Xp21 Contiguous Gene Deletion Syndrome: Diagnosis, Treatment, and a Review of the Literature on a Rare Genetic Disorder.",
+  "abstract": "Xp21 contiguous gene deletion syndrome is an uncommon genetic condition associated with complex glycerol kinase deficiency (), congenital adrenal hypoplasia (), Duchenne muscular dystrophy (), and, in some cases, intellectual disability. Clinical findings vary based on the size of the deletion and the number of affected genes. To date, over 100 male patients with this syndrome have been reported, while the number of symptomatic female carriers is quite limited. In this article, we present the diagnosis and treatment process of a case exhibiting dysmorphic facial features, signs of adrenal insufficiency, pseudo-hypertriglyceridemia, and elevated creatine phosphokinase levels. The patient&#x2019;s serum 17-hydroxyprogesterone levels were normal, and the adrenal glands were not observable via magnetic resonance imaging. An Xp21.2 deletion () was identified in the case. Treatment with hydrocortisone, fludrocortisone, and oral salt was arranged. This case highlights the rare yet significant clinical and genetic diversity of Xp21 contiguous gene deletion syndrome.",
+  "doi": "10.4274/jcrpe.galenos.2025.2024-12-4",
+  "journal": {
+   "title": "Journal of clinical research in pediatric endocrinology",
+   "iso_abbreviation": "J Clin Res Pediatr Endocrinol"
+  },
+  "authors": [
+   {
+    "last_name": "Singin",
+    "fore_name": "Berna",
+    "initials": "B",
+    "affiliations": [
+     "Akdeniz University Faculty of Medicine, Department of Pediatric Endocrinology, Antalya, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Donbalo&#x11f;lu",
+    "fore_name": "Zeynep",
+    "initials": "Z",
+    "affiliations": [
+     "Akdeniz University Faculty of Medicine, Department of Pediatric Endocrinology, Antalya, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Barsal &#xc7;etiner",
+    "fore_name": "Ebru",
+    "initials": "E",
+    "affiliations": [
+     "Akdeniz University Faculty of Medicine, Department of Pediatric Endocrinology, Antalya, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Bedel",
+    "fore_name": "Aynur",
+    "initials": "A",
+    "affiliations": [
+     "Akdeniz University Faculty of Medicine, Department of Pediatric Endocrinology, Antalya, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "&#xc7;etin",
+    "fore_name": "K&#xfc;r&#x15f;at",
+    "initials": "K",
+    "affiliations": [
+     "Akdeniz University Faculty of Medicine, Department of Pediatric Endocrinology, Antalya, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Akcan Paksoy",
+    "fore_name": "Belgin",
+    "initials": "B",
+    "affiliations": [
+     "Akdeniz University Faculty of Medicine, Department of Pediatric Metabolic Diseases, Antalya, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Kalkan",
+    "fore_name": "Tarkan",
+    "initials": "T",
+    "affiliations": [
+     "University of Health Sciences T&#xfc;rkiye, Antalya Training and Research Hospital, Clinic of Molecular Genetics, Antalya, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Akba&#x15f;",
+    "fore_name": "Halide",
+    "initials": "H",
+    "affiliations": [
+     "Akdeniz University Faculty of Medicine, Department of Medical Biochemistry, Antalya, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "&#xdc;nver Tuhan",
+    "fore_name": "Hale",
+    "initials": "H",
+    "affiliations": [
+     "Akdeniz University Faculty of Medicine, Department of Pediatric Endocrinology, Antalya, T&#xfc;rkiye"
+    ]
+   },
+   {
+    "last_name": "Parlak",
+    "fore_name": "Mesut",
+    "initials": "M",
+    "affiliations": [
+     "Akdeniz University Faculty of Medicine, Department of Pediatric Endocrinology, Antalya, T&#xfc;rkiye"
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2025",
+   "month": "03",
+   "day": "19"
+  },
+  "keywords": [
+   "Complex glycerol kinase deficiency",
+   "Duchenne muscular dystrophy",
+   "congenital adrenal hypoplasia",
+   "glycerol kinase deficiency",
+   "pseudo-hypertriglyceridemia"
+  ],
+  "mesh_terms": [
+   "Humans",
+   "Male",
+   "Gene Deletion",
+   "Glycerol Kinase",
+   "Muscular Dystrophy, Duchenne",
+   "Chromosomes, Human, X",
+   "Rare Diseases",
+   "Adrenal Insufficiency",
+   "Genetic Diseases, X-Linked",
+   "DAX-1 Orphan Nuclear Receptor",
+   "Female"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Case Reports",
+   "Review"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "18",
+   "issue": "Suppl 1",
+   "pages": "83-91"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "42170892",
+   "doi": "10.1210/clinem/dgag215",
+   "pii": "8690490"
+  },
+  "title": "APPROACH TO THE PATIENT: Genetics and Management of Congenital Hypothyroidism.",
+  "abstract": "Congenital hypothyroidism (CH) encompasses a diverse spectrum of disorders with diverse genetic etiologies and variable clinical courses, ranging from transient neonatal hyperthyrotropinemia to permanent thyroid hormone or thyrotropin deficiency. Advances in molecular genetics have substantially expanded the catalog of genes implicated in CH; however, the translation of this knowledge into everyday clinical practice remains challenging. In this Approach to the Patient, we use selected clinical vignettes to illustrate how genetic information can substantiate the diagnosis, management, and counseling of patients with CH. Rather than providing an exhaustive genetic review, this paper focuses on clinically relevant scenarios and pragmatic decision points-when to perform genetic testing, how results influence treatment duration and intensity, and how they guide prognostication and family counseling. This case-based framework emphasizes a pragmatic, patient-centered approach to the use of genetics in the management of CH.",
+  "doi": "10.1210/clinem/dgag215",
+  "journal": {
+   "title": "The Journal of clinical endocrinology and metabolism",
+   "iso_abbreviation": "J Clin Endocrinol Metab"
+  },
+  "authors": [
+   {
+    "last_name": "Nguyen Quoc",
+    "fore_name": "Adrien",
+    "initials": "A",
+    "affiliations": [
+     "Paris Cit&#xe9; University, INSERM U1016, Cochin Institute; Paris, France.",
+     "IMAGINE Institute Affiliate, Paris, France.",
+     "Pediatric Endocrinology and Diabetology Department, Jean Minjoz University Hospital, Besan&#xe7;on, France."
+    ]
+   },
+   {
+    "last_name": "Kariyawasam",
+    "fore_name": "Dulanjalee",
+    "initials": "D",
+    "affiliations": [
+     "Paris Cit&#xe9; University, INSERM U1016, Cochin Institute; Paris, France.",
+     "IMAGINE Institute Affiliate, Paris, France.",
+     "Pediatric Endocrinology, Gynecology and Diabetology Department, Necker-Enfants Malades University Hospital, Assistance Publique-H&#xf4;pitaux de Paris, Paris, France."
+    ]
+   },
+   {
+    "last_name": "Polak",
+    "fore_name": "Michel",
+    "initials": "M",
+    "affiliations": [
+     "Paris Cit&#xe9; University, INSERM U1016, Cochin Institute; Paris, France.",
+     "IMAGINE Institute Affiliate, Paris, France.",
+     "Pediatric Endocrinology, Gynecology and Diabetology Department, Necker-Enfants Malades University Hospital, Assistance Publique-H&#xf4;pitaux de Paris, Paris, France.",
+     "Referral Center for Rare Endocrine Diseases Affecting Growth and Development, Necker-Enfants Malades University Hospital, Paris, France.",
+     "Regional Neonatal Screening Center (CRDN) for the &#xce;le-de-France region, Paris, France."
+    ]
+   },
+   {
+    "last_name": "Carr&#xe9;",
+    "fore_name": "Aurore",
+    "initials": "A",
+    "affiliations": [
+     "Paris Cit&#xe9; University, INSERM U1016, Cochin Institute; Paris, France.",
+     "IMAGINE Institute Affiliate, Paris, France."
+    ]
+   },
+   {
+    "last_name": "Stoupa",
+    "fore_name": "Athanasia",
+    "initials": "A",
+    "affiliations": [
+     "Paris Cit&#xe9; University, INSERM U1016, Cochin Institute; Paris, France.",
+     "IMAGINE Institute Affiliate, Paris, France.",
+     "Pediatric Endocrinology, Gynecology and Diabetology Department, Necker-Enfants Malades University Hospital, Assistance Publique-H&#xf4;pitaux de Paris, Paris, France.",
+     "Referral Center for Rare Endocrine Diseases Affecting Growth and Development, Necker-Enfants Malades University Hospital, Paris, France.",
+     "Regional Neonatal Screening Center (CRDN) for the &#xce;le-de-France region, Paris, France."
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2026",
+   "month": "05",
+   "day": "22"
+  },
+  "keywords": [
+   "central hypothyroidism",
+   "congenital hypothyroidism",
+   "dyshormonogenesis",
+   "genetics",
+   "newborn screening",
+   "thyroid dysgenesis"
+  ],
+  "article_types": [
+   "Journal Article"
+  ],
+  "language": "eng"
+ }
+]

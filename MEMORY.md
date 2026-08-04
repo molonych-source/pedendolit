@@ -1,0 +1,62 @@
+# PedEndoLit Dashboard — Memory
+
+Project memory for the PedEndoLit pediatric endocrinology literature dashboard.
+Durable facts, decisions, and architecture. For open ideas and to-dos see `TASKS.md`
+in this same folder. For the weekly run procedure see `WEEKLY_REFRESH_RUNBOOK.md`.
+
+## What this is
+A self-contained literature-surveillance dashboard that replaces the paid Perplexity
+Computer workflow. Pulls pediatric endocrinology articles from 19 monitored journals
+via PubMed (free NCBI E-utilities, accessed through the PubMed MCP), classifies each
+with a rules-based classifier ported from the Perplexity spec, and renders a single
+self-contained `PedEndoLit-Dashboard.html` (data embedded; opens by double-click, no
+server). Goal: drop the Perplexity subscription, run everything inside Cowork.
+
+## Architecture (the pipeline)
+- **`journals.json`** — 19 monitored journals + PEDS_TERMS + Template A/B (peds-filter) flags.
+- **`classifier.py`** — the rules classifier (currently v2.5-equivalent: v2.4.2 spec + diabetes framework + Gender Medicine + Calcium/Parathyroid split). Pure functions, unit-tested.
+- **`build_dataset.py`** — fetch→classify→dedup(by PMID)→60-day archive + is_new reset→writes `pedendolit-data.json`. `--rebuild` reclassifies all raw from scratch (use after classifier edits). Decodes HTML entities (`&#xa0;` etc.) at ingest.
+- **`build_dashboard.py`** — reads the datastore, writes `PedEndoLit-Dashboard.html` (+ a copy to `01_Clinical_Research/` and the publish copy `index.html`). Holds the WEB3FORMS_KEY and the entry-date override logic.
+- **`pedendolit-data.json`** — the datastore (active + archived, keyed by PMID).
+- **Weekly refresh** — scheduled task, Sundays ~9:01 AM ET, follows `WEEKLY_REFRESH_RUNBOOK.md`. Replaces the old Perplexity cron.
+
+## Source-of-truth spec documents (in this folder)
+- `PedEndoLit_Classifier_Spec_v2.4.2.docx` — full classification logic (exclusions, 25-branch topic waterfall, study types, 4-tier impact, board relevance, tags).
+- `PedEndoLit_Retrieval_Config.docx` — the original 18 journals, exact PubMed queries, date window, dedup. Not yet updated for the 19th (APEM, added 2026-07-24 directly to `journals.json`) — see Key Decisions below.
+- `PedEndoLit_Diabetes_Classification_Framework.docx` — diabetes subtype framework (v2.5.0).
+- `all_articles_export.csv` — Perplexity's ground-truth article export (used as the entry-date source for the historical set).
+
+## Key decisions (and the why)
+- **Stricter peds filter kept over matching Perplexity's count.** Perplexity's set is 960; ours is ~878. The gap is Perplexity letting non-pediatric noise through (erectile dysfunction, colorectal cancer, postmenopausal, personal essays). Our v2.4.2 classifier excludes those by design. Decision: keep the clean filter, accept the lower count. (Decided 2026-05-29.)
+- **Month filter keyed on PUBLICATION date (pub_date).** REVERSED the earlier entry-date decision: entry-date bucketing put Jan–Mar articles under "June 2026" (when Perplexity indexed them), which confused the "Month" filter — a clinician expects "published in." Now month_key = pub_date month for every article; verified 0 mismatches between an article's month bucket and its displayed date. Trade-off accepted: the dropdown again lists older real publication months (back to 2023) for the handful of old-print articles, which is honest. The `all_articles_export.csv` entry-date override is no longer used for month bucketing. (Reversed 2026-05-30; original entry-date approach was 2026-05-29.)
+- **Date scope restricted to 2026 (+ small 2025 tail) on the May-29 pass.** A NEXT step is in flight to expand back to Jan 2025 — see TASKS.md.
+- **Impact segmented filter replaced by the tier-accordion grouping** — grouping by tier IS the impact filter; two controls for one dimension was redundant.
+- **Analytics charts moved to their own tab** (Topic distribution, Evidence impact, Articles by journal); Feed is the default tab.
+- **PubMed search MCP errors at max_results=500 — use 200.** No journal approaches 200 even over 5 months. (Noted in runbook.)
+- **Turner & Prader-Willi intentionally live under Growth** (not a dedicated topic) — GH therapy is the dominant peds-endo touchpoint; the search box covers syndrome-level retrieval. (Decided 2026-05-29.)
+- **Two classifier bugs found via pilot and fixed:** (1) incidental "IGF" / "MEN1" abstract mentions hijacking topic — fixed with subject-vs-mention guards; (2) Systematic Reviews showed the generic "Authoritative review" rationale — now have their own.
+- **Added Annals of Pediatric Endocrinology & Metabolism (APEM) as the 19th monitored journal** (`Ann Pediatr Endocrinol Metab`, `peds_filter: false` — dedicated peds-endo journal like Horm Res Paediatr / J Clin Res Pediatr Endocrinol / J Pediatr Endocrinol Metab). Confirmed active and PubMed-indexed (89 articles since Jan 2025) before adding; ruled out International Journal of Pediatric Endocrinology (IJPE) as a candidate — PubMed shows no articles since ~2021, effectively dormant. Backfilled Jan 2026–present (matching the store's primary Jan–Jul 2026 coverage window for the other 18 journals) on 2026-07-24: 30 candidate PMIDs, 29 added, 1 excluded (erratum). `WEEKLY_REFRESH_RUNBOOK.md` updated to reflect 19 journals; `PedEndoLit_Retrieval_Config.docx` (the original spec doc) still says 18 and hasn't been regenerated. (Decided 2026-07-24.)
+
+## Taxonomy state
+17 topics: Diabetes, Growth, Puberty, Thyroid, Adrenal, Obesity/Metabolic, General
+Endocrinology, Bone/Calcium, Pituitary, Hyperinsulinism, Genetics, Calcium/Parathyroid,
+DSD, PCOS, Gender Medicine, Cancer Late Effects, Lipids.
+Diabetes subtypes: T1D, T1D·Stage, T2D, Technology(subtopic), MODY/Monogenic, CFRD,
+GDM, Steroid-induced, General.
+Recently added: **Gender Medicine** (ABP Domain 16, pre-check before Puberty/DSD with a
+DSD-context guard) and **Calcium/Parathyroid** split out of Bone/Calcium (both 2026-05-29).
+
+## Publishing
+- Static file → any static host. Plan: **GitHub Pages**, public. Publish file is `index.html` (root URL serves it).
+- **Bug/comment form**: Web3Forms (key `bb727558-...` is in `build_dashboard.py`; safe to expose — send-only). Reports email to Christian. First submission triggers a one-time Web3Forms verification email. Sandbox can't test the POST (proxy blocks api.web3forms.com) — test from a real browser.
+- Re-publishing after any change = re-upload `index.html` to the repo (keep the filename to keep the URL). Auto-publish (scheduled task commits to the repo each week) was offered but not yet set up.
+
+## Known limitations / honest caveats
+- `is_new` currently flags ALL articles (backfill artifact); self-corrects once weekly refreshes run, but a clinician-facing "what's new" view isn't trustworthy until then — see TASKS.md.
+- "Other" is the 2nd-largest study-type bucket (~264) — PubMed-untyped articles; low at-a-glance evidence signal.
+- A few DSD enzyme-deficiency terms (e.g. 17β-HSD3) aren't in the DSD keyword list, so those occasionally land in General Endocrinology.
+- 28 backfilled articles had abstracts condensed (not verbatim) by a subagent during fetch; classification verified unaffected.
+
+## Contacts / accounts
+- Web3Forms key: in `build_dashboard.py` (`WEB3FORMS_KEY`).
+- GitHub repo: (to be filled in once Christian creates it — needed for auto-publish.)

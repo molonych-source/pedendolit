@@ -1,0 +1,25 @@
+{
+  "comment": "19 monitored journals per PedEndoLit Retrieval Config (+ Annals of Pediatric Endocrinology & Metabolism, added 2026-07-24). 'abbr' is used verbatim in the [Journal] PubMed field tag. 'peds_filter' = true means PEDS_TERMS are ANDed in (Template B).",
+  "peds_terms": "(child[MeSH] OR adolescent[MeSH] OR pediatric[tiab] OR paediatric[tiab] OR children[tiab] OR youth[tiab] OR neonatal[tiab] OR infant[MeSH] OR juvenile[tiab] OR pubertal[tiab] OR puberty[tiab] OR prepubertal[tiab] OR \"young adult\"[tiab] OR adolescence[tiab] OR school-age[tiab] OR teen[tiab])",
+  "journals": [
+    {"name": "Hormone Research in Paediatrics", "abbr": "Horm Res Paediatr", "peds_filter": false},
+    {"name": "Journal of Clinical Endocrinology & Metabolism", "abbr": "J Clin Endocrinol Metab", "peds_filter": true},
+    {"name": "Pediatric Diabetes", "abbr": "Pediatr Diabetes", "peds_filter": false},
+    {"name": "Diabetes Technology & Therapeutics", "abbr": "Diabetes Technol Ther", "peds_filter": false},
+    {"name": "Journal of Clinical Research in Pediatric Endocrinology", "abbr": "J Clin Res Pediatr Endocrinol", "peds_filter": false},
+    {"name": "European Journal of Endocrinology", "abbr": "Eur J Endocrinol", "peds_filter": true},
+    {"name": "Diabetes Care", "abbr": "Diabetes Care", "peds_filter": true},
+    {"name": "Endocrine Reviews", "abbr": "Endocr Rev", "peds_filter": true},
+    {"name": "Nature Reviews Endocrinology", "abbr": "Nat Rev Endocrinol", "peds_filter": true},
+    {"name": "The Lancet Diabetes & Endocrinology", "abbr": "Lancet Diabetes Endocrinol", "peds_filter": true},
+    {"name": "Frontiers in Endocrinology", "abbr": "Front Endocrinol (Lausanne)", "peds_filter": true},
+    {"name": "Clinical Endocrinology", "abbr": "Clin Endocrinol (Oxf)", "peds_filter": true},
+    {"name": "Diabetologia", "abbr": "Diabetologia", "peds_filter": true},
+    {"name": "Journal of Pediatric Endocrinology and Metabolism", "abbr": "J Pediatr Endocrinol Metab", "peds_filter": false},
+    {"name": "Thyroid", "abbr": "Thyroid", "peds_filter": true},
+    {"name": "Journal of the Endocrine Society", "abbr": "J Endocr Soc", "peds_filter": true},
+    {"name": "Diabetes", "abbr": "Diabetes", "peds_filter": true},
+    {"name": "Journal of Diabetes Science and Technology", "abbr": "J Diabetes Sci Technol", "peds_filter": false},
+    {"name": "Annals of Pediatric Endocrinology & Metabolism", "abbr": "Ann Pediatr Endocrinol Metab", "peds_filter": false}
+  ]
+}
