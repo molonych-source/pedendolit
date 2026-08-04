@@ -118,7 +118,10 @@ header .sub{color:var(--muted);font-size:13px}
 .savebtn:hover:not(:disabled){background:var(--soft);color:var(--ink)}
 .savebtn.on{background:var(--accent-bg);color:var(--accent);border-color:var(--accent)}
 .savebtn:disabled{opacity:.4;cursor:not-allowed}
-.modal input[type=email],.modal input[type=password]{width:100%;padding:9px 12px;margin-bottom:8px;border:0.5px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit;font-size:14px}
+.modal input[type=email],.modal input[type=password],.modal input.codein{width:100%;padding:9px 12px;margin-bottom:8px;border:0.5px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit;font-size:14px}
+.modal input.codein{letter-spacing:6px;text-align:center;font-variant-numeric:tabular-nums}
+.modal button.linkbtn{background:none;border:0;padding:0;color:var(--muted);font-size:12px;text-decoration:underline;cursor:pointer}
+.modal button.linkbtn:hover{color:var(--ink);opacity:1}
 .modal .mrow.split{justify-content:space-between}
 .stubhead{display:flex;align-items:center;gap:10px;padding:12px 16px;background:var(--soft);border-bottom:0.5px solid var(--line)}
 .stubrow{display:flex;align-items:center;gap:10px;padding:12px 16px;border-bottom:0.5px solid var(--line)}
@@ -251,8 +254,8 @@ header .sub{color:var(--muted);font-size:13px}
 
 <div class="modal-bg" id="auth-modal">
   <div class="modal">
-    <h3>Sign in to PedsEndoBrief</h3>
-    <p>An account lets you save articles to your own list. Your list is private to you.</p>
+    <h3 id="auth-title">Sign in to PedsEndoBrief</h3>
+    <p id="auth-intro">An account lets you save articles to your own list. Your list is private to you.</p>
     <button type="button" id="auth-google" style="display:none">
       <svg viewBox="0 0 18 18" width="16" height="16" aria-hidden="true"><path fill="#4285F4" d="M17.64 9.2c0-.64-.06-1.25-.16-1.84H9v3.48h4.84a4.14 4.14 0 0 1-1.8 2.72v2.26h2.92c1.7-1.57 2.68-3.88 2.68-6.62z"/><path fill="#34A853" d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.92-2.26c-.8.54-1.84.86-3.04.86-2.34 0-4.32-1.58-5.03-3.7H.96v2.33A9 9 0 0 0 9 18z"/><path fill="#FBBC05" d="M3.97 10.72a5.4 5.4 0 0 1 0-3.44V4.95H.96a9 9 0 0 0 0 8.1l3.01-2.33z"/><path fill="#EA4335" d="M9 3.58c1.32 0 2.5.45 3.44 1.35l2.58-2.58C13.46.9 11.43 0 9 0A9 9 0 0 0 .96 4.95l3.01 2.33C4.68 5.16 6.66 3.58 9 3.58z"/></svg>
       <span>Continue with Google</span>
@@ -261,6 +264,7 @@ header .sub{color:var(--muted);font-size:13px}
     <form id="auth-form">
       <input type="email" id="auth-email" placeholder="you@example.com" autocomplete="email" required/>
       <input type="password" id="auth-pass" placeholder="Password (at least 6 characters)" autocomplete="current-password" required/>
+      <div style="margin:-2px 0 4px"><button type="button" class="linkbtn" id="auth-forgot">Forgot password?</button></div>
       <div class="mrow split">
         <button type="button" id="auth-signup">Create account</button>
         <span>
@@ -269,6 +273,34 @@ header .sub{color:var(--muted);font-size:13px}
         </span>
       </div>
       <div class="msg" id="auth-status"></div>
+    </form>
+    <form id="reset-form" style="display:none">
+      <p id="reset-hint"></p>
+      <input type="email" id="reset-email" placeholder="you@example.com" autocomplete="email"/>
+      <div id="reset-stage2" style="display:none">
+        <input type="text" id="reset-code" class="codein" placeholder="6-digit code" inputmode="numeric" autocomplete="one-time-code" maxlength="6"/>
+        <input type="password" id="reset-newpass" placeholder="New password (at least 6 characters)" autocomplete="new-password"/>
+      </div>
+      <div class="mrow split">
+        <button type="button" class="linkbtn" id="reset-resend" style="display:none">Resend code</button>
+        <span>
+          <button type="button" id="reset-back">Back</button>
+          <button type="submit" class="primary" id="reset-go">Email me a code</button>
+        </span>
+      </div>
+      <div class="msg" id="reset-status"></div>
+    </form>
+    <form id="confirm-form" style="display:none">
+      <p id="confirm-hint"></p>
+      <input type="text" id="confirm-code" class="codein" placeholder="6-digit code" inputmode="numeric" autocomplete="one-time-code" maxlength="6"/>
+      <div class="mrow split">
+        <button type="button" class="linkbtn" id="confirm-resend">Resend code</button>
+        <span>
+          <button type="button" id="confirm-back">Back</button>
+          <button type="submit" class="primary" id="confirm-go">Confirm email</button>
+        </span>
+      </div>
+      <div class="msg" id="confirm-status"></div>
     </form>
   </div>
 </div>
@@ -858,10 +890,122 @@ const amodal=document.getElementById('auth-modal');
 const astatus=document.getElementById('auth-status');
 function openAuth(){
   astatus.textContent='';astatus.className='msg';
+  authView('main');
   amodal.classList.add('show');
   document.getElementById('auth-email').focus();
 }
 function closeAuth(){amodal.classList.remove('show');}
+
+// ---- modal views: sign-in / password reset / signup confirmation ----
+let curView='main';
+function authView(v){
+  curView=v;
+  const main=v==='main';
+  document.getElementById('auth-form').style.display=main?'':'none';
+  document.getElementById('auth-google').style.display=(main&&GOOGLE_ON)?'':'none';
+  document.getElementById('auth-div').style.display=(main&&GOOGLE_ON)?'':'none';
+  document.getElementById('auth-intro').style.display=main?'':'none';
+  document.getElementById('reset-form').style.display=v==='reset'?'':'none';
+  document.getElementById('confirm-form').style.display=v==='confirm'?'':'none';
+  document.getElementById('auth-title').textContent=
+    v==='reset'?'Reset your password':v==='confirm'?'Confirm your email':'Sign in to PedsEndoBrief';
+}
+
+// ---- password reset: email -> 6-digit code -> new password ----
+// Deliberately a code, not a magic link: hospital mail scanners pre-click links
+// and consume one-time tokens before the reader ever sees the email.
+const pwstatus=document.getElementById('reset-status');
+function rmsg(t,c){pwstatus.textContent=t;pwstatus.className='msg'+(c?' '+c:'');}
+let otpOK=false; // a recovery code is single-use; don't re-verify after a failed password update
+function setResetStage(n){
+  document.getElementById('reset-stage2').style.display=n===2?'':'none';
+  document.getElementById('reset-resend').style.display=n===2?'':'none';
+  document.getElementById('reset-email').readOnly=n===2;
+  document.getElementById('reset-go').textContent=n===2?'Set new password':'Email me a code';
+  document.getElementById('reset-hint').textContent=n===2
+    ?'Enter the 6-digit code from the email, then choose a new password.'
+    :"Enter your account email and we'll email you a 6-digit code.";
+}
+function openReset(){
+  authView('reset');setResetStage(1);rmsg('');otpOK=false;
+  document.getElementById('reset-email').value=document.getElementById('auth-email').value.trim();
+  document.getElementById('reset-code').value='';
+  document.getElementById('reset-newpass').value='';
+  document.getElementById('reset-email').focus();
+}
+async function sendResetCode(fromResend){
+  const em=document.getElementById('reset-email').value.trim();
+  if(!em){rmsg('Enter your email address.','err');return;}
+  const b=document.getElementById('reset-go');b.disabled=true;
+  rmsg('Sending code…');
+  try{
+    const {error}=await SB.auth.resetPasswordForEmail(em);
+    if(error)rmsg(error.message,'err');
+    else{
+      setResetStage(2);otpOK=false;
+      rmsg('If an account exists for that address, a 6-digit code is on its way.','ok');
+      if(!fromResend)document.getElementById('reset-code').focus();
+    }
+  }catch(e){rmsg('Network error — please try again.','err');}
+  b.disabled=false;
+}
+async function submitReset(){
+  if(document.getElementById('reset-stage2').style.display==='none'){sendResetCode(false);return;}
+  const em=document.getElementById('reset-email').value.trim();
+  const code=document.getElementById('reset-code').value.trim();
+  const pw=document.getElementById('reset-newpass').value;
+  if(!/^\d{6}$/.test(code)){rmsg('Enter the 6-digit code from the email.','err');return;}
+  if(pw.length<6){rmsg('Password must be at least 6 characters.','err');return;}
+  const b=document.getElementById('reset-go');b.disabled=true;
+  rmsg('Checking code…');
+  try{
+    if(!otpOK){
+      const {error}=await SB.auth.verifyOtp({email:em,token:code,type:'recovery'});
+      if(error){rmsg('That code is invalid or has expired. Use "Resend code" to get a new one.','err');b.disabled=false;return;}
+      otpOK=true;
+    }
+    const {error:e2}=await SB.auth.updateUser({password:pw});
+    if(e2){rmsg('Code accepted, but the password could not be set: '+e2.message,'err');}
+    else{
+      document.getElementById('reset-code').value='';
+      document.getElementById('reset-newpass').value='';
+      closeAuth();toast('Password updated. You are signed in.');
+    }
+  }catch(e){rmsg('Network error — please try again.','err');}
+  b.disabled=false;
+}
+
+// ---- signup confirmation: 6-digit code (used only while email confirmation is ON) ----
+const cstatus=document.getElementById('confirm-status');
+function cmsg(t,c){cstatus.textContent=t;cstatus.className='msg'+(c?' '+c:'');}
+let confirmEmail='';
+function openConfirm(em){
+  confirmEmail=em;authView('confirm');cmsg('');
+  astatus.textContent='';astatus.className='msg'; // clear the "Creating your account…" left behind on the sign-in view
+  document.getElementById('confirm-hint').textContent=
+    'We emailed a 6-digit code to '+em+'. Enter it below to activate your account.';
+  document.getElementById('confirm-code').value='';
+  document.getElementById('confirm-code').focus();
+}
+async function submitConfirm(){
+  const code=document.getElementById('confirm-code').value.trim();
+  if(!/^\d{6}$/.test(code)){cmsg('Enter the 6-digit code from the email.','err');return;}
+  const b=document.getElementById('confirm-go');b.disabled=true;
+  cmsg('Checking code…');
+  try{
+    const {error}=await SB.auth.verifyOtp({email:confirmEmail,token:code,type:'signup'});
+    if(error)cmsg('That code is invalid or has expired. Use "Resend code" to get a new one.','err');
+    else{closeAuth();toast('Email confirmed. You are signed in.');}
+  }catch(e){cmsg('Network error — please try again.','err');}
+  b.disabled=false;
+}
+async function resendConfirm(){
+  cmsg('Sending a new code…');
+  try{
+    const {error}=await SB.auth.resend({type:'signup',email:confirmEmail});
+    cmsg(error?error.message:'New code sent.',error?'err':'ok');
+  }catch(e){cmsg('Network error — please try again.','err');}
+}
 
 // ---- Sign in with Google ----
 // Redirect flow: this page -> Supabase -> Google -> back here with the session in
@@ -915,8 +1059,10 @@ function updateAuthUI(){
   btn.style.display='';
   document.getElementById('tab-btn-saved').style.display='';
   // Only reveal the Google button once the provider is actually configured,
-  // otherwise clicking it errors with "provider is not enabled".
-  if(GOOGLE_ON){
+  // otherwise clicking it errors with "provider is not enabled". Skip while the
+  // modal is on the reset/confirm view — verifyOtp fires an auth event mid-flow
+  // and this would un-hide the button underneath that view.
+  if(GOOGLE_ON&&curView==='main'){
     document.getElementById('auth-google').style.display='';
     document.getElementById('auth-div').style.display='';
   }
@@ -946,8 +1092,7 @@ async function doAuth(mode){
     if(error){astatus.textContent=error.message;astatus.className='msg err';}
     else if(mode==='signup'&&!data.session){
       // email confirmation is switched on for this project
-      astatus.textContent='Account created. Check your email for a confirmation link, then sign in.';
-      astatus.className='msg ok';
+      openConfirm(em);
     }else{
       document.getElementById('auth-pass').value='';
       closeAuth();
@@ -985,6 +1130,13 @@ if(AUTH_ON){
   document.getElementById('auth-signup').addEventListener('click',()=>doAuth('signup'));
   document.getElementById('auth-form').addEventListener('submit',e=>{e.preventDefault();doAuth('signin');});
   document.getElementById('auth-google').addEventListener('click',signInWithGoogle);
+  document.getElementById('auth-forgot').addEventListener('click',openReset);
+  document.getElementById('reset-back').addEventListener('click',()=>authView('main'));
+  document.getElementById('reset-form').addEventListener('submit',e=>{e.preventDefault();submitReset();});
+  document.getElementById('reset-resend').addEventListener('click',()=>sendResetCode(true));
+  document.getElementById('confirm-back').addEventListener('click',()=>authView('main'));
+  document.getElementById('confirm-form').addEventListener('submit',e=>{e.preventDefault();submitConfirm();});
+  document.getElementById('confirm-resend').addEventListener('click',resendConfirm);
   amodal.addEventListener('click',e=>{if(e.target===amodal)closeAuth();});
   document.addEventListener('keydown',e=>{if(e.key==='Escape')closeAuth();});
   // Runs before the session settles, so an OAuth error surfaces instead of the
