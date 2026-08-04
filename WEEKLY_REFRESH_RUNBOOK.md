@@ -9,13 +9,14 @@ Claude agent can call — the sandbox shell cannot reach NCBI directly. So the w
 job is an agent task: Claude calls the MCP to fetch, then a local Python script
 classifies and rebuilds the dashboard. No Perplexity, no external server.
 
-## Files (all in `01_Clinical_Research/Resources/PedEndoLit/`)
+## Files (all in `01_Clinical_Research/Resources/PedEndoLit/` — this folder IS the git repo)
 - `journals.json` — 19 monitored journals + PEDS_TERMS + Template A/B flags
 - `classifier.py` — v2.4.2 classifier (faithful port of reclassify_v2.py)
 - `build_dataset.py` — classifies raw articles, dedupes by PMID, applies 60-day archive + is_new reset, writes `pedendolit-data.json`
-- `build_dashboard.py` — renders `PedEndoLit-Dashboard.html` (self-contained, data embedded)
+- `build_dashboard.py` — renders the dashboard HTML (data embedded)
 - `pedendolit-data.json` — the datastore (active + archived articles, keyed by PMID)
-- `PedEndoLit-Dashboard.html` — the dashboard (also copied to `01_Clinical_Research/`)
+- `index.html` — the PUBLISHED dashboard; this is what GitHub Pages serves
+- `PedEndoLit-Dashboard.html` — identical convenience copy, gitignored (also copied to `01_Clinical_Research/`)
 
 ## Weekly procedure (run every Sunday)
 1. Compute the date window: `today − 14 days` → `today`, field `[pdat]`.
@@ -33,7 +34,15 @@ classifies and rebuilds the dashboard. No Perplexity, no external server.
    - It applies the 60-day archive cutoff and resets `is_new` so only this week's
      additions are flagged NEW.
 7. Run: `python3 build_dashboard.py` to regenerate the HTML.
-8. Report: new article count, new practice-altering items, exclusions fired.
+8. **Publish** — the site is live, so this step is no longer optional:
+   `git add -A && git commit -m "Weekly refresh <YYYY-MM-DD>" && git push`
+   GitHub Pages redeploys on its own within a minute or two (~10 min CDN cache).
+   Live at https://molonych-source.github.io/pedendolit/
+9. Report: new article count, new practice-altering items, exclusions fired.
+
+Nothing in the weekly refresh touches Supabase — user accounts and saved lists are
+independent of the article pipeline. Saved PMIDs that get archived out of the dataset
+show up as "no longer in the current list" stubs rather than breaking.
 
 ## Re-classify everything (only when classifier.py changes)
 

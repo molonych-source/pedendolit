@@ -1,5 +1,11 @@
 # PedEndoLit Phase 2 Handoff
 
+> **SUPERSEDED — kept for historical context only.** Phase 2 shipped 2026-08-04 and is
+> live at https://molonych-source.github.io/pedendolit/. The path recommended below
+> (bolt Supabase onto the static site rather than rebuild in Lovable) is what was built,
+> and the open questions listed here are resolved. For current state see `CLAUDE.md` and
+> `MEMORY.md`; for setup and testing detail see `PedEndoLit Phase 2 Supabase Setup Guide.md`.
+
 **Status:** In progress — architecture recommended, awaiting Christian's confirmation of the build path before drafting the step-by-step plan.
 **Started:** This thread continues the earlier "PedEndoLit Web App — Plan & Conversation Handoff." · **Handoff written:** 2026-07-24
 

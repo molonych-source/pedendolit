@@ -16,7 +16,7 @@ server). Goal: drop the Perplexity subscription, run everything inside Cowork.
 - **`journals.json`** — 19 monitored journals + PEDS_TERMS + Template A/B (peds-filter) flags.
 - **`classifier.py`** — the rules classifier (currently v2.5-equivalent: v2.4.2 spec + diabetes framework + Gender Medicine + Calcium/Parathyroid split). Pure functions, unit-tested.
 - **`build_dataset.py`** — fetch→classify→dedup(by PMID)→60-day archive + is_new reset→writes `pedendolit-data.json`. `--rebuild` reclassifies all raw from scratch (use after classifier edits). Decodes HTML entities (`&#xa0;` etc.) at ingest.
-- **`build_dashboard.py`** — reads the datastore, writes `PedEndoLit-Dashboard.html` (+ a copy to `01_Clinical_Research/` and the publish copy `index.html`). Holds the WEB3FORMS_KEY and the entry-date override logic.
+- **`build_dashboard.py`** — reads the datastore, writes `index.html` (the published artifact, inside this folder = inside the git repo) plus two identical convenience copies: `PedEndoLit-Dashboard.html` here (gitignored) and one at the `01_Clinical_Research/` level. Holds the WEB3FORMS_KEY, the Supabase keys, and the entry-date override logic.
 - **`pedendolit-data.json`** — the datastore (active + archived, keyed by PMID).
 - **Weekly refresh** — scheduled task, Sundays ~9:01 AM ET, follows `WEEKLY_REFRESH_RUNBOOK.md`. Replaces the old Perplexity cron.
 
@@ -47,9 +47,17 @@ Recently added: **Gender Medicine** (ABP Domain 16, pre-check before Puberty/DSD
 DSD-context guard) and **Calcium/Parathyroid** split out of Bone/Calcium (both 2026-05-29).
 
 ## Publishing
-- Static file → any static host. Plan: **GitHub Pages**, public. Publish file is `index.html` (root URL serves it).
+- **Live at https://molonych-source.github.io/pedendolit/** — GitHub Pages, serving `main` branch root of https://github.com/molonych-source/pedendolit (public). Enabled 2026-08-04; before that the repo existed but Pages had never actually been switched on, so the site was never live despite handoff docs assuming it was.
+- **This folder is the git repo.** Re-publishing = `git add`, `git commit`, `git push`; Pages redeploys automatically (~10 min CDN cache). No more manual file upload. Auto-publish on a schedule is still a TASKS.md item.
 - **Bug/comment form**: Web3Forms (key `bb727558-...` is in `build_dashboard.py`; safe to expose — send-only). Reports email to Christian. First submission triggers a one-time Web3Forms verification email. Sandbox can't test the POST (proxy blocks api.web3forms.com) — test from a real browser.
-- Re-publishing after any change = re-upload `index.html` to the repo (keep the filename to keep the URL). Auto-publish (scheduled task commits to the repo each week) was offered but not yet set up.
+
+## Phase 2: accounts + saved articles (live 2026-08-04)
+- Supabase project **`oiafndmmdplvitrttene`** — `https://oiafndmmdplvitrttene.supabase.co`, region ca-central-1, free tier. One table, `public.saved_articles` (`user_id`, `pmid`, `saved_at`), created from `supabase_setup.sql`. Only PMIDs are stored, so the saved list can never drift out of sync with the weekly dataset.
+- Uses the **publishable key** (`sb_publishable_…`) rather than the legacy `eyJ…` anon JWT; either works, the swap is one line in `build_dashboard.py` plus a rebuild.
+- Emptying `SUPABASE_URL` / `SUPABASE_ANON_KEY` rebuilds a pure Phase 1 page — that's the feature's off switch.
+- **Per-user scoping rests entirely on Row-Level Security**: `loadSaved()` issues a bare select with no `user_id` filter. Correct by design, but re-run the two-account isolation test after ANY policy change — a broken policy leaks every list while the UI looks normal.
+- Email confirmation OFF (built-in sender is rate-limited), so addresses are unverified and signup is open. No password-reset UI — reset from Supabase → Authentication → Users.
+- The `anon` role has zero table grants (explicitly revoked; Supabase's defaults would otherwise auto-grant).
 
 ## Known limitations / honest caveats
 - `is_new` currently flags ALL articles (backfill artifact); self-corrects once weekly refreshes run, but a clinician-facing "what's new" view isn't trustworthy until then — see TASKS.md.
@@ -59,4 +67,6 @@ DSD-context guard) and **Calcium/Parathyroid** split out of Bone/Calcium (both 2
 
 ## Contacts / accounts
 - Web3Forms key: in `build_dashboard.py` (`WEB3FORMS_KEY`).
-- GitHub repo: (to be filled in once Christian creates it — needed for auto-publish.)
+- GitHub repo: https://github.com/molonych-source/pedendolit (public, account `molonych-source`). Live site https://molonych-source.github.io/pedendolit/.
+- Supabase project `oiafndmmdplvitrttene` (free tier). **Free-tier projects pause after ~1 week with no API activity, and a paused project makes sign-in fail** — the weekly refresh doesn't touch Supabase, only real user traffic does. Resume from the Supabase dashboard.
+- Local caveat: `~/Documents` is iCloud-synced, so `.git` lives inside a syncing folder. GitHub is the durable backup — push at every checkpoint; re-clone if git ever reports corruption.
