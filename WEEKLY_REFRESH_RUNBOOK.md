@@ -3,6 +3,19 @@
 This is the procedure the weekly scheduled task follows. It replaces the old
 Perplexity `peds_endo_weekly_update.py` cron. Everything runs inside Claude/Cowork.
 
+## Which model to run this on
+The weekly refresh and the monthly guideline sweep are **mechanical**: search, fetch,
+merge, rebuild. There is no design judgment in them, and nearly all their cost is
+PubMed metadata. **Run them on Sonnet, or delegate the fetch to a subagent** so the
+metadata lands in that context instead of the main one. Reserve the stronger model for
+work that changes *how* articles are judged — `classifier.py` edits, taxonomy changes,
+diagnosing a coverage gap.
+
+**Token rule for any fetch step:** never read article text into context. The MCP spills
+large results to files under `.claude/projects/.../tool-results/`; parse those with
+Python and print only counts and titles. The raw-file format IS the MCP metadata record
+verbatim, so assembling a raw file is a JSON concatenation, not a transformation.
+
 ## Why a Claude task and not a plain cron
 PubMed (NCBI E-utilities) is reachable from the **PubMed MCP tool**, which only the
 Claude agent can call — the sandbox shell cannot reach NCBI directly. So the weekly
@@ -43,6 +56,41 @@ classifies and rebuilds the dashboard. No Perplexity, no external server.
 Nothing in the weekly refresh touches Supabase — user accounts and saved lists are
 independent of the article pipeline. Saved PMIDs that get archived out of the dataset
 show up as "no longer in the current list" stubs rather than breaking.
+
+## Monthly guideline sweep (run once a month)
+
+The weekly refresh is journal-scoped: it can only ever see the 19 journals in
+`journals.json`. Societies do publish peds-endo guidelines elsewhere, so this sweep is
+the safety net. It is **publication-type-scoped across all journals** and its results
+are **reviewed, never auto-merged** — the query runs about 35% precision (the rest is
+dermatology, urology, nephrology, ophthalmology).
+
+1. Call `search_articles` with a rolling **60-day** window (overlapping, so nothing
+   falls between runs), `max_results = 200`:
+
+```
+(Practice Guideline[Publication Type] OR Guideline[Publication Type] OR Consensus Development Conference[Publication Type])
+AND (child[MeSH] OR adolescent[MeSH] OR pediatric[tiab] OR paediatric[tiab])
+AND (endocrin*[tiab] OR diabetes[tiab] OR thyroid[tiab] OR puberty[tiab]
+     OR "growth hormone"[tiab] OR adrenal[tiab] OR obesity[tiab] OR calcium[tiab]
+     OR "bone density"[tiab] OR pituitary[tiab] OR "sex development"[tiab]
+     OR hypoglycemia[tiab])
+```
+
+   Note: the MCP caps a query at **20 boolean operators** — split into two searches if
+   you extend the term list.
+2. Fetch metadata for the PMIDs, assemble them into `sweep_raw.json` (a plain list of
+   MCP records — no transformation).
+3. `python3 guideline_sweep.py --raw sweep_raw.json`
+   Writes `guideline_review_queue.md` (readable table) and `guideline_candidates.json`.
+4. **Christian reviews the queue.** Delete unwanted entries from
+   `guideline_candidates.json`, then merge the survivors the normal way:
+   `python3 build_dataset.py --raw guideline_candidates.json`, then
+   `python3 merge_raw_sources.py` and `python3 build_dashboard.py`.
+
+Approving a guideline from an unmonitored journal is a deliberate, per-article choice.
+If one journal keeps producing keepers, that is the signal to add it to `journals.json`
+instead.
 
 ## Re-classify everything (only when classifier.py changes)
 

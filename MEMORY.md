@@ -15,13 +15,15 @@ Computer workflow. Pulls pediatric endocrinology articles from 19 monitored jour
 via PubMed (free NCBI E-utilities, accessed through the PubMed MCP), classifies each
 with a rules-based classifier ported from the Perplexity spec, and renders a single
 self-contained page. Live at https://pedsendobrief.org with optional accounts (saved
-articles, notes, since-your-last-visit). Store: 1,273 articles as of 2026-08-04.
+articles, notes, since-your-last-visit). Store: 1,306 articles as of 2026-08-04,
+including 49 guidelines (all six ISPAD 2024 CPCG chapters).
 
 ## Architecture (the pipeline)
 - **`journals.json`** — 19 monitored journals + PEDS_TERMS + Template A/B (peds-filter) flags. This file is the authority on the journal list (`PedEndoLit_Retrieval_Config.docx` still says 18).
 - **`classifier.py`** — the rules classifier (v2.5-equivalent: v2.4.2 spec + diabetes framework + Gender Medicine + Calcium/Parathyroid split). Pure functions, unit-tested.
 - **`build_dataset.py`** — fetch→classify→dedup(by PMID)→writes `pedendolit-data.json`. Merge-only by default; `--rebuild` reclassifies from the `--raw` file (run `merge_raw_sources.py` first — see runbook's REBUILD PITFALL). Decodes HTML entities at ingest. **`ARCHIVE_AFTER_DAYS = None` — archiving is OFF** (see DECISIONS.md before ever re-enabling).
 - **`merge_raw_sources.py`** — rebuilds `comprehensive_raw.json` from every raw file on disk, richest-value-wins, seeded from the current store (45 articles exist in no raw file). Zero network calls. Treats PubMed's literal `[Abstract not available]` string as empty rather than storing it as body text.
+- **`guideline_sweep.py`** — the monthly safety net for guidelines published *outside* the 19 monitored journals. Reuses `map_raw()` + `classify()`, drops PMIDs already stored, and writes `guideline_review_queue.md` + `guideline_candidates.json`. **Never writes to the store** — approved candidates go in via `build_dataset.py --raw guideline_candidates.json`. Procedure and query in the runbook.
 - **`build_dashboard.py`** — reads the datastore, writes `index.html` (the published artifact) plus two identical convenience copies (`PedEndoLit-Dashboard.html` here, gitignored, and one at the `01_Clinical_Research/` level). Holds `WEB3FORMS_KEY`, the Supabase keys, `GOOGLE_ENABLED`, and the entire client app in `HTML_TEMPLATE` — **edit the template, never the generated HTML**.
 - **`pedendolit-data.json`** — the datastore (keyed by PMID).
 - **Weekly refresh** — scheduled task, Sundays ~9:01 AM ET, follows `WEEKLY_REFRESH_RUNBOOK.md`.
@@ -63,10 +65,15 @@ authoritative; the runbook's entry-date description is stale.
 - 59 articles lack an abstract — all letters/editorials with none indexed in PubMed.
 - A few DSD enzyme-deficiency terms (e.g. 17β-HSD3) aren't in the DSD keyword list, so those occasionally land in General Endocrinology.
 - 28 backfilled articles had abstracts condensed (not verbatim) by a subagent during fetch; classification verified unaffected.
-- The ISPAD 2024 guideline series (Horm Res Paediatr, late 2024) predates the dataset's coverage window — backfill is a TASKS item.
+- Coverage is still thin before 2026 for non-guideline articles: the 2024–25 backfill was publication-type-scoped (guidelines only). A full Jan-2025 corpus backfill remains a TASKS item.
+- Guideline coverage outside the 19 monitored journals depends on the monthly sweep being run and reviewed; it is not automatic.
 
 ## Operational traps (learned the hard way)
-- **PubMed MCP `search_articles` errors at `max_results=500`** — use 200; it also caps fetch batches at 20 and persists large results to files (read those from disk).
+- **PubMed MCP `search_articles` errors at `max_results=500`** — use 200; it also caps fetch batches at 20 and persists large results to files (read those from disk). It also rejects a query with **more than 20 boolean operators**, so a 19-journal OR-clause must be split in two.
+- **The MCP nests the PMID at `identifiers.pmid`** — a top-level `.get("pmid")` silently returns `None`, which reads as "nothing matches the store". Always map records through `build_dataset.map_raw()` rather than reading fields directly.
+- **`classify()` returns only classification fields** — the caller merges them onto the article (`{**art, **res}`), as `build_dataset` does. Forgetting this yields records with a topic but no title.
+- **Assemble backfill raw files from named fetch outputs, never a glob** of the MCP tool-results directory: that directory also holds exploratory searches, and globbing it once auto-merged 20 unmonitored-journal guidelines into the store.
+- **Never read article text into context** — parse the spilled MCP files with Python and print only counts/titles. The raw-file format is the MCP record verbatim, so building a raw file is a JSON concatenation.
 - **`--rebuild` reads the `--raw` file, not the store** — run `merge_raw_sources.py` first or the store shrinks to one week.
 - **GitHub Pages' CDN caches by path and ignores query strings** — `?v=N` cache-busters prove nothing; verify deploys with a hard reload or `curl -H 'Cache-Control: no-cache'`.
 - **Pages custom-domain DNS check can wedge "in progress"** even with correct DNS, blocking cert issuance forever — remove and re-add the custom domain to re-trigger it, then pull the CNAME commits GitHub makes.

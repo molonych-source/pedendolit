@@ -6,6 +6,54 @@ git history (33 commits to that date) and the dated sections formerly in `MEMORY
 
 ---
 
+### [2026-08-04] guideline-coverage-audit (late evening)
+
+Christian asked why the ISPAD guidelines were missing, whether ADA guidelines were present,
+and how to guarantee no important peds-endo guideline is missed. The audit found **three
+independent causes**, not one.
+
+- **Cause 1 — date window (ISPAD).** The ISPAD Clinical Practice Consensus Guidelines 2024
+  are published in *Horm Res Paediatr*, which **was already monitored**, in Dec 2024 – Jan
+  2025. The store's coverage began ~Jan 2026 (pub years: 2024×21, 2025×91, 2026×1160) and
+  held **zero** Horm Res Paediatr 2024–25 articles against 208 on PubMed. Nothing was wrong
+  with the filter or classifier — those articles were never fetched.
+- **Cause 2 — classifier title patterns (ADA).** The ADA Standards of Care peds chapter
+  (PMID 41358890) *was* in the store but typed `Review`/`HIGH`. PubMed tags it only
+  `Journal Article, Review`, and the title regex had no "standards of care" pattern. Also
+  missing: "consensus report", and ISPAD's "Clinical Practice **Consensus** Guidelines 2024"
+  (the intervening word breaks `\bclinical practice guidelines?\b`; the year breaks the
+  preposition pattern). Fixed and verified 9 positives / 6 negatives; the rebuild changed
+  **exactly one** article, the intended one.
+- **Cause 3 — journal-scoped architecture.** Cross-checking confirmed the pipeline works:
+  every guideline in a monitored journal within the window was captured (4/4 sampled). But a
+  publication-type sweep across all journals found 22 peds-endo guidelines in 2026 alone,
+  16 of them not in the store — all in unmonitored journals.
+
+**Work done:** classifier fix (784fd53); 2024–25 guideline backfill across all 19 monitored
+journals, +53 articles (3db0eae); `guideline_sweep.py` + review queue (341b08d). Guidelines
+15 → 49; ISPAD 3 → 10, including all six 2024 CPCG chapters. Store 1273 → 1306.
+
+**Mistake made and corrected:** the backfill assembled its raw file by globbing *every* saved
+PubMed result, which swept in the exploratory wide-sweep searches — 20 guidelines from
+unmonitored journals (hemophilia A, endometriosis, atopic dermatitis, Axenfeld-Rieger,
+glomerulonephritis…) auto-merged into the store, the exact auto-add the design forbids. They
+were reverted out of both the store and `comprehensive_raw.json` and rerouted to the review
+queue. Lesson recorded in DECISIONS.md: assemble backfill raw files from *named* fetch
+outputs, never a glob.
+
+**Traps found:**
+- The PubMed MCP nests the PMID at `identifiers.pmid`; a top-level `.get("pmid")` silently
+  returns `None`. This produced a false "0 articles in store" reading mid-audit and is the
+  same class of bug that once hit `map_raw()`. Always go through `map_raw()`.
+- `classify()` returns **only** classification fields; the caller must merge them onto the
+  article (`{**art, **res}`). The first review queue rendered topics with no titles.
+- The MCP rejects a query with **more than 20 boolean operators** — a 19-journal OR-clause
+  must be split.
+
+**Token/model note:** Christian asked whether this work needed the top model. Conclusion
+recorded in DECISIONS.md and the runbook — the fetch/merge loop is mechanical and belongs on
+Sonnet or in a subagent; the stronger model earns its keep on diagnosis and classifier logic.
+
 ### [2026-08-04] https-resend-auth (evening session)
 
 - **HTTPS finished on pedsendobrief.org.** The certificate was never provisioned because the

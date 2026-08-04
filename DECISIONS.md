@@ -53,6 +53,44 @@ not as a global purge.
 **Rejected:** fixing `review_date` semantics and keeping the archive — no user-facing benefit
 justified the risk.
 
+### Guideline detection must not rely on PubMed `pub_types` alone — 2026-08-04 — **Active**
+**Why:** PubMed does not tag every guideline. The ADA "Standards of Care in Diabetes"
+chapters carry only `Journal Article, Review`, so detection falls to the title — and the
+title patterns missed the phrasings societies actually use: "Standards of Care",
+"Consensus Report", and ISPAD's "Clinical Practice **Consensus** Guidelines 2024" (a word
+between "practice" and "guidelines", a year where a preposition would be). Such articles
+silently lost the PRACTICE-ALTERING tier, the `#Guidelines` tag, and the Guidelines filter.
+**Guard kept:** papers *about* guidelines (adherence, implementation, awareness) are still
+excluded, now both leading and mid-title.
+
+### Guideline coverage is journal-scoped by design, with a publication-type sweep as the safety net — 2026-08-04 — **Active**
+**Why:** the weekly refresh only sees the 19 journals in `journals.json`. An audit confirmed
+that design works — every guideline published in a monitored journal inside the coverage
+window was captured — but it is structurally blind to guidelines published elsewhere, and
+societies do publish elsewhere (DSD guidelines in Endocrine Journal, the Female Athlete Triad
+consensus in Sports Medicine, national CAH guidelines in Problems of Endocrinology).
+`guideline_sweep.py` runs monthly across all journals to catch those.
+**Rejected:** simply adding more journals — it trades one fixed blind spot for a slightly
+larger fixed blind spot, and inflates the weekly fetch for a handful of articles a year.
+
+### Sweep results are reviewed, never auto-merged — 2026-08-04 — **Active**
+**Why:** the wide publication-type query runs **~35% precision**. The first real queue
+contained guidelines for hemophilia A, endometriosis, atopic dermatitis, Axenfeld-Rieger
+syndrome and infection-related glomerulonephritis — all of which classify cleanly as
+`Guideline/Consensus` because they *are* guidelines; they just aren't pediatric endocrinology.
+The classifier cannot filter on "is this my specialty", so a human gate is the honest design.
+`guideline_sweep.py` therefore never writes to the store; it writes a review queue plus a
+candidates file that feeds the normal `build_dataset.py --raw` merge.
+
+### Recurring PubMed work runs on the cheaper model — 2026-08-04 — **Active**
+**Why:** the weekly refresh and monthly sweep are search-fetch-merge-rebuild, with no design
+judgment, and nearly all their cost is article metadata. They should run on Sonnet or in a
+subagent whose context absorbs the metadata. The stronger model is for work that changes how
+articles are *judged* — classifier edits, taxonomy changes, diagnosing a coverage gap.
+**Corollary:** never read article text into context; the MCP spills large results to files,
+and the raw-file format is the MCP record verbatim, so assembling a raw file is a JSON
+concatenation rather than a transformation.
+
 ## Product & identity
 
 ### Renamed to PedsEndoBrief; internal filenames and repo name deliberately unchanged — 2026-08-04 — **Active**
