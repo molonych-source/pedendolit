@@ -382,6 +382,10 @@ function matches(a){
   return true;
 }
 
+function absText(a){
+  return `<div class="abshead">ABSTRACT</div><div class="abstext">${esc(a.abstract)}</div>`;
+}
+
 function cardHTML(a){
   const open=openCards.has(a.pmid)?' open':'';
   const award=a.impact==='PRACTICE-ALTERING'?`<span class="award" title="Practice-altering">&#9733;</span>`:`<span class="award" style="visibility:hidden">&#9733;</span>`;
@@ -392,9 +396,12 @@ function cardHTML(a){
   // NB: no id= on the abstract body. The same card can be rendered twice (Feed and
   // My Saved Articles), and duplicate ids would make one copy toggle the other.
   const absOpen=openAbstracts.has(a.pmid);
+  // Abstract text is only put in the DOM once opened. It is the largest piece of
+  // text on a card, and emitting ~1130 of them up front was most of the page's
+  // node count for content that is hidden by default. absText() fills it lazily.
   const ab  = hasAbs
     ? `<div class="abswrap"><button class="absbtn" data-abs="${a.pmid}">${absOpen?'Hide abstract':'Show abstract'}</button>
-         <div class="absbody" style="display:${absOpen?'block':'none'}"><div class="abshead">ABSTRACT</div><div class="abstext">${esc(a.abstract)}</div></div></div>`
+         <div class="absbody" style="display:${absOpen?'block':'none'}">${absOpen?absText(a):''}</div></div>`
     : `<div class="abswrap"><div class="abshead">ABSTRACT</div><div class="abstext none">Abstract not available in PubMed for this record.</div></div>`;
   const doi=a.doi_url?`<a href="${esc(a.doi_url)}" target="_blank" rel="noopener">Full Text &#8599;</a>`:'';
   const pm=a.url?`<a href="${esc(a.url)}" target="_blank" rel="noopener">PubMed &#8599;</a>`:'';
@@ -448,10 +455,21 @@ function render(){
         <span class="gcount">${items.length} article${items.length===1?'':'s'}</span>
         <span class="gchev">&#9662;</span>
       </div>
-      <div class="gbody">${items.map(cardHTML).join('')}</div>
+      <div class="gbody" data-tier="${t.key}">${collapsed[t.key]?'':items.map(cardHTML).join('')}</div>
     </div>`;
   }
   root.innerHTML=html;
+  syncSaveButtons();
+}
+
+// Build a collapsed tier's cards the first time it is opened. Rendering every
+// tier up front meant ~760 of ~1270 cards (the whole LOW group, collapsed by
+// default) were constructed and then hidden by CSS — most of the DOM cost for
+// something nobody had asked to see.
+function fillGroup(tierKey,groupEl){
+  const body=groupEl.querySelector('.gbody');
+  if(!body||body.firstChild)return;
+  body.innerHTML=ART.filter(a=>a.impact===tierKey&&matches(a)).map(cardHTML).join('');
   syncSaveButtons();
 }
 
@@ -460,8 +478,12 @@ function cardClick(e){
   const sv=e.target.closest('.savebtn');
   if(sv){toggleSave(sv.dataset.save);return;}
   const gh=e.target.closest('.ghead');
-  if(gh){const k=gh.dataset.tier;if(!k)return;collapsed[k]=!collapsed[k];
-    gh.closest('.group').classList.toggle('collapsed',collapsed[k]);return;}
+  if(gh){const k=gh.dataset.tier;if(!k)return;
+    collapsed[k]=!collapsed[k];
+    const grp=gh.closest('.group');
+    grp.classList.toggle('collapsed',collapsed[k]);
+    if(!collapsed[k])fillGroup(k,grp);   // built on first open, not up front
+    return;}
   const absBtn=e.target.closest('.absbtn');
   if(absBtn){const p=absBtn.dataset.abs;if(!p)return;
     // Record it in openAbstracts, then apply to every copy of this card, exactly
@@ -469,9 +491,13 @@ function cardClick(e){
     // the next render wiped it.
     const willOpen=!openAbstracts.has(p);
     if(willOpen)openAbstracts.add(p);else openAbstracts.delete(p);
+    const art=BY_PMID.get(String(p));
     document.querySelectorAll('.card[data-pmid="'+p+'"]').forEach(c=>{
       const el=c.querySelector('.absbody');const bt=c.querySelector('.absbtn');
-      if(el)el.style.display=willOpen?'block':'none';
+      if(el){
+        if(willOpen&&!el.firstChild&&art)el.innerHTML=absText(art);  // fill on first open
+        el.style.display=willOpen?'block':'none';
+      }
       if(bt)bt.textContent=willOpen?'Hide abstract':'Show abstract';});
     return;}
   if(e.target.closest('.links'))return;
