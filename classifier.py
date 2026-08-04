@@ -421,13 +421,23 @@ def classify_study_type(art):
         "consensus development conference", "position statement"))
     # Papers *about* guidelines (adherence, awareness, implementation) are studies,
     # not guidelines, so they are excluded even when the word appears in the title.
+    # Leading verb-noun forms, plus the same words mid-title ("... : adherence to the
+    # ISPAD guidelines"), which the broader title patterns below would otherwise catch.
     about_guidelines = has_re(tl,
         r"^\s*(adherence|compliance|implementation|awareness|knowledge|attitudes|"
-        r"survey|application|utilization|utilisation|impact|evaluation|comparison)\b")
+        r"survey|application|utilization|utilisation|impact|evaluation|comparison)\b",
+        r"\b(adherence to|compliance with|implementation of|awareness of)\b")
+    # Society house styles vary more than the obvious patterns allow for, and PubMed
+    # does not always tag them: the ADA "Standards of Care in Diabetes" chapters carry
+    # only Journal Article + Review, and ISPAD titles read "Clinical Practice CONSENSUS
+    # Guidelines 2024: ..." — a word between "practice" and "guidelines", and a year
+    # where a preposition would be. Both used to type as Review.
     is_guideline_title = has_re(tl,
-        r"\bclinical practice guidelines?\b",
+        r"\bclinical practice (consensus )?guidelines?\b",
         r"\bguidelines?\s+(for|on|in|of|to)\b",
-        r"\b(consensus|position|practice)\s+(statement|paper|recommendations?)\b",
+        r"\bguidelines?[\s\-]+\d{4}\b",
+        r"\bstandards? of (medical )?care\b",
+        r"\b(consensus|position|practice)\s+(statement|paper|report|recommendations?)\b",
         r"\bexpert (consensus|panel|opinion|recommendations?)\b",
         r"\bclinical recommendations?\b",
         r"\bguidelines?\s*$")
