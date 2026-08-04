@@ -42,7 +42,7 @@ SUPABASE_ANON_KEY = "sb_publishable_nPy9JRVfAiCN0HXhSHkckQ_XG4llewm"
 # otherwise clicking it just errors with "provider is not enabled".
 # NOTE: the Google client SECRET is not like the key above — it is a real secret and
 # lives only in the Supabase dashboard. It must never appear in this file or the repo.
-GOOGLE_ENABLED = False
+GOOGLE_ENABLED = True
 # ---------------------------------------------------------------------------
 
 # Optional entry-date override: Perplexity's export dates articles by PubMed ENTRY
