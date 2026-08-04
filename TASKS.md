@@ -23,6 +23,8 @@ work on them. Durable facts and decisions live in `MEMORY.md` (same folder).
 - [ ] **Expand DSD keyword coverage** — enzyme-deficiency terms (e.g. 17β-HSD3, 5-alpha reductase) so those route to DSD instead of General Endocrinology.
 
 ## Done
+- [x] **Phase 2 shipped: accounts + personal saved-article lists** — Supabase schema + RLS created, credentials wired, GitHub Pages enabled, site live at https://molonych-source.github.io/pedendolit/. Verified end-to-end: signup/sign-in, save/un-save, session persistence across reload, per-user isolation (a different user ID sees 0 rows while the owner view sees all), signed-out visitors denied at the grant level, and the "no longer in the current list" fallback for archived PMIDs. — ✅ 2026-08-04
+- [x] **Put the project under version control** — git repo in this folder, pushed to https://github.com/molonych-source/pedendolit (public). — ✅ 2026-08-04
 - [x] **Add Annals of Pediatric Endocrinology & Metabolism as 19th monitored journal + backfill Jan 2026–present (29 articles)** — ✅ 2026-07-24
 - [x] **Build the dashboard end-to-end** (classifier port, retrieval, 60-day seed, scheduled weekly refresh) — ✅ 2026-05-29
 - [x] **Backfill Jan–May 2026 (~878 articles)** — ✅ 2026-05-29
