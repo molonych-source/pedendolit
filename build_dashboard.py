@@ -273,6 +273,28 @@ header .sub{color:var(--muted);font-size:13px}
 .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:8px;font-size:13px;z-index:60;opacity:0;pointer-events:none;transition:opacity .2s;max-width:90%}
 .toast.show{opacity:.95}
 .toast.err{background:var(--pa);color:#fff}
+/* ---- Phase 3: notes, citations, "new since your last visit" ---- */
+.notewrap{margin:10px 0 4px;position:relative}
+.notelbl{display:block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+.notebox{width:100%;padding:8px 10px;border:0.5px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit;font-size:13px;resize:vertical;min-height:44px}
+.notebox:focus{outline:2px solid var(--accent);outline-offset:-1px}
+.notestat{position:absolute;right:6px;bottom:8px;font-size:11px;color:var(--muted)}
+.citebtn{margin-left:auto;background:none;border:0.5px solid var(--line);color:var(--muted);border-radius:6px;padding:5px 10px;font:inherit;font-size:12px;cursor:pointer;min-height:32px}
+.citebtn:hover{color:var(--ink);border-color:var(--muted)}
+.newdot{color:var(--accent);margin-right:6px;font-size:12px}
+.savedbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.exportbtns{display:flex;gap:8px;flex-wrap:wrap}
+.minibtn{background:var(--surface);border:0.5px solid var(--line);color:var(--ink);border-radius:8px;padding:8px 12px;font:inherit;font-size:12px;cursor:pointer;min-height:36px}
+.minibtn:hover{border-color:var(--muted)}
+/* ---- Phase 3C: phone ergonomics ---- */
+.tabs{flex-wrap:wrap}
+@media(max-width:760px){
+  .chip{padding:9px 14px;font-size:13px}       /* was ~27px tall, under the 44px target */
+  .savebtn,.citebtn,.minibtn{min-height:40px}
+  .cbody{padding:0 14px 16px 16px}             /* the 42px indent ate a phone's width */
+  .bar-row .name{width:110px}
+  .controls input[type=search]{min-width:100%}
+}
 </style>
 <!-- Supabase browser client (auth + saved lists). Loaded from CDN; if it fails
      to load the dashboard still works, just without accounts. Version is pinned
@@ -304,6 +326,9 @@ header .sub{color:var(--muted);font-size:13px}
   <div id="tab-feed">
     <div class="controls">
       <input type="search" id="q" placeholder="Search title, author, journal, takeaway…"/>
+      <span class="chip" data-flag="since" id="chip-since" style="display:none">✦ New since your last visit</span>
+      <span class="chip" data-flag="mine" id="chip-mine" style="display:none">★ Saved</span>
+      <span class="chip" data-flag="guidelines">Guidelines</span>
       <span class="chip" data-flag="new">New this period</span>
       <span class="chip" data-flag="board">Board-relevant</span>
       <span class="chip" data-flag="open">Open access</span>
@@ -321,7 +346,13 @@ header .sub{color:var(--muted);font-size:13px}
   </div>
 
   <div id="tab-saved" style="display:none">
-    <div class="count-line" id="saved-count"></div>
+    <div class="savedbar">
+      <div class="count-line" id="saved-count"></div>
+      <div class="exportbtns">
+        <button type="button" class="minibtn" id="export-txt" title="Copy all saved citations as plain text">Copy citations</button>
+        <button type="button" class="minibtn" id="export-ris" title="Download as .ris for Zotero, EndNote or Mendeley">Export to Zotero (.ris)</button>
+      </div>
+    </div>
     <div id="saved-list"></div>
   </div>
 
@@ -450,6 +481,19 @@ const state={q:'',flags:new Set(),topic:null,dm:'All',age:'All',month:'All'};
 // LOW group collapsed by default; others open. Persists during session.
 const collapsed={'PRACTICE-ALTERING':false,'HIGH':false,'MODERATE':false,'LOW':true};
 const openCards=new Set();
+// Abstracts need their own state Set for the same reason cards do: without it,
+// any re-render (which now includes every keystroke) silently re-collapses every
+// abstract the reader had opened.
+const openAbstracts=new Set();
+
+// Populated from user_prefs once signed in; null means "we don't know yet", which
+// is different from "nothing is new".
+let sinceLastVisit=null;
+function isNewToMe(a){
+  if(!sinceLastVisit)return false;
+  const d=a.review_date||'';
+  return d>sinceLastVisit;
+}
 
 function matches(a){
   if(state.topic&&a.topic!==state.topic)return false;
@@ -462,6 +506,9 @@ function matches(a){
   if(state.flags.has('board')&&a.board_relevant!==1)return false;
   if(state.flags.has('open')&&a.access!=='Open')return false;
   if(state.flags.has('new')&&!a.is_new)return false;
+  if(state.flags.has('guidelines')&&a.study_type!=='Guideline/Consensus')return false;
+  if(state.flags.has('mine')&&!savedPmids.has(a.pmid))return false;
+  if(state.flags.has('since')&&!isNewToMe(a))return false;
   if(state.q){const q=state.q.toLowerCase();
     if(!(a.title+' '+(a.authors||[]).join(' ')+' '+a.journal+' '+(a.clinical_bottom_line||'')+' '+(a.tags||[]).join(' ')+' '+(a.abstract||'')).toLowerCase().includes(q))return false;}
   return true;
@@ -476,17 +523,28 @@ function cardHTML(a){
   const hasAbs=(a.abstract||'').trim().length>=40;
   // NB: no id= on the abstract body. The same card can be rendered twice (Feed and
   // My Saved Articles), and duplicate ids would make one copy toggle the other.
+  const absOpen=openAbstracts.has(a.pmid);
   const ab  = hasAbs
-    ? `<div class="abswrap"><button class="absbtn" data-abs="${a.pmid}">Show abstract</button>
-         <div class="absbody" style="display:none"><div class="abshead">ABSTRACT</div><div class="abstext">${esc(a.abstract)}</div></div></div>`
+    ? `<div class="abswrap"><button class="absbtn" data-abs="${a.pmid}">${absOpen?'Hide abstract':'Show abstract'}</button>
+         <div class="absbody" style="display:${absOpen?'block':'none'}"><div class="abshead">ABSTRACT</div><div class="abstext">${esc(a.abstract)}</div></div></div>`
     : `<div class="abswrap"><div class="abshead">ABSTRACT</div><div class="abstext none">Abstract not available in PubMed for this record.</div></div>`;
   const doi=a.doi_url?`<a href="${esc(a.doi_url)}" target="_blank" rel="noopener">Full Text &#8599;</a>`:'';
   const pm=a.url?`<a href="${esc(a.url)}" target="_blank" rel="noopener">PubMed &#8599;</a>`:'';
+  const isNew=isNewToMe(a)?`<span class="newdot" title="New since your last visit">&#10022;</span>`:'';
+  // The note box only appears for articles this person has actually saved —
+  // showing it on all ~1300 cards would be noise, and there is nothing to attach
+  // a note to until a save row exists.
+  const noteBox=(AUTH_ON&&USER&&savedPmids.has(a.pmid))
+    ? `<div class="notewrap"><label class="notelbl">Your note</label>
+         <textarea class="notebox" data-note="${esc(a.pmid)}" rows="2"
+           placeholder="Why did you save this? (only you can see it)">${esc(noteFor(a.pmid))}</textarea>
+         <span class="notestat" data-notestat="${esc(a.pmid)}"></span></div>`
+    : '';
   return `<div class="card${open}" data-pmid="${a.pmid}">
     <div class="chead" data-card="${a.pmid}">
       <span class="cchev">&#9656;</span>${award}
       <div class="cmain">
-        <div class="ctitle">${esc(a.title)}</div>
+        <div class="ctitle">${isNew}${esc(a.title)}</div>
         <div class="cmeta"><em>${esc(a.journal_abbr||a.journal)}</em> · ${fmtDate(a.pub_date)} · ${esc(authorStr(a))}
           · <span class="badge ${impClass[a.impact]}">${esc(a.impact)}</span>
           · ${esc(a.study_type)}${sub}</div>
@@ -497,8 +555,10 @@ function cardHTML(a){
       ${a.clinical_bottom_line?`<div class="bl"><b>Bottom line:</b> ${esc(a.clinical_bottom_line)}</div>`:''}
       ${a.impact_rationale?`<div class="why"><b>Why ${esc(a.impact)}:</b> ${esc(a.impact_rationale)}</div>`:''}
       <div class="tags">${soc}${tags}</div>
+      ${noteBox}
       ${ab}
-      <div class="links">${pm}${doi}<span class="pmid">PMID: ${esc(a.pmid)}</span></div>
+      <div class="links">${pm}${doi}<span class="pmid">PMID: ${esc(a.pmid)}</span>
+        <button type="button" class="citebtn" data-cite="${esc(a.pmid)}">Copy citation</button></div>
     </div>
   </div>`;
 }
@@ -535,9 +595,17 @@ function cardClick(e){
   if(gh){const k=gh.dataset.tier;if(!k)return;collapsed[k]=!collapsed[k];
     gh.closest('.group').classList.toggle('collapsed',collapsed[k]);return;}
   const absBtn=e.target.closest('.absbtn');
-  if(absBtn){const el=absBtn.parentElement.querySelector('.absbody');if(!el)return;
-    const show=el.style.display==='none';el.style.display=show?'block':'none';
-    absBtn.textContent=show?'Hide abstract':'Show abstract';return;}
+  if(absBtn){const p=absBtn.dataset.abs;if(!p)return;
+    // Record it in openAbstracts, then apply to every copy of this card, exactly
+    // like the card-open toggle below. Driving this off inline style alone meant
+    // the next render wiped it.
+    const willOpen=!openAbstracts.has(p);
+    if(willOpen)openAbstracts.add(p);else openAbstracts.delete(p);
+    document.querySelectorAll('.card[data-pmid="'+p+'"]').forEach(c=>{
+      const el=c.querySelector('.absbody');const bt=c.querySelector('.absbtn');
+      if(el)el.style.display=willOpen?'block':'none';
+      if(bt)bt.textContent=willOpen?'Hide abstract':'Show abstract';});
+    return;}
   if(e.target.closest('.links'))return;
   const ch=e.target.closest('.chead');
   if(ch){const p=ch.dataset.card;if(!p)return;
@@ -551,7 +619,14 @@ function cardClick(e){
 document.getElementById('groups').addEventListener('click',cardClick);
 document.getElementById('saved-list').addEventListener('click',cardClick);
 
-document.getElementById('q').addEventListener('input',e=>{state.q=e.target.value;render();});
+// Debounced. render() re-filters ~1300 articles and rebuilds the whole list, so
+// firing it on every keystroke made typing visibly janky on a phone.
+let qTimer=null;
+document.getElementById('q').addEventListener('input',e=>{
+  state.q=e.target.value;
+  clearTimeout(qTimer);
+  qTimer=setTimeout(render,160);
+});
 document.querySelectorAll('.chip[data-flag]').forEach(c=>c.addEventListener('click',()=>{
   const f=c.dataset.flag;
   if(state.flags.has(f)){state.flags.delete(f);c.classList.remove('on');}
@@ -674,6 +749,56 @@ document.getElementById('report-form').addEventListener('submit',async e=>{
 const BY_PMID=new Map(ART.map(a=>[String(a.pmid),a]));
 const savedPmids=new Set();   // fast membership test for the Save buttons
 let   savedOrder=[];          // display order, most recently saved first
+const savedNotes=new Map();   // pmid -> note text
+function noteFor(p){return savedNotes.get(String(p))||'';}
+
+// ---- citations (RIS / plain text) ----
+// Built entirely from the embedded dataset — nothing is fetched. Only worth
+// having now that volume/issue/pages and full author lists actually exist.
+function citationText(a){
+  const au=(a.authors||[]);
+  const names=au.length>6?au.slice(0,6).join(', ')+', et al.':au.join(', ');
+  const yr=(a.pub_date||'').slice(0,4);
+  const vip=[a.volume?a.volume:'',a.issue?'('+a.issue+')':'',a.pages?':'+a.pages:''].join('');
+  return [names,a.title,[a.journal_abbr||a.journal,yr].filter(Boolean).join('. '),
+          vip,a.doi?'doi:'+a.doi:'','PMID: '+a.pmid].filter(Boolean).join('. ').replace(/\.\./g,'.');
+}
+function risRecord(a){
+  const L=[];
+  const ty=(a.study_type==='Guideline/Consensus')?'STAND':'JOUR';
+  L.push('TY  - '+ty);
+  (a.authors||[]).forEach(n=>L.push('AU  - '+n));
+  if(a.title)L.push('TI  - '+a.title);
+  if(a.journal)L.push('JO  - '+a.journal);
+  if(a.journal_abbr)L.push('J2  - '+a.journal_abbr);
+  const yr=(a.pub_date||'').slice(0,4); if(yr)L.push('PY  - '+yr);
+  if(a.pub_date)L.push('DA  - '+a.pub_date.replace(/-/g,'/'));
+  if(a.volume)L.push('VL  - '+a.volume);
+  if(a.issue)L.push('IS  - '+a.issue);
+  if(a.pages)L.push('SP  - '+a.pages);
+  if(a.abstract)L.push('AB  - '+a.abstract.replace(/\r?\n/g,' '));
+  if(a.doi)L.push('DO  - '+a.doi);
+  if(a.url)L.push('UR  - '+a.url);
+  L.push('AN  - '+a.pmid);
+  (a.tags||[]).forEach(t=>L.push('KW  - '+t.replace(/^#/,'')));
+  L.push('ER  - ');
+  return L.join('\n');
+}
+async function copyText(txt){
+  try{await navigator.clipboard.writeText(txt);return true;}
+  catch(e){
+    // clipboard API needs a secure context; fall back so this still works locally
+    try{const ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';
+      ta.style.opacity='0';document.body.appendChild(ta);ta.select();
+      const ok=document.execCommand('copy');ta.remove();return ok;}catch(e2){return false;}
+  }
+}
+function downloadFile(name,txt,mime){
+  const b=new Blob([txt],{type:mime||'text/plain;charset=utf-8'});
+  const u=URL.createObjectURL(b);const a=document.createElement('a');
+  a.href=u;a.download=name;document.body.appendChild(a);a.click();
+  a.remove();setTimeout(()=>URL.revokeObjectURL(u),1000);
+}
 
 // ---- small toast for save/load errors ----
 let toastTimer=null;
@@ -735,15 +860,69 @@ async function toggleSave(pmid){
 }
 
 async function loadSaved(){
-  savedPmids.clear();savedOrder=[];
+  savedPmids.clear();savedOrder=[];savedNotes.clear();
   if(USER&&SB){
     const {data,error}=await SB.from('saved_articles')
-      .select('pmid,saved_at').order('saved_at',{ascending:false});
+      .select('pmid,saved_at,note').order('saved_at',{ascending:false});
     if(error)toast('Could not load your saved list: '+dbMsg(error),true);
     else (data||[]).forEach(r=>{const p=String(r.pmid);
-      if(!savedPmids.has(p)){savedPmids.add(p);savedOrder.push(p);}});
+      if(!savedPmids.has(p)){savedPmids.add(p);savedOrder.push(p);}
+      if(r.note)savedNotes.set(p,r.note);});
   }
   syncSaveButtons();renderSaved();
+  // The Feed needs re-rendering too: note boxes and the "Saved" filter both
+  // depend on this data, and unlike Phase 2 the saved set now affects the Feed.
+  render();
+}
+
+// ---- notes on saved articles ----
+// Free text, so this is an upsert rather than the insert/delete used for saves.
+// Debounced per article and fired on blur, so typing doesn't hammer the network.
+const noteTimers=new Map();
+async function saveNote(pmid,text){
+  if(!AUTH_ON||!USER||!SB)return;
+  const p=String(pmid);
+  const val=(text||'').trim();
+  if(val)savedNotes.set(p,val); else savedNotes.delete(p);
+  const stat=document.querySelector('[data-notestat="'+p+'"]');
+  if(stat)stat.textContent='Saving…';
+  const {error}=await SB.from('saved_articles')
+    .update({note:val||null}).eq('user_id',USER.id).eq('pmid',Number(p));
+  if(stat){
+    stat.textContent=error?'Not saved':'Saved';
+    if(!error)setTimeout(()=>{if(stat)stat.textContent='';},1500);
+  }
+  if(error)toast('Could not save your note: '+dbMsg(error),true);
+}
+
+// ---- "since your last visit" ----
+// Reads the previous visit marker, then stamps this visit. prev_seen_at is what
+// the badge is computed from, so opening the page doesn't wipe the very marker
+// the reader is looking at.
+async function loadPrefs(){
+  sinceLastVisit=null;
+  if(!(USER&&SB))return;
+  const {data,error}=await SB.from('user_prefs')
+    .select('last_seen_at,prev_seen_at').eq('user_id',USER.id).maybeSingle();
+  if(error&&error.code!=='PGRST116'){/* absent row is normal on first visit */}
+  const nowIso=new Date().toISOString();
+  if(data){
+    sinceLastVisit=(data.last_seen_at||'').slice(0,10)||null;
+    await SB.from('user_prefs')
+      .update({prev_seen_at:data.last_seen_at,last_seen_at:nowIso,updated_at:nowIso})
+      .eq('user_id',USER.id);
+  }else{
+    // First ever visit: nothing is "new to you" yet, by definition.
+    await SB.from('user_prefs').insert({user_id:USER.id,last_seen_at:nowIso});
+  }
+  const chip=document.getElementById('chip-since');
+  if(chip){
+    const n=sinceLastVisit?ART.filter(isNewToMe).length:0;
+    chip.style.display=(sinceLastVisit&&n>0)?'':'none';
+    chip.textContent='✦ '+n+' new since your last visit';
+  }
+  const mine=document.getElementById('chip-mine');
+  if(mine)mine.style.display=USER?'':'none';
 }
 
 // ---- My Saved Articles view ----
@@ -840,7 +1019,12 @@ if(AUTH_ON){
     const u=s?s.user:null;
     const changed=(u?u.id:null)!==(USER?USER.id:null);
     USER=u;updateAuthUI();
-    if(changed||!authReady){authReady=true;loadSaved();}
+    if(changed||!authReady){
+      authReady=true;
+      // Order matters: prefs first so the "new since your last visit" marker is
+      // known before the Feed renders, then the saved list (which re-renders).
+      loadPrefs().then(loadSaved).catch(()=>loadSaved());
+    }
   };
   // fires immediately with the stored session, then on every sign-in/out/refresh
   SB.auth.onAuthStateChange((_evt,session)=>applySession(session));
@@ -856,6 +1040,55 @@ if(AUTH_ON){
   amodal.addEventListener('click',e=>{if(e.target===amodal)closeAuth();});
   document.addEventListener('keydown',e=>{if(e.key==='Escape')closeAuth();});
 }
+
+// ---- notes: debounced typing + save on blur ----
+// Delegated on document because note boxes are created and destroyed by render().
+document.addEventListener('input',e=>{
+  const ta=e.target.closest('.notebox');
+  if(!ta)return;
+  const p=ta.dataset.note;
+  clearTimeout(noteTimers.get(p));
+  noteTimers.set(p,setTimeout(()=>saveNote(p,ta.value),900));
+});
+document.addEventListener('blur',e=>{
+  const ta=e.target.closest&&e.target.closest('.notebox');
+  if(!ta)return;
+  const p=ta.dataset.note;
+  clearTimeout(noteTimers.get(p));
+  saveNote(p,ta.value);
+},true);
+// Typing in a note must not bubble up and toggle the card open/closed.
+document.addEventListener('click',e=>{if(e.target.closest('.notebox'))e.stopPropagation();},true);
+
+// ---- copy a single citation ----
+document.addEventListener('click',async e=>{
+  const b=e.target.closest('.citebtn');
+  if(!b)return;
+  e.stopPropagation();
+  const a=BY_PMID.get(String(b.dataset.cite));
+  if(!a)return;
+  const ok=await copyText(citationText(a));
+  b.textContent=ok?'Copied':'Copy failed';
+  setTimeout(()=>{b.textContent='Copy citation';},1400);
+});
+
+// ---- export the saved list ----
+function savedArticlesInDataset(){
+  return savedOrder.map(p=>BY_PMID.get(p)).filter(Boolean);
+}
+const expRis=document.getElementById('export-ris');
+if(expRis)expRis.addEventListener('click',()=>{
+  const arts=savedArticlesInDataset();
+  if(!arts.length){toast('Nothing to export yet.',true);return;}
+  downloadFile('pedendolit-saved.ris',arts.map(risRecord).join('\n'),'application/x-research-info-systems');
+});
+const expTxt=document.getElementById('export-txt');
+if(expTxt)expTxt.addEventListener('click',async()=>{
+  const arts=savedArticlesInDataset();
+  if(!arts.length){toast('Nothing to export yet.',true);return;}
+  const ok=await copyText(arts.map((a,i)=>(i+1)+'. '+citationText(a)).join('\n\n'));
+  toast(ok?'Citations copied to the clipboard.':'Could not copy.',!ok);
+});
 
 metrics();render();renderSaved();
 </script>
