@@ -91,6 +91,22 @@ DSD-context guard) and **Calcium/Parathyroid** split out of Bone/Calcium (both 2
 - Cosmetic: the consent screen says `oiafndmmdplvitrttene.supabase.co`, not "PedEndoLit", because brand verification was skipped. Fix later with a Supabase custom domain; not worth doing for a pilot.
 - The old fake `molonychtest@gmail.com` account was **deleted** before enabling Google — with confirmation off it was marked confirmed without ownership proof, so whoever owns that address could have been auto-linked into it.
 
+## Rendering performance (2026-08-04)
+Measured on the live page with `performance.now()`, not estimated:
+
+| | before | after |
+|---|---|---|
+| DOM nodes | 36,133 | **14,091** |
+| cards built | 1,274 | **512** |
+| abstract bodies in DOM | 1,130 | **0** until opened |
+| initial render | 748 ms | **164 ms** |
+| a filter interaction | ~750 ms | **200 ms** |
+
+- **`render()` used to build every tier's cards even when collapsed**, then let CSS hide them. LOW is collapsed by default and holds 762 of 1273 articles, so 60% of the DOM was built for content nobody had asked to see. `fillGroup()` now builds a tier on first open (~250 ms for LOW, paid only if you open it).
+- **Abstract text is inserted on open** via `absText()`, not emitted inline on every card.
+- `openCards` / `openAbstracts` still drive state, so a re-render preserves whatever the reader had open — verified after the change.
+- **Deploy gotcha: GitHub Pages' CDN caches by path and ignores query strings.** A `?v=N` cache-buster does NOT force a fresh copy in the browser; it fooled me into thinking a deploy hadn't worked. Use a hard reload (cmd+shift+R) or `curl -H 'Cache-Control: no-cache'` when verifying a deploy.
+
 ## Known limitations / honest caveats
 - `is_new` means "added in the most recent run" — a global flag, so it cannot answer "what's new for me". Per-user last-seen is the Phase 3 fix.
 - "Other" is still the largest study-type bucket (590 of 1280), mostly articles that genuinely lack PubMed type tags.
