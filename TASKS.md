@@ -8,7 +8,8 @@ work on them. Durable facts and decisions live in `MEMORY.md` (same folder).
 
 **Phase 3 plan agreed 2026-08-04.** A (foundation) is done. Next: B (features), C (mobile/perf), D (digest + sharing).
 
-- [ ] **Confirm the performance fix on a real phone.** Measured on desktop: DOM nodes 36,133→14,091, render 748ms→164ms, filter interaction ~750ms→200ms. Still worth checking on an actual handset, since that's where it mattered.
+- [ ] **Confirm the performance fix on a real phone.**
+- [ ] **Delete the old unused Google client secret** — two are enabled on the OAuth client; only the newer one is in use by Supabase. Christian's hands (Google Cloud console, no API). Measured on desktop: DOM nodes 36,133→14,091, render 748ms→164ms, filter interaction ~750ms→200ms. Still worth checking on an actual handset, since that's where it mattered.
 - [ ] **Phase 3D — weekly email digest + public share links.** Domain blocker RESOLVED 2026-08-04: `pedsendobrief.org` is verified in Resend and Supabase sends through it. GitHub Actions as scheduler (Python-native, manual-run button, browser logs), plus a **daily keepalive ping** since free Supabase projects pause after ~7 days idle and that would silently break sign-in. Remaining blocker: `gh auth refresh -s workflow` — the current token can't push `.github/workflows/`.
 - [x] ~~**Finish HTTPS on pedsendobrief.org**~~ — done 2026-08-04. Stuck Pages DNS check cleared by remove/re-add of the custom domain; cert issued (expires 2026-11-02); HTTPS enforced; Google sign-in verified on the new domain.
 - [x] ~~**Password reset via six-digit email codes**~~ — done 2026-08-04. Resend SMTP on the custom domain, `{{ .Token }}` templates, full reset UI live; verified end-to-end by Christian. OTP length corrected 8→6.

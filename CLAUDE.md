@@ -11,14 +11,18 @@ PubMed MCP tool — not reachable directly from the shell), classifies each with
 rules-based classifier, and renders a single self-contained `PedEndoLit-Dashboard.html`
 (data embedded, opens by double-click, no server required).
 
-This is not a git repository and has no test suite, linter, or build system —
-it's a small Python data pipeline plus one generated static HTML file. There is no
-`npm test` / `pytest` / lint command to run; verification is done by reading the
-`build_dataset.py` summary stats and spot-checking the generated dashboard in a browser.
+This folder is a git repository (publishing = commit + push) but has no test suite,
+linter, or build system — it's a small Python data pipeline plus one generated static
+HTML file. There is no `npm test` / `pytest` / lint command to run; verification is done
+by reading the `build_dataset.py` summary stats and spot-checking the generated dashboard
+in a browser.
 
-**Read `MEMORY.md` first** for full project history, architecture decisions (and why),
-taxonomy state, and known caveats — it's the durable source of truth. `TASKS.md` holds
-open ideas/backlog. `WEEKLY_REFRESH_RUNBOOK.md` holds the operational weekly procedure.
+**Project docs, one home per kind of content:** `MEMORY.md` — current-state facts
+(architecture, taxonomy, publishing, auth, operational traps); read it first.
+`DECISIONS.md` — every standing decision with rationale and status (Active/Superseded).
+`_log.md` — detailed reverse-chronological session log. `TASKS.md` — open ideas/backlog.
+`WEEKLY_REFRESH_RUNBOOK.md` — the operational weekly procedure. `HANDOFF.md` — start-here
+summary for a fresh session.
 
 ## The pipeline (three-stage, run in order)
 
@@ -105,10 +109,9 @@ Calcium/Parathyroid split, Turner/Prader-Willi placement under Growth).
 
 - **Month dating discrepancy**: `WEEKLY_REFRESH_RUNBOOK.md` describes month bucketing
   as entry-date-based (via the `all_articles_export.csv` override in
-  `build_dashboard.py`); `MEMORY.md`'s "Key decisions" log says this was **reversed**
-  on 2026-05-30 to publication-date (`pub_date`)-based bucketing, verified with 0
-  mismatches. Treat `MEMORY.md` as authoritative for current behavior; the runbook
-  section is stale and hasn't been corrected.
+  `build_dashboard.py`); this was **reversed** on 2026-05-30 to publication-date
+  (`pub_date`)-based bucketing, verified with 0 mismatches. `DECISIONS.md` is the
+  authority; the runbook section is stale and hasn't been corrected.
 - **`--rebuild` wipes the store to the current `raw_articles.json`** if run without
   `--raw comprehensive_raw.json` — always run `merge_raw_sources.py` first. See the
   runbook's "REBUILD PITFALL" callout.

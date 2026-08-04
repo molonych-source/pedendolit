@@ -1,112 +1,64 @@
 # PedsEndoBrief — Session Handoff
 
-**Written 2026-08-04.** Paste this into a new session and say "continue from this handoff."
+**Rewritten 2026-08-04 (evening), superseding the earlier same-day handoff.** Paste this into
+a new session and say "continue from this handoff."
 
-Read `CLAUDE.md` for architecture and `MEMORY.md` for the full decision log with reasoning.
-This file is the short version: where things stand, what's next, and the traps.
-
----
+**Read order for a fresh session:** `CLAUDE.md` (architecture + how to run things) →
+`MEMORY.md` (current-state facts) → `DECISIONS.md` (why things are the way they are) →
+`_log.md` (what happened when) → `TASKS.md` (what's open). The weekly run procedure is in
+`WEEKLY_REFRESH_RUNBOOK.md`.
 
 ## Where the project lives
 
-- **Working directory (the real one):**
+- **Working directory (the git repo):**
   `/Users/christianmolony/Documents/Claude Cowork OS 1.0/01_Clinical_Research/Resources/PedEndoLit/`
-  This folder **is** the git repo. There is a stale duplicate at
-  `~/Documents/PedEndoLit copy/` — it was the safety net during setup and is now
+  There is a stale duplicate at `~/Documents/PedEndoLit copy/` — a setup-era safety net,
   **safe to delete**. Do not edit it.
-- **Repo:** https://github.com/molonych-source/pedendolit (public, name deliberately unchanged)
-- **Live site:** https://pedsendobrief.org
-- **Supabase project:** `oiafndmmdplvitrttene`
-- **Google Cloud project:** `indigo-cider-471318-p8`
+- **Repo:** https://github.com/molonych-source/pedendolit (public; name deliberately unchanged)
+- **Live site:** https://pedsendobrief.org (HTTPS enforced)
+- **Supabase:** `oiafndmmdplvitrttene` · **Google Cloud:** `indigo-cider-471318-p8` ·
+  **Resend:** account under molonych@gmail.com
 
 ## What this is
 
-A weekly pediatric-endocrinology literature digest. 19 PubMed journals → rules-based
-classifier → a single self-contained `index.html` with 1,273 classified articles, plus
-accounts so readers can save articles privately. Built for a clinician audience, intended
-to be shared at conferences.
+A weekly pediatric-endocrinology literature digest: 19 PubMed journals → rules-based
+classifier → one self-contained `index.html` (1,273 articles), plus accounts. Built for a
+clinician audience, meant to be shared at conferences.
 
----
+## Current state: nothing is broken or half-finished
 
-## Status: everything from this session is finished and verified
+As of 2026-08-04 the entire auth/email stack is live and verified end-to-end:
+HTTPS on the custom domain, Google sign-in, email/password with **six-digit-code password
+reset**, **email confirmation ON** (six-digit code at signup), all sending through Resend
+SMTP on the project's own domain. Details in `MEMORY.md`; the how-and-why in `DECISIONS.md`
+and `_log.md`.
 
-**https://pedsendobrief.org is fully live over HTTPS**, with enforcement on. Google
-sign-in was tested on the new domain and works. Nothing is left half-done.
+## What's next, in order (mirrors TASKS.md)
 
-The TLS certificate initially stalled — it sat at `null` for 40+ minutes. DNS, CAA and
-routing were all verified correct, so the fix was to clear and re-set the custom domain
-via the API, which re-triggers provisioning:
+1. **Weekly email digest + Supabase keepalive ping** — highest-value item on the clinician
+   wishlist. GitHub Actions as scheduler; the keepalive matters because free Supabase projects
+   pause after ~7 days idle and silently break sign-in. **Blocker: Christian must run
+   `gh auth refresh -s workflow`** — the current token can't push `.github/workflows/`.
+2. **Public share links** — `shared_lists` + a `SECURITY DEFINER` function keyed on an
+   unguessable slug, so the table never becomes enumerable.
+3. **ISPAD 2024 guidelines backfill** — the ~25-chapter series (Horm Res Paediatr, late 2024)
+   predates the dataset's coverage; targeted PubMed fetch + merge-only pipeline.
+4. **Confirm the rendering-performance fix on a real phone.**
+5. **Delete the old unused Google client secret** (two are enabled; only the newer is in use).
+6. Backlog: expand the database to January 2025; "Recent" default view; the rest of TASKS.md.
 
-```bash
-gh api --method PUT repos/molonych-source/pedendolit/pages -f cname=''
-gh api --method PUT repos/molonych-source/pedendolit/pages -f cname='pedsendobrief.org'
-```
+## The traps most likely to bite next (full list in MEMORY.md → Operational traps)
 
-It then moved `null → authorized → approved` within a couple of minutes. A transient
-"errored" build state during the swap was harmless. **Remember this if a certificate ever
-stalls again** — waiting longer does not help; re-triggering does.
-
-Verified working: HTTPS with enforcement (http and www both 301), the old github.io URL
-still redirecting, Google sign-in, and saved articles intact across the domain change.
-
-## Done this session
-
-- **Defused a time bomb.** The 60-day archive keyed off "date added", and the whole
-  historical backfill shared one date — the site was set to drop from 1,287 articles to 258
-  on the 2026-08-30 run and to 35 by late September. Archiving is now off.
-- **Recovered the data foundation.** 74% of articles had no abstract; the classifier had
-  only ever seen their titles. Merged local raw files, then re-fetched 427 from PubMed.
-  Abstracts 336→1,214. Fully citable 308→1,266. "Other" study type 853→400. Guidelines
-  detected 4→15.
-- **Phase 3B features:** since-your-last-visit, private notes on saves, guidelines filter,
-  citation/Zotero export.
-- **Google sign-in**, alongside email/password.
-- **Performance:** 36,133→14,091 DOM nodes, 748→164 ms render, ~750→200 ms per filter.
-- **Rebranded to PedsEndoBrief** on `pedsendobrief.org`.
-
-## What's next, in order
-
-Everything below is now unblocked — owning the domain was the gate.
-
-1. **Password reset.** Needs custom SMTP via Resend on the new domain. **Use the six-digit
-   `{{ .Token }}` template, not a magic link** — hospital mail scanners pre-click links and
-   consume the one-time token before the human gets there.
-2. **Turn email confirmation back on** at the same time. Until then addresses are unverified,
-   which is what makes the pre-account-takeover risk real (see traps).
-3. **Weekly email digest** — the highest-value item on the clinician wishlist, since it stops
-   this depending on anyone remembering to visit. GitHub Actions as scheduler, plus a **daily
-   keepalive ping** because free Supabase projects pause after ~7 days idle and that silently
-   breaks sign-in. Blocker: run `gh auth refresh -s workflow` — the current token cannot push
-   `.github/workflows/`.
-4. **Public share links** (`shared_lists` + a `SECURITY DEFINER` function keyed on an
-   unguessable slug, so the table never becomes enumerable).
-5. Confirm the performance fix on a real phone.
-6. Delete the old Google client secret (two are enabled; only the newer one is in use).
-
----
-
-## Traps that cost time this session
-
-- **Cloudflare's proxy must stay OFF** (grey cloud) on all five DNS records. Its proxy
-  prevents GitHub from issuing a TLS certificate. Cloudflare actively nags you to enable it.
-- **GitHub Pages' CDN caches by path and ignores query strings.** A `?v=2` cache-buster does
-  *not* force a fresh copy into the browser. This made a working deploy look broken. Verify
-  with a hard reload or `curl -H 'Cache-Control: no-cache'`.
-- **Supabase's built-in mailer only delivers to project team addresses** — everyone else gets
-  "Email address not authorized", on top of a fixed 2 emails/hour. The owner's own address
-  *is* on the team, so testing password reset on yourself passes and then fails for every
-  colleague.
-- **Never add OAuth scopes beyond `openid`, `email`, `profile`.** That exact set is what
-  exempts the app from Google verification review. Any addition triggers a multi-week process.
-- **Google client secrets cannot be viewed after creation.** If lost, use "Add secret" on the
-  client's panel — do not delete and recreate the client.
-- **`--rebuild` reads from the `--raw` file, not the store.** Always run
-  `merge_raw_sources.py` first, or you will wipe the store down to one week of articles.
-- **RLS is the only thing separating users.** `loadSaved()` issues a bare select with no
-  `user_id` filter. Re-run the JWT-impersonation isolation test after *any* policy change —
-  a broken policy leaks every list while the UI looks completely normal.
-- **Don't add character-class password rules.** NIST 800-63B says verifiers SHALL NOT impose
-  them. Length is the lever. Note `"at least 6 characters"` is hardcoded in three places.
+- **`--rebuild` reads the `--raw` file, not the store** — always run `merge_raw_sources.py`
+  first or the store shrinks to one week of articles.
+- **Cloudflare proxy must stay OFF (grey cloud) on every DNS record** — it blocks GitHub's
+  TLS renewal. Cloudflare nags; ignore it.
+- **Pages CDN ignores query strings** — verify deploys with a hard reload or
+  `curl -H 'Cache-Control: no-cache'`, never a `?v=N` cache-buster.
+- **RLS is the only thing separating users** — re-run the two-account isolation test after
+  any policy change.
+- **Supabase dashboard forms can silently revert scripted edits** — type into fields for
+  real and re-read the setting afterward.
 
 ## Working style that fits this project
 
