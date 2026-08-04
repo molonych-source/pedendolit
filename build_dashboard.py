@@ -36,6 +36,13 @@ WEB3FORMS_KEY = "bb727558-afe2-4799-9fda-90cd430b6a40"
 # button, no Saved tab, no Save buttons.
 SUPABASE_URL = "https://oiafndmmdplvitrttene.supabase.co"
 SUPABASE_ANON_KEY = "sb_publishable_nPy9JRVfAiCN0HXhSHkckQ_XG4llewm"
+
+# Show the "Continue with Google" button. Leave False until the Google provider is
+# actually enabled in Supabase (Authentication -> Sign In / Providers -> Google),
+# otherwise clicking it just errors with "provider is not enabled".
+# NOTE: the Google client SECRET is not like the key above — it is a real secret and
+# lives only in the Supabase dashboard. It must never appear in this file or the repo.
+GOOGLE_ENABLED = False
 # ---------------------------------------------------------------------------
 
 # Optional entry-date override: Perplexity's export dates articles by PubMed ENTRY
@@ -134,6 +141,7 @@ def build():
                 .replace("__WEB3FORMS_KEY__", WEB3FORMS_KEY)
                 .replace("__SUPABASE_URL__", SUPABASE_URL)
                 .replace("__SUPABASE_ANON_KEY__", SUPABASE_ANON_KEY)
+                .replace("__GOOGLE_ENABLED__", "true" if GOOGLE_ENABLED else "false")
                 .replace("/*DATA*/", data_json))
     for out in (OUT_LOCAL, OUT_ROOT, OUT_INDEX):
         with open(out, "w", encoding="utf-8") as f:
@@ -273,6 +281,14 @@ header .sub{color:var(--muted);font-size:13px}
 .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:8px;font-size:13px;z-index:60;opacity:0;pointer-events:none;transition:opacity .2s;max-width:90%}
 .toast.show{opacity:.95}
 .toast.err{background:var(--pa);color:#fff}
+/* ---- Google sign-in ---- */
+#auth-google{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;
+  padding:11px 16px;border:0.5px solid var(--line);border-radius:8px;background:var(--surface);
+  color:var(--ink);font:inherit;font-size:14px;font-weight:500;cursor:pointer;min-height:44px}
+#auth-google:hover{border-color:var(--muted)}
+#auth-google:disabled{opacity:.6;cursor:not-allowed}
+.authdiv{display:flex;align-items:center;gap:10px;margin:14px 0;color:var(--muted);font-size:12px}
+.authdiv::before,.authdiv::after{content:"";flex:1;height:1px;background:var(--line)}
 /* ---- Phase 3: notes, citations, "new since your last visit" ---- */
 .notewrap{margin:10px 0 4px;position:relative}
 .notelbl{display:block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
@@ -391,6 +407,11 @@ header .sub{color:var(--muted);font-size:13px}
   <div class="modal">
     <h3>Sign in to PedEndoLit</h3>
     <p>An account lets you save articles to your own list. Your list is private to you.</p>
+    <button type="button" id="auth-google" style="display:none">
+      <svg viewBox="0 0 18 18" width="16" height="16" aria-hidden="true"><path fill="#4285F4" d="M17.64 9.2c0-.64-.06-1.25-.16-1.84H9v3.48h4.84a4.14 4.14 0 0 1-1.8 2.72v2.26h2.92c1.7-1.57 2.68-3.88 2.68-6.62z"/><path fill="#34A853" d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.92-2.26c-.8.54-1.84.86-3.04.86-2.34 0-4.32-1.58-5.03-3.7H.96v2.33A9 9 0 0 0 9 18z"/><path fill="#FBBC05" d="M3.97 10.72a5.4 5.4 0 0 1 0-3.44V4.95H.96a9 9 0 0 0 0 8.1l3.01-2.33z"/><path fill="#EA4335" d="M9 3.58c1.32 0 2.5.45 3.44 1.35l2.58-2.58C13.46.9 11.43 0 9 0A9 9 0 0 0 .96 4.95l3.01 2.33C4.68 5.16 6.66 3.58 9 3.58z"/></svg>
+      <span>Continue with Google</span>
+    </button>
+    <div class="authdiv" id="auth-div" style="display:none"><span>or</span></div>
     <form id="auth-form">
       <input type="email" id="auth-email" placeholder="you@example.com" autocomplete="email" required/>
       <input type="password" id="auth-pass" placeholder="Password (at least 6 characters)" autocomplete="current-password" required/>
@@ -416,6 +437,7 @@ const ART=D.articles;
 // ---- Phase 2 config (filled in by build_dashboard.py) ----
 const SUPA_URL="__SUPABASE_URL__";
 const SUPA_KEY="__SUPABASE_ANON_KEY__";
+const GOOGLE_ON=__GOOGLE_ENABLED__;
 // Accounts are available only when both values are configured AND the Supabase
 // library actually loaded. Otherwise the dashboard behaves exactly as in Phase 1.
 const AUTH_ON = SUPA_URL.indexOf('http')===0 && SUPA_KEY.length>20
@@ -968,11 +990,64 @@ function openAuth(){
   document.getElementById('auth-email').focus();
 }
 function closeAuth(){amodal.classList.remove('show');}
+
+// ---- Sign in with Google ----
+// Redirect flow: this page -> Supabase -> Google -> back here with the session in
+// the URL hash. supabase-js picks the hash up on load (detectSessionInUrl), so no
+// extra handling is needed for the success path — only for errors, below.
+async function signInWithGoogle(){
+  const b=document.getElementById('auth-google');
+  if(!SB)return;
+  b.disabled=true;
+  astatus.textContent='Redirecting to Google…';astatus.className='msg';
+  const {error}=await SB.auth.signInWithOAuth({
+    provider:'google',
+    // Strip any existing hash so we don't hand Google a URL with tokens in it.
+    options:{redirectTo:location.href.split('#')[0]}
+  });
+  if(error){
+    b.disabled=false;
+    astatus.textContent='Could not start Google sign-in: '+(error.message||'unknown error');
+    astatus.className='msg err';
+  }
+}
+
+// ---- read the URL hash on load ----
+// Both OAuth and (later) password recovery come back through the hash fragment,
+// including failures. Without this an error just vanishes and the user sees a
+// signed-out page with no explanation.
+function consumeAuthHash(){
+  const h=location.hash||'';
+  if(h.length<2)return null;
+  let p;
+  try{p=new URLSearchParams(h.slice(1));}catch(e){return null;}
+  const err=p.get('error_description')||p.get('error');
+  const type=p.get('type');
+  if(err){
+    // Clear the hash so a refresh doesn't replay the same error.
+    history.replaceState(null,'',location.pathname+location.search);
+    toast('Sign-in failed: '+decodeURIComponent(err).replace(/\+/g,' '),true);
+    return null;
+  }
+  if(p.get('access_token')){
+    // supabase-js has already stored the session; tidy the address bar so tokens
+    // aren't left sitting in history or copied out of the URL bar.
+    history.replaceState(null,'',location.pathname+location.search);
+  }
+  return type||null;
+}
+
 function updateAuthUI(){
   const btn=document.getElementById('auth-btn'),who=document.getElementById('auth-who');
   if(!AUTH_ON)return;
   btn.style.display='';
   document.getElementById('tab-btn-saved').style.display='';
+  // Only reveal the Google button once the provider is actually configured,
+  // otherwise clicking it errors with "provider is not enabled".
+  if(GOOGLE_ON){
+    document.getElementById('auth-google').style.display='';
+    document.getElementById('auth-div').style.display='';
+  }
   if(USER){
     who.textContent=USER.email||'Signed in';who.style.display='';
     btn.textContent='Sign out';
@@ -1037,8 +1112,12 @@ if(AUTH_ON){
   document.getElementById('auth-cancel').addEventListener('click',closeAuth);
   document.getElementById('auth-signup').addEventListener('click',()=>doAuth('signup'));
   document.getElementById('auth-form').addEventListener('submit',e=>{e.preventDefault();doAuth('signin');});
+  document.getElementById('auth-google').addEventListener('click',signInWithGoogle);
   amodal.addEventListener('click',e=>{if(e.target===amodal)closeAuth();});
   document.addEventListener('keydown',e=>{if(e.key==='Escape')closeAuth();});
+  // Runs before the session settles, so an OAuth error surfaces instead of the
+  // page silently rendering as signed-out.
+  consumeAuthHash();
 }
 
 // ---- notes: debounced typing + save on blur ----
