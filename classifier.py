@@ -406,14 +406,37 @@ def classify_study_type(art):
     head = (tl + " " + (art.get("abstract") or "").lower())[:120]
     text = tl + " " + (art.get("abstract") or "").lower()
 
+    # Guidelines are tested FIRST. A practice guideline that is built on a
+    # systematic review is still a guideline, but the meta-analysis and systematic
+    # review branches used to run ahead of this one and swallowed it — the Endocrine
+    # Society central precocious puberty guideline was typed "Systematic Review"
+    # and its companion paper "Meta-analysis".
+    #
+    # Signals in order of strength: PubMed publication types, then the TITLE.
+    # The abstract is deliberately NOT searched here: "we followed ISPAD guidelines"
+    # is a mention, not a guideline. `head` (first 120 chars of title+abstract) was
+    # also too short — it cut off long guideline titles before the keyword.
+    is_guideline_pt = any(p in pts for p in (
+        "guideline", "practice guideline", "consensus statement",
+        "consensus development conference", "position statement"))
+    # Papers *about* guidelines (adherence, awareness, implementation) are studies,
+    # not guidelines, so they are excluded even when the word appears in the title.
+    about_guidelines = has_re(tl,
+        r"^\s*(adherence|compliance|implementation|awareness|knowledge|attitudes|"
+        r"survey|application|utilization|utilisation|impact|evaluation|comparison)\b")
+    is_guideline_title = has_re(tl,
+        r"\bclinical practice guidelines?\b",
+        r"\bguidelines?\s+(for|on|in|of|to)\b",
+        r"\b(consensus|position|practice)\s+(statement|paper|recommendations?)\b",
+        r"\bexpert (consensus|panel|opinion|recommendations?)\b",
+        r"\bclinical recommendations?\b",
+        r"\bguidelines?\s*$")
+    if is_guideline_pt or (is_guideline_title and not about_guidelines):
+        return "Guideline/Consensus", 1
     if "meta-analysis" in pts or "meta-analysis" in text:
         return "Meta-analysis", 1
     if "systematic review" in pts or "systematic review" in text:
         return "Systematic Review", 1
-    if any(p in pts for p in ("guideline", "practice guideline")) or \
-       has(head, "guidelines for", "clinical practice guideline", "consensus statement",
-           "position statement", "expert consensus", "expert panel", "clinical recommendations"):
-        return "Guideline/Consensus", 1
     if "randomized controlled trial" in pts or "randomized" in pts or \
        ("randomized" in text and ("trial" in text or "rct" in text)):
         return "RCT", 2

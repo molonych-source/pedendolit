@@ -51,8 +51,12 @@ def map_raw(raw):
     ids = raw.get("identifiers", {}) or {}
     j = raw.get("journal", {}) or {}
     pd = raw.get("publication_date", {}) or {}
+    # Keep every author. This used to truncate at 6, which made a citation export
+    # impossible: 174 records sat at exactly 6 names, so "complete" and "truncated"
+    # were indistinguishable. The dashboard still shows only the first 3 + "et al.";
+    # truncating for display is the renderer's job, not the store's.
     authors = []
-    for a in (raw.get("authors") or [])[:6]:
+    for a in (raw.get("authors") or []):
         ln = a.get("last_name", "") or ""
         ini = a.get("initials", "") or (a.get("fore_name", "")[:1] if a.get("fore_name") else "")
         authors.append(_clean((ln + " " + ini).strip()))
@@ -63,6 +67,10 @@ def map_raw(raw):
         if pd.get("day"):   pub_date += "-" + str(pd["day"]).zfill(2)
     doi = ids.get("doi") or raw.get("doi") or ""
     pmid = ids.get("pmid") or raw.get("pmid") or ""
+    # PubMed returns these but they were never mapped, which is why no proper
+    # citation (or PMC full-text link) could be produced.
+    cit = raw.get("citation", {}) or {}
+    pmc = ids.get("pmc") or ""
     return {
         "pmid": pmid,
         "title": _clean((raw.get("title") or "").strip()),
@@ -75,8 +83,13 @@ def map_raw(raw):
         "pub_types": raw.get("article_types") or [],
         "mesh_terms": raw.get("mesh_terms") or [],
         "keywords": raw.get("keywords") or [],
+        "volume": _clean(cit.get("volume") or ""),
+        "issue": _clean(cit.get("issue") or ""),
+        "pages": _clean(cit.get("pages") or ""),
+        "pmc": pmc,
         "url": f"https://pubmed.ncbi.nlm.nih.gov/{pmid}/" if pmid else "",
         "doi_url": f"https://doi.org/{doi}" if doi else "",
+        "pmc_url": f"https://www.ncbi.nlm.nih.gov/pmc/articles/{pmc}/" if pmc else "",
     }
 
 
