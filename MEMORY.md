@@ -69,6 +69,15 @@ DSD-context guard) and **Calcium/Parathyroid** split out of Bone/Calcium (both 2
 - **Cumulative result:** abstracts 336→1214, clinical bottom lines 336→1214, "Other" 853→400, guidelines 4→15, fully citable 308→1266, board-relevant 69→186, volume/issue/pages 0→910, PMC ids 0→595. Store 1287→1273; all 14 removals correct (errata/corrections and adult-only studies) and only detectable once abstracts existed.
 - **Only 59 articles still lack an abstract**, and those are letters/editorials with none indexed in PubMed. This is effectively done — the backfill job in `PedEndoLit Legacy Metadata Backfill Handoff.md` is superseded.
 
+## Phase 3B: since-last-visit, notes, guidelines filter, citation export (live 2026-08-04)
+- **`user_prefs` table** — one row per user (`user_id` PK, `last_seen_at`, `prev_seen_at`). Not a clone of `saved_articles`; it's a different shape. `prev_seen_at` exists so opening the page doesn't erase the very "new since" marker the reader is looking at. On a first visit `prev_seen_at` is null and nothing is flagged new, which is the honest answer.
+- **`saved_articles.note`** — free text. Uses `update` on a debounced timer plus blur, NOT the optimistic-insert/swallow-23505 pattern used for saves; that pattern is wrong for free text.
+- **Guidelines filter** was two lines: `build_dashboard.py`'s `.chip[data-flag]` handler already binds any chip, so a new filter is one static span plus one line in `matches()`.
+- **Citation export** (per-article copy, bulk copy, RIS download for Zotero) is pure client-side string building from the embedded dataset. Only worth having after the metadata recovery — 1266 articles are now fully citable and 910 have volume/issue/pages.
+- **Two long-standing bugs fixed**: open abstracts collapsed on every re-render (inline `style.display` with no backing state Set — now `openAbstracts`, mirroring `openCards`), and search had no debounce so every keystroke re-filtered ~1300 articles and rebuilt the entire list.
+- **Verified**: RLS isolation on `user_prefs` (real user 1 row, different user id 0, owner view 1, anon denied), note round-trip to the DB, guidelines filter (15 of 1273), citation copy.
+- **Leaked-password protection is Pro-only.** The Supabase security advisor flags it as disabled, but the toggle is gated behind the paid plan — the UI lets you flip it and then silently refuses to save. Free-tier alternatives that WOULD work: raise minimum password length (currently 6) and set character-class requirements, both under Authentication → Sign In / Providers → Email.
+
 ## Known limitations / honest caveats
 - `is_new` means "added in the most recent run" — a global flag, so it cannot answer "what's new for me". Per-user last-seen is the Phase 3 fix.
 - "Other" is still the largest study-type bucket (590 of 1280), mostly articles that genuinely lack PubMed type tags.
