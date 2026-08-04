@@ -66,21 +66,22 @@ still redirecting, Google sign-in, and saved articles intact across the domain c
 
 ## What's next, in order
 
-1. **Finish HTTPS** (above). Blocks everything else that touches auth.
-2. **Password reset.** Needs custom SMTP via Resend on the new domain. **Use the six-digit
+Everything below is now unblocked — owning the domain was the gate.
+
+1. **Password reset.** Needs custom SMTP via Resend on the new domain. **Use the six-digit
    `{{ .Token }}` template, not a magic link** — hospital mail scanners pre-click links and
    consume the one-time token before the human gets there.
-3. **Turn email confirmation back on** at the same time. Until then addresses are unverified,
+2. **Turn email confirmation back on** at the same time. Until then addresses are unverified,
    which is what makes the pre-account-takeover risk real (see traps).
-4. **Weekly email digest** — the highest-value item on the clinician wishlist, since it stops
+3. **Weekly email digest** — the highest-value item on the clinician wishlist, since it stops
    this depending on anyone remembering to visit. GitHub Actions as scheduler, plus a **daily
    keepalive ping** because free Supabase projects pause after ~7 days idle and that silently
    breaks sign-in. Blocker: run `gh auth refresh -s workflow` — the current token cannot push
    `.github/workflows/`.
-5. **Public share links** (`shared_lists` + a `SECURITY DEFINER` function keyed on an
+4. **Public share links** (`shared_lists` + a `SECURITY DEFINER` function keyed on an
    unguessable slug, so the table never becomes enumerable).
-6. Confirm the performance fix on a real phone.
-7. Delete the old Google client secret (two are enabled; only the newer one is in use).
+5. Confirm the performance fix on a real phone.
+6. Delete the old Google client secret (two are enabled; only the newer one is in use).
 
 ---
 
