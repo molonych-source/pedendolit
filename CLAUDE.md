@@ -72,7 +72,12 @@ The full weekly procedure (date windows, MCP batching, PMID dedup) is in
   Edit this file to change classification logic — then `--rebuild` (see above).
 - **`build_dataset.py`** — pipeline stage 2 (see above). Also decodes HTML/XML
   entities in titles/abstracts at ingest (`_clean`), since PubMed metadata contains
-  raw entities like `&#xa0;`.
+  raw entities like `&#xa0;`. `ARCHIVE_AFTER_DAYS` at the top is the archive switch,
+  currently `None` (nothing is ever hidden) — see the archive note below.
+- **`merge_raw_sources.py`** — rebuilds `comprehensive_raw.json` from every raw file
+  on disk, keeping the richest value per field per PMID, with no network calls. Run it
+  before any `--rebuild`. It seeds from the current store first so a rebuild cannot
+  delete an article that exists only in `pedendolit-data.json`.
 - **`build_dashboard.py`** — pipeline stage 3. Contains the `WEB3FORMS_KEY` (bug/comment
   report form — safe to expose, send-only) and the Phase 2 Supabase config stubs
   (`SUPABASE_URL` / `SUPABASE_ANON_KEY`, currently empty — see Phase 2 below). Also
@@ -105,17 +110,29 @@ Calcium/Parathyroid split, Turner/Prader-Willi placement under Growth).
   mismatches. Treat `MEMORY.md` as authoritative for current behavior; the runbook
   section is stale and hasn't been corrected.
 - **`--rebuild` wipes the store to the current `raw_articles.json`** if run without
-  `--raw comprehensive_raw.json` — see pipeline notes above and the runbook's
-  "REBUILD PITFALL" callout.
+  `--raw comprehensive_raw.json` — always run `merge_raw_sources.py` first. See the
+  runbook's "REBUILD PITFALL" callout.
+- **Archiving is OFF** (`ARCHIVE_AFTER_DAYS = None`). The old 60-day rule keyed off
+  `review_date`, which is when an article was *added*, not published — and the whole
+  historical backfill shares one date, so all 1029 of those articles would have
+  expired on the same weekly run. It was set to drop the site from 1287 articles to
+  258 on 2026-08-30 and to 35 by late September. Don't re-enable it without also
+  fixing what `review_date` means.
 - **PubMed MCP `search_articles` errors (HTTP 500) at `max_results=500`** — always
   use 200; no monitored journal approaches that volume even over a multi-month window.
-- **`is_new` currently flags all articles** (a backfill artifact from the initial
-  bulk load) — it self-corrects as weekly refreshes run, but don't trust a
-  "what's new" view built on it until then (see `TASKS.md`).
+- **Data completeness is the classifier's real constraint.** Until 2026-08-04, 74% of
+  the store had no abstract and was classified on title alone. If classification looks
+  weak for a given article, check whether it actually has an abstract before touching
+  `classifier.py`. ~430 records still lack one; those need a PubMed re-fetch (see
+  `PedEndoLit Legacy Metadata Backfill Handoff.md`).
+- **`is_new` means "added in the most recent run"**, not "new to this reader". It is a
+  global flag, so it cannot answer "what's new for me" — that belongs to the per-user
+  last-seen timestamp planned in Phase 3.
 - Two large intermediate/output JSON files (`comprehensive_raw.json`,
   `pedendolit-data.json`) are the real state; the various `*.prev.json` and
   `*backfill*.json` files are point-in-time snapshots/inputs from past sessions,
-  not live inputs to the pipeline.
+  not live inputs to the pipeline. `_tmp_batches/` is gitignored but is a genuine
+  metadata source for `merge_raw_sources.py` — don't delete it.
 
 ## Phase 2: accounts + saved articles (live since 2026-08-04)
 

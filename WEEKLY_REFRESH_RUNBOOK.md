@@ -46,32 +46,34 @@ show up as "no longer in the current list" stubs rather than breaking.
 
 ## Re-classify everything (only when classifier.py changes)
 
-> **CRITICAL — REBUILD PITFALL:** `--rebuild` reads from `raw_articles.json`, NOT
-> from the existing store (`pedendolit-data.json`). The normal weekly procedure
-> overwrites `raw_articles.json` with only that week's fetch. If you run `--rebuild`
-> after a normal weekly run, you will WIPE the store down to only the articles in
-> the current `raw_articles.json`.
->
-> Before running `--rebuild`, you MUST build a comprehensive source file:
-> ```
-> python3 - << 'EOF'
-> # Run from the PedEndoLit/ directory
-> import json, csv, re
-> # ... see comprehensive_raw.json reconstruction script in session history
-> # The standard sources: all_articles_export.csv + backfill_inline_supplement.json
-> # + raw_supplement_jes.json + raw_articles.json → comprehensive_raw.json
-> EOF
-> python3 build_dataset.py --run-date <YYYY-MM-DD> --raw comprehensive_raw.json --rebuild
-> ```
->
-> `comprehensive_raw.json` (built 2026-06-28) is kept in the PedEndoLit folder as
-> the canonical cumulative source. Before each future rebuild, append the current
-> `raw_articles.json` to it rather than replacing it.
+> **CRITICAL — REBUILD PITFALL:** `--rebuild` reads from the `--raw` file, NOT from
+> the existing store (`pedendolit-data.json`). The normal weekly procedure overwrites
+> `raw_articles.json` with only that week's fetch, so `--rebuild` without an explicit
+> `--raw comprehensive_raw.json` will WIPE the store down to that one week.
 
-`python3 build_dataset.py --run-date <YYYY-MM-DD> --raw comprehensive_raw.json --rebuild`
-Reclassifies all articles in the comprehensive source from scratch, preserving each
-article's original `review_date` so archive math stays correct. Use this after any
-edit to classifier logic; do NOT use it for normal weekly runs.
+Always run these two commands in order:
+
+```
+python3 merge_raw_sources.py                       # refresh the cumulative source
+python3 build_dataset.py --run-date <YYYY-MM-DD> --raw comprehensive_raw.json --rebuild
+python3 build_dashboard.py
+```
+
+`merge_raw_sources.py` rebuilds `comprehensive_raw.json` from every raw file on disk
+(the named sources plus `_tmp_batches/*.json`), keeping the richest value for each
+field per PMID. It **seeds from the current store first**, so a rebuild can never
+delete an article that exists only in `pedendolit-data.json` — 45 published articles
+were in that position, including both Endocrine Society guidelines. Use `--dry-run`
+to preview the field counts before writing.
+
+This replaced an unsaved ad-hoc script whose output had lost most of its abstracts:
+1053 records but only 93 abstracts, which is why 74% of the store had been classified
+on title alone. Reclassifying against the recovered metadata (2026-08-04) took
+abstracts 336→853, guidelines 4→15, and "Other" study types 853→590.
+
+`--rebuild` preserves each article's original `review_date`. Expect a small drop in
+article count: exclusion rules (errata, adult-only) fire correctly once abstracts are
+present. Check what was dropped rather than assuming — `git diff` the store.
 
 ## Notes / known-correct behaviors
 - A journal returning 0 results in a given week is normal (e.g. `Thyroid` is mostly

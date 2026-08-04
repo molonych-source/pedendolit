@@ -59,9 +59,18 @@ DSD-context guard) and **Calcium/Parathyroid** split out of Bone/Calcium (both 2
 - Email confirmation OFF (built-in sender is rate-limited), so addresses are unverified and signup is open. No password-reset UI — reset from Supabase → Authentication → Users.
 - The `anon` role has zero table grants (explicitly revoked; Supabase's defaults would otherwise auto-grant).
 
+## Data recovery + archive fix (2026-08-04)
+- **The 60-day archive was a time bomb and is now OFF** (`ARCHIVE_AFTER_DAYS = None` in `build_dataset.py`). It keyed on `review_date` = when an article was ADDED, not published; the whole historical backfill shares `2026-06-28`, so all 1029 would have expired on one run. Simulated: 1287 → 258 articles on the 2026-08-30 run, → 35 by late September. The dashboard is a searchable corpus; "what's new" belongs per-user, not as a global purge.
+- **74% of the store had no abstract** and had been classified on title alone. Cause: the previous `comprehensive_raw.json` (built by an unsaved ad-hoc script) held 1053 records but only 93 abstracts, while the original per-batch MCP fetches in `_tmp_batches/` still had full text. This — not the classifier — was why two-thirds of articles typed as "Other" with no bottom line.
+- **`merge_raw_sources.py` fixes it with zero API calls.** Merges every local raw file, richest-value-wins per field. Seeds from the current store first because **45 published articles exist in no raw file at all** (including both Endocrine Society guidelines) and a rebuild without that seed would delete them.
+- **`map_raw()` was silently dropping data**: never read the `citation` block (volume/issue/pages) or `identifiers.pmc`, and truncated authors at 6 — 174 records sat at exactly 6, so complete vs truncated was indistinguishable. All fixed.
+- **Guideline detection was broken two ways**: `classify_study_type` tested meta-analysis and systematic review *before* guidelines (so the Endocrine Society precocious-puberty guideline typed as "Systematic Review"), and only looked at the first 120 chars against a narrow phrase list. Now guidelines are tested first, using `pub_types` + full title, with a guard excluding papers *about* guidelines (adherence/implementation/survey).
+- **Result of reclassifying:** abstracts 336→853, clinical bottom lines 336→853, "Other" 853→590, guidelines 4→15, fully citable 308→852, board-relevant 69→142, volume/issue/pages 0→535, PMC ids 0→409. Store 1287→1280; all 7 removals correct (4 errata, 3 adult-medicine) and only detectable once abstracts existed.
+- **Still outstanding:** ~430 articles have no abstract in any local file and need a real PubMed re-fetch — the paused job in `PedEndoLit Legacy Metadata Backfill Handoff.md`.
+
 ## Known limitations / honest caveats
-- `is_new` currently flags ALL articles (backfill artifact); self-corrects once weekly refreshes run, but a clinician-facing "what's new" view isn't trustworthy until then — see TASKS.md.
-- "Other" is the 2nd-largest study-type bucket (~264) — PubMed-untyped articles; low at-a-glance evidence signal.
+- `is_new` means "added in the most recent run" — a global flag, so it cannot answer "what's new for me". Per-user last-seen is the Phase 3 fix.
+- "Other" is still the largest study-type bucket (590 of 1280), mostly articles that genuinely lack PubMed type tags.
 - A few DSD enzyme-deficiency terms (e.g. 17β-HSD3) aren't in the DSD keyword list, so those occasionally land in General Endocrinology.
 - 28 backfilled articles had abstracts condensed (not verbatim) by a subagent during fetch; classification verified unaffected.
 
