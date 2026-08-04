@@ -28,39 +28,26 @@ to be shared at conferences.
 
 ---
 
-## The one thing that is unfinished
+## Status: everything from this session is finished and verified
 
-**GitHub is still provisioning the TLS certificate for the new domain.** Started 2026-08-04
-right after DNS propagated.
+**https://pedsendobrief.org is fully live over HTTPS**, with enforcement on. Google
+sign-in was tested on the new domain and works. Nothing is left half-done.
 
-- `http://pedsendobrief.org` works and serves the current build
-- `https://` does not resolve yet; `https_certificate.state` is `null`
-- **Google sign-in on the new domain is therefore broken** — OAuth requires an HTTPS
-  origin, and the registered origin is `https://pedsendobrief.org`
-- HTTPS enforcement is deliberately **off**. Turning it on before the cert exists takes
-  the site down rather than securing it.
-
-**First thing to do in a new session:**
+The TLS certificate initially stalled — it sat at `null` for 40+ minutes. DNS, CAA and
+routing were all verified correct, so the fix was to clear and re-set the custom domain
+via the API, which re-triggers provisioning:
 
 ```bash
-curl -sI https://pedsendobrief.org/ | head -1
-gh api repos/molonych-source/pedendolit/pages --jq '{cert:.https_certificate.state,https:.https_enforced}'
+gh api --method PUT repos/molonych-source/pedendolit/pages -f cname=''
+gh api --method PUT repos/molonych-source/pedendolit/pages -f cname='pedsendobrief.org'
 ```
 
-If HTTPS answers, enable enforcement:
+It then moved `null → authorized → approved` within a couple of minutes. A transient
+"errored" build state during the swap was harmless. **Remember this if a certificate ever
+stalls again** — waiting longer does not help; re-triggering does.
 
-```bash
-gh api --method PUT repos/molonych-source/pedendolit/pages \
-  -f cname='pedsendobrief.org' -F https_enforced=true
-```
-
-Then sign in with Google at the new domain to confirm auth works end to end.
-
-If it is still `null` after several hours, the usual fix is to clear and re-set the custom
-domain in GitHub → Settings → Pages, which re-triggers provisioning. Check first that all
-Cloudflare DNS records are still **DNS only** — see the trap list below.
-
----
+Verified working: HTTPS with enforcement (http and www both 301), the old github.io URL
+still redirecting, Google sign-in, and saved articles intact across the domain change.
 
 ## Done this session
 
