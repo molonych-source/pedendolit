@@ -116,6 +116,41 @@ Measured on the live page with `performance.now()`, not estimated:
 - `openCards` / `openAbstracts` still drive state, so a re-render preserves whatever the reader had open — verified after the change.
 - **Deploy gotcha: GitHub Pages' CDN caches by path and ignores query strings.** A `?v=N` cache-buster does NOT force a fresh copy in the browser; it fooled me into thinking a deploy hadn't worked. Use a hard reload (cmd+shift+R) or `curl -H 'Cache-Control: no-cache'` when verifying a deploy.
 
+## HTTPS on the custom domain (fixed 2026-08-04)
+- GitHub's certificate provisioning never started because the Pages **DNS check was stuck
+  "in progress"** — DNS itself was verified correct (four apex A records to GitHub, proxy off).
+  Fix: remove and re-add the custom domain in Settings → Pages, which re-triggers the check.
+  Cert issued within minutes (expires 2026-11-02, auto-renews); `https_enforced` is ON.
+- The remove/re-add makes GitHub commit a `Delete CNAME` + `Create CNAME` pair to the repo —
+  pull after doing it or the next push conflicts.
+- Google sign-in verified end-to-end on https://pedsendobrief.org after enforcement.
+
+## Password reset + email confirmation (live 2026-08-04)
+- **Custom SMTP via Resend** (account under molonych@gmail.com, free tier: 100/day).
+  Domain `pedsendobrief.org` verified in Resend via manual DNS at Cloudflare — deliberately
+  NOT the "Auto configure" OAuth path, so Resend holds no standing access to DNS. Four records:
+  DKIM TXT `resend._domainkey`, MX + SPF TXT on `send`, DMARC TXT `_dmarc` (`p=none`).
+  "Enable Receiving" was skipped on purpose — no inbound mail wanted.
+- Supabase SMTP: `smtp.resend.com:465`, user `resend`, password = Resend API key (Christian
+  holds it), sender `no-reply@pedsendobrief.org`. Saving custom SMTP auto-raised the email
+  rate limit to 30/hour and unlocked template editing (templates are NOT editable before that).
+- **Both templates use six-digit `{{ .Token }}` codes, not links** — hospital mail scanners
+  pre-click links and consume one-time tokens; codes are immune.
+- **Trap: this project's "Email OTP length" was 8, not the documented default 6.** First two
+  test emails carried 8-digit codes that the UI's 6-digit validation would reject. Set to 6 in
+  Sign In / Providers → Email. Second trap: setting the field via scripted `.value` assignment
+  showed "saved" but silently reverted (React state); real keystrokes committed it.
+- **UI (all in `HTML_TEMPLATE`):** "Forgot password?" → email → code → new password, via
+  `resetPasswordForEmail` → `verifyOtp(type:'recovery')` → `updateUser`. A consumed-OTP guard
+  (`otpOK`) prevents re-verifying a spent code if `updateUser` fails. Signup confirmation is the
+  same pattern with `verifyOtp(type:'signup')` + `resend()`. Watch for JS name collisions in the
+  single inline script — `rstatus` was already taken by the bug-report form (renamed `pwstatus`).
+  Verified end-to-end by Christian on the live site.
+- **Email confirmation is ON** (Sign In / Providers → Confirm email) as of 2026-08-04. This
+  closes the pre-account-takeover hole: unverified email/password signups can no longer squat
+  on an address that later links to a Google sign-in. Supabase links same-email identities into
+  one account (same user_id, same saved list) regardless of which method is used first.
+
 ## Known limitations / honest caveats
 - `is_new` means "added in the most recent run" — a global flag, so it cannot answer "what's new for me". Per-user last-seen is the Phase 3 fix.
 - "Other" is still the largest study-type bucket (590 of 1280), mostly articles that genuinely lack PubMed type tags.
@@ -124,6 +159,7 @@ Measured on the live page with `performance.now()`, not estimated:
 
 ## Contacts / accounts
 - Web3Forms key: in `build_dashboard.py` (`WEB3FORMS_KEY`).
-- GitHub repo: https://github.com/molonych-source/pedendolit (public, account `molonych-source`). Live site https://molonych-source.github.io/pedendolit/.
+- GitHub repo: https://github.com/molonych-source/pedendolit (public, account `molonych-source`). Live site https://pedsendobrief.org (the old github.io URL 301-redirects).
+- Resend account under molonych@gmail.com — sending domain `pedsendobrief.org` (us-east-1), dashboard at resend.com. API key lives only in Supabase's SMTP settings; if lost, create a new key and re-paste.
 - Supabase project `oiafndmmdplvitrttene` (free tier). **Free-tier projects pause after ~1 week with no API activity, and a paused project makes sign-in fail** — the weekly refresh doesn't touch Supabase, only real user traffic does. Resume from the Supabase dashboard.
 - Local caveat: `~/Documents` is iCloud-synced, so `.git` lives inside a syncing folder. GitHub is the durable backup — push at every checkpoint; re-clone if git ever reports corruption.
