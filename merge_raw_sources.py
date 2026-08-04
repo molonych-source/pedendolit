@@ -58,7 +58,12 @@ def load_source(path):
             if isinstance(d.get(k), list):
                 d = d[k]
                 break
-    return d if isinstance(d, list) else []
+    if not isinstance(d, list):
+        return []
+    for r in d:
+        if isinstance(r, dict) and _is_null_abstract(r.get("abstract")):
+            r["abstract"] = ""
+    return d
 
 
 def pmid_of(rec):
@@ -66,10 +71,22 @@ def pmid_of(rec):
     return str(ids.get("pmid") or rec.get("pmid") or "").strip()
 
 
+# PubMed returns this literal string for records that genuinely have no abstract
+# (letters, editorials, some commentaries). Storing it would be worse than storing
+# nothing: it reads as content, and the classifier would treat it as body text.
+NULL_ABSTRACTS = ("[abstract not available]", "abstract not available", "n/a")
+
+
+def _is_null_abstract(v):
+    return isinstance(v, str) and v.strip().lower() in NULL_ABSTRACTS
+
+
 def merge_into(dst, src):
     """Fold src into dst, keeping whichever value carries more information."""
     for k, v in src.items():
         if v in (None, "", [], {}):
+            continue
+        if k == "abstract" and _is_null_abstract(v):
             continue
         cur = dst.get(k)
         if k in NESTED_DICT_FIELDS and isinstance(v, dict):
