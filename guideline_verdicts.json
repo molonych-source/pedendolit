@@ -1,125 +1,179 @@
 {
   "reviewed_by": "agent",
   "verdicts": {
-    "40694360": {
+    "38377729": {
       "verdict": "reject",
       "confidence": "high",
-      "reason": "ACR/ACNM/ARS/SNMMI/SPR practice parameter on I-131 sodium iodide therapy for thyroid disease is an all-ages radiology/nuclear medicine procedural standard with no pediatric-specific scope (no Child MeSH term); Society for Pediatric Radiology is only a co-sponsoring society, not a pediatric-focused document.",
+      "reason": "Brazilian Society of Otology guideline on peripheral facial palsy evaluation/management in children and adults; an otology topic with no endocrine content.",
       "topic": null
     },
-    "41842822": {
+    "38169175": {
+      "verdict": "reject",
+      "confidence": "high",
+      "reason": "ESPEN-ESPGHAN-ECFS guideline on nutrition care in cystic fibrosis focused on nutritional status and vitamin supplementation, not endocrine/diabetes management.",
+      "topic": null
+    },
+    "39829212": {
       "verdict": "accept",
       "confidence": "high",
-      "reason": "Chilean Society of Pediatrics Nutrition Branch recommendation for treatment of pediatric obesity in children and adolescents, squarely core Obesity/Metabolic content.",
+      "reason": "Polish national guideline update on diagnosis and treatment of differentiated and medullary thyroid carcinoma specifically in children.",
+      "topic": "Thyroid"
+    },
+    "38538470": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "Review/guideline on diagnosis and management of congenital hypopituitarism (GH, TSH, ACTH, gonadotropin, ADH deficiencies) in children.",
+      "topic": "Pituitary"
+    },
+    "38604231": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "German-language clinical practice guideline covering diagnosis, therapy, and follow-up of diabetes mellitus in children and adolescents.",
+      "topic": "Diabetes"
+    },
+    "38955658": {
+      "verdict": "borderline",
+      "confidence": "medium",
+      "reason": "Arab Diabetes Forum consensus on regional diabetes management is largely adult/population-level (Ramadan care, general screening) with only brief explicit inclusion of pediatric T1D/T2D management, so pediatric scope is partial.",
+      "topic": "Diabetes"
+    },
+    "39125469": {
+      "verdict": "reject",
+      "confidence": "high",
+      "reason": "Presents a craniofacial/orthodontic diagnostic examination form for pediatric obstructive sleep apnea; an ENT/craniofacial tool, not an endocrine guideline (obesity is only mentioned as a contributing risk factor).",
+      "topic": null
+    },
+    "39126560": {
+      "verdict": "borderline",
+      "confidence": "medium",
+      "reason": "Italian andrology society (SIAMS) guideline on pediatric-to-transition andrological disorders, co-authored with the pediatric endocrinology society (SIEDP), but the lead discipline and framing is andrology/urology rather than endocrinology.",
+      "topic": "DSD"
+    },
+    "39240349": {
+      "verdict": "reject",
+      "confidence": "high",
+      "reason": "European radiology society practice recommendations on MRI safety in vulnerable patients (including children); a radiology safety topic with no endocrine content.",
+      "topic": null
+    },
+    "39297398": {
+      "verdict": "borderline",
+      "confidence": "medium",
+      "reason": "Indian pediatric GI/hepatology society recommendations for metabolic dysfunction-associated steatotic liver disease (MASLD) in children, which is metabolically driven (obesity, insulin resistance, dyslipidemia) but framed and authored as a hepatology guideline.",
       "topic": "Obesity/Metabolic"
     },
-    "40988096": {
+    "39442262": {
+      "verdict": "reject",
+      "confidence": "high",
+      "reason": "Brazilian Society of Otology task force recommendations on cochlear implant indications and complications in children and adults; an otology topic.",
+      "topic": null
+    },
+    "39378663": {
+      "verdict": "reject",
+      "confidence": "high",
+      "reason": "Brazilian Society of Otology task force recommendations for single-sided deafness treatment in children and adults; an otology topic.",
+      "topic": null
+    },
+    "39380079": {
       "verdict": "accept",
       "confidence": "high",
-      "reason": "BSPED best-practice guideline for UK children/adolescents under 18 with pre-stage 3 type 1 diabetes covering screening, monitoring, and DKA risk, core pediatric diabetes content.",
-      "topic": "Diabetes"
+      "reason": "Italian Society for Pediatric Endocrinology and Diabetology position paper on cardiometabolic risk assessment and management in children/adolescents with obesity.",
+      "topic": "Obesity/Metabolic"
     },
-    "40995775": {
-      "verdict": "reject",
-      "confidence": "medium",
-      "reason": "European Academy of Pediatrics position statement on physical activity/sport is a broad multi-specialty guideline spanning JIA, hemophilia, asthma, CF, sickle cell, IBD, epilepsy, hypertension, and nephrotic syndrome, with diabetes only one of a dozen conditions addressed; endocrine content is incidental rather than the guideline's subject.",
-      "topic": null
+    "39551654": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "French Society of Pediatric Endocrinology and Diabetology expert consensus on endocrine (hormonal) management of transgender adolescents.",
+      "topic": "Gender Medicine"
     },
-    "41065813": {
+    "39647985": {
       "verdict": "reject",
       "confidence": "high",
-      "reason": "Egyptian national guideline update for hemophilia A management in children; obesity management is listed as one added care element within a hematology guideline, not the guideline's subject.",
+      "reason": "French Society of Vascular Medicine consensus on venous thromboembolism management in children; a hematology/vascular topic, not endocrine.",
       "topic": null
     },
-    "41203536": {
+    "39641420": {
+      "verdict": "reject",
+      "confidence": "high",
+      "reason": "Canadian Association of Radiologists broad pediatric imaging referral guideline spanning head, spine, chest, abdomen, GU, and trauma scenarios; a general radiology referral guideline, not an endocrine-focused document.",
+      "topic": null
+    },
+    "39675522": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "French expert position statement on screening and monitoring first-degree relatives of T1D patients for preclinical (stage 1-2) type 1 diabetes via autoantibody testing.",
+      "topic": "Diabetes"
+    },
+    "38597099": {
+      "verdict": "reject",
+      "confidence": "high",
+      "reason": "Indian Academy of Pediatrics consensus guideline on general preconception/adolescent health counseling (substance use, STIs, vaccination, mental health); endocrine content (obesity mention) is incidental, not the subject.",
+      "topic": null
+    },
+    "40071796": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "Expert panel framework guideline for the multidisciplinary care of adolescents with gender dysphoria/incongruence, including hormonal management protocols.",
+      "topic": "Gender Medicine"
+    },
+    "40097316": {
+      "verdict": "reject",
+      "confidence": "high",
+      "reason": "European multi-society guideline on diagnosis and enzyme replacement therapy for pancreatic exocrine insufficiency across all ages; a GI/pancreatic topic, not endocrine, despite mentioning diabetes as one associated condition.",
+      "topic": null
+    },
+    "40063957": {
+      "verdict": "reject",
+      "confidence": "high",
+      "reason": "KDIGO 2024 chronic kidney disease guideline synopsis for adults and children not on dialysis; a nephrology guideline focused on CKD staging and SGLT2 inhibitor/statin use, not primarily pediatric or endocrine.",
+      "topic": null
+    },
+    "40228835": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "CMAJ clinical practice guideline with GRADE-based recommendations on behavioral, pharmacologic, and surgical management of obesity in children.",
+      "topic": "Obesity/Metabolic"
+    },
+    "40889554": {
       "verdict": "borderline",
       "confidence": "medium",
-      "reason": "EAU/ESPU summary on transition to adult care in pediatric urology covers DSD as one of five named congenital conditions (alongside bladder exstrophy, hypospadias, neurogenic bladder, PUV) inside a urology-framed transition chapter; the DSD transition content is real but the document is primarily a urology guideline.",
+      "reason": "French multi-society expert consensus on primary hyperparathyroidism diagnosis/management authored jointly by adult and pediatric endocrinologists/surgeons, but the 15-chapter document (epidemiology, lactation, atypical adenoma) is predominantly adult-focused with only incidental pediatric relevance (e.g., genetic/familial forms).",
+      "topic": "Calcium/Parathyroid"
+    },
+    "40987949": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "Practical framework for comprehensive endocrine and metabolic screening (growth, puberty, thyroid, parathyroid, glucose) in transfusion-dependent thalassemia patients aged 1-16 years in low-resource settings.",
+      "topic": "General Endocrinology"
+    },
+    "40574354": {
+      "verdict": "borderline",
+      "confidence": "medium",
+      "reason": "ESHRE good practice recommendations on testicular tissue cryopreservation for fertility preservation in prepubertal boys/adolescents undergoing gonadotoxic cancer therapy; a reproductive-medicine/surgical topic developed with pediatric endocrinology input, adjacent to but not centered on endocrine management.",
+      "topic": "Cancer Late Effects"
+    },
+    "39480773": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "Argentine Pediatric Society updated guideline on prevention, diagnosis, and treatment (lifestyle, pharmacologic, surgical) of pediatric obesity.",
+      "topic": "Obesity/Metabolic"
+    },
+    "39844487": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "Chinese national guideline (2025) for diagnosis and treatment of type 2 diabetes mellitus in children.",
+      "topic": "Diabetes"
+    },
+    "39270074": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "Argentine Pediatric Society National Endocrinology Committee update on diagnosis and treatment of cryptorchidism, including recognition of associated differences of sex development and genetic syndromes.",
       "topic": "DSD"
     },
-    "41338999": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "Japanese multidisciplinary clinical practice guideline for differences of sex development covering initial management of infants with atypical genitalia, hormonal treatment, and pediatric-to-adult transition; DSD is a core topic and pediatric endocrinology is an explicit contributing discipline.",
-      "topic": "DSD"
-    },
-    "41361403": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "Australasian periprocedural guideline for children and adolescents with diabetes mellitus undergoing procedures/general anaesthesia, core pediatric diabetes management content.",
-      "topic": "Diabetes"
-    },
-    "41366616": {
+    "41038201": {
       "verdict": "borderline",
       "confidence": "medium",
-      "reason": "Italian multi-society call-to-action on pediatric cardiovascular risk prevention addresses dyslipidemia, obesity, and hypertension from childhood, endocrine/metabolic risk factors are central but the framing is cardiovascular primary prevention rather than an endocrinology guideline per se.",
-      "topic": "Lipids"
-    },
-    "41455383": {
-      "verdict": "reject",
-      "confidence": "high",
-      "reason": "French national protocol on Axenfeld-Rieger syndrome is an ophthalmology/ocular-genetics guideline (anterior segment dysgenesis, juvenile glaucoma) with no endocrine subject matter.",
-      "topic": null
-    },
-    "41474492": {
-      "verdict": "borderline",
-      "confidence": "medium",
-      "reason": "Female Athlete Triad Coalition consensus update on screening/treatment for energy deficiency, menstrual dysfunction, and bone loss in adolescent/adult athletes; endocrine relevance (hypothalamic amenorrhea, bone health) is real but the document is sports-medicine framed and spans into adulthood.",
-      "topic": "Bone/Calcium"
-    },
-    "41266045": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "Spanish scientific society (SED/SEEN/SEEP) consensus on screening, staging, and follow-up of preclinical type 1 diabetes in children with first-degree relatives, core pediatric diabetes screening content.",
-      "topic": "Diabetes"
-    },
-    "41578309": {
-      "verdict": "reject",
-      "confidence": "high",
-      "reason": "Italian Society of Pediatrics recommendations on digital media exposure and child health/mental health, no endocrine subject matter.",
-      "topic": null
-    },
-    "41627401": {
-      "verdict": "reject",
-      "confidence": "high",
-      "reason": "AsPNA clinical practice guideline for management of infection-related glomerulonephritis in children is a pediatric nephrology guideline with no endocrine content.",
-      "topic": null
-    },
-    "41949509": {
-      "verdict": "reject",
-      "confidence": "high",
-      "reason": "AAD guideline on primary prevention of pediatric atopic dermatitis; diabetes, obesity, and osteoporosis appear only as a list of comorbidities to be aware of within a dermatology-focused guideline, not the guideline's subject.",
-      "topic": null
-    },
-    "41961760": {
-      "verdict": "reject",
-      "confidence": "high",
-      "reason": "Swiss Society of Paediatric Pulmonology recommendations on long-term home respiratory support for children, a pulmonology guideline with no endocrine content.",
-      "topic": null
-    },
-    "42162485": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "Joint DDG/ÖDG guideline on automated insulin delivery systems and exercise/sports management in type 1 diabetes, explicitly covering children and adolescents alongside adults, core Diabetes technology content.",
-      "topic": "Diabetes"
-    },
-    "42545327": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "Russian clinical practice guideline for congenital adrenal hyperplasia in children, core pediatric Adrenal content.",
-      "topic": "Adrenal"
-    },
-    "42527127": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "Chinese 2026 national guideline for diagnosis, treatment, and prevention of type 1 diabetes mellitus in children, core pediatric diabetes content despite the non-English title.",
-      "topic": "Diabetes"
-    },
-    "41712950": {
-      "verdict": "reject",
-      "confidence": "high",
-      "reason": "ACOG guideline on diagnosis of endometriosis targets reproductive-aged adults and adolescents as a gynecologic (not endocrine) condition; endometriosis is not among the digest's endocrine topics and the population is predominantly adult.",
-      "topic": null
+      "reason": "EU-CAYAS-NET consortium clinical practice guideline on health-care transition for childhood/adolescent cancer survivors broadly (functioning, social participation, general late effects), which addresses transition-of-care processes rather than endocrine late effects specifically.",
+      "topic": "Cancer Late Effects"
     }
   }
 }
