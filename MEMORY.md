@@ -15,8 +15,8 @@ Computer workflow. Pulls pediatric endocrinology articles from 19 monitored jour
 via PubMed (free NCBI E-utilities, accessed through the PubMed MCP), classifies each
 with a rules-based classifier ported from the Perplexity spec, and renders a single
 self-contained page. Live at https://pedsendobrief.org with optional accounts (saved
-articles, notes, since-your-last-visit). Store: 1,361 articles as of 2026-08-04,
-including 104 guidelines. Guideline coverage now spans 2018 onward (the full ISPAD
+articles, notes, since-your-last-visit). Store: 1,406 articles as of 2026-08-04,
+including 149 guidelines. Guideline coverage now spans 2018 onward (the full ISPAD
 2018 CPCG diabetes series plus the 2024 series and beyond) across all monitored
 journals, with the cross-journal sweep additionally covering 2024–2026.
 

@@ -6,6 +6,34 @@ git history (33 commits to that date) and the dated sections formerly in `MEMORY
 
 ---
 
+### [2026-08-04] wide all-journals pre-2024 sweep (2018–2023)
+
+Ran the remaining priced-out option: the wide publication-type search, 2018–2023, across all
+journals (139 hits; 29 already handled by earlier rounds; 109 fetched, 5 classifier-excluded,
+104 for review — the largest single batch of the project).
+
+- **Split across two parallel Sonnet subagents** (52 candidates each) to keep each context
+  manageable; verdicts merged and validated (104/104, no gaps) before building the page.
+- **41 accept / 21 borderline / 42 reject** — close to the ~35% precision estimate. Notable
+  accepts: the 2023 international PCOS evidence-based guideline, AAP's 2023 pediatric obesity
+  CPG, ETA congenital hypothyroidism and pediatric Graves' guidelines, a 5-part Mexican
+  precocious-puberty guideline series, ADA Standards of Care ch.13, BSPED pediatric DKA, a
+  French pediatric bone fragility guideline, USPSTF youth prediabetes/T2D screening, an
+  international SGA consensus, and India's transgender youth care statement.
+- **Christian approved 45**, including 7 deliberate overrides of `borderline` verdicts he
+  judged in-scope (global vitamin D dosing, PWS management in adults/transition, pediatric
+  parenteral-nutrition calcium/phosphorus, APA's pediatric-obesity behavioral-treatment
+  guideline, post-HCT bone health, hospital CGM/automated-insulin-dosing consensus, Klinefelter
+  syndrome). He declined 3 of the agent's `accept` calls: a duplicate ACOG summary (having
+  already kept the full opinion), the Korean dyslipidemia guideline (consistent with his
+  earlier call on a companion PMID), and one Russian congenital hypothyroidism guideline.
+- Store 1361 → **1406**; guidelines 104 → **149**. Guideline-decision ledger now holds
+  **184 rulings** (100 approved / 84 rejected) across five sweep rounds.
+- **This closes every guideline-hunting angle identified this session**: journal-scoped
+  weekly refresh, the 2024–25 backfill, the 2024–2026 wide sweep (both halves), the pre-2024
+  dedicated-journal backfill, and the pre-2024 wide sweep. Ongoing coverage is now just the
+  monthly sweep keeping pace with new publications.
+
 ### [2026-08-04] pre-2024 guideline backfill (ISPAD 2018 series)
 
 Ran the high-precision option priced earlier: publication-type-scoped search restricted to
