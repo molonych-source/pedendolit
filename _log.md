@@ -6,6 +6,31 @@ git history (33 commits to that date) and the dated sections formerly in `MEMORY
 
 ---
 
+### [2026-08-04] pre-2024 guideline backfill (ISPAD 2018 series)
+
+Ran the high-precision option priced earlier: publication-type-scoped search restricted to
+the 5 journals already dedicated to peds-endo (Horm Res Paediatr, Pediatr Diabetes,
+J Clin Res Pediatr Endocrinol, Ann Pediatr Endocrinol Metab, J Pediatr Endocrinol Metab),
+2018–2023. 32 hits; 1 already in the store; 31 reviewed.
+
+- **Agent review: 31/31 accept, 0 borderline, 0 reject** — confirms the precision hypothesis
+  (journal-dedicated scope ≈100% vs. the wide sweep's ~35%). 22 of the 31 are chapters of the
+  **ISPAD 2018 Clinical Practice Consensus Guidelines** diabetes series; the rest: the ISPAD
+  DKA COVID-era addendum, an EASD/ISPAD CGM-and-exercise statement, the 2018 international
+  GnRH-analog consensus, three growth-diagnostic consensus papers, and a 2017 Korean pediatric
+  dyslipidemia guideline.
+- **Christian approved 30 of 31**, declining only the Korean dyslipidemia guideline as the
+  most peripheral item — country-specific and the oldest (2017) in the batch.
+- Store 1331 → **1361**; guidelines 74 → **104**. Guideline coverage now spans **2018 onward**
+  in the monitored journals, on top of the 2024–2026 cross-journal sweep coverage.
+- **Found:** the classifier's Gender Medicine pre-check mis-caught the GnRH-analog consensus
+  (PMID 31319416, about precocious puberty) and filed it as Gender Medicine instead of
+  Puberty — likely triggered by "GnRH analog" phrasing shared with gender-affirming-care
+  literature. Article inclusion/content is correct; only the topic label is off. Logged as a
+  known limitation rather than fixed immediately (single occurrence, not blocking).
+- Not yet run: the wide all-journals sweep for 2018–2023 (139 hits, ~35% precision, ~45–50
+  likely keepers) — priced but deferred pending interest.
+
 ### [2026-08-04] finished the wide sweep + priced the pre-2024 backfill
 
 - **Found and closed a coverage hole of my own making.** The wide 2024–2026 all-journals

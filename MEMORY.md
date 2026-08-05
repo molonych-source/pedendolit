@@ -15,8 +15,10 @@ Computer workflow. Pulls pediatric endocrinology articles from 19 monitored jour
 via PubMed (free NCBI E-utilities, accessed through the PubMed MCP), classifies each
 with a rules-based classifier ported from the Perplexity spec, and renders a single
 self-contained page. Live at https://pedsendobrief.org with optional accounts (saved
-articles, notes, since-your-last-visit). Store: 1,331 articles as of 2026-08-04,
-including 74 guidelines (all six ISPAD 2024 CPCG chapters).
+articles, notes, since-your-last-visit). Store: 1,361 articles as of 2026-08-04,
+including 104 guidelines. Guideline coverage now spans 2018 onward (the full ISPAD
+2018 CPCG diabetes series plus the 2024 series and beyond) across all monitored
+journals, with the cross-journal sweep additionally covering 2024–2026.
 
 ## Architecture (the pipeline)
 - **`journals.json`** — 19 monitored journals + PEDS_TERMS + Template A/B (peds-filter) flags. This file is the authority on the journal list (`PedEndoLit_Retrieval_Config.docx` still says 18).
@@ -69,8 +71,9 @@ authoritative; the runbook's entry-date description is stale.
 - 59 articles lack an abstract — all letters/editorials with none indexed in PubMed.
 - A few DSD enzyme-deficiency terms (e.g. 17β-HSD3) aren't in the DSD keyword list, so those occasionally land in General Endocrinology.
 - 28 backfilled articles had abstracts condensed (not verbatim) by a subagent during fetch; classification verified unaffected.
-- Coverage is still thin before 2026 for non-guideline articles: the 2024–25 backfill was publication-type-scoped (guidelines only). A full Jan-2025 corpus backfill remains a TASKS item.
+- Coverage is still thin before 2026 for non-guideline articles: the guideline backfills were publication-type-scoped only. A full Jan-2025 corpus backfill remains a TASKS item.
 - Guideline coverage outside the 19 monitored journals depends on the monthly sweep being run and reviewed; it is not automatic.
+- The Gender Medicine pre-check in `classify_topic` can mis-catch general pediatric endocrinology guidelines that mention GnRH analogs (e.g. the 2018 international consensus on GnRH-analog use in precocious puberty landed under Gender Medicine, not Puberty). Article content/inclusion is unaffected — only the topic label. Worth tightening the guard if it recurs.
 
 ## Operational traps (learned the hard way)
 - **PubMed MCP `search_articles` errors at `max_results=500`** — use 200; it also caps fetch batches at 20 and persists large results to files (read those from disk). It also rejects a query with **more than 20 boolean operators**, so a 19-journal OR-clause must be split in two.
