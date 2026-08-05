@@ -1,6 +1,6 @@
 # PedsEndoBrief — Session Handoff
 
-**Rewritten 2026-08-04 (evening), superseding the earlier same-day handoff.** Paste this into
+**Rewritten 2026-08-04 (night), superseding the earlier same-day handoff.** Paste this into
 a new session and say "continue from this handoff."
 
 **Read order for a fresh session:** `CLAUDE.md` (architecture + how to run things) →
@@ -21,17 +21,27 @@ a new session and say "continue from this handoff."
 
 ## What this is
 
-A weekly pediatric-endocrinology literature digest: 19 PubMed journals → rules-based
-classifier → one self-contained `index.html` (1,273 articles), plus accounts. Built for a
-clinician audience, meant to be shared at conferences.
+A pediatric-endocrinology literature digest: 19 PubMed journals → rules-based classifier →
+one self-contained `index.html` (**1,406 articles, including 149 guidelines**), plus accounts.
+Built for a clinician audience, meant to be shared at conferences.
 
 ## Current state: nothing is broken or half-finished
 
-As of 2026-08-04 the entire auth/email stack is live and verified end-to-end:
-HTTPS on the custom domain, Google sign-in, email/password with **six-digit-code password
-reset**, **email confirmation ON** (six-digit code at signup), all sending through Resend
-SMTP on the project's own domain. Details in `MEMORY.md`; the how-and-why in `DECISIONS.md`
-and `_log.md`.
+The entire auth/email stack is live and verified end-to-end: HTTPS on the custom domain,
+Google sign-in, email/password with **six-digit-code password reset**, **email confirmation
+ON**, all sending through Resend SMTP on the project's own domain.
+
+**Guideline coverage is also done, not just improved.** A same-day investigation found the
+classifier had no way to reject an off-topic guideline (its topic waterfall ends in an
+unconditional "General Endocrinology" fallback) and missed society house styles like
+"Standards of Care" — both fixed. Because rules can't judge specialty relevance, a new
+**agent-reviewed approval workflow** was built (`guideline_sweep.py` → a Sonnet subagent that
+judges each candidate against the taxonomy → `build_review_page.py`'s checkbox HTML page →
+`apply_approvals.py`, which never writes to the store itself). Run across five rounds —
+journal-scoped and wide-all-journal sweeps, each for both 2024–2026 and 2018–2023 — closing
+every coverage gap identified this session. 184 individual approve/reject decisions are
+recorded in `guideline_decisions.json` so nothing gets re-asked. Details and the full agent
+prompt: `DECISIONS.md`, `_log.md`, `WEEKLY_REFRESH_RUNBOOK.md` → "Monthly guideline sweep".
 
 ## What's next, in order (mirrors TASKS.md)
 
@@ -41,11 +51,15 @@ and `_log.md`.
    `gh auth refresh -s workflow`** — the current token can't push `.github/workflows/`.
 2. **Public share links** — `shared_lists` + a `SECURITY DEFINER` function keyed on an
    unguessable slug, so the table never becomes enumerable.
-3. **ISPAD 2024 guidelines backfill** — the ~25-chapter series (Horm Res Paediatr, late 2024)
-   predates the dataset's coverage; targeted PubMed fetch + merge-only pipeline.
-4. **Confirm the rendering-performance fix on a real phone.**
-5. **Delete the old unused Google client secret** (two are enabled; only the newer is in use).
-6. Backlog: expand the database to January 2025; "Recent" default view; the rest of TASKS.md.
+3. **Run the monthly guideline sweep going forward** — no backlog left, just keeping pace.
+   Procedure is fully documented in `WEEKLY_REFRESH_RUNBOOK.md`; should run on Sonnet or a
+   subagent, not the main session (see the "Which model to run this on" note there).
+4. **Fix the Gender Medicine misclassification of GnRH-analog guidelines** — low priority,
+   single known occurrence (see TASKS.md).
+5. **Confirm the rendering-performance fix on a real phone.**
+6. **Delete the old unused Google client secret** (two are enabled; only the newer is in use).
+7. Backlog: expand the full (non-guideline) corpus back to January 2025; "Recent" default
+   view; the rest of TASKS.md.
 
 ## The traps most likely to bite next (full list in MEMORY.md → Operational traps)
 
