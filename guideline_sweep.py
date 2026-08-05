@@ -75,9 +75,15 @@ def main():
     # Articles already ruled on in a previous sweep — approved OR rejected. Without
     # this the same declined guidelines resurface every month asking to be declined
     # again. Written by apply_approvals.py.
+    # Tolerate a missing/empty/garbled decisions file — the sweep should still run and
+    # simply show everything, rather than dying. (--decisions /dev/null is a legitimate
+    # way to ask for "ignore memory, rebuild the full candidate list".)
     decided = {}
     if os.path.exists(dec_path):
-        decided = json.load(open(dec_path)).get("decisions", {})
+        try:
+            decided = (json.load(open(dec_path)) or {}).get("decisions", {})
+        except (ValueError, OSError):
+            print(f"  note: {os.path.basename(dec_path)} unreadable — treating as empty")
 
     kept, already, excluded, seen_before = [], 0, 0, 0
     for rec in raw:

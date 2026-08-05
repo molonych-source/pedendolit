@@ -35,6 +35,17 @@ and presented as a page with checkboxes he could submit.
   and an empty queue.
 - Store 1306 → **1314**; guidelines 49 → **57**. The 8 additions are the first articles ever
   admitted from unmonitored journals, each by explicit approval.
+- **Christian then reviewed the page himself and approved 11 of 20** — the 8 recommended plus
+  both DSD-adjacent borderlines (EAU/ESPU urology transition, Female Athlete Triad) and one
+  override of an agent reject (the ACR I-131 thyroid practice parameter, which the agent had
+  called all-ages radiology; the physician judged it relevant). Final: store **1317**,
+  guidelines **60**. This is the override path working as designed — the agent triages, the
+  clinician decides, and both borderline calls went the way the agent flagged as arguable.
+- Two rough edges hit while applying his file, both fixed: `guideline_sweep.py` crashed on
+  `--decisions /dev/null` (now tolerates an unreadable/empty decisions file, which is also the
+  documented way to rebuild the full candidate list); and because a prior sweep run had left
+  `guideline_candidates.json` empty, `apply_approvals.py` initially found no raw records —
+  its "pmid not in candidates" warning caught it rather than silently writing nothing useful.
 
 ### [2026-08-04] guideline-coverage-audit (late evening)
 

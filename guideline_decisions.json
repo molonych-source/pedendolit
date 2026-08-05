@@ -2,7 +2,7 @@
  "comment": "PMIDs already ruled on in a guideline sweep. guideline_sweep.py skips these so declined articles do not resurface every month.",
  "decisions": {
   "40694360": {
-   "decision": "rejected",
+   "decision": "approved",
    "decided_on": "2026-08-04",
    "agent_verdict": "reject",
    "title": "ACR-ACNM-ARS-SNMMI-SPR Practice Parameter for Treatment of Benign and Malignant Thyroid Disease With I-131 Sodium Iodide."
@@ -11,7 +11,7 @@
    "decision": "approved",
    "decided_on": "2026-08-04",
    "agent_verdict": "accept",
-   "title": "UK best practice recommendations for children and young people <18 years with pre-stage 3 type 1 diabetes, on behalf of the British Society for Paediatric Endoc"
+   "title": ""
   },
   "40995775": {
    "decision": "rejected",
@@ -26,7 +26,7 @@
    "title": "Updated Egyptian national guidelines for management of hemophilia A in children & adolescents."
   },
   "41203536": {
-   "decision": "rejected",
+   "decision": "approved",
    "decided_on": "2026-08-04",
    "agent_verdict": "borderline",
    "title": "Summary of the European Association of Urology/European Society of paediatric urology guidelines on transition in urology."
@@ -35,19 +35,19 @@
    "decision": "approved",
    "decided_on": "2026-08-04",
    "agent_verdict": "accept",
-   "title": "Executive summary. Screening, staging and follow-up of type 1 diabetes in preclinical stages: consensus of the scientific societies SED, SEEN and SEEP."
+   "title": ""
   },
   "41338999": {
    "decision": "approved",
    "decided_on": "2026-08-04",
    "agent_verdict": "accept",
-   "title": "Clinical practice guidelines for the management of differences of sex development in Japan."
+   "title": ""
   },
   "41361403": {
    "decision": "approved",
    "decided_on": "2026-08-04",
    "agent_verdict": "accept",
-   "title": "Australasian periprocedural guideline for children and adolescents with diabetes mellitus."
+   "title": ""
   },
   "41366616": {
    "decision": "rejected",
@@ -62,7 +62,7 @@
    "title": "[National protocol for the diagnosis and management of Axenfeld-Rieger syndrome: Summary for the primary care physician]."
   },
   "41474492": {
-   "decision": "rejected",
+   "decision": "approved",
    "decided_on": "2026-08-04",
    "agent_verdict": "borderline",
    "title": "2025 Update to the Female Athlete Triad Coalition Consensus Statement Part 2: Clinical Guidelines for Screening, Diagnosis, Treatment, and Return to Play for Ad"
@@ -89,7 +89,7 @@
    "decision": "approved",
    "decided_on": "2026-08-04",
    "agent_verdict": "accept",
-   "title": "[Obesity treatment: recommendation from the Nutrition Branch of the Chilean Society of Pediatrics]."
+   "title": ""
   },
   "41949509": {
    "decision": "rejected",
@@ -107,19 +107,19 @@
    "decision": "approved",
    "decided_on": "2026-08-04",
    "agent_verdict": "accept",
-   "title": "[Automated insulin delivery (AID) systems, physical activity and sports in type 1 diabetes mellitus: joint guidelines of the DDG and \u00d6DG]."
+   "title": ""
   },
   "42527127": {
    "decision": "approved",
    "decided_on": "2026-08-04",
    "agent_verdict": "accept",
-   "title": "[Guideline for diagnosis, treatment and prevention of type 1 diabetes mellitus in children(2026)]."
+   "title": ""
   },
   "42545327": {
    "decision": "approved",
    "decided_on": "2026-08-04",
    "agent_verdict": "accept",
-   "title": "[Clinical practice guidelines \"Congenital adrenal hyperplasia in children\" with comments]."
+   "title": ""
   }
  }
 }

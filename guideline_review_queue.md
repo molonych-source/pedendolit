@@ -1,6 +1,6 @@
 # Guideline sweep — review queue
 
-0 candidates (0 already in the store, 20 decided in a previous sweep, 0 excluded by the classifier).
+0 candidates (11 already in the store, 9 decided in a previous sweep, 0 excluded by the classifier).
 
 This markdown file is a quick text view. The real review surface is the
 checkbox page — see the monthly sweep section of `WEEKLY_REFRESH_RUNBOOK.md`:
