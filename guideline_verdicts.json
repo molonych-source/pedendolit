@@ -1,191 +1,629 @@
 {
-  "reviewed_by": "agent",
-  "verdicts": {
-    "30276975": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Limited Care Guidance Appendix\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "30226024": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Definition, epidemiology, and classification of diabetes in children and adolescents\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "30225972": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"The diagnosis and management of monogenic diabetes in children and adolescents\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "30175451": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Diabetes education in children and adolescents\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "30144259": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"The delivery of ambulatory diabetes care to children and adolescents with diabetes\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "30133095": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Exercise in children and adolescents with diabetes\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "30094886": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Management of cystic fibrosis-related diabetes in children and adolescents\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "30084519": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Management and support of children and adolescents with type 1 diabetes in school\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "30079595": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Microvascular and macrovascular complications in children and adolescents\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "30079506": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Sick day management in children and adolescents with diabetes\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "30066458": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Other complications and associated conditions in children and adolescents with type 1 diabetes\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "30062718": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Nutritional management in children and adolescents with diabetes\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "30058247": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Psychological care of children and adolescents with type 1 diabetes\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "30058221": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Glycemic control targets and glucose monitoring for children, adolescents, and young adults with diabetes\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "30051639": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Stages of type 1 diabetes in children and adolescents\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "30039617": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Management of children and adolescents with diabetes requiring surgery\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "30039513": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Diabetes technologies\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "29999228": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Type 2 diabetes mellitus in youth\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "29999222": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Insulin treatment in children and adolescents with diabetes\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "29900653": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Diabetes in adolescence\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "29900641": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Diabetic ketoacidosis and the hyperglycemic hyperosmolar state\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "29869358": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Assessment and management of hypoglycemia in children and adolescents with diabetes\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "30295419": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD Position Statement on managing type 1 diabetes in the school setting for children and adolescents; core diabetes management guidance from a peds-endo-dedicated journal.",
-      "topic": "Diabetes"
-    },
-    "31195397": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "Proposes a stepwise pediatric diagnostic workup (bone age, labs, karyotype/microarray) for children referred with growth failure/short stature, including Turner syndrome screening.",
-      "topic": "Growth"
-    },
-    "31302655": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "Companion diagnostic flowchart for children referred with tall stature/accelerated growth, covering Klinefelter and Marfan syndromes, precocious puberty, hyperthyroidism, and GH excess as causes.",
-      "topic": "Growth"
-    },
-    "31319416": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "International consortium update on GnRH analog use in children, primarily for precocious puberty (diagnosis, monitoring, adverse events) with an additional section on transgender adolescents.",
-      "topic": "Puberty"
-    },
-    "31514194": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "Growth Hormone Research Society international consensus on diagnosis, genetics, and GH therapy for short stature in children, the most common reason for pediatric endocrinology referral.",
-      "topic": "Growth"
-    },
-    "32157850": {
-      "verdict": "accept",
-      "confidence": "medium",
-      "reason": "Proposes new pediatric reference ranges for serum IGF-I, a growth-axis biomarker used in diagnosing GH deficiency/excess in children; no abstract available so classified on title/MeSH alone.",
-      "topic": "Growth"
-    },
-    "32935435": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "ISPAD consensus guideline on subcutaneous insulin for pediatric DKA management in resource-limited/COVID-19 ICU-constrained settings, an addendum to the core 2018 DKA chapter.",
-      "topic": "Diabetes"
-    },
-    "33047481": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "EASD/ISPAD position statement on using CGM/isCGM to guide glucose management around exercise in type 1 diabetes, explicitly covering children and adolescents alongside adults.",
-      "topic": "Diabetes"
-    },
-    "33401878": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "Korean Society of Pediatric Endocrinology evidence-based clinical practice guideline for screening and dietary/drug management of dyslipidemia in children and adolescents.",
-      "topic": "Lipids"
-    }
+ "reviewed_by": "agent",
+ "verdicts": {
+  "28216084": {
+   "verdict": "borderline",
+   "confidence": "medium",
+   "reason": "Global vitamin D dosing recommendations spanning infants through middle-aged adults; endocrine-relevant (bone/calcium) but population-wide rather than pediatric-endocrine-specific.",
+   "topic": "Bone/Calcium"
+  },
+  "29288841": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "French guideline on management of severe traumatic brain injury in the first 24 hours; neurosurgical/critical-care topic with no endocrine content.",
+   "topic": null
+  },
+  "30209801": {
+   "verdict": "borderline",
+   "confidence": "medium",
+   "reason": "Polish endocrine society recommendations for managing Prader-Willi syndrome specifically in adults after childhood therapy has concluded; endocrine society co-authored but adult-leaning scope.",
+   "topic": "Growth"
+  },
+  "30209800": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "Polish Society of Endocrinology position statement on PCOS diagnosis and treatment, including adolescents; core peds endo topic.",
+   "topic": "PCOS"
+  },
+  "29631308": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "German S2 guideline on pediatric flat foot; orthopedic condition with no endocrine relevance.",
+   "topic": null
+  },
+  "29729847": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "SIOPE consensus on craniospinal radiotherapy target-volume delineation for pediatric brain tumors; a radiation-oncology planning guideline, not an endocrine one (even though survivors may later develop endocrinopathies).",
+   "topic": null
+  },
+  "29851190": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "German pediatric anesthesia Choosing Wisely recommendations; anesthesiology topic with no endocrine content.",
+   "topic": null
+  },
+  "30097365": {
+   "verdict": "borderline",
+   "confidence": "medium",
+   "reason": "ESPGHAN/ESPEN/ESPR/CSPEN pediatric parenteral nutrition guideline on calcium, phosphorus, and magnesium dosing; touches calcium/bone metabolism relevant to metabolic bone disease of prematurity, but is a GI/nutrition-society dosing guideline rather than an endocrine disease-management one.",
+   "topic": "Bone/Calcium"
+  },
+  "29923215": {
+   "verdict": "borderline",
+   "confidence": "medium",
+   "reason": "UK Joint British Diabetes Societies guideline on inpatient diabetes self-management; diabetes-specific but aimed broadly at hospitalized adults and children rather than pediatric-focused.",
+   "topic": "Diabetes"
+  },
+  "30033107": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "Spanish pediatric guideline on management of disorders of sex development, including transition to adult care; core peds endo topic.",
+   "topic": "DSD"
+  },
+  "30086553": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "WHO free-sugar intake guideline discussed for dental caries and obesity prevention across all ages; primarily a dental-health/population-nutrition guideline, not an endocrine one.",
+   "topic": null
+  },
+  "30093549": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "American Diabetes Association position statement on Type 1 diabetes specifically in children and adolescents; core peds endo topic.",
+   "topic": "Diabetes"
+  },
+  "30180972": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "French pediatric endocrinology/thyroid society recommendations on diagnosis and management of Graves' disease in children; core peds endo topic.",
+   "topic": "Thyroid"
+  },
+  "30117531": {
+   "verdict": "borderline",
+   "confidence": "medium",
+   "reason": "Polish national program for growth hormone deficiency treatment specifically in adults and adolescents after completion of childhood growth-promoting therapy; endocrine but adult-leaning scope (transition GHD).",
+   "topic": "Growth"
+  },
+  "30392989": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "French adolescent contraception guideline (CNGOF); reproductive health/OB-GYN topic, not endocrine-disease-focused despite use of hormonal contraceptives.",
+   "topic": null
+  },
+  "30152583": {
+   "verdict": "borderline",
+   "confidence": "medium",
+   "reason": "UK Joint British Diabetes Societies/Royal College of Psychiatrists guideline for managing diabetes in adults and children with psychiatric disorders in inpatient settings; diabetes-specific but not pediatric-focused (mixed adult/child population).",
+   "topic": "Diabetes"
+  },
+  "30045207": {
+   "verdict": "borderline",
+   "confidence": "medium",
+   "reason": "ACOG committee opinion on gynecologic issues including fertility preservation in pediatric/adolescent cancer patients and survivors; endocrine-adjacent (reproductive/fertility) but broader gynecologic scope rather than endocrine-specific.",
+   "topic": "Cancer Late Effects"
+  },
+  "29982476": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "Endocrine Society clinical practice guideline on hypothalamic-pituitary and growth disorders in survivors of childhood cancer; core peds endo topic (cancer late effects/pituitary-growth axis).",
+   "topic": "Cancer Late Effects"
+  },
+  "29927872": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "NASPGHAN/ESPGHAN position paper on nutrition in pediatric pancreatitis; exocrine pancreatic/GI disease, not endocrine.",
+   "topic": null
+  },
+  "29504223": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "Australasian Paediatric Endocrine Group consensus guideline on bisphosphonate therapy for skeletal fragility in children and adolescents; core peds endo topic (bone health).",
+   "topic": "Bone/Calcium"
+  },
+  "30289543": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "Endocrine Society-affiliated guidance on adrenal surveillance in males with adrenoleukodystrophy identified by newborn screening; core peds endo topic (adrenal insufficiency).",
+   "topic": "Adrenal"
+  },
+  "30261951": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "American Dental Association guideline on nonrestorative treatment of dental caries; dental topic with no endocrine relevance.",
+   "topic": null
+  },
+  "30247365": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "ACOG committee opinion on supporting breastfeeding in obstetric practice; lactation/obstetric topic, not endocrine.",
+   "topic": null
+  },
+  "32074887": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "American Academy of Pediatric Dentistry guidance on vital pulp therapies for primary teeth; dental topic with no endocrine relevance.",
+   "topic": null
+  },
+  "30268316": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "Canadian obstetric guideline on antenatal corticosteroid therapy for improving neonatal outcomes in preterm birth; an obstetric/fetal-maturation guideline, not endocrine disease management.",
+   "topic": null
+  },
+  "31013493": {
+   "verdict": "borderline",
+   "confidence": "medium",
+   "reason": "European Academy of Paediatrics/European Childhood Obesity Group position paper on sugar-sweetened beverage consumption in children; pediatric obesity-adjacent public-health nutrition statement rather than an endocrinology-specific clinical guideline.",
+   "topic": "Obesity/Metabolic"
+  },
+  "31111809": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "Greek national dietary guidelines for children and adolescents; general population nutrition policy, not endocrine-specific.",
+   "topic": null
+  },
+  "31132793": {
+   "verdict": "borderline",
+   "confidence": "medium",
+   "reason": "Synopsis of the 2018 AHA/ACC cholesterol clinical practice guideline; lipids is a core peds endo topic but this is a predominantly adult cardiovascular-risk guideline with only incidental pediatric mention.",
+   "topic": "Lipids"
+  },
+  "31154502": {
+   "verdict": "accept",
+   "confidence": "medium",
+   "reason": "Comparative study of ACR TI-RADS vs. Kwak thyroid nodule risk-stratification guidelines applied specifically to children with thyroid nodules; core peds endo topic (thyroid), though it evaluates rather than issues a new guideline.",
+   "topic": "Thyroid"
+  },
+  "31202666": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "French ENT society guideline on the otolaryngologist's role in diagnosing pediatric obstructive sleep apnea; ENT/sleep-medicine topic, not endocrine.",
+   "topic": null
+  },
+  "31404925": {
+   "verdict": "reject",
+   "confidence": "medium",
+   "reason": "Synopsis of ADA diabetes technology standards for an internal-medicine audience; no pediatric-specific scope indicated (no pediatric MeSH terms), and content targets general/adult diabetes care despite committee including pediatric endocrinologists.",
+   "topic": null
+  },
+  "31615715": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "French pediatric GI/nutrition society recommendations on vegan diets in children; general nutrition topic, not endocrine-specific.",
+   "topic": null
+  },
+  "31753708": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "European position statement on assessing quality-of-survival domains in childhood brain tumor trials; oncology/neurology outcomes topic, not endocrine.",
+   "topic": null
+  },
+  "31876602": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "Italian Pediatric Society updated guideline on prevention of acute otitis media in children; ENT/infectious disease topic, not endocrine.",
+   "topic": null
+  },
+  "30798778": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "AAO-HNS clinical practice guideline update on tonsillectomy in children; ENT/sleep-surgery topic, not endocrine.",
+   "topic": null
+  },
+  "31506700": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "IDSA guideline on management of asymptomatic bacteriuria; urology/infectious disease topic across mostly adult populations, not endocrine.",
+   "topic": null
+  },
+  "30895288": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "Duplicate indexing of the IDSA asymptomatic bacteriuria guideline (same content as PMID 31506700); urology/infectious disease topic, not endocrine.",
+   "topic": null
+  },
+  "31740537": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "CMAJ recommendation on screening adults for asymptomatic thyroid dysfunction in primary care; explicitly adult population, fails the pediatric gate despite thyroid subject.",
+   "topic": null
+  },
+  "31568365": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "ACOG committee opinion on screening and management of the hyperandrogenic adolescent (hirsutism/acne from androgen excess); core peds endo topic (androgen excess/PCOS spectrum).",
+   "topic": "PCOS"
+  },
+  "31568360": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "Summary version of the same ACOG committee opinion on the hyperandrogenic adolescent; core peds endo topic (androgen excess/PCOS spectrum).",
+   "topic": "PCOS"
+  },
+  "32052993": {
+   "verdict": "borderline",
+   "confidence": "medium",
+   "reason": "American Psychological Association guideline on multicomponent behavioral treatment of pediatric obesity/overweight; addresses a core peds endo condition but is a behavioral-psychology guideline, not an endocrinology one.",
+   "topic": "Obesity/Metabolic"
+  },
+  "32614338": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "Mexican Society of Pediatric Endocrinology clinical guideline on monitoring treatment of central precocious puberty; core peds endo topic.",
+   "topic": "Puberty"
+  },
+  "32614336": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "Mexican Society of Pediatric Endocrinology clinical guideline on adjuvant interventions for precocious puberty treatment; core peds endo topic.",
+   "topic": "Puberty"
+  },
+  "32614335": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "Mexican Society of Pediatric Endocrinology clinical guideline on diagnosing secondary causes of central precocious puberty; core peds endo topic.",
+   "topic": "Puberty"
+  },
+  "32614333": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "Mexican Society of Pediatric Endocrinology clinical guideline on diagnosis of precocious puberty; core peds endo topic.",
+   "topic": "Puberty"
+  },
+  "32614332": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "Mexican Society of Pediatric Endocrinology clinical guideline on puberty blockade (GnRH analog) interventions; core peds endo topic.",
+   "topic": "Puberty"
+  },
+  "32017012": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "UK Association of Anaesthetists/Society for Endocrinology guideline on perioperative glucocorticoid management for adrenal insufficiency, explicitly covering adults and children; core peds endo topic.",
+   "topic": "Adrenal"
+  },
+  "32170711": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "Italian position paper on applying pediatric blood pressure guidelines; cardiology/hypertension measurement topic, not an endocrine-disease guideline.",
+   "topic": null
+  },
+  "32247096": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "French CNGOF-SFT expert report on smoking and breastfeeding management; tobacco cessation/lactation topic, not endocrine.",
+   "topic": null
+  },
+  "32247092": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "French CNGOF-SFT expert report on in-utero smoking exposure and child outcomes; tobacco/prenatal exposure topic, not endocrine.",
+   "topic": null
+  },
+  "33399744": {
+   "verdict": "accept",
+   "confidence": "medium",
+   "reason": "Chilean Pediatric Society Nutrition Branch recommendations on bariatric surgery for adolescents with severe obesity; a pediatric obesity treatment guideline, core peds endo topic.",
+   "topic": "Obesity/Metabolic"
+  },
+  "32552502": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "European guideline on IgG4-related digestive disease in adults and children; gastroenterology/rheumatology topic, not endocrine.",
+   "topic": null
+  },
+  "32578226": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "Australasian Paediatric Endocrine Group guideline on screening, diagnosis and management of type 2 diabetes in children and adolescents.",
+   "topic": "Diabetes"
+  },
+  "32653624": {
+   "verdict": "borderline",
+   "confidence": "medium",
+   "reason": "ASTCT expert panel on bone health after hematopoietic cell transplantation covers growth/gonadal hormone deficiency and bone loss, but the guideline spans adult and pediatric HCT survivors together rather than being pediatric-specific.",
+   "topic": "Bone/Calcium"
+  },
+  "32827594": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "Italian Society for Pediatric Endocrinology and Diabetology statements on managing children/adolescents with type 1 diabetes during COVID-19.",
+   "topic": "Diabetes"
+  },
+  "32866414": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "Synopsis of ADA glycemic-treatment guideline for type 2 diabetes aimed at general adult medicine (Ann Intern Med), not pediatric-focused.",
+   "topic": null
+  },
+  "32921532": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "French expert working group guideline on managing children at risk of secondary bone fragility (osteoporosis).",
+   "topic": "Bone/Calcium"
+  },
+  "32985262": {
+   "verdict": "borderline",
+   "confidence": "medium",
+   "reason": "Diabetes Technology Society consensus on CGM/automated insulin dosing in hospitalized patients spans adult, obstetric, and pediatric endocrinology panelists but is not pediatric-specific.",
+   "topic": "Diabetes"
+  },
+  "32959490": {
+   "verdict": "borderline",
+   "confidence": "medium",
+   "reason": "European Academy of Andrology guideline on Klinefelter syndrome addresses hypogonadism and genetics relevant to peds endo, but is framed around adult andrology/fertility care rather than pediatric management.",
+   "topic": "Genetics"
+  },
+  "33118654": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "Guideline for referring short or tall children from preventive child health care into growth evaluation.",
+   "topic": "Growth"
+  },
+  "33264558": {
+   "verdict": "accept",
+   "confidence": "medium",
+   "reason": "Korean clinical practice guideline for dyslipidemia specifically in children and adolescents.",
+   "topic": "Lipids"
+  },
+  "31688079": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "Updated recommendations for perioperative glycemic management of pediatric patients with type 1 diabetes.",
+   "topic": "Diabetes"
+  },
+  "33350964": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "Hong Kong gynecology guideline on investigating abnormal uterine bleeding in premenopausal women; not pediatric, not endocrine.",
+   "topic": null
+  },
+  "32810255": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "JCEM guideline on appropriate use of diazoxide for hyperinsulinism in infants and children.",
+   "topic": "Hyperinsulinism"
+  },
+  "32032273": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "Surviving Sepsis Campaign pediatric guideline; critical care/infectious disease, not endocrine.",
+   "topic": null
+  },
+  "32030529": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "Duplicate publication of the pediatric Surviving Sepsis Campaign guideline; critical care, not endocrine.",
+   "topic": null
+  },
+  "31862756": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "ADA Standards of Medical Care chapter 13, dedicated to children and adolescents with diabetes.",
+   "topic": "Diabetes"
+  },
+  "32615119": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "ESGO-SIOPE oncology guideline for non-epithelial ovarian cancer in adolescents/young adults; gynecologic oncology, not endocrine.",
+   "topic": null
+  },
+  "33196156": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "Dermatology review of pediatric psoriasis comorbidities; endocrine conditions (diabetes, metabolic syndrome) are mentioned only as incidental comorbidities.",
+   "topic": null
+  },
+  "33170248": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "USPSTF statement on screening children for high blood pressure; cardiovascular/general pediatrics, not an endocrine guideline.",
+   "topic": null
+  },
+  "32900457": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "Canadian guideline on screening/counselling for alcohol use in pregnancy; maternal, not pediatric or endocrine.",
+   "topic": null
+  },
+  "33627326": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "BSPED guideline for managing diabetic ketoacidosis in children and young people.",
+   "topic": "Diabetes"
+  },
+  "33878456": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "Guideline on VTE prevention in gynecological surgery; not pediatric, not endocrine.",
+   "topic": null
+  },
+  "34132916": {
+   "verdict": "borderline",
+   "confidence": "medium",
+   "reason": "Austrian bone/mineral and pneumology societies' joint guideline on osteoporosis in lung disease notes glucocorticoid-related bone effects in childhood asthma, but is predominantly about adult pulmonary populations (COPD, transplant).",
+   "topic": "Bone/Calcium"
+  },
+  "34170462": {
+   "verdict": "borderline",
+   "confidence": "medium",
+   "reason": "SIOPE/CanGene-CanVar surveillance protocol for DICER1 pathogenic variant carriers includes periodic thyroid ultrasound, but the guideline is chiefly an oncology/genetics tumor-surveillance protocol across multiple organ systems, not endocrine-focused.",
+   "topic": "Genetics"
+  },
+  "34343391": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "Philippine hypertension management guideline executive summary; general/adult cardiology, not endocrine-specific.",
+   "topic": null
+  },
+  "33272083": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "ESPE/ENDO-ERN consensus update on diagnosis and management of congenital hypothyroidism.",
+   "topic": "Thyroid"
+  },
+  "34032823": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "USPSTF behavioral counseling recommendation for healthy weight gain in pregnancy; maternal, not pediatric.",
+   "topic": null
+  },
+  "34511234": {
+   "verdict": "accept",
+   "confidence": "medium",
+   "reason": "Diabetes Canada guideline update on blood glucose monitoring explicitly covering both adults and children with diabetes.",
+   "topic": "Diabetes"
+  },
+  "34981748": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "2022 European Thyroid Association guideline for managing pediatric Graves' disease.",
+   "topic": "Thyroid"
+  },
+  "35488760": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "Russian national clinical guideline on congenital hypothyroidism in children.",
+   "topic": "Thyroid"
+  },
+  "35305879": {
+   "verdict": "borderline",
+   "confidence": "medium",
+   "reason": "French expert consensus on vitamin D and calcium intake is a population-wide pediatric nutrition guideline rather than an endocrine-specific one.",
+   "topic": "Bone/Calcium"
+  },
+  "35338549": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "European AIDS Clinical Society antiretroviral treatment guidelines; infectious disease, not endocrine.",
+   "topic": null
+  },
+  "35353710": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "Endo-ERN clinical practice guideline on pubertal induction and transition to adult sex hormone replacement in congenital pituitary/gonadal hormone deficiency.",
+   "topic": "Puberty"
+  },
+  "35963508": {
+   "verdict": "borderline",
+   "confidence": "medium",
+   "reason": "AACE comprehensive diabetes care plan update is a broad, primarily adult-oriented endocrinology guideline; pediatric-specific content is not evident from the abstract despite a Child MeSH tag.",
+   "topic": "Diabetes"
+  },
+  "35970666": {
+   "verdict": "borderline",
+   "confidence": "medium",
+   "reason": "ESPEN/UEG joint guideline on obesity care in patients with GI and liver disease is framed for adult gastroenterology practice, with pediatric relevance only incidental (Child MeSH tag, no pediatric-specific content in the abstract).",
+   "topic": "Obesity/Metabolic"
+  },
+  "35959597": {
+   "verdict": "borderline",
+   "confidence": "medium",
+   "reason": "Duplicate publication (UEG journal) of the ESPEN/UEG obesity-in-GI/liver-disease guideline; same adult-GI-focused scope with only incidental pediatric relevance.",
+   "topic": "Obesity/Metabolic"
+  },
+  "35900783": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "UK national consensus guideline on paediatric differentiated thyroid carcinoma.",
+   "topic": "Thyroid"
+  },
+  "36528468": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "Brazilian Society of Otology treatment guideline for pediatric hearing loss; audiology/ENT, not endocrine.",
+   "topic": null
+  },
+  "36529647": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "Brazilian Society of Otology evaluation guideline for pediatric hearing loss; audiology/ENT, not endocrine.",
+   "topic": null
+  },
+  "36228315": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "2022 European Thyroid Association guideline for managing pediatric thyroid nodules and differentiated thyroid carcinoma.",
+   "topic": "Thyroid"
+  },
+  "36453081": {
+   "verdict": "borderline",
+   "confidence": "medium",
+   "reason": "South/Southeast Asian consensus on obesity care and management explicitly covers children as well as adults, but is a general obesity-specialist consensus rather than a pediatric-endocrinology-specific guideline.",
+   "topic": "Obesity/Metabolic"
+  },
+  "36370077": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "Joint British Diabetes Societies guideline on hyperosmolar hyperglycaemic state explicitly titled 'in Adults'; not a pediatric guideline.",
+   "topic": null
+  },
+  "36098719": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "USPSTF recommendation statement on screening children and adolescents for prediabetes and type 2 diabetes.",
+   "topic": "Diabetes"
+  },
+  "36948248": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "French infectious disease society update on bacterial arthritis in adults and children; orthopedic infection, not endocrine.",
+   "topic": null
+  },
+  "37146466": {
+   "verdict": "borderline",
+   "confidence": "medium",
+   "reason": "Practical (shortened) version of the ESPEN/UEG obesity-in-GI/liver-disease guideline; same adult-GI focus with pediatric relevance only incidental.",
+   "topic": "Obesity/Metabolic"
+  },
+  "37179471": {
+   "verdict": "accept",
+   "confidence": "medium",
+   "reason": "Adolescent Health Academy (India) statement on care of transgender children, adolescents, and youth, addressing terminology, legal status, and implications for pediatric practice.",
+   "topic": "Gender Medicine"
+  },
+  "37589624": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "2023 International Evidence-based Guideline for the assessment and management of polycystic ovary syndrome, which includes adolescent diagnostic criteria.",
+   "topic": "PCOS"
+  },
+  "37891152": {
+   "verdict": "reject",
+   "confidence": "high",
+   "reason": "French College of Obstetricians and Gynecologists guideline on preeclampsia; maternal-fetal medicine, not pediatric or endocrine.",
+   "topic": null
+  },
+  "37580861": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "Companion publication (Eur J Endocrinol) of the 2023 International PCOS guideline.",
+   "topic": "PCOS"
+  },
+  "36622115": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "AAP Clinical Practice Guideline for the evaluation and treatment of children and adolescents with obesity.",
+   "topic": "Obesity/Metabolic"
+  },
+  "36477488": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "Endocrine Society Clinical Practice Guideline on managing hypoglycemia risk in diabetes, explicitly addressing both adults and children.",
+   "topic": "Diabetes"
+  },
+  "36635911": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "International consensus guideline on small for gestational age, covering etiology, growth hormone use, and management from infancy through early adulthood.",
+   "topic": "Growth"
+  },
+  "37705267": {
+   "verdict": "accept",
+   "confidence": "high",
+   "reason": "Indian Pediatrics summary/commentary on the AAP 2023 guideline for evaluation and treatment of children and adolescents with obesity.",
+   "topic": "Obesity/Metabolic"
   }
+ }
 }
