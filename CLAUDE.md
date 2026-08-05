@@ -82,13 +82,17 @@ The full weekly procedure (date windows, MCP batching, PMID dedup) is in
   on disk, keeping the richest value per field per PMID, with no network calls. Run it
   before any `--rebuild`. It seeds from the current store first so a rebuild cannot
   delete an article that exists only in `pedendolit-data.json`.
-- **`guideline_sweep.py`** — monthly triage for guidelines published outside the 19
-  monitored journals (the pipeline is journal-scoped and structurally cannot see them).
-  Reuses `map_raw()` + `classify()`, skips PMIDs already stored, and writes
-  `guideline_review_queue.md` + `guideline_candidates.json`. **It never writes to the
-  store** — the wide query runs ~35% precision, so a human approves candidates and they
-  merge via `build_dataset.py --raw guideline_candidates.json`. Query and procedure are
-  in `WEEKLY_REFRESH_RUNBOOK.md`.
+- **Monthly guideline sweep** — triage for guidelines published outside the 19 monitored
+  journals (the pipeline is journal-scoped and structurally cannot see them). Four parts:
+  `guideline_sweep.py` (dedup vs store + `guideline_decisions.json`, classify) → a **Sonnet
+  review subagent** that judges pediatric-ness and endocrine-ness and writes
+  `guideline_verdicts.json` → `build_review_page.py` (self-contained `guideline_review.html`
+  with checkboxes; Submit downloads `approved_pmids.json`) → `apply_approvals.py` (records
+  decisions, emits `guideline_approved_raw.json`). **None of them write to the store** —
+  approved records merge via `build_dataset.py --raw`. The agent step exists because
+  `classify_topic` ends in an unconditional `return "General Endocrinology"`, so the
+  classifier cannot reject an off-topic article, only mislabel it. Full procedure and the
+  agent prompt are in `WEEKLY_REFRESH_RUNBOOK.md`.
 - **`build_dashboard.py`** — pipeline stage 3. Contains the `WEB3FORMS_KEY` (bug/comment
   report form — safe to expose, send-only) and the Phase 2 Supabase config stubs
   (`SUPABASE_URL` / `SUPABASE_ANON_KEY`, currently empty — see Phase 2 below). Also

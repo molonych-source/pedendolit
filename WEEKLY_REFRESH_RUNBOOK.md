@@ -82,15 +82,52 @@ AND (endocrin*[tiab] OR diabetes[tiab] OR thyroid[tiab] OR puberty[tiab]
 2. Fetch metadata for the PMIDs, assemble them into `sweep_raw.json` (a plain list of
    MCP records — no transformation).
 3. `python3 guideline_sweep.py --raw sweep_raw.json`
-   Writes `guideline_review_queue.md` (readable table) and `guideline_candidates.json`.
-4. **Christian reviews the queue.** Delete unwanted entries from
-   `guideline_candidates.json`, then merge the survivors the normal way:
-   `python3 build_dataset.py --raw guideline_candidates.json`, then
-   `python3 merge_raw_sources.py` and `python3 build_dashboard.py`.
+   Drops PMIDs already in the store **and** any already ruled on in
+   `guideline_decisions.json`, classifies the rest, writes `guideline_candidates.json`
+   (plus `guideline_review_queue.md`, a plain-text view).
+4. **Relevance review — dispatch a Sonnet subagent** with the prompt below. It writes
+   `guideline_verdicts.json`. This is the step that supplies the two gates the pipeline
+   lacks (*is it pediatric* and *is it endocrinology*) — `classify_topic` ends in an
+   unconditional `return "General Endocrinology"`, so an off-topic guideline is never
+   rejected by the classifier, only mislabelled.
+5. `python3 build_review_page.py` → `guideline_review.html`. Open it by double-click.
+6. **Christian ticks and clicks Submit** → downloads `approved_pmids.json`.
+7. `python3 apply_approvals.py` (defaults to `~/Downloads/approved_pmids.json`), then the
+   three commands it prints: `build_dataset.py --raw guideline_approved_raw.json`,
+   `merge_raw_sources.py`, `build_dashboard.py`.
 
 Approving a guideline from an unmonitored journal is a deliberate, per-article choice.
 If one journal keeps producing keepers, that is the signal to add it to `journals.json`
 instead.
+
+### The review agent prompt (step 4)
+
+Point it at `guideline_candidates.json` and require this output shape in
+`guideline_verdicts.json`:
+
+```json
+{"reviewed_by":"agent",
+ "verdicts":{"<pmid>":{"verdict":"accept|borderline|reject",
+                       "confidence":"high|medium|low",
+                       "reason":"one sentence for a clinician",
+                       "topic":"one of the 17 topics, or null if rejected"}}}
+```
+
+The prompt must contain:
+- the **17-topic taxonomy** as the definition of in-scope endocrinology (see `MEMORY.md`);
+- **both gates, explicitly**: pediatric (or transition-age) AND endocrine/metabolic as the
+  *subject*, not an incidental mention;
+- instruction to **reject** other specialties' guidelines that merely touch a hormone or
+  metabolic word (hemophilia, dermatitis, glomerulonephritis, ophthalmic syndromes);
+- instruction to use **borderline rather than guess** when the endocrine claim is real but
+  peripheral (female athlete triad, adolescent gynecology, cardiovascular prevention);
+- a note that **non-English guidelines still count** — a Chinese or Russian national T1D
+  or CAH guideline is core peds endo;
+- a self-validation step: reload the written JSON, assert one verdict per candidate and
+  that every verdict is one of the three allowed strings.
+
+The page shows each verdict and its reason, pre-ticks only `accept`, and keeps `reject`
+collapsed but still tickable — the agent triages, the physician decides.
 
 ## Re-classify everything (only when classifier.py changes)
 

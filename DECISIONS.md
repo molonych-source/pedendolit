@@ -82,6 +82,32 @@ The classifier cannot filter on "is this my specialty", so a human gate is the h
 `guideline_sweep.py` therefore never writes to the store; it writes a review queue plus a
 candidates file that feeds the normal `build_dataset.py --raw` merge.
 
+### Sweep relevance is judged by a reasoning agent, not a rules table — 2026-08-04 — **Active**
+**Why:** rules cannot supply the gate, because the pipeline has none to extend.
+`classify_topic` ends at an unconditional `return "General Endocrinology"`, so an off-topic
+guideline is never rejected — it is silently *labelled endocrine* (the hemophilia guideline
+classified as "Obesity/Metabolic", atopic dermatitis as "Calcium/Parathyroid", both on
+incidental term hits). Pediatric scoping likewise exists only in the PubMed query, which a
+wide sweep bypasses. The two judgments actually needed — is this pediatric, is endocrinology
+the *subject* — are clinical, so a Sonnet subagent makes them and writes one sentence of
+reasoning per article, shown on the review page. First run: 8 accept / 3 borderline / 9
+reject over 20 candidates, with every obvious reject correctly placed.
+**Borderline is a first-class verdict** — the agent is told to use it rather than guess when
+endocrine relevance is real but peripheral (female athlete triad, adolescent gynecology).
+
+### MeSH is displayed as evidence, never used as a gate — 2026-08-04 — **Active**
+**Why:** MeSH headings are NLM-curated and far more reliable than free-text matching, and
+`classifier.py` ignores them entirely. Surfacing endocrine/pediatric MeSH on each review card
+lets the reader sanity-check the agent's verdict at a glance. Making it a *gate* would just
+recreate the brittle keyword matching the agent exists to replace.
+
+### Approvals are explicit, and remembered — 2026-08-04 — **Active**
+**Why:** the review page writes `approved_pmids.json`; `apply_approvals.py` records **every**
+decision (approved and rejected) in `guideline_decisions.json`, and the next sweep skips them.
+Without the memory, declined guidelines resurface every month to be declined again. The page
+never writes to the datastore — approved records go in through the normal
+`build_dataset.py --raw` path, so there stays exactly one way an article enters the store.
+
 ### Recurring PubMed work runs on the cheaper model — 2026-08-04 — **Active**
 **Why:** the weekly refresh and monthly sweep are search-fetch-merge-rebuild, with no design
 judgment, and nearly all their cost is article metadata. They should run on Sonnet or in a

@@ -6,6 +6,36 @@ git history (33 commits to that date) and the dated sections formerly in `MEMORY
 
 ---
 
+### [2026-08-04] agent-reviewed approvals (late evening, follow-on)
+
+Christian asked for the sweep candidates to be triaged automatically for peds-endo relevance
+and presented as a page with checkboxes he could submit.
+
+- **Why an agent and not rules** (confirmed by reading `classifier.py`): `classify_topic` ends
+  at line 348 with an unconditional `return "General Endocrinology", None`, so an off-topic
+  guideline is never rejected — only mislabelled, which is exactly why hemophilia read
+  "Obesity/Metabolic" and atopic dermatitis read "Calcium/Parathyroid". Pediatric scoping
+  lives only in the PubMed query (`peds_terms` in `journals.json`), which a wide sweep
+  bypasses. `is_excluded_v2` is a ~35-phrase blacklist, not a specialty filter. And MeSH —
+  curated, reliable — is fetched and stored but **completely unused** in classification.
+- **Built:** `guideline_sweep.py` gains decision-memory skipping; new `build_review_page.py`
+  (self-contained checkbox page, agent reasoning per card, MeSH evidence line, three tiers,
+  Submit → Blob download) and `apply_approvals.py` (records every decision, emits the approved
+  raw file, prints the merge commands rather than running them).
+- **First real run:** a Sonnet subagent judged all 20 candidates — 8 accept, 3 borderline,
+  9 reject — and placed every obvious reject correctly (hemophilia A, atopic dermatitis,
+  endometriosis, Axenfeld-Rieger, glomerulonephritis, home respiratory support, digital media,
+  pediatric sports statement, all-ages I-131 parameter). Borderlines were the genuinely
+  arguable ones: female athlete triad, EAU/ESPU urology transition (has a DSD chapter),
+  Italian cardiovascular prevention.
+- **Verified in Chrome**: pre-ticking, section-scoped select all/none, override on a collapsed
+  reject, counter sync, and the real download landing in `~/Downloads/approved_pmids.json`
+  with 8 approved / 12 rejected. Round-tripped through `apply_approvals.py` (idempotent on
+  re-run), merged the 8, and confirmed a re-run of the sweep now reports 20 previously-decided
+  and an empty queue.
+- Store 1306 → **1314**; guidelines 49 → **57**. The 8 additions are the first articles ever
+  admitted from unmonitored journals, each by explicit approval.
+
 ### [2026-08-04] guideline-coverage-audit (late evening)
 
 Christian asked why the ISPAD guidelines were missing, whether ADA guidelines were present,

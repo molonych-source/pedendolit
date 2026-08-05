@@ -1,0 +1,125 @@
+{
+ "comment": "PMIDs already ruled on in a guideline sweep. guideline_sweep.py skips these so declined articles do not resurface every month.",
+ "decisions": {
+  "40694360": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "reject",
+   "title": "ACR-ACNM-ARS-SNMMI-SPR Practice Parameter for Treatment of Benign and Malignant Thyroid Disease With I-131 Sodium Iodide."
+  },
+  "40988096": {
+   "decision": "approved",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "accept",
+   "title": "UK best practice recommendations for children and young people <18 years with pre-stage 3 type 1 diabetes, on behalf of the British Society for Paediatric Endoc"
+  },
+  "40995775": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "reject",
+   "title": "Sport Activities for Children and Adolescents: Part 2. Joint Position Statement of Paediatric Societies on Physical Activity and Sport Recommendations for Child"
+  },
+  "41065813": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "reject",
+   "title": "Updated Egyptian national guidelines for management of hemophilia A in children & adolescents."
+  },
+  "41203536": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "borderline",
+   "title": "Summary of the European Association of Urology/European Society of paediatric urology guidelines on transition in urology."
+  },
+  "41266045": {
+   "decision": "approved",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "accept",
+   "title": "Executive summary. Screening, staging and follow-up of type 1 diabetes in preclinical stages: consensus of the scientific societies SED, SEEN and SEEP."
+  },
+  "41338999": {
+   "decision": "approved",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "accept",
+   "title": "Clinical practice guidelines for the management of differences of sex development in Japan."
+  },
+  "41361403": {
+   "decision": "approved",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "accept",
+   "title": "Australasian periprocedural guideline for children and adolescents with diabetes mellitus."
+  },
+  "41366616": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "borderline",
+   "title": "Cardiovascular Prevention in Children, Adolescents, and Young Adults. A Call-to-Action of the Italian Societies of Pediatrics (SIP), Hypertension (SIIA), Study "
+  },
+  "41455383": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "reject",
+   "title": "[National protocol for the diagnosis and management of Axenfeld-Rieger syndrome: Summary for the primary care physician]."
+  },
+  "41474492": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "borderline",
+   "title": "2025 Update to the Female Athlete Triad Coalition Consensus Statement Part 2: Clinical Guidelines for Screening, Diagnosis, Treatment, and Return to Play for Ad"
+  },
+  "41578309": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "reject",
+   "title": "Digital media exposure and pediatric health: the recommendations from the Italian Society of Pediatrics Digital Dependency Commission."
+  },
+  "41627401": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "reject",
+   "title": "AsPNA Clinical Practice Guidelines for the management of infection-related glomerulonephritis."
+  },
+  "41712950": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "reject",
+   "title": "Diagnosis of Endometriosis."
+  },
+  "41842822": {
+   "decision": "approved",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "accept",
+   "title": "[Obesity treatment: recommendation from the Nutrition Branch of the Chilean Society of Pediatrics]."
+  },
+  "41949509": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "reject",
+   "title": "Guidelines of care for the primary prevention of atopic dermatitis and awareness of comorbid conditions in pediatric atopic dermatitis."
+  },
+  "41961760": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "reject",
+   "title": "Paediatric Long-Term Home Respiratory Support: Recommendations of the Swiss Society of Paediatric Pulmonology."
+  },
+  "42162485": {
+   "decision": "approved",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "accept",
+   "title": "[Automated insulin delivery (AID) systems, physical activity and sports in type 1 diabetes mellitus: joint guidelines of the DDG and \u00d6DG]."
+  },
+  "42527127": {
+   "decision": "approved",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "accept",
+   "title": "[Guideline for diagnosis, treatment and prevention of type 1 diabetes mellitus in children(2026)]."
+  },
+  "42545327": {
+   "decision": "approved",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "accept",
+   "title": "[Clinical practice guidelines \"Congenital adrenal hyperplasia in children\" with comments]."
+  }
+ }
+}

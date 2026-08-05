@@ -15,15 +15,19 @@ Computer workflow. Pulls pediatric endocrinology articles from 19 monitored jour
 via PubMed (free NCBI E-utilities, accessed through the PubMed MCP), classifies each
 with a rules-based classifier ported from the Perplexity spec, and renders a single
 self-contained page. Live at https://pedsendobrief.org with optional accounts (saved
-articles, notes, since-your-last-visit). Store: 1,306 articles as of 2026-08-04,
-including 49 guidelines (all six ISPAD 2024 CPCG chapters).
+articles, notes, since-your-last-visit). Store: 1,314 articles as of 2026-08-04,
+including 57 guidelines (all six ISPAD 2024 CPCG chapters).
 
 ## Architecture (the pipeline)
 - **`journals.json`** — 19 monitored journals + PEDS_TERMS + Template A/B (peds-filter) flags. This file is the authority on the journal list (`PedEndoLit_Retrieval_Config.docx` still says 18).
 - **`classifier.py`** — the rules classifier (v2.5-equivalent: v2.4.2 spec + diabetes framework + Gender Medicine + Calcium/Parathyroid split). Pure functions, unit-tested.
 - **`build_dataset.py`** — fetch→classify→dedup(by PMID)→writes `pedendolit-data.json`. Merge-only by default; `--rebuild` reclassifies from the `--raw` file (run `merge_raw_sources.py` first — see runbook's REBUILD PITFALL). Decodes HTML entities at ingest. **`ARCHIVE_AFTER_DAYS = None` — archiving is OFF** (see DECISIONS.md before ever re-enabling).
 - **`merge_raw_sources.py`** — rebuilds `comprehensive_raw.json` from every raw file on disk, richest-value-wins, seeded from the current store (45 articles exist in no raw file). Zero network calls. Treats PubMed's literal `[Abstract not available]` string as empty rather than storing it as body text.
-- **`guideline_sweep.py`** — the monthly safety net for guidelines published *outside* the 19 monitored journals. Reuses `map_raw()` + `classify()`, drops PMIDs already stored, and writes `guideline_review_queue.md` + `guideline_candidates.json`. **Never writes to the store** — approved candidates go in via `build_dataset.py --raw guideline_candidates.json`. Procedure and query in the runbook.
+- **Monthly guideline sweep** — the safety net for guidelines published *outside* the 19 monitored journals, in four scripts (full procedure + agent prompt in the runbook):
+  - **`guideline_sweep.py`** — reuses `map_raw()` + `classify()`; drops PMIDs already in the store or already ruled on; writes `guideline_candidates.json`.
+  - **review agent** (Sonnet subagent, not a script) — judges each candidate against the 17-topic taxonomy on two gates (pediatric AND endocrine-as-subject); writes `guideline_verdicts.json` with a one-sentence reason each.
+  - **`build_review_page.py`** — self-contained `guideline_review.html`: checkboxes, agent reasoning, MeSH evidence, three tiers (accept pre-ticked / borderline / reject collapsed but tickable). Submit downloads `approved_pmids.json`.
+  - **`apply_approvals.py`** — turns that download into `guideline_approved_raw.json` and records every decision in `guideline_decisions.json` (so declined articles never resurface). Prints the merge commands; **never writes to the store itself**.
 - **`build_dashboard.py`** — reads the datastore, writes `index.html` (the published artifact) plus two identical convenience copies (`PedEndoLit-Dashboard.html` here, gitignored, and one at the `01_Clinical_Research/` level). Holds `WEB3FORMS_KEY`, the Supabase keys, `GOOGLE_ENABLED`, and the entire client app in `HTML_TEMPLATE` — **edit the template, never the generated HTML**.
 - **`pedendolit-data.json`** — the datastore (keyed by PMID).
 - **Weekly refresh** — scheduled task, Sundays ~9:01 AM ET, follows `WEEKLY_REFRESH_RUNBOOK.md`.

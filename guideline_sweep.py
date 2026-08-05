@@ -57,11 +57,13 @@ def main():
     ap.add_argument("--raw", default="sweep_raw.json",
                     help="PubMed MCP metadata for the sweep results")
     ap.add_argument("--store", default="pedendolit-data.json")
+    ap.add_argument("--decisions", default="guideline_decisions.json")
     ap.add_argument("--out-prefix", default="guideline")
     args = ap.parse_args()
 
     raw_path = args.raw if os.path.isabs(args.raw) else os.path.join(HERE, args.raw)
     store_path = os.path.join(HERE, args.store)
+    dec_path = os.path.join(HERE, args.decisions)
 
     raw = load_raw(raw_path)
     store = json.load(open(store_path))
@@ -70,13 +72,23 @@ def main():
     # — go through it rather than reading the field directly.
     known = set(str(a.get("pmid")) for a in store.get("articles", []))
 
-    kept, already, excluded = [], 0, 0
+    # Articles already ruled on in a previous sweep — approved OR rejected. Without
+    # this the same declined guidelines resurface every month asking to be declined
+    # again. Written by apply_approvals.py.
+    decided = {}
+    if os.path.exists(dec_path):
+        decided = json.load(open(dec_path)).get("decisions", {})
+
+    kept, already, excluded, seen_before = [], 0, 0, 0
     for rec in raw:
         art = dataset.map_raw(rec)
         if not art.get("pmid"):
             continue
         if str(art["pmid"]) in known:
             already += 1
+            continue
+        if str(art["pmid"]) in decided:
+            seen_before += 1
             continue
         res = classifier.classify(art)
         # The classifier's own exclusion rules (adult-only, errata, off-topic) are
@@ -100,12 +112,14 @@ def main():
     md_path = os.path.join(HERE, f"{args.out_prefix}_review_queue.md")
     with open(md_path, "w") as f:
         f.write("# Guideline sweep — review queue\n\n")
-        f.write(f"{len(kept)} candidates not already in the store "
-                f"({already} skipped as already present, {excluded} excluded by the "
+        f.write(f"{len(kept)} candidates ({already} already in the store, "
+                f"{seen_before} decided in a previous sweep, {excluded} excluded by the "
                 f"classifier).\n\n")
-        f.write("Approve by deleting the rows you do not want from "
-                f"`{os.path.basename(cand_path)}`, then:\n\n")
-        f.write(f"```\npython3 build_dataset.py --raw {os.path.basename(cand_path)}\n```\n\n")
+        f.write("This markdown file is a quick text view. The real review surface is the\n"
+                "checkbox page — see the monthly sweep section of "
+                "`WEEKLY_REFRESH_RUNBOOK.md`:\n\n")
+        f.write("```\n# agent writes guideline_verdicts.json, then:\n"
+                "python3 build_review_page.py   # -> guideline_review.html\n```\n\n")
         f.write("| # | Type | Topic | Society | Date | Journal | Title |\n")
         f.write("|---|------|-------|---------|------|---------|-------|\n")
         for i, k in enumerate(kept, 1):
@@ -117,7 +131,8 @@ def main():
                     f"[{title}]({a.get('url','')}) |\n")
 
     print(f"sweep: {len(raw)} fetched | {already} already in store | "
-          f"{excluded} classifier-excluded | {len(kept)} for review")
+          f"{seen_before} previously decided | {excluded} classifier-excluded | "
+          f"{len(kept)} for review")
     print(f"  wrote {md_path}")
     print(f"  wrote {cand_path}")
 

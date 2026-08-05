@@ -6,3 +6,8 @@ _tmp_batches/
 # Byte-identical to the published index.html, so only that one is versioned.
 # Kept on disk as the familiar double-click filename.
 PedEndoLit-Dashboard.html
+
+# Guideline sweep working files — regenerated each month from sweep_raw.json.
+# guideline_decisions.json IS versioned (it's the memory of what was ruled on).
+guideline_review.html
+guideline_approved_raw.json
