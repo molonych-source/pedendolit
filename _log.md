@@ -6,6 +6,31 @@ git history (33 commits to that date) and the dated sections formerly in `MEMORY
 
 ---
 
+### [2026-08-04] finished the wide sweep + priced the pre-2024 backfill
+
+- **Found and closed a coverage hole of my own making.** The wide 2024–2026 all-journals
+  guideline search had returned 63 hits, but the audit only pulled metadata for about half
+  before moving on — 30 PMIDs had never been examined, stored, or ruled on. Fetched and
+  reviewed the remainder (29; PMID 40029956 no longer resolves on PubMed).
+- **Agent review: 12 accept / 6 borderline / 11 reject** — a richer batch than the first,
+  because the original half had been picked arbitrarily rather than by relevance. Christian
+  approved 14 (all 12 accepts plus the SIAMS/SIEDP andrology guideline and ESHRE testicular
+  tissue cryopreservation), with **no overrides in either direction** — full agreement with
+  the agent's accepts and rejects.
+- Notable additions: congenital hypopituitarism, the French SFEDP consensus on endocrine
+  management of transgender adolescents, CMAJ pediatric obesity CPG, Polish pediatric thyroid
+  carcinoma, French preclinical stage 1–2 T1D screening, German pediatric diabetes, China 2025
+  pediatric T2D, two Argentine guidelines, and an endocrine-screening framework for pediatric
+  thalassemia — correctly accepted from a *hematology* journal because endocrine surveillance
+  is the subject, in contrast to the hemophilia guideline the agent rejected earlier.
+- Store 1317 → **1331**; guidelines 60 → **74**; Gender Medicine now 7 articles.
+  49 decisions on record (25 approved / 24 rejected).
+- **Priced a pre-2024 guideline backfill** (2018–2023, publication-type scoped): 32 hits in
+  the 5 dedicated peds-endo journals (where the ISPAD 2018 and 2022 consensus series live),
+  91 across all 19 monitored journals (the extra ~59 skew adult — that search has no peds
+  filter), 139 for the wide all-journals query at ~35% precision. Recommended starting with
+  the 32. Not yet run.
+
 ### [2026-08-04] agent-reviewed approvals (late evening, follow-on)
 
 Christian asked for the sweep candidates to be triaged automatically for peds-endo relevance

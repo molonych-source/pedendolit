@@ -15,8 +15,8 @@ Computer workflow. Pulls pediatric endocrinology articles from 19 monitored jour
 via PubMed (free NCBI E-utilities, accessed through the PubMed MCP), classifies each
 with a rules-based classifier ported from the Perplexity spec, and renders a single
 self-contained page. Live at https://pedsendobrief.org with optional accounts (saved
-articles, notes, since-your-last-visit). Store: 1,317 articles as of 2026-08-04,
-including 60 guidelines (all six ISPAD 2024 CPCG chapters).
+articles, notes, since-your-last-visit). Store: 1,331 articles as of 2026-08-04,
+including 74 guidelines (all six ISPAD 2024 CPCG chapters).
 
 ## Architecture (the pipeline)
 - **`journals.json`** — 19 monitored journals + PEDS_TERMS + Template A/B (peds-filter) flags. This file is the authority on the journal list (`PedEndoLit_Retrieval_Config.docx` still says 18).

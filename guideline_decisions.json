@@ -120,6 +120,180 @@
    "decided_on": "2026-08-04",
    "agent_verdict": "accept",
    "title": ""
+  },
+  "38169175": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "reject",
+   "title": "ESPEN-ESPGHAN-ECFS guideline on nutrition care for cystic fibrosis."
+  },
+  "38377729": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "reject",
+   "title": "Task force of the Brazilian Society of Otology - evaluation and management of peripheral facial palsy."
+  },
+  "38538470": {
+   "decision": "approved",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "accept",
+   "title": "Diagnosis and management of congenital hypopituitarism in children."
+  },
+  "38597099": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "reject",
+   "title": "Indian Academy of Pediatrics Consensus Guidelines on Preconception Care."
+  },
+  "38604231": {
+   "decision": "approved",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "accept",
+   "title": "Diagnosis, Therapy and Follow-Up of Diabetes Mellitus in Children and Adolescents."
+  },
+  "38955658": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "borderline",
+   "title": "Clinical practice recommendations for management of Diabetes Mellitus in Arab region: An expert consensus statement from Arab Diabetes Forum (ADF)."
+  },
+  "39125469": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "reject",
+   "title": "An Interdisciplinary Approach: Presentation of the Pediatric Obstructive Sleep Apnea Diagnostic Examination Form (POSADEF)."
+  },
+  "39126560": {
+   "decision": "approved",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "borderline",
+   "title": "\"Management of andrological disorders from childhood and adolescence to transition age: guidelines from the Italian Society of Andrology and Sexual Medicine (SI"
+  },
+  "39240349": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "reject",
+   "title": "ESR Essentials: advanced MR safety in vulnerable patients-practice recommendations by the European Society for Magnetic Resonance in Medicine and Biology."
+  },
+  "39270074": {
+   "decision": "approved",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "accept",
+   "title": "[Cryptorchidism: An update of advances in its diagnosis and treatment]."
+  },
+  "39297398": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "borderline",
+   "title": "Practice Recommendations for Metabolic Dysfunction-Associated Steatotic Liver Disease by the Indian Society of Pediatric Gastroenterology, Hepatology and Nutrit"
+  },
+  "39378663": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "reject",
+   "title": "Brazilian Society of Otology task force - single sided deafness - recommendations based on strength of evidence."
+  },
+  "39380079": {
+   "decision": "approved",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "accept",
+   "title": "Cardiometabolic risk in children and adolescents with obesity: a position paper of the Italian Society for Pediatric Endocrinology and Diabetology."
+  },
+  "39442262": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "reject",
+   "title": "Brazilian Society of Otology task force - cochlear implant &#x2012; recommendations based on strength of evidence."
+  },
+  "39480773": {
+   "decision": "approved",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "accept",
+   "title": "[Guidelines for the prevention, diagnosis and treatment of obesity. Update 2024]."
+  },
+  "39551654": {
+   "decision": "approved",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "accept",
+   "title": "Endocrine management of transgender adolescents: Expert consensus of the french society of pediatric endocrinology and diabetology working group."
+  },
+  "39641420": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "reject",
+   "title": "Canadian Association of Radiologists Pediatric Imaging Referral Guideline."
+  },
+  "39647985": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "reject",
+   "title": "Unresolved issues concerning venous thromboembolism. Venous thromboembolism in children. Consensus of the French Society of Vascular Medicine (SFMV)."
+  },
+  "39675522": {
+   "decision": "approved",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "accept",
+   "title": "Screening and care for preclinical stage 1-2 type 1 diabetes in first-degree relatives: French expert position statement."
+  },
+  "39829212": {
+   "decision": "approved",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "accept",
+   "title": "Diagnostics and treatment of differentiated thyroid carcinoma in children - Guidelines of the Polish National Scientific Societies, 2024 Update."
+  },
+  "39844487": {
+   "decision": "approved",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "accept",
+   "title": "[Guidelines for the diagnosis and treatment of type 2 diabetes mellitus in children (2025)]."
+  },
+  "40063957": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "reject",
+   "title": "Evaluation and Management of Chronic Kidney Disease: Synopsis of the Kidney Disease: Improving Global Outcomes 2024 Clinical Practice Guideline."
+  },
+  "40071796": {
+   "decision": "approved",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "accept",
+   "title": "Framework guidelines for the process of caring for the health of adolescent transgender (T) and non-binary (NB) people experiencing gender dysphoria - the posit"
+  },
+  "40097316": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "reject",
+   "title": "Recommendations from the European guidelines for the diagnosis and therapy of pancreatic exocrine insufficiency."
+  },
+  "40228835": {
+   "decision": "approved",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "accept",
+   "title": "Managing obesity in children: a clinical practice guideline."
+  },
+  "40574354": {
+   "decision": "approved",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "borderline",
+   "title": "ESHRE good practice recommendations on fertility preservation involving testicular tissue cryopreservation in children receiving gonadotoxic therapies&#x2020;."
+  },
+  "40889554": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "borderline",
+   "title": "French expert consensus statement on diagnosis and management of primary hyperparathyroidism."
+  },
+  "40987949": {
+   "decision": "approved",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "accept",
+   "title": "Framework for the comprehensive screening for endocrine disorders in patients with transfusion-dependent thalassemia in low-resource settings."
+  },
+  "41038201": {
+   "decision": "rejected",
+   "decided_on": "2026-08-04",
+   "agent_verdict": "borderline",
+   "title": "Health-care transitions for young people living beyond childhood and adolescent cancer: recommendations from the EU-CAYAS-NET consortium."
   }
  }
 }
