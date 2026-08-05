@@ -1,0 +1,2956 @@
+[
+ {
+  "identifiers": {
+   "pmid": "37454648",
+   "pmc": "PMC11124746",
+   "doi": "10.1159/000531766",
+   "pii": "000531766"
+  },
+  "title": "International Guidelines for the Diagnosis and Management of Hyperinsulinism.",
+  "abstract": "Hyperinsulinism (HI) due to dysregulation of pancreatic beta-cell insulin secretion is the most common and most severe cause of persistent hypoglycemia in infants and children. In the 65 years since HI in children was first described, there has been a dramatic advancement in the diagnostic tools available, including new genetic techniques and novel radiologic imaging for focal HI; however, there have been almost no new therapeutic modalities since the development of diazoxide.\n\nRecent advances in neonatal research and genetics have improved our understanding of the pathophysiology of both transient and persistent forms of neonatal hyperinsulinism. Rapid turnaround of genetic test results combined with advanced radiologic imaging can permit identification and localization of surgically-curable focal lesions in a large proportion of children with congenital forms of HI, but are only available in certain centers in \"developed\" countries. Diazoxide, the only drug currently approved for treating HI, was recently designated as an \"essential medicine\" by the World Health Organization but has been approved in only 16% of Latin American countries and remains unavailable in many under-developed areas of the world. Novel treatments for HI are emerging, but they await completion of safety and efficacy trials before being considered for clinical use.\n\nThis international consensus statement on diagnosis and management of HI was developed in order to assist specialists, general pediatricians, and neonatologists in early recognition and treatment of HI with the ultimate aim of reducing the prevalence of brain injury caused by hypoglycemia. A previous statement on diagnosis and management of HI in Japan was published in 2017. The current document provides an updated guideline for management of infants and children with HI and includes potential accommodations for less-developed regions of the world where resources may be limited.",
+  "doi": "10.1159/000531766",
+  "journal": {
+   "title": "Hormone research in paediatrics",
+   "iso_abbreviation": "Horm Res Paediatr"
+  },
+  "authors": [
+   {
+    "last_name": "De Leon",
+    "fore_name": "Diva D",
+    "initials": "DD",
+    "affiliations": [
+     "Congenital Hyperinsulinism Center and Division of Endocrinology and Diabetes, Department of Pediatrics, Children's Hospital of Philadelphia, Perelman School of Medicine at the University of Pennsylvania, Philadelphia, Pennsylvania, USA."
+    ]
+   },
+   {
+    "last_name": "Arnoux",
+    "fore_name": "Jean Baptiste",
+    "initials": "JB",
+    "affiliations": [
+     "Reference Center for Inherited Metabolic Diseases, Necker-Enfants Malades Hospital, AP-HP, University of Paris-Cit&#xe9;, Paris, France."
+    ]
+   },
+   {
+    "last_name": "Banerjee",
+    "fore_name": "Indraneel",
+    "initials": "I",
+    "affiliations": [
+     "Paediatric Endocrinology, Royal Manchester Children's Hospital, University of Manchester, Manchester, UK."
+    ]
+   },
+   {
+    "last_name": "Bergada",
+    "fore_name": "Ignacio",
+    "initials": "I",
+    "affiliations": [
+     "Centro de Investigaciones Endocrinol&#xf3;gicas \"Dr. C&#xe9;sar Bergad&#xe1;\" (CONICET - FEI), Division de Endrocrinolog&#xed;a, Hospital de Ni&#xf1;os Ricardo Guti&#xe9;rrez, Buenos Aires, Argentina."
+    ]
+   },
+   {
+    "last_name": "Bhatti",
+    "fore_name": "Tricia",
+    "initials": "T",
+    "affiliations": [
+     "Department of Clinical Pathology and Laboratory Medicine, Children's Hospital of Philadelphia and Perelman School of Medicine at the University of Pennsylvania, Philadelphia, Pennsylvania, USA."
+    ]
+   },
+   {
+    "last_name": "Conwell",
+    "fore_name": "Louise S",
+    "initials": "LS",
+    "affiliations": [
+     "Australia and Children's Health Queensland Clinical Unit, Department of Endocrinology and Diabetes, Queensland Children's Hospital, Children's Health Queensland, Greater Brisbane Clinical School, Medical School, Faculty of Medicine, University of Queensland, Brisbane, Queensland, Australia."
+    ]
+   },
+   {
+    "last_name": "Fu",
+    "fore_name": "Junfen",
+    "initials": "J",
+    "affiliations": [
+     "National Clinical Research Center for Child Health, Department of Endocrinology, The Children's Hospital of Zhejiang University School of Medicine, Hangzhou, China."
+    ]
+   },
+   {
+    "last_name": "Flanagan",
+    "fore_name": "Sarah E",
+    "initials": "SE",
+    "affiliations": [
+     "Institute of Biomedical and Clinical Science, University of Exeter Medical School, Exeter, UK."
+    ]
+   },
+   {
+    "last_name": "Gillis",
+    "fore_name": "David",
+    "initials": "D",
+    "affiliations": [
+     "Hadassah Medical Center, Department of Pediatrics, Ein-Kerem, Jerusalem and Faculty of Medicine, Hebrew-University, Jerusalem, Israel."
+    ]
+   },
+   {
+    "last_name": "Meissner",
+    "fore_name": "Thomas",
+    "initials": "T",
+    "affiliations": [
+     "Department of General Pediatrics, Neonatology and Pediatric Cardiology, University Children's Hospital, Medical Faculty, Heinrich Heine University, Duesseldorf, Germany."
+    ]
+   },
+   {
+    "last_name": "Mohnike",
+    "fore_name": "Klaus",
+    "initials": "K",
+    "affiliations": [
+     "Department of General Pediatrics, Otto-von-Guericke University Magdeburg, Magdeburg, Germany."
+    ]
+   },
+   {
+    "last_name": "Pasquini",
+    "fore_name": "Tai L S",
+    "initials": "TLS",
+    "affiliations": [
+     "Research and Policy Director, Congenital Hyperinsulinism International, Glen Ridge, New Jersey, USA."
+    ]
+   },
+   {
+    "last_name": "Shah",
+    "fore_name": "Pratik",
+    "initials": "P",
+    "affiliations": [
+     "Pediatric Endocrinology, The Royal London Children's Hospital, Queen Mary University of London, London, UK."
+    ]
+   },
+   {
+    "last_name": "Stanley",
+    "fore_name": "Charles A",
+    "initials": "CA",
+    "affiliations": [
+     "Congenital Hyperinsulinism Center and Division of Endocrinology and Diabetes, Department of Pediatrics, Children's Hospital of Philadelphia, Perelman School of Medicine at the University of Pennsylvania, Philadelphia, Pennsylvania, USA."
+    ]
+   },
+   {
+    "last_name": "Vella",
+    "fore_name": "Adrian",
+    "initials": "A",
+    "affiliations": [
+     "Division of Diabetes, Endocrinology and Metabolism, Mayo Clinic, Rochester, Minnesota, USA."
+    ]
+   },
+   {
+    "last_name": "Yorifuji",
+    "fore_name": "Tohru",
+    "initials": "T",
+    "affiliations": [
+     "Pediatric Endocrinology and Metabolism, Children's Medical Center, Osaka City General Hospital, Osaka, Japan."
+    ]
+   },
+   {
+    "last_name": "Thornton",
+    "fore_name": "Paul S",
+    "initials": "PS",
+    "affiliations": [
+     "Congenital Hyperinsulinism Center, Cook Children's Medical Center and Texas Christian University Burnett School of Medicine, Fort Worth, Texas, USA."
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2023",
+   "month": "07",
+   "day": "14"
+  },
+  "keywords": [
+   "Guidelines",
+   "Hyperinsulinism",
+   "Hypoglycemia",
+   "Insulin"
+  ],
+  "mesh_terms": [
+   "Child",
+   "Humans",
+   "Infant",
+   "Infant, Newborn",
+   "Congenital Hyperinsulinism",
+   "Diazoxide"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "97",
+   "issue": "3",
+   "pages": "279-298"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "33401878",
+   "pmc": "PMC7788349",
+   "doi": "10.6065/apem.2040198.099",
+   "pii": "apem.2040198.099"
+  },
+  "title": "2017 Clinical practice guidelines for dyslipidemia of Korean children and adolescents.",
+  "abstract": "The Committee on Dyslipidemia of Korean Pediatric and Adolescents of the Korean Society of Pediatric Endocrinology has newly developed evidence-based clinical practice guidelines for dyslipidemia in Korean children and adolescents. These guidelines were formulated with the Grading of Recommendations, which include both the strength of recommendations and the quality of evidence. In the absence of sufficient evidence, conclusions were based on expert opinion. These guidelines are based on the 2011 National Heart, Lung, and Blood Institute Guidelines, which focus on the prevention of cardiovascular disease in children and draw from a comprehensive review of evidence. These guidelines contain the definition of and screening process for dyslipidemia and introduce new dietary methods: the Cardiovascular Health Integrated Lifestyle Diet (CHILD)-1, the CHILD-2-low-density lipoprotein cholesterol, and the CHILD-2-triglyceride. Potential drug therapies for dyslipidemia along with their main effects and doses were also included.",
+  "doi": "10.6065/apem.2040198.099",
+  "journal": {
+   "title": "Annals of pediatric endocrinology & metabolism",
+   "iso_abbreviation": "Ann Pediatr Endocrinol Metab"
+  },
+  "authors": [
+   {
+    "last_name": "Lim",
+    "fore_name": "Jung Sub",
+    "initials": "JS",
+    "affiliations": [
+     "Department of Pediatrics, Korea Cancer Center Hospital, Seoul, Korea."
+    ]
+   },
+   {
+    "last_name": "Kim",
+    "fore_name": "Eun Young",
+    "initials": "EY",
+    "affiliations": [
+     "Department of Pediatrics, Chosun Universit y S chool of M edicine, Kwangju, Korea."
+    ]
+   },
+   {
+    "last_name": "Kim",
+    "fore_name": "Jae Hyun",
+    "initials": "JH",
+    "affiliations": [
+     "Department of Pediatrics, Seoul National University Bundang Hospital, Seongnam, Korea."
+    ]
+   },
+   {
+    "last_name": "Yoo",
+    "fore_name": "Jae-Ho",
+    "initials": "JH",
+    "affiliations": [
+     "Department of Pediatrics, Dong-A University College of Medicine, Busan, Korea."
+    ]
+   },
+   {
+    "last_name": "Yi",
+    "fore_name": "Kyung Hee",
+    "initials": "KH",
+    "affiliations": [
+     "Department of Pediatrics, Wonkwang University, Sanbon Medical Center, Sanbon Korea."
+    ]
+   },
+   {
+    "last_name": "Chae",
+    "fore_name": "Hyun Wook",
+    "initials": "HW",
+    "affiliations": [
+     "Department of Pediatrics, Gangnam Severance Hospital, Yonsei University College of Medicine, Seoul, Korea."
+    ]
+   },
+   {
+    "last_name": "Choi",
+    "fore_name": "Jin-Ho",
+    "initials": "JH",
+    "affiliations": [
+     "Department of Pediatrics, Asan Medical Center, University of Ulsan College of Medicine, Seoul, Korea."
+    ]
+   },
+   {
+    "last_name": "Kim",
+    "fore_name": "Ji Young",
+    "initials": "JY",
+    "affiliations": [
+     "Department of Food Service and Nutrition Care, Seoul National University Hospital, Seoul, Korea."
+    ]
+   },
+   {
+    "last_name": "Hwang",
+    "fore_name": "Il Tae",
+    "initials": "IT",
+    "affiliations": [
+     "Department of Pediatrics, Kangdong Sacred Heart Hospital, Hallym University College of Medicine, Seoul, Korea."
+    ]
+   },
+   {}
+  ],
+  "publication_date": {
+   "year": "2020",
+   "month": "12",
+   "day": "31"
+  },
+  "keywords": [
+   "Adolescent",
+   "Child",
+   "Dyslipidemia",
+   "Korea",
+   "Practice guidelines"
+  ],
+  "article_types": [
+   "Guideline",
+   "Journal Article"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "25",
+   "issue": "4",
+   "pages": "199-207"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "33047481",
+   "pmc": "PMC7702152",
+   "doi": "10.1111/pedi.13105"
+  },
+  "title": "Glucose management for exercise using continuous glucose monitoring (CGM) and intermittently scanned CGM (isCGM) systems in type 1 diabetes: position statement of the European Association for the Study of Diabetes (EASD) and of the International Society for Pediatric and Adolescent Diabetes (ISPAD) endorsed by JDRF and supported by the American Diabetes Association (ADA).",
+  "abstract": "Physical exercise is an important component in the management of type 1 diabetes across the lifespan. Yet, acute exercise increases the risk of dysglycaemia, and the direction of glycaemic excursions depends, to some extent, on the intensity and duration of the type of exercise. Understandably, fear of hypoglycaemia is one of the strongest barriers to incorporating exercise into daily life. Risk of hypoglycaemia during and after exercise can be lowered when insulin-dose adjustments are made and/or additional carbohydrates are consumed. Glycaemic management during exercise has been made easier with continuous glucose monitoring (CGM) and intermittently scanned continuous glucose monitoring (isCGM) systems; however, because of the complexity of CGM and isCGM systems, both individuals with type 1 diabetes and their healthcare professionals may struggle with the interpretation of given information to maximise the technological potential for effective use around exercise (ie, before, during and after). This position statement highlights the recent advancements in CGM and isCGM technology, with a focus on the evidence base for their efficacy to sense glucose around exercise and adaptations in the use of these emerging tools, and updates the guidance for exercise in adults, children and adolescents with type 1 diabetes.",
+  "doi": "10.1111/pedi.13105",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [
+   {
+    "last_name": "Moser",
+    "fore_name": "Othmar",
+    "initials": "O",
+    "affiliations": [
+     "Division of Endocrinology and Diabetology, Department of Internal Medicine, Medical University of Graz, Austria.",
+     "Division of Exercise Physiology and Metabolism, Department of Sport Science, University of Bayreuth, Bayreuth, Germany."
+    ]
+   },
+   {
+    "last_name": "Riddell",
+    "fore_name": "Michael C",
+    "initials": "MC",
+    "affiliations": [
+     "School of Kinesiology and Health Science, York University, Toronto, Ontario, Canada."
+    ]
+   },
+   {
+    "last_name": "Eckstein",
+    "fore_name": "Max L",
+    "initials": "ML",
+    "affiliations": [
+     "Division of Endocrinology and Diabetology, Department of Internal Medicine, Medical University of Graz, Austria."
+    ]
+   },
+   {
+    "last_name": "Adolfsson",
+    "fore_name": "Peter",
+    "initials": "P",
+    "affiliations": [
+     "Department of Pediatrics, The Hospital of Halland, Kungsbacka, Sweden.",
+     "Sahlgrenska Academy at University of Gothenburg, Institution of Clinical Sciences, Gothenburg, Sweden."
+    ]
+   },
+   {
+    "last_name": "Rabasa-Lhoret",
+    "fore_name": "R&#xe9;mi",
+    "initials": "R",
+    "affiliations": [
+     "Institut de recherches Cliniques de Montr&#xe9;al, Montr&#xe9;al, QC, Canada.",
+     "Endocrinology division Centre Hospitalier Universitaire de Montr&#xe9;al, Montr&#xe9;al, QC, Canada.",
+     "Nutrition Department, Faculty of Medicine, Universit&#xe9; de Montr&#xe9;al, Montr&#xe9;al, QC, Canada.",
+     "Montreal Diabetes Research Centre, Montr&#xe9;al, QC, Canada."
+    ]
+   },
+   {
+    "last_name": "van den Boom",
+    "fore_name": "Louisa",
+    "initials": "L",
+    "affiliations": [
+     "Division of Pediatric Diabetology, DRK Children's Hospital, Siegen, Germany."
+    ]
+   },
+   {
+    "last_name": "Gillard",
+    "fore_name": "Pieter",
+    "initials": "P",
+    "affiliations": [
+     "Department of Endocrinology, University Hospitals Leuven, KU Leuven, Leuven, Belgium."
+    ]
+   },
+   {
+    "last_name": "N&#xf8;rgaard",
+    "fore_name": "Kirsten",
+    "initials": "K",
+    "affiliations": [
+     "Steno Diabetes Center Copenhagen, University of Copenhagen, Copenhagen, Denmark."
+    ]
+   },
+   {
+    "last_name": "Oliver",
+    "fore_name": "Nick S",
+    "initials": "NS",
+    "affiliations": [
+     "Department of Metabolism, Digestion and Reproduction, Faculty of Medicine, Imperial College, London, London, UK."
+    ]
+   },
+   {
+    "last_name": "Zaharieva",
+    "fore_name": "Dessi P",
+    "initials": "DP",
+    "affiliations": [
+     "Department of Pediatric Endocrinology and Diabetes, Stanford University School of Medicine, Stanford, California, USA."
+    ]
+   },
+   {
+    "last_name": "Battelino",
+    "fore_name": "Tadej",
+    "initials": "T",
+    "affiliations": [
+     "Department of Paediatric Endocrinology, Diabetes and Metabolic Diseases, UMC - University Children's Hospital, University Medical Centre Ljubljana, Ljubljana, Slovenia.",
+     "Faculty of Medicine, University of Ljubljana, Ljubljana, Slovenia."
+    ]
+   },
+   {
+    "last_name": "de Beaufort",
+    "fore_name": "Carine",
+    "initials": "C",
+    "affiliations": [
+     "Department of Pediatric Diabetes and Endocrinology, Centre Hospitalier Luxembourg, Luxembourg, Luxembourg.",
+     "Department of Pediatrics, Free University Brussels (VUB), Brussels, Belgium."
+    ]
+   },
+   {
+    "last_name": "Bergenstal",
+    "fore_name": "Richard M",
+    "initials": "RM",
+    "affiliations": [
+     "International Diabetes Center, Minneapolis, Minnesota, USA."
+    ]
+   },
+   {
+    "last_name": "Buckingham",
+    "fore_name": "Bruce",
+    "initials": "B",
+    "affiliations": [
+     "Department of Pediatric Endocrinology and Diabetes, Stanford University School of Medicine, Stanford, California, USA."
+    ]
+   },
+   {
+    "last_name": "Cengiz",
+    "fore_name": "Eda",
+    "initials": "E",
+    "affiliations": [
+     "Department of Pediatrics, Yale School of Medicine, New Haven, Connecticut, USA.",
+     "Bah&#xe7;e&#x15f;ehir &#xdc;niversitesi, Istanbul, Turkey."
+    ]
+   },
+   {
+    "last_name": "Deeb",
+    "fore_name": "Asma",
+    "initials": "A",
+    "affiliations": [
+     "Paediatric Endocrinology Division, Shaikh Shakhbout Medical City, Abu Dhabi, United Arab Emirates."
+    ]
+   },
+   {
+    "last_name": "Heise",
+    "fore_name": "Tim",
+    "initials": "T",
+    "affiliations": [
+     "Profil, Neuss, Germany."
+    ]
+   },
+   {
+    "last_name": "Heller",
+    "fore_name": "Simon",
+    "initials": "S",
+    "affiliations": [
+     "Department of Oncology & Metabolism, The Medical School, University of Sheffield, Sheffield, UK.",
+     "Sheffield Teaching Hospitals NHS Foundation Trust, Sheffield, UK."
+    ]
+   },
+   {
+    "last_name": "Kowalski",
+    "fore_name": "Aaron J",
+    "initials": "AJ",
+    "affiliations": [
+     "JDRF, New York, New York, USA."
+    ]
+   },
+   {
+    "last_name": "Leelarathna",
+    "fore_name": "Lalantha",
+    "initials": "L",
+    "affiliations": [
+     "Manchester Diabetes Centre, Manchester University NHS Foundation Trust, Manchester Academic Health Science Centre, Manchester, UK.",
+     "Division of Diabetes, Endocrinology and Gastroenterology, Faculty of Biology, Medicine and Health, University of Manchester, Manchester, UK."
+    ]
+   },
+   {
+    "last_name": "Mathieu",
+    "fore_name": "Chantal",
+    "initials": "C",
+    "affiliations": [
+     "Department of Endocrinology, University Hospitals Leuven, KU Leuven, Leuven, Belgium."
+    ]
+   },
+   {
+    "last_name": "Stettler",
+    "fore_name": "Christoph",
+    "initials": "C",
+    "affiliations": [
+     "Department of Diabetes, Endocrinology, Nutritional Medicine and Metabolism, Inselspital, Bern University Hospital and University of Bern, Bern, Switzerland."
+    ]
+   },
+   {
+    "last_name": "Tauschmann",
+    "fore_name": "Martin",
+    "initials": "M",
+    "affiliations": [
+     "Department of Pediatrics and Adolescent Medicine, Medical University of Vienna, Vienna, Austria."
+    ]
+   },
+   {
+    "last_name": "Thabit",
+    "fore_name": "Hood",
+    "initials": "H",
+    "affiliations": [
+     "Manchester Diabetes Centre, Manchester University NHS Foundation Trust, Manchester Academic Health Science Centre, Manchester, UK."
+    ]
+   },
+   {
+    "last_name": "Wilmot",
+    "fore_name": "Emma G",
+    "initials": "EG",
+    "affiliations": [
+     "Diabetes Department, Royal Derby Hospital, University Hospitals of Derby and Burton NHSFT, Derby, UK.",
+     "Faculty of Medicine & Health Sciences, University of Nottingham, Nottingham, UK."
+    ]
+   },
+   {
+    "last_name": "Sourij",
+    "fore_name": "Harald",
+    "initials": "H",
+    "affiliations": [
+     "Division of Endocrinology and Diabetology, Department of Internal Medicine, Medical University of Graz, Austria."
+    ]
+   },
+   {
+    "last_name": "Smart",
+    "fore_name": "Carmel E",
+    "initials": "CE",
+    "affiliations": [
+     "School of Health Sciences, University of Newcastle, Callaghan, New South Wales, Australia.",
+     "Department of Paediatric Diabetes and Endocrinology, John Hunter Children's Hospital, Newcastle, New South Wales, Australia."
+    ]
+   },
+   {
+    "last_name": "Jacobs",
+    "fore_name": "Peter G",
+    "initials": "PG",
+    "affiliations": [
+     "Department of Biomedical Engineering, Oregon Health & Science University, Portland, Oregon, USA."
+    ]
+   },
+   {
+    "last_name": "Bracken",
+    "fore_name": "Richard M",
+    "initials": "RM",
+    "affiliations": [
+     "Applied Sport, Technology, Exercise and Medicine Research Centre (A-STEM), College of Engineering, Swansea University, Swansea, UK."
+    ]
+   },
+   {
+    "last_name": "Mader",
+    "fore_name": "Julia K",
+    "initials": "JK",
+    "affiliations": [
+     "Division of Endocrinology and Diabetology, Department of Internal Medicine, Medical University of Graz, Austria."
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2020",
+   "month": "10",
+   "day": "13"
+  },
+  "keywords": [
+   "Adolescents",
+   "Adults",
+   "CGM",
+   "Children",
+   "Continuous glucose monitoring",
+   "Exercise",
+   "Physical activity",
+   "Position statement",
+   "Type 1 diabetes"
+  ],
+  "mesh_terms": [
+   "Adolescent",
+   "Adult",
+   "Blood Glucose",
+   "Blood Glucose Self-Monitoring",
+   "Child",
+   "Diabetes Mellitus, Type 1",
+   "Exercise",
+   "Glycemic Control",
+   "Humans",
+   "Hypoglycemic Agents",
+   "Insulin"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline",
+   "Research Support, Non-U.S. Gov't"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "21",
+   "issue": "8",
+   "pages": "1375-1393"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "32935435",
+   "doi": "10.1111/pedi.13118"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guideline: Diabetic ketoacidosis in the time of COVID-19 and resource-limited settings-role of subcutaneous insulin.",
+  "abstract": "The International Society for Pediatric and Adolescent Diabetes Clinical Practice Consensus Guideline 2018 for management of diabetic ketoacidosis (DKA) and the hyperglycemic hyperosmolar state provide comprehensive guidance for management of DKA in young people. Intravenous (IV) infusion of insulin remains the treatment of choice for treating DKA; however, the policy of many hospitals around the world requires admission to an intensive care unit (ICU) for IV insulin infusion. During the coronavirus 2019 (COVID-19) pandemic or other settings where intensive care resources are limited, ICU services may need to be prioritized or may not be appropriate due to risk of transmission of infection to young people with type 1 or type 2 diabetes. The aim of this guideline, which should be used in conjunction with the ISPAD 2018 guidelines, is to ensure that young individuals with DKA receive management according to best evidence in the context of limited ICU resources. Specifically, this guideline summarizes evidence for the role of subcutaneous insulin in treatment of uncomplicated mild to moderate DKA in young people and may be implemented if administration of IV insulin is not an option.",
+  "doi": "10.1111/pedi.13118",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [
+   {
+    "last_name": "Priyambada",
+    "fore_name": "Leena",
+    "initials": "L",
+    "affiliations": [
+     "Division of Pediatric Endocrinology, Rainbow Children's Hospital, Hyderabad, India."
+    ]
+   },
+   {
+    "last_name": "Wolfsdorf",
+    "fore_name": "Joseph I",
+    "initials": "JI",
+    "affiliations": [
+     "Division of Endocrinology, Boston Children's Hospital, Boston, Massachusetts, USA."
+    ]
+   },
+   {
+    "last_name": "Brink",
+    "fore_name": "Stuart J",
+    "initials": "SJ",
+    "affiliations": [
+     "New England Diabetes and Endocrinology Center, Waltham, Massachusetts, USA."
+    ]
+   },
+   {
+    "last_name": "Fritsch",
+    "fore_name": "Maria",
+    "initials": "M",
+    "affiliations": [
+     "Department of Pediatric and Adolescent Medicine, Medical University of Graz, Graz, Austria."
+    ]
+   },
+   {
+    "last_name": "Codner",
+    "fore_name": "Ethel",
+    "initials": "E",
+    "affiliations": [
+     "Institute of Maternal and Child Research, School of Medicine, University of Chile, Santiago, Chile."
+    ]
+   },
+   {
+    "last_name": "Donaghue",
+    "fore_name": "Kim C",
+    "initials": "KC",
+    "affiliations": [
+     "Sydney Children's Hospital Network, Sydney, New South Wales, Australia.",
+     "Discipline of Child and Adolescent Health, University of Sydney, Sydney, New South Wales, Australia."
+    ]
+   },
+   {
+    "last_name": "Craig",
+    "fore_name": "Maria E",
+    "initials": "ME",
+    "affiliations": [
+     "Sydney Children's Hospital Network, Sydney, New South Wales, Australia.",
+     "Discipline of Child and Adolescent Health, University of Sydney, Sydney, New South Wales, Australia.",
+     "School of Women's and Children's Health, University of New South Wales, Sydney, New South Wales, Australia."
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2020",
+   "month": "10",
+   "day": "12"
+  },
+  "keywords": [
+   "COVID-19",
+   "diabetic ketoacidosis",
+   "resource-limited settings",
+   "subcutaneous insulin"
+  ],
+  "mesh_terms": [
+   "Adolescent",
+   "Betacoronavirus",
+   "COVID-19",
+   "Child",
+   "Comorbidity",
+   "Consensus",
+   "Coronavirus Infections",
+   "Diabetes Mellitus, Type 1",
+   "Diabetes Mellitus, Type 2",
+   "Diabetic Ketoacidosis",
+   "Humans",
+   "Hypoglycemic Agents",
+   "Infusions, Intravenous",
+   "Injections, Intramuscular",
+   "Injections, Subcutaneous",
+   "Insulin, Short-Acting",
+   "Insulins",
+   "Intensive Care Units",
+   "Pandemics",
+   "Pneumonia, Viral",
+   "SARS-CoV-2",
+   "Young Adult"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "21",
+   "issue": "8",
+   "pages": "1394-1402"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "32157850",
+   "pmc": "PMC7291400",
+   "doi": "10.4274/jcrpe.galenos.2020.2020.0040"
+  },
+  "title": "A Proposal to Develop New References for Serum IGF-I Levels in Children.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.4274/jcrpe.galenos.2020.2020.0040",
+  "journal": {
+   "title": "Journal of clinical research in pediatric endocrinology",
+   "iso_abbreviation": "J Clin Res Pediatr Endocrinol"
+  },
+  "authors": [
+   {
+    "last_name": "Ranke",
+    "fore_name": "Michael B.",
+    "initials": "MB",
+    "affiliations": [
+     "University Children&#x2019;s Hospital, Division of Pediatric Endocrinology, T&#xfc;bingen, Germany"
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2020",
+   "month": "03",
+   "day": "11"
+  },
+  "mesh_terms": [
+   "Child",
+   "Child, Preschool",
+   "Female",
+   "Growth Disorders",
+   "Human Growth Hormone",
+   "Humans",
+   "Insulin-Like Growth Factor I",
+   "Male",
+   "Reference Values"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "12",
+   "issue": "2",
+   "pages": "140-142"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "31514194",
+   "pmc": "PMC6979443",
+   "doi": "10.1159/000502231",
+   "pii": "000502231"
+  },
+  "title": "Diagnosis, Genetics, and Therapy of Short Stature in Children: A Growth Hormone Research Society International Perspective.",
+  "abstract": "The Growth Hormone Research Society (GRS) convened a Workshop in March 2019 to evaluate the diagnosis and therapy of short stature in children. Forty-six international experts participated at the invitation of GRS including clinicians, basic scientists, and representatives from regulatory agencies and the pharmaceutical industry. Following plenary presentations addressing the current diagnosis and therapy of short stature in children, breakout groups discussed questions produced in advance by the planning committee and reconvened to share the group reports. A writing team assembled one document that was subsequently discussed and revised by participants. Participants from regulatory agencies and pharmaceutical companies were not part of the writing process. Short stature is the most common reason for referral to the pediatric endocrinologist. History, physical examination, and auxology remain the most important methods for understanding the reasons for the short stature. While some long-standing topics of controversy continue to generate debate, including in whom, and how, to perform and interpret growth hormone stimulation tests, new research areas are changing the clinical landscape, such as the genetics of short stature, selection of patients for genetic testing, and interpretation of genetic tests in the clinical setting. What dose of growth hormone to start, how to adjust the dose, and how to identify and manage a suboptimal response are still topics to debate. Additional areas that are expected to transform the growth field include the development of long-acting growth hormone preparations and other new therapeutics and diagnostics that may increase adult height or aid in the diagnosis of growth hormone deficiency.",
+  "doi": "10.1159/000502231",
+  "journal": {
+   "title": "Hormone research in paediatrics",
+   "iso_abbreviation": "Horm Res Paediatr"
+  },
+  "authors": [
+   {
+    "last_name": "Collett-Solberg",
+    "fore_name": "Paulo F",
+    "initials": "PF",
+    "affiliations": [
+     "Disciplina de Endocrinologia, Departamento de Medicina Interna, Faculdade de Ci&#xea;ncias M&#xe9;dicas, Universidade do Estado do Rio de Janeiro, Rio de Janeiro, Brazil, paulosolberg@yahoo.com."
+    ]
+   },
+   {
+    "last_name": "Ambler",
+    "fore_name": "Geoffrey",
+    "initials": "G",
+    "affiliations": [
+     "Institute of Endocrinology and Diabetes, The University of Sydney, Sydney, New South Wales, Australia."
+    ]
+   },
+   {
+    "last_name": "Backeljauw",
+    "fore_name": "Philippe F",
+    "initials": "PF",
+    "affiliations": [
+     "Division of Endocrinology, Department of Pediatrics, Cincinnati Children's Hospital Medical Center, University of Cincinnati College of Medicine, Cincinnati, Ohio, USA."
+    ]
+   },
+   {
+    "last_name": "Bidlingmaier",
+    "fore_name": "Martin",
+    "initials": "M",
+    "affiliations": [
+     "Endocrine Laboratory, Medizinische Klinik und Poliklinik IV, Klinikum der Universit&#xe4;t M&#xfc;nchen, Munich, Germany."
+    ]
+   },
+   {
+    "last_name": "Biller",
+    "fore_name": "Beverly M K",
+    "initials": "BMK",
+    "affiliations": [
+     "Neuroendocrine Unit, Department of Medicine, Massachusetts General Hospital, Harvard Medical School, Boston, Massachusetts, USA."
+    ]
+   },
+   {
+    "last_name": "Boguszewski",
+    "fore_name": "Margaret C S",
+    "initials": "MCS",
+    "affiliations": [
+     "Department of Pediatrics, Federal University of Parana, Curitiba, Brazil."
+    ]
+   },
+   {
+    "last_name": "Cheung",
+    "fore_name": "Pik To",
+    "initials": "PT",
+    "affiliations": [
+     "Paediatric Endocrinology, Genetics, and Metabolism, Virtus Medical Group and The University of Hong Kong, Hong Kong SAR, China."
+    ]
+   },
+   {
+    "last_name": "Choong",
+    "fore_name": "Catherine Seut Yhoke",
+    "initials": "CSY",
+    "affiliations": [
+     "Department of Endocrinology, Perth Children's Hospital, Child and Adolescent Health Service, Perth, Washington, Australia.",
+     "Division of Paediatrics, School of Medicine, University of Western Australia, Perth, Washington, Australia.",
+     "The Centre for Child Health Research, Telethon Kids Institute, University of Western Australia, Perth, Washington, Australia."
+    ]
+   },
+   {
+    "last_name": "Cohen",
+    "fore_name": "Laurie E",
+    "initials": "LE",
+    "affiliations": [
+     "Division of Endocrinology, Boston Children's Hospital, Harvard Medical School, Boston, Massachusetts, USA."
+    ]
+   },
+   {
+    "last_name": "Cohen",
+    "fore_name": "Pinchas",
+    "initials": "P",
+    "affiliations": [
+     "Leonard Davis School of Gerontology, University of Southern California, Los Angeles, California, USA."
+    ]
+   },
+   {
+    "last_name": "Dauber",
+    "fore_name": "Andrew",
+    "initials": "A",
+    "affiliations": [
+     "Division of Endocrinology, Children's National Health System, Washington, District of Columbia, USA."
+    ]
+   },
+   {
+    "last_name": "Deal",
+    "fore_name": "Cheri L",
+    "initials": "CL",
+    "affiliations": [
+     "Endocrine and Diabetes Service, CHU Sainte-Justine and University of Montreal, Montreal, Qu&#xe9;bec, Canada."
+    ]
+   },
+   {
+    "last_name": "Gong",
+    "fore_name": "Chunxiu",
+    "initials": "C",
+    "affiliations": [
+     "Endocrinology, Genetics, and Metabolism, Beijing Diabetes Center for Children and Adolescents, Medical Genetics Department, Beijing Children's Hospital, Beijing, China."
+    ]
+   },
+   {
+    "last_name": "Hasegawa",
+    "fore_name": "Yukihiro",
+    "initials": "Y",
+    "affiliations": [
+     "Division of Endocrinology and Metabolism, Tokyo Metropolitan Children's Medical Center, Tokyo, Japan."
+    ]
+   },
+   {
+    "last_name": "Hoffman",
+    "fore_name": "Andrew R",
+    "initials": "AR",
+    "affiliations": [
+     "Department of Medicine, Stanford University School of Medicine and VA Palo Alto Health Care System, Palo Alto, California, USA."
+    ]
+   },
+   {
+    "last_name": "Hofman",
+    "fore_name": "Paul L",
+    "initials": "PL",
+    "affiliations": [
+     "Liggins Institute, University of Auckland, Auckland, New Zealand."
+    ]
+   },
+   {
+    "last_name": "Horikawa",
+    "fore_name": "Reiko",
+    "initials": "R",
+    "affiliations": [
+     "Division of Endocrinology and Metabolism, National Center for Child Health and Development, Tokyo, Japan."
+    ]
+   },
+   {
+    "last_name": "Jorge",
+    "fore_name": "Alexander A L",
+    "initials": "AAL",
+    "affiliations": [
+     "Unidade de Endocrinologia Gen&#xe9;tica (LIM25), Hospital das Cl&#xed;nicas, Faculdade de Medicina, Universidade de S&#xe3;o Paulo, S&#xe3;o Paulo, Brazil."
+    ]
+   },
+   {
+    "last_name": "Juul",
+    "fore_name": "Anders",
+    "initials": "A",
+    "affiliations": [
+     "Department of Growth and Reproduction, Rigshospitalet, University of Copenhagen, Copenhagen, Denmark."
+    ]
+   },
+   {
+    "last_name": "Kamenick&#xfd;",
+    "fore_name": "Peter",
+    "initials": "P",
+    "affiliations": [
+     "Service d'Endocrinologie et des Maladies de la Reproduction, H&#xf4;pital de Bic&#xea;tre, Assistance Publique-H&#xf4;pitaux de Paris, Universit&#xe9; Paris-Saclay, Paris, France."
+    ]
+   },
+   {
+    "last_name": "Khadilkar",
+    "fore_name": "Vaman",
+    "initials": "V",
+    "affiliations": [
+     "Hirabai Cowasji Jehangir Medical Research Institute (HCJMRI), Jehangir Hospital, Pune, India."
+    ]
+   },
+   {
+    "last_name": "Kopchick",
+    "fore_name": "John J",
+    "initials": "JJ",
+    "affiliations": [
+     "Edison Biotechnology Institute and Department of Biomedical Sciences, HCOM Ohio University Athens, Athens, Ohio, USA."
+    ]
+   },
+   {
+    "last_name": "Kristr&#xf6;m",
+    "fore_name": "Berit",
+    "initials": "B",
+    "affiliations": [
+     "Institute of Clinical Science, Pediatrics, Ume&#xe5; University, Ume&#xe5;, Sweden."
+    ]
+   },
+   {
+    "last_name": "Lopes",
+    "fore_name": "Maria de Lurdes A",
+    "initials": "MLA",
+    "affiliations": [
+     "Unidade de Endocrinologia Pedi&#xe1;trica, Area da Mulher, Crian&#xe7;a e Adolescente, Centro Hospitalar Universit&#xe1;rio de Lisboa Central-Hospital de Dona Estef&#xe2;nia, Lisbon, Portugal."
+    ]
+   },
+   {
+    "last_name": "Luo",
+    "fore_name": "Xiaoping",
+    "initials": "X",
+    "affiliations": [
+     "Department of Pediatrics, Tongji Hospital, Tongji Medical Colleage, Huazhong University of Science and Technology, Wuhan, China."
+    ]
+   },
+   {
+    "last_name": "Miller",
+    "fore_name": "Bradley S",
+    "initials": "BS",
+    "affiliations": [
+     "Division of Endocrinology, Department of Pediatrics, University of Minnesota Masonic Children's Hospital, Minneapolis, Minnesota, USA."
+    ]
+   },
+   {
+    "last_name": "Misra",
+    "fore_name": "Madhusmita",
+    "initials": "M",
+    "affiliations": [
+     "Division of Pediatric Endocrinology, Massachusetts General Hospital and Harvard Medical School, Boston, Massachusetts, USA."
+    ]
+   },
+   {
+    "last_name": "Netchine",
+    "fore_name": "Irene",
+    "initials": "I",
+    "affiliations": [
+     "Explorations Fonctionnelles Endocriniennes, AP-HP H&#xf4;pital Trousseau, Centre de Recherche Saint Antoine, INSERM, Sorbonne Universit&#xe9;, Paris, France."
+    ]
+   },
+   {
+    "last_name": "Radovick",
+    "fore_name": "Sally",
+    "initials": "S",
+    "affiliations": [
+     "Department of Pediatrics, Robert Wood Johnson Medical School, Child Health Institute of New Jersey-Rutgers University, New Brunswick, New Jersey, USA."
+    ]
+   },
+   {
+    "last_name": "Ranke",
+    "fore_name": "Michael B",
+    "initials": "MB",
+    "affiliations": [
+     "University Children&#xb4;s Hospital, T&#xfc;bingen, Germany."
+    ]
+   },
+   {
+    "last_name": "Rogol",
+    "fore_name": "Alan D",
+    "initials": "AD",
+    "affiliations": [
+     "Department of Pediatrics, University of Virginia, Charlottesville, Virginia, USA."
+    ]
+   },
+   {
+    "last_name": "Rosenfeld",
+    "fore_name": "Ron G",
+    "initials": "RG",
+    "affiliations": [
+     "Oregon Health and Science University, Portland, Oregon, USA."
+    ]
+   },
+   {
+    "last_name": "Saenger",
+    "fore_name": "Paul",
+    "initials": "P",
+    "affiliations": [
+     "NYU Winthrop Hospital, Mineola, New York, USA."
+    ]
+   },
+   {
+    "last_name": "Wit",
+    "fore_name": "Jan M",
+    "initials": "JM",
+    "affiliations": [
+     "Department of Pediatrics, Leiden University Medical Center, Leiden, The Netherlands."
+    ]
+   },
+   {
+    "last_name": "Woelfle",
+    "fore_name": "Joachim",
+    "initials": "J",
+    "affiliations": [
+     "Pediatric Endocrinology Division, Children's Hospital, University of Bonn, Bonn, Germany."
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2019",
+   "month": "09",
+   "day": "12"
+  },
+  "keywords": [
+   "Growth",
+   "Growth hormone",
+   "Guideline",
+   "Pediatrics",
+   "Treatment"
+  ],
+  "mesh_terms": [
+   "Child",
+   "Growth Disorders",
+   "Human Growth Hormone",
+   "Humans"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline",
+   "Review"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "92",
+   "issue": "1",
+   "pages": "1-14"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "31319416",
+   "doi": "10.1159/000501336",
+   "pii": "000501336"
+  },
+  "title": "Use of Gonadotropin-Releasing Hormone Analogs in Children: Update by an International Consortium.",
+  "abstract": "This update, written by authors designated by multiple pediatric endocrinology societies (see List of Participating Societies) from around the globe, concisely addresses topics related to changes in GnRHa usage in children and adolescents over the last decade. Topics related to the use of GnRHa in precocious puberty include diagnostic criteria, globally available formulations, considerations of benefit of treatment, monitoring of therapy, adverse events, and long-term outcome data. Additional sections review use in transgender individuals and other pediatric endocrine related conditions. Although there have been many significant changes in GnRHa usage, there is a definite paucity of evidence-based publications to support them. Therefore, this paper is explicitly not intended to evaluate what is recommended in terms of the best use of GnRHa, based on evidence and expert opinion, but rather to describe how these drugs are used, irrespective of any qualitative evaluation. Thus, this paper should be considered a narrative review on GnRHa utilization in precocious puberty and other clinical situations. These changes are reviewed not only to point out deficiencies in the literature but also to stimulate future studies and publications in this area.",
+  "doi": "10.1159/000501336",
+  "journal": {
+   "title": "Hormone research in paediatrics",
+   "iso_abbreviation": "Horm Res Paediatr"
+  },
+  "authors": [
+   {
+    "last_name": "Bangalore Krishna",
+    "fore_name": "Kanthi",
+    "initials": "K",
+    "affiliations": [
+     "Division of Pediatric Endocrinology and Diabetes, Department of Pediatrics, Penn State Hershey Medical Center, Hershey, Pennsylvania, USA, kbangalorekrishna@pennstatehealth.psu.edu."
+    ]
+   },
+   {
+    "last_name": "Fuqua",
+    "fore_name": "John S",
+    "initials": "JS",
+    "affiliations": [
+     "Department of Pediatrics, Indiana University School of Medicine and Riley Hospital for Children, Indianapolis, Indiana, USA."
+    ]
+   },
+   {
+    "last_name": "Rogol",
+    "fore_name": "Alan D",
+    "initials": "AD",
+    "affiliations": [
+     "Department of Pediatrics, University of Virginia, Charlottesville, Virginia, USA."
+    ]
+   },
+   {
+    "last_name": "Klein",
+    "fore_name": "Karen O",
+    "initials": "KO",
+    "affiliations": [
+     "University of California, San Diego and Rady Children's Hospital, San Diego, California, USA."
+    ]
+   },
+   {
+    "last_name": "Popovic",
+    "fore_name": "Jadranka",
+    "initials": "J",
+    "affiliations": [
+     "Division of Pediatric Endocrinology, Pediatric Alliance, Pittsburgh, Pennsylvania, USA."
+    ]
+   },
+   {
+    "last_name": "Houk",
+    "fore_name": "Christopher P",
+    "initials": "CP",
+    "affiliations": [
+     "Department of Pediatrics, Medical College of Georgia, Augusta University, Augusta, Georgia, USA."
+    ]
+   },
+   {
+    "last_name": "Charmandari",
+    "fore_name": "Evangelia",
+    "initials": "E",
+    "affiliations": [
+     "Division of Endocrinology, Metabolism and Diabetes, First Department of Pediatrics, National and Kapodistrian University of Athens Medical School, \"Aghia Sophia\" Children's Hospital, Athens, Greece."
+    ]
+   },
+   {
+    "last_name": "Lee",
+    "fore_name": "Peter A",
+    "initials": "PA",
+    "affiliations": [
+     "Division of Pediatric Endocrinology and Diabetes, Department of Pediatrics, Penn State Hershey Medical Center, Hershey, Pennsylvania, USA."
+    ]
+   },
+   {
+    "last_name": "Freire",
+    "fore_name": "A V",
+    "initials": "AV"
+   },
+   {
+    "last_name": "Ropelato",
+    "fore_name": "M G",
+    "initials": "MG"
+   },
+   {
+    "last_name": "Yazid Jalaludin",
+    "fore_name": "M",
+    "initials": "M"
+   },
+   {
+    "last_name": "Mbogo",
+    "fore_name": "J",
+    "initials": "J"
+   },
+   {
+    "last_name": "Kanaka-Gantenbein",
+    "fore_name": "C",
+    "initials": "C"
+   },
+   {
+    "last_name": "Luo",
+    "fore_name": "X",
+    "initials": "X"
+   },
+   {
+    "last_name": "Eugster",
+    "fore_name": "E A",
+    "initials": "EA"
+   },
+   {
+    "last_name": "Klein",
+    "fore_name": "K O",
+    "initials": "KO"
+   },
+   {
+    "last_name": "Vogiatzi",
+    "fore_name": "M G",
+    "initials": "MG"
+   },
+   {
+    "last_name": "Reifschneider",
+    "fore_name": "K",
+    "initials": "K"
+   },
+   {
+    "last_name": "Bamba",
+    "fore_name": "V",
+    "initials": "V"
+   },
+   {
+    "last_name": "Garcia Rudaz",
+    "fore_name": "C",
+    "initials": "C"
+   },
+   {
+    "last_name": "Kaplowitz",
+    "fore_name": "P",
+    "initials": "P"
+   },
+   {
+    "last_name": "Backeljauw",
+    "fore_name": "P",
+    "initials": "P"
+   },
+   {
+    "last_name": "Allen",
+    "fore_name": "D B",
+    "initials": "DB"
+   },
+   {
+    "last_name": "Palmert",
+    "fore_name": "M R",
+    "initials": "MR"
+   },
+   {
+    "last_name": "Harrington",
+    "fore_name": "J",
+    "initials": "J"
+   },
+   {
+    "last_name": "Guerra-Junior",
+    "fore_name": "G",
+    "initials": "G"
+   },
+   {
+    "last_name": "Stanley",
+    "fore_name": "T",
+    "initials": "T"
+   },
+   {
+    "last_name": "Torres Tamayo",
+    "fore_name": "M",
+    "initials": "M"
+   },
+   {
+    "last_name": "Miranda Lora",
+    "fore_name": "A L",
+    "initials": "AL"
+   },
+   {
+    "last_name": "Bajpai",
+    "fore_name": "A",
+    "initials": "A"
+   },
+   {
+    "last_name": "Silverman",
+    "fore_name": "L A",
+    "initials": "LA"
+   },
+   {
+    "last_name": "Miller",
+    "fore_name": "B S",
+    "initials": "BS"
+   },
+   {
+    "last_name": "Dayal",
+    "fore_name": "A",
+    "initials": "A"
+   },
+   {
+    "last_name": "Horikawa",
+    "fore_name": "R",
+    "initials": "R"
+   },
+   {
+    "last_name": "Oberfield",
+    "fore_name": "S",
+    "initials": "S"
+   },
+   {
+    "last_name": "Rogol",
+    "fore_name": "A D",
+    "initials": "AD"
+   },
+   {
+    "last_name": "Tajima",
+    "fore_name": "T",
+    "initials": "T"
+   },
+   {
+    "last_name": "Popovic",
+    "fore_name": "J",
+    "initials": "J"
+   },
+   {
+    "last_name": "Witchel",
+    "fore_name": "S F",
+    "initials": "SF"
+   },
+   {
+    "last_name": "Rosenthal",
+    "fore_name": "S M",
+    "initials": "SM"
+   },
+   {
+    "last_name": "Finlayson",
+    "fore_name": "C",
+    "initials": "C"
+   },
+   {
+    "last_name": "Hannema",
+    "fore_name": "S E",
+    "initials": "SE"
+   },
+   {
+    "last_name": "Castilla-Peon",
+    "fore_name": "M F",
+    "initials": "MF"
+   },
+   {
+    "last_name": "Mericq",
+    "fore_name": "V",
+    "initials": "V"
+   },
+   {
+    "last_name": "Medina Bravo",
+    "fore_name": "P G",
+    "initials": "PG"
+   }
+  ],
+  "publication_date": {
+   "year": "2019",
+   "month": "07",
+   "day": "18"
+  },
+  "keywords": [
+   "Adolescents",
+   "Children",
+   "Gonadotropin-releasing hormone analogs",
+   "Precocious puberty",
+   "Transgender"
+  ],
+  "mesh_terms": [
+   "Adolescent",
+   "Child",
+   "Female",
+   "Gonadotropin-Releasing Hormone",
+   "Humans",
+   "Male",
+   "Puberty, Precocious"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline",
+   "Review"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "91",
+   "issue": "6",
+   "pages": "357-372"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "31302655",
+   "doi": "10.1159/000500810",
+   "pii": "000500810"
+  },
+  "title": "Towards a Rational and Efficient Diagnostic Approach in Children Referred for Tall Stature and/or Accelerated Growth to the General Paediatrician.",
+  "abstract": "Tall stature and/or accelerated growth (TS/AG) in a child can be the result of a primary or secondary growth disorder, but more frequently no cause can be found (idiopathic TS). The conditions with the most important therapeutic implications are Klinefelter syndrome, Marfan syndrome and secondary growth disorders such as precocious puberty, hyperthyroidism and growth hormone excess. We propose a diagnostic flow chart offering a systematic approach to evaluate children referred for TS/AG to the general paediatrician. Based on the incidence, prevalence and clinical features of medical conditions associated with TS/AG, we identified relevant clues for primary and secondary growth disorders that may be obtained from the medical history, physical evaluation, growth analysis and additional laboratory and genetic testing. In addition to obtaining a diagnosis, a further goal is to predict adult height based on growth pattern, pubertal development and skeletal maturation. We speculate that an improved diagnostic approach in addition to expanding use of genetic testing may increase the diagnostic yield and lower the age at diagnosis of children with a pathologic cause of TS/AG.",
+  "doi": "10.1159/000500810",
+  "journal": {
+   "title": "Hormone research in paediatrics",
+   "iso_abbreviation": "Horm Res Paediatr"
+  },
+  "authors": [
+   {
+    "last_name": "Lauffer",
+    "fore_name": "Peter",
+    "initials": "P",
+    "affiliations": [
+     "Department of Paediatrics, Tergooi Hospital, Blaricum, The Netherlands, p.lauffer@amc.uva.nl."
+    ]
+   },
+   {
+    "last_name": "Kamp",
+    "fore_name": "Gerdine A",
+    "initials": "GA",
+    "affiliations": [
+     "Department of Paediatrics, Tergooi Hospital, Blaricum, The Netherlands."
+    ]
+   },
+   {
+    "last_name": "Menke",
+    "fore_name": "Leonie A",
+    "initials": "LA",
+    "affiliations": [
+     "Department of Paediatrics, Amsterdam UMC, University of Amsterdam, Amsterdam, The Netherlands."
+    ]
+   },
+   {
+    "last_name": "Wit",
+    "fore_name": "Jan M",
+    "initials": "JM",
+    "affiliations": [
+     "Department of Paediatrics, Leiden University Medical Center, Leiden, The Netherlands."
+    ]
+   },
+   {
+    "last_name": "Oostdijk",
+    "fore_name": "Wilma",
+    "initials": "W",
+    "affiliations": [
+     "Department of Paediatrics, Leiden University Medical Center, Leiden, The Netherlands."
+    ]
+   },
+   {}
+  ],
+  "publication_date": {
+   "year": "2019",
+   "month": "07",
+   "day": "12"
+  },
+  "keywords": [
+   "Children",
+   "Growth disorders",
+   "Klinefelter syndrome",
+   "Marfan syndrome",
+   "Tall stature"
+  ],
+  "mesh_terms": [
+   "Acromegaly",
+   "Child",
+   "Child, Preschool",
+   "Female",
+   "Growth Disorders",
+   "Humans",
+   "Hyperthyroidism",
+   "Klinefelter Syndrome",
+   "Male",
+   "Marfan Syndrome",
+   "Puberty, Precocious"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline",
+   "Review"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "91",
+   "issue": "5",
+   "pages": "293-310"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "31195397",
+   "doi": "10.1159/000499915",
+   "pii": "000499915"
+  },
+  "title": "Towards a Rational and Efficient Diagnostic Approach in Children Referred for Growth Failure to the General Paediatrician.",
+  "abstract": "Based on a recent Dutch national guideline, we propose a structured stepwise diagnostic approach for children with growth failure (short stature and/or growth faltering), aiming at high sensitivity for pathologic causes at acceptable specificity. The first step is a detailed clinical assessment, aiming at obtaining relevant clinical clues from the medical history (including family history), physical examination (emphasising head circumference, body proportions and dysmorphic features) and assessment of the growth curve. The second step consists of screening: a radiograph of the hand and wrist (for bone age and assessment of anatomical abnormalities suggestive for a skeletal dysplasia) and laboratory tests aiming at detecting disorders that can present as isolated short stature (anaemia, growth hormone deficiency, hypothyroidism, coeliac disease, renal failure, metabolic bone diseases, renal tubular acidosis, inflammatory bowel disease, Turner syndrome [TS]). We advise molecular array analysis rather than conventional karyotyping for short girls because this detects not only TS but also copy number variants and uniparental isodisomy, increasing diagnostic yield at a lower cost. Third, in case of diagnostic clues for primary growth disorders, further specific testing for candidate genes or a hypothesis-free approach is indicated; suspicion of a secondary growth disorder warrants adequate further targeted testing.",
+  "doi": "10.1159/000499915",
+  "journal": {
+   "title": "Hormone research in paediatrics",
+   "iso_abbreviation": "Horm Res Paediatr"
+  },
+  "authors": [
+   {
+    "last_name": "Wit",
+    "fore_name": "Jan M",
+    "initials": "JM",
+    "affiliations": [
+     "Department of Paediatrics, Leiden University Medical Center, Leiden, The Netherlands, J.M.Wit@lumc.nl."
+    ]
+   },
+   {
+    "last_name": "Kamp",
+    "fore_name": "Gerdine A",
+    "initials": "GA",
+    "affiliations": [
+     "Department of Paediatrics, Tergooi Hospital, Blaricum, The Netherlands."
+    ]
+   },
+   {
+    "last_name": "Oostdijk",
+    "fore_name": "Wilma",
+    "initials": "W",
+    "affiliations": [
+     "Department of Paediatrics, Leiden University Medical Center, Leiden, The Netherlands."
+    ]
+   },
+   {}
+  ],
+  "publication_date": {
+   "year": "2019",
+   "month": "06",
+   "day": "13"
+  },
+  "keywords": [
+   "ACAN",
+   "Growth disorders",
+   "IHH",
+   "Microarray",
+   "NPR2",
+   "SHOX",
+   "Short stature",
+   "Turner syndrome"
+  ],
+  "mesh_terms": [
+   "Age Determination by Skeleton",
+   "Child",
+   "Child, Preschool",
+   "DNA Copy Number Variations",
+   "Failure to Thrive",
+   "Female",
+   "Human Growth Hormone",
+   "Humans",
+   "Karyotyping",
+   "Male",
+   "Uniparental Disomy"
+  ],
+  "article_types": [
+   "Practice Guideline",
+   "Journal Article"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "91",
+   "issue": "4",
+   "pages": "223-240"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "30295419",
+   "doi": "10.1111/pedi.12781"
+  },
+  "title": "ISPAD Position Statement on Type 1 Diabetes in Schools.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12781",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [
+   {
+    "last_name": "Goss",
+    "fore_name": "P W",
+    "initials": "PW"
+   },
+   {
+    "last_name": "Middlehurst",
+    "fore_name": "A",
+    "initials": "A"
+   },
+   {
+    "last_name": "Acerini",
+    "fore_name": "C L",
+    "initials": "CL"
+   },
+   {
+    "last_name": "Anderson",
+    "fore_name": "B J",
+    "initials": "BJ"
+   },
+   {
+    "last_name": "Bratina",
+    "fore_name": "N",
+    "initials": "N"
+   },
+   {
+    "last_name": "Brink",
+    "fore_name": "S",
+    "initials": "S"
+   },
+   {
+    "last_name": "Calliari",
+    "fore_name": "L",
+    "initials": "L"
+   },
+   {
+    "last_name": "Forsander",
+    "fore_name": "G",
+    "initials": "G"
+   },
+   {
+    "last_name": "Goss",
+    "fore_name": "J L",
+    "initials": "JL"
+   },
+   {
+    "last_name": "Maahs",
+    "fore_name": "D",
+    "initials": "D"
+   },
+   {
+    "last_name": "Milosevic",
+    "fore_name": "R",
+    "initials": "R"
+   },
+   {
+    "last_name": "Pacaud",
+    "fore_name": "D",
+    "initials": "D"
+   },
+   {
+    "last_name": "Paterson",
+    "fore_name": "M A",
+    "initials": "MA"
+   },
+   {
+    "last_name": "Pitman",
+    "fore_name": "L",
+    "initials": "L"
+   },
+   {
+    "last_name": "Rowley",
+    "fore_name": "E",
+    "initials": "E"
+   },
+   {
+    "last_name": "Wolfsdorf",
+    "fore_name": "J",
+    "initials": "J"
+   }
+  ],
+  "publication_date": {
+   "year": "2018",
+   "month": "Nov"
+  },
+  "mesh_terms": [
+   "Diabetes Mellitus, Type 1",
+   "Disease Management",
+   "Humans",
+   "Schools"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19",
+   "issue": "7",
+   "pages": "1338-1341"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "30276975",
+   "doi": "10.1111/pedi.12767"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Limited Care Guidance Appendix.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12767",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [
+   {
+    "last_name": "Codner",
+    "fore_name": "Ethel",
+    "initials": "E"
+   },
+   {
+    "last_name": "Acerini",
+    "fore_name": "Carlo L",
+    "initials": "CL"
+   },
+   {
+    "last_name": "Craig",
+    "fore_name": "Maria E",
+    "initials": "ME"
+   },
+   {
+    "last_name": "Hofer",
+    "fore_name": "Sabine E",
+    "initials": "SE"
+   },
+   {
+    "last_name": "Maahs",
+    "fore_name": "David M",
+    "initials": "DM"
+   }
+  ],
+  "publication_date": {
+   "year": "2018",
+   "month": "Oct"
+  },
+  "mesh_terms": [
+   "Adolescent",
+   "Child",
+   "Consensus",
+   "Diabetes Mellitus",
+   "Diabetes Mellitus, Type 1",
+   "Diabetes Mellitus, Type 2",
+   "Disease Progression",
+   "Endocrinology",
+   "Genetic Testing",
+   "Geography",
+   "Health Resources",
+   "Humans",
+   "International Cooperation",
+   "Pediatrics",
+   "Poverty Areas",
+   "Practice Patterns, Physicians'",
+   "Self Care",
+   "Societies, Medical",
+   "Standard of Care",
+   "Young Adult"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19 Suppl 27",
+   "pages": "328-338"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "30226024",
+   "pmc": "PMC7521365",
+   "doi": "10.1111/pedi.12773"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Definition, epidemiology, and classification of diabetes in children and adolescents.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12773",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [
+   {
+    "last_name": "Mayer-Davis",
+    "fore_name": "Elizabeth J",
+    "initials": "EJ",
+    "affiliations": [
+     "Department of Nutrition, University of North Carolina at Chapel Hill, Chapel Hill, North Carolina.",
+     "Department of Medicine, University of North Carolina at Chapel Hill, Chapel Hill, North Carolina."
+    ]
+   },
+   {
+    "last_name": "Kahkoska",
+    "fore_name": "Anna R",
+    "initials": "AR",
+    "affiliations": [
+     "Department of Nutrition, University of North Carolina at Chapel Hill, Chapel Hill, North Carolina.",
+     "Department of Medicine, University of North Carolina at Chapel Hill, Chapel Hill, North Carolina."
+    ]
+   },
+   {
+    "last_name": "Jefferies",
+    "fore_name": "Craig",
+    "initials": "C",
+    "affiliations": [
+     "Starship Children's Hospital, Auckland District Health Board, Auckland, New Zealand."
+    ]
+   },
+   {
+    "last_name": "Dabelea",
+    "fore_name": "Dana",
+    "initials": "D",
+    "affiliations": [
+     "Department of Epidemiology, Colorado School of Public Health, University of Colorado, Aurora, Colorado."
+    ]
+   },
+   {
+    "last_name": "Balde",
+    "fore_name": "Naby",
+    "initials": "N",
+    "affiliations": [
+     "Department of Endocrinology, University Hospital, Conakry, Guinea."
+    ]
+   },
+   {
+    "last_name": "Gong",
+    "fore_name": "Chun X",
+    "initials": "CX",
+    "affiliations": [
+     "Beijing Children's Hospital, Capital Medical University, Beijing, China."
+    ]
+   },
+   {
+    "last_name": "Aschner",
+    "fore_name": "Pablo",
+    "initials": "P",
+    "affiliations": [
+     "Colombian Diabetes Association, Bogot&#xe1;, Colombia."
+    ]
+   },
+   {
+    "last_name": "Craig",
+    "fore_name": "Maria E",
+    "initials": "ME",
+    "affiliations": [
+     "The Children's Hospital at Westmead, University of Sydney, Sydney, New South Wales, Australia.",
+     "School of Women's and Children's Health, University of NSW, Sydney, New South Wales, Australia."
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2018",
+   "month": "Oct"
+  },
+  "mesh_terms": [
+   "Adolescent",
+   "Child",
+   "Consensus",
+   "Diabetes Mellitus, Type 1",
+   "Diabetes Mellitus, Type 2",
+   "Diagnosis, Differential",
+   "Diagnostic Techniques, Endocrine",
+   "Endocrinology",
+   "Humans",
+   "International Cooperation",
+   "Pediatrics",
+   "Practice Patterns, Physicians'",
+   "Societies, Medical"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19 Suppl 27",
+   "issue": "Suppl 27",
+   "pages": "7-19"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "30225972",
+   "doi": "10.1111/pedi.12772"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guidelines 2018: The diagnosis and management of monogenic diabetes in children and adolescents.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12772",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [
+   {
+    "last_name": "Hattersley",
+    "fore_name": "Andrew T",
+    "initials": "AT",
+    "affiliations": [
+     "Institute of Biomedical and Clinical Sciences, University of Exeter Medical School, Exeter, UK."
+    ]
+   },
+   {
+    "last_name": "Greeley",
+    "fore_name": "Siri A W",
+    "initials": "SAW",
+    "affiliations": [
+     "The University of Chicago Medicine, Comer Children's Hospital, Chicago, Illinois."
+    ]
+   },
+   {
+    "last_name": "Polak",
+    "fore_name": "Michel",
+    "initials": "M",
+    "affiliations": [
+     "H&#xf4;pital Universitaire Necker-Enfants Malades, Universit&#xe9; Paris Descartes, Paris, France."
+    ]
+   },
+   {
+    "last_name": "Rubio-Cabezas",
+    "fore_name": "Oscar",
+    "initials": "O",
+    "affiliations": [
+     "Department of Paediatric Endocrinology, Hospital Infantil Universitario Ni&#xf1;o Jes&#xfa;s, Madrid, Spain."
+    ]
+   },
+   {
+    "last_name": "Nj&#xf8;lstad",
+    "fore_name": "P&#xe5;l R",
+    "initials": "PR",
+    "affiliations": [
+     "Department of Clinical Science, University of Bergen, Bergen, Norway.",
+     "Department of Pediatrics, Haukeland University Hospital, Bergen, Norway."
+    ]
+   },
+   {
+    "last_name": "Mlynarski",
+    "fore_name": "Wojciech",
+    "initials": "W",
+    "affiliations": [
+     "Department of Pediatrics, Oncology, Hematology and Diabetology, Medical University of Lodz, Lodz, Poland."
+    ]
+   },
+   {
+    "last_name": "Castano",
+    "fore_name": "Luis",
+    "initials": "L",
+    "affiliations": [
+     "Endocrinology and Diabetes Research Group, BioCruces Health Research Institute, Cruces University Hospital, Barakaldo, Spain."
+    ]
+   },
+   {
+    "last_name": "Carlsson",
+    "fore_name": "Annelie",
+    "initials": "A",
+    "affiliations": [
+     "Department of Clinical Sciences, Sk&#xe5;ne University Hospital, Lund University, Lund, Sweden."
+    ]
+   },
+   {
+    "last_name": "Raile",
+    "fore_name": "Klemens",
+    "initials": "K",
+    "affiliations": [
+     "Department of Paediatric Endocrinology and Diabetology, Charit&#xe9; - Universit&#xe4;tsmedizin Berlin, Berlin, Germany."
+    ]
+   },
+   {
+    "last_name": "Chi",
+    "fore_name": "Dung V",
+    "initials": "DV",
+    "affiliations": [
+     "Department of Endocrinology, Metabolism & Genetics, National Children's Hospital, Hanoi, Vietnam.",
+     "Department of Pediatrics, Hanoi Medical University, Hanoi, Vietnam."
+    ]
+   },
+   {
+    "last_name": "Ellard",
+    "fore_name": "Sian",
+    "initials": "S",
+    "affiliations": [
+     "Institute of Biomedical and Clinical Sciences, University of Exeter Medical School, Exeter, UK."
+    ]
+   },
+   {
+    "last_name": "Craig",
+    "fore_name": "Maria E",
+    "initials": "ME",
+    "affiliations": [
+     "The Children's Hospital at Westmead and Discipline of Child Health and Adolescent Health, University of Sydney, Sydney, Australia.",
+     "School of Women's and Children's Health, University of New South Wales, Sydney, Australia."
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2018",
+   "month": "Oct"
+  },
+  "mesh_terms": [
+   "Adolescent",
+   "Child",
+   "Consensus",
+   "Diabetes Mellitus",
+   "Diagnostic Techniques, Endocrine",
+   "Endocrinology",
+   "Humans",
+   "Infant, Newborn",
+   "International Cooperation",
+   "Molecular Diagnostic Techniques",
+   "Neonatal Screening",
+   "Patient Selection",
+   "Pediatrics",
+   "Practice Patterns, Physicians'",
+   "Societies, Medical"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19 Suppl 27",
+   "pages": "47-63"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "30175451",
+   "doi": "10.1111/pedi.12762"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Diabetes education in children and adolescents.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12762",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [
+   {
+    "last_name": "Phelan",
+    "fore_name": "Helen",
+    "initials": "H",
+    "affiliations": [
+     "Department of Paediatric Endocrinology and Diabetes, John Hunter Children's Hospital, Newcastle, Australia."
+    ]
+   },
+   {
+    "last_name": "Lange",
+    "fore_name": "Karin",
+    "initials": "K",
+    "affiliations": [
+     "Department Medical Psychology OE 5430, Hannover Medical School, Hannover, Germany."
+    ]
+   },
+   {
+    "last_name": "Cengiz",
+    "fore_name": "Eda",
+    "initials": "E",
+    "affiliations": [
+     "Division of Pediatric Endocrinology, Yale School of Medicine, New Haven, Connecticut, USA.",
+     "School of Medicine, Koc University, Istanbul, Turkey."
+    ]
+   },
+   {
+    "last_name": "Gallego",
+    "fore_name": "Patricia",
+    "initials": "P",
+    "affiliations": [
+     "Department of Pediatrics, Children's Hospital London, Health Sciences Centre, London, Ontario, Canada.",
+     "Schulich School of Medicine and Dentistry, Western University, London, Ontario, Canada."
+    ]
+   },
+   {
+    "last_name": "Majaliwa",
+    "fore_name": "Edna",
+    "initials": "E",
+    "affiliations": [
+     "Department of Paediatric and Child Health, Muhimbili National Hospital, Dar es Salaam, Tanzania."
+    ]
+   },
+   {
+    "last_name": "Pelicand",
+    "fore_name": "Julie",
+    "initials": "J",
+    "affiliations": [
+     "Medical School, University of Valparaiso, San Felipe, Chile."
+    ]
+   },
+   {
+    "last_name": "Smart",
+    "fore_name": "Carmel",
+    "initials": "C",
+    "affiliations": [
+     "Department of Paediatric Endocrinology and Diabetes, John Hunter Children's Hospital, Newcastle, Australia."
+    ]
+   },
+   {
+    "last_name": "Hofer",
+    "fore_name": "Sabine E",
+    "initials": "SE",
+    "affiliations": [
+     "Department of Pediatrics, Medical University of Innsbruck, Innsbruck, Austria."
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2018",
+   "month": "Oct"
+  },
+  "mesh_terms": [
+   "Adolescent",
+   "Age of Onset",
+   "Child",
+   "Consensus",
+   "Diabetes Mellitus",
+   "Endocrinology",
+   "Humans",
+   "International Cooperation",
+   "Patient Education as Topic",
+   "Pediatrics",
+   "Physician-Patient Relations",
+   "Practice Patterns, Physicians'",
+   "Risk Reduction Behavior",
+   "Societies, Medical"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19 Suppl 27",
+   "pages": "75-83"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "30144259",
+   "doi": "10.1111/pedi.12757"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guidelines 2018: The delivery of ambulatory diabetes care to children and adolescents with diabetes.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12757",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [
+   {
+    "last_name": "Pihoker",
+    "fore_name": "Catherine",
+    "initials": "C",
+    "affiliations": [
+     "Department of Pediatrics, University of Washington, Seattle, Washington."
+    ]
+   },
+   {
+    "last_name": "Forsander",
+    "fore_name": "Gun",
+    "initials": "G",
+    "affiliations": [
+     "Division of Diabetes, Institute of Clinical Sciences, Sahlgrenska Academy, University of Gothenburg and The Queen Silvia Children's Hospital, Sahlgrenska University Hospital, Gothenburg, Sweden."
+    ]
+   },
+   {
+    "last_name": "Fantahun",
+    "fore_name": "Bereket",
+    "initials": "B",
+    "affiliations": [
+     "Department of Pediatrics and Child Health at Saint Paul's Hospital Millennium Medical College, Addis Ababa, Ethiopia."
+    ]
+   },
+   {
+    "last_name": "Virmani",
+    "fore_name": "Anju",
+    "initials": "A",
+    "affiliations": [
+     "Department of Pediatrics, Max, Pentamed and SL Jain Hospitals, Delhi, India."
+    ]
+   },
+   {
+    "last_name": "Corathers",
+    "fore_name": "Sarah",
+    "initials": "S",
+    "affiliations": [
+     "Cincinnati Children's Hospital Medical Center, University of Cincinnati, Cincinnati, Ohio."
+    ]
+   },
+   {
+    "last_name": "Benitez-Aguirre",
+    "fore_name": "Paul",
+    "initials": "P",
+    "affiliations": [
+     "Sydney Medical School, Discipline of Child & Adolescent Health, The Children's Hospital at Westmead Clinical School Children's Hospital, Westmead, New South Wales, Australia."
+    ]
+   },
+   {
+    "last_name": "Fu",
+    "fore_name": "Junfen",
+    "initials": "J",
+    "affiliations": [
+     "Children's Hospital of Zhejiang University School of Medicine, Hangzhou, China."
+    ]
+   },
+   {
+    "last_name": "Maahs",
+    "fore_name": "David M",
+    "initials": "DM",
+    "affiliations": [
+     "Department of Pediatrics, Stanford University, Stanford, California."
+    ]
+   }
+  ],
+  "publication_date": {
+   "year": "2018",
+   "month": "Oct"
+  },
+  "mesh_terms": [
+   "Adolescent",
+   "Age Factors",
+   "Age of Onset",
+   "Ambulatory Care",
+   "Child",
+   "Consensus",
+   "Delivery of Health Care",
+   "Diabetes Mellitus",
+   "Endocrinology",
+   "Humans",
+   "International Cooperation",
+   "Pediatrics",
+   "Practice Patterns, Physicians'",
+   "Societies, Medical"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19 Suppl 27",
+   "pages": "84-104"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "30133095",
+   "doi": "10.1111/pedi.12755"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Exercise in children and adolescents with diabetes.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12755",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [],
+  "publication_date": {
+   "year": "2018",
+   "month": "Oct"
+  },
+  "mesh_terms": [
+   "Adolescent",
+   "Child",
+   "Consensus",
+   "Diabetes Mellitus",
+   "Endocrinology",
+   "Exercise",
+   "Exercise Therapy",
+   "Humans",
+   "Hypoglycemia",
+   "Insulin",
+   "International Cooperation",
+   "Pediatrics",
+   "Societies, Medical"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19 Suppl 27",
+   "pages": "205-226"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "30094886",
+   "doi": "10.1111/pedi.12732"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Management of cystic fibrosis-related diabetes in children and adolescents.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12732",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [],
+  "publication_date": {
+   "year": "2018",
+   "month": "Oct"
+  },
+  "mesh_terms": [
+   "Adolescent",
+   "Child",
+   "Consensus",
+   "Cystic Fibrosis",
+   "Diabetes Mellitus",
+   "Endocrinology",
+   "Humans",
+   "International Cooperation",
+   "Pediatrics",
+   "Societies, Medical"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19 Suppl 27",
+   "pages": "64-74"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "30084519",
+   "doi": "10.1111/pedi.12743"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Management and support of children and adolescents with type 1 diabetes in school.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12743",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [],
+  "publication_date": {
+   "year": "2018",
+   "month": "Oct"
+  },
+  "mesh_terms": [
+   "Adolescent",
+   "Child",
+   "Consensus",
+   "Diabetes Complications",
+   "Diabetes Mellitus, Type 1",
+   "Endocrinology",
+   "Humans",
+   "International Cooperation",
+   "Pediatrics",
+   "School Health Services",
+   "Schools",
+   "Self Care",
+   "Societies, Medical"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19 Suppl 27",
+   "pages": "287-301"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "30079595",
+   "pmc": "PMC8559793",
+   "doi": "10.1111/pedi.12742"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Microvascular and macrovascular complications in children and adolescents.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12742",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [],
+  "publication_date": {
+   "year": "2018",
+   "month": "Oct"
+  },
+  "mesh_terms": [
+   "Adolescent",
+   "Child",
+   "Consensus",
+   "Diabetes Mellitus",
+   "Diabetic Angiopathies",
+   "Endocrinology",
+   "Humans",
+   "International Cooperation",
+   "Pediatrics",
+   "Societies, Medical"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19 Suppl 27",
+   "issue": "Suppl 27",
+   "pages": "262-274"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "30079506",
+   "doi": "10.1111/pedi.12741"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Sick day management in children and adolescents with diabetes.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12741",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [],
+  "publication_date": {
+   "year": "2018",
+   "month": "Oct"
+  },
+  "mesh_terms": [
+   "Adolescent",
+   "Child",
+   "Consensus",
+   "Diabetes Complications",
+   "Diabetes Mellitus",
+   "Emergency Medical Services",
+   "Endocrinology",
+   "Humans",
+   "International Cooperation",
+   "Pediatrics",
+   "Sick Leave",
+   "Societies, Medical"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19 Suppl 27",
+   "pages": "193-204"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "30066458",
+   "pmc": "PMC6748835",
+   "doi": "10.1111/pedi.12740"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Other complications and associated conditions in children and adolescents with type 1 diabetes.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12740",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [],
+  "publication_date": {
+   "year": "2018",
+   "month": "Oct"
+  },
+  "mesh_terms": [
+   "Adolescent",
+   "Child",
+   "Consensus",
+   "Diabetes Complications",
+   "Diabetes Mellitus, Type 1",
+   "Endocrinology",
+   "Humans",
+   "International Cooperation",
+   "Pediatrics",
+   "Societies, Medical"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19 Suppl 27",
+   "issue": "Suppl 27",
+   "pages": "275-286"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "30062718",
+   "doi": "10.1111/pedi.12738"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Nutritional management in children and adolescents with diabetes.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12738",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [],
+  "publication_date": {
+   "year": "2018",
+   "month": "Oct"
+  },
+  "mesh_terms": [
+   "Adolescent",
+   "Child",
+   "Consensus",
+   "Diabetes Mellitus",
+   "Endocrinology",
+   "Humans",
+   "International Cooperation",
+   "Nutrition Therapy",
+   "Pediatrics",
+   "Societies, Medical"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19 Suppl 27",
+   "pages": "136-154"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "30058247",
+   "doi": "10.1111/pedi.12736"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Psychological care of children and adolescents with type 1 diabetes.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12736",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [],
+  "publication_date": {
+   "year": "2018",
+   "month": "Oct"
+  },
+  "mesh_terms": [
+   "Adolescent",
+   "Child",
+   "Consensus",
+   "Diabetes Mellitus, Type 1",
+   "Endocrinology",
+   "Humans",
+   "International Cooperation",
+   "Pediatrics",
+   "Psychotherapy",
+   "Quality of Life",
+   "Societies, Medical",
+   "Stress, Psychological"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19 Suppl 27",
+   "pages": "237-249"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "30058221",
+   "doi": "10.1111/pedi.12737"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Glycemic control targets and glucose monitoring for children, adolescents, and young adults with diabetes.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12737",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [],
+  "publication_date": {
+   "year": "2018",
+   "month": "Oct"
+  },
+  "mesh_terms": [
+   "Adolescent",
+   "Blood Glucose",
+   "Blood Glucose Self-Monitoring",
+   "Child",
+   "Consensus",
+   "Diabetes Mellitus",
+   "Endocrinology",
+   "Glycated Hemoglobin",
+   "Humans",
+   "Hypoglycemic Agents",
+   "International Cooperation",
+   "Pediatrics",
+   "Societies, Medical",
+   "Young Adult"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19 Suppl 27",
+   "pages": "105-114"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "30051639",
+   "doi": "10.1111/pedi.12734"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Stages of type 1 diabetes in children and adolescents.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12734",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [],
+  "publication_date": {
+   "year": "2018",
+   "month": "Oct"
+  },
+  "mesh_terms": [
+   "Adolescent",
+   "Autoimmunity",
+   "Child",
+   "Consensus",
+   "Diabetes Mellitus, Type 1",
+   "Disease Progression",
+   "Endocrinology",
+   "Humans",
+   "International Cooperation",
+   "Islets of Langerhans",
+   "Pediatrics",
+   "Societies, Medical"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19 Suppl 27",
+   "pages": "20-27"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "30039617",
+   "doi": "10.1111/pedi.12733"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Management of children and adolescents with diabetes requiring surgery.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12733",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [],
+  "publication_date": {
+   "year": "2018",
+   "month": "Oct"
+  },
+  "keywords": [
+   "anesthesia",
+   "children",
+   "diabetes",
+   "guidelines",
+   "surgery"
+  ],
+  "mesh_terms": [
+   "Adolescent",
+   "Child",
+   "Consensus",
+   "Diabetes Complications",
+   "Diabetes Mellitus",
+   "Endocrinology",
+   "Humans",
+   "International Cooperation",
+   "Intraoperative Care",
+   "Pediatrics",
+   "Societies, Medical",
+   "Surgical Procedures, Operative"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19 Suppl 27",
+   "pages": "227-236"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "30039513",
+   "doi": "10.1111/pedi.12731"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Diabetes technologies.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12731",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [],
+  "publication_date": {
+   "year": "2018",
+   "month": "Oct"
+  },
+  "mesh_terms": [
+   "Adolescent",
+   "Blood Glucose Self-Monitoring",
+   "Child",
+   "Consensus",
+   "Diabetes Mellitus",
+   "Endocrinology",
+   "Equipment and Supplies",
+   "Humans",
+   "Insulin",
+   "Insulin Infusion Systems",
+   "International Cooperation",
+   "Pediatrics",
+   "Societies, Medical"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19 Suppl 27",
+   "pages": "302-325"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "29999228",
+   "doi": "10.1111/pedi.12719"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Type 2 diabetes mellitus in youth.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12719",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [],
+  "publication_date": {
+   "year": "2018",
+   "month": "Oct"
+  },
+  "keywords": [
+   "ISPAD",
+   "type 2 diabetes",
+   "youth"
+  ],
+  "mesh_terms": [
+   "Adolescent",
+   "Child",
+   "Consensus",
+   "Diabetes Mellitus, Type 2",
+   "Diagnosis, Differential",
+   "Endocrinology",
+   "Humans",
+   "International Cooperation",
+   "Mass Screening",
+   "Pediatrics",
+   "Societies, Medical"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19 Suppl 27",
+   "pages": "28-46"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "29999222",
+   "doi": "10.1111/pedi.12718"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Insulin treatment in children and adolescents with diabetes.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12718",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [],
+  "publication_date": {
+   "year": "2018",
+   "month": "Oct"
+  },
+  "mesh_terms": [
+   "Adolescent",
+   "Child",
+   "Consensus",
+   "Diabetes Mellitus",
+   "Endocrinology",
+   "Humans",
+   "Insulin",
+   "International Cooperation",
+   "Pediatrics",
+   "Societies, Medical"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19 Suppl 27",
+   "pages": "115-135"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "29900653",
+   "doi": "10.1111/pedi.12702"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Diabetes in adolescence.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12702",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [],
+  "publication_date": {
+   "year": "2018",
+   "month": "Oct"
+  },
+  "keywords": [
+   "adolescence",
+   "diabetes",
+   "type 1 diabetes"
+  ],
+  "mesh_terms": [
+   "Adolescent",
+   "Adolescent Behavior",
+   "Adolescent Health",
+   "Consensus",
+   "Diabetes Mellitus",
+   "Endocrinology",
+   "Female",
+   "Humans",
+   "International Cooperation",
+   "Male",
+   "Patient Compliance",
+   "Pediatrics",
+   "Psychology, Adolescent",
+   "Societies, Medical",
+   "Transition to Adult Care"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19 Suppl 27",
+   "pages": "250-261"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "29900641",
+   "doi": "10.1111/pedi.12701"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Diabetic ketoacidosis and the hyperglycemic hyperosmolar state.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12701",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [],
+  "publication_date": {
+   "year": "2018",
+   "month": "Oct"
+  },
+  "mesh_terms": [
+   "Adolescent",
+   "Child",
+   "Consensus",
+   "Diabetic Ketoacidosis",
+   "Diagnosis, Differential",
+   "Emergency Medical Services",
+   "Endocrinology",
+   "Fluid Therapy",
+   "Humans",
+   "Hyperglycemic Hyperosmolar Nonketotic Coma",
+   "Insulin",
+   "International Cooperation",
+   "Pediatrics",
+   "Risk Factors",
+   "Societies, Medical"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19 Suppl 27",
+   "pages": "155-177"
+  }
+ },
+ {
+  "identifiers": {
+   "pmid": "29869358",
+   "doi": "10.1111/pedi.12698"
+  },
+  "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Assessment and management of hypoglycemia in children and adolescents with diabetes.",
+  "abstract": "[Abstract not available]",
+  "doi": "10.1111/pedi.12698",
+  "journal": {
+   "title": "Pediatric diabetes",
+   "iso_abbreviation": "Pediatr Diabetes"
+  },
+  "authors": [],
+  "publication_date": {
+   "year": "2018",
+   "month": "Oct"
+  },
+  "keywords": [
+   "hypoglycemia",
+   "impaired awareness of hypoglycemia",
+   "type 1 diabetes"
+  ],
+  "mesh_terms": [
+   "Adolescent",
+   "Child",
+   "Consensus",
+   "Diabetes Mellitus",
+   "Endocrinology",
+   "Humans",
+   "Hypoglycemia",
+   "Hypoglycemic Agents",
+   "International Cooperation",
+   "Pediatrics",
+   "Societies, Medical"
+  ],
+  "article_types": [
+   "Journal Article",
+   "Practice Guideline"
+  ],
+  "language": "eng",
+  "citation": {
+   "volume": "19 Suppl 27",
+   "pages": "178-192"
+  }
+ }
+]

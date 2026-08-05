@@ -1,179 +1,191 @@
 {
   "reviewed_by": "agent",
   "verdicts": {
-    "38377729": {
-      "verdict": "reject",
-      "confidence": "high",
-      "reason": "Brazilian Society of Otology guideline on peripheral facial palsy evaluation/management in children and adults; an otology topic with no endocrine content.",
-      "topic": null
-    },
-    "38169175": {
-      "verdict": "reject",
-      "confidence": "high",
-      "reason": "ESPEN-ESPGHAN-ECFS guideline on nutrition care in cystic fibrosis focused on nutritional status and vitamin supplementation, not endocrine/diabetes management.",
-      "topic": null
-    },
-    "39829212": {
+    "30276975": {
       "verdict": "accept",
       "confidence": "high",
-      "reason": "Polish national guideline update on diagnosis and treatment of differentiated and medullary thyroid carcinoma specifically in children.",
-      "topic": "Thyroid"
-    },
-    "38538470": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "Review/guideline on diagnosis and management of congenital hypopituitarism (GH, TSH, ACTH, gonadotropin, ADH deficiencies) in children.",
-      "topic": "Pituitary"
-    },
-    "38604231": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "German-language clinical practice guideline covering diagnosis, therapy, and follow-up of diabetes mellitus in children and adolescents.",
+      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Limited Care Guidance Appendix\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
       "topic": "Diabetes"
     },
-    "38955658": {
-      "verdict": "borderline",
-      "confidence": "medium",
-      "reason": "Arab Diabetes Forum consensus on regional diabetes management is largely adult/population-level (Ramadan care, general screening) with only brief explicit inclusion of pediatric T1D/T2D management, so pediatric scope is partial.",
+    "30226024": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Definition, epidemiology, and classification of diabetes in children and adolescents\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
       "topic": "Diabetes"
     },
-    "39125469": {
-      "verdict": "reject",
-      "confidence": "high",
-      "reason": "Presents a craniofacial/orthodontic diagnostic examination form for pediatric obstructive sleep apnea; an ENT/craniofacial tool, not an endocrine guideline (obesity is only mentioned as a contributing risk factor).",
-      "topic": null
-    },
-    "39126560": {
-      "verdict": "borderline",
-      "confidence": "medium",
-      "reason": "Italian andrology society (SIAMS) guideline on pediatric-to-transition andrological disorders, co-authored with the pediatric endocrinology society (SIEDP), but the lead discipline and framing is andrology/urology rather than endocrinology.",
-      "topic": "DSD"
-    },
-    "39240349": {
-      "verdict": "reject",
-      "confidence": "high",
-      "reason": "European radiology society practice recommendations on MRI safety in vulnerable patients (including children); a radiology safety topic with no endocrine content.",
-      "topic": null
-    },
-    "39297398": {
-      "verdict": "borderline",
-      "confidence": "medium",
-      "reason": "Indian pediatric GI/hepatology society recommendations for metabolic dysfunction-associated steatotic liver disease (MASLD) in children, which is metabolically driven (obesity, insulin resistance, dyslipidemia) but framed and authored as a hepatology guideline.",
-      "topic": "Obesity/Metabolic"
-    },
-    "39442262": {
-      "verdict": "reject",
-      "confidence": "high",
-      "reason": "Brazilian Society of Otology task force recommendations on cochlear implant indications and complications in children and adults; an otology topic.",
-      "topic": null
-    },
-    "39378663": {
-      "verdict": "reject",
-      "confidence": "high",
-      "reason": "Brazilian Society of Otology task force recommendations for single-sided deafness treatment in children and adults; an otology topic.",
-      "topic": null
-    },
-    "39380079": {
+    "30225972": {
       "verdict": "accept",
       "confidence": "high",
-      "reason": "Italian Society for Pediatric Endocrinology and Diabetology position paper on cardiometabolic risk assessment and management in children/adolescents with obesity.",
-      "topic": "Obesity/Metabolic"
-    },
-    "39551654": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "French Society of Pediatric Endocrinology and Diabetology expert consensus on endocrine (hormonal) management of transgender adolescents.",
-      "topic": "Gender Medicine"
-    },
-    "39647985": {
-      "verdict": "reject",
-      "confidence": "high",
-      "reason": "French Society of Vascular Medicine consensus on venous thromboembolism management in children; a hematology/vascular topic, not endocrine.",
-      "topic": null
-    },
-    "39641420": {
-      "verdict": "reject",
-      "confidence": "high",
-      "reason": "Canadian Association of Radiologists broad pediatric imaging referral guideline spanning head, spine, chest, abdomen, GU, and trauma scenarios; a general radiology referral guideline, not an endocrine-focused document.",
-      "topic": null
-    },
-    "39675522": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "French expert position statement on screening and monitoring first-degree relatives of T1D patients for preclinical (stage 1-2) type 1 diabetes via autoantibody testing.",
+      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"The diagnosis and management of monogenic diabetes in children and adolescents\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
       "topic": "Diabetes"
     },
-    "38597099": {
-      "verdict": "reject",
-      "confidence": "high",
-      "reason": "Indian Academy of Pediatrics consensus guideline on general preconception/adolescent health counseling (substance use, STIs, vaccination, mental health); endocrine content (obesity mention) is incidental, not the subject.",
-      "topic": null
-    },
-    "40071796": {
+    "30175451": {
       "verdict": "accept",
       "confidence": "high",
-      "reason": "Expert panel framework guideline for the multidisciplinary care of adolescents with gender dysphoria/incongruence, including hormonal management protocols.",
-      "topic": "Gender Medicine"
-    },
-    "40097316": {
-      "verdict": "reject",
-      "confidence": "high",
-      "reason": "European multi-society guideline on diagnosis and enzyme replacement therapy for pancreatic exocrine insufficiency across all ages; a GI/pancreatic topic, not endocrine, despite mentioning diabetes as one associated condition.",
-      "topic": null
-    },
-    "40063957": {
-      "verdict": "reject",
-      "confidence": "high",
-      "reason": "KDIGO 2024 chronic kidney disease guideline synopsis for adults and children not on dialysis; a nephrology guideline focused on CKD staging and SGLT2 inhibitor/statin use, not primarily pediatric or endocrine.",
-      "topic": null
-    },
-    "40228835": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "CMAJ clinical practice guideline with GRADE-based recommendations on behavioral, pharmacologic, and surgical management of obesity in children.",
-      "topic": "Obesity/Metabolic"
-    },
-    "40889554": {
-      "verdict": "borderline",
-      "confidence": "medium",
-      "reason": "French multi-society expert consensus on primary hyperparathyroidism diagnosis/management authored jointly by adult and pediatric endocrinologists/surgeons, but the 15-chapter document (epidemiology, lactation, atypical adenoma) is predominantly adult-focused with only incidental pediatric relevance (e.g., genetic/familial forms).",
-      "topic": "Calcium/Parathyroid"
-    },
-    "40987949": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "Practical framework for comprehensive endocrine and metabolic screening (growth, puberty, thyroid, parathyroid, glucose) in transfusion-dependent thalassemia patients aged 1-16 years in low-resource settings.",
-      "topic": "General Endocrinology"
-    },
-    "40574354": {
-      "verdict": "borderline",
-      "confidence": "medium",
-      "reason": "ESHRE good practice recommendations on testicular tissue cryopreservation for fertility preservation in prepubertal boys/adolescents undergoing gonadotoxic cancer therapy; a reproductive-medicine/surgical topic developed with pediatric endocrinology input, adjacent to but not centered on endocrine management.",
-      "topic": "Cancer Late Effects"
-    },
-    "39480773": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "Argentine Pediatric Society updated guideline on prevention, diagnosis, and treatment (lifestyle, pharmacologic, surgical) of pediatric obesity.",
-      "topic": "Obesity/Metabolic"
-    },
-    "39844487": {
-      "verdict": "accept",
-      "confidence": "high",
-      "reason": "Chinese national guideline (2025) for diagnosis and treatment of type 2 diabetes mellitus in children.",
+      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Diabetes education in children and adolescents\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
       "topic": "Diabetes"
     },
-    "39270074": {
+    "30144259": {
       "verdict": "accept",
       "confidence": "high",
-      "reason": "Argentine Pediatric Society National Endocrinology Committee update on diagnosis and treatment of cryptorchidism, including recognition of associated differences of sex development and genetic syndromes.",
-      "topic": "DSD"
+      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"The delivery of ambulatory diabetes care to children and adolescents with diabetes\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
+      "topic": "Diabetes"
     },
-    "41038201": {
-      "verdict": "borderline",
+    "30133095": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Exercise in children and adolescents with diabetes\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
+      "topic": "Diabetes"
+    },
+    "30094886": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Management of cystic fibrosis-related diabetes in children and adolescents\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
+      "topic": "Diabetes"
+    },
+    "30084519": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Management and support of children and adolescents with type 1 diabetes in school\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
+      "topic": "Diabetes"
+    },
+    "30079595": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Microvascular and macrovascular complications in children and adolescents\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
+      "topic": "Diabetes"
+    },
+    "30079506": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Sick day management in children and adolescents with diabetes\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
+      "topic": "Diabetes"
+    },
+    "30066458": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Other complications and associated conditions in children and adolescents with type 1 diabetes\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
+      "topic": "Diabetes"
+    },
+    "30062718": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Nutritional management in children and adolescents with diabetes\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
+      "topic": "Diabetes"
+    },
+    "30058247": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Psychological care of children and adolescents with type 1 diabetes\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
+      "topic": "Diabetes"
+    },
+    "30058221": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Glycemic control targets and glucose monitoring for children, adolescents, and young adults with diabetes\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
+      "topic": "Diabetes"
+    },
+    "30051639": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Stages of type 1 diabetes in children and adolescents\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
+      "topic": "Diabetes"
+    },
+    "30039617": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Management of children and adolescents with diabetes requiring surgery\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
+      "topic": "Diabetes"
+    },
+    "30039513": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Diabetes technologies\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
+      "topic": "Diabetes"
+    },
+    "29999228": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Type 2 diabetes mellitus in youth\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
+      "topic": "Diabetes"
+    },
+    "29999222": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Insulin treatment in children and adolescents with diabetes\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
+      "topic": "Diabetes"
+    },
+    "29900653": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Diabetes in adolescence\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
+      "topic": "Diabetes"
+    },
+    "29900641": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Diabetic ketoacidosis and the hyperglycemic hyperosmolar state\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
+      "topic": "Diabetes"
+    },
+    "29869358": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "ISPAD Clinical Practice Consensus Guidelines 2018 chapter (\"Assessment and management of hypoglycemia in children and adolescents with diabetes\"), a core, citable pediatric diabetes management guideline from a peds-endo-dedicated journal.",
+      "topic": "Diabetes"
+    },
+    "30295419": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "ISPAD Position Statement on managing type 1 diabetes in the school setting for children and adolescents; core diabetes management guidance from a peds-endo-dedicated journal.",
+      "topic": "Diabetes"
+    },
+    "31195397": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "Proposes a stepwise pediatric diagnostic workup (bone age, labs, karyotype/microarray) for children referred with growth failure/short stature, including Turner syndrome screening.",
+      "topic": "Growth"
+    },
+    "31302655": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "Companion diagnostic flowchart for children referred with tall stature/accelerated growth, covering Klinefelter and Marfan syndromes, precocious puberty, hyperthyroidism, and GH excess as causes.",
+      "topic": "Growth"
+    },
+    "31319416": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "International consortium update on GnRH analog use in children, primarily for precocious puberty (diagnosis, monitoring, adverse events) with an additional section on transgender adolescents.",
+      "topic": "Puberty"
+    },
+    "31514194": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "Growth Hormone Research Society international consensus on diagnosis, genetics, and GH therapy for short stature in children, the most common reason for pediatric endocrinology referral.",
+      "topic": "Growth"
+    },
+    "32157850": {
+      "verdict": "accept",
       "confidence": "medium",
-      "reason": "EU-CAYAS-NET consortium clinical practice guideline on health-care transition for childhood/adolescent cancer survivors broadly (functioning, social participation, general late effects), which addresses transition-of-care processes rather than endocrine late effects specifically.",
-      "topic": "Cancer Late Effects"
+      "reason": "Proposes new pediatric reference ranges for serum IGF-I, a growth-axis biomarker used in diagnosing GH deficiency/excess in children; no abstract available so classified on title/MeSH alone.",
+      "topic": "Growth"
+    },
+    "32935435": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "ISPAD consensus guideline on subcutaneous insulin for pediatric DKA management in resource-limited/COVID-19 ICU-constrained settings, an addendum to the core 2018 DKA chapter.",
+      "topic": "Diabetes"
+    },
+    "33047481": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "EASD/ISPAD position statement on using CGM/isCGM to guide glucose management around exercise in type 1 diabetes, explicitly covering children and adolescents alongside adults.",
+      "topic": "Diabetes"
+    },
+    "33401878": {
+      "verdict": "accept",
+      "confidence": "high",
+      "reason": "Korean Society of Pediatric Endocrinology evidence-based clinical practice guideline for screening and dietary/drug management of dyslipidemia in children and adolescents.",
+      "topic": "Lipids"
     }
   }
 }
