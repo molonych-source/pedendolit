@@ -6,6 +6,85 @@ git history (33 commits to that date) and the dated sections formerly in `MEMORY
 
 ---
 
+### [2026-08-05] classifier QA sweep — built the pipeline, closed round 1
+
+Christian noticed filtering the live dashboard to Guidelines + Diabetes surfaced guidelines
+that weren't actually about diabetes. `classify_topic()` has no rejection path (always
+returns some topic, ends in an unconditional `General Endocrinology` fallback), so this is a
+structural, ongoing risk, not a one-off bug — built a repeatable QA tool rather than a
+one-shot patch, mirroring the guideline sweep's shape but for topic *correctness* instead of
+coverage.
+
+- **New pipeline**: `classifier_qa_sample.py` (stratified sampler, re-eligibility ledger
+  instead of a flat skip-list — a PMID becomes eligible again once its store topic actually
+  changes) → a Sonnet judge subagent (tri-state correct/defensible/wrong, not boolean, so a
+  genuine taxonomy-boundary call isn't forced into "error") → `build_classifier_qa_review.py`
+  (topic dropdown per card, not a checkbox) → `apply_classifier_qa.py` (ledger + a
+  root-cause report grouped by current→target topic with a title/abstract trigger-location
+  signal, via a new `classify_topic(art, trace=True)` — traced against the real waterfall,
+  not a parallel reimplementation). Full procedure: `CLASSIFIER_QA_RUNBOOK.md`.
+- **Round 1**: sampled all 64 articles tagged Diabetes + Guideline/Consensus. The judge
+  flagged 6 wrong — the 5 suspected (Turner syndrome, Vitamin D, thalassemia, 2×
+  Hyperinsulinism) plus a 6th it found independently (an EASL-EASD-EASO MASLD guideline).
+  Root-caused into two `classifier.py` fixes:
+  - **Hyperinsulinism substring/ordering bug**: bare `"insulin"` is a literal substring of
+    `"hyperinsulinism"`, and a hyperinsulinism guideline's abstract almost always also says
+    `"hypoglycemia"` — both are Diabetes-General (branch 10) triggers that fired before the
+    Hyperinsulinism catch (branch 11) ever got a chance, because the earlier Hyperinsulinism
+    pre-check (branch 8) only recognized phrase forms like "congenital hyperinsulinism," not
+    the bare word. Fixed by adding bare `"hyperinsulinism"` to branch 8.
+  - **Incidental multi-system mention**: Turner syndrome, thalassemia (and, transitively,
+    Prader-Willi) guidelines discuss diabetes/glucose screening as one comorbidity among
+    several; branch 10 had no "is this the subject" guard. Added a new pre-check (8b) before
+    Diabetes for `"turner syndrome"`/`"prader-willi"` (→ Growth, the taxonomy's existing
+    convention) and for `"thalassemia"` gated on an explicit broad-scope phrase (→ General
+    Endocrinology) — the broad-scope gate was added after a bare `"thalassemia"` check
+    over-fired on a single-organ ovarian-insufficiency article that was already correctly
+    `Puberty`.
+  - **2 residuals explicitly NOT fixed**: the Vitamin D and MASLD guidelines. Tested both a
+    bare-keyword pre-check and a title-only guard for each — every version misrouted more
+    genuinely-diabetes articles than it fixed (e.g. "High-dose vitamin D therapy and ...
+    remission of type 1 diabetes"; "MASLD as Complication of Diabetes," which arguably
+    belongs in Diabetes by its own framing). Recorded as accepted residuals
+    (`residual_accepted: true` in `classifier_qa_decisions.json`, which the sampler now
+    respects instead of force-including them every round).
+  - **Verified via a full-store topic-diff** (snapshot before/after `--rebuild`): 7 total
+    moves, all reviewed and confirmed correct — the 4 target fixes plus 2 beneficial side
+    effects the sample never targeted (a Prader-Willi/diazoxide-choline article previously
+    miscaught as Hyperinsulinism; a Turner-population glycemia study moved to Growth,
+    consistent with the taxonomy convention) and one further genuinely multi-system
+    thalassemia screening-framework article. `merge_raw_sources.py` also picked up its usual
+    unrelated housekeeping (comprehensive_raw.json refresh); total store count unchanged at
+    1406.
+- **Not yet done**: the Gender Medicine/GnRH-analog item (PMID 31319416) and the DSD
+  17β-HSD3 keyword gap weren't part of this sample — left for a round 2, per
+  `CLASSIFIER_QA_RUNBOOK.md`.
+
+**Follow-up after advisor review, same session**: caught a real bug before anything got
+committed — `apply_classifier_qa.py` was writing a fresh dict per PMID instead of merging,
+which would have silently dropped `residual_accepted`/`residual_reason` the next time either
+residual got re-decided, putting it back into force-included `pending_fix` forever. Fixed to
+merge; verified with a simulated round-2 re-decision that the flag survives. Also added the
+missing documented path to actually set a residual (`apply_classifier_qa.py
+--accept-residual PMID "reason"` — previously only settable by hand-editing the ledger, with
+no CLI and no runbook mention of the field names) and fixed 3 hand-added regression-check
+ledger entries that had put their reasoning in the `title` field (which the pending-list
+printer reads as the article's actual title) rather than a dedicated field. Rebuilt the whole
+ledger cleanly through the real tool afterward rather than patching the ad-hoc edits further.
+
+Also asked Christian directly rather than deciding unilaterally: the Vitamin D and MASLD
+guidelines were originally left as accepted residuals (rule-based fix rejected for collateral
+damage) still showing under the Diabetes filter — his actual complaint, not fully resolved.
+He chose a third option, a per-PMID topic override: `apply_classifier_qa.py
+--accept-residual` now doubles as the trigger for a new `apply_topic_overrides()` in
+`build_dataset.py`, which corrects just that one article (recomputing tags/subtype/rationale
+via the real classifier functions) on every build. Verified in `index.html` — the actual
+published artifact, not just the datastore, per the advisor's flag that the datastore check
+alone wasn't sufficient. Final state: **9 total topic changes vs. the pre-session git
+baseline** (7 from the classifier.py fix, 2 from the override), zero collateral, abstract/DOI
+counts unchanged (1406 articles, 1347 abstracts).
+- Not yet committed/pushed — pending Christian's review of the diff.
+
 ### [2026-08-04] wide all-journals pre-2024 sweep (2018–2023)
 
 Ran the remaining priced-out option: the wide publication-type search, 2018–2023, across all

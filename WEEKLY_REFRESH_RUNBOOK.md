@@ -129,6 +129,13 @@ The prompt must contain:
 The page shows each verdict and its reason, pre-ticks only `accept`, and keeps `reject`
 collapsed but still tickable — the agent triages, the physician decides.
 
+## Deciding WHAT to change before a re-classify
+Before editing `classify_topic()` on a hunch, run the classifier QA sweep
+(`CLASSIFIER_QA_RUNBOOK.md`) — it samples already-classified articles, has a judge
+subagent flag likely topic mismatches, and produces a root-cause report grouped by
+`current_topic → target_topic` with a title/abstract trigger-location signal, so the fix
+targets the actual bug instead of a guess.
+
 ## Re-classify everything (only when classifier.py changes)
 
 > **CRITICAL — REBUILD PITFALL:** `--rebuild` reads from the `--raw` file, NOT from

@@ -1,0 +1,681 @@
+{
+ "comment": "PMIDs already ruled on in a classifier QA round. A PMID is re-eligible for sampling once the store's topic for it changes away from topic_at_review \u2014 see classifier_qa_sample.py. residual_accepted (see apply_classifier_qa.py --accept-residual) closes a PMID out of pending_fix without a code change.",
+ "decisions": {
+  "30093549": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Type 1 Diabetes in Children and Adolescents: A Position Statement by the American Diabetes Association."
+  },
+  "29900641": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Diabetic ketoacidosis and the hyperglycemic hyperosmolar state."
+  },
+  "39844487": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "[Guidelines for the diagnosis and treatment of type 2 diabetes mellitus in children (2025)]."
+  },
+  "30144259": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2018: The delivery of ambulatory diabetes care to children and adolescents with diabetes."
+  },
+  "30094886": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Management of cystic fibrosis-related diabetes in children and adolescents."
+  },
+  "42527127": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "[Guideline for diagnosis, treatment and prevention of type 1 diabetes mellitus in children(2026)]."
+  },
+  "30058221": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Glycemic control targets and glucose monitoring for children, adolescents, and young adults with diabetes."
+  },
+  "41999619": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Polish Recommendations for the Early Detection of Type 1 Diabetes in the Pediatric Population: A Position Statement of the Polish Society of Pediatric Endocrino"
+  },
+  "30039617": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Management of children and adolescents with diabetes requiring surgery."
+  },
+  "39662065": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2024: Screening, Staging, and Strategies to Preserve Beta-Cell Function in Children and Adolescents with Type 1 Dia"
+  },
+  "41358890": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "14. Children and Adolescents: Standards of Care in Diabetes-2026."
+  },
+  "37454648": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Hyperinsulinism",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "International Guidelines for the Diagnosis and Management of Hyperinsulinism."
+  },
+  "30039513": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Diabetes technologies."
+  },
+  "38748847": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Growth",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Clinical practice guidelines for the care of girls and women with Turner syndrome."
+  },
+  "32935435": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guideline: Diabetic ketoacidosis in the time of COVID-19 and resource-limited settings-role of subcutaneous insulin."
+  },
+  "29900653": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Diabetes in adolescence."
+  },
+  "42162485": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "[Automated insulin delivery (AID) systems, physical activity and sports in type 1 diabetes mellitus: joint guidelines of the DDG and \u00d6DG]."
+  },
+  "40555215": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "International Consensus Guideline on the Diagnosis and Management of Endocrine Complications of \u03b2 and \u03b1 Thalassemia in Children and Adolescents."
+  },
+  "30084519": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Management and support of children and adolescents with type 1 diabetes in school."
+  },
+  "41381175": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Continuous ketone monitoring for people with diabetes: international expert recommendations on the application of a new technology."
+  },
+  "36098719": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Screening for Prediabetes and Type 2 Diabetes in Children and Adolescents: US Preventive Services Task Force Recommendation Statement."
+  },
+  "38828931": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Calcium/Parathyroid",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Vitamin D for the Prevention of Disease: An Endocrine Society Clinical Practice Guideline.",
+   "residual_accepted": true,
+   "residual_reason": "Tested both a title-only guard and a bare-keyword pre-check for vitamin d before Diabetes: both misroute 8-9 genuinely diabetes-focused articles that discuss vitamin D as a risk factor/therapy (e.g. PMID 42039127 High-dose vitamin D therapy and prolonged partial remission of type 1 diabetes). No keyword-based fix found without worse collateral damage than this single article.",
+   "residual_decided_on": "2026-08-05"
+  },
+  "40652453": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Preexisting Diabetes and Pregnancy: An Endocrine Society and European Society of Endocrinology Joint Clinical Practice Guideline."
+  },
+  "38604231": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Diagnosis, Therapy and Follow-Up of Diabetes Mellitus in Children and Adolescents."
+  },
+  "30079506": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Sick day management in children and adolescents with diabetes."
+  },
+  "40652450": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Preexisting Diabetes and Pregnancy: An Endocrine Society and European Society of Endocrinology Joint Clinical Practice Guideline."
+  },
+  "32827594": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Caring for children and adolescents with type 1 diabetes mellitus: Italian Society for Pediatric Endocrinology and Diabetology (ISPED) statements during COVID-1"
+  },
+  "39675348": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2024: Type 2 Diabetes in Children and Adolescents."
+  },
+  "32985262": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Continuous Glucose Monitors and Automated Insulin Dosing Systems in the Hospital Consensus Guideline."
+  },
+  "41793701": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Integrating the Glycemia Risk Index Into Clinical Practice and Research: A Consensus Report."
+  },
+  "29869358": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Assessment and management of hypoglycemia in children and adolescents with diabetes."
+  },
+  "30062718": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Nutritional management in children and adolescents with diabetes."
+  },
+  "39884261": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "International Society for Pediatric and Adolescent Diabetes Clinical Practice Consensus Guidelines 2024: Insulin and Adjunctive Treatments in Children and Adole"
+  },
+  "40988096": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "UK best practice recommendations for children and young people <18 years with pre-stage 3 type 1 diabetes, on behalf of the British Society for Paediatric Endoc"
+  },
+  "41361403": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Australasian periprocedural guideline for children and adolescents with diabetes mellitus."
+  },
+  "29999228": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Type 2 diabetes mellitus in youth."
+  },
+  "41266045": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Executive summary. Screening, staging and follow-up of type 1 diabetes in preclinical stages: consensus of the scientific societies SED, SEEN and SEEP."
+  },
+  "32578226": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Screening, assessment and management of type 2 diabetes mellitus in children and adolescents: Australasian Paediatric Endocrine Group guidelines."
+  },
+  "33627326": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Guideline for the management of children and young people under the age of 18 years with diabetic ketoacidosis (British Society for Paediatric Endocrinology and"
+  },
+  "29999222": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Insulin treatment in children and adolescents with diabetes."
+  },
+  "39884260": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "International Society for Pediatric and Adolescent Diabetes Clinical Practice Consensus Guidelines 2024 Diabetes Technologies: Glucose Monitoring."
+  },
+  "38869512": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "EASL-EASD-EASO Clinical Practice Guidelines on the management of metabolic dysfunction-associated steatotic liver disease (MASLD): Executive Summary.",
+   "residual_accepted": true,
+   "residual_reason": "Tested a title-only guard for MASLD/NAFLD/steatotic-liver terms before Diabetes: misroutes 4 genuinely diabetes-focused articles (e.g. PMID 41861135 Rethinking Liver Transaminases to Predict Diabetes Risk in Children With MASLD; PMID 42250281 MASLD as Complication of Diabetes, which arguably belongs in Diabetes by its own framing). No keyword-based fix found without worse collateral damage.",
+   "residual_decided_on": "2026-08-05"
+  },
+  "39927665": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "The Utility of Smart Multiple Daily Injection Systems in Intensive Insulin-Treated People With Diabetes: An Italian Expert Consensus."
+  },
+  "30066458": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Other complications and associated conditions in children and adolescents with type 1 diabetes."
+  },
+  "30226024": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Definition, epidemiology, and classification of diabetes in children and adolescents."
+  },
+  "33047481": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Glucose management for exercise using continuous glucose monitoring (CGM) and intermittently scanned CGM (isCGM) systems in type 1 diabetes: position statement "
+  },
+  "39657603": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "International Society for Pediatric and Adolescent Diabetes Clinical Practice Consensus Guidelines 2024: Diabetes Technologies - Insulin Delivery."
+  },
+  "38663372": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Pediatric Endocrine Society Statement on Considerations for Use of Teplizumab (Tzield\u2122) in Clinical Practice."
+  },
+  "30295419": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Position Statement on Type 1 Diabetes in Schools."
+  },
+  "30133095": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Exercise in children and adolescents with diabetes."
+  },
+  "34511234": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Blood Glucose Monitoring in Adults and Children with Diabetes: Update 2021."
+  },
+  "39657609": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "The Use of Automated Insulin Delivery around Physical Activity and Exercise in Type 1 Diabetes: A Position Statement of the European Association for the Study o"
+  },
+  "30175451": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Diabetes education in children and adolescents."
+  },
+  "39362204": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Position Statement on Type 1 Diabetes in Schools."
+  },
+  "30058247": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Psychological care of children and adolescents with type 1 diabetes."
+  },
+  "39701064": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "International Society for Pediatric and Adolescent Diabetes Clinical Practice Consensus Guidelines 2024: Glycemic Targets."
+  },
+  "41601933": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Use of continuous glucose monitoring in non-intensively managed type 2 diabetes: a Saudi Arabian consensus."
+  },
+  "30225972": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2018: The diagnosis and management of monogenic diabetes in children and adolescents."
+  },
+  "36477488": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Management of Individuals With Diabetes at High Risk for Hypoglycemia: An Endocrine Society Clinical Practice Guideline."
+  },
+  "39675522": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Screening and care for preclinical stage 1-2 type 1 diabetes in first-degree relatives: French expert position statement."
+  },
+  "31688079": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Perioperative Management of Pediatric Patients With Type 1 Diabetes Mellitus, Updated Recommendations for Anesthesiologists."
+  },
+  "30051639": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Stages of type 1 diabetes in children and adolescents."
+  },
+  "32810255": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Hyperinsulinism",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Management and Appropriate Use of Diazoxide in Infants and Children with Hyperinsulinism."
+  },
+  "31862756": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "13. Children and Adolescents:."
+  },
+  "39557026": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Growth",
+   "agent_verdict": null,
+   "confidence": null,
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "The Influence of X Chromosome Parent-of-Origin on Glycemia in Individuals with Turner Syndrome."
+  },
+  "41482637": {
+   "topic_at_review": "Hyperinsulinism",
+   "verdict": "wrong",
+   "target_topic": "Growth",
+   "agent_verdict": null,
+   "confidence": null,
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Diazoxide Choline Extended-Release Tablets in Prader-Willi Syndrome: A Randomized, Double-Blind, Withdrawal Period Study."
+  },
+  "40987949": {
+   "topic_at_review": "Puberty",
+   "verdict": "wrong",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": null,
+   "confidence": null,
+   "decided_on": "2026-08-05",
+   "decided_by": "human",
+   "title": "Framework for the comprehensive screening for endocrine disorders in patients with transfusion-dependent thalassemia in low-resource settings."
+  }
+ }
+}

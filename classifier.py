@@ -26,6 +26,24 @@ def has(text, *phrases):
 def has_re(text, *patterns):
     return any(re.search(p, text, re.I) for p in patterns)
 
+def _hits(container, *phrases):
+    """Like has(), but returns the literal(s) that actually matched (for trace)."""
+    return [p for p in phrases if p in container]
+
+def _trace_loc(tl, abl, literals):
+    """Where the matched literal(s) live: title, abstract, mixed, or unknown."""
+    if not literals:
+        return "unknown"
+    locs = set()
+    for lit in literals:
+        in_t, in_a = lit in tl, lit in abl
+        locs.add("both" if (in_t and in_a) else "title" if in_t else "abstract" if in_a else "unknown")
+    if locs == {"title"} or locs == {"title", "both"}:
+        return "title"
+    if locs == {"abstract"} or locs == {"abstract", "both"}:
+        return "abstract"
+    return "mixed" if locs - {"unknown"} else "unknown"
+
 
 # ---------------------------------------------------------------------------
 # 1. EXCLUSION RULES  (archive if matched)
@@ -128,20 +146,32 @@ CLE_PHRASES = [
     "tbi endocrine",
 ]
 
-def classify_topic(art):
-    """Returns (topic, subtopic). subtopic only set for Diabetes."""
+def classify_topic(art, trace=False):
+    """Returns (topic, subtopic), or (topic, subtopic, trace_info) when trace=True.
+    trace_info = {"branch": "10", "branch_label": "...", "matched": [...], "matched_in": "title|abstract|mixed|unknown"}.
+    subtopic only set for Diabetes."""
     title = (art.get("title") or "")
     tl = title.lower()
     abl = (art.get("abstract") or "").lower()
     text = tl + " " + abl
 
+    def _ret(topic, subtopic, branch, label, matched):
+        if not trace:
+            return topic, subtopic
+        return topic, subtopic, {
+            "branch": branch, "branch_label": label,
+            "matched": matched, "matched_in": _trace_loc(tl, abl, matched),
+        }
+
     # 1. Lipids pre-check (FH that contains 'insulin')
     if has(text, "familial hypercholesterolemia", "heterozygous fh", "homozygous fh"):
-        return "Lipids", None
+        return _ret("Lipids", None, "1", "Lipids pre-check",
+                     _hits(text, "familial hypercholesterolemia", "heterozygous fh", "homozygous fh"))
 
     # 2. Cancer Late Effects pre-check
     if any(p in text for p in CLE_PHRASES):
-        return "Cancer Late Effects", None
+        return _ret("Cancer Late Effects", None, "2", "Cancer Late Effects pre-check",
+                     _hits(text, *CLE_PHRASES))
 
     # 2b. Gender Medicine pre-check (before Puberty/DSD/Growth).
     # ABP Domain 16. Routes gender-identity care articles, which share vocabulary
@@ -157,7 +187,10 @@ def classify_topic(art):
     if has(text, "gender-affirming", "gender affirming", "transgender", "gender dysphoria",
            "gender-diverse", "gender diverse", "gender-diverse youth", "affirming hormone",
            "gender minority") and not _dsd_context:
-        return "Gender Medicine", None
+        return _ret("Gender Medicine", None, "2b", "Gender Medicine pre-check",
+                     _hits(text, "gender-affirming", "gender affirming", "transgender", "gender dysphoria",
+                           "gender-diverse", "gender diverse", "gender-diverse youth", "affirming hormone",
+                           "gender minority"))
 
     # 3. IGF-primary -> Growth (prevents 'insulin-like growth factor' -> Diabetes)
     # Spec intent: IGF is the SUBJECT of the article, not an incidental mention.
@@ -171,22 +204,29 @@ def classify_topic(art):
                       "focal hyperinsulinism", "diffuse hyperinsulinism")
     if (_igf_in_title or _igf_count >= 2) and not _hi_context \
             and not has(text, "type 1 diabetes", "type 2 diabetes", "diabetic ketoacidosis", "hba1c"):
-        return "Growth", None
+        return _ret("Growth", None, "3", "IGF-primary pre-check", [t for t in _igf_terms if t in text])
 
     # 4. Adrenal pre-check (high-specificity)
     if has(text, "pseudohypoaldosteronism", "adrenocortical carcinoma", "adrenocortical tumor",
            "pheochromocytoma", "primary aldosteronism", "adrenal crisis") \
        or "congenital adrenal hyperplasia" in tl:
-        return "Adrenal", None
+        _m4 = _hits(text, "pseudohypoaldosteronism", "adrenocortical carcinoma", "adrenocortical tumor",
+                    "pheochromocytoma", "primary aldosteronism", "adrenal crisis")
+        if "congenital adrenal hyperplasia" in tl and "congenital adrenal hyperplasia" not in _m4:
+            _m4.append("congenital adrenal hyperplasia")
+        return _ret("Adrenal", None, "4", "Adrenal pre-check", _m4)
 
     # 5a. Calcium/Parathyroid pre-check (PTH-axis disorders) — before Bone.
     if has(text, "pseudohypoparathyroidism", "albright hereditary osteodystrophy"):
-        return "Calcium/Parathyroid", None
+        return _ret("Calcium/Parathyroid", None, "5a", "Calcium/Parathyroid pre-check",
+                     _hits(text, "pseudohypoparathyroidism", "albright hereditary osteodystrophy"))
 
     # 5b. Bone pre-check (skeletal mineralization / phosphate-wasting)
     if has(text, "burosumab", "fgf23", "fgf-23", "x-linked hypophosphatemia", "xlh",
            "phosphate wasting", "hypophosphatemic rickets"):
-        return "Bone/Calcium", None
+        return _ret("Bone/Calcium", None, "5b", "Bone pre-check",
+                     _hits(text, "burosumab", "fgf23", "fgf-23", "x-linked hypophosphatemia", "xlh",
+                           "phosphate wasting", "hypophosphatemic rickets"))
 
     # 5c. PCOS/PMOS pre-check — must fire before Diabetes (insulin resistance), Obesity, and Puberty
     # (all share vocabulary with PCOS/PMOS). Guard against CAH, which also causes hyperandrogenism.
@@ -200,7 +240,12 @@ def classify_topic(art):
         or _wb("pmos").search(text)
         or _wb("pcom").search(text)
     ):
-        return "PCOS", None
+        _m5c = _hits(text, "polycystic ovary", "polycystic ovarian", "polycystic ovarian morphology",
+                      "polycystic morphology", "polyendocrine metabolic ovarian")
+        for term in ("pcos", "pmos", "pcom"):
+            if _wb(term).search(text):
+                _m5c.append(term)
+        return _ret("PCOS", None, "5c", "PCOS/PMOS pre-check", _m5c)
 
     # 6. General Endocrinology pre-check (broad transition + multi-endocrine / APS)
     # Spec intent: the article is ABOUT a multi-endocrine/APS syndrome. Guard against
@@ -211,64 +256,142 @@ def classify_topic(art):
     _genendo_count = sum(text.count(t) for t in _genendo_terms)
     if (has(text, "transition to adult care") and has(text, "multiple endocrine")) \
        or _genendo_in_title or _genendo_count >= 2:
-        return "General Endocrinology", None
+        _m6 = [t for t in _genendo_terms if t in text]
+        if has(text, "transition to adult care") and has(text, "multiple endocrine"):
+            _m6 = list(dict.fromkeys(_m6 + ["transition to adult care", "multiple endocrine"]))
+        return _ret("General Endocrinology", None, "6", "General Endocrinology pre-check (multi-endocrine/APS)", _m6)
 
     # 7. Pituitary (before Growth/Adrenal); specific pathology only
     if has(text, "craniopharyngioma", "pituitary adenoma", "pituitary tumor", "prolactinoma",
            "hypophysitis", "hypopituitarism", "acromegaly", "diabetes insipidus", "avp-d",
            "siadh", "central hypothyroidism", "central adrenal insufficiency", "copeptin",
            "septo-optic dysplasia"):
-        return "Pituitary", None
+        return _ret("Pituitary", None, "7", "Pituitary",
+                     _hits(text, "craniopharyngioma", "pituitary adenoma", "pituitary tumor", "prolactinoma",
+                           "hypophysitis", "hypopituitarism", "acromegaly", "diabetes insipidus", "avp-d",
+                           "siadh", "central hypothyroidism", "central adrenal insufficiency", "copeptin",
+                           "septo-optic dysplasia"))
 
     # 8. Hyperinsulinism pre-check (before Diabetes)
+    # Bare "hyperinsulinism" is included here, not just the phrase forms, because
+    # branch 10 below would otherwise catch it first: "insulin" is a literal substring
+    # of "hyperinsulinism", and a hyperinsulinism guideline's abstract almost always
+    # also says "hypoglycemia" (its defining clinical manifestation) — both are
+    # branch-10 diabetes triggers. Classifier QA sweep round 1 (2026-08-05) found this
+    # via PMID 37454648 and 32810255, both titled around bare "Hyperinsulinism".
     if has(text, "congenital hyperinsulinism", "hyperinsulinism hyperammonemia",
            "hyperinsulinemic hypoglycemia", "focal hyperinsulinism", "diffuse hyperinsulinism",
-           "nesidioblastosis", "hyperinsulinism of infancy", "insulinoma"):
-        return "Hyperinsulinism", None
+           "nesidioblastosis", "hyperinsulinism of infancy", "insulinoma", "hyperinsulinism"):
+        return _ret("Hyperinsulinism", None, "8", "Hyperinsulinism pre-check (before Diabetes)",
+                     _hits(text, "congenital hyperinsulinism", "hyperinsulinism hyperammonemia",
+                           "hyperinsulinemic hypoglycemia", "focal hyperinsulinism", "diffuse hyperinsulinism",
+                           "nesidioblastosis", "hyperinsulinism of infancy", "insulinoma", "hyperinsulinism"))
+
+    # 8b. Multi-system-syndrome pre-check (before Diabetes)
+    # These conditions are frequently screened for diabetes as one comorbidity among
+    # several, which used to let branch 10's bare "diabetes" catch them before their own,
+    # more specific topic. Turner/Prader-Willi have a deliberate taxonomy convention
+    # (Growth, not General Endocrinology, despite being multi-system — see MEMORY.md).
+    # NOTE: bare "turner syndrome" here preempts every downstream branch, including DSD
+    # (branch 14) and DSD's own SECONDARY tag list, which associates Turner with #DSD.
+    # Zero current articles are affected (full-store diff verified 2026-08-05), but if a
+    # future Turner-syndrome-and-DSD article ever needs the DSD topic specifically, this
+    # branch is why it won't get there — it will land on Growth first.
+    # Verified low-collateral against the full store (2026-08-05): only 2 current
+    # Diabetes-topic articles mention "turner syndrome" (one is this exact bug; the other
+    # is a defensible Turner-population glycemia study, arguably a correct move too since
+    # Turner syndrome is the population-defining feature), 0 mention "prader-willi", and 1
+    # mentions "thalassemia" (this exact bug).
+    #
+    # Thalassemia requires a genuinely BROAD scope, not just any thalassemia mention —
+    # bare "thalassemia" alone over-fired on PMID 39250908 ("Ovarian Insufficiency in...
+    # Thalassemia"), a single-organ Puberty/gonadal-axis article that was already
+    # correctly Puberty; thalassemia there is the population's etiology, not a signal the
+    # article itself spans multiple endocrine axes. Requiring an explicit broad-scope
+    # phrase alongside it correctly separates that case from the two genuinely multi-system
+    # thalassemia guidelines (PMID 40555215, 40987949) — verified against all three thalassemia
+    # articles in the store (2026-08-05). Explicitly returning the catch-all here (rather
+    # than just skipping Diabetes and falling through) matches the multi-system rule: this
+    # guideline's actual subject is multiple endocrine axes with no single dominant one,
+    # same intent as branch 6's General Endocrinology pre-check above.
+    # Classifier QA sweep round 1 (2026-08-05): PMID 38748847 (Turner), 40555215 (thalassemia).
+    if has(text, "turner syndrome", "prader-willi"):
+        return _ret("Growth", None, "8b", "Multi-system-syndrome pre-check (before Diabetes)",
+                     _hits(text, "turner syndrome", "prader-willi"))
+    if has(text, "thalassemia") and has(text, "endocrine complications", "endocrinopathies",
+                                          "endocrine disorders", "endocrine dysfunction",
+                                          "multiple endocrine"):
+        return _ret("General Endocrinology", None, "8b",
+                     "Multi-system-syndrome pre-check (before Diabetes)",
+                     _hits(text, "thalassemia", "endocrine complications", "endocrinopathies",
+                           "endocrine disorders", "endocrine dysfunction", "multiple endocrine"))
 
     # 9. Diabetes — Technology
     if has(text, "cgm", "continuous glucose monitoring", "glucose monitoring", "insulin pump",
            "closed loop", "closed-loop", "artificial pancreas", "hybrid closed",
            "automated insulin delivery", "flash glucose", "libre", "dexcom", "tandem",
            "omnipod", "medtronic 780", "aid system", "diabetes technology", "time in range"):
-        return "Diabetes", "Technology"
+        return _ret("Diabetes", "Technology", "9", "Diabetes - Technology",
+                     _hits(text, "cgm", "continuous glucose monitoring", "glucose monitoring", "insulin pump",
+                           "closed loop", "closed-loop", "artificial pancreas", "hybrid closed",
+                           "automated insulin delivery", "flash glucose", "libre", "dexcom", "tandem",
+                           "omnipod", "medtronic 780", "aid system", "diabetes technology", "time in range"))
 
     # 10. Diabetes — General
-    if has(text, "diabetes", "insulin", "hyperglycemia", "hypoglycemia", "dka",
-           "diabetic ketoacidosis", "hba1c", "glycemic", "type 1", "type 2",
-           "neonatal diabetes", "islet", "beta cell", "autoimmune diabetes",
-           "monogenic diabetes", "glucokinase") or _wb("mody").search(text):
-        return "Diabetes", "General"
+    _dm10_terms = ("diabetes", "insulin", "hyperglycemia", "hypoglycemia", "dka",
+                   "diabetic ketoacidosis", "hba1c", "glycemic", "type 1", "type 2",
+                   "neonatal diabetes", "islet", "beta cell", "autoimmune diabetes",
+                   "monogenic diabetes", "glucokinase")
+    if has(text, *_dm10_terms) or _wb("mody").search(text):
+        _m10 = _hits(text, *_dm10_terms)
+        if _wb("mody").search(text):
+            _m10.append("mody")
+        return _ret("Diabetes", "General", "10", "Diabetes - General", _m10)
 
     # 11. Hyperinsulinism / Hypoglycemia (post-Diabetes)
     if has(text, "hyperinsulinism", "persistent hypoglycemia", "diazoxide",
            "octreotide hypoglycemia", "katp channel", "kcnj11", "abcc8"):
-        return "Hyperinsulinism", None
+        return _ret("Hyperinsulinism", None, "11", "Hyperinsulinism/Hypoglycemia (post-Diabetes)",
+                     _hits(text, "hyperinsulinism", "persistent hypoglycemia", "diazoxide",
+                           "octreotide hypoglycemia", "katp channel", "kcnj11", "abcc8"))
 
     # 12. Puberty pre-check (CPP treatment terms, before Growth)
     if has(text, "precocious puberty", "central precocious", "gnrh agonist", "gnrh analog",
            "leuprolide", "triptorelin", "histrelin", "nafarelin", "puberty suppression",
            "pubertal suppression", "thelarche variant"):
-        return "Puberty", None
+        return _ret("Puberty", None, "12", "Puberty pre-check (CPP)",
+                     _hits(text, "precocious puberty", "central precocious", "gnrh agonist", "gnrh analog",
+                           "leuprolide", "triptorelin", "histrelin", "nafarelin", "puberty suppression",
+                           "pubertal suppression", "thelarche variant"))
 
     # 13. Growth
     if has(text, "growth hormone", "growth disorder", "short stature", "idiopathic short",
            "igf-1", "igf-i", "igf1", "growth velocity", "growth failure", "somatotropin",
            "ghd", "sga", "prader-willi", "turner syndrome", "skeletal dysplasia",
            "achondroplasia", "growth chart", "somavaratan", "lonapegsomatropin", "somatrogon"):
-        return "Growth", None
+        return _ret("Growth", None, "13", "Growth",
+                     _hits(text, "growth hormone", "growth disorder", "short stature", "idiopathic short",
+                           "igf-1", "igf-i", "igf1", "growth velocity", "growth failure", "somatotropin",
+                           "ghd", "sga", "prader-willi", "turner syndrome", "skeletal dysplasia",
+                           "achondroplasia", "growth chart", "somavaratan", "lonapegsomatropin", "somatrogon"))
 
     # 14. DSD
     if has(text, "disorder of sex development", "differences of sex development", "dsd",
            "46,xy", "46,xx", "ambiguous genitalia", "cah gender",
            "virilizing ovarian", "virilizing adrenal"):
-        return "DSD", None
+        return _ret("DSD", None, "14", "DSD",
+                     _hits(text, "disorder of sex development", "differences of sex development", "dsd",
+                           "46,xy", "46,xx", "ambiguous genitalia", "cah gender",
+                           "virilizing ovarian", "virilizing adrenal"))
 
     # 15. Puberty (main)
     if has(text, "hypogonadotropic", "puberty", "pubertal", "delayed puberty", "gonadotropin",
            "gnrh", "lh-rh", "menarche", "thelarche", "adrenarche", "pubarche",
            "tanner stage", "kallmann"):
-        return "Puberty", None
+        return _ret("Puberty", None, "15", "Puberty (main)",
+                     _hits(text, "hypogonadotropic", "puberty", "pubertal", "delayed puberty", "gonadotropin",
+                           "gnrh", "lh-rh", "menarche", "thelarche", "adrenarche", "pubarche",
+                           "tanner stage", "kallmann"))
 
     # 16. PCOS/PMOS (catches articles that slipped past the pre-check and adds broader terms)
     # PMOS = Polyendocrine Metabolic Ovarian Syndrome (official rename of PCOS, 2024+)
@@ -279,13 +402,24 @@ def classify_topic(art):
            "androgen excess", "oligo-amenorrhea", "ovarian hyperandrogenism",
            "hyperandrogenic anovulation") \
        or _wb("pcos").search(text) or _wb("pmos").search(text) or _wb("pcom").search(text):
-        return "PCOS", None
+        _m16 = _hits(text, "polycystic ovary", "polycystic ovarian", "polycystic ovarian morphology",
+                      "polycystic morphology", "polyendocrine metabolic ovarian",
+                      "hyperandrogenism adolescent",
+                      "oligomenorrhea adolescent", "hyperandrogenic", "anovulation in adolescent",
+                      "androgen excess", "oligo-amenorrhea", "ovarian hyperandrogenism",
+                      "hyperandrogenic anovulation")
+        for term in ("pcos", "pmos", "pcom"):
+            if _wb(term).search(text):
+                _m16.append(term)
+        return _ret("PCOS", None, "16", "PCOS/PMOS (catch)", _m16)
 
     # 17. Obesity/Metabolic — EDC pre-check (before Thyroid)
     if (has(text, "endocrine-disrupting", "endocrine disrupting", "edc", "bisphenol",
             "phthalate", "pfas") and
         has(text, "obesity", "adipogen", "obesogen", "metabolic")):
-        return "Obesity/Metabolic", None
+        _m17 = _hits(text, "endocrine-disrupting", "endocrine disrupting", "edc", "bisphenol",
+                     "phthalate", "pfas") + _hits(text, "obesity", "adipogen", "obesogen", "metabolic")
+        return _ret("Obesity/Metabolic", None, "17", "Obesity/Metabolic EDC pre-check", _m17)
 
     # 18. Thyroid  (word-boundary 'thyroid' excludes parathyroid)
     if has(text, "hypothyroid", "hyperthyroid", "graves", "hashimoto", "thyrotoxicosis",
@@ -293,24 +427,39 @@ def classify_topic(art):
            "thyroid nodule", "antithyroid") or \
        (_wb("thyroid").search(text) and not re.search(r'\bparathyroid\b', text, re.I)
         and "thyroid" in re.sub(r'\bparathyroid\b', '', text, flags=re.I)):
-        return "Thyroid", None
+        _m18 = _hits(text, "hypothyroid", "hyperthyroid", "graves", "hashimoto", "thyrotoxicosis",
+                     "goiter", "tsh", "thyroxine", "congenital hypothyroid", "thyroid cancer",
+                     "thyroid nodule", "antithyroid")
+        if not _m18:
+            _m18 = ["thyroid"]
+        return _ret("Thyroid", None, "18", "Thyroid", _m18)
 
     # 19. Adrenal (main)
     if has(text, "adrenal", "cortisol", "cushing", "congenital adrenal hyperplasia", "cah",
            "aldosterone", "pheochromocytoma", "adrenal insufficiency", "glucocorticoid",
            "mineralocorticoid", "addison"):
-        return "Adrenal", None
+        return _ret("Adrenal", None, "19", "Adrenal (main)",
+                     _hits(text, "adrenal", "cortisol", "cushing", "congenital adrenal hyperplasia", "cah",
+                           "aldosterone", "pheochromocytoma", "adrenal insufficiency", "glucocorticoid",
+                           "mineralocorticoid", "addison"))
 
     # 20. Lipids (main)
     if has(text, "familial hypercholesterolemia", "lipid-lowering therapy in children",
            "statin in children", "statin in adolescents", "pediatric dyslipidemia",
            "lipoprotein(a)", "lp(a)") or (has(text, "hypercholesterolemia") and has(text, "lipid")):
-        return "Lipids", None
+        _m20 = _hits(text, "familial hypercholesterolemia", "lipid-lowering therapy in children",
+                     "statin in children", "statin in adolescents", "pediatric dyslipidemia",
+                     "lipoprotein(a)", "lp(a)")
+        if not _m20:
+            _m20 = ["hypercholesterolemia", "lipid"]
+        return _ret("Lipids", None, "20", "Lipids (main)", _m20)
 
     # 21. Water/Electrolytes
     if has(text, "hyponatremia", "hypernatremia", "desmopressin", "water balance",
            "anti-diuretic hormone", "salt-wasting"):
-        return "Water/Electrolytes", None
+        return _ret("Water/Electrolytes", None, "21", "Water/Electrolytes",
+                     _hits(text, "hyponatremia", "hypernatremia", "desmopressin", "water balance",
+                           "anti-diuretic hormone", "salt-wasting"))
 
     # 22a. Calcium/Parathyroid (main) — mineral homeostasis / PTH axis.
     # Checked before Bone so calcium/PTH/vitamin-D/rickets articles route here;
@@ -319,29 +468,45 @@ def classify_topic(art):
            "hypocalcemia", "hypercalcemia", "calcium homeostasis", "serum calcium",
            "vitamin d deficiency", "vitamin d", "nutritional rickets", "rickets",
            "calcitriol", "pth ", "parathyroid hormone"):
-        return "Calcium/Parathyroid", None
+        return _ret("Calcium/Parathyroid", None, "22a", "Calcium/Parathyroid (main)",
+                     _hits(text, "parathyroid", "hypoparathyroidism", "hyperparathyroidism",
+                           "hypocalcemia", "hypercalcemia", "calcium homeostasis", "serum calcium",
+                           "vitamin d deficiency", "vitamin d", "nutritional rickets", "rickets",
+                           "calcitriol", "pth ", "parathyroid hormone"))
 
     # 22b. Bone (main) — skeletal density / fragility / antiresorptives.
     if has(text, "bone density", "osteoporosis", "osteopenia", "bone mineral",
            "fracture risk", "fracture", "burosumab", "hypophosphatemia", "fgf23",
            "denosumab", "bisphosphonate", "zoledronic acid", "pamidronate", "dxa",
            "bone health", "bone mass", "osteogenesis imperfecta") or _wb("xlh").search(text):
-        return "Bone/Calcium", None
+        _m22b = _hits(text, "bone density", "osteoporosis", "osteopenia", "bone mineral",
+                      "fracture risk", "fracture", "burosumab", "hypophosphatemia", "fgf23",
+                      "denosumab", "bisphosphonate", "zoledronic acid", "pamidronate", "dxa",
+                      "bone health", "bone mass", "osteogenesis imperfecta")
+        if not _m22b:
+            _m22b = ["xlh"]
+        return _ret("Bone/Calcium", None, "22b", "Bone (main)", _m22b)
 
     # 23. Obesity/Metabolic (main)
     if has(text, "obesity", "overweight", "metabolic syndrome", "nafld", "nash",
            "insulin resistance", "glp-1", "semaglutide", "tirzepatide", "liraglutide",
            "weight management", "bariatric", "bmi", "dyslipidemia", "lipid disorder"):
-        return "Obesity/Metabolic", None
+        return _ret("Obesity/Metabolic", None, "23", "Obesity/Metabolic (main)",
+                     _hits(text, "obesity", "overweight", "metabolic syndrome", "nafld", "nash",
+                           "insulin resistance", "glp-1", "semaglutide", "tirzepatide", "liraglutide",
+                           "weight management", "bariatric", "bmi", "dyslipidemia", "lipid disorder"))
 
     # 24. Genetics
     if has(text, "genetic", "exome", "whole exome", "variant", "pathogenic variant",
            "mutation", "gnomad", "monogenic", "rare disease", "chromosome", "del(",
            "duplication", "imprinting", "uniparental disomy"):
-        return "Genetics", None
+        return _ret("Genetics", None, "24", "Genetics",
+                     _hits(text, "genetic", "exome", "whole exome", "variant", "pathogenic variant",
+                           "mutation", "gnomad", "monogenic", "rare disease", "chromosome", "del(",
+                           "duplication", "imprinting", "uniparental disomy"))
 
     # 25. General Endocrinology (catch-all)
-    return "General Endocrinology", None
+    return _ret("General Endocrinology", None, "25", "General Endocrinology (catch-all)", [])
 
 
 # ---------------------------------------------------------------------------

@@ -74,10 +74,18 @@ The full weekly procedure (date windows, MCP batching, PMID dedup) is in
   rationale text. Input is a dict with `title, abstract, journal, journal_abbr,
   pub_types, authors, doi, pmid`; output merges the classification onto that dict.
   Edit this file to change classification logic — then `--rebuild` (see above).
+  `classify_topic(art, trace=True)` also returns which branch fired and which literal(s)
+  matched (title vs. abstract) — used by `apply_classifier_qa.py`'s root-cause report;
+  `trace=False` (the default) is byte-identical to the original two-tuple return.
 - **`build_dataset.py`** — pipeline stage 2 (see above). Also decodes HTML/XML
   entities in titles/abstracts at ingest (`_clean`), since PubMed metadata contains
   raw entities like `&#xa0;`. `ARCHIVE_AFTER_DAYS` at the top is the archive switch,
   currently `None` (nothing is ever hidden) — see the archive note below.
+  `apply_topic_overrides()` applies per-PMID topic corrections from
+  `classifier_qa_decisions.json`'s `residual_accepted` entries (classifier QA sweep
+  residuals with no safe general-rule fix) on every build, merge or `--rebuild` —
+  recomputes tags/subtype/rationale via the real classifier functions so nothing goes
+  stale.
 - **`merge_raw_sources.py`** — rebuilds `comprehensive_raw.json` from every raw file
   on disk, keeping the richest value per field per PMID, with no network calls. Run it
   before any `--rebuild`. It seeds from the current store first so a rebuild cannot
@@ -93,6 +101,16 @@ The full weekly procedure (date windows, MCP batching, PMID dedup) is in
   `classify_topic` ends in an unconditional `return "General Endocrinology"`, so the
   classifier cannot reject an off-topic article, only mislabel it. Full procedure and the
   agent prompt are in `WEEKLY_REFRESH_RUNBOOK.md`.
+- **Classifier QA sweep** — a different problem than the guideline sweep above: re-checks
+  whether a PMID **already in the store** has the right topic (the guideline sweep only
+  ever decides whether to add one). Same shape — `classifier_qa_sample.py` (stratified
+  sample + a re-eligibility ledger, `classifier_qa_decisions.json`) → a **Sonnet judge
+  subagent** (tri-state verdict: correct/defensible/wrong) → `build_classifier_qa_review.py`
+  (`classifier_qa_review.html`, a topic dropdown per card) → `apply_classifier_qa.py`
+  (records decisions, writes `classifier_qa_report.md` grouped by current→target topic
+  with a title/abstract trigger-location signal). Never touches `classifier.py` or runs
+  `--rebuild` — a human roots the report's groups into a code fix first. Full procedure
+  and the judge prompt are in `CLASSIFIER_QA_RUNBOOK.md`.
 - **`build_dashboard.py`** — pipeline stage 3. Contains the `WEB3FORMS_KEY` (bug/comment
   report form — safe to expose, send-only) and the Phase 2 Supabase config stubs
   (`SUPABASE_URL` / `SUPABASE_ANON_KEY`, currently empty — see Phase 2 below). Also

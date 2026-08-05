@@ -46,6 +46,53 @@ def load_store():
     return {"generated": None, "review_period": None, "articles": []}
 
 
+def apply_topic_overrides(store):
+    """Per-PMID topic corrections for classifier QA residuals with no rule-based fix.
+
+    See CLASSIFIER_QA_RUNBOOK.md's "Accepting a residual": some flagged-wrong
+    classifications have no classifier.py guard that fixes them without misrouting more
+    genuinely-correct articles than it fixes (round 1: a Vitamin D guideline, an MASLD
+    guideline — every keyword/title guard tried broke other Diabetes articles). Rather
+    than force a bad general rule, `apply_classifier_qa.py --accept-residual` records the
+    correct target_topic for that one PMID in classifier_qa_decisions.json, and THIS
+    function applies it here, at build time, to every article regardless of whether it's
+    new or already in the store — so it survives both a normal merge run and a --rebuild.
+
+    Recomputes every field that actually depends on topic (subtopic/diabetes_subtype,
+    tags, impact_rationale) via the real classifier functions, not by hand — a bare
+    a["topic"] = new_topic would leave a stale #Diabetes tag on an article that no longer
+    filters as Diabetes.
+    """
+    dpath = os.path.join(HERE, "classifier_qa_decisions.json")
+    if not os.path.exists(dpath):
+        return 0
+    try:
+        decisions = (json.load(open(dpath)) or {}).get("decisions", {})
+    except (ValueError, OSError):
+        return 0
+    overrides = {pm: e["target_topic"] for pm, e in decisions.items()
+                 if e.get("residual_accepted") and e.get("target_topic")}
+    if not overrides:
+        return 0
+    applied = 0
+    for a in store["articles"]:
+        new_topic = overrides.get(str(a.get("pmid")))
+        if not new_topic or a.get("topic") == new_topic:
+            continue
+        text = ((a.get("title") or "") + " " + (a.get("abstract") or "")).lower()
+        title_l = (a.get("title") or "").lower()
+        a["topic"] = new_topic
+        a["subtopic"] = None
+        a["diabetes_subtype"] = clf.diabetes_subtype(text) if new_topic == "Diabetes" else None
+        a["tags"] = clf.generate_tags(a, new_topic, a["subtopic"], a.get("study_type"),
+                                       a.get("impact"), a.get("board_relevant"), text, title_l)
+        a["impact_rationale"] = clf.impact_rationale(a.get("impact"), a.get("study_type"),
+                                                       a.get("journal"), new_topic,
+                                                       a.get("sample_n"), a.get("society"))
+        applied += 1
+    return applied
+
+
 def map_raw(raw):
     """Map a PubMed-MCP metadata record to the classifier's expected input shape."""
     ids = raw.get("identifiers", {}) or {}
@@ -166,6 +213,8 @@ def build(run_date=None, raw_path=None, verbose=True, rebuild=False):
                       - datetime.timedelta(days=ARCHIVE_AFTER_DAYS)).date().isoformat()
             a["is_archived"] = a.get("review_date", "9999") < cutoff
 
+    overrides_applied = apply_topic_overrides(store)
+
     store["generated"] = datetime.datetime.now().isoformat(timespec="seconds")
     store["review_period"] = datetime.datetime.strptime(run_date, "%Y-%m-%d").strftime("%B %Y")
     store["last_run_date"] = run_date
@@ -184,6 +233,9 @@ def build(run_date=None, raw_path=None, verbose=True, rebuild=False):
         print("by_study:", dict(sorted(stats['by_study'].items(), key=lambda x:-x[1])))
         if stats['exclude_reasons']:
             print("exclude_reasons:", dict(sorted(stats['exclude_reasons'].items(), key=lambda x:-x[1])))
+        if overrides_applied:
+            print(f"topic_overrides applied: {overrides_applied} (see classifier_qa_decisions.json)")
+    stats["overrides_applied"] = overrides_applied
     return stats
 
 

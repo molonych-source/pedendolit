@@ -11,3 +11,8 @@ PedEndoLit-Dashboard.html
 # guideline_decisions.json IS versioned (it's the memory of what was ruled on).
 guideline_review.html
 guideline_approved_raw.json
+
+# Classifier QA sweep — same pattern. classifier_qa_sample.json, _verdicts.json,
+# _report.md, and _decisions.json (the ledger) ARE versioned as the audit trail of
+# each round; only the review HTML is regenerated and ignored.
+classifier_qa_review.html
