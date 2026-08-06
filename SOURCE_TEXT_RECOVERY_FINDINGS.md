@@ -2,109 +2,132 @@
 
 **Date:** 2026-08-06 · **Branch:** `bottom-lines` · Read-only investigation, nothing written to the store.
 
-Question asked: for the articles with no abstract in PubMed, can the real text be recovered
-from PMC or the journal website, systematically and automatically?
+> **Revised after testing.** An earlier version of this file led with "Firecrawl retrieves the
+> full Wiley/ISPAD text." **That claim was wrong** and is corrected in §4. Everything below has
+> been probed for actual content, not just for a 200 status.
 
-Short answer: **partly, and only via a tiered cascade.** No single source covers it. Two free
-JSON APIs that looked promising return literally nothing. Firecrawl is the only thing that
-reaches the highest-value set. And ~68 of the 178 should not be regenerated at all.
+Question asked: for articles with no abstract in PubMed, can the real text be recovered from
+PMC or the journal website, systematically and automatically?
+
+**Answer: mostly no, and the cascade isn't worth building.** One retrieval path works. Two
+looked like they worked and don't. The bulk of the value turns out to be in *not* showing
+these articles rather than in recovering them.
 
 ---
 
-## 1. The 178 are four different problems
+## 1. Final counts
 
-| Type | n | PMC id | What it needs |
-|---|---|---|---|
-| Journal Article | 74 | 8 | Cascade retrieval |
-| Letter | 50 | 16 | Triage first — see §5 |
-| Practice Guideline | 35 | 7 | Targeted job; 25 are ISPAD 2018 |
-| Editorial | 17 | 7 | **Label, don't generate** |
-| Retraction / Comment | 2 | 2 | **Label, don't generate** |
-
-A single generic pipeline underserves all four.
-
-## 2. What each source actually returns (all tested, not assumed)
-
-| Source | Yield on the 178 | Notes |
+| Bucket | n | Disposition |
 |---|---|---|
-| PubMed `efetch` (re-fetch) | **2 / 178 (1.1%)** | Both Chinese guidelines. PubMed genuinely has no abstract for the other 176 — this is not an ingest gap. |
-| Europe PMC `resultType=core` | **0 / 178** | Verified working: positive control `39377175` returned 1,808 chars. EuropePMC mirrors PubMed here. |
-| Crossref `api.crossref.org/works/{doi}` | **0 / 178** | Verified working: 5/12 hit rate on a control set of articles that *do* have abstracts. These 178 have no deposited abstract because they have no abstract. |
-| PMC full text (`efetch db=pmc`) | **~28 / 178** | 40 have a PMC id; 14/20 sampled returned >200 words of body text. Structured JATS XML, free, legal, no scraping. |
-| Unpaywall → direct fetch | uncertain | 24/39 sampled flagged OA, but see §3 — OA status ≠ fetchable. |
-| **Firecrawl (`firecrawl_scrape`)** | **high on Wiley** | See §4. The decisive tool. |
+| Letters, editorials, comments, retraction notices | **69** | Demote — no retrieval needed |
+| Recoverable from PMC full text | **15** | Verified: 15/15 returned >200 words of real JATS body text |
+| Everything else | **94** | No legitimate automated route. Needs an honest `no_source_text` state. |
 
-## 3. OA status is not fetchability
+The 69 demote and the 15 PMC fetches are the entire win. There is no third tier.
 
-Plain `urllib` GET against the five host types Unpaywall returned:
+## 2. Sources that return nothing (all verified against positive controls)
 
-| Host | Result |
-|---|---|
-| Sage publisher PDF | 200, real `%PDF-` bytes |
-| Wiley `pdfdirect` | **403 Forbidden** on one, HTML bot-challenge on another |
-| `repositorio.uchile.cl` | 200 but a **landing page** — needs a second hop to find the PDF |
-| `hdl.handle.net` | 200, landing page |
-| `publications.rwth-aachen.de` | 200, 248 bytes — a redirect stub |
-| figshare | 202, empty body |
+| Source | Yield | Control proving the test worked |
+|---|---|---|
+| PubMed `efetch` re-fetch | 2 / 178 | n/a — 176 genuinely have no abstract element |
+| Europe PMC `resultType=core` | **0 / 178** | PMID `39377175` returned 1,808 chars |
+| Crossref `works/{doi}` | **0 / 178** | 5/12 hit rate on store articles that do have abstracts |
 
-So the honest headline is not "62% are open access." It is "62% have a copy somewhere, and
-roughly one host type in five hands it over to a plain HTTP GET."
+These articles have no abstract deposited anywhere because they were published without one.
 
-## 4. Firecrawl changes the picture — unevenly
+## 3. PMC full text — the one path that works
 
-- **Wiley (Pediatric Diabetes, the ISPAD 2018 set): works.** The same
-  `onlinelibrary.wiley.com/doi/pdfdirect/10.1111/pedi.12702` that returned **403** to `urllib`
-  returned **222,413 characters** of correctly parsed full text through Firecrawl with
-  `parsers: ["pdf"]`. This is the single most valuable result — 25 of the 35 guidelines are
-  this exact set, on this exact publisher.
-- **Springer Nature (Nat Rev Endocrinol): works, and is enough.** The paywall preview carries
-  two full paragraphs of real substance before the cut. For these items that is sufficient —
-  they are `citation_article_type: Journal Club` / `BriefCommunication` research highlights, so
-  the preview *is* the article's argument.
-- **Elsevier (Lancet Diabetes Endocrinol): body blocked, and do not push it.** The rendered
-  markdown returned only ad-console scaffolding. Article metadata (`og:description`) does carry
-  the opening paragraph, but that is the background sentence — the same "extractive" failure
-  mode the audit already flags. More importantly the page sets **`tdm-reservation: 1`** with a
-  `tdm-policy` pointing at Elsevier's opt-out. That is a machine-readable "no text mining"
-  declaration. Firecrawl also silently escalated to its `stealth` proxy to load the page at all.
+`efetch db=pmc` returns structured JATS. On the 15 articles in the keep-set that have a PMC id,
+**15/15** returned real body text. Free, no scraping, no credits, no ToS question.
 
-**Recommendation: do not scrape Elsevier or any publisher asserting `tdm-reservation`.** This
-site is public and gets shown at conferences under Christian's name. Unpaywall→repository and
-publisher-OA retrieval is legitimate; evading a stated TDM opt-out is not, and the yield there
-is poor anyway.
+**Load-bearing detail:** the store's `pmc` field is populated for 32 articles, but the NCBI ID
+converter finds PMC ids for **40**. Drive the cascade from the ID converter, not the stored
+field, or you silently lose 8.
 
-## 5. Triage the 50 letters before spending retrieval on them
+## 4. Correction: Firecrawl does NOT retrieve the Wiley/ISPAD text
 
-`Diabetes Technol Ther` and `J Diabetes Sci Technol` research letters carry real data and
-deserve a bottom line. Lancet/Nature correspondence does not. One query on journal + title
-decides whether ~50 items are worth any retrieval at all.
+The earlier claim rested on a 222,413-character response to
+`onlinelibrary.wiley.com/doi/pdfdirect/10.1111/pedi.12702`. On inspection that response's
+`url` is `/doi/abs/…` and its `contentType` is `text/html` — **Wiley redirected the PDF request
+to the abstract landing page.** The 222k characters are navigation chrome and related-article
+listings. Probes confirm it: `Recommendation` 0 occurrences, `Conflict of interest` 0,
+`Click on the article title` 3. Retried against the canonical `/doi/pdf/…` URL: same redirect,
+same landing page.
 
-## 6. Realistic ceiling
+**Worse, Firecrawl's `summary` format then produced a fluent, accurate-sounding ISPAD guideline
+summary from that empty page.** It reads like a real takeaway and is not grounded in the
+chapter. **Never feed Firecrawl's `summary` into a bottom line.** If Firecrawl is used at all,
+take `markdown` and gate it on a content probe (length plus expected section markers) before
+anything downstream consumes it.
 
-- **Recoverable and worth recovering:** ~25 ISPAD guidelines (Firecrawl/Wiley) + ~10 other
-  guidelines + ~28 PMC full texts + some share of the 74 journal articles.
-- **Should be labelled, not generated:** 17 editorials + 1 retraction + 1 comment, plus
-  whichever of the 50 letters are pure correspondence. Call it ~40–70 articles.
-- The remainder is genuinely unavailable without a paid publisher agreement or manual work.
+Green open-access copies are a dead end too: the Unpaywall-listed repository PDFs for two ISPAD
+2018 chapters (`repositorio.uchile.cl`) are **1.6 KB metadata stubs** — 239 characters of title
+and author names, not the chapter.
 
-A tiered cascade — PMC XML → Unpaywall direct fetch → Firecrawl on non-reserving publishers →
-honest label — is the right shape. It is automatable. It will not reach 100%, and the residue
-needs an explicit "no source text available" state on the card rather than a manufactured
-takeaway.
+**Springer Nature is the one publisher where Firecrawl genuinely works** — the paywall preview
+returns two real paragraphs plus rich article metadata (`dc.type: BriefCommunication`,
+`citation_article_type: Journal Club`). A plain fetch is bot-blocked (3 KB stub), so this path
+does require Firecrawl, at 1 credit per article. It covers ~24 Nat Rev Endocrinol items — but
+see §6, because those items should probably be demoted rather than retrieved.
 
-## 7. Two unrelated defects found in passing
+**Do not scrape Elsevier.** Lancet D&E pages set `tdm-reservation: 1` with a policy URL, and
+Firecrawl had to escalate to a `stealth` proxy (5 credits) to load one at all. That is a stated
+opt-out being evaded, on a site shown publicly at conferences.
 
-Both generalise beyond the 178 and are worth fixing regardless of what happens here.
+## 5. Zotero covers almost none of it
 
-1. **Non-Latin abstracts are mangled at ingest.** `efetch` returns several hundred characters
-   of Chinese abstract for `39844487` and `42527127`; the store holds 24 characters. This will
-   recur on every future CJK guideline the monthly sweep picks up.
-2. **The `pmc` field is undercounted.** The NCBI ID converter finds PMC ids for 40 of the 178;
-   the store's `pmc` field is populated for 32.
+Christian's local library holds 1,507 PDFs across 4,048 items. Matched by DOI against the
+109 articles that still need text: **2 hits.** Against the whole 1,406-article store: 46.
 
-## 8. Sequencing constraint
+The reason is instructive — his library has the ISPAD **2022** chapters. The store's are **2018**.
 
-If source-text recovery is going to happen, it must land **before** the regenerate-everything
-run, or the 178 get regenerated twice. This does not change the regenerate-everything
-recommendation — the 23% weak rate among unflagged articles is independent of source text —
-but it reorders the work.
+## 6. The ISPAD finding that matters more than retrieval
+
+The store holds **23 ISPAD 2018 chapters, all with no source text**, and only 4 chapters from
+2024. The 2018 edition has been superseded twice.
+
+So the right move is not to recover the 2018 text. Writing confident takeaways for guidance
+two editions stale is the same class of error as the retracted paper in §7 — it makes
+out-of-date guidance look current and authoritative. The real defect is a **coverage gap**: the
+ISPAD 2022 set is absent from the store entirely and 2024/2025 is thin. That is a job for the
+guideline sweep, and Christian's Zotero can seed it.
+
+The same question applies to the ~24 Nat Rev Endocrinol items: they are `Journal Club` /
+`BriefCommunication` research highlights — commentary on other people's papers. They are tagged
+`Journal Article`, so the pub_type demote rule misses them, but they belong in the demote
+bucket on merit, not the retrieval bucket.
+
+## 7. Live defect found during this work — fix independently
+
+**PMID `39834161` is a retracted paper currently live on the site.** *Effects of Maternal
+Vitamin D Supplementation on Childhood Health* (Endocr Rev) carries PubMed's
+`Retracted Publication` type, is rated **HIGH impact**, and renders a confident bottom line
+about vitamin D sufficiency and infection risk. Nothing marks it as retracted. It is present in
+the deployed `index.html`.
+
+Agreed treatment: a `RETRACTED` banner replacing the bottom line, impact dropped to LOW, article
+kept visible so a reader who half-remembers it learns it was withdrawn. Pull retraction status
+from PubMed `CommentsCorrections` on every run so it cannot silently recur.
+
+Separately, PMID `28627221`'s bottom line is the literal string `[Abstract not available]`,
+rendering as a takeaway.
+
+## 8. Two ingest defects found in passing
+
+1. **Non-Latin abstracts are truncated at ingest.** `efetch` returns several hundred characters
+   of Chinese abstract for `39844487` and `42527127`; the store holds 24. Recurs on every future
+   CJK guideline.
+2. **The `pmc` field is undercounted** — 32 stored vs 40 found by the ID converter (see §3).
+
+## 9. What this means for the budget question
+
+The 1,000-credit/month Firecrawl free tier was a real constraint against a Firecrawl-heavy
+design. With PMC as the only retrieval tier and Springer previews likely demoted instead of
+fetched, projected spend is **near zero**. The cap-and-throttle machinery is solving a problem
+that no longer exists. A ledger is still worth having for idempotency.
+
+## 10. Sequencing
+
+Retrieval must land before the regenerate-everything run or the 178 get regenerated twice. This
+does not change the regenerate-everything recommendation — the 23% weak rate among unflagged
+articles is independent of source text.
