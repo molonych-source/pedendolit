@@ -489,15 +489,19 @@ const impClass={'PRACTICE-ALTERING':'b-pa','HIGH':'b-high','MODERATE':'b-mod','L
 const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const authorStr=a=>{const au=a.authors||[];if(!au.length)return '';return au.length<=3?au.join(', '):au.slice(0,3).join(', ')+' et al.';};
 const _MON={jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,oct:10,nov:11,dec:12};
-// Format a PubMed pub_date as mm/dd/yyyy. Handles YYYY-MM-DD, YYYY-Mon-DD,
-// and partial dates (no day -> mm/yyyy; year only -> yyyy) without inventing a day.
-function fmtDate(s){
+// Format a pub_date as mm/dd/yyyy, honouring how precise the date actually is.
+// Since the 2026-08-06 repair, pub_date is ALWAYS a full sortable ISO date — a
+// month-precision article stores YYYY-MM-01 so it can be sorted and filtered. Rendering
+// that literally would put a fabricated day back on the page, which is the bug the
+// repair removed. `prec` ('day' | 'month' | 'year') says how much of it is real.
+function fmtDate(s, prec){
   if(!s)return '';
   const t=String(s).trim().split(/[-\s]+/);
   if(!/^\d{4}$/.test(t[0]))return esc(s);
   const y=t[0]; let mo=null,d=null;
+  if(prec==='year')return y;
   if(t[1]!==undefined){const x=t[1];mo=/^\d+$/.test(x)?parseInt(x,10):_MON[x.slice(0,3).toLowerCase()];}
-  if(t[2]!==undefined&&/^\d+$/.test(t[2]))d=parseInt(t[2],10);
+  if(t[2]!==undefined&&/^\d+$/.test(t[2])&&prec!=='month')d=parseInt(t[2],10);
   if(mo&&mo>=1&&mo<=12&&d&&d>=1&&d<=31)
     return `${String(mo).padStart(2,'0')}/${String(d).padStart(2,'0')}/${y}`;
   if(mo&&mo>=1&&mo<=12)return `${String(mo).padStart(2,'0')}/${y}`;
@@ -606,7 +610,7 @@ function cardHTML(a){
       <span class="cchev">&#9656;</span>${award}
       <div class="cmain">
         <div class="ctitle">${isNew}${esc(a.title)}</div>
-        <div class="cmeta"><em>${esc(a.journal_abbr||a.journal)}</em> · ${fmtDate(a.pub_date)} · ${esc(authorStr(a))}
+        <div class="cmeta"><em>${esc(a.journal_abbr||a.journal)}</em> · ${fmtDate(a.pub_date,a.pub_date_precision)} · ${esc(authorStr(a))}
           · <span class="badge ${impClass[a.impact]}">${esc(a.impact)}</span>
           · ${esc(a.study_type)}${sub}</div>
       </div>

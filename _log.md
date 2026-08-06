@@ -6,6 +6,55 @@ git history (33 commits to that date) and the dated sections formerly in `MEMORY
 
 ---
 
+### [2026-08-06] the review panel was built, measured, and failed its gate
+
+Ran the validation from `REVIEW_PANEL_SPEC.md`: 15 Sonnet agents (3 lenses × 5 batches),
+1,254 verdicts, replayed over round 2's 418 articles where Christian's decisions are ground
+truth. **It failed. Auto-apply is not enabled and should not be.** Full numbers in the
+spec's RESULTS section.
+
+| Metric | Gate | Measured |
+|---|---|---|
+| Escalation volume | lower is better | 27 of 418 (6.5%) |
+| Auto-apply precision | ≥ 98% | **94.1%** |
+| Silent failures on his 8 overrides | 0 | **3** |
+
+**Why, and it is the whole finding: the lenses are not independent.** They agree with each
+other 95–96% of the time while each is only ~91% accurate against Christian. They are far
+more similar to one another than they are correct, so their agreement carries almost no
+information — they converge confidently on the same mistakes. Different framings of the
+same model do not make independent judges. No escalation rule rescued it: the strictest
+tested (escalate anything not unanimously high-confidence) still leaked one silent failure
+*and* sent 174 cards, more than the 131 that actually mattered in round 2.
+
+Two confounds recorded for anyone retrying: **blinding made it worse, not more
+independent** (the round-2 judge saw the existing label and scored 98.1% on an easier,
+anchored task), and **a prompt bias explains most of the error** — 14 of 23 auto-apply
+errors are cases where Christian chose `General Endocrinology` and the panel committed to
+something specific, after the taxonomy text warned them off the catch-all.
+
+What survives: the panel is a good **sorter**, not a decider — a 6.5% split rate is a
+high-value queue and three opinions on a card beat one. And the persistent-split signal
+works: the boundaries that split are exactly the contested ones (`General Endocrinology vs
+PCOS`, `DSD vs Puberty`, `Adrenal vs Growth`), which is the same diagnostic that pointed at
+the Bone/Mineral merge. Harness kept at `scratchpad/panel/score_panel.py`; the ground truth
+does not expire.
+
+Cost: ~2.1M subagent tokens for a definitive negative result — cheap against shipping a
+system that silently mislabels 6% of the corpus while appearing to work.
+
+**Also today: `fix_pub_dates.py` written, dry-run only, NOT applied** (awaiting Christian's
+call). Root cause of the date bug is upstream: the raw feed supplies one merged
+`publication_date` dict, so when the journal issue has only year+month the day is taken
+from the e-publication date and glued on. The fix prefers `ArticleDate` (when a reader
+could first see the paper — the right semantics for a keep-up brief), falls back to the
+issue date, and **never invents a day**: partial dates pin to the start of the period and
+record `pub_date_precision` of `month` or `year` so the UI can render "March 2018" rather
+than a false "1 March 2018". Dry run over 1,406: **496 dates change, 469 move month
+bucket**, and they move earlier (72 of 80 sampled, mostly by two years). Resulting
+precision: 1,335 day / 61 month / 10 year. Re-runnable with `--only-missing` for the ~35
+new articles each week, which is what stops the bug returning through the raw feed.
+
 ### [2026-08-06] Bone/Mineral merge; review-panel spec written
 
 **Bone/Calcium + Calcium/Parathyroid merged into `Bone/Mineral`** with four subdomains.

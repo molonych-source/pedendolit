@@ -46,6 +46,35 @@ def load_store():
     return {"generated": None, "review_period": None, "articles": []}
 
 
+def apply_pub_dates(store):
+    """Re-apply corrected publication dates from pub_dates.json.
+
+    `pub_date` as built from the raw feed is unreliable: the feed supplies one merged
+    date dict, so when a journal issue carries only year+month the day is taken from the
+    e-publication date and glued on, producing a date in neither source. 344 of 1,406
+    were wrong that way (see pub_date_audit.md). fix_pub_dates.py resolves them properly
+    against PubMed and records the result here; this re-applies it on every build so a
+    --rebuild cannot restore the fabricated values.
+    """
+    path = os.path.join(HERE, "pub_dates.json")
+    if not os.path.exists(path):
+        return 0
+    try:
+        dates = (json.load(open(path)) or {}).get("dates", {})
+    except (ValueError, OSError):
+        return 0
+    applied = 0
+    for a in store["articles"]:
+        rec = dates.get(str(a.get("pmid")))
+        if not rec:
+            continue
+        a["pub_date"] = rec["pub_date"]
+        a["pub_date_precision"] = rec["precision"]
+        a["pub_date_source"] = rec.get("source")
+        applied += 1
+    return applied
+
+
 def apply_topic_overrides(store):
     """Per-PMID topic corrections for classifier QA residuals with no rule-based fix.
 
@@ -217,6 +246,7 @@ def build(run_date=None, raw_path=None, verbose=True, rebuild=False):
             a["is_archived"] = a.get("review_date", "9999") < cutoff
 
     overrides_applied = apply_topic_overrides(store)
+    dates_applied = apply_pub_dates(store)
 
     store["generated"] = datetime.datetime.now().isoformat(timespec="seconds")
     store["review_period"] = datetime.datetime.strptime(run_date, "%Y-%m-%d").strftime("%B %Y")
@@ -238,6 +268,8 @@ def build(run_date=None, raw_path=None, verbose=True, rebuild=False):
             print("exclude_reasons:", dict(sorted(stats['exclude_reasons'].items(), key=lambda x:-x[1])))
         if overrides_applied:
             print(f"topic_overrides applied: {overrides_applied} (see classifier_qa_decisions.json)")
+        if dates_applied:
+            print(f"pub_dates applied: {dates_applied} (see pub_dates.json)")
     stats["overrides_applied"] = overrides_applied
     return stats
 

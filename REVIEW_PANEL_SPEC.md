@@ -1,8 +1,15 @@
 # Review panel — design spec
 
-**Status: design approved 2026-08-06, not built.** Supersedes the "F2/F3 LLM layers" line in
-`TASKS.md`, which described this loosely. Kept in the repo root alongside the other project
-docs rather than under `docs/specs/`, matching existing convention.
+**Status: built, validated, and FAILED its own gate on 2026-08-06. Auto-apply is NOT
+enabled and should not be.** The design below is kept as written, with the measured
+results appended at the end — the gate worked exactly as intended, which is the point of
+having had one.
+
+Supersedes the "F2/F3 LLM layers" line in `TASKS.md`. Kept in the repo root alongside the
+other project docs rather than under `docs/specs/`, matching existing convention.
+
+> **Read the results section at the bottom before building on any of this.** The core
+> assumption — that three lenses would disagree in useful places — is false as specified.
 
 ## Problem
 
@@ -133,3 +140,91 @@ Reuses existing machinery rather than inventing a parallel path:
 
 Steps 1–3 are the whole experiment. If the gate fails, the honest outcome is a better-sorted
 review page and no auto-apply, which is still a real improvement over reading 418 cards flat.
+
+---
+
+# RESULTS — the gate failed (2026-08-06)
+
+Built the panel and replayed it over the 418 articles from QA round 2, where Christian's
+decisions are the ground truth. 15 agents (3 lenses × 5 batches), all self-validated,
+1,254 verdicts, no missing rows. **The panel does not pass and auto-apply stays off.**
+
+## The three metrics
+
+| Metric | Gate | Measured | |
+|---|---|---|---|
+| Escalation volume | (no gate — lower is better) | **27 of 418 (6.5%)** | good |
+| Auto-apply precision | ≥ 98% | **94.1%** | **FAIL** |
+| Silent failures on his 8 overrides | 0 | **3** | **FAIL** |
+
+23 of the 391 unanimous decisions would have been auto-applied to a topic Christian
+disagreed with. Three of those were cards he had already personally overruled.
+
+## Why it failed: the lenses are not independent
+
+This is the whole finding.
+
+| Pair | Agreement |
+|---|---|
+| clinical vs indexer | 95.2% |
+| clinical vs reader | 96.2% |
+| indexer vs reader | 95.2% |
+
+Each lens individually matches Christian ~91% of the time (clinical 90.9%, indexer 90.4%,
+reader 91.1%), yet they agree *with each other* 95–96% of the time. **They are far more
+similar to each other than they are correct.** Their agreement therefore carries almost no
+information about correctness — they converge confidently on the same mistakes, which is
+precisely the rubber-stamp failure the design was supposed to avoid.
+
+Different framings of the same model do not produce independent judges. The lens idea is
+not enough; independence would have to come from somewhere structural, such as genuinely
+different models.
+
+## No escalation rule rescues it
+
+Tightening the trigger trades workload for safety and never reaches the gate:
+
+| Escalation rule | Sent to Christian | Precision | Silent failures |
+|---|---|---|---|
+| Split only (as specified) | 27 (6.5%) | 94.1% | 3 |
+| Split or any lens low-confidence | 73 (17.5%) | 96.5% | 3 |
+| Split or any lens not-high-confidence | 174 (41.6%) | 99.2% | 1 |
+
+The strictest rule still leaks one silent failure *and* sends him 174 cards — more than
+the 131 that actually mattered in round 2. There is no setting where this is both safe and
+less work.
+
+## Two confounds worth naming before anyone retries this
+
+1. **Blinding made it worse, not more independent.** The single judge in round 2 saw the
+   existing label and answered "is this right?", scoring 98.1%. This panel was deliberately
+   blinded and asked to classify from scratch, scoring ~91%. Some of the judge's advantage
+   is anchoring on an already-mostly-correct label — real accuracy, but not the same task.
+   A fair rematch would compare anchored-panel against anchored-judge.
+2. **A prompt bias accounts for most of the error.** 14 of the 23 auto-apply errors are
+   cases where Christian chose `General Endocrinology` and the panel committed to something
+   specific. The taxonomy text warns against over-using the catch-all, and several agents
+   explicitly reported forcing genuinely off-topic content (menopause, fish physiology,
+   endometriosis, a code-sharing editorial) into organ topics rather than the catch-all.
+   Telling panelists plainly that no-good-fit content *belongs* in `General Endocrinology`
+   would likely close much of the gap — untested.
+
+## What to do instead
+
+- **Do not enable auto-apply.** Nothing here justifies letting the pipeline change topics
+  unsupervised.
+- **The panel is still useful as a sorter, not a decider.** A 6.5% split rate is a
+  high-value queue, and showing three lens opinions on a review card is strictly more
+  informative than one judge's verdict. That needs no gate because a human still decides.
+- **The persistent-split signal works.** The boundaries that split are exactly the
+  contested ones: `General Endocrinology vs PCOS` (3), `DSD vs Puberty` (2), `Adrenal vs
+  Growth` (2), `General Endocrinology vs Genetics` (2). That is a taxonomy diagnostic worth
+  keeping, and it is what pointed at the Bone/Mineral merge in the first place.
+- **If retried:** fix the catch-all instruction, run anchored rather than blinded, and use
+  different *models* for genuine independence. Re-run this same harness
+  (`scratchpad/panel/score_panel.py`) — the ground truth does not expire.
+
+## Cost
+
+~2.1M subagent tokens for a definitive negative result, which is cheap next to shipping a
+system that silently mislabels 6% of the corpus while looking like it is working.
