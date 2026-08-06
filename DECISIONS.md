@@ -117,6 +117,43 @@ articles are *judged* — classifier edits, taxonomy changes, diagnosing a cover
 and the raw-file format is the MCP record verbatim, so assembling a raw file is a JSON
 concatenation rather than a transformation.
 
+### NCBI E-utilities is reachable directly; the MCP is a convenience, not a requirement — 2026-08-05 — **Active** (supersedes the "not reachable from the shell" claim in CLAUDE.md)
+**Why:** `CLAUDE.md` asserted for months that the sandbox could not reach NCBI, which is the
+sole reason every fetch is an agent-mediated MCP step. Tested and false: `esearch` and
+`efetch` both answer over plain HTTPS in ~0.2s with full metadata (abstracts, pub_types,
+MeSH). **Consequence:** `efetch` accepts 200 PMIDs per request, so a full 2015-onward
+backfill (~20k articles) is ~100 requests — minutes as a script, versus the many agent
+sessions the MCP path implies. The MCP still works and existing procedures still use it;
+nothing is migrated yet. Any direct use needs `tool=`/`email=` params and an API key beyond
+3 req/sec.
+
+### Design for 20,000 articles; the binding constraint is the single-file embed, not storage — 2026-08-05 — **Active**
+**Why:** a complete 2015-onward corpus is ~20k articles ≈ 65 MB of JSON, which is trivial as
+storage — but `index.html` embeds the whole dataset, so it becomes a **~62 MB page** that every
+visitor downloads before seeing one article, and GitHub Pages hard-caps files at 100 MB
+(breaking outright near 30k) with a 100 GB/month bandwidth budget that 62 MB/visit exhausts in
+~1,600 views. Git history is a second, already-visible constraint: `.git` is 53 MB after 8
+commits because the store is rewritten wholesale each week and deltas poorly.
+**Direction:** keep a recent window embedded so the weekly brief stays instant and works
+offline, and serve deep history from Supabase (already provisioned), which also makes
+"topic X since date Y" an indexed query instead of a client-side scan. **Deliberately kept:**
+the brief must never depend on a backend being awake — if Supabase pauses, accounts degrade
+but the weekly brief still renders.
+**Corollary now, cheap:** make every data access in the UI asynchronous even while data is
+still embedded, so the eventual swap is plumbing rather than a rewrite.
+
+### Regression checking is deterministic and gates on intent, not on diff size — 2026-08-05 — **Active**
+**Why:** the expensive classifier failure mode is a fix that looks correct and quietly moves
+an unrelated, already-correct article — which happened during the 2026-08-05 QA sweep and was
+caught only by manual inspection. `check_classifier_regressions.py` compares topics between
+`git HEAD` and the working tree and fails unless the ledger's `target_topic` predicted each
+change, so "did anything move that nobody asked to move" is answered mechanically and for
+free, before any LLM is involved. It also fails on articles that *disappeared*, since a
+classifier edit can newly trigger exclusion rules and silently drop content.
+**Why study_type/impact only inform:** no ledger records intent for them, so failing would
+cry wolf on every genuine improvement. **Why `--bless` exists:** hand-editing the ledger was
+the friction that would make a future session ignore a red exit code.
+
 ## Product & identity
 
 ### Renamed to PedsEndoBrief; internal filenames and repo name deliberately unchanged — 2026-08-04 — **Active**

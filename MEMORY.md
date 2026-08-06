@@ -32,6 +32,7 @@ journals, with the cross-journal sweep additionally covering 2024–2026.
   - **`apply_approvals.py`** — turns that download into `guideline_approved_raw.json` and records every decision in `guideline_decisions.json` (so declined articles never resurface). Prints the merge commands; **never writes to the store itself**.
 - **Classifier QA sweep** — re-checks whether a PMID *already in the store* has the right topic (the guideline sweep only ever decides whether to add one). `classifier_qa_sample.py` (stratified sample + re-eligibility ledger `classifier_qa_decisions.json`) → Sonnet judge subagent (tri-state correct/defensible/wrong) → `build_classifier_qa_review.py` (topic dropdown per card) → `apply_classifier_qa.py` (ledger + `classifier_qa_report.md`, grouped by current→target with a title/abstract trigger-location signal via `classify_topic(art, trace=True)`). Never edits `classifier.py` or runs `--rebuild`. Full procedure in `CLASSIFIER_QA_RUNBOOK.md`.
   - **Round 1 (2026-08-05), closed — all 6 fixed:** the Diabetes+Guideline/Consensus filter surfaced 6 misclassifications (5 suspected + 1 the judge subagent found independently). 4 fixed in `classifier.py`: (1) bare `"hyperinsulinism"` hoisted into the Hyperinsulinism pre-check — it was previously only phrase-qualified, so branch 10's `"insulin"`/`"hypoglycemia"` triggers caught it first; (2) `"turner syndrome"`/`"prader-willi"` and a broad-scope-gated `"thalassemia"` check hoisted into a new multi-system pre-check before Diabetes, for the same reason branches 5c/6 already pre-empt Diabetes. Verified via full-store topic-diff: 7 total moves, all reviewed correct, including 2 beneficial side effects the sample never targeted (a Prader-Willi/diazoxide article previously miscaught as Hyperinsulinism; a Turner-population glycemia study). The remaining **2 (Vitamin D guideline, MASLD guideline) had no safe rule-based fix** — every keyword/title guard tested misrouted more genuinely-diabetes articles than it fixed (e.g. "High-dose vitamin D therapy and ... remission of type 1 diabetes"; "MASLD as Complication of Diabetes") — so Christian chose a targeted per-PMID override instead of forcing a bad general rule: `apply_classifier_qa.py --accept-residual <PMID> "<reason>"` records the correct topic in `classifier_qa_decisions.json`, and `build_dataset.py`'s new `apply_topic_overrides()` applies it to just that one article at every build (merge or `--rebuild`), recomputing tags/subtype/rationale via the real classifier functions so nothing stays stale. Total: 9 topic changes vs. the pre-session baseline, zero collateral, verified against `index.html` (the actual published artifact, not just the datastore).
+- **`check_classifier_regressions.py`** — deterministic, zero-LLM QA. Diffs topics between the last published store (`git HEAD`) and the working tree; exits 1 if any topic changed without a `classifier_qa_decisions.json` entry whose `target_topic` matches, or if an article disappeared (a classifier edit can newly trigger exclusion rules and silently drop content). `study_type`/`impact` drift reported, never fatal. `--bless PMID "reason"` records a correct-but-unpredicted change. **Run after a rebuild, before committing** — it compares against `git HEAD`, so committing destroys the comparison.
 - **`build_dashboard.py`** — reads the datastore, writes `index.html` (the published artifact) plus two identical convenience copies (`PedEndoLit-Dashboard.html` here, gitignored, and one at the `01_Clinical_Research/` level). Holds `WEB3FORMS_KEY`, the Supabase keys, `GOOGLE_ENABLED`, and the entire client app in `HTML_TEMPLATE` — **edit the template, never the generated HTML**.
 - **`pedendolit-data.json`** — the datastore (keyed by PMID).
 - **Weekly refresh** — scheduled task, Sundays ~9:01 AM ET, follows `WEEKLY_REFRESH_RUNBOOK.md`.
@@ -67,6 +68,33 @@ authoritative; the runbook's entry-date description is stale.
 - **Reset/confirmation UI** lives in `HTML_TEMPLATE`: `resetPasswordForEmail` → `verifyOtp(type:'recovery')` → `updateUser`, with a consumed-OTP guard; signup confirmation uses `verifyOtp(type:'signup')` + `resend()`.
 - **Password policy:** minimum 6 characters, no composition rules (NIST — see DECISIONS.md). The "at least 6 characters" string is hardcoded in multiple template locations that must move together if the minimum changes.
 - Supabase leaked-password protection is Pro-only — the free-tier toggle silently refuses to save.
+
+## Scaling & the redesign roadmap (agreed 2026-08-05)
+Primary job of the site is a **weekly keep-up brief**, with a secondary "catch me up on
+*topic* since *date*" mode for filling knowledge gaps. Decided to **design for an eventual
+20,000 articles** (full 2015-onward corpus). Six separable pieces, in agreed order:
+**A** async data-loading boundary · **B** UI redesign · **C** catch-up mode · **D** backfill
+to 2015 · **E** unattended scheduling · **F** automated classification QA.
+F's layer 1 (`check_classifier_regressions.py`) is **done**. B and C are next, then D.
+See `DECISIONS.md` for why the single-file embed — not storage — is the binding constraint.
+
+**Coverage floor is load-bearing for C.** Dense coverage begins **January 2026**; 2025 holds
+only ~118 articles (thinning to 1–9/month) and 2018–2024 is essentially guidelines only,
+because pre-2026 backfills were publication-type-scoped. So "what's new in thyroid since
+March 2025" would honestly return ~3 papers and look authoritative. The catch-up UI must
+therefore state its own coverage floor rather than silently under-report — and it should keep
+doing so even after a 2025 backfill, since someone will always ask for a date further back
+than the corpus goes.
+
+**Known UI problems** from the 2026-08-05 live review, for whoever picks up B: four rows of
+filter controls before any content (17 topic chips wrap to two lines, plus age row, month
+dropdown, five toggles); the tier badge repeats on every row *inside* its own tier group; the
+`Why PRACTICE-ALTERING` line is byte-identical boilerplate across all 150 guidelines; the
+clinical bottom line — the single most valuable field — is buried behind a click; tag noise
+(a precocious-puberty guideline carries `#HealthEquity` and `#Genetics`); no time dimension
+anywhere despite every article having `pub_date`; and a "New this period: 0" tile with equal
+visual weight to real metrics. The palette, tier colors and restraint are good and worth
+keeping — the weakness is uniform type size (15/13/13.5px) leaving no hierarchy to scan by.
 
 ## Known limitations / honest caveats
 - "Other" is still the largest study-type bucket (400 of 1,273), mostly articles that genuinely lack PubMed type tags.
