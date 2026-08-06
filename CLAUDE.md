@@ -6,10 +6,19 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 PedEndoLit is a self-contained literature-surveillance dashboard for pediatric
 endocrinology. It replaces a paid Perplexity Computer workflow: it pulls articles
-from 19 monitored journals via PubMed (NCBI E-utilities, accessed through the
-PubMed MCP tool — not reachable directly from the shell), classifies each with a
+from 19 monitored journals via PubMed (NCBI E-utilities), classifies each with a
 rules-based classifier, and renders a single self-contained `PedEndoLit-Dashboard.html`
 (data embedded, opens by double-click, no server required).
+
+> **Correction, 2026-08-05:** this file previously said NCBI was "not reachable directly
+> from the shell," which is why every fetch was routed through the PubMed MCP as an
+> agent-only step. That is **false** — `esearch` and `efetch` both answer directly from
+> the sandbox over plain HTTPS (verified: HTTP 200, ~0.2s, full metadata including
+> abstracts, pub_types and MeSH). This matters a lot: `efetch` accepts up to 200 PMIDs
+> per request, so a job the MCP path makes prohibitive (a full 2015-onward backfill,
+> ~20k articles) is ~100 requests, i.e. minutes as a plain script. The MCP still works
+> and the documented procedures below still use it; nothing has been migrated yet. Use
+> `tool=` and `email=` params, and an API key, for anything beyond 3 req/sec.
 
 This folder is a git repository (publishing = commit + push) but has no test suite,
 linter, or build system — it's a small Python data pipeline plus one generated static
@@ -101,6 +110,13 @@ The full weekly procedure (date windows, MCP batching, PMID dedup) is in
   `classify_topic` ends in an unconditional `return "General Endocrinology"`, so the
   classifier cannot reject an off-topic article, only mislabel it. Full procedure and the
   agent prompt are in `WEEKLY_REFRESH_RUNBOOK.md`.
+- **`check_classifier_regressions.py`** — the deterministic, zero-LLM layer of classifier
+  QA. Diffs topics between the last published store (`git HEAD`) and the working-tree
+  store; exits 1 if any topic changed without a `classifier_qa_decisions.json` entry whose
+  `target_topic` matches the new topic, or if an article disappeared entirely. Reports
+  `study_type`/`impact` drift without failing. `--bless PMID "reason"` records a correct-
+  but-unpredicted change into the same ledger. **Run it after a rebuild and before
+  committing** — it compares against `git HEAD`, so committing destroys the comparison.
 - **Classifier QA sweep** — a different problem than the guideline sweep above: re-checks
   whether a PMID **already in the store** has the right topic (the guideline sweep only
   ever decides whether to add one). Same shape — `classifier_qa_sample.py` (stratified

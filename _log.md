@@ -6,6 +6,59 @@ git history (33 commits to that date) and the dated sections formerly in `MEMORY
 
 ---
 
+### [2026-08-05] regression check, and NCBI is reachable after all
+
+Started a website-redesign conversation; it turned up two things worth more than the
+redesign, so those landed first.
+
+**`CLAUDE.md` was wrong about NCBI.** It said E-utilities was "not reachable directly from
+the shell," which is the entire reason every fetch is an agent-mediated MCP step. Tested it:
+`esearch` and `efetch` both answer from the sandbox over plain HTTPS, HTTP 200 in ~0.2s,
+full metadata including abstracts, pub_types and MeSH. Since `efetch` takes 200 PMIDs per
+request, a job the MCP path makes prohibitive — a full 2015-onward backfill, ~20k articles —
+is about 100 requests, i.e. minutes as a plain script rather than many agent sessions. The
+claim is corrected in `CLAUDE.md`; nothing has been migrated yet.
+
+**Built `check_classifier_regressions.py`** — the deterministic, zero-LLM layer of
+classifier QA, and the thing that would have caught today's earlier near-miss
+automatically (a thalassemia guard that looked right but quietly moved an
+already-correct Puberty article). It diffs topics between the last published store
+(`git HEAD`) and the working tree; a change is legitimate only if the ledger holds a
+`target_topic` matching the new topic. Exits 1 on unexplained topic changes and on any
+article that *disappeared* (a classifier edit can make exclusion rules newly fire and
+silently drop content). `study_type`/`impact` drift is reported but never fails, since
+no ledger records intent for those and failing would cry wolf on every real improvement.
+`--bless PMID "reason"` records a correct-but-unpredicted change into the same ledger,
+because hand-editing JSON was exactly the friction that would make a future session
+ignore a red exit code.
+
+Verified against real scenarios rather than only the happy path: passes on the current
+state, correctly recognises all 9 of today's topic moves as predicted when run against
+the pre-fix commit, and — with a deliberately mutated store — fails on an unexplained
+topic change, fails on a removed article, treats a `study_type` flip as informational,
+and passes the topic case after `--bless`. Store and ledger restored afterward; the
+test used a throwaway ledger copy so the real one was never touched.
+
+**Also fixed the Analytics impact chart.** It was sorted by count, rendering an ordinal
+scale as LOW → MODERATE → PRACTICE-ALTERING → HIGH, which reads as a ranking and isn't
+one. `distBar` gained a `keepOrder` flag; impact now renders PRACTICE-ALTERING → HIGH →
+MODERATE → LOW, and topic/journal still count-sort (correct, they're nominal). Confirmed
+in a browser, not just in the source.
+
+Agreed roadmap for the redesign, decomposed because it was six things pretending to be
+one: (A) async data-loading boundary, (B) UI redesign, (C) catch-up mode "what's new in
+topic X since date Y", (D) backfill to 2015, (E) unattended scheduling, (F) automated
+classification QA. Decided to plan for an eventual 20,000 articles now — the binding
+constraint is not storage (~65MB, trivial) but the single-file embed model, which would
+make `index.html` ~62MB and breaks GitHub Pages' 100MB file cap near 30k articles. Git
+history is a second real constraint and already visible: `.git` is 53MB after 8 commits
+because the store is rewritten wholesale each week. Likely answer is a recent window
+embedded plus deep archive queried from Supabase, which also maps onto C exactly. This
+entry's work is F's layer 1; B and C are next, then D.
+
+`gh auth refresh -s workflow` completed (needs `--hostname github.com` and a real TTY,
+not the `!` prefix), so the scope is now in place for E later.
+
 ### [2026-08-05] classifier QA sweep — built the pipeline, closed round 1
 
 Christian noticed filtering the live dashboard to Guidelines + Diabetes surfaced guidelines

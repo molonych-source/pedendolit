@@ -143,12 +143,15 @@ targets the actual bug instead of a guess.
 > `raw_articles.json` with only that week's fetch, so `--rebuild` without an explicit
 > `--raw comprehensive_raw.json` will WIPE the store down to that one week.
 
-Always run these two commands in order:
+Always run these commands in order, and **check for regressions before committing** —
+`check_classifier_regressions.py` compares against `git HEAD`, so once you commit, the
+pre-rebuild state it needs is gone:
 
 ```
 python3 merge_raw_sources.py                       # refresh the cumulative source
 python3 build_dataset.py --run-date <YYYY-MM-DD> --raw comprehensive_raw.json --rebuild
 python3 build_dashboard.py
+python3 check_classifier_regressions.py            # exits 1 on unexplained topic changes
 ```
 
 `merge_raw_sources.py` rebuilds `comprehensive_raw.json` from every raw file on disk

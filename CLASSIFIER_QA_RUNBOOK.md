@@ -71,9 +71,24 @@ and fine on Sonnet; the judge subagent and the root-cause-to-code-fix step are n
    python3 build_dataset.py --run-date <YYYY-MM-DD> --raw comprehensive_raw.json --rebuild
    python3 build_dashboard.py
    ```
-8. **Regression check.** Snapshot `{pmid: topic}` immediately before and after step 7 and
-   diff. Every PMID whose topic changed must match a ledger entry that predicted that exact
-   move (`verdict: wrong`, that `target_topic`) — anything else is a regression, not a fix.
+8. **Regression check** — one command, no snapshotting to remember:
+   ```
+   python3 check_classifier_regressions.py
+   ```
+   It compares the last published store (`git HEAD`) against the just-rebuilt working-tree
+   store. Every article whose topic changed must match a ledger entry whose `target_topic`
+   equals its new topic; anything else exits 1. It also fails if an article *disappeared*
+   (a classifier change can make exclusion rules newly fire and silently drop content), and
+   reports `study_type`/`impact` drift without failing on it.
+
+   A change that's correct but that nobody predicted is blessed in place — this is expected
+   after most classifier edits, since a good fix usually helps articles the sample never
+   targeted:
+   ```
+   python3 check_classifier_regressions.py --bless <PMID> "<why it's right>"
+   ```
+   Run this **before** committing, while `git HEAD` still holds the pre-rebuild state. Once
+   you commit, HEAD becomes the new state and the comparison is gone.
 9. **Re-sample** for the next round: every regression from step 8 (`--force-pmid`), every
    unresolved `pending_fix` PMID (the sampler surfaces these automatically), plus a fresh
    broad sweep across all 17 topics to catch collateral damage a PMID-level diff can't see.

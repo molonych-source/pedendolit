@@ -737,9 +737,13 @@ document.getElementById('month-select').addEventListener('change',e=>{
 
 // ---- Analytics charts ----
 function countBy(arr,key){const o={};arr.forEach(a=>{const v=a[key]||'—';o[v]=(o[v]||0)+1});return o;}
-function distBar(containerId,counts,colorFor){
+// keepOrder: preserve the caller's key order instead of sorting by count. Impact is an
+// ORDINAL scale (practice-altering > high > moderate > low); sorting it by count rendered
+// it as LOW, MODERATE, PRACTICE-ALTERING, HIGH, which reads as a ranking and isn't one.
+// Topic and journal are nominal, so count-sorting them is correct and stays the default.
+function distBar(containerId,counts,colorFor,keepOrder){
   const max=Math.max(1,...Object.values(counts));
-  const rows=Object.entries(counts).sort((a,b)=>b[1]-a[1]);
+  const rows=keepOrder?Object.entries(counts):Object.entries(counts).sort((a,b)=>b[1]-a[1]);
   document.getElementById(containerId).innerHTML=rows.map(([k,v])=>{
     const w=Math.round(v/max*100);
     return `<div class="bar-row"><div class="name">${esc(k)}</div>
@@ -757,7 +761,7 @@ function drawCharts(){
     'HIGH':ART.filter(a=>a.impact==='HIGH').length,
     'MODERATE':ART.filter(a=>a.impact==='MODERATE').length,
     'LOW':ART.filter(a=>a.impact==='LOW').length,
-  },k=>impactDot[k]||'#888780');
+  },k=>impactDot[k]||'#888780',true);
   distBar('chart-journal',countBy(ART,'journal_abbr'),()=>'#1d9e75');
   chartsDrawn=true;
 }
