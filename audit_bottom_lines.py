@@ -65,9 +65,16 @@ def main():
                                       _norm(a.get("clinical_bottom_line"))[:110]))
 
     weak_n = len(targets)
+    # Count articles with no usable source text (abstract to generate from)
+    no_source = reasons['no_abstract'] + reasons['placeholder']
+
     L = ["# Bottom-line audit", "",
          f"{len(arts)} articles checked. **{weak_n} need regeneration "
          f"({100*weak_n/len(arts):.1f}%)**; {reasons['ok']} are fine.", "",
+         f"Of the targets, **{no_source} have no usable source text** (no abstract or",
+         "`[Abstract not available]`), so they cannot be regenerated without manual",
+         f"intervention or fabrication risk. The remaining {weak_n - no_source} have a real abstract but a",
+         "weak bottom line (placeholder, too short, extractive, or truncated).", "",
          "These are mechanical rules. They catch bottom lines that are structurally",
          "wrong (missing, truncated, or the abstract's opening). They cannot catch one",
          "that is a well-formed sentence but a poor takeaway — task 2's judge sees a",

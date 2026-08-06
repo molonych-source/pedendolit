@@ -2,6 +2,11 @@
 
 1406 articles checked. **261 need regeneration (18.6%)**; 1145 are fine.
 
+Of the targets, **178 have no usable source text** (no abstract or
+`[Abstract not available]`), so they cannot be regenerated without manual
+intervention or fabrication risk. The remaining 83 have a real abstract but a
+weak bottom line (placeholder, too short, extractive, or truncated).
+
 These are mechanical rules. They catch bottom lines that are structurally
 wrong (missing, truncated, or the abstract's opening). They cannot catch one
 that is a well-formed sentence but a poor takeaway — task 2's judge sees a
