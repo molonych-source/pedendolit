@@ -101,19 +101,20 @@ judged these good and they are not in scope to change.
 
 ## Blocking dependency: real bottom lines
 
-Promoting the bottom line to headline position exposes a data problem. **182 of 1,347
-(14%) are extractive** — the abstract's opening words rather than a synthesised takeaway —
-and some are literally `[Abstract not available]`. Tolerable at 13px behind a click;
-visibly broken at headline size.
+Promoting the bottom line to headline position exposes a data problem. **261 of 1,406
+(19%) are not usable takeaways** — measured 2026-08-06 across five rules: 119 placeholder,
+63 that repeat the abstract's opening, 59 with no abstract at all, 19 truncated
+mid-sentence, 1 too short. (An earlier figure of 182 counted only the extractive pattern;
+261 is the real number.) Tolerable at 13px behind a click; visibly broken at headline size.
 
 Agreed 2026-08-06: **generate real bottom lines** rather than fall back to the title.
 
 Two requirements on that work:
 
-1. **Audit before fixing.** The 182 were found by pattern-matching (bottom line ≈ abstract
-   opening). Sample the other 1,165 before assuming they are fine — the real number is
-   likely higher, and fixing 182 while the problem is larger would ship a page that still
-   looks broken in places.
+1. **Audit before fixing.** Done — see `PLAN_bottom_lines.md` Task 1, which found 261 by
+   five mechanical rules rather than one. Task 2 additionally judges a random sample of the
+   1,145 that pass those rules, because a well-formed sentence can still be a poor takeaway
+   and no mechanical rule catches that.
 2. **Christian spot-checks a sample before it goes live.** These become the most prominent
    clinical text on the page. Same review posture as the classifier verdicts.
 
