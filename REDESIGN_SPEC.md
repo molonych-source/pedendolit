@@ -1,6 +1,6 @@
 # UI redesign — design spec (roadmap item B, with A)
 
-**Status: design agreed 2026-08-06. Not built.** Direction chosen by Christian after
+**Status: spec reviewed and approved by Christian 2026-08-06. Not built.** Direction chosen by Christian after
 reviewing the three prototypes in `mockups/`: **topic catch-up as the primary surface, the
 triage queue as the secondary.** Supersedes the open questions in `REDESIGN_BRIEF.md`; that
 document's four measured constraints still apply and are referenced below.
@@ -51,6 +51,10 @@ LANDING                              AFTER CLICKING "Thyroid"
   three papers and look authoritative — that is the failure this notice exists to prevent,
   and it must keep working even after a 2025 backfill, because someone will always ask for a
   date earlier than the corpus goes.
+
+  **Christian's call, 2026-08-06:** disclosing the gap is an acceptable answer for now.
+  *Closing* the gap — backfilling so the notice has less to disclose — is future work
+  (roadmap item D), not a blocker for this redesign.
 - **16 topic tiles.** Each shows: topic name, count new since the reader's last visit, and a
   one-line preview of its highest-impact recent article. Topics with nothing new say so
   plainly rather than showing a zero.
