@@ -6,6 +6,45 @@ git history (33 commits to that date) and the dated sections formerly in `MEMORY
 
 ---
 
+### [2026-08-06] UI redesign direction chosen; design spec written
+
+Christian reviewed the three prototypes and picked **topic catch-up as primary, triage queue
+as secondary**. Design worked through and agreed; written up as `REDESIGN_SPEC.md`. Not built.
+
+Composition is **"grid is the door, queue is the room"** — there is one path in, and the
+reader always arrives through a topic. Landing is a 16-topic grid (count new since last
+visit + a one-line preview of the top article per tile) plus the catch-up sentence
+("what's new in X since Y") and a coverage notice that **adapts to what was asked**, so
+"since March 2025" says what it cannot see before showing three papers as if they were the
+whole story. Clicking a topic opens the queue scoped to it, ranked impact-then-date, with
+the **bottom line as the headline** and the title demoted beneath it — inverting today's
+card, where the most valuable field is hidden behind a click.
+
+Everything currently live survives: accounts, saved articles, notes, global search, impact
+tiers, Analytics. Search / Saved / Analytics become header *destinations* rather than modes.
+A search box does not undercut a grid-first landing; a browse-everything view would, so
+there isn't one. Item **A** (async data boundary) is built at the same time — invisible, but
+it makes the eventual move off the single-file embed plumbing instead of a rewrite.
+
+**Blocking dependency Christian decided on: generate real bottom lines**, rather than
+falling back to the title. 182 of 1,347 are extractive. Two conditions recorded: audit the
+other 1,165 first, since the 182 were found by pattern-matching and the true number is
+probably higher; and Christian spot-checks a sample before it ships, because these become
+the most prominent clinical text on the page.
+
+Risk carried into the spec: a topic-first UI **inherits the 11.5% topic error rate**, and
+unevenly — `Genetics` 36.8%, `General Endocrinology` 34.5% against 0% for `Growth` and
+`Hyperinsulinism`. This design makes misclassification more visible than the current page
+does, so classifier QA runs alongside the rebuild rather than after it.
+
+Also regenerated the three prototypes against current data — they had been built before the
+Bone/Mineral merge and the pub_date repair, so they were showing retired topic names and
+pre-repair dates. The brief now leads with genuinely recent work (the Endocrine Society CPP
+guideline, a navepegritide/lonapegsomatropin trial) instead of a 2017 vitamin D guideline,
+which is the date repair doing its job.
+
+---
+
 ### [2026-08-06] the review panel was built, measured, and failed its gate
 
 Ran the validation from `REVIEW_PANEL_SPEC.md`: 15 Sonnet agents (3 lenses × 5 batches),
