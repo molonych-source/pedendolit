@@ -20,6 +20,12 @@ def _norm(s):
     return re.sub(r"\s+", " ", (s or "")).strip()
 
 
+def has_no_usable_source(a):
+    """Returns True if article has no abstract or only [Abstract not available]."""
+    ab = _norm(a.get("abstract"))
+    return not ab or ab.startswith("[Abstract not available]")
+
+
 def classify_weakness(a):
     """(is_weak, reason_code). See the module docstring for why each rule exists."""
     bl = _norm(a.get("clinical_bottom_line"))
@@ -65,16 +71,24 @@ def main():
                                       _norm(a.get("clinical_bottom_line"))[:110]))
 
     weak_n = len(targets)
-    # Count articles with no usable source text (abstract to generate from)
-    no_source = reasons['no_abstract'] + reasons['placeholder']
+    # Count articles with no usable source text by testing the abstract field directly
+    # (more robust than deriving from reason codes, which could drift if abstracts are backfilled)
+    by_pmid = {str(a["pmid"]): a for a in arts}
+    no_source_targets = [p for p in targets if has_no_usable_source(by_pmid[p])]
+    no_source = len(no_source_targets)
+    real_abstract_targets = weak_n - no_source
+
+    # Robustness check: assert the two groups account for all targets
+    assert no_source + real_abstract_targets == weak_n, \
+        f"no-source ({no_source}) + real-abstract ({real_abstract_targets}) must sum to targets ({weak_n})"
 
     L = ["# Bottom-line audit", "",
          f"{len(arts)} articles checked. **{weak_n} need regeneration "
          f"({100*weak_n/len(arts):.1f}%)**; {reasons['ok']} are fine.", "",
          f"Of the targets, **{no_source} have no usable source text** (no abstract or",
          "`[Abstract not available]`), so they cannot be regenerated without manual",
-         f"intervention or fabrication risk. The remaining {weak_n - no_source} have a real abstract but a",
-         "weak bottom line (placeholder, too short, extractive, or truncated).", "",
+         f"intervention or fabrication risk. The remaining {real_abstract_targets} have a real abstract but a",
+         "weak bottom line (extractive, truncated, or too short).", "",
          "These are mechanical rules. They catch bottom lines that are structurally",
          "wrong (missing, truncated, or the abstract's opening). They cannot catch one",
          "that is a well-formed sentence but a poor takeaway — task 2's judge sees a",
