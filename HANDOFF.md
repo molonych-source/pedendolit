@@ -24,59 +24,68 @@ A pediatric-endocrinology literature digest: 19 PubMed journals → rules-based 
 one self-contained `index.html` (**1,406 articles, 149 guidelines**), plus accounts with saved
 articles and private notes. Built for a clinician audience, meant to be shared at conferences.
 
-## Current state: two things are waiting on Christian, nothing is broken
+## Current state: site is healthy; one branch is paused at a decision
 
-Auth/email stack is live and verified. Guideline coverage is done (2018 onward). The live site
-is unchanged and healthy.
+**`main` is at `d55b310` and that is what is live.** The site is fine — nothing in flight
+affects it.
 
-**The working tree is dirty on purpose and nothing from the overnight session was committed** —
-`check_classifier_regressions.py` diffs against `git HEAD`, so committing now would destroy the
-baseline it needs. HEAD is `84b7c10`.
+**A feature branch `bottom-lines` is paused mid-plan, waiting on one decision from
+Christian.** 5 commits, pushed to origin. It has not touched `pedendolit-data.json` or
+`index.html` — the work so far is read-only analysis, so merging or abandoning it are both
+cheap.
 
-Three things want a human:
-1. **`classifier_qa_review.html`** — round 2 is judged and ready to review (below).
-2. **`CLASSIFIER_FIX_PROPOSAL.md`** — a measured, unapplied patch for what the review will
-   confirm. Apply *after* the review, in the runbook's order.
-3. **`REDESIGN_BRIEF.md`** — read before any redesign work starts.
+### To resume the paused branch
 
-## What happened overnight 2026-08-05/06 (uncommitted)
+```
+git checkout bottom-lines
+cat .superpowers/sdd/PLAN_bottom_lines/progress.md    # the ledger: what is done, what is parked
+```
 
-Full detail in `_log.md`. Three findings, in order of how much they change the plan.
+`PLAN_bottom_lines.md` is the plan; the ledger names every commit and every adjudication.
+Tasks 1 and 2 are complete and reviewed. **Task 3 has not started** because the plan has a
+hard human gate there.
 
-**1. `pub_date` is wrong for 344 of 1,406 articles (24.5%).** Verified against PubMed for the
-whole store (`audit_pub_dates.py`, read-only; list in `pub_date_audit.md`). 165 are
-**fabricated** — the journal issue gives year-month only, so the day is taken from
-`ArticleDate` and glued on, yielding a date in neither source. 110 aren't sortable
-(`2018-Oct`, bare `2018`). 69 show 2024 papers as 2026. **Catch-up mode (C) filters on this
-field and the redesign sorts by it, so this plausibly outranks both.** The fix is a decision
-plus a re-fetch, not research.
+**The decision waiting for Christian:** regenerate bottom lines for the 261 mechanically
+flagged articles only, or for all 1,406?
 
-**2. Classifier QA round 2 is judged and awaiting review.** 418 articles, 9 parallel Sonnet
-judges, merged verdicts validated globally (418/418, no drift or dupes): **287 correct, 37
-defensible, 94 wrong.** That 22.5% is an enriched sample, not the store. Weighting each
-topic's rate by its share of the corpus gives **11.5% wrong store-wide, ≈161 of 1,406
-articles** — worst in `Genetics` (36.8%) and `General Endocrinology` (34.5%, exact because
-that topic was judged exhaustively). Seven of nine judges independently flagged the same root
-cause: the Diabetes branch firing on incidental insulin/hyperglycemia mentions, round 1's bug
-class still unfixed in general form. Open the review page, adjust, Submit, then
-`python3 apply_classifier_qa.py`.
+- 261 of 1,406 are mechanically broken. **178 of those have no usable source text at all**
+  (no abstract, or an abstract that is literally `[Abstract not available]`) — those carry
+  the fabrication risk and get reviewed closely. The other 83 have a real abstract.
+- Of the 1,145 that pass the mechanical rules, a judge called **23% weak** — not wrong, just
+  uninformative ("The aim of this review is to describe…", "More research is needed").
+  95% CI 14.8–31.2%; even the lower bound clears the plan's 10% regenerate-everything
+  threshold, so the conclusion is robust to sampling noise.
+- Estimated true total: **~524 of 1,406 (37%)**.
+- Recommendation on record: regenerate everything, but have Christian review only the 178
+  no-source articles closely plus a random sample of the rest, rather than 1,406 cards.
 
-**3. F2 suspicion scoring works.** `suspicion_score.py` (read-only) hit **81.8% precision
-against the 11.1% random-Diabetes baseline — a 7.4× lift**, measured rather than asserted,
-because the sample kept seeded and random portions separable. The baseline rests on 18
-articles, so treat the multiplier as approximate. Use it to seed future rounds.
+## What shipped 2026-08-06 (all live on main)
 
-**4. The Diabetes over-firing is root-caused, with a measured patch waiting.**
-`CLASSIFIER_FIX_PROPOSAL.md` + `proposed_classifier_fix.patch` (applies cleanly; **not
-applied**). Three bugs: `tandem` matching *tandem mass spectrometry* (10 articles mislabeled
-Diabetes on their assay method alone); no subject guard on generic terms like `insulin` and
-`vitamin d`; and **the classifier only reads American spellings**, so an inclisiran trial for
-familial hypercholesterol**ae**mia missed the Lipids pre-check and fell 23 branches to
-Genetics. Measured over the whole store: 40 articles move, **17 land exactly where the judges
-said, zero regressions**.
+Full detail in `_log.md`. Everything below is DONE and published — an earlier version of this
+handoff listed these as pending; they are not.
 
-Redesign prep also landed: `REDESIGN_BRIEF.md` and three prototypes in `mockups/`. **B still
-starts with a brainstorm** — these are inputs to react to, not a design.
+1. **Classifier QA round 2 applied.** Christian reviewed all 418 cards (410/418 concordance
+   with the judge), 126 topic changes recorded, 6 accepted residuals.
+2. **Four classifier bugs fixed.** `tandem` matching *tandem mass spectrometry* (10 articles
+   filed as Diabetes on their assay method); `ghd` matching inside `tyGHDl`; no subject guard
+   on generic terms; and **the classifier only read American spellings**, so an inclisiran
+   trial for familial hypercholesterol**ae**mia missed the Lipids pre-check entirely.
+3. **Bone/Calcium + Calcium/Parathyroid merged into `Bone/Mineral`** with four subdomains.
+   **Taxonomy is now 16 topics.** Rationale in `DECISIONS.md`.
+4. **`pub_date` repaired.** 496 of 1,406 dates corrected against PubMed, 469 moving month.
+   Zero articles are now future-dated (was 30). `pub_dates.json` + `apply_pub_dates()` make it
+   survive a `--rebuild`; `pub_date_precision` stops the page printing a fabricated day.
+5. **Redesign direction chosen and specced** — `REDESIGN_SPEC.md`, approved. Topic grid
+   landing, topic-scoped queue.
+
+## Two things that are built but deliberately NOT enabled
+
+- **The review panel failed its validation gate** (`REVIEW_PANEL_SPEC.md` → RESULTS).
+  Auto-apply is off and should stay off: the three lenses agree with each other 95–96% while
+  each is only ~91% accurate, so their agreement carries almost no information. Useful as a
+  sorter, not a decider.
+- **`suspicion_score.py`** works (81.8% precision against an 11.1% baseline) and is ready to
+  seed future QA rounds.
 
 ## What happened 2026-08-05 (two sessions' worth, both committed)
 
@@ -103,10 +112,12 @@ starts with a brainstorm** — these are inputs to react to, not a design.
 
 ## What's next, in order (mirrors TASKS.md)
 
-> **Order changed overnight.** Before B, two items now have evidence behind them: review the
-> round 2 QA verdicts (and fix the Diabetes branch), and decide the `pub_date` question. The
-> redesign rests on both — a topic-first UI inherits an 11.5% topic error rate, and every
-> direction sorts or filters by a date field that's wrong a quarter of the time.
+> **Updated 2026-08-06.** The two items that used to sit ahead of B are DONE — QA round 2 is
+> applied and the dates are fixed. B's design is now agreed (`REDESIGN_SPEC.md`) and its
+> gating dependency is the bottom-line work on the paused `bottom-lines` branch. Classifier QA
+> continues *alongside* the rebuild, not before it: ~90 known-wrong topics remain, the largest
+> group being the 28 that fell through to the catch-all, which need new keywords rather than
+> tighter guards.
 
 Agreed roadmap: the site's primary job is a **weekly keep-up brief**, plus a "catch me up on
 *topic* since *date*" mode. Designing for an eventual 20,000 articles.
