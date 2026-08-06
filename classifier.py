@@ -146,13 +146,75 @@ CLE_PHRASES = [
     "tbi endocrine",
 ]
 
+# Every classifier keyword is spelled American, so British and international spellings
+# are invisible to the whole waterfall — `hypercholesterolaemia` never matches
+# `hypercholesterolemia`, which is how an inclisiran trial for familial
+# hypercholesterolaemia (PMID 41616799) missed the Lipids pre-check entirely and fell
+# to the Genetics catch-all on the word "genetic". 113 store articles carry at least one
+# such term. A fixed substitution list, not a morphological rule: "our"->"or" would
+# maul "four" and "flour".
+_BRE_AME = (
+    ("hypoglycaemia", "hypoglycemia"), ("hyperglycaemia", "hyperglycemia"),
+    ("normoglycaemia", "normoglycemia"), ("glycaemic", "glycemic"),
+    ("hypercholesterolaemia", "hypercholesterolemia"), ("dyslipidaemia", "dyslipidemia"),
+    ("hypercalcaemia", "hypercalcemia"), ("hypocalcaemia", "hypocalcemia"),
+    ("hypophosphataemia", "hypophosphatemia"), ("hyperkalaemia", "hyperkalemia"),
+    ("hyponatraemia", "hyponatremia"), ("hyperandrogenaemia", "hyperandrogenemia"),
+    ("hyperinsulinaemia", "hyperinsulinemia"), ("ketoacidaemia", "ketoacidemia"),
+    ("anaemia", "anemia"), ("haemoglobin", "hemoglobin"), ("haematolog", "hematolog"),
+    ("oestrogen", "estrogen"), ("oestradiol", "estradiol"), ("oedema", "edema"),
+    ("paediatric", "pediatric"), ("gynaecomastia", "gynecomastia"),
+    ("tumour", "tumor"), ("goitre", "goiter"), ("coeliac", "celiac"),
+    ("foetal", "fetal"), ("behaviour", "behavior"), ("diarrhoea", "diarrhea"),
+)
+
+
+def _norm(s):
+    """Fold British/international spellings onto the American ones the keywords use."""
+    for bre, ame in _BRE_AME:
+        if bre in s:
+            s = s.replace(bre, ame)
+    return s
+
+
+# Subdomains of the merged Bone/Mineral topic. Order is specificity order and breaks ties:
+# XLH mentions fractures, and hypoparathyroidism is treated with calcitriol, so a flat
+# first-match waterfall would misfile both. Scoring instead: a term in the TITLE counts 2,
+# anywhere in the text counts 1, highest total wins. That lets "Vitamin D supplementation
+# guidelines" beat a passing PTH mention while "hypoparathyroidism managed with calcitriol"
+# still lands on PTH/Calcium.
+_BM_SUBTOPICS = (
+    ("Phosphate/FGF23", ("x-linked hypophosphat", "burosumab", "fgf23", "fgf-23",
+                         "hypophosphatemi", "hypophosphatasia", "phosphate wasting",
+                         "phex", "tumor-induced osteomalacia", "xlh")),
+    ("Skeletal Fragility", ("osteogenesis imperfecta", "osteoporos", "osteopeni",
+                            "bone mineral density", "bone density", "fracture",
+                            "bisphosphonate", "zoledronic", "pamidronate", "denosumab",
+                            "dxa", "bone mass", "paget", "skeletal fragility")),
+    ("PTH/Calcium", ("parathyroid", "hypocalcemi", "hypercalcemi", "calcium homeostasis",
+                     "calcium-sensing", "cinacalcet", "teriparatide", "serum calcium")),
+    ("Vitamin D/Rickets", ("vitamin d", "rickets", "calcitriol", "cholecalciferol",
+                           "25-hydroxyvitamin", "ergocalciferol")),
+)
+
+
+def bone_mineral_subtopic(tl, text):
+    """Subdomain within Bone/Mineral, or 'General' when nothing scores."""
+    best, best_score = "General", 0
+    for name, terms in _BM_SUBTOPICS:
+        score = sum((2 if t in tl else 0) + (1 if t in text else 0) for t in terms)
+        if score > best_score:            # strict >, so specificity order breaks ties
+            best, best_score = name, score
+    return best
+
+
 def classify_topic(art, trace=False):
     """Returns (topic, subtopic), or (topic, subtopic, trace_info) when trace=True.
     trace_info = {"branch": "10", "branch_label": "...", "matched": [...], "matched_in": "title|abstract|mixed|unknown"}.
     subtopic only set for Diabetes."""
     title = (art.get("title") or "")
-    tl = title.lower()
-    abl = (art.get("abstract") or "").lower()
+    tl = _norm(title.lower())
+    abl = _norm((art.get("abstract") or "").lower())
     text = tl + " " + abl
 
     def _ret(topic, subtopic, branch, label, matched):
@@ -216,17 +278,19 @@ def classify_topic(art, trace=False):
             _m4.append("congenital adrenal hyperplasia")
         return _ret("Adrenal", None, "4", "Adrenal pre-check", _m4)
 
-    # 5a. Calcium/Parathyroid pre-check (PTH-axis disorders) — before Bone.
-    if has(text, "pseudohypoparathyroidism", "albright hereditary osteodystrophy"):
-        return _ret("Calcium/Parathyroid", None, "5a", "Calcium/Parathyroid pre-check",
-                     _hits(text, "pseudohypoparathyroidism", "albright hereditary osteodystrophy"))
-
-    # 5b. Bone pre-check (skeletal mineralization / phosphate-wasting)
-    if has(text, "burosumab", "fgf23", "fgf-23", "x-linked hypophosphatemia", "xlh",
-           "phosphate wasting", "hypophosphatemic rickets"):
-        return _ret("Bone/Calcium", None, "5b", "Bone pre-check",
-                     _hits(text, "burosumab", "fgf23", "fgf-23", "x-linked hypophosphatemia", "xlh",
-                           "phosphate wasting", "hypophosphatemic rickets"))
+    # 5a/5b. Bone/Mineral pre-check (PTH axis + skeletal mineralization / phosphate wasting).
+    # Merged 2026-08-06: Bone/Calcium and Calcium/Parathyroid were one clinical domain split
+    # in two. 29 of their 54 articles matched both halves' vocabulary, XLH is definitionally
+    # both (FGF23 phosphate wasting presenting as rickets), and the pair produced the most
+    # cross-topic errors in round 2. See DECISIONS.md. Granularity moves to `subtopic`.
+    _bm5 = _hits(text, "pseudohypoparathyroidism", "albright hereditary osteodystrophy",
+                 "burosumab", "fgf23", "fgf-23", "x-linked hypophosphatemia",
+                 "phosphate wasting", "hypophosphatemic rickets")
+    if _wb("xlh").search(text):
+        _bm5.append("xlh")
+    if _bm5:
+        return _ret("Bone/Mineral", bone_mineral_subtopic(tl, text), "5",
+                     "Bone/Mineral pre-check", _bm5)
 
     # 5c. PCOS/PMOS pre-check — must fire before Diabetes (insulin resistance), Obesity, and Puberty
     # (all share vocabulary with PCOS/PMOS). Guard against CAH, which also causes hyperandrogenism.
@@ -327,23 +391,38 @@ def classify_topic(art, trace=False):
                            "endocrine disorders", "endocrine dysfunction", "multiple endocrine"))
 
     # 9. Diabetes — Technology
-    if has(text, "cgm", "continuous glucose monitoring", "glucose monitoring", "insulin pump",
-           "closed loop", "closed-loop", "artificial pancreas", "hybrid closed",
-           "automated insulin delivery", "flash glucose", "libre", "dexcom", "tandem",
-           "omnipod", "medtronic 780", "aid system", "diabetes technology", "time in range"):
+    # "tandem" was a bare substring intended to catch the Tandem Control-IQ / t:slim
+    # pumps, but "liquid chromatography-tandem mass spectrometry" is a routine assay
+    # method across adrenal, thyroid and vitamin D work — 15 store articles matched it
+    # that way. Require the product context instead. ("libre" and "aid system" were
+    # checked for the same collision and are clean: every occurrence is genuinely
+    # FreeStyle Libre / automated insulin delivery.)
+    _dm9_terms = ("cgm", "continuous glucose monitoring", "glucose monitoring", "insulin pump",
+                  "closed loop", "closed-loop", "artificial pancreas", "hybrid closed",
+                  "automated insulin delivery", "flash glucose", "libre", "dexcom",
+                  "tandem control-iq", "tandem t:slim", "tandem diabetes", "t:slim",
+                  "omnipod", "medtronic 780", "aid system", "diabetes technology", "time in range")
+    if has(text, *_dm9_terms):
         return _ret("Diabetes", "Technology", "9", "Diabetes - Technology",
-                     _hits(text, "cgm", "continuous glucose monitoring", "glucose monitoring", "insulin pump",
-                           "closed loop", "closed-loop", "artificial pancreas", "hybrid closed",
-                           "automated insulin delivery", "flash glucose", "libre", "dexcom", "tandem",
-                           "omnipod", "medtronic 780", "aid system", "diabetes technology", "time in range"))
+                     _hits(text, *_dm9_terms))
 
     # 10. Diabetes — General
-    _dm10_terms = ("diabetes", "insulin", "hyperglycemia", "hypoglycemia", "dka",
-                   "diabetic ketoacidosis", "hba1c", "glycemic", "type 1", "type 2",
-                   "neonatal diabetes", "islet", "beta cell", "autoimmune diabetes",
-                   "monogenic diabetes", "glucokinase")
-    if has(text, *_dm10_terms) or _wb("mody").search(text):
-        _m10 = _hits(text, *_dm10_terms)
+    # Split by strength of evidence. The strong terms name diabetes itself, so a single
+    # mention anywhere is enough. The weak ones are words that appear in plenty of
+    # non-diabetes endocrine writing ("insulin" in an obesity paper, "type 1" in
+    # "type 1 collagen", a passing "hypoglycemia" in a neonatal review), so they carry
+    # the same subject-guard branches 5c/6 already use: present in the TITLE, or
+    # repeated at least twice. This is the guard round 1 identified as missing and the
+    # cause 7 of 9 round-2 judges independently flagged.
+    _dm10_strong = ("diabetes", "dka", "diabetic ketoacidosis", "hba1c",
+                    "neonatal diabetes", "autoimmune diabetes", "monogenic diabetes",
+                    "glucokinase", "islet", "beta cell")
+    _dm10_weak = ("insulin", "hyperglycemia", "hypoglycemia", "glycemic", "type 1", "type 2")
+
+    _m10 = _hits(text, *_dm10_strong)
+    _m10_weak = [t for t in _dm10_weak if t in tl or text.count(t) >= 2]
+    if _m10 or _m10_weak or _wb("mody").search(text):
+        _m10 = _m10 + _m10_weak
         if _wb("mody").search(text):
             _m10.append("mody")
         return _ret("Diabetes", "General", "10", "Diabetes - General", _m10)
@@ -365,15 +444,19 @@ def classify_topic(art, trace=False):
                            "pubertal suppression", "thelarche variant"))
 
     # 13. Growth
-    if has(text, "growth hormone", "growth disorder", "short stature", "idiopathic short",
-           "igf-1", "igf-i", "igf1", "growth velocity", "growth failure", "somatotropin",
-           "ghd", "sga", "prader-willi", "turner syndrome", "skeletal dysplasia",
-           "achondroplasia", "growth chart", "somavaratan", "lonapegsomatropin", "somatrogon"):
-        return _ret("Growth", None, "13", "Growth",
-                     _hits(text, "growth hormone", "growth disorder", "short stature", "idiopathic short",
-                           "igf-1", "igf-i", "igf1", "growth velocity", "growth failure", "somatotropin",
-                           "ghd", "sga", "prader-willi", "turner syndrome", "skeletal dysplasia",
-                           "achondroplasia", "growth chart", "somavaratan", "lonapegsomatropin", "somatrogon"))
+    # "ghd" was a bare substring and matched inside "tyGHDl" (the triglyceride-glucose-HDL
+    # index), filing a carotid atherosclerosis study under Growth. A plain word boundary is
+    # the wrong fix: "ighd"/"iighd" (isolated GH deficiency) are legitimate and would stop
+    # matching. Bound only the right-hand side — "ighd)" still matches, "tyghdl" does not.
+    _gr13_terms = ("growth hormone", "growth disorder", "short stature", "idiopathic short",
+                   "igf-1", "igf-i", "igf1", "growth velocity", "growth failure", "somatotropin",
+                   "sga", "prader-willi", "turner syndrome", "skeletal dysplasia",
+                   "achondroplasia", "growth chart", "somavaratan", "lonapegsomatropin", "somatrogon")
+    _m13 = _hits(text, *_gr13_terms)
+    if re.search(r'ghd(?![a-z])', text):
+        _m13.append("ghd")
+    if _m13:
+        return _ret("Growth", None, "13", "Growth", _m13)
 
     # 14. DSD
     if has(text, "disorder of sex development", "differences of sex development", "dsd",
@@ -461,31 +544,29 @@ def classify_topic(art, trace=False):
                      _hits(text, "hyponatremia", "hypernatremia", "desmopressin", "water balance",
                            "anti-diuretic hormone", "salt-wasting"))
 
-    # 22a. Calcium/Parathyroid (main) — mineral homeostasis / PTH axis.
-    # Checked before Bone so calcium/PTH/vitamin-D/rickets articles route here;
-    # skeletal-density articles fall through to Bone below.
-    if has(text, "parathyroid", "hypoparathyroidism", "hyperparathyroidism",
-           "hypocalcemia", "hypercalcemia", "calcium homeostasis", "serum calcium",
-           "vitamin d deficiency", "vitamin d", "nutritional rickets", "rickets",
-           "calcitriol", "pth ", "parathyroid hormone"):
-        return _ret("Calcium/Parathyroid", None, "22a", "Calcium/Parathyroid (main)",
-                     _hits(text, "parathyroid", "hypoparathyroidism", "hyperparathyroidism",
-                           "hypocalcemia", "hypercalcemia", "calcium homeostasis", "serum calcium",
-                           "vitamin d deficiency", "vitamin d", "nutritional rickets", "rickets",
-                           "calcitriol", "pth ", "parathyroid hormone"))
-
-    # 22b. Bone (main) — skeletal density / fragility / antiresorptives.
-    if has(text, "bone density", "osteoporosis", "osteopenia", "bone mineral",
-           "fracture risk", "fracture", "burosumab", "hypophosphatemia", "fgf23",
-           "denosumab", "bisphosphonate", "zoledronic acid", "pamidronate", "dxa",
-           "bone health", "bone mass", "osteogenesis imperfecta") or _wb("xlh").search(text):
-        _m22b = _hits(text, "bone density", "osteoporosis", "osteopenia", "bone mineral",
-                      "fracture risk", "fracture", "burosumab", "hypophosphatemia", "fgf23",
-                      "denosumab", "bisphosphonate", "zoledronic acid", "pamidronate", "dxa",
-                      "bone health", "bone mass", "osteogenesis imperfecta")
-        if not _m22b:
-            _m22b = ["xlh"]
-        return _ret("Bone/Calcium", None, "22b", "Bone (main)", _m22b)
+    # 22. Bone/Mineral (main) — the merged domain: PTH axis, calcium and phosphate
+    # homeostasis, vitamin D, and skeletal fragility. Formerly branches 22a and 22b.
+    # The strong/weak split from branch 10 is kept: bare "hypocalcemia"/"vitamin d" are
+    # ordinary words in endocrine writing and need the title-or-twice subject guard, or a
+    # bisphosphonate guideline listing hypocalcaemia as an adverse effect gets claimed on
+    # a side effect. "pth " once matched inside "in-dePTH ", so it is word-bounded.
+    _bm22_strong = ("parathyroid", "hypoparathyroidism", "hyperparathyroidism",
+                    "calcium homeostasis", "vitamin d deficiency", "nutritional rickets",
+                    "rickets", "calcitriol", "parathyroid hormone",
+                    "bone density", "osteoporosis", "osteopenia", "bone mineral",
+                    "fracture risk", "fracture", "burosumab", "hypophosphatemia", "fgf23",
+                    "denosumab", "bisphosphonate", "zoledronic acid", "pamidronate", "dxa",
+                    "bone health", "bone mass", "osteogenesis imperfecta")
+    _bm22_weak = ("hypocalcemia", "hypercalcemia", "serum calcium", "vitamin d")
+    _m22 = _hits(text, *_bm22_strong)
+    if _wb("pth").search(text):
+        _m22.append("pth")
+    if _wb("xlh").search(text):
+        _m22.append("xlh")
+    _m22 += [t for t in _bm22_weak if t in tl or text.count(t) >= 2]
+    if _m22:
+        return _ret("Bone/Mineral", bone_mineral_subtopic(tl, text), "22",
+                     "Bone/Mineral (main)", _m22)
 
     # 23. Obesity/Metabolic (main)
     if has(text, "obesity", "overweight", "metabolic syndrome", "nafld", "nash",
@@ -899,7 +980,7 @@ def board_relevant(impact, study_type, text):
 PRIMARY_TAG = {
     "Diabetes": "#Diabetes", "Growth": "#Growth", "Puberty": "#Puberty",
     "Pituitary": "#Pituitary", "Thyroid": "#Thyroid", "Adrenal": "#Adrenal",
-    "Bone/Calcium": "#BoneCalcium", "Calcium/Parathyroid": "#CalciumParathyroid",
+    "Bone/Mineral": "#BoneMineral",
     "Gender Medicine": "#GenderMedicine", "Obesity/Metabolic": "#Obesity", "PCOS": "#PCOS",
     "DSD": "#DSD", "Water/Electrolytes": "#WaterElectrolytes",
     "Hyperinsulinism": "#Hyperinsulinism", "Genetics": "#Genetics",
@@ -933,12 +1014,11 @@ SECONDARY = [
     ("#Obesity", ["cardiometabolic risk", "nonalcoholic fatty liver", "anti-obesity medication",
                   "childhood obesity", "pediatric obesity"],
                  ["obesity", "overweight", "insulin resistance", "metabolic syndrome"]),
-    ("#BoneCalcium", ["bone mineral density", "bone mass", "osteoporosis", "osteopenia",
+    ("#BoneMineral", ["bone mineral density", "bone mass", "osteoporosis", "osteopenia",
                       "bone loss", "fracture risk", "low bone mass", "bone density",
-                      "vertebral fracture"], []),
-    ("#CalciumParathyroid", ["hypoparathyroidism", "hyperparathyroidism", "hypocalcemia",
-                      "hypercalcemia", "parathyroid hormone", "vitamin d deficiency",
-                      "nutritional rickets"], []),
+                      "vertebral fracture", "hypoparathyroidism", "hyperparathyroidism",
+                      "hypocalcemia", "hypercalcemia", "parathyroid hormone",
+                      "vitamin d deficiency", "nutritional rickets"], []),
     ("#GenderMedicine", ["gender-affirming", "transgender", "gender dysphoria",
                       "gender incongruence", "gender-diverse"], []),
     ("#DSD", ["turner syndrome", "klinefelter syndrome", "disorder of sex development",

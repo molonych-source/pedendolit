@@ -122,6 +122,11 @@ def main():
                 "decided_by": "human",
                 "title": (item.get("title") or "")[:160],
             })
+            # Reviewer's free-text note from the review page. Only overwrite when this
+            # round supplied one, so clearing the box doesn't erase an earlier round's
+            # reasoning.
+            if dec.get("note"):
+                entry["note"] = dec["note"]
             ledger["decisions"][pmid] = entry
 
             if verdict == "correct":
@@ -205,6 +210,21 @@ def main():
             e = ledger["decisions"][pm]
             lines.append(f"- {pm} — {e.get('topic_at_review')} → {e.get('target_topic')} — "
                           f"{e.get('title','')}. **Why not fixed:** {e.get('residual_reason','')}")
+        lines.append("")
+
+    noted = {pm: e for pm, e in ledger["decisions"].items() if e.get("note")}
+    if noted:
+        lines.append(f"## Reviewer notes ({len(noted)})")
+        lines.append("Free-text reasoning captured on the review page. These are the calls "
+                      "where a topic dropdown alone did not carry the argument — read them "
+                      "before writing a general rule for the group they sit in.")
+        lines.append("")
+        for pm in sorted(noted):
+            e = noted[pm]
+            arrow = (f"{e.get('topic_at_review')} → {e.get('target_topic')}"
+                     if e.get("verdict") == "wrong" else f"kept as {e.get('topic_at_review')}")
+            lines.append(f"- **{pm}** ({arrow}) — {e.get('title','')[:90]}")
+            lines.append(f"  > {e['note']}")
         lines.append("")
 
     lines.append("## Next steps")

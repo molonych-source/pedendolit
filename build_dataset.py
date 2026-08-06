@@ -82,7 +82,10 @@ def apply_topic_overrides(store):
         text = ((a.get("title") or "") + " " + (a.get("abstract") or "")).lower()
         title_l = (a.get("title") or "").lower()
         a["topic"] = new_topic
-        a["subtopic"] = None
+        # Subtopic must be recomputed, not blanked: Bone/Mineral carries subdomains too,
+        # so blanking would strip them from every overridden article in that topic.
+        a["subtopic"] = (clf.bone_mineral_subtopic(title_l, text)
+                         if new_topic == "Bone/Mineral" else None)
         a["diabetes_subtype"] = clf.diabetes_subtype(text) if new_topic == "Diabetes" else None
         a["tags"] = clf.generate_tags(a, new_topic, a["subtopic"], a.get("study_type"),
                                        a.get("impact"), a.get("board_relevant"), text, title_l)

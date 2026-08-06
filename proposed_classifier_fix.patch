@@ -1,0 +1,131 @@
+--- classifier.py	2026-08-05 16:03:12
++++ /private/tmp/claude-501/-Users-christianmolony-Documents-Claude-Cowork-OS-1-0-01-Clinical-Research-Resources-PedEndoLit/c0ce6f51-9aeb-48ef-a8b2-44efb9f5648c/scratchpad/fixcand/classifier_candidate.py	2026-08-06 12:12:29
+@@ -145,14 +145,45 @@
+     "medulloblastoma survivor endocrine", "brain tumor survivor endocrine",
+     "tbi endocrine",
+ ]
++
++# Every classifier keyword is spelled American, so British and international spellings
++# are invisible to the whole waterfall — `hypercholesterolaemia` never matches
++# `hypercholesterolemia`, which is how an inclisiran trial for familial
++# hypercholesterolaemia (PMID 41616799) missed the Lipids pre-check entirely and fell
++# to the Genetics catch-all on the word "genetic". 113 store articles carry at least one
++# such term. A fixed substitution list, not a morphological rule: "our"->"or" would
++# maul "four" and "flour".
++_BRE_AME = (
++    ("hypoglycaemia", "hypoglycemia"), ("hyperglycaemia", "hyperglycemia"),
++    ("normoglycaemia", "normoglycemia"), ("glycaemic", "glycemic"),
++    ("hypercholesterolaemia", "hypercholesterolemia"), ("dyslipidaemia", "dyslipidemia"),
++    ("hypercalcaemia", "hypercalcemia"), ("hypocalcaemia", "hypocalcemia"),
++    ("hypophosphataemia", "hypophosphatemia"), ("hyperkalaemia", "hyperkalemia"),
++    ("hyponatraemia", "hyponatremia"), ("hyperandrogenaemia", "hyperandrogenemia"),
++    ("hyperinsulinaemia", "hyperinsulinemia"), ("ketoacidaemia", "ketoacidemia"),
++    ("anaemia", "anemia"), ("haemoglobin", "hemoglobin"), ("haematolog", "hematolog"),
++    ("oestrogen", "estrogen"), ("oestradiol", "estradiol"), ("oedema", "edema"),
++    ("paediatric", "pediatric"), ("gynaecomastia", "gynecomastia"),
++    ("tumour", "tumor"), ("goitre", "goiter"), ("coeliac", "celiac"),
++    ("foetal", "fetal"), ("behaviour", "behavior"), ("diarrhoea", "diarrhea"),
++)
++
++
++def _norm(s):
++    """Fold British/international spellings onto the American ones the keywords use."""
++    for bre, ame in _BRE_AME:
++        if bre in s:
++            s = s.replace(bre, ame)
++    return s
+ 
++
+ def classify_topic(art, trace=False):
+     """Returns (topic, subtopic), or (topic, subtopic, trace_info) when trace=True.
+     trace_info = {"branch": "10", "branch_label": "...", "matched": [...], "matched_in": "title|abstract|mixed|unknown"}.
+     subtopic only set for Diabetes."""
+     title = (art.get("title") or "")
+-    tl = title.lower()
+-    abl = (art.get("abstract") or "").lower()
++    tl = _norm(title.lower())
++    abl = _norm((art.get("abstract") or "").lower())
+     text = tl + " " + abl
+ 
+     def _ret(topic, subtopic, branch, label, matched):
+@@ -327,23 +358,38 @@
+                            "endocrine disorders", "endocrine dysfunction", "multiple endocrine"))
+ 
+     # 9. Diabetes — Technology
+-    if has(text, "cgm", "continuous glucose monitoring", "glucose monitoring", "insulin pump",
+-           "closed loop", "closed-loop", "artificial pancreas", "hybrid closed",
+-           "automated insulin delivery", "flash glucose", "libre", "dexcom", "tandem",
+-           "omnipod", "medtronic 780", "aid system", "diabetes technology", "time in range"):
+-        return _ret("Diabetes", "Technology", "9", "Diabetes - Technology",
+-                     _hits(text, "cgm", "continuous glucose monitoring", "glucose monitoring", "insulin pump",
+-                           "closed loop", "closed-loop", "artificial pancreas", "hybrid closed",
+-                           "automated insulin delivery", "flash glucose", "libre", "dexcom", "tandem",
+-                           "omnipod", "medtronic 780", "aid system", "diabetes technology", "time in range"))
++    # "tandem" was a bare substring intended to catch the Tandem Control-IQ / t:slim
++    # pumps, but "liquid chromatography-tandem mass spectrometry" is a routine assay
++    # method across adrenal, thyroid and vitamin D work — 15 store articles matched it
++    # that way. Require the product context instead. ("libre" and "aid system" were
++    # checked for the same collision and are clean: every occurrence is genuinely
++    # FreeStyle Libre / automated insulin delivery.)
++    _dm9_terms = ("cgm", "continuous glucose monitoring", "glucose monitoring", "insulin pump",
++                  "closed loop", "closed-loop", "artificial pancreas", "hybrid closed",
++                  "automated insulin delivery", "flash glucose", "libre", "dexcom",
++                  "tandem control-iq", "tandem t:slim", "tandem diabetes", "t:slim",
++                  "omnipod", "medtronic 780", "aid system", "diabetes technology", "time in range")
++    if has(text, *_dm9_terms):
++        return _ret("Diabetes", "Technology", "9", "Diabetes - Technology",
++                     _hits(text, *_dm9_terms))
+ 
+     # 10. Diabetes — General
+-    _dm10_terms = ("diabetes", "insulin", "hyperglycemia", "hypoglycemia", "dka",
+-                   "diabetic ketoacidosis", "hba1c", "glycemic", "type 1", "type 2",
+-                   "neonatal diabetes", "islet", "beta cell", "autoimmune diabetes",
+-                   "monogenic diabetes", "glucokinase")
+-    if has(text, *_dm10_terms) or _wb("mody").search(text):
+-        _m10 = _hits(text, *_dm10_terms)
++    # Split by strength of evidence. The strong terms name diabetes itself, so a single
++    # mention anywhere is enough. The weak ones are words that appear in plenty of
++    # non-diabetes endocrine writing ("insulin" in an obesity paper, "type 1" in
++    # "type 1 collagen", a passing "hypoglycemia" in a neonatal review), so they carry
++    # the same subject-guard branches 5c/6 already use: present in the TITLE, or
++    # repeated at least twice. This is the guard round 1 identified as missing and the
++    # cause 7 of 9 round-2 judges independently flagged.
++    _dm10_strong = ("diabetes", "dka", "diabetic ketoacidosis", "hba1c",
++                    "neonatal diabetes", "autoimmune diabetes", "monogenic diabetes",
++                    "glucokinase", "islet", "beta cell")
++    _dm10_weak = ("insulin", "hyperglycemia", "hypoglycemia", "glycemic", "type 1", "type 2")
++
++    _m10 = _hits(text, *_dm10_strong)
++    _m10_weak = [t for t in _dm10_weak if t in tl or text.count(t) >= 2]
++    if _m10 or _m10_weak or _wb("mody").search(text):
++        _m10 = _m10 + _m10_weak
+         if _wb("mody").search(text):
+             _m10.append("mody")
+         return _ret("Diabetes", "General", "10", "Diabetes - General", _m10)
+@@ -464,15 +510,18 @@
+     # 22a. Calcium/Parathyroid (main) — mineral homeostasis / PTH axis.
+     # Checked before Bone so calcium/PTH/vitamin-D/rickets articles route here;
+     # skeletal-density articles fall through to Bone below.
+-    if has(text, "parathyroid", "hypoparathyroidism", "hyperparathyroidism",
+-           "hypocalcemia", "hypercalcemia", "calcium homeostasis", "serum calcium",
+-           "vitamin d deficiency", "vitamin d", "nutritional rickets", "rickets",
+-           "calcitriol", "pth ", "parathyroid hormone"):
++    # Same strong/weak split as branch 10. A bisphosphonate guideline that lists
++    # hypocalcaemia among its adverse effects is a Bone/Calcium article, not a PTH-axis
++    # one — but bare "hypocalcemia"/"vitamin d" fired branch 22a first and took it.
++    _ca22_strong = ("parathyroid", "hypoparathyroidism", "hyperparathyroidism",
++                    "calcium homeostasis", "vitamin d deficiency", "nutritional rickets",
++                    "rickets", "calcitriol", "pth ", "parathyroid hormone")
++    _ca22_weak = ("hypocalcemia", "hypercalcemia", "serum calcium", "vitamin d")
++    _m22a = _hits(text, *_ca22_strong)
++    _m22a_weak = [t for t in _ca22_weak if t in tl or text.count(t) >= 2]
++    if _m22a or _m22a_weak:
+         return _ret("Calcium/Parathyroid", None, "22a", "Calcium/Parathyroid (main)",
+-                     _hits(text, "parathyroid", "hypoparathyroidism", "hyperparathyroidism",
+-                           "hypocalcemia", "hypercalcemia", "calcium homeostasis", "serum calcium",
+-                           "vitamin d deficiency", "vitamin d", "nutritional rickets", "rickets",
+-                           "calcitriol", "pth ", "parathyroid hormone"))
++                     _m22a + _m22a_weak)
+ 
+     # 22b. Bone (main) — skeletal density / fragility / antiresorptives.
+     if has(text, "bone density", "osteoporosis", "osteopenia", "bone mineral",

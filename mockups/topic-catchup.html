@@ -1,0 +1,181 @@
+<!doctype html><meta charset="utf-8">
+<title>Mockup 3 — Topic catch-up</title><style>
+:root{
+  --bg:#faf9f5; --surface:#ffffff; --ink:#1f1e1c; --muted:#6b6a64; --line:#e6e4dc; --soft:#f4f2ec;
+  --pa:#993c1d; --pa-bg:#faece7; --pa-dot:#d85a30;
+  --high:#0c447c; --high-bg:#e6f1fb; --high-dot:#378add;
+  --mod:#854f0b; --mod-bg:#faeeda; --mod-dot:#ba7517;
+  --low:#5f5e5a; --low-bg:#f1efe8; --low-dot:#888780;
+  --accent:#0f6e56; --accent-bg:#e1f5ee;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#1a1916; --surface:#26241f; --ink:#ece9e1; --muted:#a3a098; --line:#3a382f; --soft:#2c2a25;
+    --pa-bg:#3a1d12; --high-bg:#0c2438; --mod-bg:#3a2a10; --low-bg:#2c2a25;
+    --pa:#f0997b; --high:#85b7eb; --mod:#ef9f27; --low:#b4b2a9; --accent:#5dcaa5; --accent-bg:#0f3a30;}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.55;font-size:16px}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:28px 20px 90px}
+.note{background:var(--soft);border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:6px;padding:12px 14px;margin:0 0 26px;font-size:13.5px;color:var(--muted)}
+.note b{color:var(--ink)}
+
+    .wrap{max-width:900px}
+    header.c h1{font-size:24px;margin:0 0 4px}
+    header.c .dek{color:var(--muted);font-size:14px;margin:0 0 4px}
+    .floor{background:var(--mod-bg);border:1px solid var(--line);border-left:3px solid var(--mod);
+      border-radius:6px;padding:12px 14px;margin:20px 0 26px;font-size:13.5px}
+    .floor b{color:var(--mod)}
+    .ask{display:flex;gap:8px;align-items:center;flex-wrap:wrap;background:var(--surface);
+      border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin-bottom:8px;font-size:15px}
+    .ask select,.ask input{font:inherit;font-size:14px;padding:6px 9px;border-radius:6px;
+      border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+    .ask button{font:inherit;font-size:14px;padding:7px 16px;border-radius:6px;border:1px solid var(--accent);
+      background:var(--accent);color:#fff;cursor:pointer;font-weight:600}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin-top:26px}
+    .tile{text-align:left;background:var(--surface);border:1px solid var(--line);border-radius:10px;
+      padding:13px 14px;cursor:pointer;font:inherit;color:inherit;transition:border-color .12s}
+    .tile:hover{border-color:var(--accent)}
+    .tile.hot{border-left:3px solid var(--accent)}
+    .th{font-size:14.5px;font-weight:650;margin-bottom:3px}
+    .tn{font-size:12.5px;color:var(--muted);margin-bottom:7px}
+    .tn b{color:var(--accent);font-size:14px}
+    .q{opacity:.6}
+    .tt{float:right}
+    .tl{font-size:12.5px;color:var(--muted);line-height:1.4;border-top:1px solid var(--line);padding-top:7px}
+    .sec{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
+      font-weight:700;margin:30px 0 0}
+    </style>
+<div class="wrap">
+
+<div class="note"><b>Mockup — not the real site.</b> Built 2026-08-05 for the redesign
+brainstorm. Real articles, real counts, throwaway code. The point is the shape of the
+page, not the pixels. </div>
+
+<header class="c">
+  <h1>Catch me up</h1>
+  <p class="dek">Pick a topic and a date. The answer states what it can and cannot see.</p>
+</header>
+
+<div class="ask">
+  <span>What's new in</span>
+  <select><option>Diabetes</option><option>Thyroid</option><option>Growth</option>
+    <option>every topic</option></select>
+  <span>since</span>
+  <input type="date" value="2026-07-01">
+  <button>Show me</button>
+</div>
+
+<div class="floor"><b>Coverage floor.</b> Dense coverage begins <b>January 2026</b>.
+2025 holds about 118 articles and thins to 1–9 per month; 2018–2024 is essentially
+guidelines only. Ask for "since March 2025" and you will get an honest but thin answer,
+and this box will say so rather than letting three papers look like the whole story.</div>
+
+<div class="sec">Or browse by topic</div>
+<div class="grid">
+      <button class="tile hot">
+        <div class="th">Diabetes</div>
+        <div class="tn"><b>75</b> new
+          <span class="tt">720 total</span></div>
+        <div class="tl">[Abstract not available]</div>
+      </button>
+      <button class="tile hot">
+        <div class="th">Growth</div>
+        <div class="tn"><b>15</b> new
+          <span class="tt">134 total</span></div>
+        <div class="tl">The main aim of PWS clinical management in adulthood is prevention of obesity and its…</div>
+      </button>
+      <button class="tile hot">
+        <div class="th">Puberty</div>
+        <div class="tn"><b>10</b> new
+          <span class="tt">92 total</span></div>
+        <div class="tl">Before initiation of any medical therapy, expectations of treatment should be discussed with…</div>
+      </button>
+      <button class="tile hot">
+        <div class="th">General Endocrinology</div>
+        <div class="tn"><b>7</b> new
+          <span class="tt">84 total</span></div>
+        <div class="tl">[Abstract not available]</div>
+      </button>
+      <button class="tile hot">
+        <div class="th">Thyroid</div>
+        <div class="tn"><b>8</b> new
+          <span class="tt">83 total</span></div>
+        <div class="tl">It should be helpful in convincing health authorities of the benefits of neonatal screening…</div>
+      </button>
+      <button class="tile hot">
+        <div class="th">Adrenal</div>
+        <div class="tn"><b>5</b> new
+          <span class="tt">69 total</span></div>
+        <div class="tl">The recommendations suggest initiating assessment of adrenal function at diagnosis with ALD…</div>
+      </button>
+      <button class="tile hot">
+        <div class="th">Obesity/Metabolic</div>
+        <div class="tn"><b>4</b> new
+          <span class="tt">53 total</span></div>
+        <div class="tl">Considerations and challenges related to implementing the recommended interventions are…</div>
+      </button>
+      <button class="tile hot">
+        <div class="th">Bone/Calcium</div>
+        <div class="tn"><b>2</b> new
+          <span class="tt">30 total</span></div>
+        <div class="tl">The use of bisphosphonates in non-fragility conditions, such as fibrous dysplasia, avascular…</div>
+      </button>
+      <button class="tile hot">
+        <div class="th">PCOS</div>
+        <div class="tn"><b>1</b> new
+          <span class="tt">26 total</span></div>
+        <div class="tl">Suggested therapy includes personalised schemes according to the dominant PCOS phenotype, i.e.…</div>
+      </button>
+      <button class="tile hot">
+        <div class="th">Pituitary</div>
+        <div class="tn"><b>2</b> new
+          <span class="tt">25 total</span></div>
+        <div class="tl">Surgery should be performed in specialist centres. The collection of outcome data on novel…</div>
+      </button>
+      <button class="tile hot">
+        <div class="th">Calcium/Parathyroid</div>
+        <div class="tn"><b>3</b> new
+          <span class="tt">20 total</span></div>
+        <div class="tl">These recommendations are not meant to replace the current DRIs for vitamin D, nor do they…</div>
+      </button>
+      <button class="tile">
+        <div class="th">Genetics</div>
+        <div class="tn"><span class=q>nothing new</span>
+          <span class="tt">19 total</span></div>
+        <div class="tl">The National Endocrinology Committee of the Sociedad Argentina de Pediatría decided to prepare…</div>
+      </button>
+      <button class="tile hot">
+        <div class="th">Hyperinsulinism</div>
+        <div class="tn"><b>2</b> new
+          <span class="tt">17 total</span></div>
+        <div class="tl">Based on our extensive literature review and on the lack of consensus regarding use of…</div>
+      </button>
+      <button class="tile hot">
+        <div class="th">DSD</div>
+        <div class="tn"><b>2</b> new
+          <span class="tt">16 total</span></div>
+        <div class="tl">Patient Support Groups have a fundamental role in the support of families, as well as the…</div>
+      </button>
+      <button class="tile">
+        <div class="th">Gender Medicine</div>
+        <div class="tn"><span class=q>nothing new</span>
+          <span class="tt">9 total</span></div>
+        <div class="tl">The proposed care model is designed to enhance the mental and physical well-being of…</div>
+      </button>
+      <button class="tile">
+        <div class="th">Cancer Late Effects</div>
+        <div class="tn"><span class=q>nothing new</span>
+          <span class="tt">8 total</span></div>
+        <div class="tl">Radiation exposure to key endocrine organs (e.g., hypothalamus, pituitary, thyroid, and…</div>
+      </button>
+      <button class="tile">
+        <div class="th">Lipids</div>
+        <div class="tn"><span class=q>nothing new</span>
+          <span class="tt">1 total</span></div>
+        <div class="tl">Both atorvastatin and pitavastatin proved to be safe and effective. These results suggest a…</div>
+      </button></div>
+</div>

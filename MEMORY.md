@@ -27,7 +27,7 @@ journals, with the cross-journal sweep additionally covering 2024–2026.
 - **`merge_raw_sources.py`** — rebuilds `comprehensive_raw.json` from every raw file on disk, richest-value-wins, seeded from the current store (45 articles exist in no raw file). Zero network calls. Treats PubMed's literal `[Abstract not available]` string as empty rather than storing it as body text.
 - **Monthly guideline sweep** — the safety net for guidelines published *outside* the 19 monitored journals, in four scripts (full procedure + agent prompt in the runbook):
   - **`guideline_sweep.py`** — reuses `map_raw()` + `classify()`; drops PMIDs already in the store or already ruled on; writes `guideline_candidates.json`.
-  - **review agent** (Sonnet subagent, not a script) — judges each candidate against the 17-topic taxonomy on two gates (pediatric AND endocrine-as-subject); writes `guideline_verdicts.json` with a one-sentence reason each.
+  - **review agent** (Sonnet subagent, not a script) — judges each candidate against the 16-topic taxonomy on two gates (pediatric AND endocrine-as-subject); writes `guideline_verdicts.json` with a one-sentence reason each.
   - **`build_review_page.py`** — self-contained `guideline_review.html`: checkboxes, agent reasoning, MeSH evidence, three tiers (accept pre-ticked / borderline / reject collapsed but tickable). Submit downloads `approved_pmids.json`.
   - **`apply_approvals.py`** — turns that download into `guideline_approved_raw.json` and records every decision in `guideline_decisions.json` (so declined articles never resurface). Prints the merge commands; **never writes to the store itself**.
 - **Classifier QA sweep** — re-checks whether a PMID *already in the store* has the right topic (the guideline sweep only ever decides whether to add one). `classifier_qa_sample.py` (stratified sample + re-eligibility ledger `classifier_qa_decisions.json`) → Sonnet judge subagent (tri-state correct/defensible/wrong) → `build_classifier_qa_review.py` (topic dropdown per card) → `apply_classifier_qa.py` (ledger + `classifier_qa_report.md`, grouped by current→target with a title/abstract trigger-location signal via `classify_topic(art, trace=True)`). Never edits `classifier.py` or runs `--rebuild`. Full procedure in `CLASSIFIER_QA_RUNBOOK.md`.
@@ -44,8 +44,8 @@ journals, with the cross-journal sweep additionally covering 2024–2026.
 - `all_articles_export.csv` — Perplexity's ground-truth export (historical entry-date source; no longer drives month bucketing).
 
 ## Taxonomy state
-17 topics: Diabetes, Growth, Puberty, Thyroid, Adrenal, Obesity/Metabolic, General
-Endocrinology, Bone/Calcium, Pituitary, Hyperinsulinism, Genetics, Calcium/Parathyroid,
+16 topics: Diabetes, Growth, Puberty, Thyroid, Adrenal, Obesity/Metabolic, General
+Endocrinology, Bone/Mineral, Pituitary, Hyperinsulinism, Genetics,
 DSD, PCOS, Gender Medicine, Cancer Late Effects, Lipids.
 Diabetes subtypes: T1D, T1D·Stage, T2D, Technology(subtopic), MODY/Monogenic, CFRD,
 GDM, Steroid-induced, General.

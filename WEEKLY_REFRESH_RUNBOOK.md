@@ -110,11 +110,11 @@ Point it at `guideline_candidates.json` and require this output shape in
  "verdicts":{"<pmid>":{"verdict":"accept|borderline|reject",
                        "confidence":"high|medium|low",
                        "reason":"one sentence for a clinician",
-                       "topic":"one of the 17 topics, or null if rejected"}}}
+                       "topic":"one of the 16 topics, or null if rejected"}}}
 ```
 
 The prompt must contain:
-- the **17-topic taxonomy** as the definition of in-scope endocrinology (see `MEMORY.md`);
+- the **16-topic taxonomy** as the definition of in-scope endocrinology (see `MEMORY.md`);
 - **both gates, explicitly**: pediatric (or transition-age) AND endocrine/metabolic as the
   *subject*, not an incidental mention;
 - instruction to **reject** other specialties' guidelines that merely touch a hormone or

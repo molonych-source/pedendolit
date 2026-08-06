@@ -6,6 +6,202 @@ git history (33 commits to that date) and the dated sections formerly in `MEMORY
 
 ---
 
+### [2026-08-06] Bone/Mineral merge; review-panel spec written
+
+**Bone/Calcium + Calcium/Parathyroid merged into `Bone/Mineral`** with four subdomains.
+Rationale, evidence and rejected alternatives in `DECISIONS.md`; the 2026-05-29 split entry is
+now marked Superseded. Taxonomy is **16 topics**.
+
+Subtopics: **Skeletal Fragility 18 · Phosphate/FGF23 16 · PTH/Calcium 14 · Vitamin D/Rickets
+6** (54 articles). `Bone/Mineral` is the second topic after Diabetes to use `subtopic`, and the
+dashboard already renders that field generically, so no dashboard change was needed. Subtopic
+is scored, not first-match — a term in the title counts 2, anywhere counts 1 — because XLH
+mentions fractures and hypoparathyroidism is treated with calcitriol, so a waterfall would
+misfile both.
+
+Touched: `classifier.py` (branches 5a/5b → one pre-check, 22a/22b → one branch, new
+`bone_mineral_subtopic()`, merged tag maps), `build_dataset.py` (`apply_topic_overrides` now
+recomputes subtopic instead of blanking it — otherwise every overridden Bone/Mineral article
+would lose its subdomain), `suspicion_score.py` and `build_classifier_qa_review.py` (topic
+lists, MeSH map), the ledger (110 topic fields migrated old → new), and the taxonomy statements
+in `CLAUDE.md`, `MEMORY.md`, `CLASSIFIER_QA_RUNBOOK.md`, `WEEKLY_REFRESH_RUNBOOK.md`.
+
+**`check_classifier_regressions.py` gained a `TOPIC_RENAMES` map.** Without it the merge read
+as 50 unexplained regressions, and worse, six articles with *still-pending* fixes inside the
+merged topic looked like fresh breakage. A rename is not a reclassification; renames are now
+reported informationally. Add a row there in the same commit as any future topic rename.
+
+Final state: 50 renamed, 36 changed as predicted, **1 unexplained** (41513899, unchanged from
+before the merge).
+
+**Review-panel design spec written** (`REVIEW_PANEL_SPEC.md`, approved, not built). Three
+agents but **not** a 2/3 majority — majority voting discards the split, and the split is the
+signal worth having. Measured from round 2: Christian's concordance with the single judge was
+**98.1%**, and he overrode **0 of 287** `correct` calls versus **6 of 37** `defensible` ones.
+So the panel's job is detecting disagreement, not resolving it: three different clinical lenses
+(primary clinical question / indexer / reader), unanimity auto-applies, any split escalates.
+Spec includes a hard validation gate — replay over round 2's 418 labelled articles and require
+100% recall on his 8 overrides before auto-apply is enabled — plus override retirement and a 5%
+cap, since auto-applied decisions are data patches that mask classifier bugs if left to
+accumulate.
+
+### [2026-08-06] round 2 reviewed and applied; classifier patched; a 4th collision found
+
+Christian reviewed all 418 cards, agreeing with the judge on 410 and overriding 8. Applied,
+patched, rebuilt, regression-checked. **Not committed** — one item still needs his call, and
+committing would destroy the `git HEAD` baseline the check compares against.
+
+**Review outcome:** 292 correct, 126 topic changes. Worth noting for future rounds: **32 of
+the 126 came from cards the judge marked `defensible`, not `wrong`** — the dropdown is pre-set
+to the judge's alternative, so leaving a defensible card untouched *accepts* the change. He
+reverted 6 explicitly, so he did work the group, but the affordance is a trap.
+
+**Comment box added** (his request, same session). `build_classifier_qa_review.py` now renders
+a per-card note field; `apply_classifier_qa.py` stores it on the ledger entry (merge-only, so
+clearing the box never erases an earlier round's reasoning) and prints a "Reviewer notes"
+section in `classifier_qa_report.md`. Tested end to end; the test note was removed from the
+ledger afterwards. This exists precisely for the `defensible` case above, where a dropdown
+cannot distinguish "arguable, leave it" from "yes, move it."
+
+**Patch applied and verified.** Re-measured against Christian's actual decisions before
+applying: 17 fixed, **0 regressions** — unchanged from the judge-scored run. Net effect vs. the
+published site: **40 topic changes, 1406 articles in and 1406 out, none lost.**
+
+**A fourth substring collision, found mid-flight.** The regression check's unexplained list
+included a carotid-atherosclerosis study that had become Growth. Cause: bare `"ghd"` matches
+inside **`tyGHDl`** (the triglyceride-glucose–HDL index). Same class as `tandem`. The fix is
+*not* a plain word boundary — `ighd`/`iighd` (isolated GH deficiency) are legitimate and would
+stop matching — so `ghd` is bounded on the right only: `ghd(?![a-z])`. Verified both ways.
+An audit of every other bare abbreviation also caught `"pth "` matching inside `in-dePTH `
+(latent — earlier branches happened to claim those two articles first); now word-bounded.
+
+**A branch-13 guard was measured and rejected.** Extending the title-or-≥2× guard to
+`growth hormone`/`igf-1` moved 7 more articles for 1 fix and 1 regression, and pushed a
+stress-and-bone-health paper to Adrenal. Not applied.
+
+**Open:** PMID 41513899 ("Endocrine regulation of the hepatic fasting response") is classified
+Growth on a single abstract mention of "growth hormone". It is a hepatic fuel-metabolism
+review; Growth is wrong. Deliberately **not blessed** — blessing would record it as correct and
+stop the sampler re-examining it. The general fix is the rejected branch-13 guard above, so it
+needs a human call: accept as a residual with a stated target, or leave failing. 19 other
+unexplained movers were blessed individually with reasons; 3 partials were recorded as accepted
+residuals so they land on Christian's chosen topics via `apply_topic_overrides()`.
+
+### [2026-08-06] root-caused the Diabetes over-firing; found two more classifier bugs
+
+Follow-on to the round 2 sweep below. Traced all 94 `wrong` verdicts back through
+`classify_topic(trace=True)` to the branch and literal that produced each one. Result is a
+measured patch, **`proposed_classifier_fix.patch`, written up in `CLASSIFIER_FIX_PROPOSAL.md`
+and deliberately not applied** — `classifier.py` is untouched, per the standing "reviewed,
+never auto-merged" decision and the runbook's order (review → apply → root-cause → rebuild).
+
+Three distinct bugs, one patch:
+
+1. **`tandem` matched tandem mass spectrometry.** Branch 9 matched the bare substring, meaning
+   the Tandem Control-IQ pump. **10 articles were labeled Diabetes purely because their methods
+   said "liquid chromatography–tandem mass spectrometry"** — newborn screening for 21OHD,
+   maternal vitamin D profiling, thyroid hormones in autism. Checked `libre` and `aid system`
+   for the same collision; both clean.
+2. **No subject guard on generic terms** — round 1's bug class, unfixed in general form, and
+   what 7 of 9 judges flagged. Branch 10 fired on `insulin` / `type 1` / `type 2` /
+   `hypoglycemia` anywhere in the text; 26 of the 31 wrong-Diabetes articles were triggered by
+   abstract-only mentions, 11 by `insulin` alone. Fixed by splitting each branch's keywords
+   into strong (fire on one mention) and weak (need the title-or-≥2× guard branches 5c/6
+   already use). Applied to branch 10 and branch 22a (Calcium/Parathyroid, same over-firing on
+   `vitamin d` / `hypocalcemia`).
+3. **The classifier only reads American spellings.** Every keyword is spelled American, so
+   `hypercholesterolaemia` never matches `hypercholesterolemia`. Found because the ORION-16
+   inclisiran trial in *familial hypercholesterolaemia* missed the Lipids pre-check entirely
+   and fell 23 branches to Genetics on the word "genetic". **113 store articles carry a term
+   the classifier cannot see** (57 `paediatric`, 29 `glycaemic`, 18 `hypoglycaemia`, 12
+   `tumour`). Mostly latent today, but the monitored list includes *Lancet*, *Lancet Diabetes
+   & Endocrinology* and *Archives of Disease in Childhood*, so the 2015 backfill would make it
+   bite hard. Fixed with a 28-entry British→American fold before matching — a fixed list, not
+   a morphological rule, since `our → or` would maul "four" and "flour".
+
+Measured against all 1,406 articles and scored against the judges: **40 articles move, 17 land
+exactly where the judge said, 0 regressions, 0 landing in the catch-all.** Resolves 18% of the
+94 wrong verdicts. Fixing bug 3 alone caused one regression (a bisphosphonate guideline sliding
+Bone/Calcium → Calcium/Parathyroid on a newly-visible "hypocalcaemia"); adding the 22a guard
+removed it and fixed three more. Harness kept at `scratchpad/fixcand/measure.py` so the numbers
+can be re-derived if the review changes verdicts.
+
+### [2026-08-06] classifier QA round 2, suspicion scoring, a date audit, and redesign prep
+
+Overnight unattended session. Christian asked for work that wouldn't need his input for a
+while; everything below stops at the point where a human decision is required. **Nothing was
+committed** (`check_classifier_regressions.py` needs `git HEAD` as its baseline) and nothing
+was published.
+
+**Classifier QA round 2 — 418 articles judged, awaiting review.** Sampled with `--seed 2026`,
+stratified across all 17 topics, plus 150 forced PMIDs: the whole `General Endocrinology`
+catch-all (84, exhaustive), 33 DSD enzyme/keyword candidates found by grep, 33 F2
+suspicion-scored Diabetes articles, and the known GnRH item. Nine Sonnet judges ran in
+parallel; verdicts were merged and validated **globally** rather than per-batch (a dead agent
+would otherwise have produced a review page silently covering fewer articles than it claimed).
+All assertions passed: 418 sampled, 418 judged, no drift, no dupes.
+
+Verdicts: **287 correct, 37 defensible, 94 wrong.** The 22.5% raw rate is not the store's error
+rate — the sample was deliberately enriched, and the stratified draw over-weights small topics
+(Diabetes is 51% of the store but ~7% of the random slice). Corrected by computing a per-topic
+rate and weighting by each topic's share of the 1,406 — using a **census** for the ten topics
+sampled exhaustively and the random slice for the seven that were subsampled:
+
+**Topic-weighted store estimate: 11.5% wrong, ≈161 of 1,406 articles.** Full store coverage.
+
+Worst topics: `Genetics` 36.8%, `General Endocrinology` 34.5% (census, so this is exact),
+`Calcium/Parathyroid` 25.0%, `Gender Medicine` 22.2%. Clean: `Growth`, `Hyperinsulinism`,
+`Lipids` at 0%. Diabetes, at half the store, sits at 11.1% — but on n=18, so it's the loosest
+number in the table and the one most worth tightening next round.
+
+Seeding-strategy precision, each against the right baseline:
+
+| Strategy | n | wrong | baseline | lift |
+|---|---|---|---|---|
+| F2 suspicion score (Diabetes) | 33 | **81.8%** | 11.1% random Diabetes (n=18) | **7.4×** |
+| DSD keyword grep (non-DSD targets only) | 18 | **44.4%** | 11.5% store | 3.9× |
+| General Endocrinology (census, not a strategy) | 84 | 34.5% | — | — |
+
+The DSD grep returned 33 hits, but 15 were already correctly labeled DSD and were never
+targets; it left 14 of those 15 alone, so 44.4% over the 18 real targets is its hit rate.
+
+Dominant flows: `Diabetes → Obesity/Metabolic` (9), `General Endocrinology → Diabetes` (7),
+`General Endocrinology → Obesity/Metabolic` (7), `General Endocrinology → Pituitary` (5).
+Seven of nine judges independently flagged the same pattern: the Diabetes branch fires on
+incidental insulin/hyperglycemia mentions. That is round 1's bug class, unfixed in general
+form. The known GnRH consensus (31319416) was confirmed `wrong → Puberty`.
+`classifier_qa_review.html` is built and ready; round 1's artifacts preserved as `*.round1.*`.
+
+**F2 suspicion scoring built and measured** (`suspicion_score.py`, read-only). Scores every
+article on signals `classify_topic(trace=True)` already exposes plus NLM MeSH disagreement.
+Round 2 doubled as its first evaluation because the sample kept seeded and random portions
+separable: **81.8% precision against the 11.1% random-Diabetes baseline, a 7.4× lift.** The
+baseline rests on only 18 randomly-sampled Diabetes articles, so treat the multiplier as
+approximate; the direction is not in doubt. It also behaves correctly on history — round 1's
+seven code-fixed PMIDs now score low (~rank 600/1406) while the two that could only be patched
+per-PMID still rank 65 and 113.
+
+**`pub_date` is wrong for 24.5% of the store** (`audit_pub_dates.py`, new; full list in
+`pub_date_audit.md`). Found while building the redesign mockups, verified against PubMed for
+all 1,406 articles. 165 dates are **fabricated** — the journal issue supplies year-month only,
+so the day is taken from `ArticleDate` and glued on, producing a date in neither source
+(`2026-01-31` where PubMed has article date `2025-07-31`, issue `2026-01`). 110 aren't
+sortable (`2018-Oct`, bare `2018`). 69 are issue-dated, showing 2024 papers as 2026. This
+field is what catch-up mode (item C) filters on, so it plausibly outranks B in the roadmap.
+For whoever fixes it: `ArticleDate` is missing for **289 of 1,406 (20.6%)**, and
+`JournalIssue/PubDate` is present for all 1,406 but is **not a full date in 52.6%** of them.
+So the fix needs a stated fallback order and a rule for partial dates, not just a choice
+between two fields.
+
+**Redesign prep** (`REDESIGN_BRIEF.md` + three prototypes in `mockups/`). Per the agreed
+process, B starts with brainstorming, so these are inputs to react to, not a design: The
+Brief (editorial issue), Triage queue (inbox), Topic catch-up (topic grid + coverage floor).
+Building them surfaced two more constraints beyond the date bug: **June–July 2026 held 1
+Practice-Altering and 11 High articles total**, so a weekly editorial brief has no weekly lead
+story to run; and **14% of `clinical_bottom_line` values are extractive**, the abstract's
+opening words rather than a takeaway, which matters because all three directions promote that
+field to the headline slot.
+
 ### [2026-08-05] regression check, and NCBI is reachable after all
 
 Started a website-redesign conversation; it turned up two things worth more than the

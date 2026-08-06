@@ -1,0 +1,196 @@
+<!doctype html><meta charset="utf-8">
+<title>Mockup 1 — The Brief</title><style>
+:root{
+  --bg:#faf9f5; --surface:#ffffff; --ink:#1f1e1c; --muted:#6b6a64; --line:#e6e4dc; --soft:#f4f2ec;
+  --pa:#993c1d; --pa-bg:#faece7; --pa-dot:#d85a30;
+  --high:#0c447c; --high-bg:#e6f1fb; --high-dot:#378add;
+  --mod:#854f0b; --mod-bg:#faeeda; --mod-dot:#ba7517;
+  --low:#5f5e5a; --low-bg:#f1efe8; --low-dot:#888780;
+  --accent:#0f6e56; --accent-bg:#e1f5ee;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#1a1916; --surface:#26241f; --ink:#ece9e1; --muted:#a3a098; --line:#3a382f; --soft:#2c2a25;
+    --pa-bg:#3a1d12; --high-bg:#0c2438; --mod-bg:#3a2a10; --low-bg:#2c2a25;
+    --pa:#f0997b; --high:#85b7eb; --mod:#ef9f27; --low:#b4b2a9; --accent:#5dcaa5; --accent-bg:#0f3a30;}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.55;font-size:16px}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:28px 20px 90px}
+.note{background:var(--soft);border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:6px;padding:12px 14px;margin:0 0 26px;font-size:13.5px;color:var(--muted)}
+.note b{color:var(--ink)}
+
+    header.issue{border-bottom:2px solid var(--ink);padding-bottom:14px;margin-bottom:8px}
+    .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700}
+    header.issue h1{font-size:34px;line-height:1.12;margin:6px 0 6px;letter-spacing:-.02em}
+    header.issue .dek{color:var(--muted);font-size:15px;margin:0}
+    .standfirst{font-size:18px;line-height:1.5;margin:22px 0 30px;padding-left:14px;
+      border-left:3px solid var(--accent)}
+    .sec{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
+      font-weight:700;margin:34px 0 4px;border-top:1px solid var(--line);padding-top:14px}
+    article.lead{display:grid;grid-template-columns:34px 1fr;gap:14px;padding:20px 0;
+      border-bottom:1px solid var(--line)}
+    .num{font-size:26px;font-weight:700;color:var(--line);line-height:1;padding-top:4px}
+    .kicker{font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;
+      letter-spacing:.06em;display:flex;align-items:center;gap:7px}
+    .dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+    article.lead h2{font-size:20px;line-height:1.32;margin:7px 0 9px;letter-spacing:-.01em}
+    .bl{margin:0 0 9px;font-size:15.5px;color:var(--ink)}
+    .meta{font-size:12.5px;color:var(--muted)}
+    .row{display:grid;grid-template-columns:9px 1fr;gap:12px;padding:13px 0;
+      border-bottom:1px solid var(--line);align-items:start}
+    .rdot{width:8px;height:8px;border-radius:50%;margin-top:7px}
+    .rt{font-size:15px;font-weight:600;line-height:1.35}
+    .rb{font-size:13.5px;color:var(--muted);margin:3px 0 3px}
+    .archive{margin-top:40px;background:var(--soft);border:1px solid var(--line);
+      border-radius:8px;padding:16px 18px}
+    .archive h3{margin:0 0 8px;font-size:14px}
+    .archive ul{margin:0;padding-left:18px;font-size:14px;color:var(--muted)}
+    .searchlink{margin-top:26px;font-size:14px;color:var(--muted);text-align:center}
+    </style>
+<div class="wrap">
+
+<div class="note"><b>Mockup — not the real site.</b> Built 2026-08-05 for the redesign
+brainstorm. Real articles, real counts, throwaway code. The point is the shape of the
+page, not the pixels. Dates shown are the stored ones, which the audit found are wrong for ~24% of articles.</div>
+
+<header class="issue">
+  <div class="eyebrow">PedsEndoBrief · Issue 31</div>
+  <h1>What changed in pediatric endocrinology this week</h1>
+  <p class="dek">Week of August 4, 2026 · 5 things worth your time · about 4 minutes</p>
+</header>
+
+<p class="standfirst">The page has an opinion: a few items lead, a few more are worth a glance,
+and everything else stays in the archive unless you go looking. Nobody constructs a query
+to find out what happened this week.</p>
+
+<div class="note" style="border-left-color:var(--mod)"><b>What this mockup exposed.</b>
+Across all of June–July 2026 the store holds <b>1</b> Practice-Altering and <b>11</b> High
+articles. There is no week with five must-reads in it. Either the brief runs monthly, or it
+leads with Moderate too, or it says "quiet week" out loud — but the editorial format promises
+a volume of important news the specialty does not actually generate.</div>
+
+<div class="sec">Lead — read these</div>
+
+        <article class="lead">
+          <div class="num">1</div>
+          <div>
+            <div class="kicker"><span class="dot" style="background:var(--pa-dot)"></span>
+              Adrenal · Guideline/Consensus</div>
+            <h2>[Clinical practice guidelines &quot;Congenital adrenal hyperplasia in children&quot; with comments].</h2>
+            <p class="bl">The guidelines are based on systematic reviews, meta-analyses, original articles, and scientific studies on this pathology conducted in the Russian Federation and other countries. This article provides updated author comments and clarifications on the most critical aspects of…</p>
+            <div class="meta">Probl Endokrinol (Mosk) · 2026-07-22
+              · <a href="https://pubmed.ncbi.nlm.nih.gov/42545327/">PubMed</a></div>
+          </div>
+        </article>
+        <article class="lead">
+          <div class="num">2</div>
+          <div>
+            <div class="kicker"><span class="dot" style="background:var(--pa-dot)"></span>
+              Growth · Meta-analysis</div>
+            <h2>Achondroplasia management in the era of targeted therapies: a meta-analysis of C-type natriuretic peptide analogs.</h2>
+            <p class="bl">C-type natriuretic peptide analogs provide slight but statistically meaningful improvements in linear growth in children with achondroplasia with acceptable short-term safety profile. Long-term studies are needed to define optimal timing of therapy on adult height, functional…</p>
+            <div class="meta">J Endocr Soc · 2026-06-16
+              · <a href="https://pubmed.ncbi.nlm.nih.gov/42306228/">PubMed</a></div>
+          </div>
+        </article>
+        <article class="lead">
+          <div class="num">3</div>
+          <div>
+            <div class="kicker"><span class="dot" style="background:var(--pa-dot)"></span>
+              Diabetes · RCT</div>
+            <h2>Canagliflozin attenuates CMR-quantified myocardial fibrosis in individuals with type 2 diabetes mellitus at high cardiovascular risk: a randomised open-label controlled trial.</h2>
+            <p class="bl">Both groups showed comparable reductions in HbA(both Δ 0.7%, inter-group p=0.972). This study demonstrates that 26 weeks of canagliflozin significantly reduces myocardial fibrosis, as assessed by CMR-derived ECV, in individuals with type 2 diabetes at high cardiovascular risk,…</p>
+            <div class="meta">Diabetologia · 2026-06-24
+              · <a href="https://pubmed.ncbi.nlm.nih.gov/41735586/">PubMed</a></div>
+          </div>
+        </article>
+        <article class="lead">
+          <div class="num">4</div>
+          <div>
+            <div class="kicker"><span class="dot" style="background:var(--pa-dot)"></span>
+              Diabetes · Meta-analysis</div>
+            <h2>Automated Insulin Delivery Systems in Hospitals: A Systematic Review with Meta-Analysis.</h2>
+            <p class="bl">The primary outcome was time in range (TIR) 5.6-10.0 mmol/L (100-180 mg/dL). The reporting follows the PRISMA 2020 guidelines, and the protocol was registered with</p>
+            <div class="meta">Diabetes Technol Ther · 2026-06-24
+              · <a href="https://pubmed.ncbi.nlm.nih.gov/42338280/">PubMed</a></div>
+          </div>
+        </article>
+        <article class="lead">
+          <div class="num">5</div>
+          <div>
+            <div class="kicker"><span class="dot" style="background:var(--pa-dot)"></span>
+              Diabetes · Meta-analysis</div>
+            <h2>Fluid regimens for diabetic ketoacidosis in children and adolescents: systematic review and meta-analysis.</h2>
+            <p class="bl">However, the optimal fluid type, volume, and tonicity remain unclear due to concerns regarding cerebral injury and electrolyte imbalances. We searched PubMed, CINAHL, Cochrane, Scopus,</p>
+            <div class="meta">J Endocr Soc · 2026-07-13
+              · <a href="https://pubmed.ncbi.nlm.nih.gov/42459871/">PubMed</a></div>
+          </div>
+        </article>
+
+<div class="sec">Also worth knowing</div>
+
+        <div class="row">
+          <div class="rdot" style="background:var(--high-dot)"></div>
+          <div>
+            <div class="rt">The role of hormonal markers in predicting reproductive lifespan in girls with Turner syndrome-a retrospective study.</div>
+            <div class="rb">AMH and FSH patterns contribute to understanding ovarian reserve at an early age in girls with TS. Creating a prediction model remained challenging…</div>
+            <div class="meta">Growth · J Endocr Soc</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="rdot" style="background:var(--high-dot)"></div>
+          <div>
+            <div class="rt">MASLD as Complication of Diabetes.</div>
+            <div class="rb">Furthermore, the heterogeneity in the pathophysiology of MASLD and clusters in MASLD that may be relevant for future stratification of…</div>
+            <div class="meta">Diabetes · Diabetes</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="rdot" style="background:var(--high-dot)"></div>
+          <div>
+            <div class="rt">Development and validation of a trans-ancestry polygenic risk score for type 1 diabetes.</div>
+            <div class="rb">We developed a trans-ancestry PRS that outperformed the European-based GRS2x. Importantly, TA-PS provides a comparable prediction in various…</div>
+            <div class="meta">Diabetes · Diabetologia</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="rdot" style="background:var(--high-dot)"></div>
+          <div>
+            <div class="rt">Data Privacy, Ownership, and Secondary Use of Clinical Data Generated by Continuous Glucose Monitors and Mobile Health Applications: A Review.</div>
+            <div class="rb">Emerging approaches, including the European Health Data Space, federated learning, and differential privacy, may help balance data utility with…</div>
+            <div class="meta">Diabetes · J Diabetes Sci Technol</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="rdot" style="background:var(--high-dot)"></div>
+          <div>
+            <div class="rt">The Potential of Composite Pig Islets-Kidney Xenotransplantation to Cure Diabetes and Renal Failure: A Suggested Modified Approach.</div>
+            <div class="rb">The implantation of neonatal pig islets under the kidney capsule of an identical cloned piglet and subsequent transplantation into a human patient…</div>
+            <div class="meta">Diabetes · Diabetes</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="rdot" style="background:var(--high-dot)"></div>
+          <div>
+            <div class="rt">Prevalence of diabetes mellitus in long-term cancer survivors treated with craniospinal irradiation.</div>
+            <div class="rb">CAYA brain tumor survivors exposed to craniospinal radiotherapy have an elevated risk of dysglycemia compared to other survivor cohorts. These…</div>
+            <div class="meta">Diabetes · J Endocr Soc</div>
+          </div>
+        </div>
+
+<div class="archive">
+  <h3>Earlier issues</h3>
+  <ul>
+    <li>Issue 30 — week of July 28 · 4 lead items</li>
+    <li>Issue 29 — week of July 21 · 6 lead items</li>
+    <li>Issue 28 — week of July 14 · 3 lead items</li>
+  </ul>
+</div>
+
+<p class="searchlink">Looking for something specific?
+<a href="#">Search all 1,406 articles →</a></p>
+</div>

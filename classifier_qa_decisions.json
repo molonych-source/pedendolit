@@ -112,12 +112,12 @@
    "title": "14. Children and Adolescents: Standards of Care in Diabetes-2026."
   },
   "37454648": {
-   "topic_at_review": "Diabetes",
-   "verdict": "wrong",
+   "topic_at_review": "Hyperinsulinism",
+   "verdict": "correct",
    "target_topic": "Hyperinsulinism",
-   "agent_verdict": "wrong",
+   "agent_verdict": "correct",
    "confidence": "high",
-   "decided_on": "2026-08-05",
+   "decided_on": "2026-08-06",
    "decided_by": "human",
    "title": "International Guidelines for the Diagnosis and Management of Hyperinsulinism."
   },
@@ -172,12 +172,12 @@
    "title": "[Automated insulin delivery (AID) systems, physical activity and sports in type 1 diabetes mellitus: joint guidelines of the DDG and \u00d6DG]."
   },
   "40555215": {
-   "topic_at_review": "Diabetes",
-   "verdict": "wrong",
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
    "target_topic": "General Endocrinology",
-   "agent_verdict": "wrong",
+   "agent_verdict": "correct",
    "confidence": "high",
-   "decided_on": "2026-08-05",
+   "decided_on": "2026-08-06",
    "decided_by": "human",
    "title": "International Consensus Guideline on the Diagnosis and Management of Endocrine Complications of \u03b2 and \u03b1 Thalassemia in Children and Adolescents."
   },
@@ -197,7 +197,7 @@
    "target_topic": "Diabetes",
    "agent_verdict": "correct",
    "confidence": "high",
-   "decided_on": "2026-08-05",
+   "decided_on": "2026-08-06",
    "decided_by": "human",
    "title": "Continuous ketone monitoring for people with diabetes: international expert recommendations on the application of a new technology."
   },
@@ -212,12 +212,12 @@
    "title": "Screening for Prediabetes and Type 2 Diabetes in Children and Adolescents: US Preventive Services Task Force Recommendation Statement."
   },
   "38828931": {
-   "topic_at_review": "Diabetes",
-   "verdict": "wrong",
-   "target_topic": "Calcium/Parathyroid",
-   "agent_verdict": "wrong",
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
    "confidence": "high",
-   "decided_on": "2026-08-05",
+   "decided_on": "2026-08-06",
    "decided_by": "human",
    "title": "Vitamin D for the Prevention of Disease: An Endocrine Society Clinical Practice Guideline.",
    "residual_accepted": true,
@@ -628,12 +628,12 @@
    "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Stages of type 1 diabetes in children and adolescents."
   },
   "32810255": {
-   "topic_at_review": "Diabetes",
-   "verdict": "wrong",
+   "topic_at_review": "Hyperinsulinism",
+   "verdict": "correct",
    "target_topic": "Hyperinsulinism",
-   "agent_verdict": "wrong",
+   "agent_verdict": "correct",
    "confidence": "high",
-   "decided_on": "2026-08-05",
+   "decided_on": "2026-08-06",
    "decided_by": "human",
    "title": "Management and Appropriate Use of Diazoxide in Infants and Children with Hyperinsulinism."
   },
@@ -643,7 +643,7 @@
    "target_topic": "Diabetes",
    "agent_verdict": "correct",
    "confidence": "high",
-   "decided_on": "2026-08-05",
+   "decided_on": "2026-08-06",
    "decided_by": "human",
    "title": "13. Children and Adolescents:."
   },
@@ -668,14 +668,4318 @@
    "title": "Diazoxide Choline Extended-Release Tablets in Prader-Willi Syndrome: A Randomized, Double-Blind, Withdrawal Period Study."
   },
   "40987949": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Framework for the comprehensive screening for endocrine disorders in patients with transfusion-dependent thalassemia in low-resource settings."
+  },
+  "28216084": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Vitamin D supplementation guidelines."
+  },
+  "28627221": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Retraction."
+  },
+  "29504223": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Consensus guidelines on the use of bisphosphonate therapy in children and adolescents."
+  },
+  "29982476": {
+   "topic_at_review": "Cancer Late Effects",
+   "verdict": "correct",
+   "target_topic": "Cancer Late Effects",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Hypothalamic-Pituitary and Growth Disorders in Survivors of Childhood Cancer: An Endocrine Society Clinical Practice Guideline."
+  },
+  "30033107": {
+   "topic_at_review": "DSD",
+   "verdict": "correct",
+   "target_topic": "DSD",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "[Management guidelines for disorders / different sex development (DSD)]."
+  },
+  "30079595": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Diabetes",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Microvascular and macrovascular complications in children and adolescents."
+  },
+  "30097365": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "ESPGHAN/ESPEN/ESPR/CSPEN guidelines on pediatric parenteral nutrition: Calcium, phosphorus and magnesium."
+  },
+  "30209800": {
+   "topic_at_review": "PCOS",
+   "verdict": "correct",
+   "target_topic": "PCOS",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The polycystic ovary syndrome: a position statement from the Polish Society of Endocrinology, the Polish Society of Gynaecologists and Obstetricians, and the Po"
+  },
+  "30276975": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Diabetes",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "ISPAD Clinical Practice Consensus Guidelines 2018: Limited Care Guidance Appendix."
+  },
+  "30289543": {
+   "topic_at_review": "Adrenal",
+   "verdict": "correct",
+   "target_topic": "Adrenal",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Adrenoleukodystrophy: Guidance for Adrenal Surveillance in Males Identified by Newborn Screen."
+  },
+  "31319416": {
+   "topic_at_review": "Gender Medicine",
+   "verdict": "wrong",
+   "target_topic": "Puberty",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Use of Gonadotropin-Releasing Hormone Analogs in Children: Update by an International Consortium."
+  },
+  "32052993": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "correct",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Summary of the clinical practice guideline for multicomponent behavioral treatment of obesity and overweight in children and adolescents."
+  },
+  "32614332": {
    "topic_at_review": "Puberty",
+   "verdict": "correct",
+   "target_topic": "Puberty",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Puberty blockade: Clinical guideline for the diagnosis and treatment of precocious puberty."
+  },
+  "32653624": {
+   "topic_at_review": "Adrenal",
+   "verdict": "wrong",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Bone Health Management After Hematopoietic Cell Transplantation: An Expert Panel Opinion from the American Society for Transplantation and Cellular Therapy."
+  },
+  "32921532": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Guidelines for the management of children at risk of secondary bone fragility: Expert opinion of a French working group."
+  },
+  "32959490": {
+   "topic_at_review": "Genetics",
+   "verdict": "wrong",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "European academy of andrology guidelines on Klinefelter Syndrome Endorsing Organization: European Society of Endocrinology."
+  },
+  "34927274": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Primary hyperparathyroidism in adults-(Part II) surgical management and postoperative follow-up: Position statement of the Endocrine Society of Australia, The A"
+  },
+  "35353710": {
+   "topic_at_review": "Puberty",
+   "verdict": "correct",
+   "target_topic": "Puberty",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Pubertal induction and transition to adult sex hormone replacement in patients with congenital pituitary or gonadal reproductive hormone deficiency: an Endo-ERN"
+  },
+  "35614553": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Optimizing the menopause transition: Joint position statement by the British Menopause Society, Royal College of Obstetricians and Gynaecologists and Society fo"
+  },
+  "36228315": {
+   "topic_at_review": "Thyroid",
+   "verdict": "correct",
+   "target_topic": "Thyroid",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "2022 European Thyroid Association Guidelines for the management of pediatric thyroid nodules and differentiated thyroid carcinoma."
+  },
+  "36622115": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "correct",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Clinical Practice Guideline for the Evaluation and Treatment of Children and Adolescents With Obesity."
+  },
+  "37179471": {
+   "topic_at_review": "Gender Medicine",
+   "verdict": "correct",
+   "target_topic": "Gender Medicine",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Adolescent Health Academy Statement on the Care of Transgender Children, Adolescents, and Youth."
+  },
+  "37580861": {
+   "topic_at_review": "PCOS",
+   "verdict": "correct",
+   "target_topic": "PCOS",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Recommendations from the 2023 international evidence-based guideline for the assessment and management of polycystic ovary syndrome."
+  },
+  "37589624": {
+   "topic_at_review": "PCOS",
+   "verdict": "correct",
+   "target_topic": "PCOS",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Recommendations from the 2023 International Evidence-based Guideline for the Assessment and Management of Polycystic Ovary Syndrome."
+  },
+  "38230957": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Floating-Harbor Syndrome in a Korean Patient with Short Stature and Early Puberty: A Case Report."
+  },
+  "38336897": {
+   "topic_at_review": "Pituitary",
+   "verdict": "correct",
+   "target_topic": "Pituitary",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Consensus guideline for the diagnosis and management of pituitary adenomas in childhood and adolescence: Part 1, general recommendations."
+  },
+  "38336898": {
+   "topic_at_review": "Pituitary",
+   "verdict": "correct",
+   "target_topic": "Pituitary",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Consensus guideline for the diagnosis and management of pituitary adenomas in childhood and adolescence: Part 2, specific diseases."
+  },
+  "38344969": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Hyperinsulinism",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Hyperinsulinemia in Sotos Syndrome with a de novo NSD1 Deletion."
+  },
+  "38529548": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Exploring Multiple Endocrinological Issues and Dysautonomia in a Rare Case: Hypoparathyroidism in MIRAGE Syndrome.",
+   "residual_accepted": true,
+   "residual_reason": "MIRAGE syndrome is genuinely multi-axis; the classifier reaches Growth via short stature. No general rule tested routes it to General Endocrinology without collateral damage.",
+   "residual_decided_on": "2026-08-06"
+  },
+  "38538470": {
+   "topic_at_review": "Pituitary",
+   "verdict": "correct",
+   "target_topic": "Pituitary",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Diagnosis and management of congenital hypopituitarism in children."
+  },
+  "38647408": {
+   "topic_at_review": "Pituitary",
+   "verdict": "correct",
+   "target_topic": "Pituitary",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Identification of a NovelVariant in Two Malaysian Male Siblings with Central Hypothyroidism and Macroorchidism."
+  },
+  "38952179": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Hereditary Severe Insulin-resistance Syndrome and Acanthosis Nigricans Caused by Novel Mutations in theGene."
+  },
+  "39012089": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Autosomal Recessive Hypophosphatemic Rickets Type 2 Associated with a Novel ENPP1 Variant in a Taiwanese Girl."
+  },
+  "39038449": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Puberty",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Obesity Is Associated with Increased 11-Oxyandrogen Serum Concentrations during Puberty."
+  },
+  "39186929": {
+   "topic_at_review": "DSD",
+   "verdict": "correct",
+   "target_topic": "DSD",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Defining Success in the Delivery of Fertility-Related Care for Patients with Differences of Sex Development."
+  },
+  "39250908": {
+   "topic_at_review": "Puberty",
+   "verdict": "wrong",
+   "target_topic": "Pituitary",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Ovarian Insufficiency in Adolescent Females with Transfusion-Dependent \u03b2-Thalassemia: Pituitary versus Ovarian Iron Overload."
+  },
+  "39270074": {
+   "topic_at_review": "Genetics",
+   "verdict": "wrong",
+   "target_topic": "DSD",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "[Cryptorchidism: An update of advances in its diagnosis and treatment]."
+  },
+  "39293420": {
+   "topic_at_review": "Pituitary",
+   "verdict": "correct",
+   "target_topic": "Pituitary",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Insulin-Induced Copeptin Response in Children and Adolescents to Diagnose Arginine Vasopressin Deficiency."
+  },
+  "39380079": {
+   "topic_at_review": "PCOS",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Cardiometabolic risk in children and adolescents with obesity: a position paper of the Italian Society for Pediatric Endocrinology and Diabetology."
+  },
+  "39387353": {
+   "topic_at_review": "DSD",
+   "verdict": "correct",
+   "target_topic": "DSD",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Gonadoblastoma with Dysgerminoma in a Virilized Adolescent with Karyotype 46,XX: A Case Report and Review of the Literature."
+  },
+  "39419009": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Puberty",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The Role of DLK1 Deficiency in Central Precocious Puberty and Association with Metabolic Dysregulation."
+  },
+  "39427650": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Phase 2 Trial of Vosoritide Use in Patients with Hypochondroplasia: A Pharmacokinetic/Pharmacodynamic Analysis."
+  },
+  "39437749": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "correct",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Novel Insights: A Novel PHIP Variant in a Family with Severe Early-Onset Obesity."
+  },
+  "39447557": {
+   "topic_at_review": "Hyperinsulinism",
+   "verdict": "correct",
+   "target_topic": "Hyperinsulinism",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Recognition of Hyperinsulinaemic Hypoglycaemia in Infants with Congenital Central Hypoventilation Syndrome."
+  },
+  "39467526": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "correct",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Do Changes in BMI during the COVID-19 Pandemic Persist in the Post-Pandemic Period in a Pediatric Population Attending Health Care Clinics? A Longitudinal Study"
+  },
+  "39480773": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "correct",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "[Guidelines for the prevention, diagnosis and treatment of obesity. Update 2024]."
+  },
+  "39536728": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Response to Recombinant Human Growth Hormone Therapy in Short Children Born at Very Low Birth Weight."
+  },
+  "39536731": {
+   "topic_at_review": "Adrenal",
+   "verdict": "correct",
+   "target_topic": "Adrenal",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Genotype-Phenotype Correlation and Feminizing Surgery in Danish Children with Congenital Adrenal Hyperplasia."
+  },
+  "39551654": {
+   "topic_at_review": "Gender Medicine",
+   "verdict": "correct",
+   "target_topic": "Gender Medicine",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Endocrine management of transgender adolescents: Expert consensus of the french society of pediatric endocrinology and diabetology working group."
+  },
+  "39571550": {
+   "topic_at_review": "Puberty",
+   "verdict": "correct",
+   "target_topic": "Puberty",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Adult Height in Girls with Central Precocious Puberty with Onset after 6 Years: Effects of Gonadotropin-Releasing Hormone Analog Therapy."
+  },
+  "39602902": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "wrong",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Co-Occurrence of Two Rare Diseases: A Child with Phenylketonuria and <italic>WNT1</italic> Osteoporosis."
+  },
+  "39622214": {
+   "topic_at_review": "Gender Medicine",
+   "verdict": "correct",
+   "target_topic": "Gender Medicine",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Endocrine Management of Transgender and Gender-Diverse Adolescents: Expert Opinion of the ESPE Working Group on Gender Incongruence and the Endo-ERN Main Themat"
+  },
+  "39791572": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Using One-Shot Prompting of Non-Fine-Tuned Commercial Artificial Intelligence to Assess Nutrients from Photographs of Japanese Meals."
+  },
+  "39819748": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "correct",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The Central Control of Energy Metabolism: Hypothalamic Obesity Is Not One Disease."
+  },
+  "39829212": {
+   "topic_at_review": "Thyroid",
+   "verdict": "correct",
+   "target_topic": "Thyroid",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Diagnostics and treatment of differentiated thyroid carcinoma in children - Guidelines of the Polish National Scientific Societies, 2024 Update."
+  },
+  "39834161": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Effects of Maternal Vitamin D Supplementation on Childhood Health."
+  },
+  "39851060": {
+   "topic_at_review": "Pituitary",
+   "verdict": "correct",
+   "target_topic": "Pituitary",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Cabergoline Induced Pathological Gambling in an Adolescent with Prolactinoma."
+  },
+  "39960227": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Diabetes",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Artificial Intelligence for Diabetic Foot Screening Based on Digital Image Analysis: A Systematic Review."
+  },
+  "39960858": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "X-Linked Hypophosphatemia Management in Children: An International Working Group Clinical Practice Guideline."
+  },
+  "40045579": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "DSD",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "A Novel SRD5A2 Loss-of-Function Variant in a Chinese Child with 5\u03b1-reductase Type 2 Deficiency."
+  },
+  "40064154": {
+   "topic_at_review": "Cancer Late Effects",
+   "verdict": "correct",
+   "target_topic": "Cancer Late Effects",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Development of Obesity following Treatment for Childhood Malignancies."
+  },
+  "40071796": {
+   "topic_at_review": "Gender Medicine",
+   "verdict": "correct",
+   "target_topic": "Gender Medicine",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Framework guidelines for the process of caring for the health of adolescent transgender (T) and non-binary (NB) people experiencing gender dysphoria - the posit"
+  },
+  "40103355": {
+   "topic_at_review": "Adrenal",
+   "verdict": "correct",
+   "target_topic": "Adrenal",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Xp21 Contiguous Gene Deletion Syndrome: Diagnosis, Treatment, and a Review of the Literature on a Rare Genetic Disorder."
+  },
+  "40228835": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "correct",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Managing obesity in children: a clinical practice guideline."
+  },
+  "40243526": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "X-Linked Hypophosphatemia Management in Adults: An International Working Group Clinical Practice Guideline."
+  },
+  "40300586": {
+   "topic_at_review": "Pituitary",
+   "verdict": "wrong",
+   "target_topic": "Cancer Late Effects",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Endocrine-Related Adverse Conditions in Pediatric Patients Treated with Immune Checkpoint Inhibitors: A Position Statement from the Clinical Practice Committee "
+  },
+  "40364581": {
+   "topic_at_review": "PCOS",
+   "verdict": "correct",
+   "target_topic": "PCOS",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Society for Endocrinology Clinical Practice Guideline for the Evaluation of Androgen Excess in Women."
+  },
+  "40459373": {
+   "topic_at_review": "Genetics",
+   "verdict": "correct",
+   "target_topic": "Genetics",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Founder Pathogenic Variant in LMNA with Diverse Phenotypic Manifestations in Mandibuloacral Dysplasia: Insights from a Turkish Cohort."
+  },
+  "40506054": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Pituitary",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Revised European Society of Endocrinology Clinical Practice Guideline for the management of aggressive pituitary tumours and pituitary carcinomas."
+  },
+  "40574354": {
+   "topic_at_review": "Cancer Late Effects",
+   "verdict": "correct",
+   "target_topic": "Cancer Late Effects",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "ESHRE good practice recommendations on fertility preservation involving testicular tissue cryopreservation in children receiving gonadotoxic therapies\u2020."
+  },
+  "40578837": {
+   "topic_at_review": "PCOS",
+   "verdict": "correct",
+   "target_topic": "PCOS",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The Ontogeny of Distinct Reproductive Phenotypes in Girls at Risk for PCOS During the Postmenarchal Transition."
+  },
+  "40694360": {
+   "topic_at_review": "Thyroid",
+   "verdict": "correct",
+   "target_topic": "Thyroid",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "ACR-ACNM-ARS-SNMMI-SPR Practice Parameter for Treatment of Benign and Malignant Thyroid Disease With I-131 Sodium Iodide."
+  },
+  "40695258": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "correct",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Novel Insights into the Pathophysiology and Management of Obesity in Childhood and Adolescence."
+  },
+  "40705962": {
+   "topic_at_review": "Hyperinsulinism",
+   "verdict": "correct",
+   "target_topic": "Hyperinsulinism",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Congenital Hyperinsulinemic Hypoglycemia With a New HADH Mutation and Pancreatic Overexpression of GLP-1 Receptors."
+  },
+  "40711834": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Preventing Diabetic Ketoacidosis with Continuous Ketone Monitoring: Insights from a Clinical Research Case."
+  },
+  "40810440": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Association of Glucose Response Shape in OGTT With Markers of Pancreatic Health and Inflammation Across Diverse Ages."
+  },
+  "40827087": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Growth",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Early Growth Hormone Treatment Enhances Growth and Nutritional Status in Silver-Russell Syndrome."
+  },
+  "40852855": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Challenges in Estimating Renal Function in X-linked Hypophosphatemia Because of Formula Overestimation and FGF23 Effects."
+  },
+  "40874855": {
+   "topic_at_review": "Lipids",
+   "verdict": "correct",
+   "target_topic": "Lipids",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Real-World Experience from T\u00fcrkiye: Genetic and Therapeutic Insights in Pediatric Heterozygous Familial Hypercholesterolemia."
+  },
+  "40922648": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Adrenal",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Enhancing Accuracy of Newborn Screening for 21OHD: Strategic Use of 21-Deoxycortisol in a Large-Scale Tokyo Cohort."
+  },
+  "40947755": {
+   "topic_at_review": "PCOS",
+   "verdict": "correct",
+   "target_topic": "PCOS",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Prevalence of Hypertension in Obese Adolescents With Polycystic Ovary Syndrome."
+  },
+  "40976583": {
+   "topic_at_review": "PCOS",
+   "verdict": "correct",
+   "target_topic": "PCOS",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Multiracial Cytokine Profiling Reveals Immune Dysregulation not Chronic Inflammation in Polycystic Ovary Syndrome."
+  },
+  "41025756": {
+   "topic_at_review": "PCOS",
+   "verdict": "wrong",
+   "target_topic": "Adrenal",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Adrenal oncocytoma: an unusual etiology of Cushing's syndrome in an adolescent female."
+  },
+  "41051294": {
+   "topic_at_review": "Adrenal",
+   "verdict": "correct",
+   "target_topic": "Adrenal",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Clinical and Biochemical Phenotype Across the Genotypic Spectrum of 21-hydroxylase Deficiency in 457 Individuals."
+  },
+  "41052298": {
+   "topic_at_review": "Adrenal",
+   "verdict": "correct",
+   "target_topic": "Adrenal",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The Importance of Disease-specific Growth Charts for Children with Congenital Adrenal Hyperplasia."
+  },
+  "41054822": {
+   "topic_at_review": "Gender Medicine",
+   "verdict": "correct",
+   "target_topic": "Gender Medicine",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Effects of Puberty Suppression and Sex Steroids on Weight, BMI, and Lipid Profiles in Danish Transgender Adolescents."
+  },
+  "41058069": {
+   "topic_at_review": "Pituitary",
+   "verdict": "correct",
+   "target_topic": "Pituitary",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Diagnostic Utility of Fractional Excretion of Urate, Urinary Phosphate and Brain Natriuretic Peptide in Distinguishing Cerebral/Renal Salt Wasting From SIADH in"
+  },
+  "41071584": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Rates and Pattern of Antifracture Drug Use in 6475 Adults and Children With Osteogenesis Imperfecta."
+  },
+  "41077643": {
+   "topic_at_review": "Genetics",
+   "verdict": "correct",
+   "target_topic": "Genetics",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "A 2-year-old girl with merged phenotypes: galactosemia and Coffin-Lowry syndrome."
+  },
+  "41090402": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Puberty",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Measurement of 11-Oxo-androgens, A Novel Biomarker, in Females with Clinical Signs of Premature Adrenarche."
+  },
+  "41099230": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Phosphoglucomutase 1 deficiency misdiagnosed as Laron syndrome."
+  },
+  "41111433": {
+   "topic_at_review": "Adrenal",
+   "verdict": "correct",
+   "target_topic": "Adrenal",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Positive neonatal screening test for congenital adrenal hyperplasia in a case with 3\u03b2-hydroxysteroid dehydrogenase type 2 deficiency."
+  },
+  "41134091": {
+   "topic_at_review": "Adrenal",
+   "verdict": "wrong",
+   "target_topic": "DSD",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Challenges in Sex Assignment in 46,XX Congenital Adrenal Hyperplasia due to 21-hydroxylase Deficiency and 11\u03b2-hydroxylase Deficiency in Developing Countries: In"
+  },
+  "41137448": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Treatment of Children and Adults With X-Linked Hypophosphatemia With Calcitriol Alone: A Prospective, Open-Label Study."
+  },
+  "41150838": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The EndoCompass Research Roadmap: Directions for the Future of Endocrine Science."
+  },
+  "41183501": {
+   "topic_at_review": "DSD",
+   "verdict": "correct",
+   "target_topic": "DSD",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Gonadal Function and Its Evolution in 46,XX Testicular/Ovotesticular DSD."
+  },
+  "41186191": {
+   "topic_at_review": "Gender Medicine",
+   "verdict": "correct",
+   "target_topic": "Gender Medicine",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Recent Findings on Psychosocial Outcomes of Gender-Affirming Medical Care for Transgender Youth."
+  },
+  "41196293": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Safety and pharmacokinetics of teplizumab in children less than 8 years of age with stage 2 type 1 diabetes."
+  },
+  "41198906": {
+   "topic_at_review": "Thyroid",
+   "verdict": "correct",
+   "target_topic": "Thyroid",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Hypothyroidism, atherosclerosis and cardiovascular risk prevention."
+  },
+  "41203536": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "DSD",
+   "agent_verdict": "defensible",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Summary of the European Association of Urology/European Society of paediatric urology guidelines on transition in urology."
+  },
+  "41211872": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "correct",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The relationship between FSTL-1 (follistatin-related protein 1), FAM19A5 (family with sequence similarity 19, member A5) and CTRP-6 (C1q/TNF-related protein 6) "
+  },
+  "41213125": {
+   "topic_at_review": "PCOS",
+   "verdict": "correct",
+   "target_topic": "PCOS",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Role of hyperandrogenism on disordered eating behaviors in adolescents with PCOS and interplay with insulin resistance."
+  },
+  "41214257": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Peripheral adrenergic activity contributes to anxiety."
+  },
+  "41219439": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "CD38 as a driver of ageing."
+  },
+  "41222213": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Associations Between Dietary Diversity Score and Adiposity Indexes in Obese Adolescents."
+  },
+  "41223156": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Diabetes",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Use of Teplizumab to Modulate Stage 2 Type 1 Diabetes in Two Individuals With Autoimmune Polyendocrine Syndrome 1."
+  },
+  "41224990": {
+   "topic_at_review": "Adrenal",
+   "verdict": "correct",
+   "target_topic": "Adrenal",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Driving hypertension: non-classic apparent mineralocorticoid excess."
+  },
+  "41231236": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Revised European Society of Endocrinology Clinical Practice Guideline: Treatment of Chronic Hypoparathyroidism in Adults."
+  },
+  "41258701": {
+   "topic_at_review": "DSD",
+   "verdict": "wrong",
+   "target_topic": "Adrenal",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "A Novel POR G88S Mutation Causes Severe PORD and Establishes a Critical Pharmacogenomic Risk Profile."
+  },
+  "41261870": {
+   "topic_at_review": "Adrenal",
+   "verdict": "correct",
+   "target_topic": "Adrenal",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Single-Center Experience in Five Patients Diagnosed with Lipoid Congenital Adrenal Hyperplasia due toGene Variants: A Rare Cause of Adrenal Insufficiency."
+  },
+  "41269909": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Growth Hormone Therapy and Quality of Life: Evidence versus Assumptions."
+  },
+  "41275391": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "wrong",
+   "target_topic": "Diabetes",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Characterization of monogenic diabetes among Sudanese children: a multi-center experience from a population with high consanguinity."
+  },
+  "41291202": {
+   "topic_at_review": "Genetics",
+   "verdict": "wrong",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Metabolic control of feto-placental development and pregnancy outcomes."
+  },
+  "41310157": {
+   "topic_at_review": "Pituitary",
+   "verdict": "correct",
+   "target_topic": "Pituitary",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "An update on hypophysitis."
+  },
+  "41321009": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Growth",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "A comparative study of the interpretation results of different artificial intelligence bone age assessment software."
+  },
+  "41326654": {
+   "topic_at_review": "Genetics",
+   "verdict": "wrong",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Parental exercise mediates fetal metabolic and cardiac programming."
+  },
+  "41327588": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Clinical and Molecular Spectrum of Infantile Hypercalcemia Type I: Insights Into CYP24A1 Variants."
+  },
+  "41329339": {
+   "topic_at_review": "PCOS",
+   "verdict": "correct",
+   "target_topic": "PCOS",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Disordered Eating Behaviors During Adolescence and Risk of Polycystic Ovary Syndrome: A Prospective Cohort Study."
+  },
+  "41338999": {
+   "topic_at_review": "DSD",
+   "verdict": "correct",
+   "target_topic": "DSD",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Clinical practice guidelines for the management of differences of sex development in Japan."
+  },
+  "41340166": {
+   "topic_at_review": "DSD",
+   "verdict": "correct",
+   "target_topic": "DSD",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Paediatric Virilizing Ovarian Tumors: A Systematic Review."
+  },
+  "41340543": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Mucopolysaccharidosis or Skeletal Dysplasia? Clinical and Radiologic Clues for Differential Diagnosis Based on Difficult Cases."
+  },
+  "41349002": {
+   "topic_at_review": "Puberty",
+   "verdict": "wrong",
+   "target_topic": "Adrenal",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Impact of Growth-promoting Therapies on Puberty, Growth, and Final Height in Classical 21-hydroxylase Deficiency."
+  },
+  "41358924": {
+   "topic_at_review": "PCOS",
+   "verdict": "correct",
+   "target_topic": "PCOS",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Adolescent \"Lean PCOS\" Is Characterized by Higher Insulin Resistance and Adverse Adipokine Profile."
+  },
+  "41379482": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Midchildhood Obesity After Exposure to Gestational Diabetes Mellitus: The SWIFT Study in Youth."
+  },
+  "41399023": {
+   "topic_at_review": "Genetics",
+   "verdict": "correct",
+   "target_topic": "Genetics",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "A rare metabolic cause of premature ovarian insufficiency: case report of transaldolase deficiency."
+  },
+  "41402496": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Two roads to thermogenesis: vascular and parenchymal sympathetic innervation of brown adipose tissue."
+  },
+  "41402995": {
+   "topic_at_review": "PCOS",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Lifestyle intervention before and during fertility treatment in women with obesity or with overweight and PCOS-a RCT."
+  },
+  "41414753": {
+   "topic_at_review": "Adrenal",
+   "verdict": "correct",
+   "target_topic": "Adrenal",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Performance of Plasma Renin Assays in Guiding Mineralocorticoid Dosing in Children With Adrenal Insufficiency."
+  },
+  "41420533": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Growth",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Effects of Growth Hormone (GH) Deficiency and GH Replacement Therapy on Health-Related Physical Fitness in Children."
+  },
+  "41467600": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Diagnostic Value of Peak-to-Basal Difference or Ratio of Growth Hormone in Children with Growth Hormone Deficiency."
+  },
+  "41474492": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "wrong",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "2025 Update to the Female Athlete Triad Coalition Consensus Statement Part 2: Clinical Guidelines for Screening, Diagnosis, Treatment, and Return to Play for Ad"
+  },
+  "41486515": {
+   "topic_at_review": "Hyperinsulinism",
+   "verdict": "correct",
+   "target_topic": "Hyperinsulinism",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Genetic and Clinical Characterisation of Congenital Hyperinsulinism: Identification of a Novel ABCC8 Variant."
+  },
+  "41486943": {
+   "topic_at_review": "Pituitary",
+   "verdict": "wrong",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Case Reports: Exploring the Varied Presentations and Clinical Features of Carney Complex, A Detailed Report on Three Distinct Cases."
+  },
+  "41491728": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "ZMIZ1 supports endometrial oestrogen and progesterone signalling."
+  },
+  "41498210": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Pituitary",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Radiological Surveillance for Pituitary Adenomas in Multiple Endocrine Neoplasia Type 1: A Longitudinal Cohort Study."
+  },
+  "41498263": {
+   "topic_at_review": "DSD",
+   "verdict": "correct",
+   "target_topic": "DSD",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Evaluation of Muscle Mass and Strength in Children and Adolescents with Disorders of Sex Development."
+  },
+  "41507499": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The public health burden of diabetes mellitus and thyroid disease: twin epidemics."
+  },
+  "41521526": {
+   "topic_at_review": "Cancer Late Effects",
+   "verdict": "wrong",
+   "target_topic": "Growth",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "GH Response to Glucagon in Transition: Role of Body Mass Index and Etiology in Childhood-onset GH Deficiency."
+  },
+  "41527361": {
+   "topic_at_review": "PCOS",
+   "verdict": "correct",
+   "target_topic": "PCOS",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "MASLD coexisting with PCOS increases cardiometabolic risk."
+  },
+  "41531262": {
+   "topic_at_review": "Cancer Late Effects",
+   "verdict": "correct",
+   "target_topic": "Cancer Late Effects",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Andrological Outcomes in Boys Undergoing Testicular Tissue Extraction Prior to Gonadotoxic Treatment: Evolution During Peripuberty and Young Adulthood."
+  },
+  "41532590": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "wrong",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Research Code Sharing in Support of Gold Standard Science."
+  },
+  "41537273": {
+   "topic_at_review": "Pituitary",
+   "verdict": "correct",
+   "target_topic": "Pituitary",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Current Approaches and Therapeutic Strategies for Hypothalamic Syndrome in Patients with Childhood-onset Craniopharyngioma."
+  },
+  "41543833": {
+   "topic_at_review": "DSD",
+   "verdict": "correct",
+   "target_topic": "DSD",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "ENDO-ERN expert opinion: addressing the endocrine needs in considering genital surgery in disorders/differences in sex development individuals in Europe."
+  },
+  "41545473": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "GPR110 as a regulator of MASH."
+  },
+  "41549377": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Successful desensitization to alglucosidase alfa in a very young infant with Pompe disease."
+  },
+  "41549445": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Pituitary",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Patients With Pituitary Neuroendocrine Tumours Requiring Neurosurgery -Who Is Referring Them?"
+  },
+  "41553972": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Unmet Medical Needs in Pediatric Endocrinology: A Position Statement from the European Society for Paediatric Endocrinology Clinical Practice Committee and Coun"
+  },
+  "41556335": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The Development and Validation of Multivariable Electronic Health Record-Based Models to Predict Diabetic Ketoacidosis-Related Hospitalizations for Adults with "
+  },
+  "41561047": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Endometriosis burden and trends among women of childbearing age from 1990 to 2021."
+  },
+  "41561050": {
+   "topic_at_review": "Hyperinsulinism",
+   "verdict": "correct",
+   "target_topic": "Hyperinsulinism",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Germline and somatic mutations in histologically atypical congenital hyperinsulinism."
+  },
+  "41561055": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Unlocking the heterogeneity of pediatric obesity: a phenotypic subtype-based paradigm for precision management."
+  },
+  "41566564": {
+   "topic_at_review": "Pituitary",
+   "verdict": "correct",
+   "target_topic": "Pituitary",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Tolvaptan: a potential rescue therapy for SIADH with refractory hyponatremia associated with acute intermittent porphyria."
+  },
+  "41567807": {
+   "topic_at_review": "PCOS",
+   "verdict": "correct",
+   "target_topic": "PCOS",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Effect of electroacupuncture on metabolic level and quality of life in patients with obese polycystic ovary syndrome: a randomized controlled trial."
+  },
+  "41569948": {
+   "topic_at_review": "DSD",
+   "verdict": "correct",
+   "target_topic": "DSD",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "A Hemizygous <italic>MED12</italic> Variant in Three Brothers with Hypomasculinized Genitalia and Additional Clinical Features: A Case Report."
+  },
+  "41572650": {
+   "topic_at_review": "Gender Medicine",
+   "verdict": "wrong",
+   "target_topic": "DSD",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Approach to the patient: comprehensive multidisciplinary care for adolescents with difference in sex development (DSD)."
+  },
+  "41573195": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Cardiometabolic implications of triglyceride-glucose index, remnant cholesterol, and vitamin D in normoglycemic Arab adolescents: a cross-sectional study."
+  },
+  "41575896": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Prevalence and Changes in Genetic and Clinical Characteristics in Growth Hormone-Treated Belgian Girls with Turner Syndrome: A Study from the BELGROW Registry."
+  },
+  "41580999": {
+   "topic_at_review": "Puberty",
+   "verdict": "wrong",
+   "target_topic": "DSD",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Rare phenotypic spectrum of 17\u03b2-hydroxysteroid dehydrogenase 3 deficiency: case series from infancy to adolescence."
+  },
+  "41585787": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "correct",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The NAVETA obesity consensus tool: a multidimensional framework for clinical and patient-reported outcome assessment."
+  },
+  "41585809": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Thyroid",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Case Report: Resolution of complete heart block following vitamin D supplementation in a child with Graves disease."
+  },
+  "41603372": {
+   "topic_at_review": "PCOS",
+   "verdict": "correct",
+   "target_topic": "PCOS",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Association Between Polycystic Ovary Syndrome and Pregnancy Outcomes in GDM: A Secondary Analysis of the DiGest Trial."
+  },
+  "41607458": {
+   "topic_at_review": "Genetics",
+   "verdict": "correct",
+   "target_topic": "Genetics",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Simultaneous occurrence of bilateral retroperitoneal neuroblastoma and bifocal malignant mixed germ cell tumor in a pediatric patient with 16p11.2 microdeletion"
+  },
+  "41608202": {
+   "topic_at_review": "Adrenal",
+   "verdict": "correct",
+   "target_topic": "Adrenal",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Interpretable Machine Learning Model for Survival Prediction in Pediatric Adrenocortical Tumors."
+  },
+  "41611635": {
+   "topic_at_review": "DSD",
+   "verdict": "correct",
+   "target_topic": "DSD",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "46,XY Gonadal Dysgenesis Due to NR0B1 Duplication: A Systematic Review."
+  },
+  "41611636": {
+   "topic_at_review": "Thyroid",
+   "verdict": "correct",
+   "target_topic": "Thyroid",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "DYRK1A Expression and Thyroid Dysfunction in Subjects With Down Syndrome."
+  },
+  "41614010": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "defensible",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Gut and Heart Axis Affects Cardiometabolic Health Through the Ages. A Special Focus on Adolescence."
+  },
+  "41614605": {
+   "topic_at_review": "Puberty",
+   "verdict": "correct",
+   "target_topic": "Puberty",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Association of increased cortical thickness and cognitive impairment in patients with Kallmann syndrome."
+  },
+  "41614681": {
+   "topic_at_review": "Pituitary",
+   "verdict": "correct",
+   "target_topic": "Pituitary",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Pediatric and Adult Craniopharyngioma: A 37-Year Experience at a National Referral Center."
+  },
+  "41616799": {
+   "topic_at_review": "Genetics",
+   "verdict": "wrong",
+   "target_topic": "Lipids",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Efficacy and safety of inclisiran in adolescents with heterozygous familial hypercholesterolaemia (ORION-16): a two-part, randomised, multicentre clinical trial"
+  },
+  "41616800": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Lipids",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Inclisiran for children: is it worth it?"
+  },
+  "41622420": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "30 Years of Developing Inhaled Insulin."
+  },
+  "41623909": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Bone Age Delay in X-linked Hypophosphatemia."
+  },
+  "41625247": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "correct",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Construction and validation of a risk prediction model for metabolic syndrome: a cross-sectional study based on randomized sampling."
+  },
+  "41632726": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Long-Acting PEGylated Growth Hormone in Children with Idiopathic Short Stature: 2-Year Results."
+  },
+  "41634215": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "wrong",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Brain neurons promote skeletal dysfunction in ageing."
+  },
+  "41634216": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Blood-brain barrier permeability of adipokines and myokines."
+  },
+  "41636640": {
+   "topic_at_review": "Cancer Late Effects",
+   "verdict": "correct",
+   "target_topic": "Cancer Late Effects",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Endocrine and metabolic late effects in childhood cancer survivors in Germany: the VersKiK study."
+  },
+  "41637567": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Adrenal androgens as predictors of growth characteristics in premature pubarche."
+  },
+  "41637571": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Pituitary",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Natural history of pituitary incidentalomas in pediatric patients: a single-center, retrospective analysis."
+  },
+  "41647110": {
+   "topic_at_review": "Genetics",
+   "verdict": "wrong",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Gastroenteropancreatic neuroendocrine neoplasms in children and adults: a comparative review."
+  },
+  "41652324": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Thyroid",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Beyond Salt Iodization: Sustained Population Sufficiency and Recurrence of Iodine Deficiency in Pregnant Women in Iran."
+  },
+  "41655234": {
+   "topic_at_review": "Hyperinsulinism",
+   "verdict": "correct",
+   "target_topic": "Hyperinsulinism",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Determinants of Hyperinsulinism Severity in Children with Beckwith-Wiedemann Syndrome."
+  },
+  "41658991": {
+   "topic_at_review": "Puberty",
+   "verdict": "wrong",
+   "target_topic": "Growth",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Age-specific Contributions to Height in Boys with Klinefelter Syndrome: Analysis of Growth Using the QEPS Model."
+  },
+  "41659330": {
+   "topic_at_review": "Puberty",
+   "verdict": "correct",
+   "target_topic": "Puberty",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The gut-brain axis mediates precocious puberty induced by environmentally relevant low-dose endocrine-disrupting chemical mixtures."
+  },
+  "41659339": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Thyroid",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Circulating thyroid hormones and metabolites in children with autism spectrum disorder."
+  },
+  "41665939": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Growth",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Children born SGA receiving growth hormone have similarly impaired glucose-insulin metabolism as children with obesity."
+  },
+  "41667654": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "defensible",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Making a droplet: the adipogenin-seipin complex at work."
+  },
+  "41669543": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The effects of combined endurance training of different intensities and resistance training on bone mineral density, microstructure and mechanical properties of"
+  },
+  "41675571": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Spatiotemporal characterization of ghrelin and cholecystokinin levels in the gastrointestinal tract of juvenile Sparus aurata: effects of feeding status and die"
+  },
+  "41677265": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Diabetes",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "From Telemedicine to Early Warning: Embedding Artificial Intelligence in Remote Follow-Up of Diabetic Foot Ulcers."
+  },
+  "41678360": {
+   "topic_at_review": "Thyroid",
+   "verdict": "correct",
+   "target_topic": "Thyroid",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Afirma Genomic Sequencing Classifier Performance in Young Patients with Cytologically Indeterminate Thyroid Nodules."
+  },
+  "41681115": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "A Global Skills-Based Model for Ambulatory Cardiometabolic Care: Leveraging Digital Health."
+  },
+  "41693151": {
+   "topic_at_review": "Pituitary",
+   "verdict": "wrong",
+   "target_topic": "Cancer Late Effects",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "\"Endocrine Disorders After Treatment for Pediatric Brain Tumors: Long-Term Outcomes and Risk Factors\"."
+  },
+  "41693157": {
+   "topic_at_review": "Adrenal",
+   "verdict": "correct",
+   "target_topic": "Adrenal",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Hemodynamic and microvascular abnormalities in P450 oxidoreductase deficiency: evidence for COX-dependent dysfunction."
+  },
+  "41694565": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Identification of maturity-onset diabetes of the young through targeted next-generation sequencing in Thai patients with atypical diabetes in real-world practic"
+  },
+  "41698239": {
+   "topic_at_review": "Thyroid",
+   "verdict": "correct",
+   "target_topic": "Thyroid",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Evaluation of adrenomedullin levels in adolescents with Hashimoto's thyroiditis: association with clinical and laboratory findings."
+  },
+  "41700350": {
+   "topic_at_review": "Growth",
+   "verdict": "wrong",
+   "target_topic": "Genetics",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "A novel CEP57 gene mutation in mosaic variegated aneuploidy syndrome 2: case report."
+  },
+  "41701914": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Suboptimal adoption of diabetes technology despite coverage and the impact on glycemic outcomes in children and adolescents with type 1 diabetes in Hong Kong."
+  },
+  "41704483": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Severe pediatric hypocalcemia in Vietnam: etiologic profile, clinical outcomes and risk factors in 246 cases."
+  },
+  "41705726": {
+   "topic_at_review": "Pituitary",
+   "verdict": "correct",
+   "target_topic": "Pituitary",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Impact of eating behaviour on craniopharyngioma-associated obesity."
+  },
+  "41707689": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "European Society for Paediatric Endocrinology (ESPE) and European Society of Endocrinology (ESE) joint clinical practice guidance for healthcare transition from"
+  },
+  "41709526": {
+   "topic_at_review": "Adrenal",
+   "verdict": "correct",
+   "target_topic": "Adrenal",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Quality of Life in Children With Congenital Adrenal Hyperplasia: A Tertiary-Center Case-Control Study."
+  },
+  "41711038": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Transition of Care in X-Linked Hypophosphatemic Rickets: From Pediatric to Adult Practice- A Narrative Review."
+  },
+  "41711566": {
+   "topic_at_review": "Pituitary",
+   "verdict": "correct",
+   "target_topic": "Pituitary",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Management of porphyria-like syndrome in tyrosinemia type 1."
+  },
+  "41712317": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Autoimmune polyendocrinopathy candidiasis ectodermal dystrophy (APECED): a case series and experience from a UK tertiary paediatric hospital."
+  },
+  "41712405": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Exome findings in children with short stature evaluated by growth hormone stimulation testing."
+  },
+  "41712477": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "European Society for Paediatric Endocrinology and European Society of Endocrinology Joint Clinical Practice Guidance for Healthcare Transition from Paediatric t"
+  },
+  "41725275": {
+   "topic_at_review": "Genetics",
+   "verdict": "correct",
+   "target_topic": "Genetics",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Hypertrophic cardiomyopathy as a novel phenotypic feature of NSUN3-related mitochondrial disease: a case report with review of the literature."
+  },
+  "41727682": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "wrong",
+   "target_topic": "Growth",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Automated bone age assessment in rare pediatric growth disorders: a comparative study using Deeplasia."
+  },
+  "41735800": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Cancer Late Effects",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Long-Term Thyroid Toxicity Burden in Children Who Received Treatment for High-Risk Neuroblastoma.",
+   "residual_accepted": true,
+   "residual_reason": "Long-term thyroid toxicity after neuroblastoma therapy is survivorship content; the Cancer Late Effects pre-check does not fire on this phrasing and broadening it pulled in unrelated thyroid work.",
+   "residual_decided_on": "2026-08-06"
+  },
+  "41739851": {
+   "topic_at_review": "Cancer Late Effects",
+   "verdict": "correct",
+   "target_topic": "Cancer Late Effects",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Hypothalamic-Pituitary Deficiency after Radiation in Childhood Cancer Survivors is Associated with Rare Variants in TNS2."
+  },
+  "41742375": {
+   "topic_at_review": "PCOS",
+   "verdict": "correct",
+   "target_topic": "PCOS",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Childhood Sleep Behaviours and Polycystic Ovary Syndrome Risk in Adolescence: The Raine Study Cohort Longitudinal Study."
+  },
+  "41756009": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "correct",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Does childhood obesity foreshadow a future time-bomb of early and more aggressive cancers?"
+  },
+  "41757240": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Diagnostic accuracy of AMH for primary ovarian insufficiency/premature ovarian failure: a real-world cohort study."
+  },
+  "41760965": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Dual benefits of HIF activation."
+  },
+  "41763234": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Combined associations of GLP-1 receptor agonists and a healthy lifestyle with cardiovascular outcomes among individuals with type 2 diabetes: a prospective coho"
+  },
+  "41766136": {
+   "topic_at_review": "Genetics",
+   "verdict": "correct",
+   "target_topic": "Genetics",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Bardet-Biedl Syndrome in India: Genotypic Spectrum and Clinical Features From a Single-Centre Cohort."
+  },
+  "41766939": {
+   "topic_at_review": "Puberty",
+   "verdict": "wrong",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "defensible",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Prenatal and postnatal atrazine-induced endocrine and ovarian chemical biotransformation protein disruption in offspring."
+  },
+  "41767372": {
+   "topic_at_review": "Adrenal",
+   "verdict": "correct",
+   "target_topic": "Adrenal",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Current insights into monitoring of congenital adrenal hyperplasia."
+  },
+  "41767373": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Case Report: Developmental-like skeletal deformities and transient osteosclerosis as rare presentations of primary hyperparathyroidism."
+  },
+  "41776008": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The gut microbiome and ageing trajectories: mechanisms and clinical implications."
+  },
+  "41778163": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Cancer Late Effects",
+   "agent_verdict": "defensible",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Trends and outcomes of fertility preservation in patients presenting with cancer during pregnancy or postpartum-a longitudinal observational cohort study."
+  },
+  "41778167": {
+   "topic_at_review": "Cancer Late Effects",
+   "verdict": "correct",
+   "target_topic": "Cancer Late Effects",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Surgical approaches to fertility preservation in the cancer patient: current and future directions."
+  },
+  "41779164": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Health-Related Quality of Life in Children with Multiple Endocrine Neoplasia (MEN) and their Siblings."
+  },
+  "41780161": {
+   "topic_at_review": "Pituitary",
+   "verdict": "wrong",
+   "target_topic": "Cancer Late Effects",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Pituitary dysfunction in childhood after [177Lu]Lu-DOTATATE therapy."
+  },
+  "41783997": {
+   "topic_at_review": "Adrenal",
+   "verdict": "correct",
+   "target_topic": "Adrenal",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Pseudohypoxia and family history are key predictors of severe outcomes in hereditary pheochromocytoma and paraganglioma syndromes."
+  },
+  "41785912": {
+   "topic_at_review": "Adrenal",
+   "verdict": "wrong",
+   "target_topic": "Pituitary",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "USP8 genotype and tumour size as predictors for recurrence in Cushing's disease."
+  },
+  "41787707": {
+   "topic_at_review": "Genetics",
+   "verdict": "correct",
+   "target_topic": "Genetics",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Unraveling PEX6: insights into very-long-chain fatty acid levels and peroxisome biogenesis disorders in pediatric populations."
+  },
+  "41787713": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "wrong",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Correlations among whole-body fat, bone, and biomarkers in boys and girls with obesity: a cross-sectional study."
+  },
+  "41788765": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Denosumab in pediatric patients with fibrous dysplasia/McCune-Albright syndrome: a single-center, open-labeled study.",
+   "residual_accepted": true,
+   "residual_reason": "Denosumab for fibrous dysplasia is skeletal; branch 22a claims it on calcium terms. The Bone/Calcium vs Calcium/Parathyroid boundary is under review as a possible merge, so no rule change made here.",
+   "residual_decided_on": "2026-08-06"
+  },
+  "41795819": {
+   "topic_at_review": "Hyperinsulinism",
+   "verdict": "correct",
+   "target_topic": "Hyperinsulinism",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Double Trouble: When Focal and Diffuse Hyperinsulinism Occur Simultaneously."
+  },
+  "41796107": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "DSD",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Clinical Characterization and Molecular Profiling by Targeted Next-Generation Sequencing in a Large Indian Cohort With 46,XY Differences in Sex Development."
+  },
+  "41797568": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Growth",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Internal Inconsistency Between the Reported 50th Percentile Value and the LMS Median Parameter."
+  },
+  "41799227": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Bridging tradition and innovation: electroacupuncture's impact on premature ovarian insufficiency."
+  },
+  "41800356": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Epidemiological Trends and Seasonal Patterns in Childhood Type 1 Diabetes: Insights From 2001 to 2024 in Lithuania."
+  },
+  "41800634": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Immune Intervention and Beta Cell Replacement Therapies in T1D."
+  },
+  "41800637": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Emerging Trends in MASLD and MASH."
+  },
+  "41800642": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Diabetes",
+   "agent_verdict": "wrong",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Technology and Pregnancy."
+  },
+  "41800645": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Virtual Clinics for Diabetes Care."
+  },
+  "41802911": {
+   "topic_at_review": "PCOS",
+   "verdict": "correct",
+   "target_topic": "PCOS",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Early pregnancy biomarkers of inflammation and metabolic regulation in polycystic ovary syndrome."
+  },
+  "41803509": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Hyperinsulinaemia as a cause of obesity and cardiometabolic diseases."
+  },
+  "41804539": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Diabetes",
+   "agent_verdict": "defensible",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Ranting in 2026: Waiting for 2027."
+  },
+  "41810512": {
+   "topic_at_review": "Hyperinsulinism",
+   "verdict": "correct",
+   "target_topic": "Hyperinsulinism",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Noncoding Variants in Intron 2 of HK1 Associated With Hyperinsulinism With Variable Clinical Phenotype."
+  },
+  "41811754": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Adrenal",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Efficacy of liquid-chromatography and radioimmunoassay in false-positives' drop-off in CAH newborn screening."
+  },
+  "41812234": {
+   "topic_at_review": "Puberty",
+   "verdict": "correct",
+   "target_topic": "Puberty",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The role of high BMI from infancy forward on clinician-rated pubertal timing in a large US sample."
+  },
+  "41820251": {
+   "topic_at_review": "Genetics",
+   "verdict": "wrong",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Clinical Challenges in Transition to Adult Care for Young People With Endocrinopathies."
+  },
+  "41821305": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "wrong",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Clinical characteristics and anti-ZSCAN1 antibody titer analysis in a nationwide survey of ROHHAD (-NET) syndrome."
+  },
+  "41821745": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Efficacy and safety of Dysmenorrhea Patch acupoint application in women with primary dysmenorrhea: a randomized double-blind controlled trial."
+  },
+  "41831464": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "defensible",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Europe's school food policy gap."
+  },
+  "41832665": {
+   "topic_at_review": "DSD",
+   "verdict": "correct",
+   "target_topic": "DSD",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "GATA4 gene variants in 46,XY differences of sex development: report of four cases and literature review."
+  },
+  "41833290": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Sleep your way to better metabolic health."
+  },
+  "41839193": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Diabetes",
+   "agent_verdict": "wrong",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Evaluation of new staging schema for the early diagnosis of dysglycaemia."
+  },
+  "41842913": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Growth",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "A rare case of severe short stature diagnosed after late-onset hypocalcemia: Kenny-Caffey syndrome type 2."
+  },
+  "41842915": {
+   "topic_at_review": "Thyroid",
+   "verdict": "correct",
+   "target_topic": "Thyroid",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Pediatric thyroid cancer lung metastases and RAI: long-term results."
+  },
+  "41842929": {
+   "topic_at_review": "Growth",
+   "verdict": "wrong",
+   "target_topic": "DSD",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Long-term outcomes in ovotesticular DSD: insights from a single-centre Indian cohort."
+  },
+  "41843922": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Association ofrs17782313 and multi-locus genetic variants with metabolic syndrome in Northern Vietnamese children aged 6-11 years: an exploratory study."
+  },
+  "41843941": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "LRP5-related primary osteoporosis: phenotypic spectrum and treatment response to zoledronic acid."
+  },
+  "41845055": {
+   "topic_at_review": "Thyroid",
+   "verdict": "correct",
+   "target_topic": "Thyroid",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Greater recognition required for thyroid disorders."
+  },
+  "41846236": {
+   "topic_at_review": "Puberty",
+   "verdict": "correct",
+   "target_topic": "Puberty",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Volumetric MRI assessment of brain and pituitary structure in girls with central precocious puberty."
+  },
+  "41846525": {
+   "topic_at_review": "Pituitary",
+   "verdict": "correct",
+   "target_topic": "Pituitary",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "New insights into Oliver-McFarlane syndrome: adrenocortical hypofunction and variable expressivity in a Chinese sibling pair."
+  },
+  "41846542": {
+   "topic_at_review": "Thyroid",
+   "verdict": "correct",
+   "target_topic": "Thyroid",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Maternal TSH-receptor antibodies predict fetal/neonatal hyperthyroidism in pregnancies with a history of Graves' disease."
+  },
+  "41847449": {
+   "topic_at_review": "Adrenal",
+   "verdict": "wrong",
+   "target_topic": "DSD",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Male sex assignment in severely virilized 46,XX children with congenital adrenal hyperplasia."
+  },
+  "41847450": {
+   "topic_at_review": "Puberty",
+   "verdict": "wrong",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "defensible",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Sex- and stage-dependent expression of gonadal soma-derived factor paralogues reveals functional and evolutionary divergence in European sea bass (Dicentrarchus"
+  },
+  "41847829": {
+   "topic_at_review": "DSD",
+   "verdict": "correct",
+   "target_topic": "DSD",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "46,XY differences of sex development in pontocerebellar hypoplasia type 7 (PCH7): two case reports and systematic review."
+  },
+  "41852454": {
+   "topic_at_review": "Puberty",
+   "verdict": "correct",
+   "target_topic": "Puberty",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The ontogeny of sex differences in exercise performance."
+  },
+  "41852457": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Per- and polyfluoroalkyl substances and adolescent bone mineral density: assessing periods of susceptibility."
+  },
+  "41856737": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Causal inference in perinatal epidemiology: big data's false promises."
+  },
+  "41864211": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "correct",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Viral medicine: social media and new expectations of obesity treatment."
+  },
+  "41882966": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Quality-Score (Q-Score) Can Be More Sensitive than %Time in Range and Several Other CGM Metrics in Detecting Responses to Therapeutic Interventions."
+  },
+  "41884214": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Vertical ground reaction forces and loading rates during typical activities in children and adolescents: sex- and maturity-specific considerations for bone heal"
+  },
+  "41884215": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "From hypercalcemia to the diagnosis of pseudohypoparathyroidism type 1b: a case report."
+  },
+  "41885138": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Transient Hyperparathyroidism and Severe Intrauterine Osteopenia Linked to Novel Homozygous TRPV6 Deletion."
+  },
+  "41888495": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Pituitary",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Emerging applications of human iPSCs in pituitary diseases."
+  },
+  "41890172": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Evaluation of novel inflammatory biomarkers in overweight, obese, and morbidly obese children: a cross-sectional study."
+  },
+  "41890189": {
+   "topic_at_review": "Hyperinsulinism",
+   "verdict": "correct",
+   "target_topic": "Hyperinsulinism",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Utility of continuous glucose monitoring during pancreatic surgery in patients with congenital hyperinsulinism."
+  },
+  "41907541": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Metabolic-associated steatotic liver disease in children and adolescents: a scoping review and narrative synthesis of epidemiology, risk factors, and screening "
+  },
+  "41907688": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Impact of antenatal exposure to a mixture of endocrine disruptors on attentional and executive functions in children."
+  },
+  "41907689": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Burosumab treatment in an adult with FGF23-mediated hypophosphatemia due to cutaneous skeletal hypophosphatemia syndrome."
+  },
+  "41911946": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Real-world Impact of Treatment on Growth in Children With X-Linked Hypophosphatemia."
+  },
+  "41913979": {
+   "topic_at_review": "Thyroid",
+   "verdict": "correct",
+   "target_topic": "Thyroid",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The FT3/FT4 Ratio Predicts Relapse After Antithyroid Drug Withdrawal in Pediatric Autoimmune Hyperthyroidism."
+  },
+  "41914440": {
+   "topic_at_review": "Thyroid",
+   "verdict": "correct",
+   "target_topic": "Thyroid",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Subclinical Hypothyroidism in Children: Natural History, Risk Factors, and Outcomes."
+  },
+  "41921573": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The association between PFAS exposure, menstrual cycle parameters, and reproductive hormones in adolescent girls."
+  },
+  "41924297": {
+   "topic_at_review": "Hyperinsulinism",
+   "verdict": "correct",
+   "target_topic": "Hyperinsulinism",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Comprehensive genetic rescreening improves diagnostic yield in congenital hyperinsulinism."
+  },
+  "41924298": {
+   "topic_at_review": "PCOS",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Free testosterone independently predicts metabolic syndrome severity in U.S. adolescent girls aged 12-19 years."
+  },
+  "41926547": {
+   "topic_at_review": "Thyroid",
+   "verdict": "correct",
+   "target_topic": "Thyroid",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Clinical and Biochemical Monitoring of Monocarboxylate Transporter 8 Deficiency (Allan-Herndon-Dudley Syndrome) across the Lifespan: Practical Considerations fo"
+  },
+  "41928888": {
+   "topic_at_review": "Gender Medicine",
+   "verdict": "correct",
+   "target_topic": "Gender Medicine",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Effects of gender-affirming hormone therapy from adolescence to adulthood on cardiovascular function: a cross-sectional study."
+  },
+  "41934635": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Real-world Effectiveness of Burosumab Across Age Groups: X-linked Hypophosphatemia (XLH) Disease Monitoring Program."
+  },
+  "41935536": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "World Autism Awareness Day: autism and metabolic health."
+  },
+  "41948559": {
+   "topic_at_review": "Hyperinsulinism",
+   "verdict": "correct",
+   "target_topic": "Hyperinsulinism",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Single-center experience description of surgical management of diffuse congenital hyperinsulinism in a pediatric non-current cohort."
+  },
+  "41952051": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Non-Classical Presentations of Rare Hereditary Hypoparathyroidism: A Case Series of CASR, GNA11 and GATA3 Mutations."
+  },
+  "41955216": {
+   "topic_at_review": "Puberty",
+   "verdict": "correct",
+   "target_topic": "Puberty",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Steroids, stress, and body mass index interact to accelerate female pubertal development."
+  },
+  "41955566": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "wrong",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The use of denosumab in rare bone diseases in adults: a systematic review from the ECTS Rare Bone Disease Action Group."
+  },
+  "41964640": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Clinical picture of early infancy PTH resistance syndromes: is it time to improve diagnostic criteria?"
+  },
+  "41965096": {
+   "topic_at_review": "Pituitary",
+   "verdict": "correct",
+   "target_topic": "Pituitary",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Genetics of Familial Acromegaly and Pituitary Gigantism."
+  },
+  "41970972": {
+   "topic_at_review": "Genetics",
+   "verdict": "correct",
+   "target_topic": "Genetics",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Effect of pericentric inversion of chromosome 9 on reproductive outcomes in assisted reproductive technology: a propensity score-matched cohort study."
+  },
+  "41974972": {
+   "topic_at_review": "Thyroid",
+   "verdict": "correct",
+   "target_topic": "Thyroid",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Human thyroid organoids: tools for understanding thyroid diseases and development."
+  },
+  "41978437": {
+   "topic_at_review": "Hyperinsulinism",
+   "verdict": "correct",
+   "target_topic": "Hyperinsulinism",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "A 13-Year-Old Girl with Congenital Hyperinsulinemic Hypoglycemia Due to an ABCC8 Mutation and Recent Onset of Diabetes Mellitus: A Case Report and Literature Re"
+  },
+  "41979033": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Report on the 2nd Conference of the German Society for Paediatric and Adolescent Endocrinology and Diabetology (DGPAED) in Leipzig/Halle, Saale 2025."
+  },
+  "41980002": {
+   "topic_at_review": "Hyperinsulinism",
+   "verdict": "correct",
+   "target_topic": "Hyperinsulinism",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Natural History of the Hyperinsulinism Hyperammonemia Syndrome - A Retrospective Review Incorporating Patient-centered Data."
+  },
+  "41980610": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "DXA-measured truncal adiposity in adolescence but not in childhood longitudinally predicts worsening cardiac outcomes."
+  },
+  "41981276": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Causes of sarcopenia and frailty in people taking GLP1RAs."
+  },
+  "41982776": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Case Report: Two infants with hypercalcemia of rare and distinct etiologies."
+  },
+  "41985044": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Severe osteogenesis imperfecta due to homozygous glycine substitutions in COL1A1 and COL1A2."
+  },
+  "41987891": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Adrenal",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Exogenous glucocorticoid dose impacts circulating microRNA expression in patients with adrenal insufficiency due to 21-hydroxylase deficiency."
+  },
+  "41987892": {
+   "topic_at_review": "Thyroid",
+   "verdict": "wrong",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Long-term trajectories of reproductive and pituitary-adrenal-thyroid hormones in young males following Omicron BA.2 infection: a two-year prospective cohort stu"
+  },
+  "41991771": {
+   "topic_at_review": "Hyperinsulinism",
+   "verdict": "correct",
+   "target_topic": "Hyperinsulinism",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The effect of hypoglycaemia on neurodevelopment: insights from congenital hyperinsulinism."
+  },
+  "41991772": {
+   "topic_at_review": "Genetics",
+   "verdict": "wrong",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Precision medicine in low-income settings and small island developing states."
+  },
+  "41993989": {
+   "topic_at_review": "PCOS",
+   "verdict": "correct",
+   "target_topic": "PCOS",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Global, regional and national burden of polycystic ovary syndrome: historical trends from 1990 to 2021 and projections to 2035."
+  },
+  "41999714": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Implications of microplastics as emerging endocrine disruptors."
+  },
+  "42006263": {
+   "topic_at_review": "PCOS",
+   "verdict": "correct",
+   "target_topic": "PCOS",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Uterine morphology in normogonadotropic anovulation: a comparative study of polycystic ovary syndrome and hypothalamic-pituitary-ovarian dysfunction."
+  },
+  "42006275": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "correct",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Maternal obesity alters adipogenic potential and mitochondrial maximal respiration in infant mesenchymal stem cells."
+  },
+  "42009016": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "correct",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "What REDEFINE 5 signals for obesity trials in Asia and beyond."
+  },
+  "42010026": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Pathophysiology, diagnosis and management of secondary osteoporosis."
+  },
+  "42011955": {
+   "topic_at_review": "Thyroid",
+   "verdict": "correct",
+   "target_topic": "Thyroid",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "A Comparative Assessment of Large Language Models in Congenital Hypothyroidism: Reliability, Quality and Readability."
+  },
+  "42017812": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Life Course Cumulative BMI Burden From Childhood to Adulthood and Risk of Metabolic Multimorbidity: A 36-Year Prospective Cohort Study."
+  },
+  "42022909": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Ovulation induction or artificial programmed protocol: which endometrial preparation approach is more favorable in reducing obstetrical and neonatal complicatio"
+  },
+  "42028850": {
+   "topic_at_review": "Puberty",
+   "verdict": "correct",
+   "target_topic": "Puberty",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "BMI-SDS Changes During GnRHa Therapy in 150 Girls with Idiopathic Central Precocious Puberty: Follow-up Through Final Height."
+  },
+  "42030114": {
+   "topic_at_review": "Adrenal",
+   "verdict": "correct",
+   "target_topic": "Adrenal",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Letter to the editor from Claahsen and Kamrath: \"the importance of disease-Specific growth charts for children with congenital adrenal hyperplasia\"."
+  },
+  "42039118": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Turner syndrome across the lifespan: a 25-year single-center experience from neonatal diagnosis to adult outcomes."
+  },
+  "42039121": {
+   "topic_at_review": "Puberty",
+   "verdict": "wrong",
+   "target_topic": "DSD",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Case Report: Integrating clinical presentation and genetic analysis in P450 oxidoreductase deficiency: a novel mutation and systematic review."
+  },
+  "42043277": {
+   "topic_at_review": "Pituitary",
+   "verdict": "wrong",
+   "target_topic": "Adrenal",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The 40th Minute Cortisol Measurement is the Key Time-Point in the Low-Dose Synacthen Stimulation Test: A Large, Assay-Specific Pediatric Validation Study."
+  },
+  "42044650": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Safety, tolerability, pharmacokinetics, and efficacy of burosumab in infants with X-linked hypophosphataemia: an open-label, multicentre, non-randomised study."
+  },
+  "42044652": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Burosumab treatment for children younger than 12 months with X-linked hypophosphataemia."
+  },
+  "42045671": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Highlights from SfE BES 2026."
+  },
+  "42045672": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "correct",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Clinical obesity in Asian people: bridging the gap between adiposity and disease."
+  },
+  "42045809": {
+   "topic_at_review": "Pituitary",
+   "verdict": "correct",
+   "target_topic": "Pituitary",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Prevalence of germline variants in USP8, USP48, CABLES1 and PAM in patients with pituitary adenomas."
+  },
+  "42048665": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "correct",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Predicting abdominal obesity in children and adolescents via machine learning: a longitudinal cohort study."
+  },
+  "42051067": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "PCOS",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Presumptive ovarian hyperthecosis in an adolescent girl with sustained remission after oral contraceptive therapy: a 23-year follow-up case report."
+  },
+  "42051455": {
+   "topic_at_review": "PCOS",
+   "verdict": "correct",
+   "target_topic": "PCOS",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Gut microbiome dysbiosis in PCOS: from pathogenesis to microbiome-targeted therapies."
+  },
+  "42051461": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "wrong",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Gut microbiota in chronic kidney disease-mineral and bone disorder: shared mechanisms, disease-specific signatures, and therapeutic prospects."
+  },
+  "42053457": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Age and sexual maturation at Spermarche in boys with Laron syndrome."
+  },
+  "42054261": {
+   "topic_at_review": "PCOS",
+   "verdict": "correct",
+   "target_topic": "PCOS",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "U.S. Adolescents of Asian Ethnicity have Higher Risk of Polycystic Ovary Syndrome."
+  },
+  "42058792": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "correct",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The role of endocrine-disrupting chemicals in obesity: mechanisms, evidence, and public health implications."
+  },
+  "42064759": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Chaihu-Wendan Decoction alleviates obesity through PTEN-mediated uncoupling of metabolic signaling and macrophage activation."
+  },
+  "42064761": {
+   "topic_at_review": "Adrenal",
+   "verdict": "correct",
+   "target_topic": "Adrenal",
+   "agent_verdict": "correct",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Integrating behaviour, physiology, and immune response to social stress in fish."
+  },
+  "42064767": {
+   "topic_at_review": "Pituitary",
+   "verdict": "correct",
+   "target_topic": "Pituitary",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Expert meeting report: epidemiology and management of acquired hypothalamic obesity."
+  },
+  "42064769": {
+   "topic_at_review": "PCOS",
+   "verdict": "correct",
+   "target_topic": "PCOS",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The accuracy of lipid accumulation product to predict metabolic syndrome in PCOS: a meta-analysis and comparative analysis with other indicators."
+  },
+  "42064772": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "From incidentaloma to actionable insight: a clinical-molecular-imaging framework for risk-stratified management of testicular microlithiasis."
+  },
+  "42064775": {
+   "topic_at_review": "Adrenal",
+   "verdict": "correct",
+   "target_topic": "Adrenal",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Editorial: Enhancing adrenal tumor diagnostics: biomarkers and molecular mechanisms."
+  },
+  "42064776": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Testicular microenvironment disruption in varicocele: mechanisms and implications for spermatogenesis."
+  },
+  "42070902": {
+   "topic_at_review": "Puberty",
+   "verdict": "correct",
+   "target_topic": "Puberty",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The KISS1R gene rs350132 variant is significantly associated with central precocious puberty susceptibility among Asian girls: evidence from a case-control stud"
+  },
+  "42076862": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Clinical evidence, practical contradictions, and monitoring of rhGH-assisted height enhancement in children with CAH."
+  },
+  "42085356": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "wrong",
+   "target_topic": "Growth",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Muscle Function and Bone Strength in Children and Adolescents with Tall Stature."
+  },
+  "42090597": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "wrong",
+   "target_topic": "Genetics",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "A novel mutation in glycogen storage disease type XI presenting with neonatal cholestasis and infection-triggered hepatic flares."
+  },
+  "42091116": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Diabetes",
+   "agent_verdict": "wrong",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The Relevance of Error Grid Analysis in ISO 15197."
+  },
+  "42095272": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "DSD",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Serum Androgen Profile of Elite Athletes."
+  },
+  "42098923": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Cardiovascular, Renal, and Hepatic Biomarkers Outside Guideline-Recommended Thresholds: Prevalence and Determinants in Type 1 Diabetes."
+  },
+  "42105324": {
+   "topic_at_review": "PCOS",
+   "verdict": "correct",
+   "target_topic": "PCOS",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Approach to the diagnosis and treatment of polycystic ovarian syndrome in adolescent patients."
+  },
+  "42112595": {
+   "topic_at_review": "Thyroid",
+   "verdict": "correct",
+   "target_topic": "Thyroid",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Genetic evaluation of a group of patients with transient congenital hypothyroidism by targeted exome sequencing."
+  },
+  "42112796": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The first neonatal case of Juvenile Paget disease with homozygous deletion in the TNFRSF11B gene."
+  },
+  "42129590": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Are children with inborn errors of metabolism and cystic fibrosis adequately protected? Immunization status and seroepidemiological evaluation of vaccine-preven"
+  },
+  "42131996": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "DSD",
+   "agent_verdict": "defensible",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Maternal \u03b2-hCG and neonatal hormone profiles as predictors of anogenital distance: assessing the fetal reproductive axis."
+  },
+  "42138266": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Clinical Validation of Two New Planimetric Techniques for Measuring Ulcer Surface Area."
+  },
+  "42144695": {
+   "topic_at_review": "Pituitary",
+   "verdict": "wrong",
+   "target_topic": "Adrenal",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Challenges in Diagnosing Central Adrenal Insufficiency in Children: Cortisol-Stimulating Tests are Safe and Often Required."
+  },
+  "42144862": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Navepegritide Combined with Lonapegsomatropin for the Treatment of Children with Achondroplasia: 52-Week Results from the Phase 2 COACH Trial."
+  },
+  "42148757": {
+   "topic_at_review": "Genetics",
+   "verdict": "wrong",
+   "target_topic": "Lipids",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Fresh frozen plasma as functional replacement therapy in early infantile ApoC-II deficiency: a molecularly confirmed case series."
+  },
+  "42149805": {
+   "topic_at_review": "Hyperinsulinism",
+   "verdict": "correct",
+   "target_topic": "Hyperinsulinism",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Clinical Presentation and Outcomes of Insulinomas in Pediatric Patients."
+  },
+  "42153511": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Nine-year cinacalcet monotherapy in a child with neonatal severe hyperparathyroidism caused by compound heterozygous CASR mutations."
+  },
+  "42156235": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Growth patterns and bone maturation in children with sex chromosomal (45,X/46,XY) differences of sex development."
+  },
+  "42161334": {
+   "topic_at_review": "Diabetes",
+   "verdict": "wrong",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Continuous subcutaneous recombinant PTH(1-34) infusion improves serum calcium and phosphate homeostasis in children with autosomal dominant hypocalcemia type 1 "
+  },
+  "42165353": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Glycemic Concordance of Simplera Sync\u2122 and Instinct\u2122 Sensors in MiniMed\u2122 780G System Users: A Randomized Crossover Feasibility Study."
+  },
+  "42171631": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "DSD",
+   "agent_verdict": "defensible",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Anorexia Nervosa Emerging After Swyer Syndrome Diagnosis."
+  },
+  "42188980": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "A comparative analysis of all reported patients with MTHFS-related neurodevelopmental disorder."
+  },
+  "42190069": {
+   "topic_at_review": "Genetics",
+   "verdict": "correct",
+   "target_topic": "Genetics",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Is mild citrullinemia type I truly benign? a study of long-term clinical outcomes."
+  },
+  "42205009": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Blau syndrome initially manifested with hypercalcemia: a case report and literature review."
+  },
+  "42272567": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "The role of hormonal markers in predicting reproductive lifespan in girls with Turner syndrome-a retrospective study."
+  },
+  "42272568": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Feasibility, reproducibility, and cold-induced energy expenditure using whole-room calorimetry in adults and children."
+  },
+  "42274414": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Identification and Follow-up of At-Risk Children Mitigate Disease Severity and Improve Treatment Outcomes in Type 1 Diabetes."
+  },
+  "42287191": {
+   "topic_at_review": "Puberty",
+   "verdict": "correct",
+   "target_topic": "Puberty",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "A systematic review supporting the Endocrine Society clinical practice guidelines on central precocious puberty."
+  },
+  "42306228": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Achondroplasia management in the era of targeted therapies: a meta-analysis of C-type natriuretic peptide analogs."
+  },
+  "42317743": {
+   "topic_at_review": "Adrenal",
+   "verdict": "correct",
+   "target_topic": "Adrenal",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Clinical burden of classic congenital adrenal hyperplasia and glucocorticoid-related complications: a claims analysis."
+  },
+  "42324811": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Three cases of hereditary hypomagnesemia with secondary hypocalcemia caused by novelgene mutations and a literature review."
+  },
+  "42324936": {
+   "topic_at_review": "Genetics",
+   "verdict": "correct",
+   "target_topic": "Genetics",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Diverse clinical spectrum of Niemann-Pick C: insights from a single center."
+  },
+  "42324939": {
+   "topic_at_review": "Thyroid",
+   "verdict": "correct",
+   "target_topic": "Thyroid",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Investigating thyroid dysfunction in pediatric patients following the administration of iodinated contrast media during cardiac catheterization."
+  },
+  "42333546": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Evaluating the transition of young adults with osteogenesis imperfecta: a patient-focused prospective study."
+  },
+  "42333578": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Two-year follow-up of musculoskeletal outcomes and quality of life in patients with mucopolysaccharidosis type IV and VI."
+  },
+  "42333785": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Second interim analysis of the post-authorisation safety study (PASS) of burosumab in paediatric patients with X-linked hypophosphataemia."
+  },
+  "42333799": {
+   "topic_at_review": "Pituitary",
+   "verdict": "correct",
+   "target_topic": "Pituitary",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Overview of Surgical Approaches and Adjuvant Therapy for Treatment of Craniopharyngiomas."
+  },
+  "42340003": {
+   "topic_at_review": "DSD",
+   "verdict": "wrong",
+   "target_topic": "Adrenal",
+   "agent_verdict": "wrong",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Long-term Clinical Outcomes of Primary Adrenal Insufficiency Caused by Homozygous CYP11A1 p.R451W Variant."
+  },
+  "42340143": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Sleep Hygiene in Pediatric Patients with Steatotic Liver Disease."
+  },
+  "42359583": {
+   "topic_at_review": "Adrenal",
+   "verdict": "correct",
+   "target_topic": "Adrenal",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Machine Learning Algorithms to Accelerate Etiological Diagnosis of Congenital Disorders of Adrenal Steroidogenesis."
+  },
+  "42369274": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Model-based somapacitan dosing and IGF-I response in children born SGA or with ISS, Noonan or Turner syndromes."
+  },
+  "42370601": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Factors affecting the success of follow-up and treatment of adults with phenylketonuria diagnosed by newborn screening."
+  },
+  "42380965": {
+   "topic_at_review": "Adrenal",
+   "verdict": "correct",
+   "target_topic": "Adrenal",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Steroid profiling in congenital adrenal hyperplasia: comparing immunoassays and LC-MS/MS accuracy."
+  },
+  "42389910": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Invited Commentary: Using Large Clinical Databases."
+  },
+  "42394270": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Growth",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Response to the Letter Regarding \"Reference Values for Weight, Height, Head Circumference, and Body Mass Index in Turkish Children\"."
+  },
+  "42394271": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "wrong",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Response to Letter to the Editor \"Sleep hygiene in pediatric patients with steatotic liver disease\"."
+  },
+  "42396735": {
+   "topic_at_review": "Hyperinsulinism",
+   "verdict": "correct",
+   "target_topic": "Hyperinsulinism",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Birth prevalence and characterisation of congenital hyperinsulinism in Western Australia over two decades."
+  },
+  "42410932": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Using a Fine-Tuned Commercial Artificial Intelligence Model to Assess Nutrients from Photographs of Japanese Meals."
+  },
+  "42412739": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Growth hormone therapy in children born small for gestational age with persistent short stature (SGA-SS): Lessons learned from real-world international database"
+  },
+  "42415553": {
+   "topic_at_review": "DSD",
+   "verdict": "correct",
+   "target_topic": "DSD",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Beyond genital phenotype - Commentary on \"Long-term outcomes in 45,X/46,XY mosaicism: a 30-year retrospective study in Hong Kong\"."
+  },
+  "42415556": {
+   "topic_at_review": "Growth",
+   "verdict": "wrong",
+   "target_topic": "DSD",
+   "agent_verdict": "defensible",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Long-term outcomes in 45,X/46,XY mosaicism: a 30-year retrospective study in Hong Kong."
+  },
+  "42430280": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Use of teriparatide for treatment of a 3-year-old child with an activating calcium sensing receptor mutation."
+  },
+  "42444555": {
+   "topic_at_review": "PCOS",
+   "verdict": "correct",
+   "target_topic": "PCOS",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Testosterone Reference Ranges in Women, Adolescent Girls, and Children: The 2024 PCOS Challenge-CDC Stakeholder Meeting."
+  },
+  "42478504": {
+   "topic_at_review": "Thyroid",
+   "verdict": "correct",
+   "target_topic": "Thyroid",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Methimazole-Associated Neutropenia and Agranulocytosis in Pediatric Patients with Graves' Disease: A Chinese Cohort Study."
+  },
+  "42478861": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Obesity/Metabolic",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Temporal stability of cardiometabolic risk factors from the perspective of primordial disease prevention in children."
+  },
+  "42481440": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "wrong",
+   "target_topic": "Growth",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Development of radiographic references for skeletal maturity in Indian children."
+  },
+  "42483928": {
+   "topic_at_review": "Pituitary",
+   "verdict": "correct",
+   "target_topic": "Pituitary",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Prolactinoma Associated with L-Dopa-Resistant Hyperprolactinemia in a Child with Tetrahydropterin (BH4) Deficiency."
+  },
+  "42483948": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Menstrual Health in Adolescents with Congenital Heart Disease."
+  },
+  "42484024": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "wrong",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Off-Label Use of Teriparatide for Osteotomy Healing in an Adolescent with Osteogenesis Imperfecta Type VIII: A Case Report."
+  },
+  "42489153": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Comments on Article Discussing Exome Sequencing in Children with Short Stature."
+  },
+  "42489158": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Hyperparathyroidism After 3 Years of Burosumab in Children Affected With X-Linked Hypophosphatemia."
+  },
+  "42495736": {
+   "topic_at_review": "Thyroid",
+   "verdict": "correct",
+   "target_topic": "Thyroid",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Iodine status and thyroid function in children with multiple food allergy: a prospective cross-sectional study."
+  },
+  "42496035": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Endocrine Phenotypes and Hormonal Treatment in Meier-Gorlin Syndrome: Report of Two Cases and a Systematic Review of Literature."
+  },
+  "42496135": {
+   "topic_at_review": "DSD",
+   "verdict": "correct",
+   "target_topic": "DSD",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Prenatal care for Disorders/Differences of Sex Development: 10-years look back in an expert-center."
+  },
+  "42509666": {
+   "topic_at_review": "Diabetes",
+   "verdict": "correct",
+   "target_topic": "Diabetes",
+   "agent_verdict": "correct",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "INSIGHT: Ingest and Standardize Glucose Harmonization Tool."
+  },
+  "42526474": {
+   "topic_at_review": "General Endocrinology",
+   "verdict": "correct",
+   "target_topic": "General Endocrinology",
+   "agent_verdict": "correct",
+   "confidence": "low",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Energy drink ban: putting children's health first."
+  },
+  "42528457": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Early-onset juvenile Paget disease associated with a homozygous intronic TNFRSF11B variant: a 2-year follow-up."
+  },
+  "42530118": {
+   "topic_at_review": "Puberty",
+   "verdict": "correct",
+   "target_topic": "Puberty",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Long-Term Outcomes of Gonadotropin-Releasing Hormone Analogue Therapy in Central Precocious Puberty: A Comparative Analysis of Obese and Normal-Weight Girls."
+  },
+  "42538806": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "agent_verdict": "correct",
+   "confidence": "high",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Once-weekly somapacitan enhances linear growth in girls with Turner syndrome: a randomized controlled phase 3 study."
+  },
+  "42540306": {
+   "topic_at_review": "Puberty",
+   "verdict": "wrong",
+   "target_topic": "Adrenal",
+   "agent_verdict": "wrong",
+   "confidence": "medium",
+   "decided_on": "2026-08-06",
+   "decided_by": "human",
+   "title": "Genotype-refined 17OHP cut-offs diagnosing nonclassical CAH due to 21OH deficiency in children with premature pubarche."
+  },
+  "40105472": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "decided_on": "2026-08-06",
+   "decided_by": "regression-bless",
+   "bless_reason": "Weiss-Kruszka syndrome; short stature and growth failure are the endocrine presentation",
+   "title": "Clinical and Molecular Landscape of Weiss-Kruszka Syndrome: A Case Report and Literature Review."
+  },
+  "41015786": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "decided_on": "2026-08-06",
+   "decided_by": "regression-bless",
+   "bless_reason": "Noonan syndrome is a RASopathy whose endocrine relevance is short stature and GH response",
+   "title": "Noonan syndrome and autoimmune hepatitis: patient report and literature review."
+  },
+  "41061665": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "correct",
+   "target_topic": "Obesity/Metabolic",
+   "decided_on": "2026-08-06",
+   "decided_by": "regression-bless",
+   "bless_reason": "maternal obesity and breast milk composition; no diabetes content",
+   "title": "Maternal Obesity Increases Breast Milk Bile Acid Levels."
+  },
+  "41229307": {
+   "topic_at_review": "Puberty",
+   "verdict": "correct",
+   "target_topic": "Puberty",
+   "decided_on": "2026-08-06",
+   "decided_by": "regression-bless",
+   "bless_reason": "minipuberty and reproductive hormones is squarely Puberty",
+   "title": "Reproductive Hormones During Minipuberty Suggest Subtle Testicular Impairments in Boys With Hypospadias."
+  },
+  "41521529": {
+   "topic_at_review": "Genetics",
+   "verdict": "correct",
+   "target_topic": "Genetics",
+   "decided_on": "2026-08-06",
+   "decided_by": "regression-bless",
+   "bless_reason": "SCOT deficiency is a ketolysis inborn error, not diabetic ketosis",
+   "title": "Severe metabolic acidosis in succinyl-CoA:3-ketoacid CoA transferase (SCOT) deficiency: case report of a novel pathogenic OXCT1 variant (L131_E132dup) and its p"
+  },
+  "41758754": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "decided_on": "2026-08-06",
+   "decided_by": "regression-bless",
+   "bless_reason": "once-weekly lonapegsomatropin is GH replacement",
+   "title": "Once-Weekly Lonapegsomatropin Was Efficacious and Well Tolerated in Chinese Children with Growth Hormone Deficiency: Results from a Phase 3 Randomized Trial."
+  },
+  "41762714": {
+   "topic_at_review": "Adrenal",
+   "verdict": "correct",
+   "target_topic": "Adrenal",
+   "decided_on": "2026-08-06",
+   "decided_by": "regression-bless",
+   "bless_reason": "ectopic ACTH syndrome from sacrococcygeal teratoma is adrenal/Cushing",
+   "title": "Challenges of pediatric ectopic ACTH syndrome from sacrococcygeal teratoma."
+  },
+  "41924524": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "correct",
+   "target_topic": "Obesity/Metabolic",
+   "decided_on": "2026-08-06",
+   "decided_by": "regression-bless",
+   "bless_reason": "insulin-resistance indices and carotid atherosclerosis; was Growth only via the tyGHDl substring bug",
+   "title": "Associations of cholesterol, high-density lipoprotein and glucose index and triglyceride-glucose-related indices with carotid atherosclerosis in young and middl"
+  },
+  "41958885": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "decided_on": "2026-08-06",
+   "decided_by": "regression-bless",
+   "bless_reason": "maternal and neonatal vitamin D metabolite profiling is the vitamin D axis",
+   "title": "Maternal and neonatal vitamin D metabolite profiling and its long-term impact on childhood growth: findings from the KLOTHO birth cohort."
+  },
+  "41966075": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "decided_on": "2026-08-06",
+   "decided_by": "regression-bless",
+   "bless_reason": "PTEN hamartoma tumour syndrome presents endocrinologically as overgrowth",
+   "title": "Endocrine and metabolic features of PTEN hamartoma tumor syndrome in childhood: a pediatric case series."
+  },
+  "42064770": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "decided_on": "2026-08-06",
+   "decided_by": "regression-bless",
+   "bless_reason": "fat-soluble vitamin trajectories; vitamin D axis, not glycaemia",
+   "title": "Maternal fat-soluble vitamin trajectories and infant birth weight in individuals with overweight or obesity."
+  },
+  "42099117": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "correct",
+   "target_topic": "Obesity/Metabolic",
+   "decided_on": "2026-08-06",
+   "decided_by": "regression-bless",
+   "bless_reason": "MC4R-related monogenic obesity",
+   "title": "MC4R-related monogenic obesity in children: insights from 2 cases."
+  },
+  "42131990": {
+   "topic_at_review": "Thyroid",
+   "verdict": "correct",
+   "target_topic": "Thyroid",
+   "decided_on": "2026-08-06",
+   "decided_by": "regression-bless",
+   "bless_reason": "central congenital hypothyroidism from a TSHB mutation",
+   "title": "Central congenital hypothyroidism caused by TSHB gene mutation: a case report."
+  },
+  "42299320": {
+   "topic_at_review": "Puberty",
+   "verdict": "correct",
+   "target_topic": "Puberty",
+   "decided_on": "2026-08-06",
+   "decided_by": "regression-bless",
+   "bless_reason": "exogenous testosterone suppressing gonadotropins is a puberty/HPG question",
+   "title": "Transient gonadotropin suppression by exogenous testosterone decreases INSL3 in early puberty in boys with constitutional delay of growth and puberty."
+  },
+  "42371749": {
+   "topic_at_review": "Obesity/Metabolic",
+   "verdict": "correct",
+   "target_topic": "Obesity/Metabolic",
+   "decided_on": "2026-08-06",
+   "decided_by": "regression-bless",
+   "bless_reason": "genetic determinants of macronutrient intake and adiposity",
+   "title": "Genetic Determinants of Macronutrient Intake Are Associated With Specific Food Intake in Youth: A Cohort Study Across Childhood and Adolescence."
+  },
+  "42372104": {
+   "topic_at_review": "Growth",
+   "verdict": "correct",
+   "target_topic": "Growth",
+   "decided_on": "2026-08-06",
+   "decided_by": "regression-bless",
+   "bless_reason": "somatrogon long-term extension is GH replacement",
+   "title": "Open-Label 9-Year Follow-Up Extension Phase 2 Study of Once-Weekly Somatrogon in Children With Growth Hormone Deficiency."
+  },
+  "42461330": {
+   "topic_at_review": "Bone/Mineral",
+   "verdict": "correct",
+   "target_topic": "Bone/Mineral",
+   "decided_on": "2026-08-06",
+   "decided_by": "regression-bless",
+   "bless_reason": "vitamin D supplementation in hypovitaminosis D",
+   "title": "Maternal and neonatal outcomes of vitamin D supplementation in hypovitaminosis D pregnancy: preg-D randomized trial."
+  },
+  "42485653": {
+   "topic_at_review": "Puberty",
+   "verdict": "correct",
+   "target_topic": "Puberty",
+   "decided_on": "2026-08-06",
+   "decided_by": "regression-bless",
+   "bless_reason": "congenital hypogonadotropic hypogonadism",
+   "title": "The Spectrum of Congenital Hypogonadotropic Hypogonadism: A 30-Year Experience at a Tertiary Paediatric Centre."
+  },
+  "39602903": {
+   "topic_at_review": "Puberty",
+   "verdict": "correct",
+   "target_topic": "Puberty",
+   "decided_on": "2026-08-06",
+   "decided_by": "regression-bless",
+   "bless_reason": "DHEAS and diurnal adrenal hormones after discordant birthweight; adrenarche makes Puberty defensible, though Adrenal is arguable",
+   "title": "Similarities and Differences in Diurnal Salivary Adrenal Hormones in Monozygotic Twins with Discordant Birthweight."
+  },
+  "41513899": {
+   "topic_at_review": "Growth",
    "verdict": "wrong",
    "target_topic": "General Endocrinology",
    "agent_verdict": null,
    "confidence": null,
-   "decided_on": "2026-08-05",
+   "decided_on": "2026-08-06",
    "decided_by": "human",
-   "title": "Framework for the comprehensive screening for endocrine disorders in patients with transfusion-dependent thalassemia in low-resource settings."
+   "title": "Endocrine regulation of the hepatic fasting response: cues, cooperation and consequences.",
+   "note": "Broad multi-hormone review of hepatic fuel metabolism during fasting; GH is one of several hormones discussed, not the subject. Christian concurred 2026-08-06.",
+   "residual_accepted": true,
+   "residual_reason": "Hepatic fuel-metabolism review; classified Growth on a single abstract mention of 'growth hormone'. The general fix (a title-or-twice guard on branch 13) was measured and rejected: 1 fix for 1 regression, and it pushed a stress/bone-health paper to Adrenal.",
+   "residual_decided_on": "2026-08-06"
   }
  }
 }

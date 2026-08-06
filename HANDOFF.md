@@ -24,11 +24,59 @@ A pediatric-endocrinology literature digest: 19 PubMed journals → rules-based 
 one self-contained `index.html` (**1,406 articles, 149 guidelines**), plus accounts with saved
 articles and private notes. Built for a clinician audience, meant to be shared at conferences.
 
-## Current state: nothing is broken or half-finished
+## Current state: two things are waiting on Christian, nothing is broken
 
-Auth/email stack is live and verified. Guideline coverage is done (2018 onward). Classifier QA
-now has both a review pipeline and an automatic regression gate. Working tree clean, pushed
-through `218d23f`.
+Auth/email stack is live and verified. Guideline coverage is done (2018 onward). The live site
+is unchanged and healthy.
+
+**The working tree is dirty on purpose and nothing from the overnight session was committed** —
+`check_classifier_regressions.py` diffs against `git HEAD`, so committing now would destroy the
+baseline it needs. HEAD is `84b7c10`.
+
+Three things want a human:
+1. **`classifier_qa_review.html`** — round 2 is judged and ready to review (below).
+2. **`CLASSIFIER_FIX_PROPOSAL.md`** — a measured, unapplied patch for what the review will
+   confirm. Apply *after* the review, in the runbook's order.
+3. **`REDESIGN_BRIEF.md`** — read before any redesign work starts.
+
+## What happened overnight 2026-08-05/06 (uncommitted)
+
+Full detail in `_log.md`. Three findings, in order of how much they change the plan.
+
+**1. `pub_date` is wrong for 344 of 1,406 articles (24.5%).** Verified against PubMed for the
+whole store (`audit_pub_dates.py`, read-only; list in `pub_date_audit.md`). 165 are
+**fabricated** — the journal issue gives year-month only, so the day is taken from
+`ArticleDate` and glued on, yielding a date in neither source. 110 aren't sortable
+(`2018-Oct`, bare `2018`). 69 show 2024 papers as 2026. **Catch-up mode (C) filters on this
+field and the redesign sorts by it, so this plausibly outranks both.** The fix is a decision
+plus a re-fetch, not research.
+
+**2. Classifier QA round 2 is judged and awaiting review.** 418 articles, 9 parallel Sonnet
+judges, merged verdicts validated globally (418/418, no drift or dupes): **287 correct, 37
+defensible, 94 wrong.** That 22.5% is an enriched sample, not the store. Weighting each
+topic's rate by its share of the corpus gives **11.5% wrong store-wide, ≈161 of 1,406
+articles** — worst in `Genetics` (36.8%) and `General Endocrinology` (34.5%, exact because
+that topic was judged exhaustively). Seven of nine judges independently flagged the same root
+cause: the Diabetes branch firing on incidental insulin/hyperglycemia mentions, round 1's bug
+class still unfixed in general form. Open the review page, adjust, Submit, then
+`python3 apply_classifier_qa.py`.
+
+**3. F2 suspicion scoring works.** `suspicion_score.py` (read-only) hit **81.8% precision
+against the 11.1% random-Diabetes baseline — a 7.4× lift**, measured rather than asserted,
+because the sample kept seeded and random portions separable. The baseline rests on 18
+articles, so treat the multiplier as approximate. Use it to seed future rounds.
+
+**4. The Diabetes over-firing is root-caused, with a measured patch waiting.**
+`CLASSIFIER_FIX_PROPOSAL.md` + `proposed_classifier_fix.patch` (applies cleanly; **not
+applied**). Three bugs: `tandem` matching *tandem mass spectrometry* (10 articles mislabeled
+Diabetes on their assay method alone); no subject guard on generic terms like `insulin` and
+`vitamin d`; and **the classifier only reads American spellings**, so an inclisiran trial for
+familial hypercholesterol**ae**mia missed the Lipids pre-check and fell 23 branches to
+Genetics. Measured over the whole store: 40 articles move, **17 land exactly where the judges
+said, zero regressions**.
+
+Redesign prep also landed: `REDESIGN_BRIEF.md` and three prototypes in `mockups/`. **B still
+starts with a brainstorm** — these are inputs to react to, not a design.
 
 ## What happened 2026-08-05 (two sessions' worth, both committed)
 
@@ -54,6 +102,11 @@ through `218d23f`.
   at 100 MB. `.git` is already 53 MB after 8 commits for the same reason. See `DECISIONS.md`.
 
 ## What's next, in order (mirrors TASKS.md)
+
+> **Order changed overnight.** Before B, two items now have evidence behind them: review the
+> round 2 QA verdicts (and fix the Diabetes branch), and decide the `pub_date` question. The
+> redesign rests on both — a topic-first UI inherits an 11.5% topic error rate, and every
+> direction sorts or filters by a date field that's wrong a quarter of the time.
 
 Agreed roadmap: the site's primary job is a **weekly keep-up brief**, plus a "catch me up on
 *topic* since *date*" mode. Designing for an eventual 20,000 articles.

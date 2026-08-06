@@ -76,7 +76,7 @@ The full weekly procedure (date windows, MCP batching, PMID dedup) is in
   and doesn't need the filter, aka "Template A").
 - **`classifier.py`** — pure functions, no I/O; a faithful port of the original
   `reclassify_v2.py` (spec v2.4.2 + Diabetes Classification Framework + Gender Medicine
-  + Calcium/Parathyroid split). `classify(art)` runs, in order: exclusion rules →
+  + the Bone/Mineral merge). `classify(art)` runs, in order: exclusion rules →
   topic/subtopic (25-branch waterfall in `classify_topic`) → study type → 4-tier impact
   (`classify_impact`, with a negative-outcome cap) → diabetes subtype → age range →
   society detection → board relevance → clinical bottom line → tags → open-access →
@@ -143,12 +143,14 @@ The full weekly procedure (date windows, MCP batching, PMID dedup) is in
 
 ## Taxonomy
 
-17 topics (Diabetes, Growth, Puberty, Thyroid, Adrenal, Obesity/Metabolic, General
-Endocrinology, Bone/Calcium, Pituitary, Hyperinsulinism, Genetics, Calcium/Parathyroid,
+16 topics (Diabetes, Growth, Puberty, Thyroid, Adrenal, Obesity/Metabolic, General
+Endocrinology, Bone/Mineral, Pituitary, Hyperinsulinism, Genetics,
 DSD, PCOS, Gender Medicine, Cancer Late Effects, Lipids) and 8 diabetes subtypes
 (T1D, T1D·Stage, T2D, Technology, MODY/Monogenic, CFRD, GDM, Steroid-induced, General).
 See `MEMORY.md` for the full rationale behind recent taxonomy changes (Gender Medicine,
-Calcium/Parathyroid split, Turner/Prader-Willi placement under Growth).
+the 2026-08-06 Bone/Mineral merge, Turner/Prader-Willi placement under Growth).
+`Bone/Mineral` additionally carries a `subtopic`: Phosphate/FGF23, Skeletal Fragility,
+PTH/Calcium, or Vitamin D/Rickets. It is the only non-Diabetes topic that uses `subtopic`.
 
 ## Things that will bite you
 

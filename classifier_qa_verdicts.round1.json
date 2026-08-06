@@ -1,0 +1,453 @@
+{
+ "reviewed_by": "agent",
+ "verdicts": {
+  "30093549": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "29900641": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "39844487": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "30144259": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "30094886": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "42527127": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "30058221": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "41999619": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "30039617": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "39662065": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "41358890": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "37454648": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Hyperinsulinism",
+   "confidence": "high",
+   "reason": "This is an international consensus statement on diagnosis and management of congenital hyperinsulinism (insulin excess causing persistent hypoglycemia), not diabetes."
+  },
+  "30039513": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "38748847": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Growth",
+   "confidence": "high",
+   "reason": "This is the ESE/PES clinical practice guideline for Turner syndrome care; per taxonomy convention Turner syndrome guidelines belong under Growth, not Diabetes, despite covering multiple organ systems."
+  },
+  "32935435": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "29900653": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "42162485": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "40555215": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "General Endocrinology",
+   "confidence": "high",
+   "reason": "This guideline's primary subject is endocrine complications of thalassemia (a multi-axis syndrome covering growth, puberty, bone, adrenal, thyroid, and parathyroid disease, with diabetes as just one of several complications discussed), so per the multi-system rule it belongs in the General Endocrinology catch-all, not Diabetes."
+  },
+  "30084519": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "41381175": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "36098719": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "38828931": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Calcium/Parathyroid",
+   "confidence": "high",
+   "reason": "This Endocrine Society guideline's primary subject is vitamin D supplementation for disease prevention broadly; diabetes/prediabetes is only one of several populations discussed (alongside pregnancy, older adults, rickets), so it belongs under Calcium/Parathyroid (vitamin D), not Diabetes."
+  },
+  "40652453": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "38604231": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "30079506": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "40652450": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "32827594": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "39675348": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "32985262": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "41793701": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "29869358": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "30062718": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "39884261": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "40988096": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "41361403": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "29999228": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "41266045": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "32578226": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "33627326": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "29999222": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "39884260": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "38869512": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "This EASL-EASD-EASO guideline's primary subject is metabolic dysfunction-associated steatotic liver disease (MASLD/NAFLD) screening and treatment; type 2 diabetes appears only as a cardiometabolic risk factor and comorbidity, so it belongs under Obesity/Metabolic, not Diabetes."
+  },
+  "39927665": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "30066458": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "30226024": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "33047481": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "39657603": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "38663372": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "30295419": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "30133095": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "34511234": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "39657609": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "30175451": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "39362204": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "30058247": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "39701064": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "41601933": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "30225972": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "36477488": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "39675522": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "31688079": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "30051639": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  },
+  "32810255": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Hyperinsulinism",
+   "confidence": "high",
+   "reason": "This is a Pediatric Endocrine Society consensus guideline on diazoxide dosing and monitoring specifically for infants and children with hyperinsulinism (insulin excess causing hypoglycemia), not diabetes."
+  },
+  "31862756": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+  }
+ }
+}

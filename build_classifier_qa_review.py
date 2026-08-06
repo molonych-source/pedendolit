@@ -20,12 +20,12 @@ import json, os, argparse, html, datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
-# The 17-topic taxonomy (MEMORY.md "Taxonomy state") — the fixed option list for
+# The 16-topic taxonomy (MEMORY.md "Taxonomy state") — the fixed option list for
 # the per-card topic dropdown, and the set the judge's target_topic must fall in.
 TOPICS = (
     "Diabetes", "Growth", "Puberty", "Thyroid", "Adrenal", "Obesity/Metabolic",
-    "General Endocrinology", "Bone/Calcium", "Pituitary", "Hyperinsulinism",
-    "Genetics", "Calcium/Parathyroid", "DSD", "PCOS", "Gender Medicine",
+    "General Endocrinology", "Bone/Mineral", "Pituitary", "Hyperinsulinism",
+    "Genetics", "DSD", "PCOS", "Gender Medicine",
     "Cancer Late Effects", "Lipids",
 )
 
@@ -86,6 +86,10 @@ h1{font-size:24px;margin:0 0 4px}
 .badge.ok{color:var(--ok)} .badge.mid{color:var(--mid)} .badge.no{color:var(--no)}
 .pick{margin-top:8px;display:flex;align-items:center;gap:8px}
 .pick label{font-size:12px;color:var(--muted)}
+.pick textarea.note-box{font:inherit;font-size:13px;padding:5px 8px;border-radius:6px;
+  border:0.5px solid var(--line);background:var(--bg);color:var(--ink);flex:1;min-width:220px;
+  resize:vertical;line-height:1.4}
+.pick textarea.note-box:focus{outline:none;border-color:var(--accent)}
 .pick select{font:inherit;font-size:13px;padding:4px 8px;border-radius:6px;border:0.5px solid var(--line);
   background:var(--surface);color:var(--ink)}
 details.abs{margin-top:7px}
@@ -138,6 +142,12 @@ def card_html(item, verdict, mesh):
         bits.append('<details class="abs"><summary>Abstract</summary><p>'
                     + html.escape(a["abstract"][:1600]) + '</p></details>')
     bits.append(f'<div class="pick"><label>Topic:</label>{topic_select(pmid, a.get("current_topic"), suggested)}</div>')
+    # Free-text note. A "defensible" card in particular is a judgment call the dropdown
+    # cannot capture — "arguable, but leave it" and "yes, move it" look identical without
+    # somewhere to say why. The note rides into the ledger and the report.
+    bits.append(f'<div class="pick"><label>Note:</label>'
+                f'<textarea class="note-box" data-pmid="{html.escape(pmid)}" rows="1" '
+                f'placeholder="optional — why you decided this way"></textarea></div>')
     return (f'<div class="card" data-pmid="{html.escape(pmid)}">'
             f'<div class="body">{"".join(bits)}</div>'
             f'<span class="badge {cls}">{label}</span></div>')
@@ -237,6 +247,8 @@ document.getElementById('submit').addEventListener('click',()=>{{
   selects().forEach(s=>{{
     const pmid=s.dataset.pmid, current=s.dataset.current, target=s.value;
     decisions[pmid] = {{verdict: target===current ? 'correct' : 'wrong', target_topic: target}};
+    const nb=f.querySelector('textarea.note-box[data-pmid="'+pmid+'"]');
+    if(nb && nb.value.trim()) decisions[pmid].note = nb.value.trim();
   }});
   const blob=new Blob([JSON.stringify({{decisions, reviewed_at:new Date().toISOString()}},null,1)],
       {{type:'application/json'}});

@@ -48,6 +48,16 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 INFO_FIELDS = ("study_type", "impact")
 
 
+# Taxonomy renames: {old topic: new topic}. An article whose topic changed only because
+# its label was renamed has not been reclassified, so it must not read as a regression.
+# Add a row here whenever a topic is renamed or merged, in the same commit as the change.
+TOPIC_RENAMES = {
+    # 2026-08-06 merge — one clinical domain that had been split in two. See DECISIONS.md.
+    "Bone/Calcium": "Bone/Mineral",
+    "Calcium/Parathyroid": "Bone/Mineral",
+}
+
+
 def load_ref_store(ref, store_name):
     """The store as of a git ref, or None if it isn't there (e.g. first commit)."""
     try:
@@ -151,7 +161,7 @@ def main():
     # override applied at build time.
     predicted = {pm: e.get("target_topic") for pm, e in ledger.items() if e.get("target_topic")}
 
-    moved_ok, moved_bad, info_changed = [], [], {f: [] for f in INFO_FIELDS}
+    moved_ok, moved_bad, renamed, info_changed = [], [], [], {f: [] for f in INFO_FIELDS}
     for pmid, a_art in after_by_pmid.items():
         b_art = before_by_pmid.get(pmid)
         if not b_art:
@@ -159,7 +169,14 @@ def main():
         b_topic, a_topic = b_art.get("topic"), a_art.get("topic")
         if b_topic != a_topic:
             row = (pmid, b_topic, a_topic, (a_art.get("title") or "")[:70])
-            (moved_ok if predicted.get(pmid) == a_topic else moved_bad).append(row)
+            if TOPIC_RENAMES.get(b_topic) == a_topic:
+                # A taxonomy rename, not a reclassification. The article did not move;
+                # the label it already had was renamed underneath it. Without this, every
+                # article in a merged topic reads as an unexplained change — and worse,
+                # any still-pending fix in that topic looks like a fresh regression.
+                renamed.append(row)
+            else:
+                (moved_ok if predicted.get(pmid) == a_topic else moved_bad).append(row)
         for f in INFO_FIELDS:
             if b_art.get(f) != a_art.get(f):
                 info_changed[f].append((pmid, b_art.get(f), a_art.get(f),
@@ -171,6 +188,15 @@ def main():
     print(f"=== classifier regression check (vs. git {args.ref}) ===")
     print(f"before: {len(before_by_pmid)} articles | after: {len(after_by_pmid)} articles")
     print()
+
+    if renamed:
+        print(f"Topic renamed by a taxonomy change: {len(renamed)} "
+              f"(informational — the article did not move)")
+        for pmid, b, a, title in renamed[:5]:
+            print(f"  --  {pmid}: {b} -> {a}  | {title}")
+        if len(renamed) > 5:
+            print(f"  ... and {len(renamed) - 5} more")
+        print()
 
     if moved_ok:
         print(f"Topic changed as predicted: {len(moved_ok)}")

@@ -1,0 +1,495 @@
+<!doctype html><meta charset="utf-8">
+<title>Mockup 2 — Triage queue</title><style>
+:root{
+  --bg:#faf9f5; --surface:#ffffff; --ink:#1f1e1c; --muted:#6b6a64; --line:#e6e4dc; --soft:#f4f2ec;
+  --pa:#993c1d; --pa-bg:#faece7; --pa-dot:#d85a30;
+  --high:#0c447c; --high-bg:#e6f1fb; --high-dot:#378add;
+  --mod:#854f0b; --mod-bg:#faeeda; --mod-dot:#ba7517;
+  --low:#5f5e5a; --low-bg:#f1efe8; --low-dot:#888780;
+  --accent:#0f6e56; --accent-bg:#e1f5ee;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#1a1916; --surface:#26241f; --ink:#ece9e1; --muted:#a3a098; --line:#3a382f; --soft:#2c2a25;
+    --pa-bg:#3a1d12; --high-bg:#0c2438; --mod-bg:#3a2a10; --low-bg:#2c2a25;
+    --pa:#f0997b; --high:#85b7eb; --mod:#ef9f27; --low:#b4b2a9; --accent:#5dcaa5; --accent-bg:#0f3a30;}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.55;font-size:16px}
+a{color:var(--accent)}
+.wrap{max-width:760px;margin:0 auto;padding:28px 20px 90px}
+.note{background:var(--soft);border:1px solid var(--line);border-left:3px solid var(--accent);
+  border-radius:6px;padding:12px 14px;margin:0 0 26px;font-size:13.5px;color:var(--muted)}
+.note b{color:var(--ink)}
+
+    .wrap{max-width:840px}
+    header.q{display:flex;justify-content:space-between;align-items:baseline;
+      border-bottom:1px solid var(--line);padding-bottom:12px;margin-bottom:4px}
+    header.q h1{font-size:20px;margin:0}
+    .count{font-size:13px;color:var(--muted)}
+    .hint{font-size:12.5px;color:var(--muted);margin:10px 0 18px}
+    kbd{background:var(--soft);border:1px solid var(--line);border-bottom-width:2px;
+      border-radius:4px;padding:1px 6px;font-size:11.5px;font-family:inherit}
+    ul.queue{list-style:none;margin:0;padding:0}
+    li.item{display:grid;grid-template-columns:4px 1fr auto;gap:14px;align-items:start;
+      background:var(--surface);border:1px solid var(--line);border-radius:8px;
+      padding:14px 14px 13px 0;margin-bottom:8px;overflow:hidden;outline:none}
+    li.item:focus{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-bg)}
+    li.item.read{opacity:.45}
+    .bar{align-self:stretch;border-radius:0}
+    .bl{font-size:15.5px;line-height:1.45;margin-bottom:5px}
+    li.item.unread .bl{font-weight:600}
+    .ttl{font-size:13px;color:var(--muted);line-height:1.4;margin-bottom:6px}
+    .meta{font-size:12px;color:var(--muted);display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+    .tier{font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
+      padding:2px 7px;border-radius:99px;margin-right:2px}
+    .t-pa{background:var(--pa-bg);color:var(--pa)} .t-high{background:var(--high-bg);color:var(--high)}
+    .t-mod{background:var(--mod-bg);color:var(--mod)} .t-low{background:var(--low-bg);color:var(--low)}
+    .acts{display:flex;gap:4px;padding-top:2px}
+    .act{background:none;border:1px solid var(--line);border-radius:6px;width:32px;height:32px;
+      cursor:pointer;color:var(--muted);font-size:15px;line-height:1}
+    .act:hover{border-color:var(--accent);color:var(--accent)}
+    .done.on{background:var(--accent-bg);color:var(--accent);border-color:var(--accent)}
+    </style>
+<div class="wrap">
+
+<div class="note"><b>Mockup — not the real site.</b> Built 2026-08-05 for the redesign
+brainstorm. Real articles, real counts, throwaway code. The point is the shape of the
+page, not the pixels. Keyboard works: try it.</div>
+
+<header class="q">
+  <h1>Your queue</h1>
+  <div class="count"><b id="n">0</b> unread · 1,406 in archive</div>
+</header>
+<p class="hint"><kbd>j</kbd> / <kbd>k</kbd> to move · <kbd>e</kbd> to mark read ·
+  ☆ to save. The bottom line is the headline; the paper's title is secondary.</p>
+<ul class="queue">
+      <li class="item unread" data-i="0" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">The use of bisphosphonates in non-fragility conditions, such as fibrous dysplasia, avascular necrosis, bone cysts and hypercalcaemia, is also discussed. While these guidelines provide an…</div>
+          <div class="ttl">Consensus guidelines on the use of bisphosphonate therapy in children and adolescents.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>Bone/Calcium</span><span>·</span>
+            <span>J Paediatr Child Health</span><span>·</span>
+            <span>2018-Mar</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item unread" data-i="1" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">[Abstract not available]</div>
+          <div class="ttl">ISPAD Clinical Practice Consensus Guidelines 2018: Assessment and management of hypoglycemia in children and adolescents with diabetes.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>Diabetes</span><span>·</span>
+            <span>Pediatr Diabetes</span><span>·</span>
+            <span>2018-Oct</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item unread" data-i="2" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">[Abstract not available]</div>
+          <div class="ttl">ISPAD Clinical Practice Consensus Guidelines 2018: Diabetic ketoacidosis and the hyperglycemic hyperosmolar state.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>Diabetes</span><span>·</span>
+            <span>Pediatr Diabetes</span><span>·</span>
+            <span>2018-Oct</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item unread" data-i="3" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">[Abstract not available]</div>
+          <div class="ttl">ISPAD Clinical Practice Consensus Guidelines 2018: Diabetes in adolescence.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>Diabetes</span><span>·</span>
+            <span>Pediatr Diabetes</span><span>·</span>
+            <span>2018-Oct</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item unread" data-i="4" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">Radiation exposure to key endocrine organs (e.g., hypothalamus, pituitary, thyroid, and gonads) places cancer survivors at the highest risk of developing an endocrine abnormality over time; these…</div>
+          <div class="ttl">Hypothalamic-Pituitary and Growth Disorders in Survivors of Childhood Cancer: An Endocrine Society Clinical Practice Guideline.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>Cancer Late Effects</span><span>·</span>
+            <span>J Clin Endocrinol Metab</span><span>·</span>
+            <span>2018-Aug-01</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item unread" data-i="5" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">[Abstract not available]</div>
+          <div class="ttl">ISPAD Clinical Practice Consensus Guidelines 2018: Insulin treatment in children and adolescents with diabetes.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>Diabetes</span><span>·</span>
+            <span>Pediatr Diabetes</span><span>·</span>
+            <span>2018-Oct</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item unread" data-i="6" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">[Abstract not available]</div>
+          <div class="ttl">ISPAD Clinical Practice Consensus Guidelines 2018: Type 2 diabetes mellitus in youth.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>Diabetes</span><span>·</span>
+            <span>Pediatr Diabetes</span><span>·</span>
+            <span>2018-Oct</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item unread" data-i="7" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">[Abstract not available]</div>
+          <div class="ttl">ISPAD Clinical Practice Consensus Guidelines 2018: Diabetes technologies.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>Diabetes</span><span>·</span>
+            <span>Pediatr Diabetes</span><span>·</span>
+            <span>2018-Oct</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item unread" data-i="8" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">[Abstract not available]</div>
+          <div class="ttl">ISPAD Clinical Practice Consensus Guidelines 2018: Management of children and adolescents with diabetes requiring surgery.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>Diabetes</span><span>·</span>
+            <span>Pediatr Diabetes</span><span>·</span>
+            <span>2018-Oct</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item" data-i="9" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">[Abstract not available]</div>
+          <div class="ttl">ISPAD Clinical Practice Consensus Guidelines 2018: Stages of type 1 diabetes in children and adolescents.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>Diabetes</span><span>·</span>
+            <span>Pediatr Diabetes</span><span>·</span>
+            <span>2018-Oct</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item" data-i="10" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">[Abstract not available]</div>
+          <div class="ttl">ISPAD Clinical Practice Consensus Guidelines 2018: Glycemic control targets and glucose monitoring for children, adolescents, and young adults with diabetes.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>Diabetes</span><span>·</span>
+            <span>Pediatr Diabetes</span><span>·</span>
+            <span>2018-Oct</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item" data-i="11" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">[Abstract not available]</div>
+          <div class="ttl">ISPAD Clinical Practice Consensus Guidelines 2018: Psychological care of children and adolescents with type 1 diabetes.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>Diabetes</span><span>·</span>
+            <span>Pediatr Diabetes</span><span>·</span>
+            <span>2018-Oct</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item" data-i="12" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">[Abstract not available]</div>
+          <div class="ttl">ISPAD Clinical Practice Consensus Guidelines 2018: Nutritional management in children and adolescents with diabetes.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>Diabetes</span><span>·</span>
+            <span>Pediatr Diabetes</span><span>·</span>
+            <span>2018-Oct</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item" data-i="13" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">[Abstract not available]</div>
+          <div class="ttl">ISPAD Clinical Practice Consensus Guidelines 2018: Other complications and associated conditions in children and adolescents with type 1 diabetes.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>Diabetes</span><span>·</span>
+            <span>Pediatr Diabetes</span><span>·</span>
+            <span>2018-Oct</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item" data-i="14" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">[Abstract not available]</div>
+          <div class="ttl">ISPAD Clinical Practice Consensus Guidelines 2018: Sick day management in children and adolescents with diabetes.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>Diabetes</span><span>·</span>
+            <span>Pediatr Diabetes</span><span>·</span>
+            <span>2018-Oct</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item" data-i="15" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">[Abstract not available]</div>
+          <div class="ttl">ISPAD Clinical Practice Consensus Guidelines 2018: Microvascular and macrovascular complications in children and adolescents.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>General Endocrinology</span><span>·</span>
+            <span>Pediatr Diabetes</span><span>·</span>
+            <span>2018-Oct</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item" data-i="16" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">[Abstract not available]</div>
+          <div class="ttl">ISPAD Clinical Practice Consensus Guidelines 2018: Management and support of children and adolescents with type 1 diabetes in school.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>Diabetes</span><span>·</span>
+            <span>Pediatr Diabetes</span><span>·</span>
+            <span>2018-Oct</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item" data-i="17" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">[Abstract not available]</div>
+          <div class="ttl">ISPAD Clinical Practice Consensus Guidelines 2018: Management of cystic fibrosis-related diabetes in children and adolescents.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>Diabetes</span><span>·</span>
+            <span>Pediatr Diabetes</span><span>·</span>
+            <span>2018-Oct</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item" data-i="18" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">[Abstract not available]</div>
+          <div class="ttl">ISPAD Clinical Practice Consensus Guidelines 2018: Exercise in children and adolescents with diabetes.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>Diabetes</span><span>·</span>
+            <span>Pediatr Diabetes</span><span>·</span>
+            <span>2018-Oct</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item" data-i="19" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">[Abstract not available]</div>
+          <div class="ttl">ISPAD Clinical Practice Consensus Guidelines 2018: The delivery of ambulatory diabetes care to children and adolescents with diabetes.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>Diabetes</span><span>·</span>
+            <span>Pediatr Diabetes</span><span>·</span>
+            <span>2018-Oct</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item" data-i="20" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">[Abstract not available]</div>
+          <div class="ttl">ISPAD Clinical Practice Consensus Guidelines 2018: Diabetes education in children and adolescents.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>Diabetes</span><span>·</span>
+            <span>Pediatr Diabetes</span><span>·</span>
+            <span>2018-Oct</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item" data-i="21" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">Suggested therapy includes personalised schemes according to the dominant PCOS phenotype, i.e. metabolic, hyperandrogenic, or reproductive ones.</div>
+          <div class="ttl">The polycystic ovary syndrome: a position statement from the Polish Society of Endocrinology, the Polish Society of Gynaecologists and Obstetricians, and the Polish Society of Gynaecological Endocrinology.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>PCOS</span><span>·</span>
+            <span>Endokrynol Pol</span><span>·</span>
+            <span>2018</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item" data-i="22" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">The main aim of PWS clinical management in adulthood is prevention of obesity and its comor-bidities, treatment of hormonal disorders, mental health stabilisation, nutritional guidance, as well as…</div>
+          <div class="ttl">Management of Prader-Willi Syndrome (PWS) in adults - what an endocrinologist needs to know. Recommendations of the Polish Society of Endocrinology and the Polish Society of Paediatric Endocrinology and Diabetology.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>Growth</span><span>·</span>
+            <span>Endokrynol Pol</span><span>·</span>
+            <span>2018</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li>
+      <li class="item" data-i="23" tabindex="0">
+        <div class="bar" style="background:var(--pa-dot)"></div>
+        <div class="body">
+          <div class="bl">[Abstract not available]</div>
+          <div class="ttl">ISPAD Clinical Practice Consensus Guidelines 2018: The diagnosis and management of monogenic diabetes in children and adolescents.</div>
+          <div class="meta">
+            <span class="tier t-pa">Practice Altering</span>
+            <span>Diabetes</span><span>·</span>
+            <span>Pediatr Diabetes</span><span>·</span>
+            <span>2018-Oct</span>
+          </div>
+        </div>
+        <div class="acts">
+          <button class="act" title="Save">☆</button>
+          <button class="act done" title="Mark read">✓</button>
+        </div>
+      </li></ul>
+</div>
+<script>
+    const items=[...document.querySelectorAll('.item')];
+    let cur=0;
+    function focus(i){cur=Math.max(0,Math.min(items.length-1,i));items[cur].focus();
+      items[cur].scrollIntoView({block:'nearest'});}
+    function toggleRead(el){el.classList.toggle('read');el.classList.remove('unread');
+      el.querySelector('.done').classList.toggle('on');tally();}
+    function tally(){document.getElementById('n').textContent=
+      document.querySelectorAll('.item:not(.read)').length;}
+    document.addEventListener('keydown',e=>{
+      if(e.key==='j'){focus(cur+1);e.preventDefault();}
+      if(e.key==='k'){focus(cur-1);e.preventDefault();}
+      if(e.key==='e'||e.key==='Enter'){toggleRead(items[cur]);e.preventDefault();}
+    });
+    items.forEach((el,i)=>{el.addEventListener('click',ev=>{
+      if(ev.target.closest('.done')){toggleRead(el);}
+      cur=i;});});
+    tally(); focus(0);
+    </script>

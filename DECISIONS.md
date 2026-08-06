@@ -29,10 +29,54 @@ this file is the authority.
 **Why:** GH therapy is the dominant peds-endo touchpoint for both; the search box covers
 syndrome-level retrieval.
 
-### Gender Medicine topic added; Calcium/Parathyroid split from Bone/Calcium — 2026-05-29 — **Active**
+### Gender Medicine topic added; Calcium/Parathyroid split from Bone/Calcium — 2026-05-29 — **Superseded (2026-08-06, see Bone/Mineral merge below)**
 **Why:** Gender Medicine is ABP Domain 16 (implemented as a pre-check before Puberty/DSD with
 a DSD-context guard). Parathyroid/calcium-homeostasis papers were drowning in metabolic bone
 disease under a single Bone/Calcium bucket.
+
+
+### Bone/Calcium and Calcium/Parathyroid merged into Bone/Mineral — 2026-08-06 — **Active**
+
+Supersedes the 2026-05-29 split above. The two topics were one clinical domain kept in two
+buckets, and the boundary could not be made to hold.
+
+**Evidence.** 29 of the 54 articles across the pair matched both halves' vocabulary. XLH is
+definitionally both — FGF23-mediated phosphate wasting presenting as rickets and skeletal
+deformity — and a burosumab paper titled "Hyperparathyroidism After 3 Years of Burosumab" sat
+under Bone/Calcium while "hyperparathyroidism" was the defining term of the other topic. The
+same drug landed in different topics depending on incidental wording: teriparatide for
+osteotomy healing went to Calcium/Parathyroid (a PTH analog), denosumab for rare bone disease
+likewise, while both are skeletal questions. Calcium/Parathyroid carried a 25% error rate in
+round 2 QA, most of it leakage to Bone/Calcium. The names were themselves unpredictable — one
+topic was Bone/**Calcium**, the other **Calcium**/Parathyroid.
+
+**Clinical rationale.** Pediatric endocrinology treats calcium, phosphate, vitamin D, PTH and
+skeletal fragility as a single domain: one blueprint area, one fellowship block, one clinic.
+The split reflected adult practice, where parathyroid surgery and osteoporosis are separate
+high-volume services, not pediatric practice. Pathophysiologically it is one axis, which is
+why the field named its own entity "CKD–**Mineral and Bone** Disorder".
+
+**What was rejected.** Keeping the split and writing better rules — round 2 showed the
+boundary is contested by clinicians, not just by the classifier, so no keyword rule resolves
+it. Also rejected: a flat merge with no substructure, which would have thrown away a real
+distinction between PTH-axis disease and skeletal fragility.
+
+**Design.** One topic, `Bone/Mineral`, with a `subtopic`: Phosphate/FGF23, Skeletal Fragility,
+PTH/Calcium, Vitamin D/Rickets. This reuses the mechanism Diabetes already uses and makes
+`Bone/Mineral` the second topic to carry a subtopic. Subtopic is assigned by scoring rather
+than a first-match waterfall — a term in the title counts 2, anywhere in the text counts 1 —
+because XLH mentions fractures and hypoparathyroidism is treated with calcitriol, so
+first-match would misfile both.
+
+**Why this shape.** A misclassification between subtopics is far cheaper than one between
+topics: the article still appears when a reader filters to the domain. The change converts the
+taxonomy's worst boundary from a visible failure into a minor one, which is the right outcome
+for a distinction clinicians themselves do not draw consistently.
+
+**Consequence.** `check_classifier_regressions.py` gained a `TOPIC_RENAMES` map, because a
+rename is not a reclassification and 50 renamed articles would otherwise read as unexplained
+regressions — and any still-pending fix inside a merged topic would look like a fresh one.
+Taxonomy count is now 16 topics.
 
 ### APEM added as the 19th monitored journal; IJPE ruled out — 2026-07-24 — **Active**
 **Why:** Annals of Pediatric Endocrinology & Metabolism is active and PubMed-indexed

@@ -45,7 +45,7 @@ and fine on Sonnet; the judge subagent and the root-cause-to-code-fix step are n
    ```
    (`--n-per-topic 200` here is a safe "definitely bigger than any filtered pool" value,
    not the pool's real size — the sampler caps at whatever the pool actually contains.)
-   For a broad taxonomy-wide sweep, omit both filters — it stratifies across all 17 topics
+   For a broad taxonomy-wide sweep, omit both filters — it stratifies across all 16 topics
    automatically, exhaustive for the small ones, `--n-per-topic`-sampled for the rest.
 2. **Judge — dispatch a Sonnet subagent** with the prompt spec below, pointed at
    `classifier_qa_sample.json`. It writes `classifier_qa_verdicts.json`.
@@ -91,7 +91,7 @@ and fine on Sonnet; the judge subagent and the root-cause-to-code-fix step are n
    you commit, HEAD becomes the new state and the comparison is gone.
 9. **Re-sample** for the next round: every regression from step 8 (`--force-pmid`), every
    unresolved `pending_fix` PMID (the sampler surfaces these automatically), plus a fresh
-   broad sweep across all 17 topics to catch collateral damage a PMID-level diff can't see.
+   broad sweep across all 16 topics to catch collateral damage a PMID-level diff can't see.
 10. Repeat from step 2 until **done** (below).
 
 > **REBUILD PITFALL** (same warning as the weekly runbook): `--rebuild` reads from the
@@ -150,7 +150,7 @@ Point it at `classifier_qa_sample.json` and require this output shape in
 
 The prompt must contain:
 
-- **The 17-topic taxonomy with each topic's defining criteria** (not just names — what the
+- **The 16-topic taxonomy with each topic's defining criteria** (not just names — what the
   topic is actually *about*, so the judge reasons about subject matter independently rather
   than re-running the classifier's own keyword logic):
 
@@ -163,11 +163,10 @@ The prompt must contain:
   | Adrenal | CAH, adrenal insufficiency/Addison, Cushing syndrome, pheochromocytoma, primary aldosteronism, adrenal crisis |
   | Obesity/Metabolic | Pediatric obesity, metabolic syndrome, NAFLD/NASH/MASLD, GLP-1/anti-obesity pharmacotherapy, insulin resistance outside a diabetes context, bariatric surgery |
   | General Endocrinology | Genuinely multi-system endocrine syndromes (APECED/APS-1, MEN1/2) or content that doesn't fit one organ-system topic — the deliberate catch-all; correct when the article really is multi-axis, not itself an error |
-  | Bone/Calcium | Bone mineral density, osteoporosis/osteopenia, fracture risk, bisphosphonates, XLH/FGF23, skeletal fragility |
+  | Bone/Mineral | The whole calcium-phosphate-bone domain: PTH axis, hypo/hyperparathyroidism, hypo/hypercalcemia, vitamin D and rickets, XLH/FGF23/burosumab, bone density, osteoporosis, osteogenesis imperfecta, bisphosphonates. Merged 2026-08-06 from Bone/Calcium + Calcium/Parathyroid; carries a `subtopic` (Phosphate/FGF23, Skeletal Fragility, PTH/Calcium, Vitamin D/Rickets) |
   | Pituitary | Craniopharyngioma, pituitary adenoma/hypopituitarism, acromegaly, central DI, SIADH, septo-optic dysplasia |
   | Hyperinsulinism | Congenital hyperinsulinism, hyperinsulinemic hypoglycemia, nesidioblastosis, insulinoma, diazoxide/octreotide for persistent hypoglycemia. Distinct from Diabetes: this is insulin *excess* causing hypoglycemia, Diabetes is insulin deficiency/resistance causing hyperglycemia |
   | Genetics | Variant/exome/genetic-testing-focused articles not better captured by a specific endocrine topic |
-  | Calcium/Parathyroid | Hypo/hyperparathyroidism, PTH axis, vitamin D deficiency/rickets, hypo/hypercalcemia |
   | DSD | Disorders/differences of sex development, ambiguous genitalia, 46,XY/XX DSD, gonadal dysgenesis |
   | PCOS | PCOS/PMOS, hyperandrogenism and oligomenorrhea in the adolescent, ovarian-driven |
   | Gender Medicine | Gender-affirming care, gender dysphoria, transgender youth care — distinct from Puberty (CPP treatment) and DSD (intersex conditions) even though vocabulary overlaps (puberty blockers, GnRH analogs) |
@@ -179,7 +178,6 @@ The prompt must contain:
   | Pair | How to tell them apart |
   |---|---|
   | Diabetes ↔ Hyperinsulinism | Insulin deficiency/resistance + hyperglycemia (Diabetes) vs. insulin excess + hypoglycemia (Hyperinsulinism) — bare "insulin" appears in both, don't let the word alone decide it |
-  | Bone/Calcium ↔ Calcium/Parathyroid | Mineral homeostasis (PTH, vitamin D, calcium) is Calcium/Parathyroid even when bones are affected (e.g. rickets); skeletal density/fragility without a PTH-axis focus is Bone/Calcium |
   | Puberty ↔ Gender Medicine | CPP treatment with GnRH agonists is Puberty; gender-affirming puberty suppression is Gender Medicine — same drug class, different clinical question |
   | PCOS ↔ Adrenal/CAH | CAH-driven hyperandrogenism is Adrenal; ovarian-driven hyperandrogenism is PCOS |
   | Growth ↔ Pituitary | If the pathology itself (craniopharyngioma, adenoma, hypopituitarism) is the subject, Pituitary; if isolated/idiopathic GH deficiency or a short-stature syndrome is the subject, Growth |

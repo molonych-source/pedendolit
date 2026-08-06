@@ -16,3 +16,8 @@ guideline_approved_raw.json
 # _report.md, and _decisions.json (the ledger) ARE versioned as the audit trail of
 # each round; only the review HTML is regenerated and ignored.
 classifier_qa_review.html
+
+# Round-N copies of the review page: 1.2 MB each and fully regenerable from
+# classifier_qa_sample.round*.json + classifier_qa_verdicts.round*.json, which ARE
+# versioned. The repo already carries a size problem (see DECISIONS.md).
+classifier_qa_review.round*.html

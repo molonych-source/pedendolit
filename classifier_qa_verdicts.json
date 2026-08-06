@@ -1,453 +1,2932 @@
 {
  "reviewed_by": "agent",
+ "round": 2,
  "verdicts": {
-  "30093549": {
+  "28216084": {
    "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
+   "current_topic": "Calcium/Parathyroid",
+   "target_topic": "Calcium/Parathyroid",
    "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+   "reason": "Guideline is squarely about vitamin D dosing and deficiency management, the core mineral-homeostasis question this topic covers."
   },
-  "29900641": {
+  "30289543": {
    "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
+   "current_topic": "Adrenal",
+   "target_topic": "Adrenal",
    "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+   "reason": "PES guideline specifically addresses adrenal insufficiency screening/surveillance in ALD, an adrenal-axis question despite ALD's neurologic multi-system nature."
   },
-  "39844487": {
+  "34927274": {
    "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
+   "current_topic": "Calcium/Parathyroid",
+   "target_topic": "Calcium/Parathyroid",
    "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+   "reason": "Position statement is entirely about surgical and postoperative management of primary hyperparathyroidism, core PTH-axis content."
   },
-  "30144259": {
+  "38230957": {
    "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
+   "current_topic": "Growth",
+   "target_topic": "Growth",
    "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+   "reason": "Case report's clinical focus is short stature with GH/GnRH-agonist treatment in a growth-disorder syndrome."
   },
-  "30094886": {
+  "39012089": {
    "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "medium",
+   "reason": "ARHR2 is an FGF23-mediated hypophosphatemic rickets, matching the taxonomy's explicit XLH/FGF23 carve-out under Bone/Calcium rather than the PTH-axis Calcium/Parathyroid topic."
   },
-  "42527127": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "30058221": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "41999619": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "30039617": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "39662065": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "41358890": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "37454648": {
-   "verdict": "wrong",
-   "current_topic": "Diabetes",
-   "target_topic": "Hyperinsulinism",
-   "confidence": "high",
-   "reason": "This is an international consensus statement on diagnosis and management of congenital hyperinsulinism (insulin excess causing persistent hypoglycemia), not diabetes."
-  },
-  "30039513": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "38748847": {
+  "39427650": {
    "verdict": "wrong",
    "current_topic": "Diabetes",
    "target_topic": "Growth",
    "confidence": "high",
-   "reason": "This is the ESE/PES clinical practice guideline for Turner syndrome care; per taxonomy convention Turner syndrome guidelines belong under Growth, not Diabetes, despite covering multiple organ systems."
+   "reason": "Vosoritide trial in hypochondroplasia is a skeletal-growth pharmacokinetic study with no diabetes content; it was mis-tagged Diabetes/Technology."
   },
-  "32935435": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
+  "39602902": {
+   "verdict": "wrong",
+   "current_topic": "Calcium/Parathyroid",
+   "target_topic": "Bone/Calcium",
    "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+   "reason": "The case is about WNT1-mutation primary osteoporosis with vertebral fractures, a skeletal-fragility disorder, not a PTH/vitamin-D-axis disturbance."
   },
-  "29900653": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "42162485": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "40555215": {
+  "40045579": {
    "verdict": "wrong",
    "current_topic": "Diabetes",
+   "target_topic": "DSD",
+   "confidence": "high",
+   "reason": "5\u03b1-reductase type 2 deficiency causing atypical genital development in a 46,XY infant is a textbook DSD diagnosis, not diabetes."
+  },
+  "40506054": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Pituitary",
+   "confidence": "high",
+   "reason": "ESE guideline is specifically about aggressive pituitary tumours/carcinomas, a pituitary-pathology subject that should not have fallen to the General Endocrinology catch-all."
+  },
+  "40827087": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Growth",
+   "confidence": "high",
+   "reason": "Study of rGH therapy's effect on growth and nutrition in Silver-Russell syndrome is a growth-hormone-therapy paper, not diabetes."
+  },
+  "41052298": {
+   "verdict": "defensible",
+   "current_topic": "Adrenal",
+   "target_topic": "Growth",
+   "confidence": "medium",
+   "reason": "CAH-specific growth charts are disease-specific to CAH (Adrenal), but the article's entire analysis is growth-trajectory modeling, making Growth an equally reasonable label."
+  },
+  "41137448": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "medium",
+   "reason": "XLH calcitriol trial fits the taxonomy's explicit XLH/FGF23 Bone/Calcium carve-out."
+  },
+  "41214257": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "low",
+   "reason": "Title-only entry on adrenergic activity and anxiety doesn't map cleanly to a single endocrine organ topic, making the catch-all reasonable; no abstract to confirm."
+  },
+  "41275391": {
+   "verdict": "wrong",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Cohort characterizes monogenic/neonatal diabetes genotypes and phenotypes in Sudanese children, a Diabetes (monogenic subtype) paper, not Bone/Calcium."
+  },
+  "41340543": {
+   "verdict": "correct",
+   "current_topic": "Growth",
+   "target_topic": "Growth",
+   "confidence": "high",
+   "reason": "Differentiating mucopolysaccharidosis from skeletal dysplasia is squarely a Growth-topic skeletal-dysplasia question."
+  },
+  "41420533": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Growth",
+   "confidence": "high",
+   "reason": "Study of GH deficiency and GH replacement therapy's effect on physical fitness is a Growth-topic paper, unrelated to diabetes."
+  },
+  "41521526": {
+   "verdict": "wrong",
+   "current_topic": "Cancer Late Effects",
+   "target_topic": "Growth",
+   "confidence": "medium",
+   "reason": "Study evaluates glucagon-stimulation-test accuracy for GH deficiency across etiology/BMI groups; childhood cancer survivors are only 42% of the cohort, so this is primarily a GH-deficiency-diagnostics paper rather than survivorship-focused Cancer Late Effects."
+  },
+  "41553972": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
    "target_topic": "General Endocrinology",
    "confidence": "high",
-   "reason": "This guideline's primary subject is endocrine complications of thalassemia (a multi-axis syndrome covering growth, puberty, bone, adrenal, thyroid, and parathyroid disease, with diabetes as just one of several complications discussed), so per the multi-system rule it belongs in the General Endocrinology catch-all, not Diabetes."
+   "reason": "ESPE position statement addresses systemic barriers across all pediatric endocrine disorders with no single-organ focus, the intended catch-all use case."
   },
-  "30084519": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "41381175": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "36098719": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "38828931": {
-   "verdict": "wrong",
-   "current_topic": "Diabetes",
-   "target_topic": "Calcium/Parathyroid",
-   "confidence": "high",
-   "reason": "This Endocrine Society guideline's primary subject is vitamin D supplementation for disease prevention broadly; diabetes/prediabetes is only one of several populations discussed (alongside pregnancy, older adults, rickets), so it belongs under Calcium/Parathyroid (vitamin D), not Diabetes."
-  },
-  "40652453": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "38604231": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "30079506": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "40652450": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "32827594": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "39675348": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "32985262": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "41793701": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "29869358": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "30062718": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "39884261": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "40988096": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "41361403": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "29999228": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "41266045": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "32578226": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "33627326": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "29999222": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "39884260": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "38869512": {
+  "41573195": {
    "verdict": "wrong",
    "current_topic": "Diabetes",
    "target_topic": "Obesity/Metabolic",
    "confidence": "high",
-   "reason": "This EASL-EASD-EASO guideline's primary subject is metabolic dysfunction-associated steatotic liver disease (MASLD/NAFLD) screening and treatment; type 2 diabetes appears only as a cardiometabolic risk factor and comorbidity, so it belongs under Obesity/Metabolic, not Diabetes."
+   "reason": "Study explicitly enrolls normoglycemic adolescents and examines the TyG insulin-resistance surrogate, lipids, and vitamin D as cardiometabolic risk markers; insulin resistance outside a diabetes context belongs in Obesity/Metabolic."
   },
-  "39927665": {
+  "41611636": {
    "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
+   "current_topic": "Thyroid",
+   "target_topic": "Thyroid",
    "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+   "reason": "Study is specifically about thyroid dysfunction pathophysiology (DYRK1A/hypothyroidism) in Down syndrome, a Thyroid-topic question despite the multi-system syndrome."
   },
-  "30066458": {
+  "41632726": {
    "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
+   "current_topic": "Growth",
+   "target_topic": "Growth",
    "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+   "reason": "Trial of long-acting PEGylated GH in idiopathic short stature is core Growth-topic content."
   },
-  "30226024": {
+  "41658991": {
+   "verdict": "wrong",
+   "current_topic": "Puberty",
+   "target_topic": "Growth",
+   "confidence": "medium",
+   "reason": "Study models height/growth-phase contributions to adult stature in Klinefelter syndrome using the QEPS growth model; despite noting pubertal growth-spurt timing, the primary subject is anthropometric growth, analogous to the Turner/Prader-Willi-under-Growth convention."
+  },
+  "41681115": {
    "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "low",
+   "reason": "Title-only entry on a cardiometabolic-care delivery model spans multiple conditions with no single organ focus."
   },
-  "33047481": {
+  "41707689": {
    "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
    "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+   "reason": "ESE-ESPE transition guidance spans all pediatric endocrine conditions, the intended multi-system catch-all use."
   },
-  "39657603": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "38663372": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "30295419": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "30133095": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "34511234": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "39657609": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "30175451": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "39362204": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "30058247": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "39701064": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "41601933": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "30225972": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "36477488": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "39675522": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "31688079": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "30051639": {
-   "verdict": "correct",
-   "current_topic": "Diabetes",
-   "target_topic": "Diabetes",
-   "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
-  },
-  "32810255": {
+  "41735800": {
    "verdict": "wrong",
    "current_topic": "Diabetes",
+   "target_topic": "Cancer Late Effects",
+   "confidence": "high",
+   "reason": "Study is explicitly survivorship-focused, quantifying long-term thyroid toxicity risk from multimodal neuroblastoma treatment (chemo/radiotherapy/immunotherapy), textbook Cancer Late Effects, not Diabetes/Technology."
+  },
+  "41767372": {
+   "verdict": "correct",
+   "current_topic": "Adrenal",
+   "target_topic": "Adrenal",
+   "confidence": "high",
+   "reason": "Review of CAH monitoring biomarkers and reference intervals is core Adrenal-topic content."
+  },
+  "41787707": {
+   "verdict": "correct",
+   "current_topic": "Genetics",
+   "target_topic": "Genetics",
+   "confidence": "medium",
+   "reason": "Review of PEX6-related peroxisome biogenesis disorders is genetic-testing/diagnosis-focused without a single endocrine organ subject in the abstract."
+  },
+  "41800637": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "MASLD/MASH is explicitly named as Obesity/Metabolic-topic content in the taxonomy; this should not have fallen to the General Endocrinology catch-all."
+  },
+  "41820251": {
+   "verdict": "wrong",
+   "current_topic": "Genetics",
+   "target_topic": "General Endocrinology",
+   "confidence": "high",
+   "reason": "Review addresses transition-of-care challenges across the whole range of pediatric endocrinopathies, not a genetics-focused paper, matching the multi-system catch-all like the companion ESE-ESPE transition guidance."
+  },
+  "41842929": {
+   "verdict": "wrong",
+   "current_topic": "Growth",
+   "target_topic": "DSD",
+   "confidence": "high",
+   "reason": "Outcomes study of ovotesticular DSD covers gonadal malignancy risk, gender identity, and genital surgery outcomes, the defining DSD subject, despite short stature being one of several outcomes reported."
+  },
+  "41847829": {
+   "verdict": "correct",
+   "current_topic": "DSD",
+   "target_topic": "DSD",
+   "confidence": "high",
+   "reason": "Case series/review of 46,XY gonadal dysgenesis in PCH7 is core DSD content."
+  },
+  "41888495": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Pituitary",
+   "confidence": "medium",
+   "reason": "Title specifically names iPSC applications in pituitary disease, an unambiguous Pituitary-topic subject despite the missing abstract."
+  },
+  "41921573": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "Study of PFAS exposure and reproductive/menstrual hormones doesn't meet PCOS's hyperandrogenism/oligomenorrhea criteria or Puberty's timing-disorder criteria, so the multi-system catch-all is reasonable."
+  },
+  "41955216": {
+   "verdict": "correct",
+   "current_topic": "Puberty",
+   "target_topic": "Puberty",
+   "confidence": "high",
+   "reason": "Study of steroid metabolome, stress, and BMI accelerating thelarche is core Puberty-topic content."
+  },
+  "41980610": {
+   "verdict": "wrong",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "DXA is used here to track adiposity (fat mass) and its link to cardiac remodeling, a metabolic-risk study, not a bone-density/fragility question."
+  },
+  "41999714": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "Microplastics as endocrine disruptors affect multiple organ systems with no single-organ focus, matching the catch-all."
+  },
+  "42030114": {
+   "verdict": "correct",
+   "current_topic": "Adrenal",
+   "target_topic": "Adrenal",
+   "confidence": "medium",
+   "reason": "Letter responding to the CAH growth-charts article should carry the same Adrenal label as its companion piece for consistency; no abstract to suggest otherwise."
+  },
+  "42048665": {
+   "verdict": "correct",
+   "current_topic": "Obesity/Metabolic",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "ML model predicting abdominal obesity risk is core Obesity/Metabolic content."
+  },
+  "42064767": {
+   "verdict": "defensible",
+   "current_topic": "Pituitary",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "medium",
+   "reason": "Hypothalamic obesity arises from sellar/pituitary pathology (craniopharyngioma etc., a Pituitary-topic criterion), but this report's actual focus is epidemiology and pharmacologic weight management (GLP-1, setmelanotide), making Obesity/Metabolic an equally defensible label."
+  },
+  "42091116": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Diabetes",
+   "confidence": "low",
+   "reason": "ISO 15197 is the glucose-meter accuracy standard, so an error-grid-analysis discussion of it is Diabetes/Technology content, not the General Endocrinology catch-all; no abstract to fully confirm."
+  },
+  "42144695": {
+   "verdict": "defensible",
+   "current_topic": "Pituitary",
+   "target_topic": "Adrenal",
+   "confidence": "medium",
+   "reason": "Central adrenal insufficiency is technically a pituitary-axis (ACTH deficiency) disorder as currently labeled, but 'adrenal insufficiency' is also explicitly named under the Adrenal topic, making Adrenal an equally reasonable label for this diagnostic-test study."
+  },
+  "42188980": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "MTHFS-related neurodevelopmental disorder lists growth retardation as only one of many systemic features; with no cleaner single-organ fit, the catch-all is appropriate."
+  },
+  "42324811": {
+   "verdict": "correct",
+   "current_topic": "Calcium/Parathyroid",
+   "target_topic": "Calcium/Parathyroid",
+   "confidence": "high",
+   "reason": "Hereditary hypomagnesemia with secondary hypocalcemia is core PTH/calcium-axis content."
+  },
+  "42359583": {
+   "verdict": "correct",
+   "current_topic": "Adrenal",
+   "target_topic": "Adrenal",
+   "confidence": "high",
+   "reason": "ML-assisted diagnosis of congenital adrenal steroidogenesis disorders via steroid profiling is core Adrenal content."
+  },
+  "42412739": {
+   "verdict": "correct",
+   "current_topic": "Growth",
+   "target_topic": "Growth",
+   "confidence": "high",
+   "reason": "Review of GH therapy outcomes in SGA with persistent short stature is core Growth-topic content."
+  },
+  "42483948": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "Comparative study of menstrual characteristics in adolescents with congenital heart disease doesn't fit PCOS or Puberty criteria, so the multi-system catch-all is reasonable."
+  },
+  "42528457": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "Juvenile Paget disease (TNFRSF11B) is a primary skeletal-fragility disorder, core Bone/Calcium content."
+  },
+  "28627221": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "low",
+   "reason": "Bare retraction notice with no abstract or content; General Endocrinology is the only defensible label with no identifiable subject."
+  },
+  "31319416": {
+   "verdict": "wrong",
+   "current_topic": "Gender Medicine",
+   "target_topic": "Puberty",
+   "confidence": "high",
+   "reason": "The abstract and MeSH terms (Puberty, Precocious) show this consortium update is primarily about GnRHa use in central precocious puberty, with transgender care only a minor additional section, so Puberty fits the primary subject better than Gender Medicine."
+  },
+  "35353710": {
+   "verdict": "correct",
+   "current_topic": "Puberty",
+   "target_topic": "Puberty",
+   "confidence": "high",
+   "reason": "This ESPE/ESE/EAA guideline is specifically about induction and timing of puberty in hypogonadal patients, squarely within the Puberty topic's hypogonadotropic hypogonadism criterion."
+  },
+  "38336897": {
+   "verdict": "correct",
+   "current_topic": "Pituitary",
+   "target_topic": "Pituitary",
+   "confidence": "high",
+   "reason": "A consensus guideline on diagnosis and management of pediatric pituitary adenomas is a textbook Pituitary-topic article."
+  },
+  "39038449": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Puberty",
+   "confidence": "medium",
+   "reason": "This is a physiology study of adrenal-derived 11-oxyandrogen levels across Tanner stages correlated with BMI, not a diabetes or diabetes-technology paper at all; the pubertal androgen-trajectory focus fits Puberty better than the assigned Diabetes/Technology label."
+  },
+  "39437749": {
+   "verdict": "correct",
+   "current_topic": "Obesity/Metabolic",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "A PHIP variant causing a monogenic obesity syndrome (Chung-Jansen) with a family case series is correctly captured by Obesity/Metabolic rather than the generic Genetics catch-all."
+  },
+  "39622214": {
+   "verdict": "correct",
+   "current_topic": "Gender Medicine",
+   "target_topic": "Gender Medicine",
+   "confidence": "high",
+   "reason": "Title alone is unambiguous: an ESPE/Endo-ERN expert opinion on endocrine management of transgender and gender-diverse adolescents is core Gender Medicine."
+  },
+  "40064154": {
+   "verdict": "correct",
+   "current_topic": "Cancer Late Effects",
+   "target_topic": "Cancer Late Effects",
+   "confidence": "high",
+   "reason": "A review of obesity as a long-term treatment effect in childhood cancer survivors is squarely Cancer Late Effects (survivorship-focused endocrine sequelae)."
+  },
+  "40555215": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "high",
+   "reason": "This international guideline spans growth, puberty, adrenal, thyroid, parathyroid and diabetes complications of thalassemia with no single dominant organ axis, exactly the multi-system scenario General Endocrinology is meant to catch."
+  },
+  "40852855": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "X-linked hypophosphatemia and FGF23-driven renal effects are explicitly named under the Bone/Calcium topic."
+  },
+  "41054822": {
+   "verdict": "correct",
+   "current_topic": "Gender Medicine",
+   "target_topic": "Gender Medicine",
+   "confidence": "high",
+   "reason": "This is a study of weight/BMI/lipid changes in transgender adolescents on puberty-suppression and gender-affirming hormone therapy, which the spec explicitly assigns to Gender Medicine rather than Puberty."
+  },
+  "41150838": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "low",
+   "reason": "No abstract, but the title describes a field-wide research roadmap for endocrine science as a whole, not any single organ system, so the General Endocrinology catch-all is reasonable."
+  },
+  "41219439": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "low",
+   "reason": "No abstract; a News & Views piece on CD38 and ageing biology has no clear single endocrine organ focus, so General Endocrinology is a reasonable default."
+  },
+  "41291202": {
+   "verdict": "wrong",
+   "current_topic": "Genetics",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "This review of metabolic-epigenetic control of feto-placental development is not a variant/exome/genetic-testing-focused paper as the Genetics topic requires; it is a broad multi-mechanism review that doesn't map to a single organ, better captured by the General Endocrinology catch-all."
+  },
+  "41349002": {
+   "verdict": "defensible",
+   "current_topic": "Puberty",
+   "target_topic": "Growth",
+   "confidence": "medium",
+   "reason": "The study reports puberty timing/duration, growth velocity, and final height together in classical 21-OHD; Puberty is defensible given the pubertal-timing focus, but the primary reported outcome (final height, growth curves by GH-promoting therapy) arguably makes Growth the stronger fit."
+  },
+  "41467600": {
+   "verdict": "correct",
+   "current_topic": "Growth",
+   "target_topic": "Growth",
+   "confidence": "high",
+   "reason": "A diagnostic-accuracy study of GH stimulation test parameters for growth hormone deficiency is core Growth topic."
+  },
+  "41527361": {
+   "verdict": "correct",
+   "current_topic": "PCOS",
+   "target_topic": "PCOS",
+   "confidence": "high",
+   "reason": "This longitudinal adolescent cohort study centers on PCOS (diagnosed at age 14) and its cardiometabolic consequences with and without coexisting MASLD, keeping PCOS as the primary endocrine condition studied."
+  },
+  "41556335": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "An EHR-based prediction model for DKA hospitalization in adults with type 1 diabetes is unambiguously Diabetes."
+  },
+  "41575896": {
+   "verdict": "correct",
+   "current_topic": "Growth",
+   "target_topic": "Growth",
+   "confidence": "high",
+   "reason": "A national GH-treatment registry study of Turner syndrome genotype/phenotype trends follows the deliberate Growth-topic convention for Turner syndrome."
+  },
+  "41614010": {
+   "verdict": "defensible",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "low",
+   "reason": "No abstract; the title's focus on cardiometabolic health in adolescence suggests Obesity/Metabolic as a plausible alternative to the General Endocrinology catch-all, though without an abstract this is a genuine judgment call."
+  },
+  "41634215": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Bone/Calcium",
+   "confidence": "low",
+   "reason": "No abstract, but the title explicitly concerns neural control of 'skeletal dysfunction,' which is a Bone/Calcium subject (bone density/skeletal fragility) rather than an undifferentiated multi-system topic."
+  },
+  "41659330": {
+   "verdict": "correct",
+   "current_topic": "Puberty",
+   "target_topic": "Puberty",
+   "confidence": "high",
+   "reason": "A systematic review of the gut-brain axis as a mechanism for environmentally-induced precocious puberty has precocious puberty as its explicit primary subject."
+  },
+  "41693151": {
+   "verdict": "wrong",
+   "current_topic": "Pituitary",
+   "target_topic": "Cancer Late Effects",
+   "confidence": "medium",
+   "reason": "This is a survivorship cohort study of hypothalamic-pituitary dysfunction specifically among childhood brain tumor survivors, analogous to the other cancer-survivorship articles in this batch correctly labeled Cancer Late Effects, rather than a general Pituitary-disease study."
+  },
+  "41709526": {
+   "verdict": "correct",
+   "current_topic": "Adrenal",
+   "target_topic": "Adrenal",
+   "confidence": "high",
+   "reason": "A case-control quality-of-life study in children with congenital adrenal hyperplasia concerns adrenal disease management, not genital atypia or sex assignment, so Adrenal is correct rather than DSD."
+  },
+  "41739851": {
+   "verdict": "correct",
+   "current_topic": "Cancer Late Effects",
+   "target_topic": "Cancer Late Effects",
+   "confidence": "high",
+   "reason": "A genetic-risk study of hypothalamic-pituitary deficiency after cranial radiation in childhood cancer survivors is core Cancer Late Effects, with the pituitary axis as the affected system rather than the primary subject."
+  },
+  "41767373": {
+   "verdict": "correct",
+   "current_topic": "Calcium/Parathyroid",
+   "target_topic": "Calcium/Parathyroid",
+   "confidence": "high",
+   "reason": "A case report of primary hyperparathyroidism presenting with skeletal deformity is Calcium/Parathyroid (PTH-axis disorder), even though the presentation is skeletal."
+  },
+  "41787713": {
+   "verdict": "wrong",
+   "current_topic": "Calcium/Parathyroid",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "This cross-sectional study's outcome of interest is bone mineral density and bone mineral content as predicted by adiposity, with PTH measured only as one of several biomarkers rather than a PTH-axis disorder, making Bone/Calcium the better fit than Calcium/Parathyroid."
+  },
+  "41800642": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Diabetes",
+   "confidence": "low",
+   "reason": "No abstract, but the journal (Diabetes Technol Ther) strongly suggests this editorial concerns diabetes technology use in pregnancy rather than a general endocrine topic; confidence is low given the title alone is ambiguous."
+  },
+  "41821305": {
+   "verdict": "defensible",
+   "current_topic": "Obesity/Metabolic",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "ROHHAD(-NET) syndrome genuinely spans hypothalamic dysfunction, autonomic dysregulation, hypoventilation and neuroendocrine tumors with no single dominant organ axis, arguably better captured by the General Endocrinology multi-system catch-all than by Obesity/Metabolic, even though obesity is a prominent presenting feature."
+  },
+  "41843922": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "medium",
+   "reason": "This is a genetic-association study of metabolic syndrome (not diabetes specifically) in children, which the Obesity/Metabolic topic explicitly covers, rather than a Diabetes-focused study."
+  },
+  "41852454": {
+   "verdict": "correct",
+   "current_topic": "Puberty",
+   "target_topic": "Puberty",
+   "confidence": "medium",
+   "reason": "This study attributes sex differences in exercise performance to pubertal testosterone rise, keeping puberty physiology as the primary subject even though the outcome measured is athletic performance."
+  },
+  "41890172": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "This cross-sectional study of CBC-derived inflammatory indices across obesity severity categories in children is an obesity/adiposity-inflammation study, not a diabetes study (insulin resistance/HOMA-IR is only a secondary correlate)."
+  },
+  "41924297": {
+   "verdict": "correct",
+   "current_topic": "Hyperinsulinism",
    "target_topic": "Hyperinsulinism",
    "confidence": "high",
-   "reason": "This is a Pediatric Endocrine Society consensus guideline on diazoxide dosing and monitoring specifically for infants and children with hyperinsulinism (insulin excess causing hypoglycemia), not diabetes."
+   "reason": "A study of genetic rescreening yield in congenital hyperinsulinism is unambiguously Hyperinsulinism; genetic testing here is the method, not the primary topic."
+  },
+  "41955566": {
+   "verdict": "wrong",
+   "current_topic": "Calcium/Parathyroid",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "This systematic review of denosumab for rare bone diseases centers on bone resorption/RANKL pathway biology and bone density outcomes, not a PTH-axis or vitamin D disorder, so Bone/Calcium fits better than Calcium/Parathyroid."
+  },
+  "41981276": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "medium",
+   "reason": "No abstract, but the title concerns sarcopenia/frailty as an adverse effect of GLP-1 receptor agonists, which the Obesity/Metabolic topic explicitly covers (GLP-1/anti-obesity pharmacotherapy) rather than the General Endocrinology catch-all."
+  },
+  "42006263": {
+   "verdict": "correct",
+   "current_topic": "PCOS",
+   "target_topic": "PCOS",
+   "confidence": "high",
+   "reason": "A comparative ultrasound study of uterine morphology in PCOS versus hypothalamic-pituitary-ovarian dysfunction keeps PCOS as the central ovarian-driven endocrine condition of interest."
+  },
+  "42039118": {
+   "verdict": "correct",
+   "current_topic": "Growth",
+   "target_topic": "Growth",
+   "confidence": "high",
+   "reason": "A 25-year single-center natural-history study of Turner syndrome follows the deliberate Growth-topic convention for Turner syndrome."
+  },
+  "42051067": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "PCOS",
+   "confidence": "medium",
+   "reason": "Ovarian hyperthecosis is an ovarian-driven hyperandrogenism disorder with a clear single-organ subject that the taxonomy has no dedicated topic for; PCOS (ovarian-driven hyperandrogenism) is the closest and better fit than the General Endocrinology catch-all, which per the spec is wrong when a clear single-organ subject simply fell through the keyword waterfall."
+  },
+  "42064769": {
+   "verdict": "correct",
+   "current_topic": "PCOS",
+   "target_topic": "PCOS",
+   "confidence": "high",
+   "reason": "A meta-analysis of a biomarker's accuracy for predicting metabolic syndrome specifically within a PCOS population keeps PCOS as the primary study population/condition."
+  },
+  "42095272": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "DSD",
+   "confidence": "high",
+   "reason": "This study of serum androgen profiles explicitly investigates XY DSD conditions (androgen insensitivity syndrome, 5\u03b1-reductase type 2 deficiency) in elite athletes, matching the DSD topic's steroidogenic-enzyme-deficiency criterion exactly, and has nothing to do with diabetes."
+  },
+  "42144862": {
+   "verdict": "correct",
+   "current_topic": "Growth",
+   "target_topic": "Growth",
+   "confidence": "high",
+   "reason": "A phase 2 trial of growth-promoting combination therapy in achondroplasia, a skeletal dysplasia explicitly named under the Growth topic."
+  },
+  "42190069": {
+   "verdict": "correct",
+   "current_topic": "Genetics",
+   "target_topic": "Genetics",
+   "confidence": "medium",
+   "reason": "Mild citrullinemia type I is a urea-cycle/genetic metabolic disorder not captured by any single endocrine-organ topic, so the Genetics catch-all (genotype-phenotype correlation study) is reasonable."
+  },
+  "42324936": {
+   "verdict": "correct",
+   "current_topic": "Genetics",
+   "target_topic": "Genetics",
+   "confidence": "medium",
+   "reason": "Niemann-Pick disease type C is a lysosomal storage/genetic disorder outside the endocrine-organ topics, so Genetics (genotype-phenotype cohort) is a reasonable label."
+  },
+  "42369274": {
+   "verdict": "correct",
+   "current_topic": "Growth",
+   "target_topic": "Growth",
+   "confidence": "high",
+   "reason": "A pharmacokinetic/pharmacodynamic modeling study of once-weekly growth hormone dosing and IGF-I monitoring in short-stature syndromes (SGA, ISS, Noonan, Turner) is core Growth topic."
+  },
+  "42415553": {
+   "verdict": "correct",
+   "current_topic": "DSD",
+   "target_topic": "DSD",
+   "confidence": "medium",
+   "reason": "No abstract, but the title's explicit framing ('Beyond genital phenotype') indicates the commentary concerns gonadal/genital development in 45,X/46,XY mosaicism, matching the DSD side of the Growth/DSD karyotype distinction."
+  },
+  "42484024": {
+   "verdict": "wrong",
+   "current_topic": "Calcium/Parathyroid",
+   "target_topic": "Bone/Calcium",
+   "confidence": "medium",
+   "reason": "This case report's subject is using a PTH-analog drug to promote osteotomy bone healing in osteogenesis imperfecta, a skeletal fragility disorder; the primary subject is bone healing/fragility, not a PTH-axis or calcium homeostasis disorder, so Bone/Calcium fits better than Calcium/Parathyroid."
+  },
+  "42530118": {
+   "verdict": "correct",
+   "current_topic": "Puberty",
+   "target_topic": "Puberty",
+   "confidence": "high",
+   "reason": "A comparative analysis of long-term GnRHa treatment outcomes in central precocious puberty stratified by obesity status keeps CPP/puberty treatment as the primary subject."
+  },
+  "29504223": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "This is a consensus guideline on bisphosphonate use for skeletal fragility conditions (osteogenesis imperfecta, secondary osteoporosis), a core Bone/Calcium subject."
   },
   "31862756": {
    "verdict": "correct",
    "current_topic": "Diabetes",
    "target_topic": "Diabetes",
    "confidence": "high",
-   "reason": "Diabetes (T1D/T2D/monogenic/CFRD screening, staging, DKA management, glycemic control, insulin/CGM technology, or a diabetes complication) is the article's clear primary subject."
+   "reason": "This is the ADA Standards of Care pediatric diabetes chapter, squarely a Diabetes guideline."
+  },
+  "35614553": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "A menopause-care position statement spans multiple axes (bone, cardiovascular, vasomotor) with no single organ focus, fitting the multi-system catch-all."
+  },
+  "38336898": {
+   "verdict": "correct",
+   "current_topic": "Pituitary",
+   "target_topic": "Pituitary",
+   "confidence": "high",
+   "reason": "This consensus guideline is specifically about pituitary adenoma subtypes (prolactinoma, Cushing disease, acromegaly) in children, the pathology itself being the subject."
+  },
+  "39186929": {
+   "verdict": "correct",
+   "current_topic": "DSD",
+   "target_topic": "DSD",
+   "confidence": "high",
+   "reason": "This qualitative study is about fertility-care experiences and priorities specifically among DSD stakeholders, a DSD-focused subject."
+  },
+  "39447557": {
+   "verdict": "correct",
+   "current_topic": "Hyperinsulinism",
+   "target_topic": "Hyperinsulinism",
+   "confidence": "high",
+   "reason": "This cohort describes hyperinsulinemic hypoglycemia recognition and management in infants with CCHS, an insulin-excess/hypoglycemia subject squarely in Hyperinsulinism."
+  },
+  "39791572": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "This is an AI meal-photo nutrient-assessment validation study with no organ-specific endocrine focus, so the catch-all fits by default."
+  },
+  "40071796": {
+   "verdict": "correct",
+   "current_topic": "Gender Medicine",
+   "target_topic": "Gender Medicine",
+   "confidence": "high",
+   "reason": "This expert-panel framework covers gender-affirming hormonal care and puberty suppression specifically for transgender/non-binary adolescents with gender dysphoria."
+  },
+  "40574354": {
+   "verdict": "correct",
+   "current_topic": "Cancer Late Effects",
+   "target_topic": "Cancer Late Effects",
+   "confidence": "high",
+   "reason": "These are fertility-preservation recommendations for boys facing gonadotoxic cancer therapy, a survivorship-focused endocrine sequela of cancer treatment."
+  },
+  "40874855": {
+   "verdict": "correct",
+   "current_topic": "Lipids",
+   "target_topic": "Lipids",
+   "confidence": "high",
+   "reason": "This cohort study covers genetics and statin treatment outcomes in pediatric heterozygous familial hypercholesterolemia, a core Lipids subject."
+  },
+  "41058069": {
+   "verdict": "correct",
+   "current_topic": "Pituitary",
+   "target_topic": "Pituitary",
+   "confidence": "high",
+   "reason": "This review is about distinguishing SIADH from cerebral/renal salt wasting in neurologically ill children, and SIADH is an explicit Pituitary-category diagnosis."
+  },
+  "41183501": {
+   "verdict": "correct",
+   "current_topic": "DSD",
+   "target_topic": "DSD",
+   "confidence": "high",
+   "reason": "This registry study tracks long-term gonadal function and outcomes in 46,XX testicular/ovotesticular DSD, a DSD subject by definition."
+  },
+  "41222213": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "This study examines dietary diversity versus visceral adiposity and insulin resistance in obese adolescents without diabetes as the subject, which belongs under Obesity/Metabolic (insulin resistance outside a diabetes context)."
+  },
+  "41310157": {
+   "verdict": "correct",
+   "current_topic": "Pituitary",
+   "target_topic": "Pituitary",
+   "confidence": "high",
+   "reason": "This review is specifically about hypophysitis diagnosis and management, a pituitary-gland-inflammation subject."
+  },
+  "41358924": {
+   "verdict": "correct",
+   "current_topic": "PCOS",
+   "target_topic": "PCOS",
+   "confidence": "high",
+   "reason": "This cohort study characterizes insulin resistance and adipokine profile specifically in adolescents with lean PCOS, an ovarian-driven PCOS subject."
+  },
+  "41474492": {
+   "verdict": "defensible",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "The Female Athlete Triad spans energy deficiency/eating disorders, menstrual dysfunction, and bone health with no single dominant axis, so while the bone-health emphasis supports Bone/Calcium, the genuinely multi-system nature makes General Endocrinology an equally defensible home."
+  },
+  "41531262": {
+   "verdict": "correct",
+   "current_topic": "Cancer Late Effects",
+   "target_topic": "Cancer Late Effects",
+   "confidence": "high",
+   "reason": "This cohort tracks long-term Sertoli/Leydig cell dysfunction after gonadotoxic cancer therapy in boys, a survivorship-focused endocrine sequela."
+  },
+  "41561047": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "This is a global-burden-of-disease analysis of endometriosis with no fit to any single-organ endocrine topic, defaulting to the catch-all."
+  },
+  "41580999": {
+   "verdict": "wrong",
+   "current_topic": "Puberty",
+   "target_topic": "DSD",
+   "confidence": "high",
+   "reason": "17\u03b2-HSD3 deficiency causing atypical genital development, gender assignment, and gender dysphoria in 46,XY individuals is an explicitly named DSD condition, not a puberty-timing disorder."
+  },
+  "41614605": {
+   "verdict": "correct",
+   "current_topic": "Puberty",
+   "target_topic": "Puberty",
+   "confidence": "high",
+   "reason": "Kallmann syndrome (hypogonadotropic hypogonadism) is explicitly a Puberty-category diagnosis, and this study is specifically about its neurocognitive features."
+  },
+  "41634216": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "low",
+   "reason": "No abstract is available, and the title (blood-brain barrier permeability of adipokines/myokines) is basic science that does not map to a single organ-specific topic."
+  },
+  "41659339": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Thyroid",
+   "confidence": "high",
+   "reason": "This cross-sectional study compares circulating thyroid hormones and metabolites between autistic and non-autistic children, a thyroid-function subject with no diabetes content."
+  },
+  "41693157": {
+   "verdict": "correct",
+   "current_topic": "Adrenal",
+   "target_topic": "Adrenal",
+   "confidence": "high",
+   "reason": "This study is about mineralocorticoid-related hypertension and vascular dysfunction in P450 oxidoreductase deficiency (a form of CAH), an adrenal steroidogenesis subject."
+  },
+  "41711038": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "X-linked hypophosphatemic rickets is an explicitly named Bone/Calcium condition, and this review covers its pediatric-to-adult care transition."
+  },
+  "41742375": {
+   "verdict": "correct",
+   "current_topic": "PCOS",
+   "target_topic": "PCOS",
+   "confidence": "high",
+   "reason": "This longitudinal cohort examines childhood sleep behavior as a predictor of adolescent PCOS diagnosis, a PCOS-risk subject."
+  },
+  "41776008": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "This review on gut microbiome and aging trajectories has no organ-specific endocrine focus, fitting the catch-all."
+  },
+  "41788765": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "This is a study of denosumab (a bone antiresorptive) for fibrous dysplasia bone lesions, bone pain, bone turnover markers, and bone density in pediatric FD/McCune-Albright, with no diabetes content."
+  },
+  "41800645": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "No abstract is available, but the title (\"Virtual Clinics for Diabetes Care\") is unambiguously a Diabetes subject."
+  },
+  "41821745": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "This RCT of an acupoint patch for primary dysmenorrhea has no fit to any single-organ endocrine topic in the taxonomy, defaulting to the catch-all."
+  },
+  "41843941": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "LRP5-related juvenile osteoporosis and its bisphosphonate treatment response is a core Bone/Calcium subject."
+  },
+  "41852457": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "This cohort examines PFAS exposure and adolescent bone mineral density, a Bone/Calcium subject."
+  },
+  "41890189": {
+   "verdict": "correct",
+   "current_topic": "Hyperinsulinism",
+   "target_topic": "Hyperinsulinism",
+   "confidence": "high",
+   "reason": "This study evaluates CGM use during pancreatic surgery specifically in congenital hyperinsulinism patients, the underlying condition being the subject rather than diabetes."
+  },
+  "41924298": {
+   "verdict": "defensible",
+   "current_topic": "PCOS",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "medium",
+   "reason": "This NHANES analysis studies free testosterone as a predictor of metabolic syndrome severity in a general adolescent population rather than diagnosed PCOS patients, so Obesity/Metabolic is an arguable alternative even though hyperandrogenemia links it to PCOS."
+  },
+  "41964640": {
+   "verdict": "correct",
+   "current_topic": "Calcium/Parathyroid",
+   "target_topic": "Calcium/Parathyroid",
+   "confidence": "high",
+   "reason": "This cohort study of iPPSD/pseudohypoparathyroidism diagnostic criteria in infancy is a core PTH-axis (Calcium/Parathyroid) subject."
+  },
+  "41982776": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Calcium/Parathyroid",
+   "confidence": "high",
+   "reason": "This case report describes two infants with severe hypercalcemia (Williams syndrome and CYP24A1-related idiopathic infantile hypercalcemia), a Calcium/Parathyroid subject with no diabetes content."
+  },
+  "42006275": {
+   "verdict": "correct",
+   "current_topic": "Obesity/Metabolic",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "This study examines maternal obesity effects on infant adipogenic and mitochondrial programming, an Obesity/Metabolic subject."
+  },
+  "42039121": {
+   "verdict": "wrong",
+   "current_topic": "Puberty",
+   "target_topic": "DSD",
+   "confidence": "medium",
+   "reason": "This case/systematic review centers on genital ambiguity (clitoromegaly, labial fusion) and gonadal deformities in P450 oxidoreductase deficiency, a steroidogenic-enzyme cause of atypical genital development that is a DSD subject, not primarily a puberty-timing disorder."
+  },
+  "42051455": {
+   "verdict": "correct",
+   "current_topic": "PCOS",
+   "target_topic": "PCOS",
+   "confidence": "high",
+   "reason": "This review is specifically about gut microbiome mechanisms and microbiome-targeted therapies in PCOS pathogenesis."
+  },
+  "42064772": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "This scoping review on testicular microlithiasis and germ-cell tumor risk is a urologic/oncologic subject with no fit to a specific endocrine organ topic."
+  },
+  "42098923": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "This registry study of cardiovascular, renal, and hepatic biomarkers in adults with type 1 diabetes is a Diabetes-population cardiometabolic-risk subject."
+  },
+  "42148757": {
+   "verdict": "wrong",
+   "current_topic": "Genetics",
+   "target_topic": "Lipids",
+   "confidence": "medium",
+   "reason": "This case series is about clinical management (fresh frozen plasma therapy) of severe hypertriglyceridemia from ApoC-II deficiency, a pediatric dyslipidemia subject better captured by Lipids than by the genetics-fallback label despite molecular confirmation being part of the diagnosis."
+  },
+  "42205009": {
+   "verdict": "correct",
+   "current_topic": "Calcium/Parathyroid",
+   "target_topic": "Calcium/Parathyroid",
+   "confidence": "high",
+   "reason": "Although Blau syndrome itself is an autoinflammatory disease, this case report's endocrine content is specifically calcitriol-mediated hypercalcemia workup and treatment, a Calcium/Parathyroid subject."
+  },
+  "42324939": {
+   "verdict": "correct",
+   "current_topic": "Thyroid",
+   "target_topic": "Thyroid",
+   "confidence": "high",
+   "reason": "This study evaluates thyroid dysfunction (TSH abnormalities) after iodinated contrast exposure in pediatric cardiac catheterization, a Thyroid subject."
+  },
+  "42370601": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "This study of adherence and follow-up in adult phenylketonuria has no fit to a specific endocrine-organ topic, defaulting to the catch-all."
+  },
+  "42415556": {
+   "verdict": "defensible",
+   "current_topic": "Growth",
+   "target_topic": "DSD",
+   "confidence": "medium",
+   "reason": "This 30-year cohort's dominant finding is gonadal tumor risk stratified by phenotypic sex and genital status in 45,X/46,XY mosaicism, a DSD-surveillance subject, though the growth-hormone/height outcome reported alongside it also supports the taxonomy's Growth convention for this karyotype."
+  },
+  "42489153": {
+   "verdict": "correct",
+   "current_topic": "Growth",
+   "target_topic": "Growth",
+   "confidence": "high",
+   "reason": "No abstract is available, but the title is unambiguous: a comment on exome sequencing in children with short stature, a Growth subject."
+  },
+  "42538806": {
+   "verdict": "correct",
+   "current_topic": "Growth",
+   "target_topic": "Growth",
+   "confidence": "high",
+   "reason": "This is a phase 3 trial of GH therapy for linear growth in Turner syndrome, matching the taxonomy's deliberate Growth placement for Turner syndrome."
+  },
+  "29982476": {
+   "verdict": "correct",
+   "current_topic": "Cancer Late Effects",
+   "target_topic": "Cancer Late Effects",
+   "confidence": "high",
+   "reason": "An Endocrine Society guideline on hypothalamic-pituitary and growth endocrinopathies specifically in childhood cancer survivors is squarely a survivorship late-effects guideline."
+  },
+  "32052993": {
+   "verdict": "correct",
+   "current_topic": "Obesity/Metabolic",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "An APA guideline on multicomponent behavioral treatment of pediatric obesity/overweight is a straightforward obesity-management guideline."
+  },
+  "36228315": {
+   "verdict": "correct",
+   "current_topic": "Thyroid",
+   "target_topic": "Thyroid",
+   "confidence": "high",
+   "reason": "A European Thyroid Association guideline on pediatric thyroid nodules and differentiated thyroid carcinoma is a core thyroid topic."
+  },
+  "38344969": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Hyperinsulinism",
+   "confidence": "high",
+   "reason": "The subject is congenital hyperinsulinemic hypoglycemia occurring in a Sotos syndrome deletion, i.e. insulin excess causing hypoglycemia, which is Hyperinsulinism rather than Diabetes."
+  },
+  "39250908": {
+   "verdict": "defensible",
+   "current_topic": "Puberty",
+   "target_topic": "Pituitary",
+   "confidence": "medium",
+   "reason": "The study centers on pituitary-gonadal axis and ovarian reserve in thalassemia, with pituitary iron overload as the key predictor of ovarian insufficiency, so Pituitary is an equally defensible home versus the hypogonadism angle that supports Puberty."
+  },
+  "39467526": {
+   "verdict": "correct",
+   "current_topic": "Obesity/Metabolic",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "A longitudinal cohort tracking pediatric BMI/obesity rates before, during, and after COVID-19 is a pediatric obesity epidemiology study."
+  },
+  "39819748": {
+   "verdict": "correct",
+   "current_topic": "Obesity/Metabolic",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "A review of hypothalamic obesity's multifactorial mechanisms and management is an obesity-focused review."
+  },
+  "40103355": {
+   "verdict": "correct",
+   "current_topic": "Adrenal",
+   "target_topic": "Adrenal",
+   "confidence": "medium",
+   "reason": "This Xp21 deletion case's clinical focus is congenital adrenal hypoplasia and its glucocorticoid/mineralocorticoid replacement, making adrenal insufficiency the actionable endocrine subject despite the multi-gene syndrome."
+  },
+  "40578837": {
+   "verdict": "correct",
+   "current_topic": "PCOS",
+   "target_topic": "PCOS",
+   "confidence": "high",
+   "reason": "A cross-sectional study of reproductive/neuroendocrine phenotypes in daughters of PCOS mothers and girls at risk for PCOS is a PCOS-risk study."
+  },
+  "40922648": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Adrenal",
+   "confidence": "high",
+   "reason": "This is a newborn-screening algorithm study for 21-hydroxylase deficiency (congenital adrenal hyperplasia), an adrenal steroidogenesis disorder, not a diabetes topic."
+  },
+  "41071584": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "A claims-based study of antifracture (bisphosphonate) drug use in osteogenesis imperfecta addresses skeletal fragility without a PTH-axis focus, fitting Bone/Calcium."
+  },
+  "41186191": {
+   "verdict": "correct",
+   "current_topic": "Gender Medicine",
+   "target_topic": "Gender Medicine",
+   "confidence": "high",
+   "reason": "A review of psychosocial/mental-health outcomes of gender-affirming medical care (puberty suppression, hormone therapy) in transgender youth is core Gender Medicine content."
+  },
+  "41223156": {
+   "verdict": "defensible",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Diabetes",
+   "confidence": "medium",
+   "reason": "Although the patients have APS-1 (a canonical General Endocrinology multi-axis syndrome), the paper's actual subject is teplizumab's effect on stage 2 type 1 diabetes progression and beta-cell preservation, with nonpancreatic APS-1 manifestations explicitly unchanged, so Diabetes is an equally defensible primary-subject call."
+  },
+  "41321009": {
+   "verdict": "defensible",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Growth",
+   "confidence": "medium",
+   "reason": "This is a methods comparison of AI bone-age assessment software; bone age is a skeletal-maturity tool used mainly in growth evaluation, so Growth is a defensible alternative to the General Endocrinology catch-all even though the paper itself is not about a specific growth disorder."
+  },
+  "41379482": {
+   "verdict": "defensible",
+   "current_topic": "Diabetes",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "medium",
+   "reason": "The study's endpoint is childhood obesity risk after in-utero gestational diabetes exposure; maternal GDM is the exposure variable while pediatric obesity is the actual outcome being measured, making Obesity/Metabolic an equally defensible primary topic."
+  },
+  "41486515": {
+   "verdict": "correct",
+   "current_topic": "Hyperinsulinism",
+   "target_topic": "Hyperinsulinism",
+   "confidence": "high",
+   "reason": "A genetic/clinical characterization of congenital hyperinsulinism with a novel ABCC8 variant is core Hyperinsulinism content."
+  },
+  "41532590": {
+   "verdict": "wrong",
+   "current_topic": "Obesity/Metabolic",
+   "target_topic": "General Endocrinology",
+   "confidence": "high",
+   "reason": "This editorial is about open research-code sharing practices under NIH's Gold Standard Science initiative; it has no clinical obesity or endocrine-disease content at all and only appeared in a diabetes-technology journal, so the non-organ-specific catch-all fits better than Obesity/Metabolic."
+  },
+  "41561050": {
+   "verdict": "correct",
+   "current_topic": "Hyperinsulinism",
+   "target_topic": "Hyperinsulinism",
+   "confidence": "high",
+   "reason": "A genotype-histotype study of histologically atypical congenital hyperinsulinism is core Hyperinsulinism content."
+  },
+  "41585787": {
+   "verdict": "correct",
+   "current_topic": "Obesity/Metabolic",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "A consensus PROM/PREM framework for obesity care is an obesity-management tool development study."
+  },
+  "41614681": {
+   "verdict": "correct",
+   "current_topic": "Pituitary",
+   "target_topic": "Pituitary",
+   "confidence": "high",
+   "reason": "A 37-year cohort of craniopharyngioma patients with pituitary dysfunction is explicitly a Pituitary-topic tumor."
+  },
+  "41636640": {
+   "verdict": "correct",
+   "current_topic": "Cancer Late Effects",
+   "target_topic": "Cancer Late Effects",
+   "confidence": "high",
+   "reason": "A German registry-linkage study of endocrine/metabolic disease prevalence in childhood cancer survivors is a canonical survivorship late-effects study."
+  },
+  "41665939": {
+   "verdict": "defensible",
+   "current_topic": "Diabetes",
+   "target_topic": "Growth",
+   "confidence": "medium",
+   "reason": "The central manipulation and clinical message concern glucose-insulin metabolic monitoring during growth hormone therapy in SGA and isolated GH deficiency patients, so Growth (GH therapy safety monitoring) is an equally defensible primary topic to the glucose/insulin-resistance framing that supports Diabetes."
+  },
+  "41694565": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Targeted sequencing to identify MODY among atypical diabetes patients is a monogenic-diabetes diagnostic study, a Diabetes subtype."
+  },
+  "41711566": {
+   "verdict": "correct",
+   "current_topic": "Pituitary",
+   "target_topic": "Pituitary",
+   "confidence": "medium",
+   "reason": "Although the underlying disease is hereditary tyrosinemia, the endocrine complication the case report actually highlights and manages is SIADH/hyponatremia, which the taxonomy places under Pituitary."
+  },
+  "41756009": {
+   "verdict": "correct",
+   "current_topic": "Obesity/Metabolic",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "This review argues childhood obesity trends may drive future early-onset cancer rates and calls for obesity-prevention policy, making pediatric obesity the primary subject rather than cancer-survivorship late effects."
+  },
+  "41778163": {
+   "verdict": "defensible",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Cancer Late Effects",
+   "confidence": "low",
+   "reason": "This cohort on fertility-preservation trends in pregnancy-associated cancer is reproductive-oncology content that does not map cleanly onto any single organ-axis topic, so it is a defensible call between the multi-system catch-all and Cancer Late Effects' focus on reproductive/endocrine consequences of cancer treatment."
+  },
+  "41795819": {
+   "verdict": "correct",
+   "current_topic": "Hyperinsulinism",
+   "target_topic": "Hyperinsulinism",
+   "confidence": "high",
+   "reason": "A case series of combined focal and diffuse congenital hyperinsulinism is core Hyperinsulinism content."
+  },
+  "41802911": {
+   "verdict": "correct",
+   "current_topic": "PCOS",
+   "target_topic": "PCOS",
+   "confidence": "high",
+   "reason": "A study of early-pregnancy inflammatory/metabolic biomarkers specifically comparing women with and without PCOS is PCOS-focused."
+  },
+  "41831464": {
+   "verdict": "defensible",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "low",
+   "reason": "No abstract is available; the title 'Europe's school food policy gap' in a diabetes/endocrinology journal most plausibly concerns childhood nutrition/obesity policy, making Obesity/Metabolic a defensible alternative to the catch-all, but this is a low-confidence title-only call."
+  },
+  "41845055": {
+   "verdict": "correct",
+   "current_topic": "Thyroid",
+   "target_topic": "Thyroid",
+   "confidence": "high",
+   "reason": "No abstract is available, but the title 'Greater recognition required for thyroid disorders' is unambiguous about its thyroid subject."
+  },
+  "41856737": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "low",
+   "reason": "No abstract is available; the title concerns causal-inference methodology in perinatal epidemiology with no organ-specific endocrine content evident, so the non-organ-specific catch-all is the best title-only fit."
+  },
+  "41907541": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "This scoping review is explicitly about pediatric metabolic-associated steatotic liver disease (MASLD/NAFLD) epidemiology and screening, a condition the taxonomy places under Obesity/Metabolic, not Diabetes."
+  },
+  "41926547": {
+   "verdict": "correct",
+   "current_topic": "Thyroid",
+   "target_topic": "Thyroid",
+   "confidence": "medium",
+   "reason": "MCT8 deficiency is a thyroid hormone transporter disorder causing peripheral thyrotoxicosis, and this guideline's monitoring focus is thyroid-hormone-axis management despite the syndrome's broader neurodevelopmental features."
+  },
+  "41965096": {
+   "verdict": "correct",
+   "current_topic": "Pituitary",
+   "target_topic": "Pituitary",
+   "confidence": "high",
+   "reason": "A review of the genetics of familial acromegaly and pituitary gigantism is core Pituitary content."
+  },
+  "41985044": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "A genetic study of homozygous collagen glycine substitutions causing severe osteogenesis imperfecta is a skeletal fragility disorder without a PTH-axis focus, fitting Bone/Calcium."
+  },
+  "42009016": {
+   "verdict": "correct",
+   "current_topic": "Obesity/Metabolic",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "medium",
+   "reason": "No abstract is available, but the title referencing REDEFINE 5 obesity trials is unambiguous about its obesity-pharmacotherapy subject."
+  },
+  "42043277": {
+   "verdict": "defensible",
+   "current_topic": "Pituitary",
+   "target_topic": "Adrenal",
+   "confidence": "medium",
+   "reason": "The study validates low-dose Synacthen (ACTH) stimulation test cortisol thresholds for central adrenal insufficiency; 'central' signals a pituitary/hypothalamic ACTH-deficiency mechanism supporting Pituitary, but the test itself measures adrenal cortisol response, making Adrenal an equally defensible alternative."
+  },
+  "42051461": {
+   "verdict": "wrong",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Calcium/Parathyroid",
+   "confidence": "high",
+   "reason": "This review's mechanistic focus is the gut-kidney-bone axis acting through PTH and FGF23-Klotho mineral-metabolism pathways in CKD-MBD, which the taxonomy's explicit disambiguation rule places under Calcium/Parathyroid even when bone is affected."
+  },
+  "42064775": {
+   "verdict": "correct",
+   "current_topic": "Adrenal",
+   "target_topic": "Adrenal",
+   "confidence": "high",
+   "reason": "No abstract is available, but the title 'Enhancing adrenal tumor diagnostics' is unambiguous about its adrenal subject."
+  },
+  "42105324": {
+   "verdict": "correct",
+   "current_topic": "PCOS",
+   "target_topic": "PCOS",
+   "confidence": "high",
+   "reason": "A review of PCOS diagnosis and treatment specifically in adolescents is core PCOS content."
+  },
+  "42149805": {
+   "verdict": "correct",
+   "current_topic": "Hyperinsulinism",
+   "target_topic": "Hyperinsulinism",
+   "confidence": "high",
+   "reason": "A retrospective series of pediatric insulinomas, including differentiation from congenital hyperinsulinism, is core Hyperinsulinism content."
+  },
+  "42272567": {
+   "verdict": "correct",
+   "current_topic": "Growth",
+   "target_topic": "Growth",
+   "confidence": "medium",
+   "reason": "This is a Turner syndrome cohort study, and the taxonomy's deliberate convention places Turner syndrome articles under Growth; the reproductive/ovarian-reserve focus here does not concern genital development or sex assignment, so the DSD carve-out for Turner-spectrum karyotypes does not apply."
+  },
+  "42333546": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "A survey study on pediatric-to-adult transition care for osteogenesis imperfecta is a skeletal-disorder health-services study fitting Bone/Calcium."
+  },
+  "42380965": {
+   "verdict": "correct",
+   "current_topic": "Adrenal",
+   "target_topic": "Adrenal",
+   "confidence": "high",
+   "reason": "A comparison of immunoassay versus LC-MS/MS steroid profiling for monitoring CAH glucocorticoid control is adrenal steroidogenesis management, not a genital-development question, so it stays Adrenal rather than DSD."
+  },
+  "42430280": {
+   "verdict": "correct",
+   "current_topic": "Calcium/Parathyroid",
+   "target_topic": "Calcium/Parathyroid",
+   "confidence": "high",
+   "reason": "A case of an activating calcium-sensing receptor mutation treated with the PTH analogue teriparatide is core PTH-axis content."
+  },
+  "42489158": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "medium",
+   "reason": "This is a burosumab treatment study in X-linked hypophosphatemia, a condition the taxonomy explicitly places under Bone/Calcium (XLH/FGF23), even though the specific outcome measured is secondary hyperparathyroidism."
+  },
+  "42540306": {
+   "verdict": "wrong",
+   "current_topic": "Puberty",
+   "target_topic": "Adrenal",
+   "confidence": "medium",
+   "reason": "The study's actual subject is diagnostic 17-OHP cutoffs for nonclassic congenital adrenal hyperplasia; premature pubarche is merely the presenting sign prompting the adrenal steroidogenesis workup, not the disease being studied."
+  },
+  "30033107": {
+   "verdict": "correct",
+   "current_topic": "DSD",
+   "target_topic": "DSD",
+   "confidence": "high",
+   "reason": "This is a comprehensive DSD management guideline covering sex assignment, hormone replacement, and genital/gonadal surgery, matching the topic's core definition."
+  },
+  "32614332": {
+   "verdict": "correct",
+   "current_topic": "Puberty",
+   "target_topic": "Puberty",
+   "confidence": "high",
+   "reason": "A national clinical guideline specifically on GnRH-agonist treatment of central precocious puberty."
+  },
+  "36622115": {
+   "verdict": "correct",
+   "current_topic": "Obesity/Metabolic",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "AAP clinical practice guideline for evaluating and treating pediatric obesity; unambiguous from the title despite the missing abstract."
+  },
+  "38529548": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "General Endocrinology",
+   "confidence": "high",
+   "reason": "The case is a multisystem MIRAGE syndrome presenting with hypoparathyroidism, transient hypothyroidism, dysautonomia, and renal disease; insulin-managed hyperglycemia is a minor incidental complication, not the article's subject."
+  },
+  "39270074": {
+   "verdict": "wrong",
+   "current_topic": "Genetics",
+   "target_topic": "DSD",
+   "confidence": "medium",
+   "reason": "This is a clinical diagnosis-and-treatment guideline for cryptorchidism and the genital-development anomalies it can signal, not a genetics/variant-testing study; DSD is the closest fit for a genital-development guideline."
+  },
+  "39480773": {
+   "verdict": "correct",
+   "current_topic": "Obesity/Metabolic",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "National pediatric society guideline update on obesity prevention, diagnosis, and treatment."
+  },
+  "39829212": {
+   "verdict": "correct",
+   "current_topic": "Thyroid",
+   "target_topic": "Thyroid",
+   "confidence": "high",
+   "reason": "Polish national guideline on diagnosis and treatment of differentiated and medullary thyroid carcinoma in children."
+  },
+  "40228835": {
+   "verdict": "correct",
+   "current_topic": "Obesity/Metabolic",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "CMAJ evidence-based clinical practice guideline for managing pediatric obesity."
+  },
+  "40694360": {
+   "verdict": "correct",
+   "current_topic": "Thyroid",
+   "target_topic": "Thyroid",
+   "confidence": "high",
+   "reason": "ACR practice parameter for I-131 sodium iodide treatment of benign and malignant thyroid disease."
+  },
+  "40947755": {
+   "verdict": "correct",
+   "current_topic": "PCOS",
+   "target_topic": "PCOS",
+   "confidence": "high",
+   "reason": "Cross-sectional study of hypertension prevalence specifically in adolescent girls with PCOS, an ovarian-driven hyperandrogenic condition."
+  },
+  "41077643": {
+   "verdict": "correct",
+   "current_topic": "Genetics",
+   "target_topic": "Genetics",
+   "confidence": "medium",
+   "reason": "Case report centered on exome-sequencing diagnosis of a rare genetic syndrome (Coffin-Lowry) co-occurring with galactosemia, with no single endocrine-organ focus."
+  },
+  "41196293": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Trial of teplizumab, an immunotherapy to delay progression from stage 2 to stage 3 type 1 diabetes."
+  },
+  "41224990": {
+   "verdict": "correct",
+   "current_topic": "Adrenal",
+   "target_topic": "Adrenal",
+   "confidence": "high",
+   "reason": "Apparent mineralocorticoid excess is a classic adrenal steroid-metabolism disorder causing hypertension; the title is unambiguous despite the missing abstract."
+  },
+  "41326654": {
+   "verdict": "wrong",
+   "current_topic": "Genetics",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "This review covers epigenetic transmission (DNA methylation, small RNAs) of parental exercise effects on offspring metabolism and cardiac development, not variant/exome genetic testing, and spans multiple systems with no single endocrine organ focus."
+  },
+  "41381175": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "ISPAD-endorsed expert recommendations on continuous ketone monitoring to reduce diabetic ketoacidosis risk."
+  },
+  "41486943": {
+   "verdict": "defensible",
+   "current_topic": "Pituitary",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "Carney complex is a genuinely multi-axis endocrine neoplasia syndrome (adrenal PPNAD/Cushing, pituitary adenoma, testicular and cardiac tumors) comparable to the MEN1/2 catch-all examples, though pituitary adenoma is a prominent feature in two of the three cases so the current label is not unreasonable."
+  },
+  "41537273": {
+   "verdict": "correct",
+   "current_topic": "Pituitary",
+   "target_topic": "Pituitary",
+   "confidence": "high",
+   "reason": "Hypothalamic-obesity syndrome secondary to craniopharyngioma, an explicitly listed Pituitary topic."
+  },
+  "41561055": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "This review proposes a phenotypic subtyping framework for pediatric obesity; diabetes/insulin therapy is not the subject."
+  },
+  "41585809": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Thyroid",
+   "confidence": "high",
+   "reason": "Case report of Graves disease with a cardiac conduction abnormality resolving alongside vitamin D and methimazole treatment; the subject is autoimmune thyroid disease, not diabetes."
+  },
+  "41616799": {
+   "verdict": "wrong",
+   "current_topic": "Genetics",
+   "target_topic": "Lipids",
+   "confidence": "high",
+   "reason": "RCT of inclisiran, a PCSK9-targeting LDL-lowering therapy, in adolescents with heterozygous familial hypercholesterolemia \u2014 a pediatric dyslipidemia trial."
+  },
+  "41637567": {
+   "verdict": "correct",
+   "current_topic": "Growth",
+   "target_topic": "Growth",
+   "confidence": "medium",
+   "reason": "Prospective study whose primary endpoints are height, corrected height, and growth velocity in girls with premature pubarche."
+  },
+  "41667654": {
+   "verdict": "defensible",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "low",
+   "reason": "A short item on the adipogenin-seipin complex in lipid-droplet/adipocyte biology could plausibly sit under Obesity/Metabolic, but with no abstract and a non-clinical title the General Endocrinology catch-all is also reasonable."
+  },
+  "41698239": {
+   "verdict": "correct",
+   "current_topic": "Thyroid",
+   "target_topic": "Thyroid",
+   "confidence": "high",
+   "reason": "Study of adrenomedullin as an inflammatory biomarker in adolescents with Hashimoto thyroiditis."
+  },
+  "41712317": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "high",
+   "reason": "APECED is the textbook example of a multi-axis autoimmune polyendocrinopathy that belongs in the General Endocrinology catch-all."
+  },
+  "41757240": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "A diagnostic-accuracy study of AMH for ovarian insufficiency doesn't map cleanly to a single pediatric-endocrine organ topic, so the catch-all is reasonable."
+  },
+  "41778167": {
+   "verdict": "correct",
+   "current_topic": "Cancer Late Effects",
+   "target_topic": "Cancer Late Effects",
+   "confidence": "high",
+   "reason": "Review of fertility-preservation surgery addressing endocrine sequelae of cancer treatment, explicitly survivorship-focused."
+  },
+  "41796107": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "DSD",
+   "confidence": "high",
+   "reason": "Molecular/genetic characterization cohort of children with 46,XY differences of sex development; the subject is DSD diagnosis, not diabetes."
+  },
+  "41803509": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "This review argues chronic hyperinsulinaemia drives obesity and cardiometabolic disease \u2014 insulin resistance outside a diabetes context, and distinct from the hypoglycemia-driven Hyperinsulinism topic."
+  },
+  "41832665": {
+   "verdict": "correct",
+   "current_topic": "DSD",
+   "target_topic": "DSD",
+   "confidence": "high",
+   "reason": "Case series of GATA4 gene variants causing 46,XY differences of sex development."
+  },
+  "41846236": {
+   "verdict": "correct",
+   "current_topic": "Puberty",
+   "target_topic": "Puberty",
+   "confidence": "high",
+   "reason": "MRI brain and pituitary volumetry study comparing girls with central precocious puberty to controls."
+  },
+  "41864211": {
+   "verdict": "correct",
+   "current_topic": "Obesity/Metabolic",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "Correspondence on GLP-1-driven ('viral medicine') shifts in expectations for obesity treatment."
+  },
+  "41907688": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "A study of antenatal endocrine-disruptor exposure and childhood neurodevelopment doesn't map to one endocrine organ system."
+  },
+  "41928888": {
+   "verdict": "correct",
+   "current_topic": "Gender Medicine",
+   "target_topic": "Gender Medicine",
+   "confidence": "high",
+   "reason": "Cardiovascular effects of long-term gender-affirming hormone therapy started in adolescence in transgender adults."
+  },
+  "41970972": {
+   "verdict": "correct",
+   "current_topic": "Genetics",
+   "target_topic": "Genetics",
+   "confidence": "medium",
+   "reason": "Cohort study of a specific chromosomal variant (chr9 pericentric inversion) and reproductive/ART outcomes, a genetics-focused analysis with no single endocrine-organ subject."
+  },
+  "41987891": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Adrenal",
+   "confidence": "high",
+   "reason": "Study of glucocorticoid-dose effects on circulating miRNAs in patients with 21-hydroxylase-deficiency CAH \u2014 the subject is adrenal insufficiency/glucocorticoid management, not diabetes."
+  },
+  "42010026": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "Review of pathophysiology, diagnosis, and management of secondary osteoporosis, a bone-fragility topic."
+  },
+  "42044650": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "Burosumab trial in infants with X-linked hypophosphatemia, an FGF23-related skeletal disorder explicitly named under Bone/Calcium."
+  },
+  "42053457": {
+   "verdict": "correct",
+   "current_topic": "Growth",
+   "target_topic": "Growth",
+   "confidence": "high",
+   "reason": "Spermarche timing study in Laron syndrome, a genetic IGF-1-deficiency growth disorder."
+  },
+  "42064776": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "low",
+   "reason": "Mechanistic review of varicocele-induced testicular injury and spermatogenic failure is andrology/reproductive biology without a clear single endocrine-organ home, so the catch-all is reasonable."
+  },
+  "42112595": {
+   "verdict": "correct",
+   "current_topic": "Thyroid",
+   "target_topic": "Thyroid",
+   "confidence": "high",
+   "reason": "Genetic evaluation of transient congenital hypothyroidism by exome sequencing, a thyroid-disease-focused genetics study."
+  },
+  "42153511": {
+   "verdict": "correct",
+   "current_topic": "Calcium/Parathyroid",
+   "target_topic": "Calcium/Parathyroid",
+   "confidence": "high",
+   "reason": "Long-term cinacalcet therapy for neonatal severe hyperparathyroidism due to CASR mutations, a PTH-axis disorder."
+  },
+  "42272568": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "Feasibility/validation study of whole-room calorimetry methodology across adults and children is a measurement-technique paper without a single organ-system focus."
+  },
+  "42333578": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "Musculoskeletal outcomes in mucopolysaccharidosis, a multisystem metabolic storage disease without a single endocrine-organ focus."
+  },
+  "42389910": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "low",
+   "reason": "Generic editorial commentary on using large clinical databases, with no organ-specific content and no abstract available."
+  },
+  "42444555": {
+   "verdict": "correct",
+   "current_topic": "PCOS",
+   "target_topic": "PCOS",
+   "confidence": "high",
+   "reason": "CDC/PCOS Challenge stakeholder meeting establishing testosterone reference ranges specifically for PCOS/androgen-excess diagnosis in women and girls."
+  },
+  "42495736": {
+   "verdict": "correct",
+   "current_topic": "Thyroid",
+   "target_topic": "Thyroid",
+   "confidence": "high",
+   "reason": "Prospective study of iodine status and thyroid function in children with food allergy on elimination diets."
+  },
+  "30079595": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "This is an ISPAD guideline specifically on microvascular and macrovascular complications of diabetes in children, not a multi-axis endocrine topic."
+  },
+  "32653624": {
+   "verdict": "wrong",
+   "current_topic": "Adrenal",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "This ASTCT expert panel is about bone mineral density loss and avascular necrosis after transplant; glucocorticoid exposure is cited as a risk factor, but the subject is skeletal health, not adrenal function."
+  },
+  "37179471": {
+   "verdict": "correct",
+   "current_topic": "Gender Medicine",
+   "target_topic": "Gender Medicine",
+   "confidence": "high",
+   "reason": "This is a professional society statement on gender-affirmative care for transgender children and adolescents."
+  },
+  "38538470": {
+   "verdict": "correct",
+   "current_topic": "Pituitary",
+   "target_topic": "Pituitary",
+   "confidence": "high",
+   "reason": "This is a review of diagnosis and hormone-replacement management of congenital hypopituitarism in children."
+  },
+  "39293420": {
+   "verdict": "correct",
+   "current_topic": "Pituitary",
+   "target_topic": "Pituitary",
+   "confidence": "high",
+   "reason": "This study evaluates stimulated copeptin for diagnosing arginine vasopressin deficiency (central diabetes insipidus), a pituitary-axis disorder."
+  },
+  "39536728": {
+   "verdict": "correct",
+   "current_topic": "Growth",
+   "target_topic": "Growth",
+   "confidence": "high",
+   "reason": "This cohort study reports growth hormone treatment response and adult height outcomes in short children born at very low birth weight."
+  },
+  "39834161": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Calcium/Parathyroid",
+   "confidence": "medium",
+   "reason": "This systematic review covers the effects of maternal vitamin D supplementation on offspring respiratory, growth, and neurodevelopmental outcomes; a passing mention of diabetes-related antibodies as one of many endpoints does not make diabetes the subject."
+  },
+  "40243526": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "This is an XLH management guideline centered on FGF23, phosphate wasting, and burosumab therapy, which the taxonomy explicitly places under Bone/Calcium."
+  },
+  "40695258": {
+   "verdict": "correct",
+   "current_topic": "Obesity/Metabolic",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "medium",
+   "reason": "No abstract is available, but the title on pathophysiology and management of childhood obesity is unambiguous for topic assignment."
+  },
+  "40976583": {
+   "verdict": "correct",
+   "current_topic": "PCOS",
+   "target_topic": "PCOS",
+   "confidence": "high",
+   "reason": "This is a cytokine-profiling study of immune dysregulation specifically in patients with PCOS."
+  },
+  "41090402": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Puberty",
+   "confidence": "high",
+   "reason": "This study measures novel androgen biomarkers in girls with premature adrenarche, a puberty-axis condition, with no diabetes content at all."
+  },
+  "41198906": {
+   "verdict": "correct",
+   "current_topic": "Thyroid",
+   "target_topic": "Thyroid",
+   "confidence": "high",
+   "reason": "This review addresses hypothyroidism's association with atherosclerosis and cardiovascular risk, a thyroid-disease topic."
+  },
+  "41231236": {
+   "verdict": "correct",
+   "current_topic": "Calcium/Parathyroid",
+   "target_topic": "Calcium/Parathyroid",
+   "confidence": "high",
+   "reason": "This is the ESE clinical guideline on treatment of chronic hypoparathyroidism, squarely a PTH-axis topic."
+  },
+  "41327588": {
+   "verdict": "correct",
+   "current_topic": "Calcium/Parathyroid",
+   "target_topic": "Calcium/Parathyroid",
+   "confidence": "high",
+   "reason": "This case series characterizes CYP24A1-related infantile hypercalcemia with PTH and vitamin D metabolism abnormalities."
+  },
+  "41399023": {
+   "verdict": "correct",
+   "current_topic": "Genetics",
+   "target_topic": "Genetics",
+   "confidence": "medium",
+   "reason": "This is a variant-identification case report of transaldolase deficiency causing premature ovarian insufficiency, a condition with no dedicated topic in the taxonomy, making the genetics catch-all appropriate."
+  },
+  "41491728": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "low",
+   "reason": "No abstract is available; the title describes basic-science endometrial hormone signaling that does not map onto any single pediatric organ-system topic, so the catch-all is reasonable."
+  },
+  "41543833": {
+   "verdict": "correct",
+   "current_topic": "DSD",
+   "target_topic": "DSD",
+   "confidence": "high",
+   "reason": "This is an expert opinion on the ethics and endocrine considerations of genital surgery in individuals with differences of sex development."
+  },
+  "41566564": {
+   "verdict": "correct",
+   "current_topic": "Pituitary",
+   "target_topic": "Pituitary",
+   "confidence": "medium",
+   "reason": "No abstract is available, but the title concerns tolvaptan for SIADH, which the taxonomy explicitly places under Pituitary."
+  },
+  "41603372": {
+   "verdict": "defensible",
+   "current_topic": "PCOS",
+   "target_topic": "Diabetes",
+   "confidence": "medium",
+   "reason": "This is a secondary analysis of a gestational diabetes trial examining whether PCOS status modifies GDM pregnancy outcomes, so Diabetes/GDM is a reasonable alternative lens given the trial population is entirely GDM patients."
+  },
+  "41616800": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Lipids",
+   "confidence": "medium",
+   "reason": "Inclisiran is a PCSK9-lowering lipid therapy; this commentary on its pediatric use is a dyslipidemia topic, not a multi-axis catch-all case."
+  },
+  "41637571": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Pituitary",
+   "confidence": "high",
+   "reason": "This retrospective study specifically characterizes the natural history of pediatric pituitary incidentalomas."
+  },
+  "41669543": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "This animal study evaluates exercise effects on bone mineral density and microarchitecture."
+  },
+  "41700350": {
+   "verdict": "defensible",
+   "current_topic": "Growth",
+   "target_topic": "Genetics",
+   "confidence": "medium",
+   "reason": "This case report is framed primarily around identifying a novel CEP57 variant in a multisystem syndrome (cardiac, intellectual disability, dysmorphism) with short stature as one prominent but not exclusive feature, so Genetics is a reasonable alternative."
+  },
+  "41712405": {
+   "verdict": "correct",
+   "current_topic": "Growth",
+   "target_topic": "Growth",
+   "confidence": "high",
+   "reason": "This study assesses the diagnostic yield of exome sequencing in children with short stature undergoing growth hormone stimulation testing."
+  },
+  "41760965": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "low",
+   "reason": "No abstract is available and the title ('Dual benefits of HIF activation') gives no specific organ-system focus, so the catch-all is a reasonable default."
+  },
+  "41779164": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "high",
+   "reason": "This is a quality-of-life study in children with MEN1/MEN2A/MEN2B, a genuinely multi-axis syndrome the taxonomy names as a correct General Endocrinology example."
+  },
+  "41797568": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Growth",
+   "confidence": "medium",
+   "reason": "No abstract is available, but the title concerns a discrepancy between reported 50th-percentile values and the LMS median parameter, which is growth-reference-chart methodology."
+  },
+  "41804539": {
+   "verdict": "defensible",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Diabetes",
+   "confidence": "low",
+   "reason": "The title carries no topical content, but publication in Diabetes Technology & Therapeutics makes a diabetes-technology commentary plausible, though there is too little evidence to call the catch-all a clear error."
+  },
+  "41833290": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "medium",
+   "reason": "The title explicitly frames the piece around sleep and metabolic health, which the multi-axis catch-all does not capture."
+  },
+  "41846525": {
+   "verdict": "correct",
+   "current_topic": "Pituitary",
+   "target_topic": "Pituitary",
+   "confidence": "high",
+   "reason": "Congenital hypopituitarism is a core, named feature of the Oliver-McFarlane syndrome triad reported in these siblings."
+  },
+  "41882966": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "This study compares CGM-derived glycemic metrics in people with type 1 and type 2 diabetes."
+  },
+  "41907689": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "This is a burosumab treatment report for FGF23-mediated hypophosphatemia, an XLH-spectrum bone disorder."
+  },
+  "41934635": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "This is a real-world outcomes program for burosumab treatment of X-linked hypophosphatemia."
+  },
+  "41974972": {
+   "verdict": "correct",
+   "current_topic": "Thyroid",
+   "target_topic": "Thyroid",
+   "confidence": "high",
+   "reason": "This review covers thyroid organoid models for studying thyroid development and disease."
+  },
+  "41987892": {
+   "verdict": "wrong",
+   "current_topic": "Thyroid",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "This cohort study tracks reproductive, thyroid, and adrenal hormones together after Omicron infection with testosterone stability as the lead finding, so it is a genuinely multi-axis study rather than a thyroid-focused one."
+  },
+  "42011955": {
+   "verdict": "correct",
+   "current_topic": "Thyroid",
+   "target_topic": "Thyroid",
+   "confidence": "medium",
+   "reason": "This evaluates LLM chatbot responses to congenital hypothyroidism patient questions; the clinical domain being tested is thyroid disease, and no better-fitting topic exists."
+  },
+  "42044652": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "No abstract is available, but the title on burosumab for infants with X-linked hypophosphataemia is unambiguous."
+  },
+  "42054261": {
+   "verdict": "correct",
+   "current_topic": "PCOS",
+   "target_topic": "PCOS",
+   "confidence": "high",
+   "reason": "This study examines PCOS prevalence and risk by race/ethnicity in US adolescents."
+  },
+  "42070902": {
+   "verdict": "correct",
+   "current_topic": "Puberty",
+   "target_topic": "Puberty",
+   "confidence": "high",
+   "reason": "This is a genetic association study of a KISS1R variant with central precocious puberty."
+  },
+  "42112796": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "Juvenile Paget disease is an osteoprotegerin-deficiency bone-remodeling disorder presenting with osteosclerosis, a single-organ skeletal condition, not a multi-axis case."
+  },
+  "42156235": {
+   "verdict": "correct",
+   "current_topic": "Growth",
+   "target_topic": "Growth",
+   "confidence": "high",
+   "reason": "This is a growth-pattern and height-prediction study in 45,X/46,XY DSD, which falls under the taxonomy's deliberate Growth convention for stature-focused articles in this karyotype."
+  },
+  "42274414": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "This DIPP study reports on disease severity and outcomes at type 1 diabetes diagnosis in at-risk children."
+  },
+  "42333785": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "This is a post-authorisation safety study of burosumab in pediatric X-linked hypophosphataemia."
+  },
+  "42394270": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Growth",
+   "confidence": "medium",
+   "reason": "No abstract is available, but the title responds to a letter about pediatric anthropometric reference values (weight, height, head circumference, BMI), which is growth-reference data."
+  },
+  "42478504": {
+   "verdict": "correct",
+   "current_topic": "Thyroid",
+   "target_topic": "Thyroid",
+   "confidence": "high",
+   "reason": "This is a cohort study of methimazole-associated neutropenia in pediatric Graves' disease."
+  },
+  "42496035": {
+   "verdict": "correct",
+   "current_topic": "Growth",
+   "target_topic": "Growth",
+   "confidence": "high",
+   "reason": "This case series and review reports short stature, GH deficiency, and growth hormone response in Meier-Gorlin syndrome."
+  },
+  "30097365": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Calcium/Parathyroid",
+   "confidence": "high",
+   "reason": "This ESPGHAN/ESPEN/ESPR/CSPEN parenteral nutrition guideline is specifically about calcium, phosphorus, and magnesium dosing, a mineral-homeostasis topic rather than a genuinely multi-axis endocrine subject."
+  },
+  "32810255": {
+   "verdict": "correct",
+   "current_topic": "Hyperinsulinism",
+   "target_topic": "Hyperinsulinism",
+   "confidence": "high",
+   "reason": "PES consensus guideline on diazoxide dosing and adverse-event monitoring for infants and children with hyperinsulinism."
+  },
+  "37454648": {
+   "verdict": "correct",
+   "current_topic": "Hyperinsulinism",
+   "target_topic": "Hyperinsulinism",
+   "confidence": "high",
+   "reason": "International consensus statement on diagnosis and management of congenital hyperinsulinism."
+  },
+  "38647408": {
+   "verdict": "correct",
+   "current_topic": "Pituitary",
+   "target_topic": "Pituitary",
+   "confidence": "medium",
+   "reason": "Central hypothyroidism with macro-orchidism and low prolactin describes an IGSF1-type hypothalamic-pituitary axis disorder rather than primary thyroid disease."
+  },
+  "39380079": {
+   "verdict": "wrong",
+   "current_topic": "PCOS",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "This SIEDP position paper is a broad childhood-obesity cardiometabolic-risk guideline covering hypertension, dyslipidemia, prediabetes, MASLD, sleep apnea and PCOS as one comorbidity among many, so PCOS is not its primary subject."
+  },
+  "39536731": {
+   "verdict": "defensible",
+   "current_topic": "Adrenal",
+   "target_topic": "DSD",
+   "confidence": "medium",
+   "reason": "The cohort reports CAH genotype-phenotype correlation, but its clinical emphasis on prenatal/early virilization and the frequency of feminizing genitoplasty leans toward genital-development management as much as adrenal steroidogenesis."
+  },
+  "39851060": {
+   "verdict": "correct",
+   "current_topic": "Pituitary",
+   "target_topic": "Pituitary",
+   "confidence": "high",
+   "reason": "Case of cabergoline-induced pathological gambling in an adolescent with a prolactin-secreting pituitary macroadenoma."
+  },
+  "40300586": {
+   "verdict": "wrong",
+   "current_topic": "Pituitary",
+   "target_topic": "General Endocrinology",
+   "confidence": "high",
+   "reason": "The ESPE position statement on immune checkpoint inhibitor endocrinopathies explicitly spans adrenal insufficiency, diabetes, thyroid dysfunction, and hypophysitis, a genuinely multi-axis endocrine topic rather than a pituitary-specific one."
+  },
+  "40705962": {
+   "verdict": "correct",
+   "current_topic": "Hyperinsulinism",
+   "target_topic": "Hyperinsulinism",
+   "confidence": "high",
+   "reason": "Case report of a novel HADH gene mutation causing congenital hyperinsulinemic hypoglycemia."
+  },
+  "40987949": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "high",
+   "reason": "This screening framework for endocrine complications of transfusion-dependent thalassemia spans growth, gonadal, thyroid, and parathyroid axes with no single dominant organ, the intended General Endocrinology catch-all."
+  },
+  "41099230": {
+   "verdict": "correct",
+   "current_topic": "Growth",
+   "target_topic": "Growth",
+   "confidence": "medium",
+   "reason": "The case centers on a growth-hormone-insensitivity/Laron-like phenotype and its treatment with rhIGF-1, even though the eventual diagnosis was a glycosylation disorder."
+  },
+  "41203536": {
+   "verdict": "defensible",
+   "current_topic": "General Endocrinology",
+   "target_topic": "DSD",
+   "confidence": "low",
+   "reason": "This EAU/ESPU transition-in-urology guideline summary is not clearly an endocrine topic at all, but insofar as pediatric urology transition programs commonly involve DSD patients, DSD is arguably a closer fit than the generic catch-all."
+  },
+  "41258701": {
+   "verdict": "defensible",
+   "current_topic": "DSD",
+   "target_topic": "Adrenal",
+   "confidence": "medium",
+   "reason": "The POR G88S report is explicitly framed as a form of congenital adrenal hyperplasia and centers on steroidogenic enzyme activity and drug-metabolism pharmacogenomics, even though the patients' presenting phenotype is disorders of sex development."
+  },
+  "41329339": {
+   "verdict": "correct",
+   "current_topic": "PCOS",
+   "target_topic": "PCOS",
+   "confidence": "high",
+   "reason": "Prospective cohort study of adolescent disordered-eating behaviors as a risk factor for later PCOS diagnosis."
+  },
+  "41402496": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "low",
+   "reason": "Basic-science piece on sympathetic innervation pathways of brown adipose tissue thermogenesis, not tied to a single clinical endocrine organ topic; no abstract available."
+  },
+  "41498210": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Pituitary",
+   "confidence": "high",
+   "reason": "This is a dedicated longitudinal study of pituitary MRI surveillance and intervention rates for pituitary adenomas in MEN1 patients, a pituitary-pathology-focused study rather than a multi-axis MEN1 overview."
+  },
+  "41545473": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "medium",
+   "reason": "The title concerns GPR110 regulation of MASH (metabolic dysfunction-associated steatohepatitis), which the taxonomy explicitly places under Obesity/Metabolic; no abstract available."
+  },
+  "41567807": {
+   "verdict": "correct",
+   "current_topic": "PCOS",
+   "target_topic": "PCOS",
+   "confidence": "high",
+   "reason": "RCT of electroacupuncture in obese PCOS patients measuring reproductive and metabolic endpoints."
+  },
+  "41607458": {
+   "verdict": "correct",
+   "current_topic": "Genetics",
+   "target_topic": "Genetics",
+   "confidence": "medium",
+   "reason": "Oncology case report centered on whole-exome sequencing findings (16p11.2 microdeletion, ALK variant) in a patient with neuroblastoma and a germ cell tumor, not tied to a specific endocrine organ."
+  },
+  "41622420": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Historical review of inhaled insulin development for treating diabetes."
+  },
+  "41647110": {
+   "verdict": "wrong",
+   "current_topic": "Genetics",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "This is a broad comparative clinical review of gastroenteropancreatic neuroendocrine tumor epidemiology, histology, and treatment across pediatric and adult populations, not a variant/exome-testing-focused article, so it fits the multi-system catch-all better than Genetics."
+  },
+  "41675571": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "Comparative-physiology study of ghrelin/CCK regulation in fish gut, not tied to a specific human pediatric endocrine organ topic."
+  },
+  "41701914": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Registry study of CGM adoption and glycemic outcomes in children and adolescents with type 1 diabetes."
+  },
+  "41712477": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "high",
+   "reason": "ESE-ESPE joint guidance on transition from pediatric to adult endocrine care applies across all endocrine conditions, the intended General Endocrinology home."
+  },
+  "41763234": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "Cohort study of GLP-1 receptor agonist use and lifestyle habits on cardiovascular outcomes in adults with type 2 diabetes."
+  },
+  "41780161": {
+   "verdict": "defensible",
+   "current_topic": "Pituitary",
+   "target_topic": "Cancer Late Effects",
+   "confidence": "medium",
+   "reason": "The case report frames growth hormone deficiency and central hypothyroidism as a novel endocrine adverse effect of [177Lu]Lu-DOTATATE radionuclide cancer therapy for neuroblastoma, arguably as much a treatment-related endocrine toxicity report as a pituitary-disease one."
+  },
+  "41799227": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "Review of electroacupuncture mechanisms in premature ovarian insufficiency does not map cleanly to a specific taxonomy organ topic and is reasonably housed in the catch-all."
+  },
+  "41810512": {
+   "verdict": "correct",
+   "current_topic": "Hyperinsulinism",
+   "target_topic": "Hyperinsulinism",
+   "confidence": "high",
+   "reason": "Genetic study identifying noncoding HK1 intron variants in patients with congenital hyperinsulinism."
+  },
+  "41839193": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Diabetes",
+   "confidence": "low",
+   "reason": "The title concerns a new staging schema for early diagnosis of dysglycaemia, language consistent with diabetes-risk staging frameworks, though no abstract is available to confirm the specific subject."
+  },
+  "41846542": {
+   "verdict": "correct",
+   "current_topic": "Thyroid",
+   "target_topic": "Thyroid",
+   "confidence": "high",
+   "reason": "Cohort study establishing trimester-specific TSH-receptor antibody thresholds to predict fetal/neonatal Graves-related hyperthyroidism."
+  },
+  "41884214": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "Biomechanics study of ground reaction forces relevant to osteogenic loading and bone health in children and adolescents."
+  },
+  "41911946": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "Real-world study of burosumab's effect on growth in X-linked hypophosphatemia, a condition the taxonomy places under Bone/Calcium."
+  },
+  "41935536": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "low",
+   "reason": "Brief editorial on autism and metabolic health with no specific single-organ endocrine focus; no abstract available."
+  },
+  "41978437": {
+   "verdict": "correct",
+   "current_topic": "Hyperinsulinism",
+   "target_topic": "Hyperinsulinism",
+   "confidence": "medium",
+   "reason": "Case report is primarily framed around congenital hyperinsulinism due to an ABCC8 mutation, with later evolution to diabetes described as part of the natural history."
+  },
+  "41991771": {
+   "verdict": "correct",
+   "current_topic": "Hyperinsulinism",
+   "target_topic": "Hyperinsulinism",
+   "confidence": "high",
+   "reason": "Discusses neurodevelopmental effects of hypoglycemia specifically in the context of congenital hyperinsulinism."
+  },
+  "42017812": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "This is a life-course cumulative BMI-burden study of metabolic multimorbidity risk (hypertension, diabetes, dyslipidemia, liver and kidney disease); diabetes is only one of several outcomes measured, not the study's primary subject."
+  },
+  "42045671": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "low",
+   "reason": "Generic conference-highlights digest spanning multiple endocrine topics; no abstract available."
+  },
+  "42058792": {
+   "verdict": "correct",
+   "current_topic": "Obesity/Metabolic",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "Narrative review of endocrine-disrupting chemicals' mechanistic role in adipogenesis and obesity."
+  },
+  "42076862": {
+   "verdict": "correct",
+   "current_topic": "Growth",
+   "target_topic": "Growth",
+   "confidence": "medium",
+   "reason": "The review specifically evaluates rhGH therapy for height augmentation in CAH, a growth-intervention-focused article despite the underlying adrenal etiology."
+  },
+  "42129590": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "low",
+   "reason": "Study of vaccination status and safety in children with inborn errors of metabolism and cystic fibrosis has no clear endocrine organ focus and defaults to the catch-all."
+  },
+  "42161334": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Calcium/Parathyroid",
+   "confidence": "high",
+   "reason": "This study is entirely about continuous PTH(1-34) infusion therapy for autosomal dominant hypocalcemia type 1, a CASR-related hypoparathyroidism disorder, and is unrelated to diabetes."
+  },
+  "42287191": {
+   "verdict": "correct",
+   "current_topic": "Puberty",
+   "target_topic": "Puberty",
+   "confidence": "high",
+   "reason": "Systematic review underpinning the Endocrine Society's central precocious puberty clinical practice guideline."
+  },
+  "42333799": {
+   "verdict": "correct",
+   "current_topic": "Pituitary",
+   "target_topic": "Pituitary",
+   "confidence": "high",
+   "reason": "Review of surgical and adjuvant treatment approaches for craniopharyngioma."
+  },
+  "42394271": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "low",
+   "reason": "This brief editorial response concerns sleep hygiene in pediatric steatotic liver disease (MASLD), a condition the taxonomy places under Obesity/Metabolic; no abstract available."
+  },
+  "42478861": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "medium",
+   "reason": "Cohort analysis tracking weight, waist circumference, and lipid biomarkers from childhood into adulthood for cardiometabolic risk prediction is core Obesity/Metabolic content, not a multi-axis endocrine subject."
+  },
+  "42496135": {
+   "verdict": "correct",
+   "current_topic": "DSD",
+   "target_topic": "DSD",
+   "confidence": "high",
+   "reason": "Ten-year review of prenatal diagnosis and multidisciplinary counseling for disorders/differences of sex development."
+  },
+  "30209800": {
+   "verdict": "correct",
+   "current_topic": "PCOS",
+   "target_topic": "PCOS",
+   "confidence": "high",
+   "reason": "PCOS diagnostic and therapeutic position statement that explicitly includes adolescent diagnostic criteria, correctly filed as PCOS."
+  },
+  "32921532": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "This guideline is specifically about managing children at risk of secondary bone fragility and fracture, a single skeletal-system topic that belongs under Bone/Calcium rather than the multi-axis General Endocrinology catch-all."
+  },
+  "37580861": {
+   "verdict": "correct",
+   "current_topic": "PCOS",
+   "target_topic": "PCOS",
+   "confidence": "high",
+   "reason": "The 2023 international evidence-based guideline update is squarely a PCOS diagnosis and management document."
+  },
+  "38828931": {
+   "verdict": "correct",
+   "current_topic": "Calcium/Parathyroid",
+   "target_topic": "Calcium/Parathyroid",
+   "confidence": "high",
+   "reason": "This Endocrine Society guideline centers on vitamin D supplementation for disease prevention, and vitamin D physiology is explicitly assigned to the Calcium/Parathyroid axis by taxonomy convention."
+  },
+  "39387353": {
+   "verdict": "correct",
+   "current_topic": "DSD",
+   "target_topic": "DSD",
+   "confidence": "high",
+   "reason": "A virilizing gonadoblastoma/dysgerminoma in a 46,XX patient with progressive virilization and gonadal dysgenesis is a DSD presentation."
+  },
+  "39551654": {
+   "verdict": "correct",
+   "current_topic": "Gender Medicine",
+   "target_topic": "Gender Medicine",
+   "confidence": "high",
+   "reason": "This is a national consensus specifically on gender-affirming hormonal care for transgender adolescents, the defining Gender Medicine subject."
+  },
+  "39960227": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Diabetes",
+   "confidence": "medium",
+   "reason": "The article's subject is AI-based screening for diabetic foot complications, a diabetes-specific complication topic, not a multi-axis subject needing the General Endocrinology catch-all."
+  },
+  "40364581": {
+   "verdict": "defensible",
+   "current_topic": "PCOS",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "This guideline's stated scope is the workup of severe androgen excess to exclude adrenal or ovarian tumors, genetic disorders, and severe insulin resistance beyond typical PCOS, so General Endocrinology is a defensible alternative to the assigned PCOS label."
+  },
+  "40711834": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "A T1D case demonstrating continuous ketone monitoring to avert DKA is correctly classified as diabetes technology."
+  },
+  "41025756": {
+   "verdict": "wrong",
+   "current_topic": "PCOS",
+   "target_topic": "Adrenal",
+   "confidence": "high",
+   "reason": "This is a case of Cushing's syndrome caused by an adrenal oncocytoma; the androgen excess and oligomenorrhea are downstream effects of the adrenal tumor, not a primary ovarian/PCOS process."
+  },
+  "41111433": {
+   "verdict": "correct",
+   "current_topic": "Adrenal",
+   "target_topic": "Adrenal",
+   "confidence": "high",
+   "reason": "Neonatal CAH screening detecting 3\u03b2-HSD2 deficiency is core Adrenal/CAH content."
+  },
+  "41211872": {
+   "verdict": "correct",
+   "current_topic": "Obesity/Metabolic",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "Adipokine levels correlated with metabolic and anthropometric parameters in overweight children is squarely Obesity/Metabolic."
+  },
+  "41261870": {
+   "verdict": "correct",
+   "current_topic": "Adrenal",
+   "target_topic": "Adrenal",
+   "confidence": "high",
+   "reason": "This lipoid CAH case series focuses on adrenal insufficiency diagnosis and glucocorticoid/mineralocorticoid management rather than genital atypia or sex assignment, so Adrenal is correct per the DSD/Adrenal distinction."
+  },
+  "41338999": {
+   "verdict": "correct",
+   "current_topic": "DSD",
+   "target_topic": "DSD",
+   "confidence": "high",
+   "reason": "Japanese clinical practice guidelines for managing differences of sex development across the lifespan are directly on-topic for DSD."
+  },
+  "41402995": {
+   "verdict": "defensible",
+   "current_topic": "PCOS",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "medium",
+   "reason": "The trial enrolls women with obesity broadly, with PCOS only an added eligibility criterion for the overweight subgroup, so the primary subject is obesity-related infertility rather than PCOS specifically, making Obesity/Metabolic a defensible alternative."
+  },
+  "41498263": {
+   "verdict": "correct",
+   "current_topic": "DSD",
+   "target_topic": "DSD",
+   "confidence": "high",
+   "reason": "Muscle mass and strength assessment in a DSD cohort stratified by karyotype and hormone-replacement status is a DSD-focused study."
+  },
+  "41549377": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "Pompe disease is a lysosomal storage disorder that doesn't map to any single endocrine-organ topic, so the General Endocrinology catch-all is an appropriate home."
+  },
+  "41569948": {
+   "verdict": "correct",
+   "current_topic": "DSD",
+   "target_topic": "DSD",
+   "confidence": "high",
+   "reason": "A MED12 variant causing 46,XY hypomasculinized genitalia in three siblings is a DSD case."
+  },
+  "41608202": {
+   "verdict": "correct",
+   "current_topic": "Adrenal",
+   "target_topic": "Adrenal",
+   "confidence": "high",
+   "reason": "A machine-learning survival model built specifically for pediatric adrenocortical tumors is Adrenal."
+  },
+  "41623909": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "X-linked hypophosphatemia (XLH) is explicitly named under Bone/Calcium in the taxonomy."
+  },
+  "41652324": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Thyroid",
+   "confidence": "medium",
+   "reason": "This is fundamentally an iodine-deficiency/thyroid-nutrition survey, published in Thyroid, whose entire clinical relevance is thyroid hormone synthesis, so it belongs under Thyroid rather than the General Endocrinology catch-all."
+  },
+  "41677265": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Diabetes",
+   "confidence": "medium",
+   "reason": "The title indicates this covers AI-based remote monitoring of diabetic foot ulcers, a diabetes-complication topic that should be Diabetes rather than General Endocrinology, though confidence is limited by the missing abstract."
+  },
+  "41704483": {
+   "verdict": "correct",
+   "current_topic": "Calcium/Parathyroid",
+   "target_topic": "Calcium/Parathyroid",
+   "confidence": "high",
+   "reason": "A large case series of pediatric severe hypocalcemia driven by vitamin D deficiency and hypoparathyroidism is core Calcium/Parathyroid."
+  },
+  "41725275": {
+   "verdict": "correct",
+   "current_topic": "Genetics",
+   "target_topic": "Genetics",
+   "confidence": "medium",
+   "reason": "This mitochondrial-disease case report (cardiomyopathy from an NSUN3 variant) is not endocrine-organ-specific; Genetics is the appropriate catch-all for a genetic-testing-driven diagnosis with no better endocrine fit."
+  },
+  "41766136": {
+   "verdict": "correct",
+   "current_topic": "Genetics",
+   "target_topic": "Genetics",
+   "confidence": "medium",
+   "reason": "A genotype-phenotype cohort study of Bardet-Biedl syndrome explicitly framed around genotypic spectrum fits the Genetics catch-all for genetic-testing-focused work."
+  },
+  "41783997": {
+   "verdict": "correct",
+   "current_topic": "Adrenal",
+   "target_topic": "Adrenal",
+   "confidence": "high",
+   "reason": "Hereditary pheochromocytoma/paraganglioma risk stratification is explicitly Adrenal topic content."
+  },
+  "41800356": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "A 24-year epidemiologic incidence and seasonality study of childhood T1D is core Diabetes."
+  },
+  "41811754": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Adrenal",
+   "confidence": "high",
+   "reason": "This study is entirely about serum confirmatory testing (17-OHP, CYP21A2 genotyping) for CAH newborn screening; it has no diabetes content and should be Adrenal."
+  },
+  "41842913": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Growth",
+   "confidence": "medium",
+   "reason": "Kenny-Caffey syndrome type 2 presented with severe growth retardation as the referring complaint (hypocalcemia was found incidentally during GH treatment) and has no diabetes content at all; Growth is the better fit given the growth-retardation framing."
+  },
+  "41847449": {
+   "verdict": "wrong",
+   "current_topic": "Adrenal",
+   "target_topic": "DSD",
+   "confidence": "high",
+   "reason": "This study is specifically about sex-assignment decisions and gender-identity outcomes in severely virilized 46,XX CAH patients, which per the DSD/Adrenal distinction is a DSD subject (genital atypia and sex assignment), not adrenal steroidogenesis management."
+  },
+  "41884215": {
+   "verdict": "correct",
+   "current_topic": "Calcium/Parathyroid",
+   "target_topic": "Calcium/Parathyroid",
+   "confidence": "high",
+   "reason": "A case of pseudohypoparathyroidism type 1b presenting with initial hypercalcemia is Calcium/Parathyroid."
+  },
+  "41913979": {
+   "verdict": "correct",
+   "current_topic": "Thyroid",
+   "target_topic": "Thyroid",
+   "confidence": "high",
+   "reason": "FT3/FT4 ratio as a relapse predictor after antithyroid drug withdrawal in pediatric autoimmune hyperthyroidism is Thyroid."
+  },
+  "41948559": {
+   "verdict": "correct",
+   "current_topic": "Hyperinsulinism",
+   "target_topic": "Hyperinsulinism",
+   "confidence": "high",
+   "reason": "Surgical management of diffuse congenital hyperinsulinism is the defining Hyperinsulinism subject."
+  },
+  "41979033": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "low",
+   "reason": "A conference report with no abstract and no single-organ focus is appropriately filed under the General Endocrinology catch-all, though confidence is low given the missing abstract."
+  },
+  "41991772": {
+   "verdict": "defensible",
+   "current_topic": "Genetics",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "This perspective leans heavily on genomic and polygenic-risk infrastructure for cardiometabolic disease equity in low-resource settings; Genetics as assigned is reasonable, but it is equally defensible as General Endocrinology since it is a health-systems/equity discussion rather than a genetic-testing study of an individual condition."
+  },
+  "42022909": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "This is fundamentally an IVF endometrial-preparation protocol comparison in a mixed 'ovulation disorder' population without a specific PCOS diagnosis emphasized, so the General Endocrinology catch-all is reasonable."
+  },
+  "42045672": {
+   "verdict": "correct",
+   "current_topic": "Obesity/Metabolic",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "A perspective on redefining clinical obesity thresholds and phenotypes in Asian populations is Obesity/Metabolic."
+  },
+  "42064759": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "medium",
+   "reason": "This is a diet-induced-obesity mouse model targeting insulin resistance and hepatic steatosis, not diabetes; per taxonomy, insulin resistance outside a diabetes context belongs to Obesity/Metabolic."
+  },
+  "42085356": {
+   "verdict": "defensible",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Growth",
+   "confidence": "medium",
+   "reason": "This study's primary outcomes are DXA/pQCT bone-strength and muscle-function measures, favoring Bone/Calcium as assigned, but tall stature, the defining population trait, makes Growth a defensible alternative."
+  },
+  "42131996": {
+   "verdict": "defensible",
+   "current_topic": "General Endocrinology",
+   "target_topic": "DSD",
+   "confidence": "low",
+   "reason": "This is a normative reference-range study of anogenital distance and hormone levels in general newborns rather than a DSD-diagnosis study, so General Endocrinology is reasonable, though DSD is a defensible alternative given AGD's clinical use in sex-development assessment; confidence is low given the minimal abstract."
+  },
+  "42165353": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "high",
+   "reason": "A randomized crossover CGM-sensor comparison in T1D automated-insulin-delivery users is Diabetes/Technology."
+  },
+  "42306228": {
+   "verdict": "correct",
+   "current_topic": "Growth",
+   "target_topic": "Growth",
+   "confidence": "high",
+   "reason": "CNP-analog therapy for achondroplasia is explicitly named under Growth."
+  },
+  "42340003": {
+   "verdict": "wrong",
+   "current_topic": "DSD",
+   "target_topic": "Adrenal",
+   "confidence": "high",
+   "reason": "This is a long-term outcomes study of CYP11A1-related primary adrenal insufficiency in patients with no atypical genitalia; per the DSD/Adrenal distinction, a CAH-spectrum article about steroidogenesis and adrenal/gonadal function without a genital-atypia or sex-assignment focus is Adrenal, not DSD."
+  },
+  "42396735": {
+   "verdict": "correct",
+   "current_topic": "Hyperinsulinism",
+   "target_topic": "Hyperinsulinism",
+   "confidence": "high",
+   "reason": "A population-based birth-prevalence and genotype/phenotype study of congenital hyperinsulinism is Hyperinsulinism."
+  },
+  "42481440": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Growth",
+   "confidence": "medium",
+   "reason": "This is a bone-age reference-standard study explicitly validated for adult-height prediction, a core Growth-assessment application, rather than a generic catch-all subject; confidence is limited by the thin abstract."
+  },
+  "42509666": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "medium",
+   "reason": "A CGM data-harmonization tool built for pooled diabetes-technology research is Diabetes/Technology."
+  },
+  "30276975": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Diabetes",
+   "confidence": "medium",
+   "reason": "This is the ISPAD 2018 Consensus Guidelines' Limited Care Guidance Appendix, a diabetes-specific chapter on providing T1D/T2D care in resource-poor settings, not a multi-axis endocrine topic."
+  },
+  "32959490": {
+   "verdict": "defensible",
+   "current_topic": "Genetics",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "This Klinefelter syndrome guideline covers hypogonadism, metabolic, bone, and cardiovascular management across the lifespan rather than being genetic-testing-focused, so the multi-system General Endocrinology catch-all is arguably a better fit than Genetics."
+  },
+  "37589624": {
+   "verdict": "correct",
+   "current_topic": "PCOS",
+   "target_topic": "PCOS",
+   "confidence": "high",
+   "reason": "This is the 2023 International Evidence-based Guideline for the Assessment and Management of PCOS, squarely a PCOS article."
+  },
+  "38952179": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "medium",
+   "reason": "Hereditary severe insulin-resistance syndrome from insulin-receptor mutations manifests as insulin resistance and diabetes mellitus, which the Diabetes topic reasonably captures even though hypoglycemia and hyperandrogenism also feature."
+  },
+  "39419009": {
+   "verdict": "wrong",
+   "current_topic": "Diabetes",
+   "target_topic": "Puberty",
+   "confidence": "high",
+   "reason": "The article's subject is DLK1-deficiency-related central precocious puberty treated with GnRH agonists; the associated metabolic/insulin dysregulation is a secondary finding, not a diabetes article."
+  },
+  "39571550": {
+   "verdict": "correct",
+   "current_topic": "Puberty",
+   "target_topic": "Puberty",
+   "confidence": "high",
+   "reason": "This studies adult height outcomes after GnRH-agonist therapy for central precocious puberty, a core Puberty topic."
+  },
+  "39960858": {
+   "verdict": "correct",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Bone/Calcium",
+   "confidence": "high",
+   "reason": "X-linked hypophosphatemia is an FGF23-mediated skeletal mineralization disorder, explicitly a Bone/Calcium topic per the taxonomy."
+  },
+  "40459373": {
+   "verdict": "correct",
+   "current_topic": "Genetics",
+   "target_topic": "Genetics",
+   "confidence": "medium",
+   "reason": "Mandibuloacral dysplasia from a founder LMNA variant is a multi-system genetic disorder (skeletal, lipodystrophy, dermatologic) that doesn't map to a single endocrine organ, so the genetics-focused label fits."
+  },
+  "40810440": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "medium",
+   "reason": "This examines OGTT glucose-response shape as a biomarker of beta-cell health and glycemic risk, core Diabetes subject matter."
+  },
+  "41051294": {
+   "verdict": "correct",
+   "current_topic": "Adrenal",
+   "target_topic": "Adrenal",
+   "confidence": "high",
+   "reason": "This characterizes genotype-phenotype correlations in 21-hydroxylase deficiency (CAH), an adrenal steroidogenesis disorder."
+  },
+  "41134091": {
+   "verdict": "wrong",
+   "current_topic": "Adrenal",
+   "target_topic": "DSD",
+   "confidence": "high",
+   "reason": "The article's actual subject is sex-assignment decision-making and gender outcomes in late-diagnosed 46,XX CAH, which per the taxonomy's own DSD-vs-Adrenal rule is a DSD question (sex assignment), not an adrenal steroidogenesis management topic."
+  },
+  "41213125": {
+   "verdict": "correct",
+   "current_topic": "PCOS",
+   "target_topic": "PCOS",
+   "confidence": "high",
+   "reason": "This studies hyperandrogenism and insulin resistance in relation to disordered eating specifically in adolescents with PCOS."
+  },
+  "41269909": {
+   "verdict": "correct",
+   "current_topic": "Growth",
+   "target_topic": "Growth",
+   "confidence": "high",
+   "reason": "This editorial addresses growth hormone therapy and quality-of-life evidence, a core Growth topic."
+  },
+  "41340166": {
+   "verdict": "correct",
+   "current_topic": "DSD",
+   "target_topic": "DSD",
+   "confidence": "medium",
+   "reason": "This systematic review focuses on virilizing ovarian tumors causing hyperandrogenic manifestations including clitoromegaly in children, placing it within the atypical-genital-development literature the DSD topic covers, even though the etiology is an acquired neoplasm rather than a classic developmental DSD."
+  },
+  "41414753": {
+   "verdict": "correct",
+   "current_topic": "Adrenal",
+   "target_topic": "Adrenal",
+   "confidence": "high",
+   "reason": "This evaluates renin assays for guiding mineralocorticoid replacement in children with adrenal insufficiency."
+  },
+  "41507499": {
+   "verdict": "defensible",
+   "current_topic": "Diabetes",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "This review deliberately frames diabetes and thyroid disease as co-equal 'twin epidemics' with bidirectional mechanisms and no single dominant organ focus, so the multi-system catch-all is arguably as defensible as Diabetes."
+  },
+  "41549445": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Pituitary",
+   "confidence": "high",
+   "reason": "This studies referral pathways for patients undergoing neurosurgery for pituitary neuroendocrine tumors (PitNETs), a clear single-organ Pituitary subject that fell through to the catch-all."
+  },
+  "41572650": {
+   "verdict": "wrong",
+   "current_topic": "Gender Medicine",
+   "target_topic": "DSD",
+   "confidence": "high",
+   "reason": "This describes a multidisciplinary diagnostic pathway for adolescents with differences of sex development (DSD); gender-affirming care is mentioned only as one component of holistic DSD management, not a Gender Medicine (transgender/gender dysphoria) article."
+  },
+  "41611635": {
+   "verdict": "correct",
+   "current_topic": "DSD",
+   "target_topic": "DSD",
+   "confidence": "high",
+   "reason": "This is a systematic review of 46,XY gonadal dysgenesis due to NR0B1 duplication, a classic DSD topic."
+  },
+  "41625247": {
+   "verdict": "correct",
+   "current_topic": "Obesity/Metabolic",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "high",
+   "reason": "This develops a risk-prediction model for metabolic syndrome, core Obesity/Metabolic content."
+  },
+  "41655234": {
+   "verdict": "correct",
+   "current_topic": "Hyperinsulinism",
+   "target_topic": "Hyperinsulinism",
+   "confidence": "high",
+   "reason": "This studies determinants of congenital hyperinsulinism severity in Beckwith-Wiedemann syndrome, explicitly a Hyperinsulinism topic."
+  },
+  "41678360": {
+   "verdict": "correct",
+   "current_topic": "Thyroid",
+   "target_topic": "Thyroid",
+   "confidence": "high",
+   "reason": "This evaluates a molecular classifier for indeterminate thyroid nodules in young patients, a core Thyroid topic."
+  },
+  "41705726": {
+   "verdict": "correct",
+   "current_topic": "Pituitary",
+   "target_topic": "Pituitary",
+   "confidence": "high",
+   "reason": "The pathology under study is craniopharyngioma (a hypothalamic-pituitary tumor); its associated obesity/eating behavior is the complication being reviewed, so Pituitary is the correct home per the Growth-vs-Pituitary rule."
+  },
+  "41727682": {
+   "verdict": "wrong",
+   "current_topic": "Calcium/Parathyroid",
+   "target_topic": "Growth",
+   "confidence": "high",
+   "reason": "This validates an automated bone-age assessment tool across rare growth and skeletal-dysplasia syndromes (SHOX deficiency, Turner, Silver-Russell, precocious puberty), a growth/skeletal-maturation topic, not a calcium/PTH-axis subject."
+  },
+  "41766939": {
+   "verdict": "defensible",
+   "current_topic": "Puberty",
+   "target_topic": "General Endocrinology",
+   "confidence": "low",
+   "reason": "This is an animal (swine) toxicology study on atrazine-induced ovarian and endocrine-disrupting protein changes, with only a passing mention of pubertal onset, so it is arguably better captured as general endocrine-disruption content than a clinical Puberty article."
+  },
+  "41785912": {
+   "verdict": "wrong",
+   "current_topic": "Adrenal",
+   "target_topic": "Pituitary",
+   "confidence": "medium",
+   "reason": "Cushing's disease specifically denotes a corticotroph pituitary adenoma, and USP8 is a well-established corticotroph-tumor driver gene, making this a pituitary-tumor recurrence study rather than an adrenal one; judged on title only, no abstract available."
+  },
+  "41800634": {
+   "verdict": "correct",
+   "current_topic": "Diabetes",
+   "target_topic": "Diabetes",
+   "confidence": "medium",
+   "reason": "This addresses immune intervention and beta-cell replacement therapies specifically in T1D."
+  },
+  "41812234": {
+   "verdict": "correct",
+   "current_topic": "Puberty",
+   "target_topic": "Puberty",
+   "confidence": "high",
+   "reason": "This examines how childhood BMI trajectory affects pubertal timing, with pubertal onset as the primary outcome."
+  },
+  "41842915": {
+   "verdict": "correct",
+   "current_topic": "Thyroid",
+   "target_topic": "Thyroid",
+   "confidence": "high",
+   "reason": "This reports long-term outcomes of radioactive iodine treatment for pediatric thyroid cancer lung metastases."
+  },
+  "41847450": {
+   "verdict": "defensible",
+   "current_topic": "Puberty",
+   "target_topic": "General Endocrinology",
+   "confidence": "low",
+   "reason": "This is a comparative/evolutionary biology paper on gonadal soma-derived factor genes in fish reproduction, not a clinical pediatric-puberty article, so it is arguably better captured as general, non-organ-specific content than as Puberty."
+  },
+  "41885138": {
+   "verdict": "correct",
+   "current_topic": "Calcium/Parathyroid",
+   "target_topic": "Calcium/Parathyroid",
+   "confidence": "high",
+   "reason": "This reports transient hyperparathyroidism and calcium-transport disruption from a novel TRPV6 deletion, core Calcium/Parathyroid content."
+  },
+  "41914440": {
+   "verdict": "correct",
+   "current_topic": "Thyroid",
+   "target_topic": "Thyroid",
+   "confidence": "high",
+   "reason": "This studies the natural history and treatment predictors of subclinical hypothyroidism in children."
+  },
+  "41952051": {
+   "verdict": "correct",
+   "current_topic": "Calcium/Parathyroid",
+   "target_topic": "Calcium/Parathyroid",
+   "confidence": "high",
+   "reason": "This case series covers hereditary hypoparathyroidism from CASR, GNA11, and GATA3 mutations, explicitly a PTH-axis topic."
+  },
+  "41980002": {
+   "verdict": "correct",
+   "current_topic": "Hyperinsulinism",
+   "target_topic": "Hyperinsulinism",
+   "confidence": "high",
+   "reason": "This describes the natural history of hyperinsulinism/hyperammonemia syndrome, a Hyperinsulinism topic."
+  },
+  "41993989": {
+   "verdict": "correct",
+   "current_topic": "PCOS",
+   "target_topic": "PCOS",
+   "confidence": "high",
+   "reason": "This estimates the global burden and trends of PCOS."
+  },
+  "42028850": {
+   "verdict": "correct",
+   "current_topic": "Puberty",
+   "target_topic": "Puberty",
+   "confidence": "high",
+   "reason": "This follows BMI changes during GnRHa therapy for central precocious puberty through final height."
+  },
+  "42045809": {
+   "verdict": "correct",
+   "current_topic": "Pituitary",
+   "target_topic": "Pituitary",
+   "confidence": "high",
+   "reason": "This screens for germline predisposition variants specifically in patients with pituitary adenomas, a Pituitary-specific genetics study."
+  },
+  "42064761": {
+   "verdict": "correct",
+   "current_topic": "Adrenal",
+   "target_topic": "Adrenal",
+   "confidence": "low",
+   "reason": "This review centers on cortisol/catecholamine stress-hormone physiology in fish social hierarchies; while not a human adrenal-disease article, Adrenal is the closest organ-axis match among the 17 topics."
+  },
+  "42090597": {
+   "verdict": "defensible",
+   "current_topic": "Bone/Calcium",
+   "target_topic": "Genetics",
+   "confidence": "medium",
+   "reason": "The primary subject is a novel SLC2A2 variant causing Fanconi-Bickel syndrome with hepatic, renal, and skeletal features; hypophosphatemic rickets is one manifestation of this multi-system genetic disorder rather than a primary calcium/PTH-axis problem, so Genetics is arguably a better fit than Bone/Calcium."
+  },
+  "42138266": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "This validates chronic wound (ulcer) surface-area measurement techniques without a clear single endocrine organ focus, fitting the catch-all."
+  },
+  "42171631": {
+   "verdict": "defensible",
+   "current_topic": "General Endocrinology",
+   "target_topic": "DSD",
+   "confidence": "low",
+   "reason": "The title indicates a case of anorexia nervosa emerging after diagnosis of Swyer syndrome, a DSD condition, so DSD is arguably a better-fitting label than the General Endocrinology catch-all for this psychosocial DSD-diagnosis sequela; judged on title only."
+  },
+  "42317743": {
+   "verdict": "correct",
+   "current_topic": "Adrenal",
+   "target_topic": "Adrenal",
+   "confidence": "high",
+   "reason": "This quantifies glucocorticoid-related complication burden in classic CAH, an Adrenal topic."
+  },
+  "42340143": {
+   "verdict": "wrong",
+   "current_topic": "General Endocrinology",
+   "target_topic": "Obesity/Metabolic",
+   "confidence": "medium",
+   "reason": "Steatotic liver disease (MASLD/NAFLD) is explicitly an Obesity/Metabolic topic in the taxonomy, so this sleep-hygiene study in that population should not have fallen through to the General Endocrinology catch-all; judged on title only."
+  },
+  "42410932": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "medium",
+   "reason": "This validates an AI meal-photo nutrient-estimation tool with no specific endocrine organ focus, fitting the catch-all."
+  },
+  "42483928": {
+   "verdict": "correct",
+   "current_topic": "Pituitary",
+   "target_topic": "Pituitary",
+   "confidence": "high",
+   "reason": "This reports a prolactinoma (pituitary tumor) presenting with L-Dopa-resistant hyperprolactinemia."
+  },
+  "42526474": {
+   "verdict": "correct",
+   "current_topic": "General Endocrinology",
+   "target_topic": "General Endocrinology",
+   "confidence": "low",
+   "reason": "This editorial on an energy-drink ban for children's health has no single organ-system focus, fitting the catch-all; judged on title only."
   }
  }
 }
