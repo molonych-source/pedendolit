@@ -24,10 +24,30 @@ A pediatric-endocrinology literature digest: 19 PubMed journals → rules-based 
 one self-contained `index.html` (**1,406 articles, 149 guidelines**), plus accounts with saved
 articles and private notes. Built for a clinician audience, meant to be shared at conferences.
 
-## Current state: site is healthy; one branch is paused at a decision
+## Current state: one live defect, one approved spec, one decision still open
 
-**`main` is at `d55b310` and that is what is live.** The site is fine — nothing in flight
-affects it.
+> **Rewritten 2026-08-07.** Read this section before anything else.
+
+**🚨 A retracted paper is live on the site.** PMID `39834161`, *Effects of Maternal Vitamin D
+Supplementation on Childhood Health* (Endocr Rev), carries PubMed's `Retracted Publication`
+type, is rated **HIGH impact**, and renders a confident bottom line with no retraction marker.
+It is in the deployed `index.html`. The fix is specced (`DOC_CLASS_SPEC.md` §4) but **not built**.
+This is the highest-priority item in the project.
+
+**`main` is at `d55b310` and that is what is live.** Nothing on the `bottom-lines` branch has
+touched the store or `index.html`.
+
+**A design was brainstormed and approved 2026-08-07: `DOC_CLASS_SPEC.md`.** It replaces the
+"source-text recovery cascade" idea, which did not survive testing. The implementation plan has
+**not** been written yet — that is the next step (`writing-plans`).
+
+**What testing established** (full evidence in `SOURCE_TEXT_RECOVERY_FINDINGS.md`):
+the 178 no-source articles are mostly *not* recoverable. Europe PMC and Crossref return 0/178
+(both verified against positive controls). Only 15 are recoverable, from PMC. An intermediate
+claim that Firecrawl retrieves the Wiley/ISPAD full text **was wrong** — Wiley redirects PDF
+URLs to the abstract landing page, and Firecrawl's `summary` then fabricated a plausible ISPAD
+summary from that empty page. So the work shifted from retrieval to honesty: demote 69
+commentary items, mark 109 as having no source text, banner the retraction.
 
 **A feature branch `bottom-lines` is paused mid-plan, waiting on one decision from
 Christian.** 5 commits, pushed to origin. It has not touched `pedendolit-data.json` or
@@ -110,7 +130,17 @@ handoff listed these as pending; they are not.
   ~65 MB of JSON, but `index.html` embeds all of it → ~62 MB page, and GitHub Pages caps files
   at 100 MB. `.git` is already 53 MB after 8 commits for the same reason. See `DECISIONS.md`.
 
-## What's next, in order (mirrors TASKS.md)
+## What's next, in order
+
+> **Updated 2026-08-07.** Items 0a/0b below now sit ahead of everything.
+
+0a. **Build `DOC_CLASS_SPEC.md`.** Ships the RETRACTED banner (clearing the live defect above),
+    the commentary demote, the honest no-source state, and the 15-article PMC fetch.
+    Next action: `writing-plans`.
+0b. **Then close the paused bottom-line decision** below and run Task 3. It must come *after*
+    0a or the 178 no-source articles get regenerated twice.
+
+## What's next after that (mirrors TASKS.md)
 
 > **Updated 2026-08-06.** The two items that used to sit ahead of B are DONE — QA round 2 is
 > applied and the dates are fixed. B's design is now agreed (`REDESIGN_SPEC.md`) and its

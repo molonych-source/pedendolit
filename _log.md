@@ -6,6 +6,54 @@ git history (33 commits to that date) and the dated sections formerly in `MEMORY
 
 ---
 
+### [2026-08-07] Source-text recovery tested and mostly disproved; doc-class spec approved
+
+Started from Christian's hypothesis that weak bottom lines came from non-English sources.
+**They do not.** Non-English articles are 9 of 1,406 (0.6%), only 2 are flagged, and off-list
+journals from the guideline sweep are *cleaner* than the 19 monitored ones (15.3% vs 18.7%
+flagged). The real driver is missing abstract text concentrated in the highest-profile
+journals: Pediatr Diabetes 62% flagged, Lancet D&E 58%, Nat Rev Endocrinol 55%.
+
+**Then tested whether the missing text is recoverable. Mostly it is not.** Findings and every
+verification are in `SOURCE_TEXT_RECOVERY_FINDINGS.md`.
+
+- Europe PMC **0/178**, Crossref **0/178** — both verified working against positive controls,
+  so the zeros are real. These articles have no abstract deposited anywhere.
+- PubMed re-fetch recovers 2 (both Chinese guidelines).
+- **PMC full text is the only working path: 15/15 verified** >200 words of real JATS body.
+- **A mid-session claim that Firecrawl retrieves the Wiley/ISPAD full text was WRONG and is
+  corrected in the findings doc.** Wiley redirects every PDF URL to the abstract landing page;
+  the 222k characters were navigation chrome (`Recommendation` 0 occurrences). Firecrawl's
+  `summary` format then produced a fluent, plausible ISPAD summary *from that empty page* —
+  precisely the fabrication mode this work exists to remove. **Never feed Firecrawl `summary`
+  into a bottom line.**
+- Green-OA repository copies are 1.6 KB metadata stubs.
+- Christian's Zotero (1,507 PDFs) matches **2 of the 109** — because his library holds ISPAD
+  **2022** and the store holds **2018**.
+- Springer previews genuinely work via Firecrawl, but cover Nat Rev research highlights that
+  should be demoted rather than retrieved. Elsevier asserts `tdm-reservation: 1` — do not
+  scrape it.
+
+**LIVE DEFECT FOUND: PMID `39834161` is a retracted paper on the site right now** — *Effects of
+Maternal Vitamin D Supplementation on Childhood Health* (Endocr Rev), rated HIGH impact, with a
+confident bottom line and no retraction marker. Present in the deployed `index.html`.
+Also PMID `28627221` renders the literal string `[Abstract not available]` as its takeaway.
+
+**ISPAD reframe:** the store holds 23 ISPAD **2018** chapters (all no-source) against only 4
+from 2024. That edition is two generations superseded, so recovering its text would mean
+writing confident takeaways for stale guidance. The real defect is a **coverage gap** — ISPAD
+2022 is absent entirely — and it belongs to the guideline sweep.
+
+**Design brainstormed and approved: `DOC_CLASS_SPEC.md`.** The cascade collapsed to a PMC fetch,
+so the spec covers what is certain instead: `doc_class` / `source_text_state` / `retracted`
+fields, two disjoint filter toggles that always show their counts (69 commentary, 109
+research-with-no-source), a RETRACTED banner, and the 15-article PMC fetch. Load-bearing rule:
+a `Letter` that does not announce itself as a reply stays `Research`, which keeps the Lancet
+stem-cell islet therapy report in the main queue.
+
+Commits on `bottom-lines`: `eecf940`, `1857134` (the correction), `b51b404` (spec).
+Nothing written to the store or `index.html`. Implementation plan not yet written.
+
 ### [2026-08-06] UI redesign direction chosen; design spec written
 
 Christian reviewed the three prototypes and picked **topic catch-up as primary, triage queue

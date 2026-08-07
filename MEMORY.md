@@ -98,7 +98,9 @@ keeping — the weakness is uniform type size (15/13/13.5px) leaving no hierarch
 
 ## Known limitations / honest caveats
 - "Other" is still the largest study-type bucket (400 of 1,273), mostly articles that genuinely lack PubMed type tags.
-- 59 articles lack an abstract — all letters/editorials with none indexed in PubMed.
+- **178 articles have no usable source text** (empty abstract or the literal `[Abstract not available]`), and for 176 of them PubMed genuinely has no abstract element — this is not an ingest gap. Verified 2026-08-07 against Europe PMC (0/178) and Crossref (0/178), both confirmed working by positive control. **Only 15 are recoverable, from PMC full text.** Full evidence in `SOURCE_TEXT_RECOVERY_FINDINGS.md`.
+- **Weak bottom lines are not caused by non-English sources.** Non-English articles are 9 of 1,406 (0.6%) and only 2 are flagged; off-list journals from the guideline sweep are *cleaner* than the 19 monitored ones (15.3% vs 18.7%). The driver is missing abstracts concentrated in high-profile journals — Pediatr Diabetes 62% flagged, Lancet D&E 58%, Nat Rev Endocrinol 55%.
+- **The store's 23 ISPAD chapters are the superseded 2018 edition**, against only 4 from 2024; the 2022 set is absent entirely. Recovering the 2018 text was explicitly rejected — it would put confident takeaways on guidance two editions stale. Tracked as a guideline-sweep coverage gap in `TASKS.md`.
 - A few DSD enzyme-deficiency terms (e.g. 17β-HSD3) aren't in the DSD keyword list, so those occasionally land in General Endocrinology.
 - 28 backfilled articles had abstracts condensed (not verbatim) by a subagent during fetch; classification verified unaffected.
 - Coverage is still thin before 2026 for non-guideline articles: the guideline backfills were publication-type-scoped only. A full Jan-2025 corpus backfill remains a TASKS item.
@@ -116,6 +118,10 @@ keeping — the weakness is uniform type size (15/13/13.5px) leaving no hierarch
 - **Pages custom-domain DNS check can wedge "in progress"** even with correct DNS, blocking cert issuance forever — remove and re-add the custom domain to re-trigger it, then pull the CNAME commits GitHub makes.
 - **Supabase dashboard forms can silently revert scripted edits** — a value set programmatically may show "saved" and then come back unchanged (React state). Type into the field for real and re-read the setting afterward.
 - **Free-tier Supabase projects pause after ~1 week without API activity**, and a paused project makes sign-in fail. The weekly refresh doesn't touch Supabase — only real user traffic does. Resume from the dashboard; a keepalive ping is planned with the digest.
+- **Never feed Firecrawl's `summary` format into a clinical bottom line.** Confirmed 2026-08-07: Wiley redirects every PDF URL to the abstract landing page, and Firecrawl then produced a fluent, accurate-*sounding* ISPAD guideline summary from that content-free page. If Firecrawl is used at all, take `markdown` and gate it on a content probe (length plus expected section markers) before anything downstream consumes it. A 200 status and a large response prove nothing — check for body text.
+- **Do not scrape Elsevier.** Lancet D&E pages set `tdm-reservation: 1` with a policy URL, a machine-readable text-mining opt-out, and Firecrawl must escalate to a `stealth` proxy (5 credits) to load one. Firecrawl free tier is 1,000 credits/month.
+- **Drive PMC lookups from the NCBI ID converter, not the store's `pmc` field** — the field holds 32 where the converter finds 40.
+- **Non-Latin abstracts are truncated at ingest** — `efetch` returns several hundred characters of Chinese abstract for `39844487` / `42527127`; the store holds 24. Recurs on every future CJK guideline.
 - **Local git caveat:** `~/Documents` is iCloud-synced, so `.git` lives inside a syncing folder. GitHub is the durable backup — push at every checkpoint; re-clone if git ever reports corruption.
 
 ## Contacts / accounts
