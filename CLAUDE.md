@@ -170,6 +170,20 @@ PTH/Calcium, or Vitamin D/Rickets. It is the only non-Diabetes topic that uses `
   fixing what `review_date` means.
 - **PubMed MCP `search_articles` errors (HTTP 500) at `max_results=500`** — always
   use 200; no monitored journal approaches that volume even over a multi-month window.
+- **A retracted paper is currently live on the site** — PMID `39834161`, rated HIGH impact with
+  a confident bottom line and no retraction marker. Fix specced in `DOC_CLASS_SPEC.md` §4, not
+  built. Highest-priority item in the project.
+- **Never feed Firecrawl's `summary` format into a clinical bottom line.** Confirmed 2026-08-07:
+  Wiley redirects every PDF URL to the abstract landing page, and Firecrawl then produced a
+  fluent, accurate-*sounding* ISPAD guideline summary from that content-free page. A 200 status
+  and a large response prove nothing — take `markdown` and probe it for body text (expected
+  section markers, not just length) before anything downstream consumes it. **Do not scrape
+  Elsevier at all**: Lancet D&E asserts `tdm-reservation: 1`.
+- **The 178 no-source articles are mostly unrecoverable, and that is settled.** Europe PMC 0/178,
+  Crossref 0/178 (both verified against positive controls), publisher PDFs redirect, green-OA
+  copies are metadata stubs, Zotero matches 2 of 109. Only 15 come back, from PMC — and drive
+  that from the NCBI ID converter, not the store's `pmc` field (32 stored vs 40 real). Don't
+  re-litigate this; read `SOURCE_TEXT_RECOVERY_FINDINGS.md`.
 - **Data completeness is the classifier's real constraint.** Until 2026-08-04, 74% of
   the store had no abstract and was classified on title alone. If classification looks
   weak for a given article, check whether it actually has an abstract before touching
