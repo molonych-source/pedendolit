@@ -6,6 +6,27 @@ git history (33 commits to that date) and the dated sections formerly in `MEMORY
 
 ---
 
+### [2026-09-06] weekly-refresh
+
+Window 2026-08-23 → 2026-09-06 (`pdat`), all 19 journals queried, **no errors** — every
+journal returned a normal result. 134 unique PMIDs fetched; 48 already in the store,
+6 excluded (5 adult-only, 1 erratum/retraction), **80 new articles added** (store
+1446 → 1526 active, 0 archived; `ARCHIVE_DAYS = None` still in effect).
+
+- **1 PRACTICE-ALTERING:** *Long-acting growth hormone: An updated Growth Hormone Research
+  Society consensus statement* — Eur J Endocrinol, PMID 42676236, doi 10.1093/ejendo/lvag167.
+- 7 HIGH-impact (6 diabetes-technology / exercise RCTs and reviews; 1 peds T2D SGLT2i phase 3:
+  luseogliflozin in Japanese children, Horm Res Paediatr, PMID 42700411).
+- Topic split of the 80: Diabetes 42, Growth 10, Thyroid 8, General Endo 4, Adrenal 4,
+  Bone/Mineral 3, PCOS 2, Puberty 2, and 1 each Obesity/Metabolic, Pituitary, Genetics,
+  DSD, Cancer Late Effects.
+- Zero-result journals (normal, not errors): Pediatr Diabetes, Endocr Rev,
+  Front Endocrinol (Lausanne). Front Endocrinol was re-checked unfiltered — only 2 articles
+  in the whole window, neither pediatric, so the 0 is real and not a query fault.
+- Note: the 2026-08-23 refresh committed code/data but left no `_log.md` entry.
+
+---
+
 ### [2026-08-06] UI redesign direction chosen; design spec written
 
 Christian reviewed the three prototypes and picked **topic catch-up as primary, triage queue
