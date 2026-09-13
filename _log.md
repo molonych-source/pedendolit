@@ -6,6 +6,40 @@ git history (33 commits to that date) and the dated sections formerly in `MEMORY
 
 ---
 
+### [2026-09-13] weekly-refresh
+
+Window 2026-08-30 → 2026-09-13 (`pdat`), all 19 journals queried, **no errors**, every
+journal returned a normal result. 151 unique PMIDs fetched; 107 already in the store,
+7 excluded (6 adult-only, 1 erratum/retraction), **37 new articles added** (store
+1526 → 1563 active, 0 archived; `ARCHIVE_AFTER_DAYS = None` still in effect).
+
+- **0 PRACTICE-ALTERING** items this week.
+- **2 HIGH-impact:** *Letrozole in Paediatric Females for Peripheral Precocious Puberty: A
+  Systematic Review of Efficacy and Safety* (J Clin Endocrinol Metab, PMID 42711790,
+  doi 10.1210/clinem/dgag372) and *Interventions to reduce diabetes-related distress among
+  adults with type 1 or type 2 diabetes: a systematic review and meta-analysis of randomised
+  controlled trials* (Diabetologia, PMID 42726276, doi 10.1007/s00125-026-06789-0).
+- 9 MODERATE, including the pediatric AID long-term cost-effectiveness analysis across four
+  countries (Diabetes Technol Ther, PMID 42719944), CAH hospitalizations across the lifespan
+  (J Clin Endocrinol Metab, PMID 42711746), and diagnostic yield of brain MRI in pediatric
+  short stature (Clin Endocrinol (Oxf), PMID 42720523).
+- Topic split of the 37: Diabetes 13, Growth 8, Thyroid 3, Adrenal 3, Bone/Mineral 2,
+  Pituitary 2, and 1 each DSD, Obesity/Metabolic, Gender Medicine, General Endocrinology,
+  Puberty, Hyperinsulinism.
+- Zero-result journals (normal, not errors): Pediatr Diabetes, Endocr Rev,
+  Front Endocrinol (Lausanne). Same three as the 2026-09-06 run.
+- **Tooling note:** the PubMed MCP `get_article_metadata` silently caps at **20 PMIDs per
+  call**. A 26-PMID request returned 20 records with `count: 20` and no error, so the 6
+  extras were dropped without warning. The runbook's batch size of ~18 stays under the cap
+  and is correct; do not raise it. Also note that a batch small enough to fit inline is
+  returned in the response instead of being written to `tool-results/`, so coverage must be
+  checked against the requested PMID list rather than assumed from the file count.
+- Sanity checks before publishing: `build_dataset.py` and `build_dashboard.py` both exited 0;
+  `pedendolit-data.json` grew 5,296,469 → 5,429,693 bytes; `is_new` count (37) matches the
+  store delta (37).
+
+---
+
 ### [2026-09-06] weekly-refresh
 
 Window 2026-08-23 → 2026-09-06 (`pdat`), all 19 journals queried, **no errors** — every
