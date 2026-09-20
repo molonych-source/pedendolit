@@ -6,6 +6,54 @@ git history (33 commits to that date) and the dated sections formerly in `MEMORY
 
 ---
 
+### [2026-09-20] weekly-refresh
+
+Window 2026-09-06 -> 2026-09-20 (`pdat`), all 19 journals queried, **no errors**. 75 unique
+PMIDs returned and all 75 fetched with abstracts; 57 already in the store, 4 excluded,
+**14 new articles added** (store 1563 -> 1577 active, 0 archived; `ARCHIVE_AFTER_DAYS = None`
+still in effect).
+
+- **2 PRACTICE-ALTERING**, and they are the *same* document published simultaneously in two
+  journals: *The Transition of Youth With Diabetes From Pediatric to Adult Diabetes Care
+  Services: A Consensus Report of the Joint Working Group of ISPAD, EASD and ADA* -- Diabetes
+  Care (PMID 42734244, doi 10.2337/dci26-0097) and Diabetologia (PMID 42734653,
+  doi 10.1007/s00125-026-06803-5). Distinct PMIDs and DOIs, so the pipeline correctly treats
+  them as two records; the dashboard will show the consensus twice. Worth a look at whether a
+  same-title/same-week co-publication guard is wanted, but that is a classifier decision, not
+  a refresh fix.
+- **3 HIGH:** premature adrenarche to adult metabolic risk and hyperandrogenism, a systematic
+  review and meta-analysis (J Clin Endocrinol Metab, PMID 42375004); thyroid autoimmunity and
+  dysfunction in juvenile idiopathic arthritis, systematic review and meta-analysis
+  (J Clin Endocrinol Metab, PMID 42306887); and maternal/neonatal complications in pregnant
+  women with polyendocrine metabolic ovarian syndrome (PMOS, the proposed renaming of PCOS),
+  a nested prospective cohort (Diabetes Care, PMID 42747940).
+- 4 MODERATE, including MiniMed 780G two-year real-world outcomes in >16,000 users across 18
+  Latin American countries (Diabetes Technol Ther, PMID 42762173), CGM hypoglycemia alarms in
+  critical care (PMID 42746746), and pubertal delay in paternally derived 15q11.2-q13
+  duplication with MKRN3 overexpression (J Clin Endocrinol Metab, PMID 42755695). 5 LOW.
+- Topic split of the 14: Diabetes 8, PCOS 2, and 1 each Puberty, Thyroid, Genetics,
+  Obesity/Metabolic.
+- **Exclusions fired (4):** 2 adult-only (PMID 42740693 glucose excursions across reproductive
+  life stages in women; PMID 42751863 weekly basal insulin efsitora alfa titration), 1
+  hard-exclude menopausal hormone therapy (PMID 42711848, Eversense 365-day implantable CGM
+  real-world data), 1 erratum (PMID 42711421). The 42711848 exclusion reason looks like a
+  keyword misfire -- the article is an Eversense implantable-CGM real-world study, not
+  menopausal HT -- but it is an adult-population study anyway, so the exclusion outcome is
+  right for the wrong reason. Flag for the next classifier QA sweep.
+- **Possible misclassification to review:** PMID 42747940 is titled a nested prospective
+  cohort study but was typed `RCT`. Cause is traceable: its abstract states the cohort was
+  nested inside "an international, multicenter, randomized controlled trial of gestational
+  diabetes mellitus treatment", so the study-type rule matched the parent trial rather than
+  the study itself. It is also a pregnant-adult population that cleared the peds filter. Not
+  corrected here (a refresh run is mechanical); logged for the QA sweep.
+- Zero-result journals (normal, not errors): Pediatr Diabetes, Eur J Endocrinol,
+  Nat Rev Endocrinol, Lancet Diabetes Endocrinol, Front Endocrinol (Lausanne), Thyroid,
+  Diabetes. Seven this week versus three last week.
+- Sanity checks before publishing: `build_dataset.py` and `build_dashboard.py` both exited 0;
+  `pedendolit-data.json` grew 5,429,693 -> 5,484,134 bytes; `is_new` count (14) matches the
+  store delta (14); all 75 requested PMIDs verified present in the fetched metadata (the
+  20-PMID silent cap noted on 2026-09-13 did not bite -- batches were 18).
+
 ### [2026-09-13] weekly-refresh
 
 Window 2026-08-30 → 2026-09-13 (`pdat`), all 19 journals queried, **no errors**, every

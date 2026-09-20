@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-13T08:04:35",
+ "generated": "2026-09-20T08:04:27",
  "review_period": "September 2026",
  "articles": [
   {
@@ -107775,7 +107775,7 @@
    "impact_rationale": "Other on Growth. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -107840,7 +107840,7 @@
    "impact_rationale": "Review on Thyroid. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -107908,7 +107908,7 @@
    "impact_rationale": "Other on Pituitary. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -107973,7 +107973,7 @@
    "impact_rationale": "Other on DSD. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -108040,7 +108040,7 @@
    "impact_rationale": "Observational/Cohort on Obesity/Metabolic. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -108107,7 +108107,7 @@
    "impact_rationale": "Other on Bone/Mineral. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -108177,7 +108177,7 @@
    "impact_rationale": "Other on Growth. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -108244,7 +108244,7 @@
    "impact_rationale": "Other on Bone/Mineral. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -108321,7 +108321,7 @@
    "impact_rationale": "Survey/Questionnaire on Gender Medicine. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -108400,7 +108400,7 @@
    "impact_rationale": "Cross-Sectional on General Endocrinology. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -108471,7 +108471,7 @@
    "impact_rationale": "Observational/Cohort on Thyroid. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -108533,7 +108533,7 @@
    "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -108588,7 +108588,7 @@
    "impact_rationale": "Expert letter or commentary. No new primary data; provides perspective on Diabetes but does not independently change practice.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -108648,7 +108648,7 @@
    "impact_rationale": "Observational study on Diabetes. Cohort size n not reported. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -108712,7 +108712,7 @@
    "impact_rationale": "Observational study on Diabetes. Cohort size n = 50. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -108762,7 +108762,7 @@
    "impact_rationale": "Observational/Cohort on Adrenal. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -108818,7 +108818,7 @@
    "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -108872,7 +108872,7 @@
    "impact_rationale": "Observational study on Adrenal. Cohort size n not reported. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -108935,7 +108935,7 @@
    "impact_rationale": "Systematic review of Puberty evidence. Level I synthesis; strongest available summary short of a guideline.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -108995,7 +108995,7 @@
    "impact_rationale": "Observational/Cohort on Pituitary. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -109056,7 +109056,7 @@
    "impact_rationale": "Observational study on Adrenal. Cohort size n = 327. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -109118,7 +109118,7 @@
    "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -109171,7 +109171,7 @@
    "impact_rationale": "Expert letter or commentary. No new primary data; provides perspective on Growth but does not independently change practice.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -109236,7 +109236,7 @@
    "impact_rationale": "Observational/Cohort on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -109301,7 +109301,7 @@
    "impact_rationale": "Observational study on Diabetes. Cohort size n = 251. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -109365,7 +109365,7 @@
    "impact_rationale": "Case-Control on Growth. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -109422,7 +109422,7 @@
    "impact_rationale": "Observational study on Growth. Cohort size n = 330. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -109488,7 +109488,7 @@
    "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -109570,7 +109570,7 @@
    "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -109624,7 +109624,7 @@
    "impact_rationale": "Observational study on Growth. Cohort size n = 169. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -109682,7 +109682,7 @@
    "impact_rationale": "Observational/Cohort on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -109766,7 +109766,7 @@
    "impact_rationale": "Meta-analysis synthesizing multiple studies on Diabetes. Published in Diabetologia. Level I evidence summary.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -109819,7 +109819,7 @@
    "impact_rationale": "Other on Thyroid. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -109882,7 +109882,7 @@
    "impact_rationale": "Observational/Cohort on Growth. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -109933,7 +109933,7 @@
    "impact_rationale": "Other on Growth. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -109987,7 +109987,7 @@
    "impact_rationale": "Observational/Cohort on Hyperinsulinism. Background reading for clinical awareness.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -110042,9 +110042,904 @@
    "impact_rationale": "Observational study on Diabetes. Cohort size n = 113. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
+   "is_new": false,
+   "is_archived": false
+  },
+  {
+   "pmid": "42755695",
+   "title": "Pubertal delay in patients with paternally derived 15q11.2-q13 duplication syndrome and MKRN3 overexpression.",
+   "abstract": "Duplications of the 15q11.2-q13 region are primarily associated with neurodevelopmental disorders, while their endocrine implications remain poorly defined. The imprinted gene MKRN3, located within this locus, inhibits pubertal onset, and loss-of-function variants cause central precocious puberty. However, the clinical impact of increased MKRN3 dosage remains unclear. This study investigates whether paternally derived 15q11.2-q13 duplications lead to MKRN3 overexpression and are associated with delayed pubertal maturation.\n\nFour patients with confirmed paternal 15q11.2-q13 duplications were retrospectively evaluated. Clinical, auxological, hormonal, and radiological data were collected. Genetic characterization was performed using MS-MLPA, array-CGH, and whole-exome sequencing when possible. MKRN3 expression was assessed by RT-qPCR in peripheral blood samples and compared with Tanner and sex-matched controls.\n\nAll patients showed duplications involving the 15q11.2-q13 region with confirmed paternal origin. RT-qPCR showed increased MKRN3 expression in three of the four patients, supporting a potential gene dosage effect. Clinically, patients presented with pubertal abnormalities ranging from delayed puberty with slow progression to hypogonadotropic hypogonadism. Longitudinal data in one patient showed that MKRN3 expression levels during pubertal progression remained elevated compared to controls at both timepoints. In one case, a variant in PROKR2 may have contributed to phenotype.\n\nPaternally derived 15q11.2-q13 duplications are associated with MKRN3 overexpression and delayed pubertal maturation. These findings suggest for the first time in humans a link between increased MKRN3 dosage and pubertal delay, expanding the phenotypic spectrum of dup15q syndrome and highlighting the importance of endocrine monitoring in affected individuals.",
+   "journal": "The Journal of clinical endocrinology and metabolism",
+   "journal_abbr": "J Clin Endocrinol Metab",
+   "authors": [
+    "Petrone D",
+    "Palumbo S",
+    "Giacobbe C",
+    "Onore ME",
+    "Esposito M",
+    "Perrotta S",
+    "Miraglia Del Giudice E",
+    "Piluso G",
+    "Nigro V",
+    "Santoro C",
+    "Grandone A"
+   ],
+   "doi": "10.1210/clinem/dgag385",
+   "pub_date": "2026-09-18",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "15q11.2–q13 duplication",
+    "MKNR3",
+    "delayed puberty",
+    "hypogonadotropic hypogonadism"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42755695/",
+   "doi_url": "https://doi.org/10.1210/clinem/dgag385",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Puberty",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "MODERATE",
+   "age_range": [
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Puberty"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Paternally derived 15q11.2-q13 duplications are associated with MKRN3 overexpression and delayed pubertal maturation. These findings suggest for the first time in humans a link between increased MKRN3 dosage and pubertal delay, expanding the phenotypic spectrum of dup15q syndrome and highlighting the importance of endocrine monitoring in affected individuals.",
+   "impact_rationale": "Observational study on Puberty. Cohort size n not reported. Clinically informative but limited by non-randomized design.",
+   "review_date": "2026-09-20",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42375004",
+   "title": "From premature adrenarche to adult metabolic risk and hyperandrogenism: a systematic review and meta-analysis.",
+   "abstract": "Idiopathic premature adrenarche (IPA) has been associated with a higher risk of metabolic and reproductive dysfunction, but long-term/adult outcomes remain incompletely known.\n\nTo assess the relationship between IPA and metabolic syndrome, as well as polycystic ovarian syndrome, in premenarcheal adolescent and adult women.\n\nWe conducted a systematic review and meta-analysis of observational studies reporting outcomes in females with IPA after menarche. Databases were searched through February 2025. Primary outcomes included body mass index (BMI), insulin resistance markers, and clinical and biochemical markers of hyperandrogenism. Data were pooled using random-effects models. The GRADE approach was applied to assess the certainty of evidence.\n\nA total of 21 studies comprising 635 females with IPA and 307 age-matched controls were included. Compared to controls, IPA individuals showed significantly higher BMI (mean difference: 1.4; CI: 1.0-1.9), fasting insulin, and homeostasis model assessment of insulin resistance, indicating persistent insulin resistance. Markers of hyperandrogenism, including Ferriman-Gallwey score, dehydroepiandrosterone sulfate, and Free androgenic index, were also elevated. Secondary analyses revealed higher triglycerides, lower high-density lipoprotein, increased leptin, and greater carotid intima-media thickness, supporting an early pattern of cardiometabolic risk. GRADE assessment rated most outcomes as low certainty.\n\nWomen with a history of IPA are at increased risk of long-term insulin resistance and hyperandrogenism, with early signs of adverse cardiometabolic profiles. These findings support the need for long-term monitoring in this population.",
+   "journal": "The Journal of clinical endocrinology and metabolism",
+   "journal_abbr": "J Clin Endocrinol Metab",
+   "authors": [
+    "Luciano TM",
+    "Halah MP",
+    "Pinto LEC",
+    "Castor MSR",
+    "Nunes-Nogueira VDS",
+    "Antonini SR"
+   ],
+   "doi": "10.1210/clinem/dgag258",
+   "pub_date": "2026-Sep-16",
+   "pub_types": [
+    "Journal Article",
+    "Systematic Review",
+    "Meta-Analysis"
+   ],
+   "mesh_terms": [
+    "Humans",
+    "Female",
+    "Hyperandrogenism",
+    "Adrenarche",
+    "Puberty, Precocious",
+    "Insulin Resistance",
+    "Adult",
+    "Metabolic Syndrome",
+    "Polycystic Ovary Syndrome",
+    "Adolescent",
+    "Body Mass Index",
+    "Risk Factors"
+   ],
+   "keywords": [
+    "adrenarche",
+    "long-term outcomes",
+    "premature adrenarche"
+   ],
+   "volume": "111",
+   "issue": "10",
+   "pages": "e2300-e2311",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42375004/",
+   "doi_url": "https://doi.org/10.1210/clinem/dgag258",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "PCOS",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Meta-analysis",
+   "ev_level": 1,
+   "impact": "HIGH",
+   "age_range": [
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 1,
+   "sample_n": 21,
+   "tags": [
+    "#PCOS",
+    "#BoardRelevant",
+    "#MetaAnalysis",
+    "#Puberty",
+    "#Obesity"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Women with a history of IPA are at increased risk of long-term insulin resistance and hyperandrogenism, with early signs of adverse cardiometabolic profiles. These findings support the need for long-term monitoring in this population.",
+   "impact_rationale": "Meta-analysis synthesizing multiple studies on PCOS. Published in The Journal of clinical endocrinology and metabolism. Level I evidence summary.",
+   "review_date": "2026-09-20",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42306887",
+   "title": "Thyroid-joint crosstalk: a systematic review and meta-analysis of thyroid autoimmunity and dysfunction in juvenile idiopathic arthritis.",
+   "abstract": "Recent observational studies outlined the concomitant presence of autoimmune diseases in children with juvenile idiopathic arthritis (JIA), including endocrine autoimmunity. Despite the growing evidence of thyroid involvement in JIA, available data are heterogeneous and fragmented. We aimed to systematically review the available evidence on the prevalence of thyroid autoantibody positivity and thyroid dysfunction in patients with JIA.\n\nPubMed/Medline, Cochrane, and Scopus databases were approached to identify studies reporting data on thyroid autoantibody positivity and dysfunction in children with JIA.\n\nA total of 15 studies were included in the final analysis, encompassing 19 015 children with JIA (13 225 females, 69.6%) with a weighted mean age of 8.0 years (range 1.8-21 years). The pooled prevalence estimates of antithyroid antibody positivity and thyroid dysfunction were 0.04 (95% CI: 0.03-0.05) and 0.04 (95% CI: 0.03-0.08), respectively. The risk difference for thyroid autoantibody positivity between children with JIA and controls was 0.08 (95% CI: 0.02-0.14). Possible risk factors were analyzed: the presence of family history for thyroid autoimmune disease (odds ratio - OR 3.91, 95% CI 1.86-8.25), concurrent Antinuclear Antibodies (ANA) positivity (OR 1.62, 95% CI 1.13-2.31), and older age (MD 2.10 years, 95% CI 1.32-2.89) were associated with thyroid autoantibody positivity and/or thyroid dysfunction in children with JIA. No significant difference emerged for the specific JIA form.\n\nThyroid dysfunction may be detected in children with JIA, with a significant risk difference in comparison to healthy controls. Specific clinical characteristics, such as family history, ANA positivity, and older age at JIA onset, may suggest which patients should benefit from thyroid autoantibody screening.",
+   "journal": "The Journal of clinical endocrinology and metabolism",
+   "journal_abbr": "J Clin Endocrinol Metab",
+   "authors": [
+    "Liguoro I",
+    "D'Agostini M",
+    "Franco F",
+    "Martini G"
+   ],
+   "doi": "10.1210/clinem/dgag238",
+   "pub_date": "2026-Sep-16",
+   "pub_types": [
+    "Journal Article",
+    "Systematic Review",
+    "Meta-Analysis"
+   ],
+   "mesh_terms": [
+    "Humans",
+    "Arthritis, Juvenile",
+    "Autoantibodies",
+    "Thyroid Gland",
+    "Child",
+    "Autoimmunity",
+    "Adolescent",
+    "Female",
+    "Child, Preschool",
+    "Thyroiditis, Autoimmune",
+    "Thyroid Diseases"
+   ],
+   "keywords": [
+    "children",
+    "juvenile idiopathic arthritis",
+    "thyroid autoantibody positivity",
+    "thyroid function"
+   ],
+   "volume": "111",
+   "issue": "10",
+   "pages": "2984-2993",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42306887/",
+   "doi_url": "https://doi.org/10.1210/clinem/dgag238",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Thyroid",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Meta-analysis",
+   "ev_level": 1,
+   "impact": "HIGH",
+   "age_range": [
+    "Child"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 15,
+   "tags": [
+    "#Thyroid",
+    "#MetaAnalysis"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Thyroid dysfunction may be detected in children with JIA, with a significant risk difference in comparison to healthy controls. Specific clinical characteristics, such as family history, ANA positivity, and older age at JIA onset, may suggest which patients should benefit from thyroid autoantibody screening.",
+   "impact_rationale": "Meta-analysis synthesizing multiple studies on Thyroid. Published in The Journal of clinical endocrinology and metabolism. Level I evidence summary.",
+   "review_date": "2026-09-20",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42762173",
+   "title": "Sustained Glycemic Outcomes with the MiniMed780G System: Real-World Evidence from >16,000 Users Across 18 Latin American Countries Over Two Years.",
+   "abstract": "Automated insulin delivery (AID) systems achieve consistent glycemic outcomes in real-world settings, yet access across Latin America (LATAM) remains critically low, with marked disparities driven by demographic, structural, and health care infrastructure heterogeneity across the region. This study characterizes the real-world performance of the MiniMed™ 780G (MM780G) advanced hybrid closed-loop (AHCL) system across 18 LATAM countries and evaluates the durability of glycemic outcomes over 24 months.\n\nData from 16,669 individuals with type 1 diabetes using the MM780G system across 18 LATAM countries (January 2020-October 2025) were analyzed; 27.1% were pediatric (<16 years) and 70.8% adult (≥16 years). Primary outcomes included time in range (TIR), time in tight range (TITR), glucose management indicator (GMI), and time below range (TBR), stratified by age, sex, country, and recommended optimal settings (ROS: glucose target 100 mg/dL, active insulin time 2 h, ≥95% of time). A longitudinal sub-analysis followed 1204 users across 24 consecutive monthly time points.\n\nOverall, mean TIR was 73.4% and GMI 6.9%, with TBR within consensus targets; approximately two-thirds of users achieved TIR > 70% and GMI < 7.0%. ROS was adopted by 19.2% of users, which was associated with substantially improved outcomes, with mean TIR 77.5%, TIR > 70% attainment occurred in 83.9% of users, and composite target of GMI < 7, TIR > 70, TB70 < 4 and TB54 < 1 attainment rising to 66.4%. Pediatric users met or exceeded (with ROS) the internationally recommended 70%TIR threshold (mean overall TIR 70.0% and 74.2% with ROS), while adults (mean TIR 74.6%) aligned closely with US and Europe, Middle East and Africa real-world benchmarks. TITR exceeded 50% in adults (50.3% overall and 54.1% with ROS) and exceeded the International Society for Pediatric and Adolescent Diabetes (ISPAD) 2024 recommended threshold of 50% in pediatric users (mean TITR 51.2% with ROS). Outcomes were consistent across sex and all five national cohorts. In the 24-month longitudinal sub-analysis, TIR remained clinically stable within one and a half percentage points throughout both age groups.\n\nThe MiniMed™ 780G AHCL system delivered consistent and durable glycemic control over 24 months across the full demographic and structural heterogeneity of Latin America. Performance was aligned with internationally recommended consensus targets and was independent of age, sex, country, and health care infrastructure. Eliminating barriers to AID access is an immediate and achievable priority in the region and may improve the health of hundreds of thousands of people with diabetes in Latin America.",
+   "journal": "Diabetes technology & therapeutics",
+   "journal_abbr": "Diabetes Technol Ther",
+   "authors": [
+    "Castro M",
+    "Grassi B",
+    "Daín A",
+    "Gómez AM",
+    "Saleme A",
+    "Calliari LE",
+    "Siqueira R",
+    "Raggio M",
+    "Riera F",
+    "Sámano MAG",
+    "Liu M",
+    "Vigersky R",
+    "McVean J"
+   ],
+   "doi": "10.1177/15209156261486558",
+   "pub_date": "2026-09-19",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "Latin America",
+    "MiniMed 780G system",
+    "automated insulin delivery",
+    "time in range"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "15209156261486558",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42762173/",
+   "doi_url": "https://doi.org/10.1177/15209156261486558",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "Technology",
+   "diabetes_subtype": "T1D",
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "MODERATE",
+   "age_range": [
+    "Child",
+    "Adolescent"
+   ],
+   "society": [
+    "ISPAD"
+   ],
+   "board_relevant": 0,
+   "sample_n": 16669,
+   "tags": [
+    "#Diabetes",
+    "#HealthEquity",
+    "#Technology"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Performance was aligned with internationally recommended consensus targets and was independent of age, sex, country, and health care infrastructure. Eliminating barriers to AID access is an immediate and achievable priority in the region and may improve the health of hundreds of thousands of people with diabetes in Latin America.",
+   "impact_rationale": "Observational study on Diabetes. Cohort size n = 16669. Clinically informative but limited by non-randomized design.",
+   "review_date": "2026-09-20",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42762166",
+   "title": "Association Between Continuous Glucose Monitoring Utilization and Glucagon-Like Peptide-1 Receptor Agonist Discontinuation in Type 2 Diabetes: A Real-World Study.",
+   "abstract": "Continuous glucose monitoring (CGM) and glucagon-like peptide-1 receptor agonists (GLP-1 RAs) when used jointly are associated with significant improvement in glycemic outcomes. However, it is unknown if using CGM enhances GLP-1 RA continuation. This study assesses the relationship between adherent CGM utilization and GLP-1 RA adherence among people living with type 2 diabetes (T2D) on nonintensive therapy.\n\nThis retrospective matched-cohort study analyzed data from InovalonInsights administrative claims from March 1, 2017, to April 30, 2024, for adults aged ≥18 years diagnosed with T2D, treated with basal insulin or noninsulin therapy, and CGM-naïve before starting GLP-1 RA. Adherent CGM utilization was defined as having a proportion of days covered (PDC) ≥0.8 within 1-year post GLP-1 RA initiation. CGM users were matched with non-CGM users based on age, sex, race/ethnicity, basal insulin/noninsulin therapy, GLP-1 RA type, comorbidities, insurance type, and one fill/multiple refills of GLP-1 RA. The primary outcome was GLP-1 RA discontinuation over the 12-month observation period, which was defined as the first gap of ≥90 days without GLP-1 RA supply post-index. Kaplan-Meier model was used to estimate the time to discontinuation, and hazard ratios (HRs) were calculated using a multivariable Cox proportional hazards regression model.\n\nThe study included 934 adherent CGM users matched with 3747 non-CGM users. One year post GLP-1 RA initiation, 68.4% (95% confidence interval [CI]: 65.5%-71.5%) of adherent CGM users remained on GLP-1 RA compared with 51.9% (95% CI: 50.3%-53.5%) of non-CGM users (< 0.001). After adjusting for covariates, adherent CGM users were significantly less likely to discontinue GLP-1 RA compared to non-CGM users (HR: 0.56 [95% CI: 0.49-0.63],< 0.001).\n\nThis study suggests that adherent CGM utilization is associated with a significantly lower risk of GLP-1 RA discontinuation and may potentially enhance adherence to GLP-1 RA medication in people living with T2D on nonintensive therapy.",
+   "journal": "Diabetes technology & therapeutics",
+   "journal_abbr": "Diabetes Technol Ther",
+   "authors": [
+    "Wright EE",
+    "Huang E",
+    "Bindal A"
+   ],
+   "doi": "10.1177/15209156261489904",
+   "pub_date": "2026-09-19",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "CGM",
+    "GLP-1 RA",
+    "adherence",
+    "continuous glucose monitoring",
+    "discontinuation",
+    "glucagon-like peptide-1 receptor agonists"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "15209156261489904",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42762166/",
+   "doi_url": "https://doi.org/10.1177/15209156261489904",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "Technology",
+   "diabetes_subtype": "T2D",
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "LOW",
+   "age_range": [
+    "Adult"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes",
+    "#Technology"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "After adjusting for covariates, adherent CGM users were significantly less likely to discontinue GLP-1 RA compared to non-CGM users (HR: 0.56 [95% CI: 0.49-0.63],< 0.001). This study suggests that adherent CGM utilization is associated with a significantly lower risk of GLP-1 RA discontinuation and may potentially enhance adherence to GLP-1 RA medication in people living with T2D on nonintensive therapy.",
+   "impact_rationale": "Observational/Cohort on Diabetes. Background reading for clinical awareness.",
+   "review_date": "2026-09-20",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42746746",
+   "title": "Continuous Glucose Monitoring Hypoglycemia Alarms in Critical Care: Clinical Utility and Workflow Integration.",
+   "abstract": "Continuous glucose monitoring (CGM) has been associated with reductions in inpatient hypoglycemia; however, little is known about the performance and integration of CGM hypoglycemia alerts and alarms in the intensive care unit (ICU). We evaluated hypoglycemia signal frequency, clinical response, and contributing factors within an ICU implementation study.\n\nThis prespecified secondary analysis was conducted within a prospective hybrid effectiveness-implementation study of adults in a medical ICU. Hypoglycemia signals included low alerts (<100 mg/dL), urgent low soon alerts, and urgent low alarms (<55 mg/dL). Signal frequency, progression to hypoglycemia <70 mg/dL, nursing response times, and protocol fidelity were evaluated. Consecutive signals occurring within 15 min were clustered into signal events. Confirmatory point-of-care (POC) glucose response time was calculated from the initial signal to the first subsequent POC measurement. All POC-confirmed hypoglycemic events (<70 mg/dL) underwent structured multidisciplinary root cause review.\n\nAmong 100 participants, 60% experienced at least one hypoglycemia signal, generating 1060 signals (3.6 ± 6.8 signals/patient-day) that clustered into 378 signal events. Fifty-one percent of signal events remained between 80 and 100 mg/dL, without falling below the institutional treatment threshold (<80 mg/dL). Ninety-five percent of urgent low alarms were preceded by an urgent low soon alert, a mean of 10.0 ± 7.8 min earlier. Median confirmatory POC response time was 33 min (interquartile range 12-51) and was significantly faster for lower glucose values and validated CGM signals. All, but one hypoglycemic event, were preceded by a validated CGM hypoglycemia signal. Case review identified intravenous insulin, carbohydrate coverage, and enteral feed-related factors as the most common contributors to hypoglycemia.\n\nCGM hypoglycemia signaling integrated into ICU workflows can provide advance warning before hypoglycemic events while maintaining a modest contribution to alarm burden. Signal characteristics influenced nursing response, supporting further optimization of inpatient CGM alarm thresholds and implementation strategies.\n\nClinicalTrials.gov NCT#05571397 https://clinicaltrials.gov/study/NCT05571397.",
+   "journal": "Diabetes technology & therapeutics",
+   "journal_abbr": "Diabetes Technol Ther",
+   "authors": [
+    "Faulds ER",
+    "Rayan MN",
+    "Patterson ES",
+    "McNett M",
+    "Exline M",
+    "Shoben A",
+    "Lin CJ",
+    "Jones L",
+    "Lee B",
+    "Rasul A",
+    "Mlachak M",
+    "Ruvalcaba C",
+    "Yin C",
+    "Ping Z",
+    "Dungan KM"
+   ],
+   "doi": "10.1177/15209156261487821",
+   "pub_date": "2026-09-16",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "alarm management",
+    "continuous glucose monitoring",
+    "critical care",
+    "hypoglycemia",
+    "implementation science"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "15209156261487821",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42746746/",
+   "doi_url": "https://doi.org/10.1177/15209156261487821",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "Technology",
+   "diabetes_subtype": "General",
+   "study_type": "Prospective Study",
+   "ev_level": 3,
+   "impact": "MODERATE",
+   "age_range": [
+    "Adult"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 100,
+   "tags": [
+    "#Diabetes",
+    "#RegisteredTrial",
+    "#Technology"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "CGM hypoglycemia signaling integrated into ICU workflows can provide advance warning before hypoglycemic events while maintaining a modest contribution to alarm burden. Signal characteristics influenced nursing response, supporting further optimization of inpatient CGM alarm thresholds and implementation strategies.",
+   "impact_rationale": "Observational study on Diabetes. Cohort size n = 100. Clinically informative but limited by non-randomized design.",
+   "review_date": "2026-09-20",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42747047",
+   "title": "Relationships between Continuous Glucose Monitoring-Derived Glycemic Parameters and Early Retinal Vascular Changes in Children with Type 1 Diabetes Mellitus.",
+   "abstract": "This study investigated relationships between continuous glucose monitoring (CGM)-derived metrics and early retinal vascular changes in children having type-1 diabetes mellitus (T1DM) with no clinically-visible diabetic retinopathy (T1DM-noR).\n\nForty-two T1DM-noR patients and 45 healthy children were enrolled. Optical coherence tomography angiography (OCTA) parameters of superficial and deep capillary plexuses (SCP/DCP) were compared between groups. In T1DM-noR group, correlations of OCTA parameters with HbA1c, diabetes duration, time-in-range (TIR), time-in-tight-range (TITR), time-above-range (TAR), glucose-management-indicator (GMI) and coefficient of variation (CV) were examined, followed by adjusted multivariable regressions.\n\nCompared to controls, T1DM-noR group showed significantly reduced SCP and DCP vessel densities in whole retina (p=0.038; p=0.017), fovea (p=0.046; p=0.041), parafovea (p=0.025; p=0.012) and perifovea (p=0.032; p=0.021). In T1DM-noR cases, whole retina, fovea, parafovea and perifovea measurements of SCP and DCP were significantly negatively correlated with HbA1c, diabetes duration, TAR, GMI and CV, but positively correlated with TIR and TITR (p<0.05). In multivariable regression, all significant associations in DCP and almost all in SCP remained independent after adjusting for age and diabetes duration (p<0.05).\n\nWe found that T1DM children had reduced SCP and DCP vessel densities before development of clinically-visible retinopathy. In our study, as TIR and TITR decreased and HbA1c, diabetes duration, TAR, GMI and CV increased, SCP and DCP vessel densities decreased. Our study suggested that reduced densities, independently associated with CGM metrics (especially in DCP), might serve as early indicator of retinal changes in T1DM-noR children, and in such patients, more effective glycemic control should be considered.",
+   "journal": "Journal of clinical research in pediatric endocrinology",
+   "journal_abbr": "J Clin Res Pediatr Endocrinol",
+   "authors": [
+    "Özen B",
+    "Öztürk H",
+    "Arslan E",
+    "Nasırlı M",
+    "Er E",
+    "Dündar BN"
+   ],
+   "doi": "10.4274/jcrpe.galenos.2026.2026-7-21",
+   "pub_date": "2026-09-16",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42747047/",
+   "doi_url": "https://doi.org/10.4274/jcrpe.galenos.2026.2026-7-21",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "Technology",
+   "diabetes_subtype": "T1D",
+   "study_type": "Other",
+   "ev_level": 5,
+   "impact": "LOW",
+   "age_range": [
+    "Child"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes",
+    "#Technology"
+   ],
+   "access": "Open",
+   "clinical_bottom_line": "In our study, as TIR and TITR decreased and HbA1c, diabetes duration, TAR, GMI and CV increased, SCP and DCP vessel densities decreased. Our study suggested that reduced densities, independently associated with CGM metrics (especially in DCP), might serve as early indicator of retinal changes in T1DM-noR children, and in such patients, more effective glycemic control should be considered.",
+   "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
+   "review_date": "2026-09-20",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42747940",
+   "title": "Maternal and Neonatal Complications in Pregnant Women With Polyendocrine Metabolic Ovarian Syndrome: A Nested Prospective Cohort Study.",
+   "abstract": "To investigate associations between polyendocrine metabolic ovarian syndrome (PMOS) and maternal and neonatal outcomes and explore interactions with BMI and ethnicity.\n\nThis was a prospective nested cohort study of pregnant women with risk factors for hyperglycemia enrolled in an international, multicenter, randomized controlled trial of gestational diabetes mellitus (GDM) treatment. We compared baseline and pregnancy characteristics, evaluated adverse maternal and neonatal outcomes by PMOS status, and used multivariable regression models to evaluate factors (maternal age, baseline BMI, ethnicity, parity, smoking, and level of education) that independently affected maternal and neonatal outcomes.\n\nOf 3,645 participants, PMOS prevalence was 17.1% (95% CI 15.9, 18.3). At booking visits, women with PCOS (vs. without) were younger (30.6 ± 4.7 vs. 31.3 ± 5.2 years; P < 0.001) and had higher median (interquartile range) BMI at baseline (29.8 [25.1-35.7] vs. 28.1 [24.1-33.9] kg/m2; P < 0.001), and more were primigravid (30.2% [n = 188] vs. 25.7% [n = 778]; P = 0.022). There were positive associations between PCOS and early GDM, with an adjusted odds ratio (aOR) of 1.37 (95% CI 1.10, 1.72), a composite of adverse neonatal outcomes (aOR 1.28 [95% CI 1.04, 1.58]), admission to a neonatal special care nursery or neonatal intensive care unit (aOR 1.32 [95% CI 1.05-1.65]), and negative associations between PMOS and gestational age at birth (-1.60 days [95% CI -2.82, -0.39]) and birth length (-0.33 cm [95% CI -0.61, -0.04]). No interactions were found with baseline BMI and ethnicity.\n\nPMOS was associated with higher odds of early GDM, and neonatal outcomes were poorer on adjusted analyses, highlighting independent pregnancy risks in PMOS and the need to identify, monitor, and treat women with PMOS to mitigate risks of adverse pregnancy outcomes.",
+   "journal": "Diabetes care",
+   "journal_abbr": "Diabetes Care",
+   "authors": [
+    "Neven ACH",
+    "Sethi P",
+    "Hague WM",
+    "Cheung NW",
+    "Hibbert EJ",
+    "Nolan CJ",
+    "Peek MJ",
+    "Wong V",
+    "Flack JR",
+    "Mclean M",
+    "Sweeting A",
+    "Kautzky-Willer A",
+    "Harreiter J",
+    "Gianatti E",
+    "Mohan V",
+    "Backman H",
+    "Bahri Khomami M",
+    "Jona E",
+    "Moran L",
+    "Enticott J",
+    "Mousa A",
+    "Boyle JA",
+    "Simmons D",
+    "Teede H",
+    ""
+   ],
+   "doi": "10.2337/dc25-1704",
+   "pub_date": "2026-09-16",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42747940/",
+   "doi_url": "https://doi.org/10.2337/dc25-1704",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "PCOS",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "RCT",
+   "ev_level": 2,
+   "impact": "HIGH",
+   "age_range": [
+    "Neonatal"
+   ],
+   "society": [],
+   "board_relevant": 1,
+   "sample_n": 188,
+   "tags": [
+    "#PCOS",
+    "#BoardRelevant",
+    "#RCT",
+    "#Diabetes"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "No interactions were found with baseline BMI and ethnicity. PMOS was associated with higher odds of early GDM, and neonatal outcomes were poorer on adjusted analyses, highlighting independent pregnancy risks in PMOS and the need to identify, monitor, and treat women with PMOS to mitigate risks of adverse pregnancy outcomes.",
+   "impact_rationale": "Randomized controlled trial (n = 188). Level II evidence with direct applicability to clinical decision-making.",
+   "review_date": "2026-09-20",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42734244",
+   "title": "The Transition of Youth With Diabetes From Pediatric to Adult Diabetes Care Services: A Consensus Report of the Joint Working Group of the International Society for Pediatric and Adolescent Diabetes (ISPAD), the European Association for the Study of Diabetes (EASD), and the American Diabetes Association (ADA).",
+   "abstract": "Young adulthood is a period of significant and unique physiological, psychological, sexual, and social upheaval. Related challenges can have an impact on effective diabetes self-management, with high rates of unplanned health care use recorded for many, and consequent increases in the risks of premature morbidity and mortality. Health care professionals need guidance in delivering transition support for adolescents and young adults with diabetes. This would help to facilitate the formulation and implementation of local policies and procedures, enabling guidelines to be translated into practice and improving transition of care readiness. This led the International Society for Pediatric and Adolescent Diabetes (ISPAD), the European Association for the Study of Diabetes (EASD), and the American Diabetes Association (ADA) to convene a working group to produce a consensus report on the transition from pediatric to adult diabetes health care services. The ACCORD and AGREE II recommendations for the development of consensus reports and clinical guidelines, respectively, were followed. Existing diabetes-specific recommendations on the transition of care, published statements, a prior position paper, general recommendations, and online toolkits were initially identified and reviewed. Current evidence was then systematically reviewed, supplemented with primary data on the perceptions and experiences of health care professionals and of people with diabetes and their caregivers from global surveys. Evidence with a grading of A or B was automatically included in the consensus statements; evidence with a C or E grading was subjected to a Delphi survey for validation. Consensus was obtained for 31 statements on the full transition of care continuum and the three unique stages of pre-transfer, transfer, and post-transfer. This consensus report should be viewed as a guide and adjusted to local settings.",
+   "journal": "Diabetes care",
+   "journal_abbr": "Diabetes Care",
+   "authors": [
+    "de Beaufort C",
+    "James S",
+    "Weissberg-Benchell J",
+    "Gomber A",
+    "Cudizio L",
+    "Maruthur NM",
+    "Lyons SK",
+    "Snoek F",
+    "Ng SM",
+    "Araszkiewicz A",
+    "Hagström Toft E"
+   ],
+   "doi": "10.2337/dci26-0097",
+   "pub_date": "2026-09-14",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42734244/",
+   "doi_url": "https://doi.org/10.2337/dci26-0097",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "General",
+   "diabetes_subtype": "General",
+   "study_type": "Guideline/Consensus",
+   "ev_level": 1,
+   "impact": "PRACTICE-ALTERING",
+   "age_range": [
+    "Child",
+    "Adolescent",
+    "Transition"
+   ],
+   "society": [
+    "ISPAD",
+    "ADA",
+    "EASD",
+    "ISPAD/ADA"
+   ],
+   "board_relevant": 1,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes",
+    "#Transition",
+    "#BoardRelevant",
+    "#Guidelines"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Consensus was obtained for 31 statements on the full transition of care continuum and the three unique stages of pre-transfer, transfer, and post-transfer. This consensus report should be viewed as a guide and adjusted to local settings.",
+   "impact_rationale": "Official guideline or consensus statement from ISPAD. Directly informs clinical protocols and management standards.",
+   "review_date": "2026-09-20",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42734653",
+   "title": "The transition of youth with diabetes from paediatric to adult diabetes care services: a consensus report of the joint working group of the International Society for Pediatric and Adolescent Diabetes (ISPAD), the European Association for the Study of Diabetes (EASD) and the American Diabetes Association (ADA).",
+   "abstract": "Young adulthood is a period of significant and unique physiological, psychological, sexual and social upheaval. Related challenges can have an impact on effective diabetes self-management, with high rates of unplanned healthcare use recorded for many, and consequent increases in the risks of premature morbidity and mortality. Healthcare professionals need guidance in delivering transition support for adolescents and young adults with diabetes. This would help to facilitate the formulation and implementation of local policies and procedures, enabling guidelines to be translated into practice and improving transition of care readiness. This led ISPAD, EASD and ADA to convene a working group to produce a consensus report on the transition from paediatric to adult diabetes healthcare services. The ACCORD and AGREE II recommendations for the development of consensus reports and clinical guidelines, respectively, were followed. Existing diabetes-specific recommendations on the transition of care, published statements, a prior position paper, general recommendations and online toolkits were initially identified and reviewed. Current evidence was then systematically reviewed, supplemented with primary data on the perceptions and experiences of healthcare professionals and of people with diabetes and their caregivers from global surveys. Evidence with a grading of A or B was automatically included in the consensus statements; evidence with a C or E grading was subjected to a Delphi survey for validation. Consensus was obtained for 31 statements on the full transition of care continuum and the three unique stages of pre-transfer, transfer and post-transfer. This consensus report should be viewed as a guide and adjusted to local settings.",
+   "journal": "Diabetologia",
+   "journal_abbr": "Diabetologia",
+   "authors": [
+    "de Beaufort C",
+    "James S",
+    "Weissberg-Benchell J",
+    "Gomber A",
+    "Cudizio L",
+    "Maruthur NM",
+    "Lyons SK",
+    "Snoek F",
+    "Ng SM",
+    "Araszkiewicz A",
+    "Hagström Toft E"
+   ],
+   "doi": "10.1007/s00125-026-06803-5",
+   "pub_date": "2026-09-14",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "Adolescent",
+    "Adult",
+    "Diabetes",
+    "Paediatric",
+    "Transition of care youth"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42734653/",
+   "doi_url": "https://doi.org/10.1007/s00125-026-06803-5",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "General",
+   "diabetes_subtype": "General",
+   "study_type": "Guideline/Consensus",
+   "ev_level": 1,
+   "impact": "PRACTICE-ALTERING",
+   "age_range": [
+    "Child",
+    "Adolescent",
+    "Transition"
+   ],
+   "society": [
+    "ISPAD",
+    "ADA",
+    "EASD",
+    "ISPAD/ADA"
+   ],
+   "board_relevant": 1,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes",
+    "#Transition",
+    "#BoardRelevant",
+    "#Guidelines"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Consensus was obtained for 31 statements on the full transition of care continuum and the three unique stages of pre-transfer, transfer and post-transfer. This consensus report should be viewed as a guide and adjusted to local settings.",
+   "impact_rationale": "Official guideline or consensus statement from ISPAD. Directly informs clinical protocols and management standards.",
+   "review_date": "2026-09-20",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42741830",
+   "title": "Ketone metabolism defects in childhood: a spectrum of overlapping presentations and clinical features.",
+   "abstract": "Ketone body metabolism defects are rare inherited disorders that may present with life-threatening metabolic crises in childhood. This study aimed to describe and compare clinical, biochemical, and genetic findings in patients with three ketone metabolism defects.\n\nIn this retrospective study, data from eight genetically confirmed patients were analyzed: 3 with 3-hydroxy-3-methylglutaryl-CoA synthase deficiency (HMGCS2), 4 with beta-ketothiolase deficiency (BKTD), and 1 with succinyl-CoA:3-oxoacid CoA transferase deficiency (SCOT). Patients were followed at the Pediatric Nutrition and Metabolism Department of Adana City Training and Research Hospital since October 2023.\n\nEight patients (5 female, 3 male) were included; consanguinity was present in 7 families. Triggers included vaccination, infections, gastroenteritis, and dietary changes. All presented with severe metabolic acidosis requiring hemodialysis. Ketone levels were absent/very low in HMGCS2 deficiency and markedly elevated in BKTD and SCOT deficiency. Hypoglycemia occurred only in HMGCS2, while hyperglycemia was seen in BKTD and SCOT. Hepatomegaly was present in all HMGCS2, SCOT patients and in half of BKTD cases. Elevated 3-hydroxybutyrylcarnitine/3-hydroxyisobutyrylcarnitine (C4-OH) was found in all BKTD patients. One HMGCS2 patient had thrombocytopenia and coagulopathy. Genetic analysis identified homozygous pathogenic/likely pathogenic variants in, and, including three novel variants. All patients remained clinically stable on dietary treatment.\n\nHMGCS2 deficiency, BKTD, and SCOT deficiency show overlapping features but can be distinguished by ketone levels, glucose patterns, and acylcarnitine profiles. Novel variants expand the mutational spectrum. Early diagnosis and management are crucial to prevent irreversible neurological damage.",
+   "journal": "Journal of pediatric endocrinology & metabolism : JPEM",
+   "journal_abbr": "J Pediatr Endocrinol Metab",
+   "authors": [
+    "Koseci B",
+    "Burgac E",
+    "Yöntem A",
+    "Arslan I",
+    "Yararbas K",
+    "Yoldas Celik M"
+   ],
+   "doi": "10.1515/jpem-2026-0252",
+   "pub_date": "2026-09-16",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "HMGCS2 deficiency",
+    "SCOT deficiency",
+    "beta-ketothiolase deficiency",
+    "ketone body metabolism disorders",
+    "metabolic acidosis"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42741830/",
+   "doi_url": "https://doi.org/10.1515/jpem-2026-0252",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Genetics",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "LOW",
+   "age_range": [
+    "Child"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Genetics"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Novel variants expand the mutational spectrum. Early diagnosis and management are crucial to prevent irreversible neurological damage.",
+   "impact_rationale": "Observational/Cohort on Genetics. Background reading for clinical awareness.",
+   "review_date": "2026-09-20",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42732089",
+   "title": "GLP-1 receptor agonist use and mental health outcomes in adolescents with obesity: a retrospective review.",
+   "abstract": "Adolescent obesity is associated with increased rates of depression and suicidality. Glucagon-like peptide-1 receptor agonists (GLP-1RAs) are increasingly used to treat pediatric obesity, yet concerns remain regarding potential psychiatric effects. This study evaluated changes in depressive symptoms and suicidality screening scores among adolescents with obesity treated with GLP-1RAs in a pediatric endocrinology setting. We evaluated changes in depressive symptoms and suicidality following initiation of GLP-1RA therapy in adolescents with obesity.\n\nWe performed a retrospective chart review of adolescents aged 12-21 years with obesity treated with liraglutide or semaglutide at a single academic center between June 2022 and December 2024. Demographic, clinical, and psychosocial data were extracted from the electronic health record at baseline and follow-up. Depressive symptoms or suicidality were screened at clinic visits per protocol using either the Patient Health Questionnaire-9 (PHQ-9) or the Ask Suicide-Screening Questions (ASQ), respectively. Analyses were restricted to patients with paired baseline and follow-up assessments using the same instrument. Paired nonparametric tests were used for longitudinal comparisons.\n\nForty-four adolescents met inclusion criteria. Among patients with paired PHQ-9 data (n=15), the median PHQ-9 score decreased significantly from 6 (IQR 2-14) at baseline to 1 (IQR 0-5) at follow-up (p=0.003), independent of changes in BMI. Among patients with paired ASQ data (n=23), no increase in suicidality or new suicidal ideation was observed.\n\nIn this small, exploratory retrospective review, no evidence of short-term psychological harm or increased suicidality was observed among adolescents receiving GLP-1RA therapy. These findings support the short-term psychosocial safety of GLP-1RA therapy in adolescents with obesity. Larger prospective case-control studies are needed to better characterize psychiatric safety and psychosocial outcomes.",
+   "journal": "Journal of pediatric endocrinology & metabolism : JPEM",
+   "journal_abbr": "J Pediatr Endocrinol Metab",
+   "authors": [
+    "Said J",
+    "Liegl M",
+    "Pan AY",
+    "Dabrowski E"
+   ],
+   "doi": "10.1515/jpem-2026-0227",
+   "pub_date": "2026-09-14",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "GLP-1 receptor agonists",
+    "PHQ-9",
+    "adolescent obesity",
+    "depression",
+    "retrospective study",
+    "suicidal ideation"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42732089/",
+   "doi_url": "https://doi.org/10.1515/jpem-2026-0227",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Obesity/Metabolic",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "LOW",
+   "age_range": [
+    "Child",
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 15,
+   "tags": [
+    "#Obesity"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "These findings support the short-term psychosocial safety of GLP-1RA therapy in adolescents with obesity. Larger prospective case-control studies are needed to better characterize psychiatric safety and psychosocial outcomes.",
+   "impact_rationale": "Observational/Cohort on Obesity/Metabolic. Background reading for clinical awareness.",
+   "review_date": "2026-09-20",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42731057",
+   "title": "Clinical heterogeneity and disease progression during adolescence in AGPAT2-associated congenital generalized lipodystrophy: a case series of four patients.",
+   "abstract": "This case series describes the clinical presentation and longitudinal course of four adolescents with genetically confirmed-associated congenital generalized lipodystrophy (CGL) followed at a pediatric lipodystrophy center.\n\nDespite shared phenotypic features - including generalized lipoatrophy, muscular hypertrophy, acromegaloid features, and hyperphagia - metabolic severity varied markedly, even between siblings carrying the same homozygousvariant. All three female patients experienced rapid metabolic deterioration during puberty, developing insulin resistance, diabetes, and severe hypertriglyceridemia, while the male patient remained relatively metabolically stable. Three patients developed progressive albuminuria during adolescence, and two required ACE inhibitor therapy for hypertension, highlighting early renal involvement independent of diabetes. Metreleptin therapy led to substantial metabolic improvement in all treated patients, with normalization of glycemic control, triglyceride levels, and liver enzymes, as well as reduced hyperphagia and, in one case, spontaneous menarche. However, metabolic decompensation occurred during acute illness in one patient, necessitating treatment escalation, indicating that metreleptin does not fully protect against metabolic stress. Notably, pronounced daytime fatigue persisted in three patients despite metabolic stabilization, suggesting an underrecognized, potentially central component of the disease.\n\nThese findings underscore the phenotypic variability of-associated CGL, the critical impact of puberty - especially in females - the frequent early onset of nephropathy, and the partial but incomplete response to leptin replacement. Close monitoring during adolescence and individualized management are essential.",
+   "journal": "Journal of pediatric endocrinology & metabolism : JPEM",
+   "journal_abbr": "J Pediatr Endocrinol Metab",
+   "authors": [
+    "Weiskorn J",
+    "Kordonouri O"
+   ],
+   "doi": "10.1515/jpem-2026-0516",
+   "pub_date": "2026-09-14",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "adipose tissue",
+    "adolescents",
+    "congenital generalized lipodystrophy (CGL)",
+    "leptin",
+    "lipodystrophy"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42731057/",
+   "doi_url": "https://doi.org/10.1515/jpem-2026-0516",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "General",
+   "diabetes_subtype": "General",
+   "study_type": "Case Series",
+   "ev_level": 5,
+   "impact": "LOW",
+   "age_range": [
+    "Child",
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "These findings underscore the phenotypic variability of-associated CGL, the critical impact of puberty - especially in females - the frequent early onset of nephropathy, and the partial but incomplete response to leptin replacement. Close monitoring during adolescence and individualized management are essential.",
+   "impact_rationale": "Small case series. Hypothesis-generating but lacks the power to guide practice changes in Diabetes.",
+   "review_date": "2026-09-20",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42730771",
+   "title": "Sociodemographic predictors of follow-up adherence and metabolic control in children with type 1 diabetes: a 2-year retrospective cohort study.",
+   "abstract": "Early metabolic outcomes in children with type 1 diabetes mellitus (T1DM) are shaped not only by clinic follow-up frequency but also by family-level capacity for daily disease management. We evaluated adherence to scheduled outpatient visits during the first 2 years after diagnosis and identified sociodemographic and clinical predictors of adherence and HbA-based metabolic control.\n\nIn this retrospective, single-center cohort study, 150 children with newly diagnosed T1DM who were followed for at least 2 years were studied. Sociodemographic characteristics, family structure, visit frequency, hospitalizations, and serial HbAvalues were extracted from medical records. Adequate adherence was defined as ≥3 visits per year.\n\nAdherence was high in both the first (97.3 %) and second (91.3 %) years, yet mean HbArose significantly from year 1 to year 2 (6.54 vs. 7.05 %, p<0.001). Sibling count was the only independent predictor of adherence: vs. ≥3 siblings, children with 0-1 siblings (odds ratio [OR] 2.885, 95 % confidence interval [CI] 1.136-7.323, p=0.026), and 2 siblings (OR 3.527, 95 % CI 1.354-9.186, p=0.010) were more likely to attend. Low maternal education was associated with higher hospitalization risk and poorer second-year control (both p<0.001); a family history of diabetes was protective against hospitalization (OR 0.372, 95 % CI 0.164-0.845, p=0.018).\n\nDespite high clinic attendance, glycemic control deteriorated, indicating that regular attendance alone is insufficient. Family structure and maternal educational capacity appear central to early diabetes trajectories, underscoring the need for family-centered, context-sensitive interventions.",
+   "journal": "Journal of pediatric endocrinology & metabolism : JPEM",
+   "journal_abbr": "J Pediatr Endocrinol Metab",
+   "authors": [
+    "Arık SD",
+    "Çetinkaya SÇ"
+   ],
+   "doi": "10.1515/jpem-2026-0197",
+   "pub_date": "2026-09-14",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "adherence",
+    "maternal education",
+    "metabolic control",
+    "resource dilution",
+    "sibling count",
+    "type 1 diabetes mellitus"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42730771/",
+   "doi_url": "https://doi.org/10.1515/jpem-2026-0197",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "General",
+   "diabetes_subtype": "T1D",
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "MODERATE",
+   "age_range": [
+    "Child"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 150,
+   "tags": [
+    "#Diabetes"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Despite high clinic attendance, glycemic control deteriorated, indicating that regular attendance alone is insufficient. Family structure and maternal educational capacity appear central to early diabetes trajectories, underscoring the need for family-centered, context-sensitive interventions.",
+   "impact_rationale": "Observational study on Diabetes. Cohort size n = 150. Clinically informative but limited by non-randomized design.",
+   "review_date": "2026-09-20",
+   "review_period": "September 2026",
    "is_new": true,
    "is_archived": false
   }
  ],
- "last_run_date": "2026-09-13"
+ "last_run_date": "2026-09-20"
 }
