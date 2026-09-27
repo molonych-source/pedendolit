@@ -6,6 +6,41 @@ git history (33 commits to that date) and the dated sections formerly in `MEMORY
 
 ---
 
+### [2026-09-27] weekly-refresh
+
+Window 2026-09-13 -> 2026-09-27 (`pdat`), all 19 journals queried, **no errors** (3 searches
+hit a transient MCP rate limit on the first parallel pass and succeeded on a single retry:
+J Clin Res Pediatr Endocrinol, J Pediatr Endocrinol Metab, Thyroid). 64 unique PMIDs returned;
+36 already in the store, so metadata was fetched only for the 28 not yet stored (all 28 with
+abstracts). 3 excluded, **25 new articles added** (store 1577 -> 1602 active, 0 archived).
+
+- **3 PRACTICE-ALTERING:**
+  - *Diagnosis and management of Silver-Russell syndrome: second international consensus
+    statement* (Nat Rev Endocrinol, PMID 42778655). **Topic looks misclassified as Diabetes**;
+    it belongs under Growth. Classifier follow-up, not a refresh fix.
+  - *Clinical practice guidelines for congenital hypothyroidism in Korean children and
+    adolescents: 2025* (Ann Pediatr Endocrinol Metab, PMID 42767638).
+  - ISPAD/EASD/ADA youth transition consensus report, now a **third co-publication**
+    (Horm Res Paediatr, PMID 42784528), after last week's Diabetes Care and Diabetologia
+    copies. The dashboard now shows it three times; strengthens the case for a
+    same-title co-publication guard.
+- **1 HIGH:** new genomic understanding and clinical care of Turner syndrome (Lancet Diabetes
+  Endocrinol, PMID 42790437).
+- 7 MODERATE, including 3-year real-world bihormonal fully closed-loop outcomes (Diabetes
+  Technol Ther, PMID 42786561), whether pediatric DKA needs ICU-level care (APEM, PMID
+  42767635), and Allgrove syndrome founder effect in Colombia (JPEM, PMID 42764719). 14 LOW.
+- Topic split of the 25: Diabetes 11, Thyroid 4, Growth 4, Pituitary 2, Adrenal 2,
+  Obesity/Metabolic 1, Puberty 1.
+- **Possible classifier issues to review:** off-label palopegteriparatide for pediatric
+  postsurgical hypocalcemia (PMID 42789535) filed under Thyroid rather than
+  Calcium/Parathyroid; two case reports (PMIDs 42296202, 42765682) were kept rather than
+  excluded.
+- **Exclusions fired (3):** 2 adult-only (PMIDs 42740693, 42751863, both repeats from last
+  week's window), 1 `hard-exclude:menopausal hormone therapy` on PMID 42786775 (CGM and
+  hospitalization in adults with insulin-treated T2D). Exclusion is correct on adult-only
+  grounds but the **reason label is again a keyword misfire**, same pattern as last week's
+  PMID 42711848.
+
 ### [2026-09-20] weekly-refresh
 
 Window 2026-09-06 -> 2026-09-20 (`pdat`), all 19 journals queried, **no errors**. 75 unique

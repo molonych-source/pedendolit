@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-20T08:04:27",
+ "generated": "2026-09-27T08:06:18",
  "review_period": "September 2026",
  "articles": [
   {
@@ -110104,7 +110104,7 @@
    "impact_rationale": "Observational study on Puberty. Cohort size n not reported. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-09-20",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -110179,7 +110179,7 @@
    "impact_rationale": "Meta-analysis synthesizing multiple studies on PCOS. Published in The Journal of clinical endocrinology and metabolism. Level I evidence summary.",
    "review_date": "2026-09-20",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -110249,7 +110249,7 @@
    "impact_rationale": "Meta-analysis synthesizing multiple studies on Thyroid. Published in The Journal of clinical endocrinology and metabolism. Level I evidence summary.",
    "review_date": "2026-09-20",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -110318,7 +110318,7 @@
    "impact_rationale": "Observational study on Diabetes. Cohort size n = 16669. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-09-20",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -110375,7 +110375,7 @@
    "impact_rationale": "Observational/Cohort on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-09-20",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -110444,7 +110444,7 @@
    "impact_rationale": "Observational study on Diabetes. Cohort size n = 100. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-09-20",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -110497,7 +110497,7 @@
    "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-09-20",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -110571,7 +110571,7 @@
    "impact_rationale": "Randomized controlled trial (n = 188). Level II evidence with direct applicability to clinical decision-making.",
    "review_date": "2026-09-20",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -110638,7 +110638,7 @@
    "impact_rationale": "Official guideline or consensus statement from ISPAD. Directly informs clinical protocols and management standards.",
    "review_date": "2026-09-20",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -110711,7 +110711,7 @@
    "impact_rationale": "Official guideline or consensus statement from ISPAD. Directly informs clinical protocols and management standards.",
    "review_date": "2026-09-20",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -110769,7 +110769,7 @@
    "impact_rationale": "Observational/Cohort on Genetics. Background reading for clinical awareness.",
    "review_date": "2026-09-20",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -110827,7 +110827,7 @@
    "impact_rationale": "Observational/Cohort on Obesity/Metabolic. Background reading for clinical awareness.",
    "review_date": "2026-09-20",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -110882,7 +110882,7 @@
    "impact_rationale": "Small case series. Hypothesis-generating but lacks the power to guide practice changes in Diabetes.",
    "review_date": "2026-09-20",
    "review_period": "September 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -110937,9 +110937,1563 @@
    "impact_rationale": "Observational study on Diabetes. Cohort size n = 150. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-09-20",
    "review_period": "September 2026",
+   "is_new": false,
+   "is_archived": false
+  },
+  {
+   "pmid": "42771567",
+   "title": "A Century of Growth Hormone from Pierre Marie (1886) to Creutzfeldt-Jakob Disease (1985).",
+   "abstract": "The century from1886 to 1985 was auspicious for those with an interest in growth. A clinically recognized overgrowth syndrome was named acromegaly. It explained some earlier described patients and even distant historical figures. Quickly this clinical syndrome was tied to a pituitary tumor and therapy from a group of innovative neurosurgeons. Contemporaneously, failure of the pituitary was recognized and noted to be a cause of severe growth failure and infantilism. Experimentally, new techniques were developed to hypophysectomize animals from tadpoles to rats as well as to learn to extract, purify and replace the missing pituitary hormones with increasingly pure and potent extracts from bovine pituitaries.\n\nThese developments led to the concept of species specificity for growth hormone (GH), that is, only primate GH was biologically effective in primates, as well as the active core hypothesis which postulated that all species had GH molecules with active centers for their pleotropic effects and that unmasking them might make portions of the animal GH molecules active in man. In the end that has not proven correct, but became moot given the explosion of the molecular biology era with its virtually unlimited supply of recombinant hGH.\n\nHuman (primate) GH is species specific and to date the active core hypothesis which might have provided biologically effective peptides, derived from animal or human GHs, and likely to be synthesized with the techniques available at that time (mid-1960s) were never required given that rhGH was approved for clinical use in those with hypopituitarism.",
+   "journal": "Hormone research in paediatrics",
+   "journal_abbr": "Horm Res Paediatr",
+   "authors": [
+    "Rogol AD"
+   ],
+   "doi": "10.1159/hrp/adaag029",
+   "pub_date": "2026-09-22",
+   "pub_types": [
+    "Journal Article",
+    "Review"
+   ],
+   "mesh_terms": [],
+   "keywords": [],
+   "volume": "",
+   "issue": "",
+   "pages": "1",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42771567/",
+   "doi_url": "https://doi.org/10.1159/hrp/adaag029",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Pituitary",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Review",
+   "ev_level": 2,
+   "impact": "MODERATE",
+   "age_range": [
+    "Infant"
+   ],
+   "society": [],
+   "board_relevant": 1,
+   "sample_n": null,
+   "tags": [
+    "#Pituitary",
+    "#BoardRelevant",
+    "#Review",
+    "#Growth"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "In the end that has not proven correct, but became moot given the explosion of the molecular biology era with its virtually unlimited supply of recombinant hGH. Human (primate) GH is species specific and to date the active core hypothesis which might have provided biologically effective peptides, derived from animal or human GHs, and likely to be synthesized with the techniques available at that time (mid-1960s) were never required given that rhGH was approved for clinical use in those with hypopituitarism.",
+   "impact_rationale": "Review on Pituitary. Background reading for clinical awareness.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42784528",
+   "title": "The transition of youth with diabetes from paediatric to adult diabetes care services: a consensus report of the joint working group of the International Society for Pediatric and Adolescent Diabetes (ISPAD), the European Association for the Study of Diabetes (EASD), and the American Diabetes Association (ADA).",
+   "abstract": "Young adulthood is a period of significant and unique physiological, psychological, sexual and social upheaval. Related challenges can have an impact on effective diabetes self-management, with high rates of unplanned healthcare use recorded for many, and consequent increases in the risks of premature morbidity and mortality.",
+   "journal": "Hormone research in paediatrics",
+   "journal_abbr": "Horm Res Paediatr",
+   "authors": [
+    "de Beaufort C",
+    "James S",
+    "Weissberg-Benchell J",
+    "Gomber A",
+    "Cudizio L",
+    "Maruthur NM",
+    "Lyons SK",
+    "Snoek F",
+    "Ng SM",
+    "Araszkiewicz A",
+    "Hagström Toft E"
+   ],
+   "doi": "10.1159/hrp/adaag005",
+   "pub_date": "2026-09-16",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "Adolescent",
+    "Adult",
+    "Diabetes",
+    "Paediatric",
+    "Transition of care",
+    "Youth"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "1",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42784528/",
+   "doi_url": "https://doi.org/10.1159/hrp/adaag005",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "General",
+   "diabetes_subtype": "General",
+   "study_type": "Guideline/Consensus",
+   "ev_level": 1,
+   "impact": "PRACTICE-ALTERING",
+   "age_range": [
+    "Child",
+    "Adolescent",
+    "Transition"
+   ],
+   "society": [
+    "ISPAD",
+    "ADA",
+    "EASD",
+    "ISPAD/ADA"
+   ],
+   "board_relevant": 1,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes",
+    "#Transition",
+    "#BoardRelevant",
+    "#Guidelines"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Young adulthood is a period of significant and unique physiological, psychological, sexual and social upheaval. Related challenges can have an impact on effective diabetes self-management, with high rates of unplanned healthcare use recorded for many, and consequent increases in the risks of premature morbidity and mortality.",
+   "impact_rationale": "Official guideline or consensus statement from ISPAD. Directly informs clinical protocols and management standards.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42779083",
+   "title": "Response to Letter to the Editor: The Free T3/Free T4 Ratio Predicts Relapse After Antithyroid Drug Withdrawal in Pediatric Autoimmune Hyperthyroidism.",
+   "abstract": "[Abstract not available]",
+   "journal": "The Journal of clinical endocrinology and metabolism",
+   "journal_abbr": "J Clin Endocrinol Metab",
+   "authors": [
+    "Abbate M",
+    "Vincenzi G",
+    "Mora S",
+    "Tarantola G",
+    "Petralia IT",
+    "Santagiuliana C",
+    "Del Giacco L",
+    "Zanelli S",
+    "Vigone MC"
+   ],
+   "doi": "10.1210/clinem/dgag389",
+   "pub_date": "2026-09-24",
+   "pub_types": [
+    "Letter"
+   ],
+   "mesh_terms": [],
+   "keywords": [],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42779083/",
+   "doi_url": "https://doi.org/10.1210/clinem/dgag389",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Thyroid",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Letter/Correspondence",
+   "ev_level": 6,
+   "impact": "LOW",
+   "age_range": [
+    "Child"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Thyroid"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "[Abstract not available]",
+   "impact_rationale": "Expert letter or commentary. No new primary data; provides perspective on Thyroid but does not independently change practice.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42773924",
+   "title": "Letter to the Editor from Yılmaz et al.: \"The Free T3/Free T4 Ratio Predicts Relapse After Antithyroid Drug Withdrawal in Pediatric Autoimmune Hyperthyroidism\".",
+   "abstract": "[Abstract not available]",
+   "journal": "The Journal of clinical endocrinology and metabolism",
+   "journal_abbr": "J Clin Endocrinol Metab",
+   "authors": [
+    "Yılmaz E",
+    "Koker Özer N",
+    "Topal E"
+   ],
+   "doi": "10.1210/clinem/dgag388",
+   "pub_date": "2026-09-23",
+   "pub_types": [
+    "Letter"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "Antithyroid Drug",
+    "Autoimmune Hyperthyroidism",
+    "Free T3",
+    "Free T4",
+    "Pediatric",
+    "Relapse"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42773924/",
+   "doi_url": "https://doi.org/10.1210/clinem/dgag388",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Thyroid",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Letter/Correspondence",
+   "ev_level": 6,
+   "impact": "LOW",
+   "age_range": [
+    "Child"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Thyroid"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "[Abstract not available]",
+   "impact_rationale": "Expert letter or commentary. No new primary data; provides perspective on Thyroid but does not independently change practice.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42788197",
+   "title": "Factors Associated with Utilization and Underutilization of Diabetes Technology in Underrepresented Families Living with Type 1 Diabetes.",
+   "abstract": "Continuous glucose monitoring (CGM) and insulin pumps improve glycemic outcomes and quality of life for youth with type 1 diabetes, yet utilization remains suboptimal. We analyzed cross-sectional data from 84 parent-youth dyads in the Building the Evidence to Address Disparities in Type 1 Diabetes study. Youth using both CGM and pump were classified as technology utilizers. Adjusted prevalence ratios (aPR) evaluated associations of sociodemographic variables with utilization. Parents of utilizers were older (standardized mean difference [SMD] = 0.74), had higher education (SMD = 0.91), and youth had longer diabetes duration (SMD = 0.49). Underutilizers endorsed higher youth discrimination (4.23 vs 2.49,= 0.016) and greater CGM-burden (2.34 vs 1.84,< 0.001), while technology acceptance was higher among utilizers (4.40 vs 3.91,= 0.007). Parental age (aPR = 1.03, 95% CI: [1.01,1.05],= 0.003), parental education (aPR = 1.10, 95% CI: [1.01,1.19],= 0.03), and Non-White + non-English caregivers (aPR = 1.58, 95% CI: [1.01,2.48],= 0.046) were associated with higher utilization. Youth discrimination (aPR = 0.94, 95% CI: [0.89,1.00],= 0.04) was associated with lower utilization. Technology utilization was associated with structural characteristics and youth-reported experiences, with youth discrimination identifying experiential factors that may influence adoption of diabetes technologies.",
+   "journal": "Diabetes technology & therapeutics",
+   "journal_abbr": "Diabetes Technol Ther",
+   "authors": [
+    "Addala A",
+    "Garfias Silva D",
+    "Figg LE",
+    "Hanes SJ",
+    "Medina Peñaranda R",
+    "Shaw GM",
+    "Chamberlain LJ",
+    "Naranjo D",
+    "Raymond JK",
+    "Maahs DM",
+    "Hood KK"
+   ],
+   "doi": "10.1177/15209156261489913",
+   "pub_date": "2026-09-25",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "diabetes technology",
+    "health equity",
+    "pediatric diabetes",
+    "psychosocial factors",
+    "sociodemographic factors",
+    "type 1 diabetes"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "15209156261489913",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42788197/",
+   "doi_url": "https://doi.org/10.1177/15209156261489913",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "Technology",
+   "diabetes_subtype": "T1D",
+   "study_type": "Cross-Sectional",
+   "ev_level": 4,
+   "impact": "LOW",
+   "age_range": [
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes",
+    "#HealthEquity",
+    "#Technology"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Youth discrimination (aPR = 0.94, 95% CI: [0.89,1.00],= 0.04) was associated with lower utilization. Technology utilization was associated with structural characteristics and youth-reported experiences, with youth discrimination identifying experiential factors that may influence adoption of diabetes technologies.",
+   "impact_rationale": "Cross-Sectional on Diabetes. Background reading for clinical awareness.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42786561",
+   "title": "Three-Year Real-World Performance of Bihormonal Fully Closed-Loop Therapy in Type 1 Diabetes.",
+   "abstract": "Type 1 diabetes management continues to advance through novel treatment options, such as bihormonal fully closed-loop (FCL) systems. Real-world data on these systems are currently limited to a maximum of 1 year. Extended follow-up spanning several years would provide valuable insights into long-term performance of a bihormonal FCL.\n\nIn a retrospective, observational, real-world cohort study, adults with type 1 diabetes who were treated with the bihormonal FCL system for 3 years were included. Endpoints were determined per 6 months (semester) and included continuous glucose monitoring-derived outcomes. Linear mixed-effects models were used to evaluate changes in outcome measures over time.\n\nA total of 102 users were included in the study. Limited availability of initial glucagon (GlucaGen [GG]) led to a necessary switch to an alternative (Glugon) for a part of the users. GG-only users (= 60) demonstrated stable glucose outcomes over the 3-year period, whereas a decline was observed in the total group during the final period. In the GG-only group, time in range (TIR; 3.9-10.0 mmol/L [70-180 mg/dL]) ranged from 79.5% to 80.8% and from 77.4% to 80.8% in the total group. For time below range (<3.9 mmol/L [<70 mg/dL]), this was 0.95%-1.56% (GG-only) versus 1.03%-1.69% (total). TIR decreased from 79.3 ± 7.1 to 75.8 ± 7.9 in the 3-month period after the glucagon switch compared to the period before (< 0.001).\n\nReal-world data demonstrated long-term stability of bihormonal FCL system performance among individuals treated with GG. A slight decline in performance was observed in the total population, and outcomes significantly deteriorated for users after the glucagon switch, indicating a negative effect on FCL performance of the alternative glucagon. Overall, the long-term findings point toward the benefits of the bihormonal FCL to maintain adequate glycemic control in people with type 1 diabetes over several years.",
+   "journal": "Diabetes technology & therapeutics",
+   "journal_abbr": "Diabetes Technol Ther",
+   "authors": [
+    "Jansen TJP",
+    "den Drijver C",
+    "Vlaskamp LB",
+    "van Bon AC"
+   ],
+   "doi": "10.1177/15209156261492793",
+   "pub_date": "2026-09-24",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "bihormonal",
+    "fully closed-loop",
+    "long-term treatment",
+    "real-world",
+    "type 1 diabetes"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "15209156261492793",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42786561/",
+   "doi_url": "https://doi.org/10.1177/15209156261492793",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "Technology",
+   "diabetes_subtype": "T1D",
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "MODERATE",
+   "age_range": [
+    "Adult"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 102,
+   "tags": [
+    "#Diabetes",
+    "#Technology"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "A slight decline in performance was observed in the total population, and outcomes significantly deteriorated for users after the glucagon switch, indicating a negative effect on FCL performance of the alternative glucagon. Overall, the long-term findings point toward the benefits of the bihormonal FCL to maintain adequate glycemic control in people with type 1 diabetes over several years.",
+   "impact_rationale": "Observational study on Diabetes. Cohort size n = 102. Clinically informative but limited by non-randomized design.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42789535",
+   "title": "Off-label palopegteriparatide for severe pediatric postsurgical hypocalcemia.",
+   "abstract": "Hypoparathyroidism is the most common complication after total thyroidectomy and may be particularly severe in pediatric Graves' disease. We report the case of a 14-year-old boy with Graves' disease who developed profound postoperative hypocalcemia after total thyroidectomy, with serum calcium 5.9 mg/dL, ionized calcium 0.83 mmol/L, and undetectable parathyroid hormone. Despite intravenous and high-dose oral calcium plus calcitriol, biochemical control remained poor, with persistent hypocalcemia, hyperphosphatemia, and ongoing treatment requirements after 16 days. Off-label subcutaneous palopegteriparatide, a long-acting PTH(1-34) prodrug, was started after multidisciplinary assessment and informed family consent. Serum calcium improved within 48 h, intravenous calcium was stopped after 5 days, and calcitriol, sevelamer, and calcium acetate were discontinued within 11 days. Treatment was well tolerated. This case suggests that early PTH replacement may be a useful rescue strategy in selected children with severe refractory post-thyroidectomy hypocalcemia.",
+   "journal": "European journal of endocrinology",
+   "journal_abbr": "Eur J Endocrinol",
+   "authors": [
+    "Pérez Reyes P",
+    "Rebollo Román Á",
+    "Alhambra Expósito MR",
+    "Padillo Cuenca JC",
+    "Serrano Laguna C",
+    "Moreno Moreno P",
+    "Rodríguez Camacho JM",
+    "Gálvez Moreno MÁ"
+   ],
+   "doi": "10.1093/ejendo/lvag186",
+   "pub_date": "2026-09-25",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "Graves’ disease",
+    "hypocalcemia",
+    "hypoparathyroidism",
+    "palopegteriparatide"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42789535/",
+   "doi_url": "https://doi.org/10.1093/ejendo/lvag186",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Thyroid",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Other",
+   "ev_level": 5,
+   "impact": "LOW",
+   "age_range": [
+    "Child"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Thyroid",
+    "#BoneMineral"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Treatment was well tolerated. This case suggests that early PTH replacement may be a useful rescue strategy in selected children with severe refractory post-thyroidectomy hypocalcemia.",
+   "impact_rationale": "Other on Thyroid. Background reading for clinical awareness.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42779506",
+   "title": "Transition to once-weekly growth hormone in paediatric isolated growth hormone deficiency: A real-world experience.",
+   "abstract": "To evaluate real-world auxological and biochemical outcomes in children and adolescents with isolated growth hormone deficiency (GHD) who transitioned from daily recombinant human growth hormone to once-weekly somatrogon.\n\nSingle-centre retrospective observational study.\n\nSeventy-three paediatric patients with isolated GHD (52 boys) transitioned to weekly somatrogon at a mean age of 12.56 ± 2.87 years. At the time of data collection, all 73 patients had completed 6 months of follow-up, while 58 and 27 patients had completed 12 and 18 months, respectively. Primary outcomes were changes in height standard deviation score (SDS) and height velocity SDS. Secondary outcomes included body mass index (BMI) SDS, weight SDS, and serum insulin-like growth factor-1 (IGF-1) SDS. Assessments were performed 6 months prior to transition and at 6, 12, and 18 months after initiation of long-acting growth hormone therapy.\n\nHeight SDS increased, while height velocity SDS remained positive throughout follow-up. BMI SDS increased significantly during the first year after transition but stabilized by 18 months. Serum IGF-1 SDS showed an early increase at 6 months and subsequently declined.\n\nTransition from daily growth hormone to once-weekly somatrogon maintained effective growth outcomes in paediatric patients with isolated GHD. These findings support the effectiveness of weekly therapy in routine clinical practice. Further long-term studies are needed to better characterize metabolic effects and inform individualized treatment strategies.",
+   "journal": "European journal of endocrinology",
+   "journal_abbr": "Eur J Endocrinol",
+   "authors": [
+    "Sotiriou G",
+    "Moutafi M",
+    "Triantafyllou P",
+    "Papagianni M",
+    "Christoforidis A"
+   ],
+   "doi": "10.1093/ejendo/lvag185",
+   "pub_date": "2026-09-24",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "growth hormone deficiency",
+    "long-acting growth hormone",
+    "real-world outcomes",
+    "somatrogon",
+    "transition"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42779506/",
+   "doi_url": "https://doi.org/10.1093/ejendo/lvag185",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Growth",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "LOW",
+   "age_range": [
+    "Child",
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 73,
+   "tags": [
+    "#Growth"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "These findings support the effectiveness of weekly therapy in routine clinical practice. Further long-term studies are needed to better characterize metabolic effects and inform individualized treatment strategies.",
+   "impact_rationale": "Observational/Cohort on Growth. Background reading for clinical awareness.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42778655",
+   "title": "Diagnosis and management of Silver-Russell syndrome: second international consensus statement.",
+   "abstract": "This international Consensus Statement updates 2016 guidelines for diagnosis and management of individuals with Silver-Russell syndrome (SRS), using a Delphi-like process to reach agreement through iterative expert discussions, based on published data and/or expert opinion. Individuals referred with suspected SRS show substantial clinical and genetic heterogeneity. Advances in genomic and epigenomic technology highlight the need for strict, primarily molecular, criteria for diagnosis, which should be made in those with maternal uniparental disomy for chromosome 7 (upd(7)mat) or 11p15 loss of methylation at H19/IGF2:intergenic differentially methylated region (IG-DMR) (due to an imprinting change, copy number variant or upd(11)mat). Molecular stratification enables tailoring of care pathways towards specific genetic and/or epigenetic subgroups. More widely, recommendations are relevant to other growth-related imprinting disorders (including Temple syndrome) and conditions affecting the insulin-like growth factor 2 pathway. An expert, multidisciplinary approach is required, focusing on growth failure, early severe feeding difficulties, later possible rapid weight gain, abnormal body composition, gastrointestinal problems, hypoglycaemia, insulin resistance, accelerated puberty, body asymmetry, neurocognitive issues and psychosocial challenges. Evidence published since the first Consensus Statement highlights the increased risk of metabolic disease from adolescence into adulthood. These updated recommendations have important implications for accurate diagnosis and optimal life-long management of individuals with SRS.",
+   "journal": "Nature reviews. Endocrinology",
+   "journal_abbr": "Nat Rev Endocrinol",
+   "authors": [
+    "Wakeling E",
+    "Davies JH",
+    "Giabicani E",
+    "O'Connell SM",
+    "Harbison MD",
+    "Perriere A",
+    "Salem JB",
+    "Begemann M",
+    "Binder G",
+    "Brioude F",
+    "Morris-Carney D",
+    "Dahlgren J",
+    "Dickinson B",
+    "Donadille B",
+    "Dubern B",
+    "Eggermann K",
+    "Gazdagh G",
+    "Grønskov K",
+    "Hokken Koelega AC",
+    "Jee YH",
+    "Jurians A",
+    "Kagami M",
+    "Koyama S",
+    "Kulak E",
+    "Ladjouze A",
+    "Lombardi P",
+    "Maghnie M",
+    "McClelland L",
+    "Mericq V",
+    "Patti G",
+    "Raabe K",
+    "Riccio A",
+    "Russo S",
+    "Storr HL",
+    "Temple IK",
+    "Tümer Z",
+    "Eggermann T",
+    "Mackay DJG",
+    "Netchine I"
+   ],
+   "doi": "10.1038/s41574-026-01303-3",
+   "pub_date": "2026-09-23",
+   "pub_types": [
+    "Journal Article",
+    "Review"
+   ],
+   "mesh_terms": [],
+   "keywords": [],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42778655/",
+   "doi_url": "https://doi.org/10.1038/s41574-026-01303-3",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "General",
+   "diabetes_subtype": "General",
+   "study_type": "Guideline/Consensus",
+   "ev_level": 1,
+   "impact": "PRACTICE-ALTERING",
+   "age_range": [
+    "Adult"
+   ],
+   "society": [],
+   "board_relevant": 1,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes",
+    "#BoardRelevant",
+    "#Guidelines",
+    "#Growth",
+    "#Genetics"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Evidence published since the first Consensus Statement highlights the increased risk of metabolic disease from adolescence into adulthood. These updated recommendations have important implications for accurate diagnosis and optimal life-long management of individuals with SRS.",
+   "impact_rationale": "Official guideline or consensus statement. Directly informs clinical protocols and management standards.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42790437",
+   "title": "New genomic understanding and challenges in clinical care of Turner syndrome.",
+   "abstract": "Turner syndrome is a sex chromosome abnormality in female individuals characterised by the complete or partial loss of one X chromosome in all or some cells. It is a rare genetic condition occurring in approximately 50 per 100 000 (1 in 2000) female individuals. Turner syndrome is associated with a wide range of clinical characteristics including short stature, hypergonadotropic hypogonadism, ovarian dysgenesis, delayed puberty, infertility, congenital heart disease, endocrine disorders (including autoimmune conditions and type 2 diabetes), hearing problems, and neurocognitive deficits. Morbidity and mortality are increased compared with the general population. Median age at diagnosis is 15 years, delaying appropriate counselling and treatment in many cases. Growth promoting treatment is used during childhood and adolescence, while female sex hormone substitution is recommended from late childhood until at least the average age of menopause. A multidisciplinary approach is essential for optimal care, with the aim of reducing the increased morbidity and mortality and improving quality of life among women with Turner syndrome. We review advances in the clinical characterisation and multiomics of Turner syndrome, which should lead to new insights and inform new treatment strategies for individuals with Turner syndrome.",
+   "journal": "The lancet. Diabetes & endocrinology",
+   "journal_abbr": "Lancet Diabetes Endocrinol",
+   "authors": [
+    "Gravholt CH",
+    "Balle CM",
+    "Hasselholm EB",
+    "Valsted LB",
+    "Hartogsohn E",
+    "Bedei I",
+    "Just J",
+    "Backeljauw P",
+    "Stochholm K"
+   ],
+   "doi": "10.1016/S2213-8587(26)00192-0",
+   "pub_date": "2026-09-25",
+   "pub_types": [
+    "Journal Article",
+    "Review"
+   ],
+   "mesh_terms": [],
+   "keywords": [],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42790437/",
+   "doi_url": "https://doi.org/10.1016/S2213-8587(26)00192-0",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Growth",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Review",
+   "ev_level": 2,
+   "impact": "HIGH",
+   "age_range": [
+    "Child",
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 1,
+   "sample_n": null,
+   "tags": [
+    "#Growth",
+    "#BoardRelevant",
+    "#Review",
+    "#Diabetes",
+    "#Puberty",
+    "#DSD"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "A multidisciplinary approach is essential for optimal care, with the aim of reducing the increased morbidity and mortality and improving quality of life among women with Turner syndrome. We review advances in the clinical characterisation and multiomics of Turner syndrome, which should lead to new insights and inform new treatment strategies for individuals with Turner syndrome.",
+   "impact_rationale": "Authoritative review in The lancet. Diabetes & endocrinology. High-impact journal curation adds clinical credibility.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42788333",
+   "title": "From Glucose Data to Distress: Recognizing Anxiety Related to Continuous Glucose Monitoring.",
+   "abstract": "[Abstract not available]",
+   "journal": "Journal of diabetes science and technology",
+   "journal_abbr": "J Diabetes Sci Technol",
+   "authors": [
+    "Chen P",
+    "Zhang S",
+    "Zheng L",
+    "Tu Y",
+    "Xu H",
+    "Yu H"
+   ],
+   "doi": "10.1177/19322968261489628",
+   "pub_date": "2026-09-25",
+   "pub_types": [
+    "Letter"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "anxiety",
+    "continuous glucose monitoring",
+    "diabetes distress",
+    "diabetes technology",
+    "psychological burden"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "19322968261489628",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42788333/",
+   "doi_url": "https://doi.org/10.1177/19322968261489628",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "Technology",
+   "diabetes_subtype": "General",
+   "study_type": "Letter/Correspondence",
+   "ev_level": 6,
+   "impact": "LOW",
+   "age_range": [
+    "Adult"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes",
+    "#Technology"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "[Abstract not available]",
+   "impact_rationale": "Expert letter or commentary. No new primary data; provides perspective on Diabetes but does not independently change practice.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42788331",
+   "title": "Combining Contingency Management With Continuous Glucose Monitoring to Support Type 2 Diabetes Prevention and Care.",
+   "abstract": "Diabetes prevention and care require recurring self-management behaviors whose benefits are often delayed and uncertain. Digital contingency management (CM), which arranges incentives contingent on objective evidence of behavior or outcomes, offers a scalable way to strengthen these behaviors. This commentary argues that continuous glucose monitoring (CGM) can transform CM for diabetes by enabling frequent, remote reinforcement of clinically meaningful proximal targets, including sensor wear, time in range, and other glucose-derived metrics. Emerging artificial intelligence tools may further personalize treatment during risk periods and tailor reinforcement schedules. Although cost-effectiveness data in diabetes are needed, the high clinical and economic burden of diabetes provides a strong rationale for evaluating CGM-linked CM as a scalable behavioral intervention. We discuss previous CM research, implementation readiness, and future research priorities.",
+   "journal": "Journal of diabetes science and technology",
+   "journal_abbr": "J Diabetes Sci Technol",
+   "authors": [
+    "Dallery J",
+    "Tulu B",
+    "Jenkins S",
+    "Fitzgerald R",
+    "Aldridge AP",
+    "Duncan I",
+    "Kerr D"
+   ],
+   "doi": "10.1177/19322968261484170",
+   "pub_date": "2026-09-25",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "contingency management",
+    "continuous glucose monitoring",
+    "diabetes",
+    "digital health",
+    "financial incentives",
+    "self-management"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "19322968261484170",
+   "pmc": "PMC13615177",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42788331/",
+   "doi_url": "https://doi.org/10.1177/19322968261484170",
+   "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13615177/",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "Technology",
+   "diabetes_subtype": "T2D",
+   "study_type": "Health Economics",
+   "ev_level": 4,
+   "impact": "LOW",
+   "age_range": [
+    "Adult"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes",
+    "#AIinMedicine",
+    "#Technology"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Although cost-effectiveness data in diabetes are needed, the high clinical and economic burden of diabetes provides a strong rationale for evaluating CGM-linked CM as a scalable behavioral intervention. We discuss previous CM research, implementation readiness, and future research priorities.",
+   "impact_rationale": "Health Economics on Diabetes. Background reading for clinical awareness.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42788328",
+   "title": "Diabetes Technology in the School Setting for Preschool-Aged Children.",
+   "abstract": "Diabetes technology has transformed the management of type 1 diabetes (T1D) and improved glycemic outcomes, yet preschool-aged children with T1D remain a uniquely vulnerable population. Complete dependence on caregivers and practical considerations such as limited body surface area and skin sensitivity create distinct barriers to effective technology use. These challenges are often compounded by the transition to daycare or school setting, where disruption in diabetes care coordination between home and classroom can compromise glycemic outcomes. This review synthesizes the evidence for diabetes technology use, summarizes the current guidelines, provides practical considerations, and reviews guidance for training protocols and competency requirements in the educational setting. School-based legal protections are discussed, including Section 504 plans and Individualized Education Programs, which should outline the diabetes-related accommodations required in the school setting in alignment with the Diabetes Medical Management Plan. Targeted interventions to improve training of school/daycare staff, facilitate communication across home and school settings, and address disparities in technology access are essential to optimize care and improve long-term health outcomes.",
+   "journal": "Journal of diabetes science and technology",
+   "journal_abbr": "J Diabetes Sci Technol",
+   "authors": [
+    "Gupta RM",
+    "DeSalvo DJ",
+    "Hicks K",
+    "Kelly SR",
+    "Uysal-Demiroz S",
+    "Woodward C",
+    "Lyons SK"
+   ],
+   "doi": "10.1177/19322968261486007",
+   "pub_date": "2026-09-25",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "continuous glucose monitors",
+    "insulin infusion systems",
+    "preschool children",
+    "type 1 diabetes"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "19322968261486007",
+   "pmc": "PMC13615190",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42788328/",
+   "doi_url": "https://doi.org/10.1177/19322968261486007",
+   "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13615190/",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "Technology",
+   "diabetes_subtype": "T1D",
+   "study_type": "Other",
+   "ev_level": 5,
+   "impact": "LOW",
+   "age_range": [
+    "Child"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes",
+    "#HealthEquity",
+    "#Technology"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "School-based legal protections are discussed, including Section 504 plans and Individualized Education Programs, which should outline the diabetes-related accommodations required in the school setting in alignment with the Diabetes Medical Management Plan. Targeted interventions to improve training of school/daycare staff, facilitate communication across home and school settings, and address disparities in technology access are essential to optimize care and improve long-term health outcomes.",
+   "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42765166",
+   "title": "Accuracy of an Interstitial Continuous Glucose Management System in Critically Ill Patients: A Prospective Observational Study.",
+   "abstract": "Glycemic management in the intensive care unit (ICU) remains challenging because glucose levels fluctuate rapidly and monitoring is intermittent. Interstitial continuous glucose monitoring (CGM) could improve surveillance, but its performance during rapid glucose excursions remains uncertain. We assessed the accuracy of the Dexcom G7 CGM in critically ill patients under stable conditions and during intravenous glucose tolerance tests (IVGTT).\n\nWe conducted a prospective ancillary study of the Determination of Insulin Resistance in ICU (DIRICU) study. Twenty critically ill adults with stress hyperglycemia, no prior diabetes, and expected ICU stay ≥5 days were included. A Dexcom G7 sensor was compared with arterial blood glucose measurements. Accuracy was assessed over the first 10 ICU days using paired measurements, mean bias, mean absolute relative difference (MARD), linear regression (), and Clarke error grid analysis, both outside and during IVGTT. A post hoc 20-minute temporal shift analysis was performed to account for delayed CGM peaks.\n\nOutside IVGTT, 716 paired values showed moderate agreement with reference glucose ( = .58, mean bias +11 mg/dL, MARD 17%), with 98.9% of values in Clarke zones A/B. During IVGTT, accuracy deteriorated markedly (1018 paired values): = .028, mean bias -34 mg/dL, MARD 24%, and only 80.3% of values in zones A/B, with 18.6% in zone D. After temporal shifting, performance improved ( = .34, MARD 19%, 94.7% in zones A/B). No sensor-related adverse events occurred.\n\nDexcom G7 showed acceptable accuracy during stable ICU conditions, but performance deteriorated during rapid glucose excursions. Hybrid monitoring strategies combining CGM with intermittent blood glucose confirmation may therefore be preferable in critically ill patients.",
+   "journal": "Journal of diabetes science and technology",
+   "journal_abbr": "J Diabetes Sci Technol",
+   "authors": [
+    "Seret M",
+    "Dupuis C",
+    "Alves de Araújo V",
+    "Annicchiarico C",
+    "Macedo G",
+    "Pinto Teixeira Araujo C",
+    "Taccone F",
+    "Cnop M",
+    "Desaive T",
+    "Uyttendaele V",
+    "Preiser JC"
+   ],
+   "doi": "10.1177/19322968261486451",
+   "pub_date": "2026-09-21",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "Dexcom G7",
+    "accuracy",
+    "continuous glucose monitoring",
+    "intensive care"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "19322968261486451",
+   "pmc": "PMC13593934",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42765166/",
+   "doi_url": "https://doi.org/10.1177/19322968261486451",
+   "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13593934/",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "Technology",
+   "diabetes_subtype": "General",
+   "study_type": "Prospective Study",
+   "ev_level": 3,
+   "impact": "LOW",
+   "age_range": [
+    "Adult"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes",
+    "#Technology"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Dexcom G7 showed acceptable accuracy during stable ICU conditions, but performance deteriorated during rapid glucose excursions. Hybrid monitoring strategies combining CGM with intermittent blood glucose confirmation may therefore be preferable in critically ill patients.",
+   "impact_rationale": "Prospective Study on Diabetes. Background reading for clinical awareness.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42764665",
+   "title": "Agreement of Over-the-Counter Continuous Glucose Monitors With Capillary-Meter Glucose in Young Adults Without Diabetes.",
+   "abstract": "Over-the-counter continuous glucose monitors (OTC CGMs) are increasingly used by individuals without diabetes for lifestyle modification, weight management, athletics, and metabolic screening, and have potential as an affordable tool for glucose data collection in research. However, accuracy and agreement data in their intended populations are limited. No independent study has yet evaluated OTC CGM accuracy or agreement.\n\nWe evaluated OTC CGMs worn by participants (n = 39) without diabetes across sessions combining rest or exercise with placebo or sugar-sweetened drink consumption that mimic scenarios in which CGM values may be used to make health-related decisions. We assessed agreement with capillary-meter glucose, interparticipant differences in CGM performance, and delay of CGM recordings.\n\nOverall mean absolute relative difference (MARD) was 12.9%, mean bias -4.8 mg/dL, and within-15%/15-mg/dL agreement 66.5%. Agreement was significantly worse under sugar than placebo consumption (MARD 15.3% vs 10.6%, < .01). Exercise had no consistent effect. Disagreement increased with faster rates of change and, less consistently, higher glucose. A uniform 5-minute delay improved MARD to 11.2% ( < .001), and cross-correlation estimated a 6.2-minute population lag. Interparticipant agreement differed significantly, unattributable to measured biological variables. Participant/device identity explained direction of error more than magnitude. High-MARD participants did not have consistent high MARD across conditions. 13.8% of CGM-change-indicator directional arrows were classified as moderate to extreme risk.\n\nOver-the-counter continuous glucose monitors seemingly agreed with overall capillary glucose trends but were less reliable for exact-value agreement. They may aid lifestyle monitoring but warrant caution for diagnostic thresholds, real-time change-indicator use, and research.We analyze data from a clinical trial: ClinicalTrials.gov, https://clinicaltrials.gov/study/NCT07255183?id=NCT07255183, NCT07255183.\n\nOver-the-counter continuous glucose monitors are reaching patients through primary care recommendations and direct consumer purchase, often before any structured education on interpretation. This first independent evaluation in adults without diabetes shows that OTC CGMs agree reasonably well with capillary trends but are less reliable for exact values, particularly after carbohydrate intake, at higher glucose levels, and during rapid change. Clinicians can reasonably guide patients toward using OTC CGMs to observe postprandial trends and behavioral patterns that fingerstick logs cannot practically capture, while cautioning against threshold-based decisions such as hypoglycemia detection or self-screening for diabetes, which warrant confirmatory testing.",
+   "journal": "Journal of diabetes science and technology",
+   "journal_abbr": "J Diabetes Sci Technol",
+   "authors": [
+    "Prakash N",
+    "Barrows AH",
+    "Stults-Kolehmainen M",
+    "Loza AJ",
+    "Kilpatrick MW",
+    "Ash GI"
+   ],
+   "doi": "10.1177/19322968261482150",
+   "pub_date": "2026-09-20",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "continuous glucose monitoring",
+    "diabetes",
+    "exercise",
+    "glucose consumption",
+    "lingo",
+    "over-the-counter"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "19322968261482150",
+   "pmc": "PMC13593949",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42764665/",
+   "doi_url": "https://doi.org/10.1177/19322968261482150",
+   "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13593949/",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "Technology",
+   "diabetes_subtype": "General",
+   "study_type": "Other",
+   "ev_level": 5,
+   "impact": "LOW",
+   "age_range": [
+    "Transition"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 39,
+   "tags": [
+    "#Diabetes",
+    "#RegisteredTrial",
+    "#Technology"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "This first independent evaluation in adults without diabetes shows that OTC CGMs agree reasonably well with capillary trends but are less reliable for exact values, particularly after carbohydrate intake, at higher glucose levels, and during rapid change. Clinicians can reasonably guide patients toward using OTC CGMs to observe postprandial trends and behavioral patterns that fingerstick logs cannot practically capture, while cautioning against threshold-based decisions such as hypoglycemia detection or self-screening for diabetes, which warrant confirmatory testing.",
+   "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42764621",
+   "title": "Management of Automated Insulin Delivery Systems in Pregnant Individuals With Type 1 Diabetes: Practical Tips and System-Specific Workarounds.",
+   "abstract": "Automated insulin delivery (AID) systems are increasingly used off-label in pregnancy for type 1 diabetes management, yet most current algorithms were not designed for the unique metabolic demands of gestation. This guide provides practical, evidence-based, and system-specific workarounds to safely optimise the six major commercial and open-source AID systems for use in pregnancy.\n\nThis narrative review synthesises recommendations from major clinical practice guidelines (American Diabetes Association, Diabetes Canada), the 2026 international consensus statement on continuous glucose monitoring and AID use in pregnancy, and key findings from landmark clinical trials (CRISTAL, CIRCUIT, and AiDAPT). A targeted literature search of PubMed, Embase, and Cochrane Library (January 2018-February 2026) was performed using keywords, including 'automated insulin delivery', 'closed-loop', 'type 1 diabetes', and 'pregnancy'. Tips were derived from peer-reviewed studies, consensus guidelines, and clinical experience of the authors; the source of each tip is identified throughout the text.\n\nA comprehensive set of 43 practical tips is presented, covering preconception optimisation, trimester-specific insulin adjustments, prandial management strategies, system-specific workarounds for Tandem Control-IQ, Medtronic 780G, Omnipod 5, twiist, CamAPS FX, and Do-It-Yourself Loop, and protocols for special situations including antenatal corticosteroid administration, labour and delivery, and the postpartum period.\n\nBy combining a deep understanding of AID system limitations with proactive, data-driven clinical strategies, clinicians can help individuals living with type 1 diabetes safely navigate the complexities of pregnancy, improve glycaemic levels, and enhance maternal and neonatal safety.",
+   "journal": "Journal of diabetes science and technology",
+   "journal_abbr": "J Diabetes Sci Technol",
+   "authors": [
+    "Eisa N"
+   ],
+   "doi": "10.1177/19322968261463556",
+   "pub_date": "2026-09-20",
+   "pub_types": [
+    "Journal Article",
+    "Review"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "automated insulin delivery",
+    "closed-loop insulin delivery",
+    "continuous glucose monitoring",
+    "pregnancy",
+    "type 1 diabetes"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "19322968261463556",
+   "pmc": "PMC13593952",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42764621/",
+   "doi_url": "https://doi.org/10.1177/19322968261463556",
+   "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13593952/",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "Technology",
+   "diabetes_subtype": "T1D",
+   "study_type": "Review",
+   "ev_level": 2,
+   "impact": "MODERATE",
+   "age_range": [
+    "Neonatal"
+   ],
+   "society": [
+    "ADA"
+   ],
+   "board_relevant": 1,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes",
+    "#BoardRelevant",
+    "#Technology",
+    "#Review"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "A comprehensive set of 43 practical tips is presented, covering preconception optimisation, trimester-specific insulin adjustments, prandial management strategies, system-specific workarounds for Tandem Control-IQ, Medtronic 780G, Omnipod 5, twiist, CamAPS FX, and Do-It-Yourself Loop, and protocols for special situations including antenatal corticosteroid administration, labour and delivery, and the postpartum period. By combining a deep understanding of AID system limitations with proactive, data-driven clinical strategies, clinicians can help individuals living with type 1 diabetes safely navigate the complexities of pregnancy, improve glycaemic levels, and enhance maternal and neonatal safety.",
+   "impact_rationale": "Review on Diabetes. Background reading for clinical awareness.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42767637",
+   "title": "Comparison of leptin, ghrelin, and nesfatin levels in growth hormone deficiency and idiopathic short stature before and after growth hormone therapy.",
+   "abstract": "[Abstract not available]",
+   "journal": "Annals of pediatric endocrinology & metabolism",
+   "journal_abbr": "Ann Pediatr Endocrinol Metab",
+   "authors": [
+    "Cho HJ",
+    "Noh ES",
+    "Jin HY",
+    "Hwang IT"
+   ],
+   "doi": "10.6065/apem.2652020.010",
+   "pub_date": "2026-09-18",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42767637/",
+   "doi_url": "https://doi.org/10.6065/apem.2652020.010",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Growth",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Other",
+   "ev_level": 5,
+   "impact": "LOW",
+   "age_range": [
+    "Adult"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Growth"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "[Abstract not available]",
+   "impact_rationale": "Other on Growth. Background reading for clinical awareness.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42767636",
+   "title": "Association of exclusive breastfeeding duration, body mass index trajectories, and cardiometabolic risk in preschool children.",
+   "abstract": "This prospective cohort study aimed to examine the associations among exclusive breastfeeding duration, body mass index (BMI) growth trajectories, and cardiometabolic risk in children at 5 years of age.\n\nMaternal pre-pregnancy BMI, infant feeding practices, and anthropometric measurements were prospectively collected at regular intervals. At 5 years of age, the children's cardiometabolic risk z-scores were calculated using five metabolic components. One-way analyses of variance and logistic regression analysis were performed to assess associations between exclusive breastfeeding duration, children's BMI trajectories, and metabolic variables, as well as to identify predictors of high cardiometabolic risk z-scores.\n\nIn total, 242 children with 5-year follow-up were included, of whom 35.1% had ≥1 metabolic risk factor. Longer exclusive breastfeeding duration was associated with slower increases in BMI z-scores from 0 to 5 years and lower body fat percentages at outcome assessments; however, these associations were no longer significant after adjustment for confounders. Logistic regression analyses showed that maternal pre-pregnancy overweight or obesity (adjusted OR = 3.12, P = 0.007) and greater BMI z-score gain between 1 and 3 years (adjusted OR = 1.90, P = 0.001) and 3-5 years of age (adjusted OR = 3.04, P < 0.001) were independent predictors of high cardiometabolic risk.\n\nMaternal pre-pregnancy overweight or obesity and greater BMI z-score gain after 1 year of age were associated with a higher cardiometabolic risk at 5 years. Evidence supporting the protective effect of longer exclusive breastfeeding on cardiometabolic risk in preschool-aged children is insufficient, and further studies are warranted.",
+   "journal": "Annals of pediatric endocrinology & metabolism",
+   "journal_abbr": "Ann Pediatr Endocrinol Metab",
+   "authors": [
+    "Hua MC",
+    "Yao TC",
+    "Tsai MH",
+    "Su KW",
+    "Liao SL",
+    "Chen LC",
+    "Yeh KW",
+    "Huang JL"
+   ],
+   "doi": "10.6065/apem.2652034.017",
+   "pub_date": "2026-09-18",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "breastfeeding",
+    "cardiometabolic risk",
+    "growth trajectories",
+    "obesity",
+    "preschool children"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42767636/",
+   "doi_url": "https://doi.org/10.6065/apem.2652034.017",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Obesity/Metabolic",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "MODERATE",
+   "age_range": [
+    "Infant",
+    "Child"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 242,
+   "tags": [
+    "#Obesity"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Maternal pre-pregnancy overweight or obesity and greater BMI z-score gain after 1 year of age were associated with a higher cardiometabolic risk at 5 years. Evidence supporting the protective effect of longer exclusive breastfeeding on cardiometabolic risk in preschool-aged children is insufficient, and further studies are warranted.",
+   "impact_rationale": "Observational study on Obesity/Metabolic. Cohort size n = 242. Clinically informative but limited by non-randomized design.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42767635",
+   "title": "Are intensive care settings essential in the management of diabetic ketoacidosis in children?",
+   "abstract": "Diabetic ketoacidosis (DKA) is a potentially life-threatening complication of diabetes in children and is frequently managed in pediatric intensive care units (PICUs). This study aimed to evaluate the feasibility and safety of managing DKA in the pediatric emergency department (PED).\n\nA retrospective analysis was conducted of pediatric patients presenting with DKA between 2017 and 2024 at a tertiary care hospital. Patients were categorized according to DKA severity and evaluated for demographic characteristics, risk factors, clinical findings, laboratory parameters, complications, and outcomes. All patients were managed using a standardized institutional treatment protocol. Clinical characteristics of patients admitted to the PICU were compared with those managed in the PED.\n\nA total of 169 patients were included (mean age, 10.3 ± 4.4 years). Most patients were managed in the PED until resolution of DKA (95.3%). Moderate and severe DKA accounted for 71% of cases. Complications occurred in 27 patients (15.9%). Although tachycardia, respiratory abnormalities, decreased Glasgow Coma Scale scores (≤14), and electrolyte abnormalities were more frequent among patients admitted to the PICU, most patients with these findings were successfully managed in the PED. Patients requiring PICU admission had significantly lower pH levels, lower bicarbonate concentrations, more frequent neurologic impairment, and a higher rate of electrolyte abnormalities.\n\nMost pediatric patients with DKA can be safely managed outside the PICU when standardized protocols and close clinical monitoring are implemented. A selective PICU admission strategy based on clinical indicators of deterioration may therefore help optimize the use of limited intensive care resources while maintaining patient safety.",
+   "journal": "Annals of pediatric endocrinology & metabolism",
+   "journal_abbr": "Ann Pediatr Endocrinol Metab",
+   "authors": [
+    "Akgul F",
+    "Ulusoy E",
+    "Er A",
+    "Baki F",
+    "K T",
+    "Günay İ",
+    "Özkan B",
+    "Apa H"
+   ],
+   "doi": "10.6065/apem.2652036.018",
+   "pub_date": "2026-09-18",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "Child",
+    "Diabetes mellitus",
+    "Diabetic ketoacidosis",
+    "Emergency treatment"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42767635/",
+   "doi_url": "https://doi.org/10.6065/apem.2652036.018",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "General",
+   "diabetes_subtype": "General",
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "MODERATE",
+   "age_range": [
+    "Child"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 169,
+   "tags": [
+    "#Diabetes"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Most pediatric patients with DKA can be safely managed outside the PICU when standardized protocols and close clinical monitoring are implemented. A selective PICU admission strategy based on clinical indicators of deterioration may therefore help optimize the use of limited intensive care resources while maintaining patient safety.",
+   "impact_rationale": "Observational study on Diabetes. Cohort size n = 169. Clinically informative but limited by non-randomized design.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42767639",
+   "title": "Longitudinal analysis of catch-up growth pattern in low birth weight infants up to 5 years in a nationwide Korean cohort.",
+   "abstract": "This study aimed to investigate catch-up growth (CUG) patterns in low-birth-weight infants (LBW) and identify factors associated with growth trajectories from birth to 5 years, focusing on the relationship between early growth status groups (no early CUG for height only, weight only, or both height and weight, and the normal reference group) and subsequent growth outcomes.\n\nWe conducted a longitudinal analysis of 15,235 infants with low birth weight using nationwide data from the South Korean National Health Insurance Service (NHIS). No early CUG was defined at 4-6 months as height or weight below the 10th percentile based on the 2017 Korean growth charts. Growth outcomes at 1, 2, 3, and 5 years were assessed using logistic and linear regression models. Analyses were adjusted for demographic and clinical factors, including socioeconomic status (SES) and feeding type.\n\nApproximately 82% of infants achieved CUG in height by 6 months of corrected age. No early CUG in height and weight group had the lowest average birth weight, and inadequate CUG in height was most prevalent at one year of age, persisting across all periods and consistently showing the highest prevalence at five years of age. Height and weight z-scores at the first screening visit (4-6 months of corrected age) highlighted the greater influence of initial height on later height.\n\nThis study highlights the importance of early-life conditions and interventions in shaping the growth trajectories of LBW infants, emphasizing the significance of height catch-up.",
+   "journal": "Annals of pediatric endocrinology & metabolism",
+   "journal_abbr": "Ann Pediatr Endocrinol Metab",
+   "authors": [
+    "Kim N",
+    "Lee IW",
+    "Choi J",
+    "Ahn J",
+    "Kim H",
+    "Kim J",
+    "Kim YJ",
+    "Yang S",
+    "Lee HJ"
+   ],
+   "doi": "10.6065/apem.2550516.258",
+   "pub_date": "2026-09-17",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "Catch-up growth",
+    "Cognitive developmental delay",
+    "Low birth weight"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42767639/",
+   "doi_url": "https://doi.org/10.6065/apem.2550516.258",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Growth",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "MODERATE",
+   "age_range": [
+    "Infant"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 15235,
+   "tags": [
+    "#Growth"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Height and weight z-scores at the first screening visit (4-6 months of corrected age) highlighted the greater influence of initial height on later height. This study highlights the importance of early-life conditions and interventions in shaping the growth trajectories of LBW infants, emphasizing the significance of height catch-up.",
+   "impact_rationale": "Observational study on Growth. Cohort size n = 15235. Clinically informative but limited by non-randomized design.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42767638",
+   "title": "Clinical practice guidelines for congenital hypothyroidism in Korean children and adolescents: 2025.",
+   "abstract": "Congenital hypothyroidism remains one of the most preventable causes of neurodevelopmental impairment. Population-based newborn screening has substantially improved outcomes; however, optimal practice requires appropriate timing of screening, special attention to high-risk subgroups, prompt initiation of levothyroxine, and structured long-term follow-up including re-evaluation for transient disease, transition to adult care, genetic evaluation, and monitoring of neurodevelopment and health-related quality of life. This review summarizes the 2025 Korean clinical practice guideline in 10 key questions and 28 recommendations, integrating international consensus recommendations and the latest domestic evidence across five domains: newborn screening, diagnostic evaluation, levothyroxine treatment, monitoring, and re-evaluation/transition with long-term follow-up.",
+   "journal": "Annals of pediatric endocrinology & metabolism",
+   "journal_abbr": "Ann Pediatr Endocrinol Metab",
+   "authors": [
+    "Kim JH",
+    "Yang A",
+    "Jung I",
+    "Hong Y",
+    "Kang E",
+    "Park J",
+    "Song K",
+    "Suh J",
+    "Ahn J",
+    "Lee EB",
+    "Lee H",
+    "Lim M",
+    "Jung S",
+    "Jo W",
+    "Shin Y",
+    "Yoo EG",
+    "Rhie YJ",
+    "Choi JH",
+    "Lee J"
+   ],
+   "doi": "10.6065/apem.2652002.001",
+   "pub_date": "2026-09-17",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "Congenital",
+    "Hypothyroidism",
+    "Levothyroxine",
+    "Newborn Screening",
+    "Pediatrics",
+    "Practice Guidelines as Topic"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42767638/",
+   "doi_url": "https://doi.org/10.6065/apem.2652002.001",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Thyroid",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Guideline/Consensus",
+   "ev_level": 1,
+   "impact": "PRACTICE-ALTERING",
+   "age_range": [
+    "Neonatal",
+    "Child",
+    "Adolescent",
+    "Transition"
+   ],
+   "society": [],
+   "board_relevant": 1,
+   "sample_n": null,
+   "tags": [
+    "#Thyroid",
+    "#Transition",
+    "#BoardRelevant",
+    "#Guidelines"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Population-based newborn screening has substantially improved outcomes; however, optimal practice requires appropriate timing of screening, special attention to high-risk subgroups, prompt initiation of levothyroxine, and structured long-term follow-up including re-evaluation for transient disease, transition to adult care, genetic evaluation, and monitoring of neurodevelopment and health-related quality of life. This review summarizes the 2025 Korean clinical practice guideline in 10 key questions and 28 recommendations, integrating international consensus recommendations and the latest domestic evidence across five domains: newborn screening, diagnostic evaluation, levothyroxine treatment, monitoring, and re-evaluation/transition with long-term follow-up.",
+   "impact_rationale": "Official guideline or consensus statement. Directly informs clinical protocols and management standards.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42296202",
+   "title": "A case report of Xp21 contiguous gene deletion syndrome with adrenal crisis and sensorineural hearing loss: clinical highlights and management pitfalls.",
+   "abstract": "To report a rare association of Xp21 contiguous gene deletion syndrome (CGDS) featuring sensorineural hearing loss (SNHL), and to discuss the diagnostic and therapeutic challenges.\n\nA male infant presented with a salt-wasting adrenal crisis consistent with X-linked adrenal hypoplasia congenita. His follow-up clinical course during childhood revealed global developmental delay and SNHL, the latter of which has been under-reported in the literature for this condition. At five years of age, the development of progressive proximal muscle weakness and markedly elevated creatine phosphokinase levels led to a diagnosis of Duchenne muscular dystrophy (DMD). The patient also exhibited pseudohypertriglyceridemia and elevated urinary glycerol, consistent with glycerol kinase deficiency. While initial exome sequencing failed to detect the genetic abnormality, subsequent chromosomal microarray analysis identified an Xp21 CGDS involving,,, and. Treatment of adrenal insufficiency with fludrocortisone and hydrocortisone was complicated by the higher steroid doses required for the management of DMD, resulting in exogenous Cushing syndrome and associated complications.\n\nThis case highlights the necessity of evaluating for Xp21 CGDS in patients presenting with adrenal crisis and emphasizes the importance of multidisciplinary management to optimize outcomes in this complex pediatric endocrine disorder.",
+   "journal": "Journal of pediatric endocrinology & metabolism : JPEM",
+   "journal_abbr": "J Pediatr Endocrinol Metab",
+   "authors": [
+    "Thangpong R",
+    "Thongsukkaeo S",
+    "Paisansukanant K",
+    "Numsriskulrat N"
+   ],
+   "doi": "10.1515/jpem-2026-0136",
+   "pub_date": "2026-06-15",
+   "pub_types": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "mesh_terms": [
+    "Humans",
+    "Male",
+    "Hearing Loss, Sensorineural",
+    "Adrenal Insufficiency",
+    "Chromosomes, Human, X",
+    "Gene Deletion",
+    "Prognosis",
+    "Genetic Diseases, X-Linked",
+    "DAX-1 Orphan Nuclear Receptor",
+    "Child, Preschool",
+    "Infant"
+   ],
+   "keywords": [
+    "Duchenne muscular dystrophy",
+    "Xp21 deletion",
+    "adrenal hypoplasia congenita",
+    "adrenal insufficiency",
+    "contiguous gene deletion",
+    "hearing loss"
+   ],
+   "volume": "39",
+   "issue": "9",
+   "pages": "944-950",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42296202/",
+   "doi_url": "https://doi.org/10.1515/jpem-2026-0136",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Adrenal",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Other",
+   "ev_level": 5,
+   "impact": "LOW",
+   "age_range": [
+    "Infant",
+    "Child"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Adrenal",
+    "#Genetics"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Treatment of adrenal insufficiency with fludrocortisone and hydrocortisone was complicated by the higher steroid doses required for the management of DMD, resulting in exogenous Cushing syndrome and associated complications. This case highlights the necessity of evaluating for Xp21 CGDS in patients presenting with adrenal crisis and emphasizes the importance of multidisciplinary management to optimize outcomes in this complex pediatric endocrine disorder.",
+   "impact_rationale": "Other on Adrenal. Background reading for clinical awareness.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42765682",
+   "title": "Successful management of paediatric chronic SIAD with oral urea: report of two cases.",
+   "abstract": "Syndrome of inappropriate antidiuretic hormone secretion (SIAD) causes euvolemic hyponatraemia and is managed with fluid restriction, which can be difficult to maintain in children with chronic disease. Urea is an osmotic diuretic recommended as a second-line therapy, but paediatric experience remains limited.\n\nPatient 1 was a 1-year-old male infant diagnosed with SIAD secondary to an optic pathway pilocytic astrocytoma, following therapeutic exposure to carboplatin and vincristine/vinblastine. Initial management with fluid restriction and sodium supplementation proved insufficient, resulting in persistent hyponatraemia and compromised physical growth. Crucially, because the patient's nutritional intake was derived primarily from milk, standard fluid restriction inherently imposed severe nutritional restriction. Following the introduction and gradual titration of urea therapy, plasma sodium normalised, urine output increased and sodium supplementation was discontinued. This clinical improvement allowed for the liberalisation of fluid intake, thereby restoring adequate nutritional delivery and subsequently improved growth. Patient 2 was a 16-year-old girl with severe neurological impairment, panhypopituitarism and chronic SIAD following neonatal meningitis and hypoxic-ischaemic injury. Her hyponatraemia persisted despite fluid restriction and sodium supplementation, and prolonged restriction probably contributed to renal calcium cysts. After starting urea, plasma sodium normalised, fluid restriction was eased and sodium supplementation was discontinued.\n\nIn conclusion, oral urea represents a safe, cost-effective maintenance therapy for paediatric chronic SIAD. By mitigating strict fluid restriction, it facilitates adequate nutritional delivery essential for growth. Additionally, its minimal potential for drug-drug interactions offers a distinct practical advantage in medically complex children.",
+   "journal": "Journal of pediatric endocrinology & metabolism : JPEM",
+   "journal_abbr": "J Pediatr Endocrinol Metab",
+   "authors": [
+    "Chan SS",
+    "Pang GS",
+    "Poon SW",
+    "Yeung WL",
+    "Ku TL",
+    "Lai FF",
+    "Tung JY"
+   ],
+   "doi": "10.1515/jpem-2026-0398",
+   "pub_date": "2026-09-22",
+   "pub_types": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "paediatric endocrinology",
+    "syndrome of inappropriate antidiuretic hormone secretion",
+    "urea"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42765682/",
+   "doi_url": "https://doi.org/10.1515/jpem-2026-0398",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Pituitary",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Other",
+   "ev_level": 5,
+   "impact": "LOW",
+   "age_range": [
+    "Neonatal",
+    "Infant",
+    "Child",
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Pituitary"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "By mitigating strict fluid restriction, it facilitates adequate nutritional delivery essential for growth. Additionally, its minimal potential for drug-drug interactions offers a distinct practical advantage in medically complex children.",
+   "impact_rationale": "Other on Pituitary. Background reading for clinical awareness.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42764719",
+   "title": "Allgrove syndrome in Colombia: clinical characterization and evidence of a possible founder effect.",
+   "abstract": "Allgrove syndrome is a rare autosomal recessive disorder caused by pathogenic variants in thegene, characterized by achalasia, alacrima, and adrenal insufficiency, with variable neurological involvement. Genotype-phenotype correlations remain poorly characterized. This study aimed to describe the clinical and genetic features of Colombian patients with Allgrove syndrome and to explore potential genotype-phenotype differences.\n\nA multicenter retrospective cohort study was conducted between January 2010 and July 2025. A total of 1,587 clinical records were screened across three tertiary referral centers in Antioquia, complemented with structured telephone interviews, identifying 30 patients meeting diagnostic criteria. Genetic testing results, including whole-exome sequencing or targeted AAAS gene analysis retrieved from clinical records, were analyzed by genotype.\n\nTwenty-nine of 30 patients (96.7 %) presented the complete classical triad. Median age at diagnosis was 5.5 years, glucocorticoid and mineralocorticoid deficiencies were diagnosed at a median of 4 and 3 years, respectively; achalasia at a mean of 7.75 years. Among 19 genotyped patients, two homozygous pathogenic variants were identified: c.1331+1G>A and c.1300C>T (p.Arg434*) in one patient, who exhibited earlier onset and more severe neurological involvement. Clustering in the Paisa region suggests a potential founder effect.\n\nThis is the largest reported Colombian cohort of Allgrove syndrome. A highly prevalent AAAS variant suggestive of a possible founder effect was identified in the Paisa population. Clinically meaningful differences in disease severity were observed between variants. These findings expand the phenotypic spectrum and underscore the importance of early genetic testing and systematic multidisciplinary surveillance.",
+   "journal": "Journal of pediatric endocrinology & metabolism : JPEM",
+   "journal_abbr": "J Pediatr Endocrinol Metab",
+   "authors": [
+    "Botero Hernandez JA",
+    "Varela Macias ED",
+    "Lopera Cañaveral MV",
+    "Forero Torres AC",
+    "Ramírez Jiménez JJ",
+    "González Valencia GM",
+    "Alfaro Velázquez JM",
+    "Trujillo NP"
+   ],
+   "doi": "10.1515/jpem-2026-0358",
+   "pub_date": "2026-09-21",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "AAAS gene",
+    "Allgrove syndrome",
+    "achalasia",
+    "adrenal insufficiency",
+    "alacrima",
+    "triple A syndrome"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42764719/",
+   "doi_url": "https://doi.org/10.1515/jpem-2026-0358",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Adrenal",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "MODERATE",
+   "age_range": [
+    "Adult"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 30,
+   "tags": [
+    "#Adrenal",
+    "#Genetics"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Clinically meaningful differences in disease severity were observed between variants. These findings expand the phenotypic spectrum and underscore the importance of early genetic testing and systematic multidisciplinary surveillance.",
+   "impact_rationale": "Observational study on Adrenal. Cohort size n = 30. Clinically informative but limited by non-randomized design.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42763793",
+   "title": "Anti-Müllerian hormone levels in girls with precocious puberty.",
+   "abstract": "We aimed to evaluate the relationship between anti-Müllerian hormone (AMH) levels in cases of central precocious puberty (CPP), premature adrenarche (PA), and isolated premature thelarche (IPT) and those of healthy controls (HC).\n\nA total of 153 girls (40 PA, 39 CPP, 39 IPT, and 35 HC) were included in the study. AMH levels were assessed using the ELISA method.\n\nThe mean age of all participants was 7.19 ± 0.63 (5.0-8.0) years. Height SDS was higher in the puberty and puberty variant groups compared with the healthy group. This difference was found to be statistically significant between the CPP and HC groups. Obesity was present in 20 of all participants (13 %). AMH levels were 0.125 ± 0.154, 0.086 ± 0.072, 0.084 ± 0.074, and 0.069 ± ;0.060 ng/mL in PA, PT, CPP, and HC groups, respectively. Although AMH levels were higher in the PA group, there was no statistically significant difference among the four groups. A weak negative correlation was found between AMH levels and BMI SDS (body mass index standard deviation score).\n\nAMH levels do not differ between prepubertal girls and those diagnosed with central precocious puberty or a variant of puberty of the same age.",
+   "journal": "Journal of pediatric endocrinology & metabolism : JPEM",
+   "journal_abbr": "J Pediatr Endocrinol Metab",
+   "authors": [
+    "Hepokur MN",
+    "Çamaş AÖ",
+    "Taniş G",
+    "Çiçek B",
+    "Kaygusuz SB",
+    "İşman FK",
+    "Emeksiz HC"
+   ],
+   "doi": "10.1515/jpem-2026-0340",
+   "pub_date": "2026-09-21",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "anti-Müllerian hormone",
+    "precocious puberty",
+    "premature adrenarche",
+    "premature thelarche"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42763793/",
+   "doi_url": "https://doi.org/10.1515/jpem-2026-0340",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Puberty",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Other",
+   "ev_level": 5,
+   "impact": "LOW",
+   "age_range": [
+    "Child",
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 153,
+   "tags": [
+    "#Puberty"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "A weak negative correlation was found between AMH levels and BMI SDS (body mass index standard deviation score). AMH levels do not differ between prepubertal girls and those diagnosed with central precocious puberty or a variant of puberty of the same age.",
+   "impact_rationale": "Other on Puberty. Background reading for clinical awareness.",
+   "review_date": "2026-09-27",
+   "review_period": "September 2026",
    "is_new": true,
    "is_archived": false
   }
  ],
- "last_run_date": "2026-09-20"
+ "last_run_date": "2026-09-27"
 }
