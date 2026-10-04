@@ -6,6 +6,32 @@ git history (33 commits to that date) and the dated sections formerly in `MEMORY
 
 ---
 
+### [2026-10-04] weekly-refresh
+
+Window 2026-09-20 -> 2026-10-04 (`pdat`), all 19 journals queried, **no errors** (searches run
+in batches of 4-5; no rate limits hit). 0 results (normal): Pediatr Diabetes, J Clin Res
+Pediatr Endocrinol, Endocr Rev, Front Endocrinol (Lausanne), Ann Pediatr Endocrinol Metab.
+93 unique PMIDs returned; 57 already in the store, so metadata was fetched only for the 36 not
+yet stored (all 36 with abstracts). 5 excluded, **31 new articles added** (store 1602 -> 1633
+active, 0 archived).
+
+- **2 PRACTICE-ALTERING:**
+  - *Less can be more: the 2026 Endocrine Society Guideline for precision care in central
+    precocious puberty* (Lancet Diabetes Endocrinol, PMID 42546728).
+  - Moroccan acid sphingomyelinase deficiency case series (JPEM, PMID 42800888). **Rating looks
+    inflated**: a single-country case series whose title opens "From guidelines to real-world
+    practice" likely tripped the guideline signal. Classifier follow-up.
+- **2 HIGH:** premeal insulin timing and myocardial microvascular flow in T1D (Diabetologia,
+  PMID 42432283); multimodal metformin/inositol/diet in PCOS (Clin Endocrinol, PMID 42517336,
+  title says "women", so adult-only filter may have missed it).
+- 8 MODERATE, including GAD-alum delayed stage 3 T1D in HLA-DR3-DQ2 children (Diabetologia,
+  PMID 42806034), prophylactic thyroidectomy morbidity in children (Thyroid, PMID 42565336),
+  and the DiaBuddy pediatric decision-support pilot (Horm Res Paediatr, PMID 42821504). 19 LOW.
+- Topic split of the 31: Diabetes 18, PCOS 3, Thyroid 2, Pituitary 2, Genetics 2, Puberty 1,
+  DSD 1, General Endocrinology 1, Growth 1.
+- **Exclusions fired (5):** 4 adult-only, 1 erratum/retraction. Excluded PMIDs: 41816915,
+  41997891, 42366646, 42611023, 42786775 (the last a repeat from last week's window).
+
 ### [2026-09-27] weekly-refresh
 
 Window 2026-09-13 -> 2026-09-27 (`pdat`), all 19 journals queried, **no errors** (3 searches
