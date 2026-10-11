@@ -6,6 +6,23 @@ git history (33 commits to that date) and the dated sections formerly in `MEMORY
 
 ---
 
+### [2026-10-11] weekly-refresh
+
+Window 2026-09-27 -> 2026-10-11 (`pdat`), all 19 journals queried, **no errors**. 0 results
+(normal): Pediatr Diabetes, J Clin Res Pediatr Endocrinol, Endocr Rev, Nat Rev Endocrinol,
+Front Endocrinol (Lausanne). 96 unique PMIDs returned; 58 already in the store, so metadata was
+fetched only for the 38 not yet stored. 7 excluded (3 adult-only, 2 dialysis hard-exclude,
+2 erratum), **31 new articles added** (store 1633 -> 1664 active, 0 archived). Both build
+scripts exited 0; store grew.
+
+- **1 PRACTICE-ALTERING:** *Expert Recommendations on Insulin Injection Technique and Education
+  for the Pediatric and Young Adult Population* (Horm Res Paediatr, PMID 42842500).
+- 12 MODERATE, 18 LOW. Topic split of the 31: Diabetes 10, Growth 6, Adrenal 4, Thyroid 4,
+  Bone/Mineral 2, Pituitary 2, Cancer Late Effects 1, DSD 1, General Endocrinology 1.
+- Note: PMID 41816915 (adult T1D digital twin study) and 41997891 (adult T2D) entered via
+  Diabetes Technol Ther / Diabetes Care (unfiltered or loosely filtered); check whether the
+  adult-only filter should have caught them.
+
 ### [2026-10-04] weekly-refresh
 
 Window 2026-09-20 -> 2026-10-04 (`pdat`), all 19 journals queried, **no errors** (searches run

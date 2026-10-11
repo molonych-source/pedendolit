@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-04T08:06:23",
+ "generated": "2026-10-11T08:06:23",
  "review_period": "October 2026",
  "articles": [
   {
@@ -112553,7 +112553,7 @@
    "impact_rationale": "Observational study on Diabetes. Cohort size n = 2178. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -112637,7 +112637,7 @@
    "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -112710,7 +112710,7 @@
    "impact_rationale": "Observational study on Diabetes. Cohort size n = 560. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -112797,7 +112797,7 @@
    "impact_rationale": "Randomized controlled trial (n not reported). Level II evidence with direct applicability to clinical decision-making.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -112867,7 +112867,7 @@
    "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -112943,7 +112943,7 @@
    "impact_rationale": "Randomized controlled trial (n not reported). Level II evidence with direct applicability to clinical decision-making.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -112994,7 +112994,7 @@
    "impact_rationale": "Official guideline or consensus statement from ES. Directly informs clinical protocols and management standards.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -113089,7 +113089,7 @@
    "impact_rationale": "Observational study on Thyroid. Cohort size n not reported. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -113136,7 +113136,7 @@
    "impact_rationale": "Expert letter or commentary. No new primary data; provides perspective on Diabetes but does not independently change practice.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -113208,7 +113208,7 @@
    "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -113303,7 +113303,7 @@
    "impact_rationale": "Observational study on Thyroid. Cohort size n = 22. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -113362,7 +113362,7 @@
    "impact_rationale": "Observational/Cohort on Pituitary. Background reading for clinical awareness.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -113421,7 +113421,7 @@
    "impact_rationale": "Observational study on PCOS. Cohort size n = 1533. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -113481,7 +113481,7 @@
    "impact_rationale": "Observational/Cohort on PCOS. Background reading for clinical awareness.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -113552,7 +113552,7 @@
    "impact_rationale": "Official guideline or consensus statement. Directly informs clinical protocols and management standards.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -113640,7 +113640,7 @@
    "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -113700,7 +113700,7 @@
    "impact_rationale": "Observational study on Diabetes. Cohort size n = 25. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -113762,7 +113762,7 @@
    "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -113819,7 +113819,7 @@
    "impact_rationale": "Expert letter or commentary. No new primary data; provides perspective on Diabetes but does not independently change practice.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -113874,7 +113874,7 @@
    "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -113945,7 +113945,7 @@
    "impact_rationale": "Other on Genetics. Background reading for clinical awareness.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -114006,7 +114006,7 @@
    "impact_rationale": "Cross-Sectional on DSD. Background reading for clinical awareness.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -114066,7 +114066,7 @@
    "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -114113,7 +114113,7 @@
    "impact_rationale": "Expert letter or commentary. No new primary data; provides perspective on General Endocrinology but does not independently change practice.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -114173,7 +114173,7 @@
    "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -114236,7 +114236,7 @@
    "impact_rationale": "Observational/Cohort on Growth. Background reading for clinical awareness.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -114293,7 +114293,7 @@
    "impact_rationale": "Expert letter or commentary. No new primary data; provides perspective on Diabetes but does not independently change practice.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -114346,7 +114346,7 @@
    "impact_rationale": "Observational study on Diabetes. Cohort size n not reported. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -114399,7 +114399,7 @@
    "impact_rationale": "Small case series. Hypothesis-generating but lacks the power to guide practice changes in Pituitary.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -114454,7 +114454,7 @@
    "impact_rationale": "Observational study on Diabetes. Cohort size n = 37. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -114537,9 +114537,1913 @@
    "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-10-04",
    "review_period": "October 2026",
+   "is_new": false,
+   "is_archived": false
+  },
+  {
+   "pmid": "42834487",
+   "title": "Diabetes knowledge and its association with glycemic control in childhood-onset type 1 diabetes.",
+   "abstract": "Type 1 diabetes (T1D) requires lifelong insulin therapy and structured diabetes education. We examined the association between diabetes knowledge and glycemic control in Korean patients with childhood-onset T1D.\n\nThis single-center retrospective study included patients (aged 9-23 years) diagnosed with T1D before the age of 18 and followed at our pediatric endocrinology clinic. Patients and caregivers completed a structured 45-item diabetes knowledge questionnaire covering 10 domains. A weighted mean knowledge score was calculated based on patient and caregiver contribution rates. Participants were categorized by hemoglobin A1c (HbA1c) into tight, optimal, and suboptimal control groups. Group differences were compared. Multinomial logistic regression analysis was used to assess associations between domain-specific knowledge and glycemic control.\n\nSixty-one patients were included (median age, 15.9 years; median HbA1c, 6.6%). Mean diabetes knowledge score (2.79±0.53) did not differ significantly between groups. Significant differences were limited to the insulin delivery, hypoglycemia management, and stress management domains. Higher knowledge scores for insulin delivery were independently associated with tight glycemic control (adjusted odds ratio [aOR], 4.18; 95% confidence interval [CI], 1.00-17.45). Hypoglycemia management knowledge showed a higher association with optimal glycemic control (aOR, 21.98; 95% CI, 1.68-287.72).\n\nIn patients with childhood-onset T1D, glycemic control was more closely related to knowledge domains supporting real-life application than to overall knowledge. Higher insulin delivery knowledge was associated with tight glycemic control, whereas higher hypoglycemia management knowledge was associated with optimal as compared with suboptimal control. These associations suggest a potential role for practice-oriented education in diabetes care.",
+   "journal": "Annals of pediatric endocrinology & metabolism",
+   "journal_abbr": "Ann Pediatr Endocrinol Metab",
+   "authors": [
+    "Lee H",
+    "Lee H",
+    "Yang M",
+    "Koo J",
+    "Park S",
+    "Park S",
+    "Kim HY",
+    "Kim J"
+   ],
+   "doi": "10.6065/apem.2652160.080",
+   "pub_date": "2026-10-04",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "Education",
+    "Glycemic control",
+    "Knowledge",
+    "Questionnaire",
+    "Type 1 diabetes"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42834487/",
+   "doi_url": "https://doi.org/10.6065/apem.2652160.080",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "General",
+   "diabetes_subtype": "T1D",
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "LOW",
+   "age_range": [
+    "Child"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Higher insulin delivery knowledge was associated with tight glycemic control, whereas higher hypoglycemia management knowledge was associated with optimal as compared with suboptimal control. These associations suggest a potential role for practice-oriented education in diabetes care.",
+   "impact_rationale": "Observational/Cohort on Diabetes. Background reading for clinical awareness.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42834488",
+   "title": "Bone health and vitamin D status in Korean children with inflammatory bowel disease: a retrospective cohort study.",
+   "abstract": "[Abstract not available]",
+   "journal": "Annals of pediatric endocrinology & metabolism",
+   "journal_abbr": "Ann Pediatr Endocrinol Metab",
+   "authors": [
+    "Kim YK",
+    "Yoo JE",
+    "Kim JY",
+    "Cho KW",
+    "Kim SJ",
+    "Kim S",
+    "Choi Y",
+    "Song K",
+    "Lee EB",
+    "Chae HW",
+    "Lee EJ",
+    "Suh J"
+   ],
+   "doi": "10.6065/apem.2652154.077",
+   "pub_date": "2026-10-04",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42834488/",
+   "doi_url": "https://doi.org/10.6065/apem.2652154.077",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Bone/Mineral",
+   "subtopic": "Vitamin D/Rickets",
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "LOW",
+   "age_range": [
+    "Child"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#BoneMineral"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "[Abstract not available]",
+   "impact_rationale": "Observational/Cohort on Bone/Mineral. Background reading for clinical awareness.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42834489",
+   "title": "Diagnostic utility of IGF-1/IGFBP-3 ratio and the insulin tolerance test in diagnosing growth hormone deficiency.",
+   "abstract": "Diagnosing Growth Hormone Deficiency (GHD) is challenging due to pulsatile GH secretion and high false-positive rates in traditional stimulation tests. This study evaluates the diagnostic utility of the IGF-1/IGFBP-3 molar ratio as a complementary tool to the gold-standard Insulin Tolerance Test (ITT).\n\nA retrospective study analyzed 225 pediatric patients (aged 2-18) evaluated for short stature between 2015 and 2025. Confirmed GHD required a peak GH < 7 ng/mL across two provocation tests and a positive response to rhGH therapy. Serum IGF-1 and IGFBP-3 levels were quantified to calculate the molar ratio standard deviation score (SDS).\n\nThe cohort included 82 GHD and 143 non-GHD subjects. The mean IGF-1/IGFBP-3 molar ratio SDS was significantly lower in the GHD group compared to non-GHD (-1.6 ± 1.1) vs (-1.1 ± 1.1). Integrating the molar ratio SDS with ITT significantly enhanced diagnostic specificity. A threshold of < -1 SDS yielded 79.2% sensitivity and 82.7% specificity. A stricter < -2 SDS threshold elevated specificity to 93% (77% overall accuracy). In standalone ROC analysis, the overall AUC for the molar ratio SDS was 0.627, with the optimal -2 SDS threshold yielding a sensitivity of 45.3% and a specificity of 80.2%.\n\nStratifying the ITT with the IGF-1/IGFBP-3 molar ratio mitigates GHD over-diagnosis. The < -2 SDS threshold's high specificity ensures hormone replacement therapy is accurately targeted, advancing precision medicine for pediatric growth disorders.",
+   "journal": "Annals of pediatric endocrinology & metabolism",
+   "journal_abbr": "Ann Pediatr Endocrinol Metab",
+   "authors": [
+    "Thongsukkaeo S",
+    "Srilanchakon K"
+   ],
+   "doi": "10.6065/apem.2652146.073",
+   "pub_date": "2026-10-04",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "Growth hormone deficiency",
+    "IGF-1/IGFBP-3 ratio",
+    "Insulin tolerance test"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42834489/",
+   "doi_url": "https://doi.org/10.6065/apem.2652146.073",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Growth",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "LOW",
+   "age_range": [
+    "Child"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Growth"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Stratifying the ITT with the IGF-1/IGFBP-3 molar ratio mitigates GHD over-diagnosis. The < -2 SDS threshold's high specificity ensures hormone replacement therapy is accurately targeted, advancing precision medicine for pediatric growth disorders.",
+   "impact_rationale": "Observational/Cohort on Growth. Background reading for clinical awareness.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42834490",
+   "title": "Insulin-secreting pancreatic neuroendocrine tumor presenting with hypoglycemia in a patient with a paternally inherited ABCC8 variant: a case report and literature review.",
+   "abstract": "[Abstract not available]",
+   "journal": "Annals of pediatric endocrinology & metabolism",
+   "journal_abbr": "Ann Pediatr Endocrinol Metab",
+   "authors": [
+    "Yoo B",
+    "Lee JE",
+    "Kim HY",
+    "Shin CH",
+    "Lee YA",
+    "Lee YJ"
+   ],
+   "doi": "10.6065/apem.2652114.057",
+   "pub_date": "2026-10-04",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42834490/",
+   "doi_url": "https://doi.org/10.6065/apem.2652114.057",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "General",
+   "diabetes_subtype": "MODY/Monogenic",
+   "study_type": "Other",
+   "ev_level": 5,
+   "impact": "LOW",
+   "age_range": [
+    "Adult"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "[Abstract not available]",
+   "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42834491",
+   "title": "Clinical Characteristics and Temporal Trends of Pediatric Diabetes Subtypes Over 20 Years in a Tertiary Center in Korea.",
+   "abstract": "Differentiating diabetes subtypes is essential for long-term management; however, overlapping features among type 1 diabetes (T1D), type 2 diabetes (T2D), and maturity-onset diabetes of the young (MODY) complicate diagnosis. Clinical characteristics and temporal trends according to childhood-onset diabetes subtype were investigated over a 20-year period.\n\nWe retrospectively reviewed 662 patients diagnosed with T1D, T2D, or MODY at Seoul National University Children's Hospital between 2003 and 2022 at ages ≥6 months and <19 years, excluding secondary and other specific forms. Subtypes were classified based on autoantibody status, insulin dependence, adiposity, family history, and genetic testing.\n\nOf patients, 477 (72.1%) had T1D, 143 (21.6%) had T2D, and 39 (5.9%) had MODY; 3 had coexisting T1D and MODY. Ten patients underwent diabetes subtype reclassification during follow-up. T1D was associated with more frequent diabetic ketoacidosis (DKA) and less family history than T2D or MODY (both P < 0.001). T2D showed higher BMI z-scores and a greater prevalence of overweight and obesity (both P < 0.001). The proportion of T2D increased over time (P for trend < 0.001), whereas MODY remained stable (P for trend = 0.116). Among 21 genetically confirmed MODY cases, GCK variants were the most common, followed by HNF1A variants.\n\nOver the 20-year study period, the proportion of T2D increased among children and adolescents. Expanded insurance coverage for autoantibody testing, along with more affordable access to next-generation sequencing (NGS) panels when clinically indicated, may facilitate earlier and more accurate diagnosis and enable individualized treatment.",
+   "journal": "Annals of pediatric endocrinology & metabolism",
+   "journal_abbr": "Ann Pediatr Endocrinol Metab",
+   "authors": [
+    "Song US",
+    "Lee YJ",
+    "Shin CH",
+    "Lee YA"
+   ],
+   "doi": "10.6065/apem.2652112.056",
+   "pub_date": "2026-10-04",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "Adolescent",
+    "Child",
+    "Genetic testing",
+    "Maturity-onset diabetes of the young",
+    "Type 1 diabetes mellitus",
+    "Type 2 diabetes mellitus"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42834491/",
+   "doi_url": "https://doi.org/10.6065/apem.2652112.056",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "General",
+   "diabetes_subtype": "MODY/Monogenic",
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "MODERATE",
+   "age_range": [
+    "Child",
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 662,
+   "tags": [
+    "#Diabetes",
+    "#Genetics"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Over the 20-year study period, the proportion of T2D increased among children and adolescents. Expanded insurance coverage for autoantibody testing, along with more affordable access to next-generation sequencing (NGS) panels when clinically indicated, may facilitate earlier and more accurate diagnosis and enable individualized treatment.",
+   "impact_rationale": "Observational study on Diabetes. Cohort size n = 662. Clinically informative but limited by non-randomized design.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42834492",
+   "title": "Risk factors for recurrence in pediatric craniopharyngioma: impact of extensive tumor involvement and growth hormone therapy in a multicenter cohort.",
+   "abstract": "Craniopharyngioma is a benign sellar tumor that accounts for 4%-9% of pediatric intracranial tumors and is associated with substantial endocrine morbidity. It has a high recurrence rate, and several predictors have been reported; however, these risk factors have not been fully consistent across studies. This study evaluated clinically relevant risk factors for recurrence in pediatric craniopharyngioma using a multicenter cohort.\n\nThis retrospective study included patients diagnosed with craniopharyngioma before 18 years of age at 10 institutions in Korea. Clinical characteristics, magnetic resonance imaging (MRI) findings at diagnosis, postoperative hormonal test results, and growth hormone treatment (GHT) were evaluated.\n\nA total of 254 patients were analyzed. The median age at diagnosis was 8.21 years (IQR, 5.20-11.28), and the median follow-up duration was 11.22 years (6.32-16.60). Tumor recurrence occurred in 66 patients (26.0%) after a median of 3.12 years (2.17-5.08). Among these patients, 45 experienced one recurrence, 15 experienced two recurrences, four experienced three recurrences, and two experienced five recurrences. In multivariate analysis, extensive tumor involvement on MRI at diagnosis-defined as involvement of the sphenoid sinus, frontal base, or brainstem-was significantly associated with recurrence (hazard ratio=6.16, p=0.038). Postoperative GHT was not significantly associated with recurrence (p=0.671).\n\nExtensive radiologic tumor involvement at diagnosis may be a predictor of recurrence in pediatric craniopharyngioma, whereas postoperative GHT was not associated with an increased risk of recurrence. These real-world findings highlight the importance of careful surveillance in patients with extensive tumor involvement and may help guide clinical decision-making regarding GHT.",
+   "journal": "Annals of pediatric endocrinology & metabolism",
+   "journal_abbr": "Ann Pediatr Endocrinol Metab",
+   "authors": [
+    "Ahn YJ",
+    "Suh J",
+    "Ahn MB",
+    "Choi JH",
+    "Kim CJ",
+    "Kim J",
+    "Moon JE",
+    "Cheon CK",
+    "Kang MJ",
+    "Lee YA",
+    "Cho SY"
+   ],
+   "doi": "10.6065/apem.2652110.055",
+   "pub_date": "2026-10-04",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "Craniopharyngioma",
+    "Growth hormone",
+    "Pediatrics",
+    "Recurrence",
+    "Risk factor"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42834492/",
+   "doi_url": "https://doi.org/10.6065/apem.2652110.055",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Pituitary",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "MODERATE",
+   "age_range": [
+    "Child"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 254,
+   "tags": [
+    "#Pituitary"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Extensive radiologic tumor involvement at diagnosis may be a predictor of recurrence in pediatric craniopharyngioma, whereas postoperative GHT was not associated with an increased risk of recurrence. These real-world findings highlight the importance of careful surveillance in patients with extensive tumor involvement and may help guide clinical decision-making regarding GHT.",
+   "impact_rationale": "Observational study on Pituitary. Cohort size n = 254. Clinically informative but limited by non-randomized design.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42834493",
+   "title": "Final adult height in patients with congenital adrenal hyperplasia due to 21-hydroxylase deficiency.",
+   "abstract": "Congenital adrenal hyperplasia (CAH) due to 21-hydroxylase deficiency (21OHD) can impair linear growth and reduce final adult height (FAH). However, long-term growth outcomes have not been well characterized in Asian populations. This study evaluated FAH and identified clinical and treatment-related factors associated with short stature and height gain in Korean patients with 21OHD.\n\nThis retrospective multicenter cohort study included 119 patients with 21OHD (59 males, 60 females) who reached FAH. Logistic regression identified risk factors for short stature. The effect of gonadotropin-releasing hormone agonist (GnRHa) therapy was analyzed in a subgroup of 55 patients.\n\nMean FAH was 165.0 ± 7.9 cm (-1.68 ± 1.38 SDS) in males and 155.1 ± 6.9 cm (-1.25 ± 1.43 SDS) in females. Short stature was observed in 31.9% of patients. Patients with the non-classic phenotype had lower FAH than those with the salt-wasting form. Central precocious puberty (CPP) was associated with an increased risk of short stature (odds ratio [OR], 4.19; 95% confidence interval [CI], 1.19-14.73; p=0.03), whereas later year of birth (OR, 0.85; 95% CI, 0.78-0.92; p<0.001) and growth hormone therapy (OR, 0.26; 95% CI, 0.08-0.85; p=0.02) were protective. Among patients treated with GnRHa, FAH was greater than the predicted adult height at treatment initiation (-1.33 vs -1.66 SDS, p < 0.05).\n\nDespite conventional treatment, FAH is significantly lower than the general population mean in Korean patients with 21OHD (-1.68 SDS in males and -1.25 SDS in females), particularly in those with CPP or delayed diagnosis. Early detection and adjunctive therapies may improve growth outcomes.",
+   "journal": "Annals of pediatric endocrinology & metabolism",
+   "journal_abbr": "Ann Pediatr Endocrinol Metab",
+   "authors": [
+    "Sung J",
+    "Kim I",
+    "Im M",
+    "Ahn YJ",
+    "Kim M",
+    "Choi M",
+    "Chung YL",
+    "Moon J",
+    "Suh J",
+    "Lim HH",
+    "Ahn MB",
+    "Kim CJ",
+    "Lee HS",
+    "Kang E",
+    "Lee YA",
+    "Lee YJ",
+    "Cho SY"
+   ],
+   "doi": "10.6065/apem.2652108.054",
+   "pub_date": "2026-10-03",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "21-Hydroxylase deficiency",
+    "Congenital adrenal hyperplasia",
+    "Final adult height",
+    "Precocious puberty",
+    "Short stature"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42834493/",
+   "doi_url": "https://doi.org/10.6065/apem.2652108.054",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Adrenal",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "MODERATE",
+   "age_range": [
+    "Adult"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 119,
+   "tags": [
+    "#Adrenal",
+    "#Puberty"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Despite conventional treatment, FAH is significantly lower than the general population mean in Korean patients with 21OHD (-1.68 SDS in males and -1.25 SDS in females), particularly in those with CPP or delayed diagnosis. Early detection and adjunctive therapies may improve growth outcomes.",
+   "impact_rationale": "Observational study on Adrenal. Cohort size n = 119. Clinically informative but limited by non-randomized design.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42834494",
+   "title": "Obesity in survivors of childhood cancer.",
+   "abstract": "Several studies reported previously increased risk for obesity in childhood cancer survivors (CCS). The objectives of this article were to evaluate the rate of overweight and obesity in CCS compared to the general population, to identify possible risk factors for obesity in these patients, and to assess changes in weight status over time.\n\nA historical cohort including all patients (n=820) treated at a tertiary center over a twenty-year period, who were diagnosed with cancer at age <18 years, and had at least one year of follow-up after completion of anti-cancer treatment.\n\nHigher rates of overweight/obesity were observed in the CCS cohort compared to the general population. Weight status at the time of diagnosis (OR=1.69 95%CI 1.38-2.07, p<0.01), endocrine dysfunctions (OR=1.46, 95%CI 1.08-1.98, p=0.01), and age at diagnosis were identified as significant risk factors for overweight/obesity in CCS. Treatment with radiation alone had a close to significant effect (OR=1.8 95%. CI 0.91-3.53, p=0.09) on overweight/obesity. Rates of overweight/obesity peaked 3-5 years after diagnosis (OR=1.3, 95% CI 1.11-1.53, p<0.01) and declined thereafter.\n\nBetter understanding of possible risk factors and characterization of high-risk groups of patients may assist in planning appropriate interventions that might decrease obesity and related morbidity in CCS.",
+   "journal": "Annals of pediatric endocrinology & metabolism",
+   "journal_abbr": "Ann Pediatr Endocrinol Metab",
+   "authors": [
+    "Helin M",
+    "Zaslavsky-Paltiel I",
+    "Ben-Ami M",
+    "Stern E",
+    "Toren A",
+    "Lerner L",
+    "Modan-Moses D"
+   ],
+   "doi": "10.6065/apem.2652102.051",
+   "pub_date": "2026-10-03",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "Chemotherapy",
+    "Childhood cancer survivors",
+    "Endocrine deficiencies",
+    "Irradiation",
+    "Obesity"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42834494/",
+   "doi_url": "https://doi.org/10.6065/apem.2652102.051",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Cancer Late Effects",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "MODERATE",
+   "age_range": [
+    "Child",
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 820,
+   "tags": [
+    "#CancerLateEffects",
+    "#Obesity"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Rates of overweight/obesity peaked 3-5 years after diagnosis (OR=1.3, 95% CI 1.11-1.53, p<0.01) and declined thereafter. Better understanding of possible risk factors and characterization of high-risk groups of patients may assist in planning appropriate interventions that might decrease obesity and related morbidity in CCS.",
+   "impact_rationale": "Observational study on Cancer Late Effects. Cohort size n = 820. Clinically informative but limited by non-randomized design.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42835423",
+   "title": "Late recovery from chronic arginine vasopressin deficiency: a multicenter retrospective case-control study.",
+   "abstract": "Arginine vasopressin deficiency (AVP-D), caused by hypothalamic/pituitary damage from tumor or surgery, can be transient or chronic. Chronic AVP-D is thought to be permanent though emergent research indicates the possibility of late recovery. Little is known about clinical characteristics that predict late recovery from chronic AVP-D.\n\nDescribe characteristics associated with late recovery from chronic AVP-D.\n\nMulticenter, retrospective case-control study of AVP-D Recovered (n = 18) vs AVP-D Non-recovered (n = 36; matched for sex and disease duration).\n\nClinical characteristics assessed at hypothalamic/pituitary disease diagnosis, AVP-D diagnosis, AVP-D recovery, and most recent clinical evaluation. We also present characteristics of three pediatric cases with AVP-D recovery.\n\nAt diagnosis of hypothalamic/pituitary disease, AVP-D Recovered, compared to AVP-D Non-recovered, were older (45 ± 19 vs 33 ± 13 years,= .006) and more likely to have functioning pituitary tumors (33.3% vs 8.3%,= .05). Following diagnosis of AVP-D, AVP-D Recovered received lower total daily doses of desmopressin (100 [IQR; 50, 100] vs 200 [100, 200] µg oral or equivalent,= .01). Recovery occurred after a median of 6.3 years [1.7, 12.0] and occurred earlier in those without hypothyroidism (= .049) or adrenal insufficiency at diagnosis of AVP-D (= .008).\n\nOur study supports the notion that chronic AVP-D may not be permanent across the lifespan. Continued requirement for desmopressin, particularly in those with a history of functioning pituitary tumors, low doses of desmopressin, and without concurrent hypothyroidism or adrenal insufficiency at diagnosis, should be regularly reassessed.",
+   "journal": "Journal of the Endocrine Society",
+   "journal_abbr": "J Endocr Soc",
+   "authors": [
+    "Sailer CO",
+    "Galbiati F",
+    "Aulinas A",
+    "Muhammed M",
+    "Boutin R",
+    "Bourassa J",
+    "Atila C",
+    "Crowley J",
+    "Dayno A",
+    "Pearlstein H",
+    "Nachtigall LB",
+    "Miller KK",
+    "Tritos NA",
+    "Kaiser UB",
+    "McCormack SE",
+    "Christ-Crain M",
+    "Dichtel LE",
+    "Lawson EA"
+   ],
+   "doi": "10.1210/jendso/bvag211",
+   "pub_date": "2026-09-16",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "arginine vasopressin deficiency",
+    "central diabetes insipidus",
+    "desmopressin",
+    "pituitary hormone deficiency"
+   ],
+   "volume": "10",
+   "issue": "10",
+   "pages": "bvag211",
+   "pmc": "PMC13635868",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42835423/",
+   "doi_url": "https://doi.org/10.1210/jendso/bvag211",
+   "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13635868/",
+   "excluded": false,
+   "topic": "Pituitary",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "MODERATE",
+   "age_range": [
+    "Child"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 18,
+   "tags": [
+    "#Pituitary",
+    "#Adrenal"
+   ],
+   "access": "Open",
+   "clinical_bottom_line": "Our study supports the notion that chronic AVP-D may not be permanent across the lifespan. Continued requirement for desmopressin, particularly in those with a history of functioning pituitary tumors, low doses of desmopressin, and without concurrent hypothyroidism or adrenal insufficiency at diagnosis, should be regularly reassessed.",
+   "impact_rationale": "Observational study on Pituitary. Cohort size n = 18. Clinically informative but limited by non-randomized design.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42836443",
+   "title": "Testosterone Replacement Therapy in Adolescents and Young Adults With Prader-Willi Syndrome: Efficacy and Effects on Behaviour.",
+   "abstract": "Hypogonadism in Prader-Willi syndrome (PWS) is associated with decreased bone mineral density (BMD) in male adolescents and adults. Testosterone Replacement Therapy (TRT) improves BMD and sexual maturation, but TRT could aggravate pre-existing challenging behaviour in male patients with PWS.\n\nTo investigate the effect of TRT on behaviour, BMD and body composition in adolescents and young adults with PWS.\n\nLongitudinal observational study in a Dutch PWS cohort.\n\nFifty-nine male patients with PWS on growth hormone treatment, aged > 14 years.\n\nBehaviour was assessed by the Developmental Behaviour Checklist-Parents(DBC-P). Dual energy X-ray absorptiometry scans were performed, measuring BMD of the lumbar spine (BMD) and total body (BMD), lean body mass (LBM) and fat mass percentage (FM%).\n\n59 patients with a median (IQR) age of 22.57 (18.46-26.35) years, of which 44 used TRT. Median age at TRT initiation was 16.6 years. Three patients (6.8%) discontinued TRT permanently due to challenging behaviour. In 30 patients (68.2%), there was no behaviour necessitating a dose change or discontinuation. DBC-P total score did not significantly change during TRT. BMD SDS stabilised following TRT initiation, with a mean (95% CI) BMD SDS difference from baseline of 0.24 (-0.06 to 0.54; p = 0.107) BMDand -0.28 (-0.50 to -0.06; p = 0.014) BMDafter 5 years. LBM SDS improved and FM% SDS remained similar.\n\nUnder close surveillance, TRT is an efficacious method to maintain BMD and improve body composition in hypogonadal male patients with PWS, with minor effects on behaviour in most cases.",
+   "journal": "Clinical endocrinology",
+   "journal_abbr": "Clin Endocrinol (Oxf)",
+   "authors": [
+    "Flamman WR",
+    "Trueba-Timmermans DJ",
+    "Grootjen LN",
+    "de Graaff LCG",
+    "Geelen JM",
+    "van der Velden JAEM",
+    "Rings EHHM",
+    "Hokken-Koelega ACS",
+    "Kerkhof GF"
+   ],
+   "doi": "10.1111/cen.70213",
+   "pub_date": "2026-10-06",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "Prader‐Willi Syndrome",
+    "behaviour",
+    "hypogonadism",
+    "puberty",
+    "testosterone"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42836443/",
+   "doi_url": "https://doi.org/10.1111/cen.70213",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Growth",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "LOW",
+   "age_range": [
+    "Adolescent",
+    "Transition"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 59,
+   "tags": [
+    "#Growth",
+    "#BoneMineral"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "LBM SDS improved and FM% SDS remained similar. Under close surveillance, TRT is an efficacious method to maintain BMD and improve body composition in hypogonadal male patients with PWS, with minor effects on behaviour in most cases.",
+   "impact_rationale": "Observational/Cohort on Growth. Background reading for clinical awareness.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42839825",
+   "title": "Congenital Adrenal Hyperplasia due to Proximal Steroidogenic Defects: A Single-Centre Experience From New Delhi.",
+   "abstract": "Variants in STAR, encoding Steroidogenic Acute Regulatory (StAR) protein, and CYP11A1, encoding the cholesterol Side-Chain Cleavage (SCC) enzyme, result in proximal steroidogenic defects. These are classically described as presenting with neonatal-onset primary adrenal insufficiency, with the additional finding of sex reversal in 46,XY newborns. However, the phenotypic spectrum is much wider. The present study aimed at describing the phenotypic heterogeneity and genotypes of patients with STAR and CYP11A1 variants followed up at a tertiary care centre in India.\n\nHospital records of all patients with variants in STAR and CYP11A1 who were followed up at the Paediatric Endocrinology division of a tertiary care hospital between January 2018 and January 2026 were reviewed for clinical details and genotypes.\n\nVariants in STAR and CYP11A1 were identified in four patients each. Among patients with variants in STAR, two had homozygous pathogenic/likely pathogenic variants, while two had two heterozygous variants; phase undetermined [of which one was a variant of uncertain significance (VUS)]. The presenting features were salt-wasting crisis (n = 3, at ages 2 years, 5 years and Day 15, respectively) and atypical genitalia (n = 1). Among patients with variants in CYP11A1, one had two heterozygous variants; phase undetermined (of which one was a VUS), while three had homozygous VUSs. The presentation ranged from adrenal crisis (n = 1, at 3.8 years) and salt-wasting crisis (n = 1, at 10 months) to progressive hyperpigmentation (n = 2, at ages 6.5 years and 21.9 years, respectively). None of the patients had genital ambiguity, while one patient presented with 46,XY sex reversal.\n\nThe present study highlights the wide phenotypic spectrum associated with STAR and CYP11A1 variants, ranging from classical neonatal salt-wasting crisis with 46,XY sex reversal, to isolated primary adrenal insufficiency, or isolated undervirilisation, with later emergence of gluco- and mineralocorticoid deficiency.",
+   "journal": "Clinical endocrinology",
+   "journal_abbr": "Clin Endocrinol (Oxf)",
+   "authors": [
+    "Priyadarshini S",
+    "Gupta P",
+    "Verma A",
+    "Sharma R",
+    "Jain V"
+   ],
+   "doi": "10.1111/cen.70212",
+   "pub_date": "2026-10-07",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "CAH",
+    "CYP11A1",
+    "DSD",
+    "LCAH",
+    "STAR",
+    "adrenal insufficiency",
+    "atypical genitalia",
+    "differences in sex development",
+    "disorders of sex development",
+    "lipoid adrenal hyperplasia"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42839825/",
+   "doi_url": "https://doi.org/10.1111/cen.70212",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Adrenal",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Other",
+   "ev_level": 5,
+   "impact": "LOW",
+   "age_range": [
+    "Neonatal",
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 3,
+   "tags": [
+    "#Adrenal",
+    "#Genetics"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "None of the patients had genital ambiguity, while one patient presented with 46,XY sex reversal. The present study highlights the wide phenotypic spectrum associated with STAR and CYP11A1 variants, ranging from classical neonatal salt-wasting crisis with 46,XY sex reversal, to isolated primary adrenal insufficiency, or isolated undervirilisation, with later emergence of gluco- and mineralocorticoid deficiency.",
+   "impact_rationale": "Other on Adrenal. Background reading for clinical awareness.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42842317",
+   "title": "The molecular makeup of differentiated thyroid carcinoma in a free-standing children's hospital with a predominantly Hispanic population.",
+   "abstract": "Molecular testing is commonly used to guide thyroid cancer management in adults, but its role in adolescents remains unclear. This study examines the molecular profile of differentiated thyroid carcinoma (DTC) in a predominantly Hispanic pediatric population, aiming to correlate genetic variations with clinical behavior and improve treatment outcomes.\n\nA single-center retrospective study included 59 patients aged 8-20 years with DTC. Data on demographics, pathology, and molecular testing from surgical specimens were analyzed using analysis of variance (ANOVA) and chi-squared tests.\n\nAmong the 59 patients, the average age was 14 years, with 76.2 % female and 88.1 % Hispanic. Autoimmune thyroiditis was present in nearly half the cohort. Tumor sizes mainly ranged between 1 and 4 cm, and the classical subtype of DTC was the most common subtype. Molecular testing identified mutations in 37 out of 41 samples, the most prevalent beingand/PTC rearrangements. Extrathyroidal invasion and angioinvasion were especially notable among/PTC rearrangements. Lymph node metastases were more frequently observed in patients withand/PTC rearrangements. This suggests a possible association between mutation type and metastatic behavior despite the lack of a statistically significant difference between groups.\n\nIn this Hispanic pediatric cohort,and/PTC rearrangements were the most observed mutations.was associated with lymph node metastases and the classical papillary thyroid carcinoma subtype, whereas/PTC rearrangements exhibited more aggressive features like distant metastases. This study highlights the role of molecular profiling in understanding the unique molecular features of pediatric DTC across ethnically diverse populations.",
+   "journal": "Journal of pediatric endocrinology & metabolism : JPEM",
+   "journal_abbr": "J Pediatr Endocrinol Metab",
+   "authors": [
+    "Martinez Sanchez AG",
+    "Baboun D",
+    "Delgado E",
+    "Solano N",
+    "Alkhoury F",
+    "Restrepo R",
+    "Brathwaite CD",
+    "Carrillo A"
+   ],
+   "doi": "10.1515/jpem-2026-0083",
+   "pub_date": "2026-10-08",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "Hispanic population",
+    "differentiated thyroid carcinoma",
+    "molecular markers",
+    "pediatric thyroid cancer"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42842317/",
+   "doi_url": "https://doi.org/10.1515/jpem-2026-0083",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Thyroid",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "LOW",
+   "age_range": [
+    "Child",
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 59,
+   "tags": [
+    "#Thyroid"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "In this Hispanic pediatric cohort,and/PTC rearrangements were the most observed mutations.was associated with lymph node metastases and the classical papillary thyroid carcinoma subtype, whereas/PTC rearrangements exhibited more aggressive features like distant metastases. This study highlights the role of molecular profiling in understanding the unique molecular features of pediatric DTC across ethnically diverse populations.",
+   "impact_rationale": "Observational/Cohort on Thyroid. Background reading for clinical awareness.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42842326",
+   "title": "Long-term thyroid outcomes and thiol-disulfide homeostasis in childhood Hodgkin lymphoma survivors treated with neck radiotherapy.",
+   "abstract": "To evaluate long-term thyroid outcomes and thiol-disulfide homeostasis (TDH) in childhood Hodgkin lymphoma (HL) survivors treated with neck radiotherapy (RT).\n\nForty consecutive childhood HL survivors and 40 healthy controls were included. Thyroid function, autoimmunity markers, and ultrasonographic findings were evaluated in survivors. Native thiol, total thiol, disulfide, and related ratios were assessed in both groups. Factors associated with subclinical hypothyroidism and thyroid nodules were analyzed.\n\nSurvivors had a median age of 16.8 years (range, 5.1-33.2) and a median interval since RT of 4.6 years (range, 1.3-20.2). Seventeen survivors (42.5 %) had received >25 Gy neck RT. Subclinical hypothyroidism was identified in 18 survivors (45.0 %); 13 of these 18 (72.2 %) were receiving levothyroxine. Thyroid nodules were identified in seven survivors (17.5 %), with no thyroid malignancy detected. TDH parameters did not differ significantly between survivors and controls. In survivors, native thiol/total thiol and disulfide/total thiol ratios correlated significantly with free T4 and free T3 concentrations. Thyroid nodule presence was associated with longer time since RT (OR=1.354 per year).\n\nFunctional and structural thyroid abnormalities were frequent in childhood HL survivors treated with neck RT, supporting continued thyroid surveillance. Associations between TDH ratios and thyroid hormones in survivors remain exploratory and warrant evaluation in longitudinal studies.",
+   "journal": "Journal of pediatric endocrinology & metabolism : JPEM",
+   "journal_abbr": "J Pediatr Endocrinol Metab",
+   "authors": [
+    "Kasım MS",
+    "Genç DB",
+    "Ocak S",
+    "Kılıç ŞK",
+    "Ada Hİ",
+    "Neşelioğlu S",
+    "Eren F",
+    "Şimşek HÇ",
+    "Uçar A"
+   ],
+   "doi": "10.1515/jpem-2026-0544",
+   "pub_date": "2026-10-08",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "Hodgkin lymphoma",
+    "childhood cancer survivors",
+    "neck radiotherapy",
+    "thiol–disulfide homeostasis",
+    "thyroid dysfunction",
+    "thyroid nodules"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42842326/",
+   "doi_url": "https://doi.org/10.1515/jpem-2026-0544",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Thyroid",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Other",
+   "ev_level": 5,
+   "impact": "LOW",
+   "age_range": [
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Thyroid"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Functional and structural thyroid abnormalities were frequent in childhood HL survivors treated with neck RT, supporting continued thyroid surveillance. Associations between TDH ratios and thyroid hormones in survivors remain exploratory and warrant evaluation in longitudinal studies.",
+   "impact_rationale": "Other on Thyroid. Background reading for clinical awareness.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42842500",
+   "title": "Expert Recommendations on Insulin Injection Technique and Education for the Pediatric and Young Adult Population with Diabetes: FITTER Forward Youth.",
+   "abstract": "Rates of type 1 diabetes (T1D) and type 2 diabetes (T2D) in the pediatric population have risen over the past two decades. Insulin therapy remains critical for diabetes management, and proper injection technique has been shown to improve injection experience, glycemic management, and health outcomes. Youth with diabetes (YWD), ranging from infancy to young adulthood, require unique considerations for injection technique and education best practices due to their distinct physiological, developmental, emotional, psychological, and psychosocial needs relative to adults. Considering these needs, comprehensive recommendations addressing both physiological and behavioral health aspects of YWD are warranted. Nine pediatric diabetes specialists from five countries collaborated virtually to develop pediatric and young adult recommendations for proper injection technique updated from the adult-focused Forum for Injection Technique and Therapy Expert Recommendations (FITTER) Forward guidelines published in 2025. The resulting 'FITTER Forward Youth' recommendations address insulin initiation, injection technique, storage, injection method, and lipodystrophy. Psychosocial concerns for YWD and their caregivers, including diabetes distress, depressive symptoms, and anxiety, are also discussed. Additionally, technical and psychosocial education around insulin administration is key for YWD, their primary caregivers, and community-based secondary caregivers through daycare or school. Due to variable resources across geographical regions and socio-economic groups, FITTER Forward Youth also encompasses proper injection technique education for manual injection devices, which are typically more accessible than advanced diabetes technologies, such as insulin pumps and automated insulin delivery systems.",
+   "journal": "Hormone research in paediatrics",
+   "journal_abbr": "Horm Res Paediatr",
+   "authors": [
+    "Svensson J",
+    "Commissariat PV",
+    "Blanchette JE",
+    "Gardner D",
+    "Pellizzari M",
+    "Kalra S",
+    "Gabbay MAL",
+    "Maahs D"
+   ],
+   "doi": "10.1159/hrp/adaag036",
+   "pub_date": "2026-10-07",
+   "pub_types": [
+    "Journal Article",
+    "Review"
+   ],
+   "mesh_terms": [],
+   "keywords": [],
+   "volume": "",
+   "issue": "",
+   "pages": "1",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42842500/",
+   "doi_url": "https://doi.org/10.1159/hrp/adaag036",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "Technology",
+   "diabetes_subtype": "T1D",
+   "study_type": "Guideline/Consensus",
+   "ev_level": 1,
+   "impact": "PRACTICE-ALTERING",
+   "age_range": [
+    "Infant",
+    "Child",
+    "Adolescent",
+    "Transition"
+   ],
+   "society": [],
+   "board_relevant": 1,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes",
+    "#BoardRelevant",
+    "#Technology",
+    "#Guidelines"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Additionally, technical and psychosocial education around insulin administration is key for YWD, their primary caregivers, and community-based secondary caregivers through daycare or school. Due to variable resources across geographical regions and socio-economic groups, FITTER Forward Youth also encompasses proper injection technique education for manual injection devices, which are typically more accessible than advanced diabetes technologies, such as insulin pumps and automated insulin delivery systems.",
+   "impact_rationale": "Official guideline or consensus statement. Directly informs clinical protocols and management standards.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42844149",
+   "title": "Diabetes Care of Children With Type 1 Diabetes at School: Factors Related to the Choice of Care Location and Association With Glycemic Control.",
+   "abstract": "Type 1 diabetes (T1D) management in children requires a comprehensive approach tailored to developmental stages and school environments. This study investigated the locations of self-management behaviors at school, examining factors influencing location choice and their associations with glycemic control.\n\nThis multicenter, cross-sectional study analyzed 2018 registration data from 1,105 children with T1D attending schools or preschools in Japan. Associations among HbA1c, care behaviors, locations, treatment modalities, age, and sex were statistically evaluated.\n\nThe mean (SD) HbA1c was 8.01% (1.12%) (64.0 [12.2] mmol/mol). Care locations were the classroom (36.9%), designated rooms (52.6%), and the restroom (5.9%). HbA1c was significantly higher in the restroom group at 8.56% (0.98%) (70.1 [10.7] mmol/mol) than in the classroom group at 8.00% (1.20%) (63.9 [13.1] mmol/mol) and designated room group at 7.95% (1.08%) (63.4 [11.8] mmol/mol) (P < 0.001). Restroom use and omitting prelunch blood glucose monitoring were independently associated with higher HbA1c. Pump use, continuous glucose monitoring, and male sex predicted higher classroom use and lower restroom use. Joinpoint analysis showed that classroom use declined after age 6 (elementary school entry), whereas restroom use emerged from age 11 and spiked markedly at age 16 (20.8%), coinciding with high school entry, even among pump users.\n\nCare location choice shifts dynamically with age and school transitions, with restroom use being linked to poorer glycemic control. Supporting youth during school transitions requires targeted environmental adjustments and enhanced school-wide understanding to ensure safe and appropriate care locations.",
+   "journal": "Diabetes care",
+   "journal_abbr": "Diabetes Care",
+   "authors": [
+    "Matsui K",
+    "Nemoto C",
+    "Tagawa K",
+    "Nagai S",
+    "Fukawa K",
+    "Matsuura H",
+    "Shiga K",
+    "Urakami T",
+    "Kawamura T",
+    "Ohtsu S",
+    "Kikuchi T"
+   ],
+   "doi": "10.2337/dc26-1452",
+   "pub_date": "2026-10-07",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42844149/",
+   "doi_url": "https://doi.org/10.2337/dc26-1452",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "Technology",
+   "diabetes_subtype": "T1D",
+   "study_type": "Cross-Sectional",
+   "ev_level": 4,
+   "impact": "MODERATE",
+   "age_range": [
+    "Child",
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 1105,
+   "tags": [
+    "#Diabetes",
+    "#Technology"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Care location choice shifts dynamically with age and school transitions, with restroom use being linked to poorer glycemic control. Supporting youth during school transitions requires targeted environmental adjustments and enhanced school-wide understanding to ensure safe and appropriate care locations.",
+   "impact_rationale": "Cross-Sectional on Diabetes. Background reading for clinical awareness.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42844763",
+   "title": "Retrieval-Augmented Simulation for Interpreting Probabilistic Digital Twins in Type 1 Diabetes.",
+   "abstract": "Personalized digital twins for type 1 diabetes (T1D) can simulate future glucose responses under different therapeutic conditions, but their probabilistic outputs require structured interpretation before supporting clinician-facing reasoning. We introduce retrieval-augmented simulation (RAS), a modular framework connecting probabilistic digital-twin simulation with guideline-grounded report generation.\n\nRetrieval-augmented simulation summarizes simulated glucose trajectories, converts them into structured clinical descriptors, retrieves relevant guideline evidence, and generates uncertainty-aware reports for clinician review. We evaluated RAS using data from 35 individuals with T1D in a controlled ablation study involving 2 locally hosted large language models (LLMs) (LLaMA 3.1:8b and Qwen 3:8b). Two independent LLM-based evaluators, GPT-5.5 Thinking and Kimi 2.6 Thinking, assessed report quality using a standardized rubric.\n\nStructured clinical descriptors were essential for guideline selection: their removal substantially altered the retrieved evidence, demonstrating that qualitative clinical framing influenced evidence selection more strongly than numerical values alone. For LLaMA, the full RAS pipeline achieved the strongest overall performance, maintaining high numerical faithfulness (NumCov:) and consistent guideline coupling. In contrast, Qwen exhibited substantial model-specific safety risks and frequently distorted simulation-derived numerical values (NumCov:). Directional bias analysis showed that Qwen systematically under-reported time in range by a mean ofpercentage points and over-reported time below range, thereby inflating hypoglycemia risk. These safety findings were consistent across both independent evaluators, with a mean score difference ofpoints.\n\nRetrieval-augmented simulation provides a reproducible framework for the expert-supervised interpretation of digital-twin simulations. However, aggregate framework scores alone are insufficient for clinical validation. Downstream language models must be rigorously evaluated for numerical faithfulness and directional bias to prevent unsafe, hallucinated clinical narratives.",
+   "journal": "Journal of diabetes science and technology",
+   "journal_abbr": "J Diabetes Sci Technol",
+   "authors": [
+    "Mujahid O",
+    "Contreras I",
+    "Beneyto A",
+    "Vehi J"
+   ],
+   "doi": "10.1177/19322968261484150",
+   "pub_date": "2026-10-07",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "artificial intelligence safety",
+    "clinical decision support",
+    "digital twin",
+    "glycemic control",
+    "large language models",
+    "retrieval-augmented generation",
+    "type 1 diabetes",
+    "uncertainty quantification"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "19322968261484150",
+   "pmc": "PMC13650067",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42844763/",
+   "doi_url": "https://doi.org/10.1177/19322968261484150",
+   "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13650067/",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "Technology",
+   "diabetes_subtype": "T1D",
+   "study_type": "Other",
+   "ev_level": 5,
+   "impact": "LOW",
+   "age_range": [
+    "Adult"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 35,
+   "tags": [
+    "#Diabetes",
+    "#Technology"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "However, aggregate framework scores alone are insufficient for clinical validation. Downstream language models must be rigorously evaluated for numerical faithfulness and directional bias to prevent unsafe, hallucinated clinical narratives.",
+   "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42847278",
+   "title": "The Case for Evaluating Continuous Glucose Monitoring as a Diagnostic Tool for Diabetes.",
+   "abstract": "Continuous glucose monitoring (CGM) provides information about real-time glycemic exposure that is not captured by measurements of fasting plasma glucose (FPG), changes in glycemia during oral glucose tolerance testing (OGTT), or Hemoglobin A1c (HbA1c). We propose that (1) CGM can identify dysglycemia earlier than existing approaches, (2) CGM may serve as an adjunctive diagnostic tool, and (3) CGM may eventually support independent diagnostic criteria. The strongest case is for Stage 2 type 1 diabetes (T1D), because this stage represents a critical opportunity for intervention before progression to Stage 3 disease. CGM as a diagnostic tool could identify individuals at risk of progression to Stage 3 T1D, particularly those with islet autoantibodies, by detecting progression of dysglycemia, supporting disease staging, and identifying candidates for confirmatory testing, closer monitoring, or future prevention trials. Beyond T1D, CGM might also prove to be a reliable diagnostic test for type 2 diabetes (T2D) in selected populations. Overall, there is a need for prospective clinical studies to compare the value of using CGM-derived metrics directly with existing diagnostic standards, including OGTT and HbA1c. For both T1D and T2D, earlier diagnosis by CGM has the potential to improve patient outcomes by creating opportunities for prevention and treatment early in the natural history of the disease. This article presents an outcome-based framework for deriving and validating CGM-based diagnostic thresholds. The framework emphasizes that future diagnostic criteria should be based on clinically meaningful outcomes, rather than concordance with existing tests.",
+   "journal": "Journal of diabetes science and technology",
+   "journal_abbr": "J Diabetes Sci Technol",
+   "authors": [
+    "Klonoff DC",
+    "Shah VN",
+    "Umpierrez GE",
+    "Cook CB",
+    "Fleming GA",
+    "Gutierrez A",
+    "Heinemann L",
+    "Mader JK",
+    "Zhang EY",
+    "Kerr D"
+   ],
+   "doi": "10.1177/19322968261493542",
+   "pub_date": "2026-10-08",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "continuous glucose monitoring",
+    "diabetes diagnosis",
+    "diagnostic algorithms",
+    "dysglycemia",
+    "glycemic variability"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "19322968261493542",
+   "pmc": "PMC13650077",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42847278/",
+   "doi_url": "https://doi.org/10.1177/19322968261493542",
+   "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13650077/",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "Technology",
+   "diabetes_subtype": "T1D·Stage",
+   "study_type": "Prospective Study",
+   "ev_level": 3,
+   "impact": "LOW",
+   "age_range": [
+    "Adult"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes",
+    "#Technology"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "This article presents an outcome-based framework for deriving and validating CGM-based diagnostic thresholds. The framework emphasizes that future diagnostic criteria should be based on clinically meaningful outcomes, rather than concordance with existing tests.",
+   "impact_rationale": "Prospective Study on Diabetes. Background reading for clinical awareness.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42852473",
+   "title": "Multidisciplinary Care Model for Differences in Sex Development: An Implementation Research Study.",
+   "abstract": "To initiate a multidisciplinary care model for patients with differences in sex development (MD-DSD), assess its implementation, and evaluate changes in perceived quality of care following implementation among parents and health-care providers (HCPs).\n\nImplementation research.\n\nTertiary care Institute at New Delhi.\n\nPatients aged 0-22 years with DSD, receiving care in single-specialty clinics at the Institute.\n\nA core MD-DSD team comprising specialists from Paediatric Endocrinology, Paediatric Surgery and Psychiatry was formed. Multidisciplinary clinics were conducted monthly, and board meetings for difficult cases were held bi-monthly, with participation from all core and requisite allied specialties.\n\nThe primary outcome was successful implementation of MD-DSD clinics and board meetings, defined by representation from all three core specialties. Secondary outcomes included changes in the Perceived Quality-of-Care Questionnaire (PQCQ) scores (administered to parents at baseline and after attending two clinics, score range: 9-45), and perceptions of participating HCPs at study completion.\n\nOver 28 months, 28 clinics and 13 meetings were held. A total of 188 patients (46,XX DSD, 69; 46,XY DSD, 104; and sex chromosome DSD, 15) attended the MD-DSD clinics; and 44 of these were also reviewed in MD-DSD meetings, predominantly for concerns relating to gender of rearing and decision on surgical intervention. Participation from all core specialties was present in 26 (93%) clinics and 12 (92%) meetings. The PQCQ scores (N = 79) improved from 32.2 ± 5.7 to 36.4 ± 4.5 (p < 0.001), contributed chiefly by improved parent knowledge and attention to psychosocial needs. The participating HCPs (N = 12/15) believed that the model was sustainable.\n\nThe MD-DSD care model was feasible and demonstrated favourable perceived sustainability, with improvement in the perceived quality of care reported by both parents and HCPs.",
+   "journal": "Clinical endocrinology",
+   "journal_abbr": "Clin Endocrinol (Oxf)",
+   "authors": [
+    "Priyadarshini S",
+    "Singh A",
+    "Kulkarni K",
+    "Yadav DK",
+    "Sagar R",
+    "Sharma R",
+    "Bajpai M",
+    "Jain V"
+   ],
+   "doi": "10.1111/cen.70211",
+   "pub_date": "2026-10-09",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "disorders of sex development",
+    "feasibility",
+    "interdisciplinary care",
+    "multidisciplinary team",
+    "quality of care",
+    "shared decision‐making",
+    "transdisciplinary care"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42852473/",
+   "doi_url": "https://doi.org/10.1111/cen.70211",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "DSD",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Survey/Questionnaire",
+   "ev_level": 4,
+   "impact": "LOW",
+   "age_range": [
+    "Infant",
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 79,
+   "tags": [
+    "#DSD"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "The participating HCPs (N = 12/15) believed that the model was sustainable. The MD-DSD care model was feasible and demonstrated favourable perceived sustainability, with improvement in the perceived quality of care reported by both parents and HCPs.",
+   "impact_rationale": "Survey/Questionnaire on DSD. Background reading for clinical awareness.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42853710",
+   "title": "Long-Acting PEG-rhGH in Short Children Born SGA in China: 4-Year Results from a Randomized Phase 2 Study.",
+   "abstract": "Introduction Children born small for gestational age (SGA) who failed to achieve catch-up growth are at risk of persistent short stature and associated metabolic complications. Daily recombinant human growth hormone (rhGH) therapy improves growth but is limited by adherence challenges. This study evaluated the long-term efficacy and safety of once-weekly PEGylated recombinant human growth hormone (PEG-rhGH; Jintrolong) in short children born SGA. Methods This multicenter, randomized, open-label, dose-response phase 2 study, comprised a 52-week main phase and an ongoing extension (NCT02375620), across 9 and 7 sites in China, respectively. Ninety-six GH treatment-naïve, non-GH-deficient, prepubertal children born SGA (age 3 to <8 years) were randomized (1:1) to PEG-rhGH 0.1 or 0.2 mg/kg/week for 52 weeks. After 52 weeks, sixty-six children proceeded to the extension phase continuing PEG-rhGH treatment (initial dose: 0.2 mg/kg/week, maximum: 0.4 mg/kg/week) until near-adult height (NAH). Results After 208 weeks, the mean (SD) ΔHT-SDS was 1.746 (0.488) and 1.660 (0.710) in the original 0.2 and 0.1 mg/kg/week groups respectively. Overall, 90.9% (60/66) achieved height > -2 SDS and 53.0% (35/66) reached target height SDS. The mean annualized height velocity remained within the normal range. Long-term PEG-rhGH treatment was well tolerated, with most treatment-emergent adverse events (TEAEs) being mild and consistent with known GH-related effects. Conclusion Once-weekly PEG-rhGH provides sustained improvement in height and growth velocity over four years in short children born SGA. It's favorable safety and adherence profile observed supports long-acting GH as an alternative to daily GH therapy for managing growth failure in SGA children.",
+   "journal": "Hormone research in paediatrics",
+   "journal_abbr": "Horm Res Paediatr",
+   "authors": [
+    "Hou L",
+    "Luo X",
+    "Chen X",
+    "Du H",
+    "Yang Y",
+    "Luo FH",
+    "Chen Y",
+    "Ma D",
+    "Xiang W",
+    "Zhu X"
+   ],
+   "doi": "10.1159/hrp/adaag021",
+   "pub_date": "2026-10-07",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [],
+   "volume": "",
+   "issue": "",
+   "pages": "1",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42853710/",
+   "doi_url": "https://doi.org/10.1159/hrp/adaag021",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Growth",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Other",
+   "ev_level": 5,
+   "impact": "LOW",
+   "age_range": [
+    "Neonatal",
+    "Child",
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Growth",
+    "#RegisteredTrial"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "This study evaluated the long-term efficacy and safety of once-weekly PEGylated recombinant human growth hormone (PEG-rhGH; Jintrolong) in short children born SGA. Methods This multicenter, randomized, open-label, dose-response phase 2 study, comprised a 52-week main phase and an ongoing extension (",
+   "impact_rationale": "Other on Growth. Background reading for clinical awareness.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42854204",
+   "title": "Roadmap to Fully Closing the Loop to Optimize Health in Type 1 Diabetes.",
+   "abstract": "Current commercially available automated insulin delivery systems require meal and exercise announcements for optimal function, placing them in the hybrid closed loop category. Ongoing advancements aim to establish fully closed loop (FCL) systems as the next-generation standard for type 1 diabetes (T1D) management, eliminating the need for such inputs. We sought to develop a shared definition of FCL so that emerging technologies, including those using artificial intelligence, multi-hormone delivery, multi-analyte sensing, and/or adjunctive therapies, are held to uniform performance standards.\n\nA group of invited experts, including clinicians, researchers, and people with lived experience convened to propose an outcome-driven definition of FCL systems.\n\nFCL systems are defined by three core domains centered on meeting intensive glycemic targets while reducing self-management burden and improving lived experience: Time in Tight Range (TITR) 70-140 mg/dL (3.9-7.8 mmol/L), Time Below Range (TBR) <54 mg/dL (<3.0 mmol/L), and person-reported outcomes (PROs) measured with validated T1D-specific assessments. This definition rests on a three-tiered classification in which all FCL systems improve lived experience and attain >50% TITR and <1% TBR without mandatory meal or activity announcements. Class 3 systems must attain >50% TITR; Class 2, >70%; and Class 1, >90%-while simultaneously demonstrating improved quality of life and reduced treatment burden per validated PROs. Given the elevated hypoglycemia risk from insulin-on-board during exercise, Class 1a requires >90% TITR with demonstrable hypoglycemia prevention during standardized exercise testing (0% TBR).\n\nThis framework provides a uniform benchmark for evaluating future FCL technologies. Taken together, this person-centered, outcome-driven framework holds that FCL systems should (1) autonomously attain near-normoglycemia, (2) meaningfully improve lived experience across the lifespan and clinical contexts, and (3) prevent exercise-related hypoglycemia.",
+   "journal": "Diabetes technology & therapeutics",
+   "journal_abbr": "Diabetes Technol Ther",
+   "authors": [
+    "Marks BE",
+    "Hilliard ME",
+    "Kovatchev B",
+    "Moser O",
+    "Tanenbaum ML",
+    "Ackeifi C",
+    "Ahn DT",
+    "Ajjan RA",
+    "Albanese-O'Neill A",
+    "Bakhsh A",
+    "Choudhary P",
+    "Close KL",
+    "Davis EA",
+    "Dovc K",
+    "Dutta S",
+    "Garg S",
+    "Forlenza GP",
+    "Heverly J",
+    "Kowalski AJ",
+    "Limbert C",
+    "Maahs DM",
+    "Mader JK",
+    "Marinac M",
+    "Mathieu C",
+    "Nimri R",
+    "Nishimura R",
+    "O'Neal DN",
+    "Oxenreiter M",
+    "Press C",
+    "Rickels MR",
+    "Riddell MC",
+    "Rosen J",
+    "Saboo B",
+    "Shah VN",
+    "Sherr JL",
+    "Wheeler BJ",
+    "Phillip M",
+    "Battelino T",
+    "Danne T"
+   ],
+   "doi": "10.1177/15209156261496643",
+   "pub_date": "2026-10-09",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "adjunctive therapy",
+    "artificial intelligence",
+    "automated insulin delivery",
+    "biosensors",
+    "diabetes education",
+    "exercise",
+    "fully closed loop",
+    "person-reported outcomes",
+    "predictive learning models",
+    "quality of life",
+    "type 1 diabetes"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "15209156261496643",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42854204/",
+   "doi_url": "https://doi.org/10.1177/15209156261496643",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "Technology",
+   "diabetes_subtype": "T1D",
+   "study_type": "Other",
+   "ev_level": 5,
+   "impact": "LOW",
+   "age_range": [
+    "Adult"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes",
+    "#AIinMedicine",
+    "#Technology"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "This framework provides a uniform benchmark for evaluating future FCL technologies. Taken together, this person-centered, outcome-driven framework holds that FCL systems should (1) autonomously attain near-normoglycemia, (2) meaningfully improve lived experience across the lifespan and clinical contexts, and (3) prevent exercise-related hypoglycemia.",
+   "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42856902",
+   "title": "Up to 5 years of weekly somatrogon in children with growth hormone deficiency: final data from the global phase 3 study.",
+   "abstract": "This open-label extension (OLE) study aimed to evaluate the long-term efficacy and safety of once-weekly somatrogon in pediatric patients with growth hormone deficiency (GHD) following up to 5 years of somatrogon treatment.\n\nPatients who had previously completed 12 months of treatment (somatrogon or somatropin) in a phase 3, randomized, active-controlled study (NCT02968004) were eligible to enroll into this OLE study; somatropin-treated patients were switched to somatrogon (0.66 mg/kg/week), and somatrogon-treated patients received somatrogon at their previous dose.\n\nA total of 212 patients entered the OLE. Mean annualized height velocity at the end of OLE Year 1 (Y1), Y2, Y3, and Y4 was 8.11, 7.91, 7.02, and 6.56 cm/year, respectively. Mean height SDS increased in each year of the OLE and approached 0 SDS by OLE Y4. Mean (SD) IGF-I SDS was positive and within the normal range throughout the OLE. The incidence of adverse events (AEs) was 53.8% to 72.3%, with most being mild to moderate. The incidence of serious AEs in each year was low (0-4.7%), and none were related to treatment. The most common treatment-related AEs were injection-site pain and injection-site erythema. The presence of antidrug antibodies did not appear to impact safety or efficacy outcomes.\n\nBased on the final data from the largest cohort of somatrogon-treated patients to date, once-weekly somatrogon demonstrated sustained efficacy and an acceptable safety profile during the OLE period. Once-weekly somatrogon constitutes a valuable long-term alternative to once-daily somatropin, offering potentially improved adherence and treatment outcomes.",
+   "journal": "Journal of the Endocrine Society",
+   "journal_abbr": "J Endocr Soc",
+   "authors": [
+    "Stawerska R",
+    "Deal CL",
+    "La Torre D",
+    "Taylor CT",
+    "Choe J",
+    "Wang R",
+    "Cara JF",
+    "Steelman J",
+    "Silverman LA",
+    "Phillip M",
+    "Wajnrajch MP"
+   ],
+   "doi": "10.1210/jendso/bvag175",
+   "pub_date": "2026-10-09",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "growth hormone",
+    "growth hormone deficiency",
+    "long-acting growth hormone",
+    "pediatric",
+    "somatrogon",
+    "somatropin"
+   ],
+   "volume": "10",
+   "issue": "11",
+   "pages": "bvag175",
+   "pmc": "PMC13650485",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42856902/",
+   "doi_url": "https://doi.org/10.1210/jendso/bvag175",
+   "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13650485/",
+   "excluded": false,
+   "topic": "Growth",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "MODERATE",
+   "age_range": [
+    "Child"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 212,
+   "tags": [
+    "#Growth",
+    "#RegisteredTrial"
+   ],
+   "access": "Open",
+   "clinical_bottom_line": "Based on the final data from the largest cohort of somatrogon-treated patients to date, once-weekly somatrogon demonstrated sustained efficacy and an acceptable safety profile during the OLE period. Once-weekly somatrogon constitutes a valuable long-term alternative to once-daily somatropin, offering potentially improved adherence and treatment outcomes.",
+   "impact_rationale": "Observational study on Growth. Cohort size n = 212. Clinically informative but limited by non-randomized design.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42857932",
+   "title": "Clinical and Molecular Genetic Testing Risk Stratification for Pediatric Papillary Thyroid Carcinoma Therapy.",
+   "abstract": "Children and young adolescents with papillary thyroid cancer (CAYA-PTC) have high recurrence rates. Current guidelines advocate intensive treatment, yet existing risk stratification systems lack integration of genomic characteristics and provide limited precision in guiding surgical extent and postoperative radioactive iodine (RAI).\n\nThis retrospective, multicenter study analyzed 435 CAYA-PTC patients (ages 2-18 years) treated between 2006 and 2024. A clinicogenomic nomogram for disease-free survival (DFS) was developed using clinical data, postoperative pathology, and molecular testing of surgical tissue. Patients were stratified according to the nomogram score. Model performance was internally compared with the American Thyroid Association (ATA) pediatric risk system. Treatment associations were assessed by surgical extent (total thyroidectomy vs lobectomy) and receipt of postoperative RAI therapy within each risk stratification.\n\nFive variables were independent predictors of worse DFS: age ≤15 years, tumor size >4 cm, lateral neck node involvement (N1b), coexisting Hashimoto thyroiditis, and RET/NTRK fusions (all P <.05). The nomogram stratified patients into low-, intermediate-, and high-risk groups with 7-year DFS rates of 92.4%, 83.1%, and 56.4% (P <.001). In internal comparison, nomogram-based risk stratification had higher concordance index (0.721 vs 0.656) and 3-year AUC (0.748 vs 0.651) values than ATA stratification (both P <.05). Total thyroidectomy was associated with better DFS in intermediate- and high-risk patients but not low-risk patients. Higher DFS with postoperative RAI was observed in the high-risk group (P =.028).\n\nUsing retrospective clinicogenomic features, our stratification suggests a risk-adapted framework for CAYA-PTC. However, non-significant differences, especially in small subgroups, do not establish treatment equivalence or confirm the safety of de-escalation. These findings represent associations that require future external validation.",
+   "journal": "The Journal of clinical endocrinology and metabolism",
+   "journal_abbr": "J Clin Endocrinol Metab",
+   "authors": [
+    "Yang L",
+    "Qian K",
+    "Huang Z",
+    "Guo K",
+    "Fei M",
+    "Li A",
+    "Wang Y",
+    "Shi Y",
+    "Qiu M",
+    "Chen Z",
+    "He X",
+    "Wang Z"
+   ],
+   "doi": "10.1210/clinem/dgag418",
+   "pub_date": "2026-10-10",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "molecular genetic testing",
+    "pediatric papillary thyroid carcinoma",
+    "radioactive iodine",
+    "risk stratification",
+    "surgical extent"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42857932/",
+   "doi_url": "https://doi.org/10.1210/clinem/dgag418",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Thyroid",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "MODERATE",
+   "age_range": [
+    "Child",
+    "Adolescent"
+   ],
+   "society": [
+    "ATA"
+   ],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Thyroid",
+    "#Genetics"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "However, non-significant differences, especially in small subgroups, do not establish treatment equivalence or confirm the safety of de-escalation. These findings represent associations that require future external validation.",
+   "impact_rationale": "Observational study on Thyroid. Cohort size n not reported. Clinically informative but limited by non-randomized design.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42828498",
+   "title": "Growth plate senescence, chondrocyte biology, and the growth hormone-insulin-like growth factor 1 axis in childhood growth.",
+   "abstract": "Longitudinal bone growth in children depends on endochondral ossification within the epiphyseal growth plate, a process long viewed as a passive readout of systemic hormones but now recognized as an actively regulated, self-limiting process. This mini-review synthesizes recent evidence on chondrocyte biology, growth plate senescence, and the growth hormone (GH)-insulin-like growth factor 1 (IGF-1) axis. Local paracrine networks establish precise antagonistic and synergistic interactions: fibroblast growth factor receptor 3 (FGFR3) suppresses chondrocyte proliferation via MAPK/STAT signaling, while the C-type natriuretic peptide/NPR2 pathway counters this via cGMP-mediated stimulation; the Indian hedgehog-parathyroid hormone-related protein feedback loop, thegene, and mechanical loading provide additional structural control. Growth plate senescence follows a proposed localized, cell-counting mechanism reflecting cumulative chondrocyte division that current evidence supports but that has not been established as the sole explanation for chronological variation in physeal closure. Estrogen is a key accelerant of this senescent process during puberty. Pathogenic variants in these local regulators underlie conditions such as achondroplasia and a minority of cases classified as idiopathic short stature, and mechanism-targeted therapies - including vosoritide, a C-type natriuretic peptide analog, together with the FGFR3-directed tyrosine kinase inhibitor infigratinib and the once-weekly CNP prodrug navepegritide - illustrate, for achondroplasia specifically, how targeting a defined paracrine lesion can produce growth responses that systemic hormone stimulation alone does not achieve in that disorder. For a limited group of monogenic growth-plate disorders, resolving these molecular networks is beginning to complement uniform systemic intervention with precision, mechanism-based therapy, although this paradigm remains investigational for the great majority of children with short stature.",
+   "journal": "Journal of pediatric endocrinology & metabolism : JPEM",
+   "journal_abbr": "J Pediatr Endocrinol Metab",
+   "authors": [
+    "Soliman AT",
+    "Alyafei F",
+    "Alaaraj N",
+    "Hamed N",
+    "Ahmed S"
+   ],
+   "doi": "10.1515/jpem-2026-0485",
+   "pub_date": "2026-10-05",
+   "pub_types": [
+    "Journal Article",
+    "Review"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "GH-IGF1",
+    "chondrocytes",
+    "growth plate",
+    "short stature"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42828498/",
+   "doi_url": "https://doi.org/10.1515/jpem-2026-0485",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Growth",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Review",
+   "ev_level": 2,
+   "impact": "MODERATE",
+   "age_range": [
+    "Child"
+   ],
+   "society": [],
+   "board_relevant": 1,
+   "sample_n": null,
+   "tags": [
+    "#Growth",
+    "#BoardRelevant",
+    "#Review",
+    "#BoneMineral",
+    "#Genetics"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Pathogenic variants in these local regulators underlie conditions such as achondroplasia and a minority of cases classified as idiopathic short stature, and mechanism-targeted therapies - including vosoritide, a C-type natriuretic peptide analog, together with the FGFR3-directed tyrosine kinase inhibitor infigratinib and the once-weekly CNP prodrug navepegritide - illustrate, for achondroplasia specifically, how targeting a defined paracrine lesion can produce growth responses that systemic hormone stimulation alone does not achieve in that disorder. For a limited group of monogenic growth-plate disorders, resolving these molecular networks is beginning to complement uniform systemic intervention with precision, mechanism-based therapy, although this paradigm remains investigational for the great majority of children with short stature.",
+   "impact_rationale": "Review on Growth. Background reading for clinical awareness.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42828507",
+   "title": "Refractory diabetic ketoacidosis in Rabson-Mendenhall syndrome due to a novel mutation: contrasting outcomes in a sibling - case series.",
+   "abstract": "Rabson-Mendenhall syndrome (RMS) is a rare monogenic insulin resistance disorder characterized by progressive dysglycemia and early mortality. Management of diabetic ketoacidosis (DKA) in RMS is particularly challenging because standard insulin doses may be inadequate, and pediatric-specific experience is limited.\n\nWe report two siblings with genetically confirmed RMS. The index child, a 7-year-old girl, presented with severe refractory DKA requiring progressive escalation of intravenous insulin to 12 IU/kg/h before meaningful metabolic response was achieved. Insulin was titrated according to serial glycemic and acid-base responses, without bicarbonate therapy, with close potassium monitoring. Her 3-year-old brother was evaluated proactively after the diagnosis in his sister and was found to have hyperglycemia and the same homozygousvariant before an episode of metabolic decompensation. He was treated with subcutaneous insulin and insulin sensitizers. At 1-year follow-up, HbAwas 10.4 % in the index child and 8.9 % in the sibling.\n\nRefractory DKA in RMS may require rapid, response-guided escalation of insulin beyond conventional pediatric dosing. The detailed temporal relationship between insulin dose and metabolic response in this child provides practical clinical insight, while early recognition of RMS permits evaluation and treatment of affected siblings before presentation with acute metabolic decompensation.",
+   "journal": "Journal of pediatric endocrinology & metabolism : JPEM",
+   "journal_abbr": "J Pediatr Endocrinol Metab",
+   "authors": [
+    "Azarudeen JM",
+    "Narayanan R",
+    "Kar A",
+    "Rao G",
+    "Dalal A",
+    "Vairavan L"
+   ],
+   "doi": "10.1515/jpem-2026-0389",
+   "pub_date": "2026-10-05",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "INSR",
+    "Rabson–Mendenhall syndrome",
+    "diabetic ketoacidosis",
+    "insulin resistance",
+    "monogenic diabetes",
+    "pediatric endocrinology"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42828507/",
+   "doi_url": "https://doi.org/10.1515/jpem-2026-0389",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "General",
+   "diabetes_subtype": "General",
+   "study_type": "Case Series",
+   "ev_level": 5,
+   "impact": "LOW",
+   "age_range": [
+    "Child"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Refractory DKA in RMS may require rapid, response-guided escalation of insulin beyond conventional pediatric dosing. The detailed temporal relationship between insulin dose and metabolic response in this child provides practical clinical insight, while early recognition of RMS permits evaluation and treatment of affected siblings before presentation with acute metabolic decompensation.",
+   "impact_rationale": "Small case series. Hypothesis-generating but lacks the power to guide practice changes in Diabetes.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42829473",
+   "title": "Papillary thyroid carcinoma in children: prevalence, morphology, molecular and cytogenetic characteristics, and prognostic determinants.",
+   "abstract": "Papillary thyroid carcinoma (PTC) stands as the most frequently encountered endocrine malignancy in children and adolescents. A notable clinical feature of pediatric PTC is that while young patients often present with advanced disease - including lymph node involvement and distant metastases - long-term survival rates remain high. This presentation underscores pediatric PTC as a biologically distinct entity. The molecular landscape differs fundamentally from adult disease, with gene fusions involving,, andserving as primary drivers, whileV600E point mutations play a lesser role. This narrative review examines the prevalence, morphological features, molecular and cytogenetic characteristics, and prognostic determinants of pediatric papillary thyroid carcinoma. We explore how these children frequently present with multifocal tumors, extensive nodal metastases, and pulmonary spread yet maintain favorable clinical outcomes. The review critically evaluates current approaches to surgery, radioactive iodine therapy, and risk-adapted surveillance strategies. We also consider the growing role of targeted therapies - particularly RET and NTRK inhibitors - in managing refractory or metastatic disease, while acknowledging that long-term safety data in children remain limited. Available evidence indicates that pediatric PTC represents a biologically and clinically distinct entity requiring a tailored management paradigm. While outcomes are generally favorable, significant questions remain about epidemiology, molecular drivers, treatment resistance, and long-term survivorship effects. Moving forward, progress will depend on international collaboration, standardized data collection, and extended follow-up to develop pediatric-specific biomarkers and therapeutic approaches.",
+   "journal": "Journal of pediatric endocrinology & metabolism : JPEM",
+   "journal_abbr": "J Pediatr Endocrinol Metab",
+   "authors": [
+    "Abdollahi A",
+    "Avarjeh M"
+   ],
+   "doi": "10.1515/jpem-2026-0277",
+   "pub_date": "2026-10-05",
+   "pub_types": [
+    "Journal Article",
+    "Review"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "NTRK",
+    "RET/PTC",
+    "molecular genetics",
+    "pediatric papillary thyroid carcinoma",
+    "thyroid cancer"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42829473/",
+   "doi_url": "https://doi.org/10.1515/jpem-2026-0277",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Thyroid",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Review",
+   "ev_level": 2,
+   "impact": "MODERATE",
+   "age_range": [
+    "Child",
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Thyroid",
+    "#Review"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "While outcomes are generally favorable, significant questions remain about epidemiology, molecular drivers, treatment resistance, and long-term survivorship effects. Moving forward, progress will depend on international collaboration, standardized data collection, and extended follow-up to develop pediatric-specific biomarkers and therapeutic approaches.",
+   "impact_rationale": "Review on Thyroid. Background reading for clinical awareness.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42829806",
+   "title": "In memoriam Bruno Weber.",
+   "abstract": "[Abstract not available]",
+   "journal": "Journal of pediatric endocrinology & metabolism : JPEM",
+   "journal_abbr": "J Pediatr Endocrinol Metab",
+   "authors": [
+    "Kordonouri O",
+    "Danne T"
+   ],
+   "doi": "10.1515/jpem-2026-0675",
+   "pub_date": "2026-10-05",
+   "pub_types": [
+    "Editorial"
+   ],
+   "mesh_terms": [],
+   "keywords": [],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42829806/",
+   "doi_url": "https://doi.org/10.1515/jpem-2026-0675",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "General Endocrinology",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Editorial/Commentary",
+   "ev_level": 6,
+   "impact": "LOW",
+   "age_range": [
+    "Adult"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#GeneralEndo"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "[Abstract not available]",
+   "impact_rationale": "Expert letter or commentary. No new primary data; provides perspective on General Endocrinology but does not independently change practice.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42829813",
+   "title": "Autoimmune adrenalitis in adolescents in Germany: a series of 4 cases.",
+   "abstract": "This case report summarises clinical findings in four adolescents (aged 14-17 years) diagnosed with autoimmune adrenalitis at a German University Children's Hospital between 2019 and 2025.\n\nClinical presentation varied and included fatigue, arterial hypotension, depressive symptoms, hyperpigmentation of the skin, and in one case acute kidney failure associated with acute viral infection. All patients showed hyponatraemia, reduced cortisol levels in serum and elevated adrenocorticotropic hormone concentrations at diagnosis. Autoimmune adrenalitis was confirmed in all patients by the presence of autoantibodies against the adrenal cortex. Interestingly, three of the four cases were diagnosed within a period of only 18 months.\n\nOur case series of autoimmune adrenalitis may suggest a potential increase in the annual incidence among adolescents. The clinical diversity of symptoms at diagnosis ranging from depression to acute kidney failure was striking. Since delayed diagnosis may lead to life-threatening complications, awareness of clinical variability is essential for physicians to achieve timely diagnosis. Cortisol levels should be routinely measured in patients with unclear fatigue and hyponatraemia.",
+   "journal": "Journal of pediatric endocrinology & metabolism : JPEM",
+   "journal_abbr": "J Pediatr Endocrinol Metab",
+   "authors": [
+    "Pudig L",
+    "Greifoner L",
+    "Dieke M",
+    "Vilser C",
+    "Hettmer S",
+    "Weihrauch-Blüher S"
+   ],
+   "doi": "10.1515/jpem-2026-0187",
+   "pub_date": "2026-10-05",
+   "pub_types": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "Addison’s disease",
+    "adolescence",
+    "autoimmune adrenalitis",
+    "hyponatraemia",
+    "primary adrenal insufficiency"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42829813/",
+   "doi_url": "https://doi.org/10.1515/jpem-2026-0187",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Adrenal",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Case Series",
+   "ev_level": 5,
+   "impact": "LOW",
+   "age_range": [
+    "Child",
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Adrenal"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Since delayed diagnosis may lead to life-threatening complications, awareness of clinical variability is essential for physicians to achieve timely diagnosis. Cortisol levels should be routinely measured in patients with unclear fatigue and hyponatraemia.",
+   "impact_rationale": "Small case series. Hypothesis-generating but lacks the power to guide practice changes in Adrenal.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42832437",
+   "title": "Sustained Glycemic Outcomes in Children: A Three-Year Real-World Follow-Up of the MiniMed™ 780G System.",
+   "abstract": "Introduction Automated insulin delivery systems have shown promise in bridging the gap between achieving international glycemic targets and the burden associated with achieving such outcomes. This is especially important in children and adolescents wherein addressing dysglycemia early can reduce long-term complications and mitigate cognitive impacts. This study presents the first real-world 3-year evaluation of the MiniMed™ 780G system in the global pediatric population, assessing long-term glycemic outcomes and user burden. Methods 'Carelink Personal' data from January 1,2020 to October 31,2025 were extracted from global MiniMed™ users aged ≤15 years with type 1 diabetes. Users had ≥10 days of sensor data before automation and in each of the 36 months post-advanced hybrid closed loop (AHCL) initiation. Endpoints were based on glycemic control, system use and insulin delivery type. User burden was defined as the percentage of insulin delivered by the user versus automatically by the system. Results Among 1,699 children, time in range (TIR 70-180 mg/dL) and time in tight range (TITR 70-140 mg/dL) increased immediately and remained elevated at 36 months (TIR increased from 64.1% to 73.6% at study end). TITR increased to 52.3% one month after SmartGuard™ initiation and experienced minimal changes throughout the study period. Time below range <70 mg/dL remained low, even as the proportion of insulin delivered automatically by the system increased. While the average grams of carbohydrates entered increased in growing children, the number of carb entries per day decreased. Time in automated mode remained consistently above 96%. From month 24 to 36 (the third year of use), TIR changed by +0.21 percentage points (P=0.1891) and GMI by +0.01 percentage points (P=0.1580). Conclusion In this three-year real-world analysis, glycemic improvements previously demonstrated following MiniMed™ 780G initiation were sustained through the third year of use, with consistently high automated mode use and an increasing proportion of insulin delivered automatically. The shift toward greater system-initiated insulin delivery suggests a reduction in burden for children and caregivers. These findings support the goal of automated insulin delivery systems, which is to improve glycemic control while minimizing daily management effort.",
+   "journal": "Hormone research in paediatrics",
+   "journal_abbr": "Horm Res Paediatr",
+   "authors": [
+    "Cardin J",
+    "Juachon MJ",
+    "Völker B",
+    "Castañeda J",
+    "Shin J",
+    "van den Heuvel T",
+    "Vigersky R",
+    "McVean J"
+   ],
+   "doi": "10.1159/hrp/adaag038",
+   "pub_date": "2026-10-05",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [],
+   "volume": "",
+   "issue": "",
+   "pages": "1",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42832437/",
+   "doi_url": "https://doi.org/10.1159/hrp/adaag038",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "Technology",
+   "diabetes_subtype": "T1D",
+   "study_type": "Real-World Study",
+   "ev_level": 3,
+   "impact": "MODERATE",
+   "age_range": [
+    "Child",
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 1699,
+   "tags": [
+    "#Diabetes",
+    "#Technology",
+    "#RealWorldData"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "The shift toward greater system-initiated insulin delivery suggests a reduction in burden for children and caregivers. These findings support the goal of automated insulin delivery systems, which is to improve glycemic control while minimizing daily management effort.",
+   "impact_rationale": "Real-world evidence study (n = 1699) on Diabetes. Reflects clinical practice conditions; no randomization.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42832439",
+   "title": "Short-term side effects of first bisphosphonate infusion in children with different underlying bone pathologies.",
+   "abstract": "Intravenous bisphosphonates are the primary pharmacological intervention for both primary and secondary paediatric osteoporosis. Following the successful use of bisphosphonates in children with osteogenesis imperfecta (OI), indications have expanded to a broad range of bone pathologies with variable underlying pathophysiology. While bisphosphonate use appears to be safe in children, data on risk factors for acute-phase reaction remain sparse. A prospective characterisation of adverse effects - including baseline musculoskeletal symptoms - has not previously been performed in children.\n\nIn this prospective, multicentre observational study, children and adolescents initiating intravenous bisphosphonate therapy at 10 tertiary centres were enrolled. Baseline assessments included diagnosis, fracture history, and patient/proxy-reported pain, fatigue, mobility, and well-being. Acute-phase reactions within days after the first infusion, and symptom scores at 6-8 weeks were obtained by structured telephone interviews and analysed using multivariable models adjusted for age, sex, and diagnostic subgroup.\n\nA total of 139 children and adolescents (mean age 9.8 years, 37% female) were included across a spectrum of primary and secondary bone disorders, of whom 83% had a history of fractures. Acute-phase reaction rates varied substantially between diagnostic subgroups: febrile episodes were most frequent in children with inflammatory conditions (71.4%) and OI type III/IV (59.1%) but lowest in OI type I (29.2%), with a comparable pattern for nausea (57.1% vs 22.7% vs 20.8%). Across the cohort, all four symptom domains improved significantly at 6-8 weeks after treatment (p<0.05), with the greatest improvements in patients with inflammatory conditions and those with the highest baseline burden. In zoledronate‑treated children, nausea showed a clear dose relationship and did not occur below 0.02 mg/kg.\n\nThis prospective, multicentre study demonstrates clinically relevant variability in both acute-phase reactions and treatment response following bisphosphonate treatment initiation in a large cohort of children with bone conditions. Recognition of subgroup‑dependent risk and benefits, and the dose‑dependent occurrence of nausea with zoledronate, supports dose-adapted initiation protocols, particularly for high‑risk groups such as children with inflammatory bone conditions.",
+   "journal": "Hormone research in paediatrics",
+   "journal_abbr": "Horm Res Paediatr",
+   "authors": [
+    "Raimann A",
+    "Högler W",
+    "Laurer E",
+    "Semler O",
+    "Gilbey-Cross R",
+    "Stasek S",
+    "Cheung M"
+   ],
+   "doi": "10.1159/hrp/adaag034",
+   "pub_date": "2026-10-05",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [],
+   "volume": "",
+   "issue": "",
+   "pages": "1",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42832439/",
+   "doi_url": "https://doi.org/10.1159/hrp/adaag034",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Bone/Mineral",
+   "subtopic": "Skeletal Fragility",
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "MODERATE",
+   "age_range": [
+    "Child",
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 139,
+   "tags": [
+    "#BoneMineral"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "This prospective, multicentre study demonstrates clinically relevant variability in both acute-phase reactions and treatment response following bisphosphonate treatment initiation in a large cohort of children with bone conditions. Recognition of subgroup‑dependent risk and benefits, and the dose‑dependent occurrence of nausea with zoledronate, supports dose-adapted initiation protocols, particularly for high‑risk groups such as children with inflammatory bone conditions.",
+   "impact_rationale": "Observational study on Bone/Mineral. Cohort size n = 139. Clinically informative but limited by non-randomized design.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42832449",
+   "title": "Marked hypokalemia at presentation in an adolescent with ectopic ACTH syndrome secondary to a bronchial carcinoid tumor: a case report.",
+   "abstract": "Ectopic ACTH syndrome (EAS) is a rare cause of Cushing's syndrome in children and adolescents, accounting for less than 1% of pediatric cases. Compared with Cushing's disease, EAS follows a more rapid clinical course with more pronounced metabolic disturbances, among which hypokalemia is one of the most distinctive features.\n\nA 14.7-year-old male presented with a three-month history of rapid weight gain, violaceous striae, hypertension, and proximal muscle weakness. Marked hypokalemia (2.8 mmol/L) prompted endocrine work-up, which revealed ACTH-dependent hypercortisolism with loss of diurnal cortisol rhythm, elevated midnight salivary cortisol, and non-suppression on low- and high-dose dexamethasone suppression tests. Pituitary MRI was unremarkable, and the marked hypokalemia raised suspicion of an ectopic source. Thoracic CT identified a nodular lesion in the right middle lobe, with corresponding uptake on ⁶⁸Ga-DOTATATE PET/CT. Right middle lobectomy was performed, and histopathology confirmed a typical bronchial carcinoid tumor. Postoperatively, hypercortisolism resolved, electrolyte balance normalized, and Cushingoid features regressed.\n\nMarked hypokalemia at presentation may serve as an early biochemical clue to ectopic ACTH secretion in pediatric ACTH-dependent hypercortisolism, and should prompt timely evaluation for extrapituitary sources, including bronchial carcinoid tumors.",
+   "journal": "Hormone research in paediatrics",
+   "journal_abbr": "Horm Res Paediatr",
+   "authors": [
+    "Yanik H",
+    "Kardelen AD",
+    "Vuralli Bakkaloglu D",
+    "Ozkan ZG",
+    "Duman S",
+    "Ozkan B",
+    "Yildiz M",
+    "Poyrazoglu S",
+    "Bas F"
+   ],
+   "doi": "10.1159/hrp/adaag035",
+   "pub_date": "2026-10-05",
+   "pub_types": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [],
+   "volume": "",
+   "issue": "",
+   "pages": "1",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42832449/",
+   "doi_url": "https://doi.org/10.1159/hrp/adaag035",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Adrenal",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Other",
+   "ev_level": 5,
+   "impact": "LOW",
+   "age_range": [
+    "Child",
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Adrenal"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Postoperatively, hypercortisolism resolved, electrolyte balance normalized, and Cushingoid features regressed. Marked hypokalemia at presentation may serve as an early biochemical clue to ectopic ACTH secretion in pediatric ACTH-dependent hypercortisolism, and should prompt timely evaluation for extrapituitary sources, including bronchial carcinoid tumors.",
+   "impact_rationale": "Other on Adrenal. Background reading for clinical awareness.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42832458",
+   "title": "Clinical Features and Short-Term Growth Hormone Outcomes in Maternal UPD of Chromosome 20: Five Chinese Patients and a Literature Review.",
+   "abstract": "Maternally derived uniparental disomy of chromosome 20 [UPD(20)mat], also known as Mulchandani-Bhoj-Conlin syndrome (MBCS), is a rare imprinting disorder with fewer than 30 cases documented to date. It is characterized by prenatal and postnatal growth failure and feeding difficulties. Herein, we aimed to summarize the clinical and growth characteristics of UPD(20)mat and describe short-term growth outcomes during recombinant human growth hormone (rhGH) exposure in affected individuals.\n\nWe retrospectively analyzed five Chinese children with UPD(20)mat genetically evaluated by whole-exome sequencing (WES), methylation-specific multiplex ligation-dependent probe amplification, or short tandem repeat analysis. Clinical manifestations and growth data were collected. Four patients received rhGH therapy and were evaluated for changes in height standard deviation scores (Ht-SDS). In addition, we conducted a structured narrative review of 23 previously published cases identified in PubMed, CNKI, and WanFang through July 19, 2026.\n\nThe cohort included three female and two male children, with a median age at diagnosis of 3.4 years. Predominant features included advanced maternal age (3/4), postnatal feeding difficulties with low body mass index (BMI), and low absolute serum insulin-like growth factor-1 concentrations in the available records. Facial dysmorphism was mild and predominantly characterized by a prominent forehead and relative macrocephaly. Neurodevelopmental delay was noted in 4/5 patients. After rhGH treatment (duration: 10-15 months), the four treated patients showed substantial short-term catch-up growth, achieving a mean annualized height velocity of 10.7 cm/year and a mean increase in Ht-SDS of +1.18 (range: +0.7 to +2.0). The narrative review identified postnatal growth failure (93%) and feeding difficulties (100%) as cardinal features.\n\nTo our knowledge, this study reports the largest case series of Chinese patients with UPD(20)mat to date, highlighting that neurodevelopmental delay and hypotonia are frequent features of this condition. rhGH exposure was associated with short-term increases in linear growth, but the findings are exploratory and do not establish efficacy. Compared with SRS, facial dysmorphism was mild and non-specific, underscoring the importance of early genetic testing in children with unexplained early-onset growth failure.",
+   "journal": "Hormone research in paediatrics",
+   "journal_abbr": "Horm Res Paediatr",
+   "authors": [
+    "Sun H",
+    "Chen X",
+    "Chen M",
+    "Cai Z",
+    "Li Y",
+    "Wang F",
+    "Xie R",
+    "Chen T",
+    "Chen L",
+    "Wang X",
+    "Yang B",
+    "Wei H",
+    "Wu H"
+   ],
+   "doi": "10.1159/hrp/adaag033",
+   "pub_date": "2026-10-05",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [],
+   "volume": "",
+   "issue": "",
+   "pages": "1",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42832458/",
+   "doi_url": "https://doi.org/10.1159/hrp/adaag033",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Growth",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "LOW",
+   "age_range": [
+    "Child"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 5,
+   "tags": [
+    "#Growth",
+    "#Genetics"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "rhGH exposure was associated with short-term increases in linear growth, but the findings are exploratory and do not establish efficacy. Compared with SRS, facial dysmorphism was mild and non-specific, underscoring the importance of early genetic testing in children with unexplained early-onset growth failure.",
+   "impact_rationale": "Observational/Cohort on Growth. Background reading for clinical awareness.",
+   "review_date": "2026-10-11",
+   "review_period": "October 2026",
    "is_new": true,
    "is_archived": false
   }
  ],
- "last_run_date": "2026-10-04"
+ "last_run_date": "2026-10-11"
 }
