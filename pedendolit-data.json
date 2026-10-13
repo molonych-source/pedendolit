@@ -2489,23 +2489,21 @@
    "topic": "Thyroid",
    "subtopic": null,
    "diabetes_subtype": null,
-   "study_type": "Guideline/Consensus",
-   "ev_level": 1,
-   "impact": "PRACTICE-ALTERING",
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "LOW",
    "age_range": [
     "Child"
    ],
    "society": [],
-   "board_relevant": 1,
+   "board_relevant": 0,
    "sample_n": 75,
    "tags": [
-    "#Thyroid",
-    "#BoardRelevant",
-    "#Guidelines"
+    "#Thyroid"
    ],
    "access": "Subscription",
    "clinical_bottom_line": "Both the Kwak-TI-RADS and ACR TI-RADS guidelines provide moderate malignancy risk stratification for thyroid nodules in the pediatric population, with better inter-rater agreement for the ACR TI-RADS guideline. Further work to adjust the recommendations for pediatric patients is necessary.",
-   "impact_rationale": "Official guideline or consensus statement. Directly informs clinical protocols and management standards.",
+   "impact_rationale": "Observational/Cohort on Thyroid. Background reading for clinical awareness.",
    "review_date": "2026-08-04",
    "review_period": "August 2026",
    "is_new": false,
@@ -89875,22 +89873,24 @@
    "topic": "Diabetes",
    "subtopic": "Technology",
    "diabetes_subtype": "General",
-   "study_type": "Survey/Questionnaire",
-   "ev_level": 4,
-   "impact": "LOW",
+   "study_type": "Guideline/Consensus",
+   "ev_level": 1,
+   "impact": "PRACTICE-ALTERING",
    "age_range": [
     "Adult"
    ],
    "society": [],
-   "board_relevant": 0,
+   "board_relevant": 1,
    "sample_n": null,
    "tags": [
     "#Diabetes",
-    "#Technology"
+    "#BoardRelevant",
+    "#Technology",
+    "#Guidelines"
    ],
    "access": "Subscription",
    "clinical_bottom_line": "This consensus will provide the foundations for the creation of an educational pathway for diabetes educators in Saudi Arabia. Such a pathway will aim to increase diabetes educators' knowledge, skills, and confidence in CGM and improve patient outcomes, including glycemic control and quality of life.",
-   "impact_rationale": "Survey/Questionnaire on Diabetes. Background reading for clinical awareness.",
+   "impact_rationale": "Official guideline or consensus statement. Directly informs clinical protocols and management standards.",
    "review_date": "2026-06-28",
    "review_period": "June 2026",
    "is_new": false,
@@ -91014,21 +91014,23 @@
    "topic": "Adrenal",
    "subtopic": null,
    "diabetes_subtype": null,
-   "study_type": "Survey/Questionnaire",
-   "ev_level": 4,
-   "impact": "LOW",
+   "study_type": "Guideline/Consensus",
+   "ev_level": 1,
+   "impact": "PRACTICE-ALTERING",
    "age_range": [
     "Child"
    ],
    "society": [],
-   "board_relevant": 0,
+   "board_relevant": 1,
    "sample_n": null,
    "tags": [
-    "#Adrenal"
+    "#Adrenal",
+    "#BoardRelevant",
+    "#Guidelines"
    ],
    "access": "Subscription",
    "clinical_bottom_line": "These statements are intended to support clinicians in delivering more consistent and standardized therapeutic strategies for pediatric ACC. Future efforts should prioritize the design and conduct of high-quality, collaborative research studies in order to provide more evidence and therapy improvements.",
-   "impact_rationale": "Survey/Questionnaire on Adrenal. Background reading for clinical awareness.",
+   "impact_rationale": "Official guideline or consensus statement. Directly informs clinical protocols and management standards.",
    "review_date": "2026-07-05",
    "review_period": "July 2026",
    "is_new": false,
@@ -98353,21 +98355,23 @@
    "topic": "Thyroid",
    "subtopic": null,
    "diabetes_subtype": null,
-   "study_type": "Other",
-   "ev_level": 5,
-   "impact": "LOW",
+   "study_type": "Guideline/Consensus",
+   "ev_level": 1,
+   "impact": "PRACTICE-ALTERING",
    "age_range": [
     "Child"
    ],
    "society": [],
-   "board_relevant": 0,
+   "board_relevant": 1,
    "sample_n": null,
    "tags": [
-    "#Thyroid"
+    "#Thyroid",
+    "#BoardRelevant",
+    "#Guidelines"
    ],
    "access": "Subscription",
    "clinical_bottom_line": "2026 update of Dutch pediatric DTC guideline harmonized with 2022 ETA guideline. Key adaptations: total thyroidectomy without prior histology in Bethesda V-VI nodules with proven BRAF mutation, less extensive surgery, selective omission of RAI in low-risk patients, limited initial follow-up ultrasound (3-month) with further imaging only if rising thyroglobulin.",
-   "impact_rationale": "Other on Thyroid. Background reading for clinical awareness.",
+   "impact_rationale": "Official guideline or consensus statement. Directly informs clinical protocols and management standards.",
    "review_date": "2026-07-26",
    "review_period": "July 2026",
    "is_new": false,
@@ -105891,22 +105895,24 @@
    "topic": "Growth",
    "subtopic": null,
    "diabetes_subtype": null,
-   "study_type": "Survey/Questionnaire",
-   "ev_level": 4,
-   "impact": "LOW",
+   "study_type": "Guideline/Consensus",
+   "ev_level": 1,
+   "impact": "PRACTICE-ALTERING",
    "age_range": [
     "Child",
     "Adolescent"
    ],
    "society": [],
-   "board_relevant": 0,
+   "board_relevant": 1,
    "sample_n": 44,
    "tags": [
-    "#Growth"
+    "#Growth",
+    "#BoardRelevant",
+    "#Guidelines"
    ],
    "access": "Subscription",
    "clinical_bottom_line": "This international consensus offers the first globally derived, ISS‑focused guidance developed using a formal Delphi methodology for identifying and managing children and adolescents with ISS. Adoption of these recommendations may reduce regional variability, improve diagnostic clarity, and ultimately enhance outcomes for individuals affected by ISS.",
-   "impact_rationale": "Survey/Questionnaire on Growth. Background reading for clinical awareness.",
+   "impact_rationale": "Official guideline or consensus statement. Directly informs clinical protocols and management standards.",
    "review_date": "2026-09-06",
    "review_period": "September 2026",
    "is_new": false,
@@ -109549,9 +109555,9 @@
    "topic": "Diabetes",
    "subtopic": "General",
    "diabetes_subtype": "T1D",
-   "study_type": "Other",
-   "ev_level": 5,
-   "impact": "LOW",
+   "study_type": "Guideline/Consensus",
+   "ev_level": 1,
+   "impact": "PRACTICE-ALTERING",
    "age_range": [
     "Child",
     "Adolescent"
@@ -109560,14 +109566,16 @@
     "ISPAD",
     "EASD"
    ],
-   "board_relevant": 0,
+   "board_relevant": 1,
    "sample_n": null,
    "tags": [
-    "#Diabetes"
+    "#Diabetes",
+    "#BoardRelevant",
+    "#Guidelines"
    ],
    "access": "Subscription",
    "clinical_bottom_line": "We also outline the minimum requirements for establishing effective population screening programmes to diagnose early-stage type 1 diabetes through IAb detection. This consensus statement has been endorsed by the following professional associations: Advanced Technologies & Treatments for Diabetes (ATTD); Association of Diabetes Care and Education Specialists (ADCES); Association Belge Du Diabète; Associazione Medici Diabetologi (AMD); Australian Diabetes Society (ADS); Belgian Diabetes Liga; Breakthrough T1D; Czech Diabetes Society (ČDS); EASD; Finnish Diabetes Association (FDS); Fondazione Italiana Diabete (FID); International Diabetes Federation (IDF)-Europe; International Society of Paediatric and Adolescent Diabetes (ISPAD); Paediatric Endocrinology Nursing Society (PENS); Polish Diabetes Society; Portuguese Diabetes Association (APDP); Sociedade Portuguesa de Diabetologia (SPD); Società Italiana di Diabetologia (SID); Société Francophone du Diabète (SFD) and Type 1 Diabetes Exchange (T1D Exchange).",
-   "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
+   "impact_rationale": "Official guideline or consensus statement from ISPAD. Directly informs clinical protocols and management standards.",
    "review_date": "2026-09-13",
    "review_period": "September 2026",
    "is_new": false,
