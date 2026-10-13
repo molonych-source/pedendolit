@@ -794,7 +794,7 @@ function cardHTML(a,opt){
     <div class="chead" data-card="${a.pmid}" role="button" tabindex="0" aria-expanded="${open}">
       <div class="cmain">
         ${head}
-        <div class="cmeta">${tier}<em>${esc(a.journal_abbr||a.journal)}</em> · ${fmtDate(a.pub_date,a.pub_date_precision)} · ${esc(authorStr(a))} · ${esc(a.study_type)}${sub}</div>
+        <div class="cmeta">${tier}${[`<em>${esc(a.journal_abbr||a.journal)}</em>`,fmtDate(a.pub_date,a.pub_date_precision),esc(authorStr(a)),esc(a.study_type)].filter(Boolean).join(' · ')}${sub}</div>
       </div>
       <div class="cact">
         ${AUTH_ON?`<button type="button" class="savebtn" data-save="${esc(a.pmid)}"></button>`:''}
