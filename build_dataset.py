@@ -172,6 +172,22 @@ def map_raw(raw):
     }
 
 
+def approved_guideline_pmids():
+    """PMIDs a physician approved in the guideline sweep (guideline_decisions.json).
+
+    Approval is a human judgement that the record IS an in-scope pediatric endocrine
+    guideline, so it outranks the rules: the classifier types it Guideline/Consensus and
+    the exclusion rules do not drop it. Without this, 8 of 84 approvals on 2026-10-13
+    were typed Systematic Review/Other/etc. and missed the Guidelines page.
+    """
+    try:
+        with open(os.path.join(HERE, "guideline_decisions.json")) as f:
+            dec = json.load(f).get("decisions", {})
+    except (ValueError, OSError):
+        return set()
+    return {str(p) for p, e in dec.items() if e.get("decision") == "approved"}
+
+
 def build(run_date=None, raw_path=None, verbose=True, rebuild=False):
     run_date = run_date or datetime.date.today().isoformat()
     raw_path = raw_path or os.path.join(HERE, "raw_articles.json")
@@ -193,8 +209,11 @@ def build(run_date=None, raw_path=None, verbose=True, rebuild=False):
     stats = {"fetched": len(raw_list), "new": 0, "dup_skipped": 0, "excluded": 0,
              "by_topic": {}, "by_impact": {}, "by_study": {}, "exclude_reasons": {}}
 
+    approved = approved_guideline_pmids()
     for raw in raw_list:
         rec = map_raw(raw)
+        if str(rec.get("pmid")) in approved:
+            rec["approved_guideline"] = True
         pmid = rec["pmid"]
         if not pmid:
             continue

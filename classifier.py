@@ -646,6 +646,8 @@ def diabetes_subtype(text):
 # ---------------------------------------------------------------------------
 
 def classify_study_type(art):
+    if art.get("approved_guideline"):
+        return "Guideline/Consensus", 1
     pts = [p.lower() for p in (art.get("pub_types") or [])]
     title = (art.get("title") or "")
     tl = title.lower()
@@ -1195,7 +1197,9 @@ def impact_rationale(impact, study_type, journal, topic, n, societies):
 
 def classify(art):
     """Full pipeline. Returns dict of classification fields (or {'excluded': reason})."""
-    excl = is_excluded_v2(art)
+    # A physician-approved guideline (set by build_dataset from guideline_decisions.json)
+    # has already been judged in scope; the exclusion rules must not overrule that.
+    excl = None if art.get("approved_guideline") else is_excluded_v2(art)
     if excl:
         return {"excluded": True, "exclude_reason": excl}
 
