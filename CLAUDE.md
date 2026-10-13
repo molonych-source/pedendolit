@@ -17,7 +17,9 @@ rules-based classifier, and renders a single self-contained `PedEndoLit-Dashboar
 > abstracts, pub_types and MeSH). This matters a lot: `efetch` accepts up to 200 PMIDs
 > per request, so a job the MCP path makes prohibitive (a full 2015-onward backfill,
 > ~20k articles) is ~100 requests, i.e. minutes as a plain script. The MCP still works
-> and the documented procedures below still use it; nothing has been migrated yet. Use
+> and the documented procedures below still use it; nothing has been migrated yet.
+> *(Superseded 2026-10-13: both fetches are now scripts, `weekly_fetch.py` and
+> `guideline_fetch.py`; see stage 1 below.)* Use
 > `tool=` and `email=` params, and an API key, for anything beyond 3 req/sec.
 
 This folder is a git repository (publishing = commit + push) but has no test suite,
@@ -35,10 +37,13 @@ summary for a fresh session.
 
 ## The pipeline (three-stage, run in order)
 
-1. **Fetch** (agent-only step, not a script) — Claude calls the PubMed MCP
-   `search_articles` / `get_article_metadata` per journal in `journals.json`,
-   assembles results into `raw_articles.json`. This step requires the MCP because
-   the sandbox shell cannot reach NCBI directly.
+1. **Fetch** — `python3 weekly_fetch.py` (since 2026-10-13; previously an agent-only
+   PubMed MCP step) searches each journal in `journals.json` directly on PubMed over the
+   last 21 days by **Entrez date** and writes `raw_articles.json`. The old 14-day
+   publication-date window never saw articles PubMed dates by year only, which left
+   606 articles from 2026 unfetched. `python3 audit_coverage.py` diffs the journal
+   queries against everything the pipeline has seen (store, raw files, and
+   `excluded_pmids.json`) and exits 1 if anything was never fetched.
 2. **`build_dataset.py`** — reads `raw_articles.json`, runs it through `classifier.py`,
    dedupes by PMID against the existing store, applies the 60-day archive cutoff and
    `is_new` reset, and writes `pedendolit-data.json` (the datastore: active + archived

@@ -1,0 +1,655 @@
+{
+ "comment": "PMIDs build_dataset.py excluded (classifier exclusion rules). Read by audit_coverage.py so excluded articles do not count as missing.",
+ "excluded": {
+  "39487727": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Older Adults Benefit From Virtual Support for Continuous Glucose Monitor Use But Require Longer Visits."
+  },
+  "39726263": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "How Might We Tell if Advances in Diabetes Care and Technology Are Helping People to Feel Less Constrained? Introducing t"
+  },
+  "39754348": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Improved Glycemic Control in Insulin-Treated Individuals With Poorly Controlled Type 2 Diabetes Through Combined Structu"
+  },
+  "39772653": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Continuous Glucose Monitoring Systems in Noninsulin-Treated People with Type 2 Diabetes: Erratum."
+  },
+  "39891355": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Mobile Phone Usage and Willingness to Use Mobile Phones to Support Medication Adherence and Receive Text Message Appoint"
+  },
+  "39950376": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Progression of Diabetic Retinopathy After Initiation of Automated Insulin Delivery System in Adults With Type 1 Diabetes"
+  },
+  "39960213": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Continuous and Flash Glucose Monitoring in Adults at Risk of Type 2 Diabetes: A Scoping Review."
+  },
+  "39960237": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "The Impact of Virtual Consultations on Quality of Care for Patients With Type 2 Diabetes: A Systematic Review and Meta-A"
+  },
+  "39980256": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Plantar Thermogram Analysis Using Deep Learning for Diabetic Foot Risk Classification."
+  },
+  "39980262": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Evaluation of the Effectiveness of Continuous Glucose Monitors on Glycemic Control in Patients With Type 2 Diabetes Rece"
+  },
+  "40022432": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Implications of the Glycemia Risk Index in Assessing Metabolic Control and Its Correlation With Therapy-Related Quality "
+  },
+  "40492314": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Continuous Glucose Monitoring in the Intensive Care Unit: A Multicenter, Retrospective Hospital-Based Analysis."
+  },
+  "41408600": {
+   "reason": "hard-exclude:university exam",
+   "first_seen": "2026-10-13",
+   "title": "University Exams and Psychosocial Stress: Effects on Cortisol Rhythmicity in Students."
+  },
+  "41574573": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Consistent Benefit of Control-IQ+ Automated Insulin Delivery Across a Range of Characteristics of Adults with Type 2 Dia"
+  },
+  "41611976": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Type 2 diabetes remission and metabolic outcomes 5 years after Roux-en-Y gastric bypass in young vs older adults: a mult"
+  },
+  "41649490": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: \"Children With Pancreatic Hypoplasia Experience Poor Weight Gain and Labile Diabetes but Low Incidence of"
+  },
+  "41668387": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum to: \"Automated Insulin Delivery Associated with Superior Glycemic Outcomes in Type 1 Diabetes: A Swedish Nat"
+  },
+  "41730814": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Efficacy and safety of relacorilant for the treatment of patients with Cushing's syndrome (GRACE): a multicentre, phase "
+  },
+  "41749424": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum to: \"Differences Between Glycemia Estimates from Hemoglobin A1c and Continuous Glucose Monitoring and Their "
+  },
+  "41757230": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "Pregnancy and neonatal outcomes following time-lapse versus conventional embryo culture: a retrospective cohort study."
+  },
+  "41771284": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to Lancet Diabetes Endocrinol 2026; 14: 317-26."
+  },
+  "41785911": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to Lancet Diabetes Endocrinol 2026; 14: 197-99."
+  },
+  "41800718": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Continuous Ketone Monitoring in Diabetic Ketoacidosis: Prospective Multicenter Method-Comparison and Feasibility Study."
+  },
+  "41813859": {
+   "reason": "hard-exclude:colorectal cancer",
+   "first_seen": "2026-10-13",
+   "title": "Peritumoural adipose tissue protects colorectal cancer from immune attack."
+  },
+  "41816915": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Glucose Predictions Improve Glycemic Control: A Digital Twin Evaluation."
+  },
+  "41855307": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "41869028": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "Impact of adenomyosis on pregnancy outcomes following frozen embryo transfer: development and validation of a single-cen"
+  },
+  "41869029": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "Serum progesterone and vaginal gel dose in artificial-cycle frozen embryo transfer: association with pregnancy outcome."
+  },
+  "41869038": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "Cryopreservation duration does not affect pregnancy or neonatal outcomes in single high-quality blastocyst transfers: a "
+  },
+  "41932351": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to Lancet Diabetes Endocrinol 2025; 13: 935-48."
+  },
+  "41981275": {
+   "reason": "hard-exclude:menopausal hormone therapy",
+   "first_seen": "2026-10-13",
+   "title": "Neurokinin receptor antagonists for vasomotor symptoms: from KNDy neurons to clinical translation."
+  },
+  "41997891": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Operational and Clinical Insights from a Fully Decentralized Clinical Study Evaluating Protocol Adherence, Participant S"
+  },
+  "42047515": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "The clinical picture of symptomatic Rathke cleft cysts in children."
+  },
+  "42051454": {
+   "reason": "hard-exclude:colorectal carcinoma",
+   "first_seen": "2026-10-13",
+   "title": "Rethinking the prognostic and biological significance of neuroendocrine marker expression in colorectal carcinoma."
+  },
+  "42051458": {
+   "reason": "hard-exclude:knee osteoarthritis",
+   "first_seen": "2026-10-13",
+   "title": "ECM remodeling features in reparative chondrocytes during knee osteoarthritis."
+  },
+  "42051459": {
+   "reason": "hard-exclude:gouty arthritis",
+   "first_seen": "2026-10-13",
+   "title": "Quercetin in metabolic diseases: mechanisms, therapeutics, and multidimensional frontiers."
+  },
+  "42051464": {
+   "reason": "hard-exclude:gouty arthritis",
+   "first_seen": "2026-10-13",
+   "title": "Gouty arthritis model: delving into disease pathways and uncovering possible therapeutic targets."
+  },
+  "42058785": {
+   "reason": "hard-exclude:recurrent implantation failure",
+   "first_seen": "2026-10-13",
+   "title": "Effects of autologous platelet-rich plasma in recurrent implantation failure: a systematic review and meta-analysis."
+  },
+  "42061390": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Natural history of thyroid function in ageing: an individual participant data analysis of 137 488 participants from 31 p"
+  },
+  "42061391": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "What is an optimal serum thyroid-stimulating hormone value in older adults?"
+  },
+  "42064764": {
+   "reason": "hard-exclude:dementia risk",
+   "first_seen": "2026-10-13",
+   "title": "The impact of antidiabetic drugs on dementia risk: a Bayesian network meta-analysis."
+  },
+  "42064774": {
+   "reason": "hard-exclude:erectile dysfunction",
+   "first_seen": "2026-10-13",
+   "title": "Cadmium chloride and erectile dysfunction: integrative evidence from network toxicology, Mendelian randomization, and in"
+  },
+  "42064778": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction: Post-vaccination SARS-CoV-2 infections and antibody responses after BNT162b2 in patients with severe obesity"
+  },
+  "42091122": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Digital Intervention Increasing Sleep Duration Among People With Type 2 Diabetes: Pilot Randomized Controlled Trial."
+  },
+  "42109049": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Effectiveness of Continuous Glucose Monitoring on Glycemic and Metabolic Outcomes in Type 2 Diabetes: A Two-Year Real-Wo"
+  },
+  "42126098": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum to: Family and culture in type 1 diabetes transition care: a mini review."
+  },
+  "42137973": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "How Continuous Glucose Monitoring Reports Inform Clinical Decision-Making for Older Adults With Type 2 Diabetes: Mapping"
+  },
+  "42218605": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Driving-Related Glucose Monitoring Practices Among Insulin-Treated Adults With Type 2 Diabetes."
+  },
+  "42281518": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Performance and Safety of a 15-Day Real-Time Continuous Glucose Monitoring System in Chinese Adults With Diabetes: A Mul"
+  },
+  "42333068": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Percent Time Below Range Is Strongly Associated with Clinically Important Level 2 Hypoglycemia Events in Individuals wit"
+  },
+  "42366646": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "\"HbA1c and Glucose Management Indicator Discordance: A Real-World Analysis\"."
+  },
+  "42381170": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Continuous Glucose Monitoring and Hypoglycemia Detection while Driving: Results from a Cross-Sectional Survey."
+  },
+  "42383640": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "A Pilot Study on Disposal Practices and Environmental Awareness of Insulin-Related Devices Among People With Diabetes."
+  },
+  "42387304": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum to: Reliability of point-of-care glucose in neonates: revisiting hypoglycemia protocols in the NICU."
+  },
+  "42415560": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Author Correction: MC4R-related monogenic obesity in children: insights from 2 cases."
+  },
+  "42611023": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Excess Burden of Inpatient Admissions and Emergency Department Visits Associated With Diabetes Across the Age Spectrum."
+  },
+  "42818901": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Predictive value of baseline, cumulative exposure and annual mean changes in TyG-related indices for cardiovascular even"
+  },
+  "42824384": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Cumulative live birth following preimplantation genetic testing for aneuploidy versus conventional IVF/ICSI in unexplain"
+  },
+  "42834623": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Successful treatment of metformin-associated lactic acidosis without hemodialysis."
+  },
+  "42844784": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Accuracy of Continuous Glucose Monitoring During Hospitalization in People With Type 2 Diabetes Requiring Dialysis."
+  },
+  "42845061": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum to: A case report of Xp21 contiguous gene deletion syndrome with adrenal crisis and sensorineural hearing loss: "
+  },
+  "37029548": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum to \"Difference on Glucose Profile From Continuous Glucose Monitoring in People With Prediabetes vs. Normogly"
+  },
+  "38747372": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum to \"Reduced Efficacy of Glucagon-Like Peptide-1 Receptor Agonists Therapy in People With Type 1 Diabetes and Gen"
+  },
+  "39820089": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Growth and Recombinant Human Growth Hormone Use in Children with Congenital Chronic Kidney Disease: A Multicentric Conte"
+  },
+  "39882730": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum to \"How the Diabetes Research Hub Will Modernize and Enhance Diabetes Data Utilization\"."
+  },
+  "40767452": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "AI-Guided Cardiac Computer Tomography in Type 1 Diabetes Patients with Low Coronary Artery Calcium Score."
+  },
+  "40824875": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Accuracy of Dexcom G6 Pro and G7 Continuous Glucose Monitors in Patients Treated with Maintenance Dialysis."
+  },
+  "40839546": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "40929374": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Age-Stratified Reference Ranges for Directly Measured Serum Free Testosterone in Community-Dwelling and Healthy Men."
+  },
+  "40985116": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Usability of Continuous Glucose Monitoring for Older Adults with Type 2 Diabetes: A Systematic Review."
+  },
+  "40995630": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Impact of Simplification Strategies on Postmeal Glucose Excursions in Older Adults with Type 1 Diabetes and Hypoglycemia"
+  },
+  "41054215": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "The Influence of Health Literacy on the Control of Hypothyroidism in Patients Under Levothyroxine Treatment."
+  },
+  "41109847": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Managing Hybrid Closed-Loop Insulin Delivery in Complex Clinical Scenarios: Focus on Perioperative, Dialysis, and Glucoc"
+  },
+  "41196662": {
+   "reason": "pure basic science",
+   "first_seen": "2026-10-13",
+   "title": "Additive Effects of Dorzagliatin and Glucagon-Like Peptide 1 Receptor Agonism in a Novel Mouse Model of GCK-MODY and in "
+  },
+  "41204648": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Glutathione synthetase deficiency: severe hemolysis and metabolic acidosis with symptoms in the intrauterine period."
+  },
+  "41264341": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Simplified Meal Bolus Strategies with Control-IQ+ Automated Insulin Delivery Are Safe and Effective in Adults with Type "
+  },
+  "41311199": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Real-World HbA1c Following Initiation of the Omnipod 5 Automated Insulin Delivery System."
+  },
+  "41504777": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: \"FSH and Sertoli Cell Biomarkers Accurately Distinguish Hypogonadotropic Hypogonadism From Self-limited D"
+  },
+  "41548885": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Continuous Glucose Monitoring-Based Machine Learning Identification of Diurnal Glycemic Patterns and Diabetes Distress i"
+  },
+  "41601943": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction: Temporal expression patterns of genes related to sex steroid action in sexually dimorphic nuclei during pube"
+  },
+  "41673941": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Subcutaneous Catheter Type and Wear Duration in Automated Insulin Delivery Systems: Associations with Glycemic Control i"
+  },
+  "41712433": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Evaluation of the Siemens Healthineers Atellica TSTII testosterone assay in the CDC HoSt-TT program."
+  },
+  "41743547": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction: Unveiling the hidden: acquired pediatric hypothyroidism."
+  },
+  "41766065": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Impact of Continuous Glucose Monitor on Health Care Resource Utilization in Adults with Type 2 Diabetes Managed by Nonin"
+  },
+  "41804538": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Continuous Glucose Monitoring Metrics Using FreeStyle Libre3 in Patients with Type 2 Diabetes and Gastroparesis: A Pilot"
+  },
+  "41858854": {
+   "reason": "hard-exclude:postmenopausal women",
+   "first_seen": "2026-10-13",
+   "title": "Comparative analysis of bone density measurement techniques: a systematic review of quantitative ultrasound and dual-ene"
+  },
+  "41924520": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Comparative outcomes of day 4 versus day 5 embryo transfers by fertilization method."
+  },
+  "41956337": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "First in Human Feasibility Study of an Insulin Patch Pump Combined With CGM-Insulin Delivery Cannula."
+  },
+  "41958884": {
+   "reason": "hard-exclude:adenomyosis",
+   "first_seen": "2026-10-13",
+   "title": "Early modulation of autophagy-associated markers in murine adenomyosis and selective persistence in human stromal lesion"
+  },
+  "41964423": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Copeptin kinetics in healthy aging."
+  },
+  "41978419": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Impact of Continuous Glucose Monitoring on Clinical Outcomes and Productivity Losses Among People Living With Type 2 Dia"
+  },
+  "42007464": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Comparing pregnancy outcomes in a population with natural versus surgical reduction of twin pregnancies: a retrospective"
+  },
+  "42051365": {
+   "reason": "hard-exclude:zebrafish",
+   "first_seen": "2026-10-13",
+   "title": "Embryonic exposure to environmental levels of roundup affects neurodevelopment in zebrafish."
+  },
+  "42051444": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Real-world identification of high-risk medications for drug-induced osteoporosis: a multi-method pharmacovigilance study"
+  },
+  "42077450": {
+   "reason": "hard-exclude:embryo transfer cycle",
+   "first_seen": "2026-10-13",
+   "title": "The impact of COVID-19 infection on the live birth rate in fresh embryo transfer cycles."
+  },
+  "42077453": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Development and validation of age- and gender-specific reference intervals for the triglyceride-glucose index in a large"
+  },
+  "42090273": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: \"Automated insulin delivery in young children with type 1 diabetes: a systematic review and meta-analysis"
+  },
+  "42125232": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Not all adenomyosis is equal: impact of direct adenomyosis features on live birth after ART cycles in a prospective coho"
+  },
+  "42158911": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Timing of dexamethasone initiation during controlled ovarian stimulation and live birth after IVF/ICSI: a retrospective "
+  },
+  "42165023": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Outcomes of frozen embryo transfers from a large monocentric cohort (2982 cycles): towards a preferential use of cycles "
+  },
+  "42217196": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "42222076": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Association between in vitro fertilization and preeclampsia: a multicenter cohort study with subgroup analysis by matern"
+  },
+  "42244948": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Effect of weight loss intervention on assisted reproductive outcomes in women with obesity and infertility: a retrospect"
+  },
+  "42305265": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Clinical outcomes of co-transfer of partially and fully compacted morula versus fully compacted morula alone on day 4."
+  },
+  "42330115": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "The polystyrene beads sign: a simple MRI marker for the preoperative diagnosis of papillary hypothalamic craniopharyngio"
+  },
+  "42339083": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "The impact of regressed endometrial hyperplasia on reproductive outcomes following frozen embryo transfer: a propensity "
+  },
+  "42375325": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Development and validation of a clinical prediction model for poor ovarian response in assisted reproductive technology."
+  },
+  "42440503": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Impact of Day-3 embryo cell number on pregnancy, obstetric and perinatal outcomes in frozen-thawed single blastocyst tra"
+  },
+  "42460323": {
+   "reason": "hard-exclude:prostate cancer",
+   "first_seen": "2026-10-13",
+   "title": "Case Report: Familial complete androgen insensitivity syndrome across four sisters from childhood to adulthood - a hemiz"
+  },
+  "42466332": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Fertility and endocrinopathies among adults with β-thalassemia major treated at Dubai thalassemia center."
+  },
+  "42488006": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction: Central precocious puberty as the initial manifestation of multisystem involvement caused by de novo heteroz"
+  },
+  "42488011": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Association between laser-assisted hatching and subsequent blastocyst development in fresh day 3 cleavage-stage embryos:"
+  },
+  "42523695": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "A large-scale prediction model to predict large for gestational age infants conceived by IVF/ICSI."
+  },
+  "42528788": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Prepregnancy body mass index and risk of macrosomia after fresh embryo transfer: a retrospective cohort study with explo"
+  },
+  "42548137": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Automated Insulin Delivery System Initiation Safely Improves Glycemic Outcomes in Older Adults with Type 1 Diabetes."
+  },
+  "42579284": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: \"A systematic review supporting the Endocrine Society clinical practice guidelines on central precocious "
+  },
+  "42619666": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Determinants of Continuous Glucose Monitoring Accuracy in Critically Ill Patients Requiring Mechanical Ventilation and V"
+  },
+  "42643709": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction: Somatotropic axis drives bone turnover heterogeneity independently of gonadotropin synergy in girls with cen"
+  },
+  "42656333": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "Pregnancy outcomes after fresh and frozen embryo transfer in women of advanced age and analysis of influencing factors: "
+  },
+  "42682541": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Ten years of DuoStim in time-sensitive poor-prognosis IVF patients: real world cumulative outcomes and treatment traject"
+  },
+  "42687632": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Optimizing Continuous Glucose Monitoring for Older Adults with Diabetes: From Clinical Evidence to a Practical Implement"
+  },
+  "42698180": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Continuous Glucose Monitoring and Driving Safety: Clarifying the Inference From a Survey of Insulin-Treated Adults With "
+  },
+  "42711421": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "42711848": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Real-World Data from U.S. Commercial Users of the 365-Day Implantable Eversense Continuous Glucose Monitoring System, In"
+  },
+  "42718543": {
+   "reason": "hard-exclude:recurrent implantation failure",
+   "first_seen": "2026-10-13",
+   "title": "Association of intrauterine platelet-rich plasma infusion before embryo transfer with endometrial response and live birt"
+  },
+  "42740693": {
+   "reason": "hard-exclude:menopausal hormone therapy",
+   "first_seen": "2026-10-13",
+   "title": "Glucose excursions throughout the reproductive life stages in women with diabetes."
+  },
+  "42751863": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Use of Continuous Glucose Monitoring Indicators to Guide Dose Titration of Weekly Basal Insulin Efsitora Alfa in Insulin"
+  },
+  "42786775": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Continuous Glucose Monitoring and Hospitalization Outcomes in Adults with Insulin-Treated Type 2 Diabetes and Complex Ca"
+  },
+  "42812141": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to \"Prevalence of Impaired Fasting Glucose (IFG) and Associated Prediabetes Metabolic Markers Among Adolescen"
+  },
+  "42823977": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Cleavage-stage stratification reveals the clinical and developmental potential of 0PN embryos compared with 2PN embryos "
+  }
+ }
+}

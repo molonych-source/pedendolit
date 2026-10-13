@@ -37,6 +37,15 @@ classifies and rebuilds the dashboard. No Perplexity, no external server.
 - `PedEndoLit-Dashboard.html` — identical convenience copy, gitignored (also copied to `01_Clinical_Research/`)
 
 ## Weekly procedure (run every Sunday)
+
+**Since 2026-10-13, steps 1-5 are one command:** `python3 weekly_fetch.py` (journals
+in `journals.json`, last 21 days by Entrez date, overlapping runs, writes
+`raw_articles.json`). Then continue at step 6. After step 6, run
+`python3 audit_coverage.py` (last 90 days); it must PASS. If it lists PMIDs, fetch them
+with `python3 weekly_fetch.py --pmids <file> --out backfill_raw.json` and merge with
+`python3 build_dataset.py --raw backfill_raw.json --backfill`. The MCP steps below are
+kept for reference only.
+
 1. Compute the date window: `today − 14 days` → `today`, field `[pdat]`.
 2. For each of the 19 journals in `journals.json`, call the PubMed MCP `search_articles`:
    - query: `("<abbr>"[Journal])`; if `peds_filter` is true, AND the PEDS_TERMS clause.
@@ -47,10 +56,11 @@ classifies and rebuilds the dashboard. No Perplexity, no external server.
    The MCP persists large results to files under `.claude/projects/.../tool-results/`;
    read those from the sandbox rather than pulling into context.
 5. Assemble `raw_articles.json` from the fetched metadata (dedupe by PMID).
-   > **Known gap (2026-10-13):** a `[pdat]` window misses articles whose PubMed
-   > publication date is year-only (online-first journals such as Front Endocrinol and
-   > J Diabetes Sci Technol): PubMed files them as Jan 1, outside any recent window. A
-   > coverage audit found ~600 such 2026 articles never fetched. Fix pending; see TASKS.md.
+   > **Fixed 2026-10-13:** a `[pdat]` window misses articles whose PubMed publication
+   > date is year-only (online-first journals such as Front Endocrinol and J Diabetes
+   > Sci Technol): PubMed files them as Jan 1, outside any recent window. 606 such 2026
+   > articles were never fetched; 537 were backfilled (69 excluded by the classifier).
+   > `weekly_fetch.py` windows by Entrez date instead.
 6. Run: `python3 build_dataset.py --run-date <YYYY-MM-DD>`
    - This MERGES (does not rebuild): existing PMIDs are skipped, only new ones added.
    - It applies the 60-day archive cutoff and resets `is_new` so only this week's
