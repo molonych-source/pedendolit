@@ -147,9 +147,32 @@ def build():
         with open(out, "w", encoding="utf-8") as f:
             f.write(html_doc)
     print(f"dashboard written: {len(active)} active articles")
+    check_published_sizes()
     print(f"  {OUT_LOCAL}")
     print(f"  {OUT_ROOT}")
     print(f"  {OUT_INDEX}")
+
+
+# GitHub warns on files over 50 MB and rejects them over 100 MB. Fail the build well
+# before that, so the limit is a deliberate decision and not a rejected weekly push.
+# At ~3,500 bytes per article this trips near 14,000 articles; the planned remedy is to
+# move abstracts out of the page into separately loaded files (see DECISIONS.md).
+MAX_PUBLISHED_MB = float(os.environ.get("PEDENDOLIT_MAX_FILE_MB", "45"))
+
+
+def check_published_sizes():
+    big = []
+    for name in ("index.html", "pedendolit-data.json", "comprehensive_raw.json"):
+        path = os.path.join(HERE, name)
+        if os.path.exists(path):
+            mb = os.path.getsize(path) / 1048576
+            print(f"  size check: {name} {mb:.1f} MB (limit {MAX_PUBLISHED_MB:.0f})")
+            if mb > MAX_PUBLISHED_MB:
+                big.append(f"{name} is {mb:.1f} MB")
+    if big:
+        raise SystemExit("FAIL: " + "; ".join(big) + f" (limit {MAX_PUBLISHED_MB:.0f} MB). "
+                         "GitHub rejects files over 100 MB. Split abstracts out of the page "
+                         "before publishing more articles.")
 
 
 HTML_TEMPLATE = r"""<!doctype html>
@@ -714,7 +737,8 @@ function coverageHTML(since,topic){
     const n=ART.filter(a=>a.pub_date>=since&&a.pub_date<COV.date&&(!topic||a.topic===topic)).length;
     return `<div class="coverage warn"><b>Coverage is thin before ${esc(COV.label)}.</b> From ${esc(fmtLong(since))} to then, the site holds ${n} ${topic?esc(topic)+' ':''}article${n===1?'':'s'}, against about ${COV.avg} a month since. Read the results as what we have, not everything published.</div>`;
   }
-  return `<div class="coverage">Steady monthly coverage starts in ${esc(COV.label)}, at about ${COV.avg} articles a month. Before that the site holds ${COV.pre} articles in all (${COV.preGuidelines} of them guidelines), so an earlier start date returns a sample.</div>`;
+  // Only the warning is shown. A standing notice was noise once coverage reached 2020.
+  return '';
 }
 
 // ---------------------------------------------------------------------------

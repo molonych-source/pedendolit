@@ -135,7 +135,7 @@ This is separable work and can run in parallel, but the redesign should not ship
 Every data access in the page becomes **asynchronous**, while the data is still embedded in
 the file. Nothing changes on screen. It is cheap now and expensive later: at 20,000 articles
 the single-file embed is not viable (~65 MB of JSON → a ~62 MB page, against GitHub Pages'
-100 MB file cap — see `DECISIONS.md`), so moving to a database-backed archive is inevitable,
+100 MB file cap — see `DECISIONS.md`; per-visit download corrected there 2026-10-13: the page is served gzip-compressed, about 4x smaller), so moving to a database-backed archive is inevitable,
 and this makes that move plumbing rather than a rewrite.
 
 ## Risks

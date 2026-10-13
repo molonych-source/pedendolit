@@ -178,6 +178,7 @@ visitor downloads before seeing one article, and GitHub Pages hard-caps files at
 (breaking outright near 30k) with a 100 GB/month bandwidth budget that 62 MB/visit exhausts in
 ~1,600 views. Git history is a second, already-visible constraint: `.git` is 53 MB after 8
 commits because the store is rewritten wholesale each week and deltas poorly.
+*Correction, 2026-10-13: two numbers here were wrong. (1) The `.git` size came from unpacked loose objects; after `git gc` the repo is 37 MB locally and 25 MB on GitHub with 43 page versions, because git stores each new version as a delta. History is not a constraint. (2) Visitors download the page gzip-compressed: 39 MB raw is 9.6 MB transferred at 11,021 articles, so the bandwidth estimate per visit was about 4x too high. The single-file cap still stands: `build_dashboard.py` now fails if a published file exceeds 45 MB (about 14,000 articles).
 **Direction:** keep a recent window embedded so the weekly brief stays instant and works
 offline, and serve deep history from Supabase (already provisioned), which also makes
 "topic X since date Y" an indexed query instead of a client-side scan. **Deliberately kept:**

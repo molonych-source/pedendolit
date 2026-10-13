@@ -100,6 +100,7 @@ starts with a brainstorm** — these are inputs to react to, not a design.
 - **The binding scale constraint is the single-file embed, not storage.** 20k articles is only
   ~65 MB of JSON, but `index.html` embeds all of it → ~62 MB page, and GitHub Pages caps files
   at 100 MB. `.git` is already 53 MB after 8 commits for the same reason. See `DECISIONS.md`.
+  > **Correction, 2026-10-13:** two numbers here were wrong. (1) The `.git` size came from unpacked loose objects; after `git gc` the repo is 37 MB locally and 25 MB on GitHub with 43 page versions, because git stores each new version as a delta. History is not a constraint. (2) Visitors download the page gzip-compressed: 39 MB raw is 9.6 MB transferred at 11,021 articles, so the bandwidth estimate per visit was about 4x too high. The single-file cap still stands: `build_dashboard.py` now fails if a published file exceeds 45 MB (about 14,000 articles).
 
 ## What's next, in order (mirrors TASKS.md)
 
