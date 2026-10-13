@@ -17,7 +17,9 @@ rules-based classifier, and renders a single self-contained `PedEndoLit-Dashboar
 > abstracts, pub_types and MeSH). This matters a lot: `efetch` accepts up to 200 PMIDs
 > per request, so a job the MCP path makes prohibitive (a full 2015-onward backfill,
 > ~20k articles) is ~100 requests, i.e. minutes as a plain script. The MCP still works
-> and the documented procedures below still use it; nothing has been migrated yet. Use
+> and the documented procedures below still use it; nothing has been migrated yet.
+> *(Superseded 2026-10-13: both fetches are now scripts, `weekly_fetch.py` and
+> `guideline_fetch.py`; see stage 1 below.)* Use
 > `tool=` and `email=` params, and an API key, for anything beyond 3 req/sec.
 
 This folder is a git repository (publishing = commit + push) but has no test suite,
@@ -35,10 +37,13 @@ summary for a fresh session.
 
 ## The pipeline (three-stage, run in order)
 
-1. **Fetch** (agent-only step, not a script) — Claude calls the PubMed MCP
-   `search_articles` / `get_article_metadata` per journal in `journals.json`,
-   assembles results into `raw_articles.json`. This step requires the MCP because
-   the sandbox shell cannot reach NCBI directly.
+1. **Fetch** — `python3 weekly_fetch.py` (since 2026-10-13; previously an agent-only
+   PubMed MCP step) searches each journal in `journals.json` directly on PubMed over the
+   last 21 days by **Entrez date** and writes `raw_articles.json`. The old 14-day
+   publication-date window never saw articles PubMed dates by year only, which left
+   606 articles from 2026 unfetched. `python3 audit_coverage.py` diffs the journal
+   queries against everything the pipeline has seen (store, raw files, and
+   `excluded_pmids.json`) and exits 1 if anything was never fetched.
 2. **`build_dataset.py`** — reads `raw_articles.json`, runs it through `classifier.py`,
    dedupes by PMID against the existing store, applies the 60-day archive cutoff and
    `is_new` reset, and writes `pedendolit-data.json` (the datastore: active + archived
@@ -100,8 +105,9 @@ The full weekly procedure (date windows, MCP batching, PMID dedup) is in
   before any `--rebuild`. It seeds from the current store first so a rebuild cannot
   delete an article that exists only in `pedendolit-data.json`.
 - **Monthly guideline sweep** — triage for guidelines published outside the 19 monitored
-  journals (the pipeline is journal-scoped and structurally cannot see them). Four parts:
-  `guideline_sweep.py` (dedup vs store + `guideline_decisions.json`, classify) → a **Sonnet
+  journals (the pipeline is journal-scoped and structurally cannot see them). Five parts:
+  `guideline_fetch.py` (direct PubMed search by publication type AND title wording, since
+  2026-10-13; also stamps `guideline_sweep_state.json`) → `guideline_sweep.py` (dedup vs store + `guideline_decisions.json`, classify) → a **Sonnet
   review subagent** that judges pediatric-ness and endocrine-ness and writes
   `guideline_verdicts.json` → `build_review_page.py` (self-contained `guideline_review.html`
   with checkboxes; Submit downloads `approved_pmids.json`) → `apply_approvals.py` (records
@@ -113,7 +119,11 @@ The full weekly procedure (date windows, MCP batching, PMID dedup) is in
 - **`check_classifier_regressions.py`** — the deterministic, zero-LLM layer of classifier
   QA. Diffs topics between the last published store (`git HEAD`) and the working-tree
   store; exits 1 if any topic changed without a `classifier_qa_decisions.json` entry whose
-  `target_topic` matches the new topic, or if an article disappeared entirely. Reports
+  `target_topic` matches the new topic, if an article disappeared entirely, or (since
+  2026-10-13) if any article lost metadata it had: abstract, authors, DOI, volume/issue/pages,
+  PMC, publication types; if any pub_date is not ISO or lacks its precision; or if the
+  guideline sweep is over 45 days old. `check_guideline_recall.py` separately guards the
+  sweep's query against losing known guidelines. Reports
   `study_type`/`impact` drift without failing. `--bless PMID "reason"` records a correct-
   but-unpredicted change into the same ledger. **Run it after a rebuild and before
   committing** — it compares against `git HEAD`, so committing destroys the comparison.

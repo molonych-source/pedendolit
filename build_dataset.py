@@ -115,6 +115,7 @@ def apply_topic_overrides(store):
         # so blanking would strip them from every overridden article in that topic.
         a["subtopic"] = (clf.bone_mineral_subtopic(title_l, text)
                          if new_topic == "Bone/Mineral" else None)
+        a["subtopic"] = clf.refine_subtopic(new_topic, a["subtopic"], title_l, text)
         a["diabetes_subtype"] = clf.diabetes_subtype(text) if new_topic == "Diabetes" else None
         a["tags"] = clf.generate_tags(a, new_topic, a["subtopic"], a.get("study_type"),
                                        a.get("impact"), a.get("board_relevant"), text, title_l)
@@ -172,7 +173,50 @@ def map_raw(raw):
     }
 
 
-def build(run_date=None, raw_path=None, verbose=True, rebuild=False):
+def approved_guideline_pmids():
+    """PMIDs a physician approved in the guideline sweep (guideline_decisions.json).
+
+    Approval is a human judgement that the record IS an in-scope pediatric endocrine
+    guideline, so it outranks the rules: the classifier types it Guideline/Consensus and
+    the exclusion rules do not drop it. Without this, 8 of 84 approvals on 2026-10-13
+    were typed Systematic Review/Other/etc. and missed the Guidelines page.
+    """
+    try:
+        with open(os.path.join(HERE, "guideline_decisions.json")) as f:
+            dec = json.load(f).get("decisions", {})
+    except (ValueError, OSError):
+        return set()
+    return {str(p) for p, e in dec.items() if e.get("decision") == "approved"}
+
+
+EXCLUDED_PATH = os.path.join(HERE, "excluded_pmids.json")
+
+
+def record_exclusions(excluded, run_date):
+    """Remember every PMID the classifier excluded, permanently.
+
+    raw_articles.json is overwritten every week, so without this an excluded article
+    leaves no trace and audit_coverage.py would report it as "never fetched" forever.
+    First sighting wins; re-excluding the same PMID changes nothing.
+    """
+    try:
+        led = json.load(open(EXCLUDED_PATH))
+    except (ValueError, OSError):
+        led = {"comment": "PMIDs build_dataset.py excluded (classifier exclusion rules). "
+                          "Read by audit_coverage.py so excluded articles do not count as missing.",
+               "excluded": {}}
+    added = 0
+    for pmid, reason, title in excluded:
+        if pmid not in led["excluded"]:
+            led["excluded"][pmid] = {"reason": reason, "first_seen": run_date, "title": title[:120]}
+            added += 1
+    if added:
+        with open(EXCLUDED_PATH, "w") as f:
+            json.dump(led, f, indent=1, ensure_ascii=False)
+    return added
+
+
+def build(run_date=None, raw_path=None, verbose=True, rebuild=False, backfill=False):
     run_date = run_date or datetime.date.today().isoformat()
     raw_path = raw_path or os.path.join(HERE, "raw_articles.json")
     if rebuild:
@@ -180,9 +224,11 @@ def build(run_date=None, raw_path=None, verbose=True, rebuild=False):
         # Preserves review_date per PMID if known, so archive logic stays correct.
         prior = load_store()
         prior_dates = {a["pmid"]: a.get("review_date") for a in prior["articles"] if a.get("pmid")}
+        prior_backfill = {a["pmid"] for a in prior["articles"] if a.get("backfill")}
         store = {"generated": None, "review_period": None, "articles": [], "_prior_dates": prior_dates}
         existing = set()
     else:
+        prior_backfill = set()
         store = load_store()
         store.pop("_prior_dates", None)
         existing = {a["pmid"] for a in store["articles"] if a.get("pmid")}
@@ -193,8 +239,12 @@ def build(run_date=None, raw_path=None, verbose=True, rebuild=False):
     stats = {"fetched": len(raw_list), "new": 0, "dup_skipped": 0, "excluded": 0,
              "by_topic": {}, "by_impact": {}, "by_study": {}, "exclude_reasons": {}}
 
+    approved = approved_guideline_pmids()
+    excluded = []
     for raw in raw_list:
         rec = map_raw(raw)
+        if str(rec.get("pmid")) in approved:
+            rec["approved_guideline"] = True
         pmid = rec["pmid"]
         if not pmid:
             continue
@@ -207,6 +257,7 @@ def build(run_date=None, raw_path=None, verbose=True, rebuild=False):
             stats["excluded"] += 1
             r = c.get("exclude_reason", "?")
             stats["exclude_reasons"][r] = stats["exclude_reasons"].get(r, 0) + 1
+            excluded.append((str(pmid), r, rec.get("title") or ""))
             continue
         article = {**rec, **c}
         # On rebuild, keep the article's original review_date so archive math is stable.
@@ -216,6 +267,8 @@ def build(run_date=None, raw_path=None, verbose=True, rebuild=False):
         article["review_date"] = rd
         article["review_period"] = datetime.datetime.strptime(rd, "%Y-%m-%d").strftime("%B %Y")
         article["is_new"] = True
+        if backfill or pmid in prior_backfill:   # a rebuild keeps the marker
+            article["backfill"] = True
         article["is_archived"] = False
         store["articles"].append(article)
         stats["new"] += 1
@@ -237,7 +290,10 @@ def build(run_date=None, raw_path=None, verbose=True, rebuild=False):
     # by hiding articles from everyone. Set ARCHIVE_AFTER_DAYS to an int to
     # re-enable; leave it None to keep every article visible.
     for a in store["articles"]:
-        a["is_new"] = (a.get("review_date") == run_date)  # True only for articles added this run
+        # True only for articles added this run. A backfill (catch-up of older material,
+        # --backfill) is added but is not "new this week": flagging 537 catch-up
+        # articles as new would bury the week's real additions on the topic tiles.
+        a["is_new"] = (a.get("review_date") == run_date) and not a.get("backfill")
         if ARCHIVE_AFTER_DAYS is None:
             a["is_archived"] = False
         else:
@@ -255,6 +311,7 @@ def build(run_date=None, raw_path=None, verbose=True, rebuild=False):
 
     with open(DATA, "w") as f:
         json.dump(store, f, indent=1, ensure_ascii=False)
+    record_exclusions(excluded, run_date)
 
     if verbose:
         active = sum(1 for a in store["articles"] if not a["is_archived"])
@@ -278,7 +335,9 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--run-date")
     ap.add_argument("--raw")
+    ap.add_argument("--backfill", action="store_true",
+                    help="catch-up of older material: add it, but never flag it new this week")
     ap.add_argument("--rebuild", action="store_true",
                     help="reclassify all raw articles, discarding prior classifications")
     a = ap.parse_args()
-    build(run_date=a.run_date, raw_path=a.raw, rebuild=a.rebuild)
+    build(run_date=a.run_date, raw_path=a.raw, rebuild=a.rebuild, backfill=a.backfill)

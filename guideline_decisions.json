@@ -656,10 +656,12 @@
    "title": "2018 Cholesterol Clinical Practice Guidelines: Synopsis of the 2018 American Heart Association/American College of Cardiology/Multisociety Cholesterol Guideline"
   },
   "31154502": {
-   "decision": "approved",
+   "decision": "rejected",
    "decided_on": "2026-08-04",
    "agent_verdict": "accept",
-   "title": "Comparison of the diagnostic performance of the 2017 ACR TI-RADS guideline to the Kwak guideline in children with thyroid nodules."
+   "title": "Comparison of the diagnostic performance of the 2017 ACR TI-RADS guideline to the Kwak guideline in children with thyroid nodules.",
+   "revoked_on": "2026-10-13",
+   "revoke_reason": "A comparative diagnostic-accuracy study of two TI-RADS systems, not a guideline. Approved 2026-08-04 on the strength of a PubMed Practice Guideline tag."
   },
   "31202666": {
    "decision": "rejected",
@@ -1104,6 +1106,2928 @@
    "decided_on": "2026-08-04",
    "agent_verdict": "reject",
    "title": "[Preeclampsia: Guidelines for clinical practice from the French College of Obstetricians and Gynecologists]."
+  },
+  "29698339": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Disparities in Adherence to Pediatric Diabetic Ketoacidosis Management Guidelines Across a Spectrum of Emergency Departments in the State of Indiana: An Observa"
+  },
+  "35688438": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Impact of Gestational Weight Gain Recommendations for Obese Women on Neonatal Morbidity."
+  },
+  "35695284": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Explainable Machine Learning for Real-Time Hypoglycemia and Hyperglycemia Prediction and Personalized Control Recommendations."
+  },
+  "35973791": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Early Gestational Diabetes Screening Based on ACOG Guidelines."
+  },
+  "36113492": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Is the Gestational Weight Gain Recommended by the National Academy of Medicine Guidelines Suitable for Chinese Twin-Pregnant Women with Gestational Diabetes Mel"
+  },
+  "36504466": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Sugar intake above international recommendations and oral disease burden: A population-based study."
+  },
+  "37183697": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Effect of zinc supplementation in the management of type 2 diabetes: A grading of recommendations assessment, development, and evaluation-assessed, dose-respons"
+  },
+  "37382585": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Guidelines for the prevention and treatment of glucocorticoid-induced osteoporosis in pediatrics."
+  },
+  "37589890": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Cumulative incidence of type 1 diabetes in two cohorts of children with different national gluten recommendations in infancy."
+  },
+  "37625502": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Adding oscillometry to spirometry in guidelines better identifies uncontrolled asthma, future exacerbations, and potential targeted therapy."
+  },
+  "37733136": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Compliance with public health recommendations of cancer-free female research volunteers: the French Seintinelles study."
+  },
+  "37752373": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "The diagnosis of hypophosphatasia in children as a multidisciplinary effort: an expert opinion."
+  },
+  "37773071": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Combined aerobic and muscle-strengthening activity guidelines and their association with obesity in US adolescents."
+  },
+  "37773146": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Women Who Give Birth Preterm Do Not Meet Dietary Guidelines During Pregnancy."
+  },
+  "37792100": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Adherence to vitamin D supplementation guidelines in children under five years of age: a systematic literature review."
+  },
+  "37821296": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Practice patterns in management of differentiated thyroid cancer since the 2014 British Thyroid Association (BTA) guidelines."
+  },
+  "37846179": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Changing the global obesity narrative to recognize and reduce weight stigma: A position statement from the World Obesity Federation."
+  },
+  "37867270": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Risk Stratification in People with Diabetes for Fasting During Ramadan: Consensus from Arabic Association for the Study of Diabetes and Metabolism."
+  },
+  "37891382": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Tall stature and gigantism in transition age: clinical and genetic aspects-a literature review and recommendations."
+  },
+  "37918624": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Gestational Diabetes Mellitus and Metabolic Syndrome: A Review of the Associations and Recommendations."
+  },
+  "37937881": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "2023 International Consensus on Cardiopulmonary Resuscitation and Emergency Cardiovascular Care Science With Treatment Recommendations: Summary From the Basic L"
+  },
+  "37977093": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Meeting the Canadian 24-Hour Movement Guidelines and physical-mental comorbidity among Chinese children and adolescents: Prevalence, associations, and the popul"
+  },
+  "37981602": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Association between inadequate weight gain according to the institute of medicine 2009 guidelines and pregnancy outcomes in women with thyroid disorders."
+  },
+  "37997458": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Systematic review of guidelines on neonatal hypoglycemia."
+  },
+  "37999891": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "IFSO Consensus on Definitions and Clinical Practice Guidelines for Obesity Management-an International Delphi Study."
+  },
+  "38010664": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "What Parents Should Expect From the New AAP Obesity Guidelines."
+  },
+  "38030850": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "One children's hospital planning and development process to adhere to the FDA recommendation that babies and young children undergo thyroid function testing aft"
+  },
+  "38044201": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Barriers and solutions for the management of severe hypoglycaemia in people with diabetes in Spain: A Delphi survey."
+  },
+  "38047413": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Knowledge of the recommendations for the diagnosis and treatment of childhood obesity among a group of medical students in Mexico."
+  },
+  "38052658": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "CSI clinical practice guidelines for dyslipidemia management: Executive summary."
+  },
+  "38078582": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "14. Children and Adolescents: Standards of Care in Diabetes-2024."
+  },
+  "38154971": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "[Chinese guidelines for the diagnosis and treatment of pediatric growth hormone deficiency]."
+  },
+  "38163042": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "NLA/ASPC response to the USPSTF recommendation statement on screening lipid panel in children and adolescents."
+  },
+  "38166049": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Real-world evaluation of care for type 2 diabetes in Malaysia: A cross-sectional analysis of the treatment adherence to guideline evaluation in type 2 diabetes "
+  },
+  "38180566": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "The German guideline \"Obesity in pregnancy\": comparison with the international approach."
+  },
+  "38182445": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Do current pregnancy weight gain guidelines balance risks of adverse maternal and child health in a United States cohort?"
+  },
+  "38193204": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Obesity in Children and Adolescents: 2022 Update of Clinical Practice Guidelines for Obesity by the Korean Society for the Study of Obesity."
+  },
+  "38211570": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Invited Mini Review Metabolic Bone Disease of Prematurity: Overview and Practice Recommendations."
+  },
+  "38240484": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Society of Critical Care Medicine Guidelines on Glycemic Control for Critically Ill Children and Adults 2024."
+  },
+  "38240492": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "2024 Focused Update: Guidelines on Use of Corticosteroids in Sepsis, Acute Respiratory Distress Syndrome, and Community-Acquired Pneumonia."
+  },
+  "38246770": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "[Chinese expert consensus on diagnosis and treatment of craniopharyngioma (2024)]."
+  },
+  "38253221": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Consensus statement by the French Society of Endocrinology (SFE) and French Society of Pediatric Endocrinology & Diabetology (SFEDP) for the diagnosis of Cushin"
+  },
+  "38255112": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Diabetes Management Support in Preschool and Primary School: A Qualitative Ideation Study Presenting Recommendations for Improved Communicative Practice."
+  },
+  "38262000": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Public health nurses' experiences following up children with overweight and obesity according to national guidelines. A qualitative study."
+  },
+  "38263871": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Promoting Choosing Wisely Thyroid Function Test Guidelines in a Large Pediatric Hospital System."
+  },
+  "38271575": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Obesity and Prenatal Intention as Predictors of Meeting Breastfeeding Recommendations in an Urban Birth Cohort."
+  },
+  "38275146": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Gene selection for genomic newborn screening: Moving toward consensus?"
+  },
+  "38276922": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "AGA Clinical Practice Update on Diet and Nutritional Therapies in Patients With Inflammatory Bowel Disease: Expert Review."
+  },
+  "38278482": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Missed Opportunities in Guideline-Based Fatty Liver Screening Among 3.5 Million Children."
+  },
+  "38300170": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Guidelines of care for the management of acne vulgaris."
+  },
+  "38307712": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Emergency and perioperative management of adrenal insufficiency in children and young people: BSPED consensus guidelines."
+  },
+  "38311417": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Improved Efficiency of the Clinical Diagnostic Criteria for Familial Hypercholesterolemia in Children: A Comparison of the Japan Atherosclerosis Society Guideli"
+  },
+  "38319177": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Pre-analytical diagnostic differences despite high adherence to guidelines for gestational diabetes mellitus."
+  },
+  "38328958": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "[A consensus report by the Working Group on Eating Disorders of Sociedad Española de Nutrición Clínica y Metabolismo (GTTCA-SENPE). Evaluation, medical and nutr"
+  },
+  "38336003": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Canadian Society of Clinical Chemists Harmonized Pediatric Lipid Reporting Recommendations for Clinical Laboratories."
+  },
+  "38355893": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Screening for obstructive sleep apnea (OSA) in children and adolescents with obesity: A scoping review of national and international pediatric obesity and pedia"
+  },
+  "38370110": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Infant feeding-a scoping review for Nordic Nutrition Recommendations 2023."
+  },
+  "38370116": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Iron - a background article for the Nordic Nutrition Recommendations 2023."
+  },
+  "38370117": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Meal patterns, including intermittent fasting - a scoping review for Nordic Nutrition Recommendations 2023."
+  },
+  "38376731": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Transition from pediatric to adult care in patients with Turner syndrome in Italy: a consensus statement by the TRAMITI project."
+  },
+  "38386469": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Reexamining the complex issue of obesity in childhood: A new guideline and patient-focused approach."
+  },
+  "38400699": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Treatment of childhood obesity based on the reduction of ultra-processed foods plus energy restriction: A randomised controlled trial based on the Brazilian gui"
+  },
+  "38410605": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Chinese expert consensus on the diagnosis, treatment, and management of asthma in women across life."
+  },
+  "38443125": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Attenuation of Atopic Dermatitis in Newborns, Infants, and Children With Prescription Treatment and Ceramide-Containing Skin Care: A Systematic Literature Revie"
+  },
+  "38452996": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Achieving Consensus: Severity-Graded Definitions of Fontan-Associated Complications to Characterize Fontan Circulatory Failure."
+  },
+  "38459347": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "ESR Essentials: Imaging of sacroiliitis-practice recommendations by ESSR."
+  },
+  "38468640": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Accelerometry-assessed daily physical activity and compliance with recommendations in Spanish children: importance of physical education classes and vigorous in"
+  },
+  "38474851": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Plant-Based Diets in Children: Secular Trends, Health Outcomes, and a Roadmap for Urgent Practice Recommendations and Research-A Systematic Review."
+  },
+  "38488051": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Current Management of Type 1 Diabetes in Children: Guideline-based Expert Opinions and Recommendations."
+  },
+  "38491143": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Clinical report of microsurgical treatment of Kohler's disease."
+  },
+  "38514450": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Adolescents diagnosed with polycystic ovary syndrome under the Rotterdam criteria but not meeting the diagnosis under the updated guideline."
+  },
+  "38527736": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Adherence to Vitamin D Supplementation Recommendations for Breastfed Infants and Young Children: An Analysis of Canadian Community Health Survey Data Cycles Fro"
+  },
+  "38527829": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Mission Impossible? Managing the American Academy of Pediatrics' Obesity Guideline."
+  },
+  "38534968": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Clinical Practice Guidelines for the Diagnosis and Management of Hereditary Fructose Intolerance."
+  },
+  "38538465": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Treatment of pediatric heterozygous familial hypercholesterolemia 7 years after the EAS recommendations: Real-world results from a large French cohort."
+  },
+  "38547465": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Tackling access and payer barriers for growth hormone therapy in Saudi Arabia: a consensus statement for the Saudi Working Group for Pediatric Endocrinology."
+  },
+  "38552173": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "International consensus on mitotane treatment in pediatric patients with adrenal cortical tumors: indications, therapy, and management of adverse effects."
+  },
+  "38561783": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "A practical evidence-based approach to management of type 2 diabetes in children and young people (CYP): UK consensus."
+  },
+  "38587242": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Antibiotic prophylaxis in invasive urodynamics, a Delphi consensus of the Italian Society of Urodynamics (SIUD)."
+  },
+  "38591848": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Gaining consensus on emotional wellbeing themes and preferences for digital intervention type and content to support the mental health of young people with long"
+  },
+  "38594048": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Clinical guidelines for children and adolescents experiencing gender dysphoria or incongruence: a systematic review of recommendations (part 2)."
+  },
+  "38594049": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Clinical guidelines for children and adolescents experiencing gender dysphoria or incongruence: a systematic review of guideline quality (part 1)."
+  },
+  "38598969": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Clinical practice recommendations on lipoprotein apheresis for children with homozygous familial hypercholesterolaemia: An expert consensus statement from ERKNe"
+  },
+  "38637868": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Adolescent gender dysphoria management: position paper from the Italian Academy of Pediatrics, the Italian Society of Pediatrics, the Italian Society for Pediat"
+  },
+  "38646227": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "A Retrospective Study Evaluating Guideline Adherence of Neonatal Parenteral Nutrition in a Belgian Neonatal Intensive Care Unit."
+  },
+  "38655793": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Practical guidelines for eating disorder risk mitigation in patients undergoing obesity treatment for the pediatric provider."
+  },
+  "38655800": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Disordered eating in adolescents with type 1 diabetes: risk factors and screening recommendations."
+  },
+  "38677287": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "An international multidisciplinary consensus on pediatric metabolic dysfunction-associated fatty liver disease."
+  },
+  "38680933": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Research priorities in trans health: a Delphi-study."
+  },
+  "38684620": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Recommendations for 46,XX Congenital Adrenal Hyperplasia Across Two Decades: Insights from the North American Differences of Sex Development Clinician Survey."
+  },
+  "38685317": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "The Relationship Between Vitamin D Intake and Serum 25-hydroxyvitamin D in Young Children: A Meta-Regression to Inform WHO/FAO Vitamin D Intake Recommendations."
+  },
+  "38686826": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Rapidly expanding gender-affirming care based on consensus instead of evidence justifies rigorous governance and transparency."
+  },
+  "38697027": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Clinical Use of Super-Bioavailable Itraconazole for the Management of Dermatophytosis: Consensus Statement by Dermatologists from India via the Modified Delphi "
+  },
+  "38697341": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Validity of a Delphi consensus definition of growth restriction in the newborn for identifying neonatal morbidity."
+  },
+  "38706696": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Diagnosis, treatment, and management of rickets: a position statement from the Bone and Mineral Metabolism Group of the Italian Society of Pediatric Endocrinolo"
+  },
+  "38710228": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "[Early Detection Of Type 1 Diabetes By Islet Autoantibody Screening: A Position Paper Of The Fr1daplex Project Leaders And Training Centres, Bvkj Bavaria And Pa"
+  },
+  "38716356": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Dietary patterns - A scoping review for Nordic Nutrition Recommendations 2023."
+  },
+  "38718769": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Vascular Complications in Children and Young People with Type 1 Diabetes: A Worldwide Assessment of Diabetologists' Adherence to International Recommendations."
+  },
+  "38732583": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Assessing Performance of Contemporary Plant-Based Diets against the UK Dietary Guidelines: Findings from the Feeding the Future (FEED) Study."
+  },
+  "38795431": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Gestational weight gain: Toward best practices in managing gestational weight gain in patients with obesity: Comparison of recommendations."
+  },
+  "38828942": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "A Systematic Review Supporting the Endocrine Society Clinical Practice Guidelines on Vitamin D."
+  },
+  "38832232": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Examining associations between physical activity context and children meeting daily physical activity guidelines: the role of outdoor play, sports, and other or"
+  },
+  "38860154": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Safety and prescribing recommendations for verapamil in newly diagnosed pediatric type 1 diabetes (T1D): The CLVer experience."
+  },
+  "38867297": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Recommendations on the use of the flash continuous glucose monitoring system in hospitalized patients with diabetes in Latin America."
+  },
+  "38888897": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Treatment Interventions for Child and Adolescent Obesity: From Evidence to Recommendations to Action."
+  },
+  "38892662": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Childhood Obesity and Its Comorbidities in High-Risk Minority Populations: Prevalence, Prevention and Lifestyle Intervention Guidelines."
+  },
+  "38894740": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Recommendations for recognizing, risk stratifying, treating, and managing children and adolescents with hypoglycemia."
+  },
+  "38909200": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "BETTER LIFE- guidelines for chronic disease preventive care for people aged 18-39 years: a literature review."
+  },
+  "38910151": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Consensus guidance for monitoring individuals with islet autoantibody-positive pre-stage 3 type 1 diabetes."
+  },
+  "38912694": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Consensus Guidance for Monitoring Individuals With Islet Autoantibody-Positive Pre-Stage 3 Type 1 Diabetes."
+  },
+  "38914759": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Management for children and adolescents with overweight and obesity: a recommendations mapping."
+  },
+  "38931267": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Dietary Intake of Adolescents and Alignment with Recommendations for Healthy and Sustainable Diets: Results of the SI.Menu Study."
+  },
+  "38942117": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Gestational weight gain below recommendations and adverse maternal and child health outcomes for pregnancies with overweight or obesity: a United States cohort "
+  },
+  "38960811": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Exercise in the management of polycystic ovary syndrome: A position statement from Exercise and Sports Science Australia."
+  },
+  "38966214": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Puberty in girls with Prader-Willi syndrome: cohort evaluation and clinical recommendations in a Latin American tertiary center."
+  },
+  "38966254": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Adherence to physical activity and screen time recommendations of youth: Demographic differences from National Health and Nutrition Examination Survey 2017-2018"
+  },
+  "38981907": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Assessment of the American College of Radiology Thyroid Imaging Reporting and Data System (ACR TI-RADS™) with modification of the management recommendations for"
+  },
+  "39002896": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Diagnosis and management of children and adult craniopharyngiomas: A French Endocrine Society/French Society for Paediatric Endocrinology & Diabetes Consensus S"
+  },
+  "39032149": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "The most optimal school recruitment strategies for school-based obesity prevention and health promotion research in the United States: A systematic review with "
+  },
+  "39039338": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Recommendations for 46,XY Disorders/Differences of Sex Development Across Two Decades: Insights from North American Pediatric Endocrinologists and Urologists."
+  },
+  "39086022": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "How strong is the evidence supporting the WHO guidelines on physical activity, sedentary behaviour and sleep in early childhood?"
+  },
+  "39113333": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Adherence to Dietary Recommendations in Children With Type 1 Diabetes: A Cross- Sectional Study."
+  },
+  "39115469": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "The American Academy of Pediatrics Guideline for Obesity: An Adolescent Health Perspective."
+  },
+  "39127580": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Small for gestational age: concept, diagnosis and neonatal characterization, follow-up and recommendations."
+  },
+  "39138620": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Gender differences in the proportion of Japanese parents meeting 24-h movement guidelines and associations with weight status."
+  },
+  "39143767": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "[Expert consensus on the clinical application of aromatase inhibitors to improve adolescent height]."
+  },
+  "39147856": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "International consensus statement on the diagnosis and management of phaeochromocytoma and paraganglioma in children and adolescents."
+  },
+  "39178873": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Paediatric thyroid lesions: lessons from recent guidelines."
+  },
+  "39214483": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Out-of-school Activities and Adherence to 24-hour Movement Guidelines."
+  },
+  "39238400": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Effectiveness of pharmacological interventions for managing obesity in children and adolescents: A systematic review and meta-analysis framed using minimal impo"
+  },
+  "39269376": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Optimizing Maternal and Neonatal Outcomes in Perinatal Patients With Diabetes: AWHONN Practice Brief Number 21."
+  },
+  "39269594": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Dairy and Exercise for Bone Health: Evidence from Randomized Controlled Trials and Recommendations for Future Research."
+  },
+  "39278070": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Associations between adherence to 24-Hour Movement Guidelines with continuous metabolic syndrome score among Chinese children and adolescents."
+  },
+  "39289684": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "International expert opinion on the considerations for combining vosoritide and limb surgery: a modified delphi study."
+  },
+  "39296353": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Food consumption and adherence to dietary guidelines among Jordanian children and adolescents."
+  },
+  "39299760": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "NICE guideline review: type 2 diabetes in children and young people - diagnosis and management (NG18)."
+  },
+  "39332946": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Choice of compound, dosage, and management of side effects for long-term corticosteroid treatment in Duchenne muscular dystrophy: Guidelines from the Neuromuscu"
+  },
+  "39334106": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "A web-based and mobile randomised controlled trial providing complementary feeding guidelines to first-time parents in France to promote responsive parental fee"
+  },
+  "39339781": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Adherence to Nutritional Practice Guideline in Premature Infants: A Nationwide Survey in Taiwan."
+  },
+  "39343034": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Are the EAT-Lancet dietary recommendations associated with future cardiometabolic health? - Insights from the Generation XXI cohort from childhood into early ad"
+  },
+  "39343501": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Overview of the Treatment of Pediatric Obesity and the 2023 Clinical Practice Guidelines."
+  },
+  "39344439": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Opioid Prescribing for Acute Pain Management in Children and Adolescents in Outpatient Settings: Clinical Practice Guideline."
+  },
+  "39355948": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "[A multifaceted implementation strategy to enhance the uptake of evidence-based nursing recommendations in Spain: implementation project protocol]."
+  },
+  "39360162": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Chinese expert consensus on blood lipid management in patients with diabetes (2024 edition)."
+  },
+  "39362833": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Effectiveness of surgical interventions for managing obesity in children and adolescents: A systematic review and meta-analysis framed using minimal important d"
+  },
+  "39367179": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Position statement on hypertension by Indian Society of Hypertension, 2023."
+  },
+  "39377547": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Approach to Newborns with Elevated TSH: A Different Perspective from the International Guidelines for Iodine-deficient Countries."
+  },
+  "39377821": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Evaluating Obesity: The \"Why\" Behind the American Academy of Pediatrics' Obesity Treatment Clinical Practice Guideline."
+  },
+  "39380394": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Recommendations of the Queensland children's gender service external evaluation and their implications for health policy in Australia."
+  },
+  "39428123": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Letter: Obesity in Children and Adolescents: 2022 Update of Clinical Practice Guidelines for Obesity by the Korean Society for the Study of Obesity (J Obes Meta"
+  },
+  "39429382": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Dietary Interventions and Supplements for Managing Attention-Deficit/Hyperactivity Disorder (ADHD): A Systematic Review of Efficacy and Recommendations."
+  },
+  "39431956": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "The development of a tool for GPs to manage overweight and obesity in children: A Delphi study."
+  },
+  "39438674": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "International expert consensus statement on the diagnosis and management of congenital nephrogenic diabetes insipidus (arginine vasopressin resistance)."
+  },
+  "39451186": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Guidelines of the Polish Society of Pediatric Endocrinology and Diabetology and Pediatric Section of Diabetes Poland on insulin therapy using hybrid closed-loop"
+  },
+  "39464409": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Menu provision in a young offenders institution, comparison with dietary guidelines, and previous menu allocation: a cross-sectional nutritional analysis."
+  },
+  "39470899": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Implementation Science and Pediatric Diabetes: A Scoping Review of the State of the Literature and Recommendations for Future Research."
+  },
+  "39486479": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Revisiting Vitamin D Guidelines: A Critical Appraisal of the Literature."
+  },
+  "39506343": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Diagnostic approach to rickets: an Endocrine Society of Bengal (ESB) consensus statement."
+  },
+  "39527371": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "SID/SIEDP expert consensus on optimizing clinical strategies for early detection and management of wolfram syndrome."
+  },
+  "39544584": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Prevention Strategies in Obesity Management: A Systematic Review Comparing Canadian and American Guidelines for Adults."
+  },
+  "39549739": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Classification system of human ovarian follicle morphology: recommendations of the National Institute of Child Health and Human Development - sponsored ovarian "
+  },
+  "39551655": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Current views on paediatric phaeochromocytoma and paraganglioma with a focus on newest guidelines."
+  },
+  "39560893": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "MGB-OAGB International Club-Results of a Modified Delphi Consensus on Controversies in OAGB."
+  },
+  "39567315": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Survey on vitamin D supplementation in children in France: Evaluation of real-life practices following the new 2022 French recommendations."
+  },
+  "39613360": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "[Preventive activities in women: PAPPS 2024 update]."
+  },
+  "39626645": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Perioperative Blood Pressure Management Recommendations in Pediatric Pheochromocytoma: A 10-Year Narrative Review."
+  },
+  "39632114": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Engaging Australian healthcare consumers to determine priorities and consensus for precision medicine approaches to detect non-communicable disease in early lif"
+  },
+  "39645505": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Expert consensus for the management of patients with achondroplasia in treatment with vosoritide."
+  },
+  "39651980": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "14. Children and Adolescents: Standards of Care in Diabetes-2025."
+  },
+  "39653802": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "The use of automated insulin delivery around physical activity and exercise in type 1 diabetes: a position statement of the European Association for the Study o"
+  },
+  "39666382": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "[Clinical approach to the patient with obesity document by the Argentine Society of Medicine, the Uruguayan Society of Internal Medicine, and the International "
+  },
+  "39672599": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Long-Acting Growth Hormone Therapy in Pediatric Growth Hormone Deficiency: A Consensus Statement."
+  },
+  "39689218": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Towards standardization of person-reported outcomes (PROs) in pediatric diabetes research: A consensus report."
+  },
+  "39700073": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Arthritis Management: Patient-Reported Health Care Provider Screening, Counseling, and Recommendations for Physical Activity."
+  },
+  "39723035": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Toward Supplementation Guidelines for Vegan Complementary Feeding."
+  },
+  "39757597": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Pediatric thyroid cancer: key considerations based on the 2024 Korean Thyroid Association Differentiated Thyroid Cancer Management Guidelines."
+  },
+  "39770929": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Practical Recommendations for the Diagnosis and Management of Lysosomal Acid Lipase Deficiency with a Focus on Wolman Disease."
+  },
+  "39798164": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Parental impact on adherence of young children to 24-h movement behaviour guidelines: the Czech FAMIly Physical Activity, Sedentary behaviour and Sleep study."
+  },
+  "39798962": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Aarskog-Scott syndrome: a clinical study based on a large series of 111 male patients with a pathogenic variant in FGD1 and management recommendations."
+  },
+  "39802088": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Expert Consensus and Call on Actions for Weight Management in China: Advancing Healthy China Initiative Through Strategic Actions."
+  },
+  "39806877": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Elective Aortic Surgery for Prevention of Aortic Dissection in Turner Syndrome: The Potential Impact of Updated European Society of Cardiology and International"
+  },
+  "39818293": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Chapter 7: The different forms of primary hyperparathyroidism at different ages of life: Childhood, pregnancy, lactation, old age."
+  },
+  "39818298": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Chapter 6: Syndromic primary hyperparathyroidism."
+  },
+  "39818301": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Chapter 5: The roles of genetics in primary hyperparathyroidism."
+  },
+  "39821955": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Multicenter Retrospective Analysis of Pediatric Differentiated Thyroid Carcinoma: Treatment Practices and Outcomes Prior to Pediatric American Thyroid Associati"
+  },
+  "39823182": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Effectiveness of behavioural and psychological interventions for managing obesity in children and adolescents: A systematic review and meta-analysis framed usin"
+  },
+  "39854798": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "The outcomes of implementing clinical guidelines to manage pediatric diabetic ketoacidosis in emergency department."
+  },
+  "39861415": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Measuring Dietary Intake of Pregnant Women Post-Bariatric Surgery: Do Women Meet Recommendations?"
+  },
+  "39866726": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "A Scoping Review of Existing Policy Instruments to Tackle Overweight and Obesity in India: Recommendations for a Social and Behaviour Change Communication Strat"
+  },
+  "39903599": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Sugar-sweetened beverages: taxation evidence from seven European countries and recommendations for implementation in other EU regions."
+  },
+  "39911635": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Are Trends in Economic Modeling of Pediatric Diabetes Mellitus up to Date with the Clinical Practice Guidelines and the Latest Scientific Findings?"
+  },
+  "39913480": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Diet quality of Chilean schoolchildren: How is it linked to adherence to dietary guidelines?"
+  },
+  "39925340": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Pediatric Chiari Malformation Management: WFNS Spine Committee Recommendations."
+  },
+  "39940233": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Food Group Consumption and Nutrient Intake by Breastfeeding Women: Comparison to Current Dietary Guidelines and Nutrient Recommendations."
+  },
+  "39950055": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Aligning with Obesity Guidelines: A Quality Improvement Initiative in Pediatric Primary Care."
+  },
+  "39950999": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Composition and Priorities of Multidisciplinary Pediatric Thyroid Programs: A Consensus Statement."
+  },
+  "39953791": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "A Review of Screening Guidelines for Hypoglycaemia in Infants Born Small for Gestational Age Showed Numerous Differences and Few Certainties."
+  },
+  "39965910": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Income inequality and adherence to 24-hour movement guideline recommendations among adolescents: a multilevel growth curve analysis using longitudinal data from"
+  },
+  "39967943": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "2024 Polish recommendations for the management of familial hypercholesterolemia in children and adolescents."
+  },
+  "39981556": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Per- and Polyfluoroalkyl Substances and Outcomes Related to Metabolic Syndrome: A Review of the Literature and Current Recommendations for Clinicians."
+  },
+  "39993159": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "A call to action on pregnancy-related lifestyle interventions to reduce cardiovascular risk in the offspring: a scientific statement of the European Association"
+  },
+  "39994859": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Adopting national recommendations for clinical management of pediatric obesity in primary care."
+  },
+  "39995342": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Health behaviours of 17- to 19-year olds in North East England: assessing adherence to current recommendations for young people at the adolescent-adult boundary"
+  },
+  "40008500": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Audit of Adherence to Best Practice Guidelines for Children born with Down Syndrome."
+  },
+  "40013928": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Emerging strategies and clinical recommendations for the management of novel depression subtypes."
+  },
+  "40028818": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Do Antenatal Interventions Improve Maternal and Perinatal Outcomes for Migrant Women Living in High-Income Countries and What Guidelines Exist for Migrant Women"
+  },
+  "40034630": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Literature Review of Postoperative Distal Radius Fracture Immobilization Recommendations."
+  },
+  "40038723": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Brazilian guideline for screening and diagnosis of type 2 diabetes: a position statement from the Brazilian Diabetes Society."
+  },
+  "40044125": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Vitamin D and disease prevention in 2024: commentary on recent Endocrine Society recommendations."
+  },
+  "40050074": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "[Guidelines for the prevention and management of bronchial asthma (2024 edition)]."
+  },
+  "40058845": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Establishment of novel prognostic groups for papillary thyroid carcinoma using a modified risk classification based on tumor extension in the guidelines of the "
+  },
+  "40065104": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "The effects of China-recommended gestational weight gain guidelines and the Institute of Medicine guidelines on adverse birth outcomes: A population- based coho"
+  },
+  "40068962": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Impact of the Play Active policy intervention on early childhood educator's sedentary behaviour-related practices, psychosocial influences and meeting policy re"
+  },
+  "40069730": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "International evidence-based recommendations for polycystic ovary syndrome in adolescents."
+  },
+  "40073966": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Practical implementation of automated insulin delivery systems in 2025: A French position statement update."
+  },
+  "40091088": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Taking care of patients with recessive dystrophic epidermolysis bullosa from birth to adulthood: a multidisciplinary Italian Delphi consensus."
+  },
+  "40094399": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "PERSPECTIVE: Treatment with hydrocortisone modified-release capsules in children and adolescents with congenital adrenal hyperplasia: an expert opinion."
+  },
+  "40098220": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Perinatal outcomes following nonadherence to guideline-based screening for gestational diabetes: A population-based cohort study."
+  },
+  "40102908": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Reconsideration of lowering gestational weight gain guidelines in pregnant women diagnosed with gestational diabetes: evidence from a Belgian study."
+  },
+  "40103414": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Metabolic syndrome in childhood, adolescent, and young adult cancer survivors: recommendations for surveillance from the International Late Effects of Childhood"
+  },
+  "40105069": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "[Expert consensus on parenteral nutrition management in neonates (2025)]."
+  },
+  "40106739": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Fertility Preservation in People With Cancer: ASCO Guideline Update."
+  },
+  "40107835": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Clinical Consensus Statement No. 459: Oncofertility - Bridging the Geographical Gap in Pediatric and Adolescent Gynaecology in Canada."
+  },
+  "40119067": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Methodology for the international working group clinical practice guidelines on X-linked hypophosphatemia in children and adults."
+  },
+  "40123785": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Compliance with the 24-hour movement guidelines and weight status: results from 40,970 adolescents."
+  },
+  "40131531": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Longitudinal relationship between adherence to 24-h Movement Guidelines and adiposity among children."
+  },
+  "40134477": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "\"Detect Anemia Preoperatively\": A Scoping Review of Recommendations."
+  },
+  "40135403": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Adherence to the Healthy Eating Guidelines in the MyPlanetDiet study is associated with healthier and more sustainable diets."
+  },
+  "40142719": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Prevalence of Hypertension in Adolescents: Differences Between 2016 ESH and 2017 AAP Guidelines."
+  },
+  "40150629": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Key Gaps in the Prevention and Treatment of Obesity in Children and Adolescents: A Critical Appraisal of Clinical Guidelines."
+  },
+  "40181864": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Prevention and Treatment of Vitamin D Deficiency in India: An Expert Group Consensus."
+  },
+  "40187020": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Improving the growth of infants with congenital heart disease using a consensus-based nutritional Pathway-A follow up study."
+  },
+  "40214941": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Prevention and Management of Growth Failure During the First 6 Months of Life: Recommendations by the Joint Committee of the Pediatric and Adolescent Nutrition "
+  },
+  "40217434": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "The impact of different data handling strategies on the proportion of children classified as meeting 24-h movement guidelines and associations with overweight a"
+  },
+  "40230804": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "A systematic review of guidelines on screening for celiac disease in children with thyroid disease and vice versa."
+  },
+  "40235365": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Evidence and unknowns for the relevancy of applying current parenteral nutrition support recommendations among infants born less than 750 g or younger than 25 w"
+  },
+  "40241473": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Applicability of ESPGHAN Biopsy-Free Guidelines for Celiac Disease Diagnosis: Insights from Türkiye."
+  },
+  "40245041": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Developing policy recommendations for controlling energy drink consumption in secondary school students using social marketing theory, Shiraz, Iran: A study pro"
+  },
+  "40264832": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "24-h movement guidelines and its association with health-related physical fitness in Brazilian adolescents."
+  },
+  "40269794": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Exceeding the guidelines: A descriptive study of exercise, pregnancy, maternal and neonatal health outcomes in elite and recreational athletes."
+  },
+  "40305018": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "High-Deductible Health Plans and Receipt of Guideline-Concordant Care for Adults With Chronic Illness."
+  },
+  "40335373": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Canadian children and youth with disabilities are not meeting the 24-Hour Movement Guidelines: Cross-sectional results from the national physical activity measu"
+  },
+  "40335774": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Consensus and controversies about diagnosing GH deficiency: a Delphi survey by the GH research society."
+  },
+  "40335981": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Assessment of cardiovascular disease risk factors in Korean children: impact of various pediatric hypertension guidelines and application of the Korean blood pr"
+  },
+  "40341618": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Assessment of growth status and nutritional management of prematurely born infants after hospital discharge: A position paper of the ESPGHAN Nutrition Committee"
+  },
+  "40360275": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Introduction and methodology: Standards of Care in Overweight and Obesity-2025."
+  },
+  "40360288": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "State of the Art and Consensus Statements by Healthcare Providers, Patients, and Caregivers on Continuous Glucose Monitoring in Liver Glycogen Storage Diseases."
+  },
+  "40368285": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Evaluation of cardiovascular risk according to the 2019 ESC/EASD guidelines in type 1 diabetes mellitus patients: A population-based survey study."
+  },
+  "40371883": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Bridging the gap in obesity research: A consensus statement from the European Society for Clinical Investigation."
+  },
+  "40379435": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Introduction and methodology: Standards of Care in Overweight and Obesity-2025."
+  },
+  "40387306": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "The Importance of National Monitoring of Children's Growth: Consensus Statement From the Nordic PromoKids Network."
+  },
+  "40393750": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "[Expert consensus on the construction of pediatric obesity clinics (2025)]."
+  },
+  "40418812": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Statin Therapy as Primary Prevention for Persons With HIV: A Synopsis of Recommendations From the U.S. Department of Health and Human Services Antiretroviral Tr"
+  },
+  "40425174": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Discrepancies Between Recommendations in Evidence-Based Guidelines for the Management of Obesity in Adolescents and Adults: An Evidence Map."
+  },
+  "40433715": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "[International criticism of the Dutch Protocol; time to change Dutch pediatric gender care and its guideline]."
+  },
+  "40451675": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "NICE waist-to-height ratio guidelines \"to have a waist<0.5 of your height\", are suitable for children but misleading for adolescents."
+  },
+  "40475299": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Children with abnormal body weight dealing with the load of school backpack-is there a need to modify WHO recommendations? A cross sectional study."
+  },
+  "40493113": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Consensus Guidelines of the Indian Academy of Pediatrics (IAP)-Neurodevelopmental Pediatrics Chapter on Developmentally Supportive Follow-Up for High-Risk Infan"
+  },
+  "40498939": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Nutritional content of vitamin and mineral supplements aimed at children in the peruvian market: analysis of compliance with recommendations."
+  },
+  "40507066": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Teenagers with Obesity at the Gym: Recommendations for Physical Activity, Diet, and Supplementation-A Narrative Review."
+  },
+  "40510464": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Vitamin D for the prevention of diseases in children: A rebuttal to the 2024 Endocrine Society Clinical Practice Guideline."
+  },
+  "40515803": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Diagnosis of growth hormone deficiency: searching for Consensus along life."
+  },
+  "40520848": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Consensus Statement on Metabolic Dysfunction-Associated Steatotic Liver Disease in Children and Adolescents From the Joint TASL-TSPGHAN Expert Committee."
+  },
+  "40523372": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Multiple endocrine neoplasia type 1 (MEN1): recommendations and guidelines for best practice."
+  },
+  "40541811": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Optimal Intake of Animal-Source Foods: A Scoping Review to Inform a New WHO Guideline."
+  },
+  "40551794": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "International consensus statement on routine blood testing in primary ciliary dyskinesia."
+  },
+  "40552904": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "An International ASXL3 Natural History Study: Deep Phenotypic Analyses Including Detailed Reports of a Milder Phenotype, Novel Associations, and Clinical Recomm"
+  },
+  "40555795": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Pituitary incidentaloma: a Pituitary Society international consensus guideline statement."
+  },
+  "40560123": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Should Military Aircrew Members be Allowed to Use Food and Drug Administration Approved Weight Loss Medications? A Review of the Literature and Recommendations."
+  },
+  "40560659": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Updated Recommendations for Pediatric Surveillance in Hereditary Endocrine Neoplasia Syndromes: Multiple Endocrine Neoplasias, Hyperparathyroidism-Jaw Tumor Syn"
+  },
+  "40571528": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Non-compliance with post-discharge vitamin D intake guidelines: an observational study in an overseas French maternity ward."
+  },
+  "40587340": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Evaluation and Management of Glucocorticoid-Induced Adrenal Insufficiency in IBD: An Expert Opinion."
+  },
+  "40589500": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "High Prevalence of Fatty Liver in Bangladeshi Adolescents and Young Adults with Type 2 Diabetes: Key Predictors and Screening Recommendations."
+  },
+  "40591205": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Experts' consensus on the management and treatment of individuals with X-linked hypophosphatemia across lifespan."
+  },
+  "40632462": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Duplication in the SHOX Gene as a Rare Genetic Cause of Short Stature and/or Skeletal Abnormalities: A Clinical Report and Review of the Literature."
+  },
+  "40652449": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "A Systematic Review Supporting the Clinical Practice Guidelines on the Management of Preexisting Diabetes and Pregnancy."
+  },
+  "40664486": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "2024 Update of the North American Consensus Guidelines for Pediatric Administered Radiopharmaceutical Activities."
+  },
+  "40665062": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Maternal adherence to the EAT-Lancet diet recommendations among pregnant women in Ireland and associations with offspring birth outcomes and childhood adiposity"
+  },
+  "40673726": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Growth Hormone Treatment in Patients With KBG Syndrome: Novel Insights, Challenges and Recommendations From Six New Patients and Literature Review."
+  },
+  "40691851": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Consensus statement on standardizing CGM evaluation metrics in Latin America: an expert approach."
+  },
+  "40693733": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Clinical Practice Consensus Statement 2025: Management of Hyperuricemia and Gout in Adolescents."
+  },
+  "40699327": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Delphi consensus on the transition from pediatric to adult care in Italian ADHD youth."
+  },
+  "40699541": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Italian guidelines for the management of adult individuals with primary hypothyroidism outside pregnancy."
+  },
+  "40714863": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Dietary recommendations for pediatric and adolescent patients utilizing GLP-1 receptor agonists for weight management: A narrative review of current literature."
+  },
+  "40728503": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "[Nutritional and health importance of fish consumption. Current intake compared to recommendations]."
+  },
+  "40746619": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Clinical guidelines for women with a history of gestational diabetes and their offspring."
+  },
+  "40747786": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Obesity in children and adolescents: Scoping exercise and prioritization for World Health Organization clinical guidelines."
+  },
+  "40751476": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Managing Haemophilic Arthropathy in People With Haemophilia in Japan: An Informal Consensus."
+  },
+  "40754639": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Assessment of Guideline-Recommended Laboratory Screening for Obesity-Related Chronic Conditions in US Youth 10-18 Years."
+  },
+  "40758315": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Using epigenetic clocks in environmental epigenetics: recommendations for estimating biological aging in perinatal and pediatric samples."
+  },
+  "40767708": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Nutritional status of preschoolers in the public school system of Macaé: a panel study conducted between 2012-2014 and 2017-2019 in the context of the oil crisi"
+  },
+  "40773023": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Efficacy, safety, and legal considerations of do-it-yourself artificial pancreas systems: a position statement from italian diabetes societies."
+  },
+  "40778472": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Pediatric Thyroid Cancer Multidisciplinary Team Improves Adherence of Radioactive Iodine Treatment According to National Guidelines."
+  },
+  "40781309": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Global research on 24-hour movement behaviours guidelines in children and adolescents: a systematic review."
+  },
+  "40785740": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Polish Expert Consensus on Metabolic and Bariatric Surgery: 2025 update."
+  },
+  "40799078": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Dietary management of pediatric patients with kidney disease: recommendations by The Korean Society of Pediatric Nephrology and The Korean Society of Clinical N"
+  },
+  "40810637": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Association between meeting the 24-hour movement guidelines and cardiometabolic risk factors in toddlers, preschoolers, children, and adolescents: A systematic "
+  },
+  "40818148": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Mothers' Knowledge and Adherence to Who Breastfeeding Recommendations: A Cross-Sectional Study in Greece."
+  },
+  "40819279": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Vegan diet and nutritional status in infants, children and adolescents: A position paper based on a systematic search by the ESPGHAN Nutrition Committee."
+  },
+  "40833814": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Higher Sedentary Behaviour and Not Following Screen Time Guidelines Were Associated With Unfavourable Cardiometabolic Outcomes in Childhood."
+  },
+  "40833824": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Assessing Alignment of Referrals with Guidelines for the Treatment of Children with Obesity."
+  },
+  "40871743": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Consumption of 100% Juice and Diluted 100% Juice Is Associated with Better Compliance with Dietary Guidelines for Americans: Analyses of NHANES 2017-2023."
+  },
+  "40883812": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Engaging in purposeful patient and public involvement with young people living with obesity: recommendations from the ARROWS residential weekend."
+  },
+  "40883815": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "A systematic review of evidence-based clinical guidelines for vitamin D screening and supplementation over the last decade."
+  },
+  "40884533": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Folate supplement dosage for pregnant people with epilepsy: Survey of international experts recommendation and current practices."
+  },
+  "40901501": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Re-starting or initiating guideline-recommended hypoglycemic agents for patients admitted with hyperglycemic crisis."
+  },
+  "40903718": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Pathway to developing paediatric non-communicable disease guidelines in Malawi: a scoping review."
+  },
+  "40922057": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "The Risk of Intra-Familial Stigmatisation in Family-Based Treatment of Childhood Obesity. A Position Statement of the European Childhood Obesity Group."
+  },
+  "40941574": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Nutrition for Children with Down Syndrome-Current Knowledge, Challenges, and Clinical Recommendations-A Narrative Review."
+  },
+  "40946023": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Consensus on the diagnosis, treatment, and follow-up in children and adolescents with overweight and obesity of the Latin American Society for Pediatric Gastroe"
+  },
+  "40956256": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "American Association of Clinical Endocrinology Consensus Statement: Algorithm for the Evaluation and Treatment of Adults with Obesity/Adiposity-Based Chronic Di"
+  },
+  "40972712": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Accelerating Guideline-Recommended Universal Pediatric Lipid Screening: Launch of the LEAD Pediatric Initiative."
+  },
+  "41020306": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Lipid intake in infants from birth to 3 years old: review of current guidelines and knowledge gaps."
+  },
+  "41022518": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Recommendations for the use of brain MRI in the neonatal period."
+  },
+  "41029561": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Design and prioritization of the French surveillance program of health effects in the context of exposure to endocrine disruptors using a Delphi study."
+  },
+  "41039651": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Meeting Sleep Duration Recommendations is Associated With Lower Abdominal Adipose Tissue in 10-Year-Old Boys."
+  },
+  "41051566": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Adherence to 24-h movement guidelines among rural and regional children in Australia: an observational study."
+  },
+  "41055719": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "In women with pre-existing diabetes, the contribution to pregnancy outcomes of gestational weight gain as defined by IOM guidelines, differs when adjustment for"
+  },
+  "41057893": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "X-linked hypophosphatemia and tumor-induced osteomalacia: a narrative review and expert opinion on the diagnostic and therapeutic challenges in the era of buros"
+  },
+  "41077571": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Bridging gaps in recommendations for the management of newborns with severe perinatal asphyxia or presumed hypoxic-ischemic encephalopathy: a French Delphi cons"
+  },
+  "41080853": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Parents' information needs and their recommendations for effective sexuality education to children."
+  },
+  "41087837": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "[Expert consensus on the management of obesity in infants and young children​​ (2025)]."
+  },
+  "41091474": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Multidisciplinary Treatment of Patients With Noonan Syndrome: A Consensus Statement."
+  },
+  "41100823": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Swiss Diabetes and Technology recommendations."
+  },
+  "41102787": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Five-year trends in U. S. child and adolescent 24-hour movement behavior guideline adherence, 2018-2022."
+  },
+  "41104626": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "First 1000 Days Strategies to Prevent Childhood Obesity: A Narrative Review and Recommendations From the EndObesity Consortium."
+  },
+  "41111054": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Executive summary. Screening, staging and follow-up of type 1 diabetes in preclinical stages: Consensus of the scientific societies SED, SEEN and SEEP."
+  },
+  "41118079": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Bridging the gap: recommendations to accomplish transition from pediatric to adult care in adolescents living with obesity."
+  },
+  "41122889": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Part 10: Adult and Pediatric Special Circumstances of Resuscitation: 2025 American Heart Association Guidelines for Cardiopulmonary Resuscitation and Emergency "
+  },
+  "41125535": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Parental Communication in the Prevention and Treatment of Child and Adolescent Obesity: A Position Statement of the European Childhood Obesity Group."
+  },
+  "41139667": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Parent Perspectives on the 2023 Clinical Practice Guideline for Pediatric Obesity: A Mixed-Methods Study of Acceptance and Concerns."
+  },
+  "41160229": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Clinical, toxicity and long-term neurocognitive outcomes of first-line intensive chemotherapy in infant medulloblastoma: a single-center cohort study following "
+  },
+  "41174699": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Re-appraisal of dental clearance protocol before anti-resorptive agents for osteoporosis using the modified Delphi technique."
+  },
+  "41188827": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Levelling-up summer: using summer holiday programs to support child health and wellbeing - a Delphi study."
+  },
+  "41207294": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Type 2 diabetes in children and adolescents: key considerations based on the 2025 Korea Diabetes Association clinical practice guidelines for diabetes managemen"
+  },
+  "41233124": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "[Expert consensus on genetic testing and genetic counseling for patients with disorders of sex development (2025)]."
+  },
+  "41238902": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Current guidelines on screening, diagnosis and management of dyslipidaemia in childhood: a systematic review."
+  },
+  "41250527": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "[Expert consensus on the diagnosis and treatment of common neonatal diseases in primary healthcare institutions: neonatal hypoglycemia (2025)]."
+  },
+  "41250589": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Clinical practice guidelines improve diagnosis and management of childhood obesity: a survey amongst primary care doctors in Klang Valley, Malaysia."
+  },
+  "41259307": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Healthcare providers' perceptions of changes in guidelines for care of minors with gender dysphoria in Sweden: An interview study."
+  },
+  "41261973": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "European clinical guidance for the management of adrenal and extra-adrenal paraganglioma in children and adolescents: a consensus by the EXPeRT group."
+  },
+  "41265246": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "A mixed-methods study of parental adherence to the food safety authority of Ireland's vitamin D supplementation policy and food-based recommendations for iron i"
+  },
+  "41281904": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Childhood obesity management in primary care: Bridging guidelines and practice."
+  },
+  "41284404": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Pediatric Obesity: Practical Recommendations for Management."
+  },
+  "41291731": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Bridging the gap between evidence and practice: a national level initiative to implement Standard Treatment Guidelines (STGs) in clinical practice."
+  },
+  "41310602": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "When gender matters: parental characteristics associated with children's compliance with 24-hour movement behavior guidelines - the Czech FAMIPASS study."
+  },
+  "41345659": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Overview of pediatric and adult lysosomal acid lipase deficiency: expert recommendations from a Gulf cooperation council working group."
+  },
+  "41345676": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Recommendations for recognizing and diagnosing Acute Hepatic Porphyria in atypical patient populations."
+  },
+  "41350127": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Consensus definition of clinical remission in asthma for the Japanese asthma prevention and management guidelines (JGL 2024): A modified delphi survey and compr"
+  },
+  "41362170": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Development and Methodology of the 2024 and 2026 ISPAD Clinical Practice Guidelines."
+  },
+  "41364328": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Who and how to screen for Cushing's syndrome: the position statement of the Italian Society of Endocrinology."
+  },
+  "41367860": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Management of ovarian granulosa cell tumor in childhood: a case report and recommendations for a multidisciplinary approach."
+  },
+  "41404292": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Predictive power of youth diabetes screening guidelines."
+  },
+  "41412577": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Meeting Physical Activity Guidelines and Their Association With Cardiometabolic Indicators in Adolescents With Different Weight Status."
+  },
+  "41427034": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Delphi-based Spanish consensus on the use of long-acting growth hormone in pediatric growth hormone deficiency: recommendations from the ConverGHe Working Group"
+  },
+  "41429496": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "[Interpretation of the 2025 \"Guidelines for the diagnosis and treatment of congenital hypothyroidism\"]."
+  },
+  "41454465": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Evaluation and Management of Polycystic Ovarian Syndrome (PCOS) in Adolescents With Obesity: A Scoping Review of National and International Obesity and PCOS Man"
+  },
+  "41509147": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Clinical practice guidelines for the management of differences of sex development in Japan."
+  },
+  "41510248": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Rapid Review of Gender-Affirming Healthcare for Children and Adolescents: Evidence Synthesis (2021-2025) and Recommendations for South Africa."
+  },
+  "41519847": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Towards a shared diagnostic approach for pediatric short stature: a Delphi consensus of the Italian Society of Pediatrics and the Italian Society for Pediatric "
+  },
+  "41545997": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Austrian Pompe Outcome Consensus (APOC): a national Delphi study."
+  },
+  "41566155": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Puberty assessment in general practice: between recommendations and reality-results from two qualitative studies on perceptions and use of Tanner staging."
+  },
+  "41582152": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Dyslipidemia in children with type 1 diabetes across age groups in Southern Iran: is it time to rethink guidelines?"
+  },
+  "41582743": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "[Interpretation of the \"Expert consensus on the management of neonatal parenteral nutrition (2025)\"]."
+  },
+  "41599854": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Cluster-Based Evaluation of Dietary Guideline Adherence and Food Literacy Among Adolescents: Implications for Tailored Diets."
+  },
+  "41604201": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Diagnosis and Treatment of Acute Appendicitis: 2025 Edition of the World Society of Emergency Surgery Jerusalem Guidelines."
+  },
+  "41616460": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Diagnosis and treatment of PCOS in adolescents: a summary of guidelines and systematic reviews for practitioners."
+  },
+  "41622922": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Consensus-Based Recommendations on Pulp Therapies in Primary and Permanent Teeth: IAPD Porto Forum."
+  },
+  "41630437": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Knowledge Gaps about Screen Exposure Guidelines for Children: A Comparison between mothers and antenatal women."
+  },
+  "41632161": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Guideline-Concordant Care and Clinician and Clinic Characteristics for Patients With Schizophrenia."
+  },
+  "41670332": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Maternal-to-Infant Transfer of Medications for Type 2 Diabetes Mellitus Via Breastmilk: A Systematic Review of Available Evidence and Clinical Guidelines."
+  },
+  "41674374": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Practical approach to evaluate and manage hypertension in youth: an International Society of Hypertension position paper."
+  },
+  "41680088": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Expanding the Evaluation of Skeletal Anomalies in Patients With KBG Syndrome: Recommendations for Clinical Practice."
+  },
+  "41691263": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Patient advocacy group perspectives on treatment priorities and clinical trials for the rare neurodevelopmental condition, Prader-Willi syndrome."
+  },
+  "41694933": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Pediatric Obesity: Diagnostic and Therapeutic Approaches in the Context of International Guidelines With a Focus on Polish Practice."
+  },
+  "41700725": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Bone turnover markers in the management of CKD-associated osteoporosis-a European consensus."
+  },
+  "41702741": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Consensus-based guidance for the nutritional management of children with cystic fibrosis on ELEXACAFTOR/TEZACAFTOR/IVACAFTOR."
+  },
+  "41709506": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Adherence to Health Behavior Recommendations among Youth with Obesity Classes I, II, and III."
+  },
+  "41712910": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Antenatal Corticosteroids for Fetal Maturation: A Comprehensive Review of Major Guidelines."
+  },
+  "41714462": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Quality of the World Professional Association for Transgender Health Guideline Standards of Care 8: An Appraisal Using the AGREE II Instrument."
+  },
+  "41732946": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "[Gender Dysphoria: Updated Guidelines and Clinical Recommendations]."
+  },
+  "41741298": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Update on familial hypercholesterolemia: An expert clinical consensus from the National Lipid Association."
+  },
+  "41762432": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Management of andrological disorders from childhood and adolescence to transition age: guidelines from the Italian Society of Andrology and Sexual Medicine (SIA"
+  },
+  "41770448": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Optimizing diagnosis and management of patients with ENPP1 deficiency: an expert opinion."
+  },
+  "41771101": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "EJHF expert consensus statement on the diagnosis and management of hypertrophic cardiomyopathy."
+  },
+  "41794571": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Pharmacotherapy in childhood obesity: Key points from the 2023 AAP clinical practice guideline."
+  },
+  "41795624": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "High Metabolic Syndrome Prevalence in Down Syndrome Children: Need for New Guidelines."
+  },
+  "41806387": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Predictive utility and cut point of the Physical Activity Questionnaire-Children for differentiating youth meeting moderate to vigorous physical activity recomm"
+  },
+  "41814278": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Adherence to 24-hour movement guidelines and its association with the risk of overweight and obesity in Chinese adolescents: 2007 to 2022."
+  },
+  "41821267": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "An international consensus on screening and monitoring early-stage type 1 diabetes: A roadmap to European implementation."
+  },
+  "41822905": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Aligning Sleep Patterns with Educational Schedules in Iran: Policy Recommendations for Enhancing Health and Academic Success."
+  },
+  "41826134": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Barriers and Facilitators to Implementing Guideline Recommendations for Key Aspects of Familial Hypercholesterolemia Management in Australia: Primary Care Integ"
+  },
+  "41830146": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "A call to action: A consensus statement on knowledge gaps and research priorities on the management of women with early onset type 2 diabetes in the preconcepti"
+  },
+  "41837398": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Dietary management of pediatric patients with kidney disease: recommendations by the Korean Society of Pediatric Nephrology and the Korean Society of Clinical N"
+  },
+  "41842793": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Implementation of a Clinical Practice Guideline for diabetic ketoacidosis at a tertiary pediatric hospital: a before-after study."
+  },
+  "41842886": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Adherence to American Diabetes Association and Centers for Medicare & Medicaid Services Guidelines for Diabetes Management in Puerto Rico's Medicaid Population."
+  },
+  "41852270": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Comparing Clinical Outcomes and Adherence to Guidelines Between Outpatient Care Delivered In-Person Versus Telehealth for Paediatric Asthma, Type 1 Diabetes, Ob"
+  },
+  "41906110": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Effects of gestational weight gain based on weight-recommended guidelines (2022) in China on maternal and neonatal outcomes: a retrospective cohort study."
+  },
+  "41906697": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Recommendations from the Clinical Toxicology Recommendations Collaborative on the administration of activated charcoal in acute oral overdose."
+  },
+  "41924022": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Policy paper: \"Nudging for better nutrition: behavioral strategies to address childhood obesity in Arab communities\" policy recommendations for action."
+  },
+  "41949601": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Real-world prescription patterns of guideline-recommended therapies in heart failure across China."
+  },
+  "41978106": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Italian Expert Consensus on Women's Nutrition Across the Life Course: A Modified Delphi Study."
+  },
+  "41979860": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Prevalence and Predictors of Guideline Concordant Pediatric Obesity Care: A Narrative Review."
+  },
+  "41984406": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Thyroid function and ultrasound surveillance in childhood cancer survivors (CCS): a position paper of the Italian Society of Pediatric Endocrinology and Diabeto"
+  },
+  "41994046": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "A new Canadian clinical practice guideline for managing obesity in children: Some tried, some true and some very new."
+  },
+  "42001194": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "International consensus on adolescent metabolic health: prevention of obesity and type 2 diabetes."
+  },
+  "42022718": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Tackling Obesity: A Qualitative Exploration of a Whole School Food Policy Guideline."
+  },
+  "42023883": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "[Spanish consensus on the preparation of parenteral nutrient mixtures - General aspects]."
+  },
+  "42025526": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "[Translated article] Spanish consensus on the preparation of parenteral nutrient mixtures - General aspects."
+  },
+  "42035516": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Efficacy of Mediterranean Diet in pregnancy: A systematic review and meta-analysis featured in the Italian National Guidelines \"La Dieta Mediterranea\"."
+  },
+  "42044742": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Application of the Total Nutrient Index as a Precision Nutrition Tool to Address Dietary Recommendations Across the Life Course."
+  },
+  "42051156": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Considerations for the clinical use of teplizumab in stage 2 Type 1 diabetes: A Consensus Statement from the British Society of Paediatric Endocrinology and Dia"
+  },
+  "42051839": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "THR-β Agonists vs Incretin Therapies for Noncirrhotic Metabolic Dysfunction-Associated Steatohepatitis (MASH): A Biopsy-Anchored Systematic Review With Grading "
+  },
+  "42055464": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Executive summary of the consensus document on management of the transition of patients with inborn errors of intermediary metabolism."
+  },
+  "42082783": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "High-fidelity simulation-based validation of applicability of the new Italian society for pediatric endocrinology and diabetes (ISPED) recommendations for pedia"
+  },
+  "42120542": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "EMQN Best Practice Guidelines for Genetic Testing and Reporting in RYR1-related disorders."
+  },
+  "42124073": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "The 2024 Endocrine Society Guideline on Vitamin D: Comprehensive Summary and Critical Appraisal."
+  },
+  "42133473": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Global survey of genetic testing methods for familial hypercholesterolemia. A study and recommendations from the EAS FHSC registry."
+  },
+  "42137355": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Editorial: Impact of new vitamin D guidelines on pediatric and adult health: insights, evidence, and implications."
+  },
+  "42139456": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Complication Risk Classification in Children and Adolescents With Type 1 Diabetes: Interpretable Machine Learning Study Based on Saudi Clinical Guidelines."
+  },
+  "42151309": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Longitudinal associations between adherence to 24-h movement guidelines and physical fitness and body composition in pediatric overweight and obesity."
+  },
+  "42177014": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Single-use, low-profile flexible ureterorenoscopy in paediatric lithiasis: Preliminary experience expanding the boundaries of ESPU recommendations."
+  },
+  "42179051": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Familial hypercholesterolaemia in children and adolescents: a European Atherosclerosis Society consensus statement."
+  },
+  "42209249": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Intersex medical guidelines in the UK and Germany: a critical discourse analysis."
+  },
+  "42215263": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Establishing population-specific gestational weight gain ranges for twin pregnancies and comparing their performance with IOM recommendations: a retrospective c"
+  },
+  "42218938": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Guideline Adherence in the Diagnosis of Polycystic Ovary Syndrome Among Adolescents: Comparing Obstetricians and Gynecologists with Large Language Models."
+  },
+  "42221839": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Medication Use and Guideline Adherence in Inflammatory Bowel Disease Management: A Retrospective Study from a Tertiary Care Hospital in Pakistan (2019-2024)."
+  },
+  "42246488": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Adjunctive Treatment with GLP-1 and Dual GLP-1/GIP Receptor Agonists for People with Type 1 Diabetes: Consensus Report and Practical Guidelines for Safe Use."
+  },
+  "42276035": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Diagnostic criteria for growth disorders requiring growth hormone therapy: updated consensus from the Sociedad Mexicana de Endocrinología Pediátrica."
+  },
+  "42277449": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Global Variability in Children and Adolescent Metabolic Bariatric Surgery Guidelines: A Worldwide IFSO Survey."
+  },
+  "42297593": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "[Expert consensus on the clinical diagnosis and management of sarcopenic obesity (2026 edition)]."
+  },
+  "42312974": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Swiss obesity clinical practice guidance."
+  },
+  "42334025": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Implementation of Child Healthy Weight Guidelines in the Dental Setting: A Pilot Study."
+  },
+  "42340621": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Practical approach to the diagnosis, management, and treatment of pediatric patients with bone fragility: an expert opinion."
+  },
+  "42371635": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Longitudinal Predictive Power of Youth Diabetes Screening Guidelines."
+  },
+  "42374900": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "European Society for Pediatric Gastroenterology, Hepatology and Nutrition (ESPGHAN) steatotic liver disease special interest group position paper on screening, "
+  },
+  "42377364": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Adherence to WHO severe acute malnutrition guidelines and mortality in critically ill children ‒ A cohort study in a pediatric intensive care unit."
+  },
+  "42378432": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Extracorporeal-Cardiopulmonary Resuscitation Deployment in the Pediatric Emergency Department Setting: 2000-2023 Report For the American Heart Association's Get"
+  },
+  "42382928": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Philippine Clinical Practice Guidelines for Periodic Health Examination: Screening for Renal, Metabolic, Nutritional, and Endocrine Disorders."
+  },
+  "42382932": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Philippine Clinical Practice Guidelines for Periodic Health Examination: Screening for Prenatal Disorders."
+  },
+  "42382940": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Philippine Clinical Practice Guidelines for Periodic Health Examination: Screening for Musculoskeletal Disorders."
+  },
+  "42387672": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Hyperlipidaemia in youth with type 1 diabetes: Are current guidelines clinically useful?"
+  },
+  "42413072": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Diagnostic work-up in paediatric adrenocortical tumours: an international consensus."
+  },
+  "42415539": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "ESHRE position paper: international limits on the number of offspring per gamete donor."
+  },
+  "42417770": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Diet quality and adherence to nutritional recommendations: a multicenter study based on caregiver-child dyads."
+  },
+  "42417878": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Compliance with the Netherlands' vitamin D supplementation recommendation for three at-risk groups: young children, women over 50 years, and elderly."
+  },
+  "42422417": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Lipid Screening for Cardiovascular Risk in Youth: A Narrative Review of Current Guidelines and Potential Use of Nonfasting Measures."
+  },
+  "42426563": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Continuous Intraperitoneal Insulin Infusion for People With Type 1 Diabetes: A Literature Review and International Position Statement."
+  },
+  "42430646": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Neonatal parenteral nutrition: An expert narrative review of international guidelines and contemporary evidence."
+  },
+  "42430901": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Standardizing terminology and management of testicular developmental disorders: A comprehensive review and international expert consensus."
+  },
+  "42438331": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Defining Consensus-Based Components for Integrating Dietitians Into Primary Dental Care for Paediatric Populations: A Delphi Study."
+  },
+  "42439098": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Navigating sexual health, fertility, and adult wellness in individuals with Duchenne muscular dystrophy: Current standards of care and future directions."
+  },
+  "42442376": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Reproductive health guidance for the cystic fibrosis community: a Cystic Fibrosis Foundation Position Paper."
+  },
+  "42443831": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Association of parental moderate-to-vigorous physical activity with child overweight/obesity, physical fitness and MVPA guideline adherence: dose-response analy"
+  },
+  "42479655": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Complementary feeding in Mexico by 2026: a review and recommendations from the Academia Mexicana de Pediatría."
+  },
+  "42485883": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Brazilian Society of Otology Task Force - bone-anchored hearing system - recommendations based on strength of evidence."
+  },
+  "42490030": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Diagnosis and Management of Transfusion-Dependent Thalassemia: Evidence-Based Guidelines From the Pediatric Hematology Oncology Chapter of the Indian Academy of"
+  },
+  "42502751": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Nutrition, Physical Activity and Other Health Aspects Before and During Pregnancy - Recommendations by the Nationwide \"Healthy Start Network\" (Netzwerk Gesund i"
+  },
+  "42515579": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Rotavirus Infection as a Contributor to Early-Onset Type 1 Diabetes: Review and Recommendations."
+  },
+  "42516057": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Vitamin D in pediatrics: the need for precision medicine-based guidelines for screening, monitoring, and supplementation."
+  },
+  "42521310": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Translation and cross-cultural adaptation of the parental version of Type 1 Diabetes and Life (T1DAL): a US patient-reported outcome measurement into Danish fol"
+  },
+  "42529979": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Medical Management of Kidney Stones: AUA Guideline (2026) Part II: Treatment and Follow-up of Kidney Stones."
+  },
+  "42529981": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Medical Management of Kidney Stones: AUA Guideline (2026) Part I: Evaluation of Patients With Kidney Stones and Dietary Management of Patients With Calcium Ston"
+  },
+  "42538214": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Clinical recommendations for the management of patients with type 1 diabetes in special situations."
+  },
+  "42564970": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "India Specific Consensus Guidelines for the Management of Differences of Sexual Development."
+  },
+  "42604850": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Following the rules: which type 1 diabetes guidelines, protocols and recommendations are tertiary clinics in Australia following? A quantitative study."
+  },
+  "42610384": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Hypertension in Wilms Tumor at Diagnosis: Proposed Treatment Recommendations Starting From a Bi-Institutional Retrospective Observational Study."
+  },
+  "42612900": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Chinese guidelines for the diagnosis and treatment of Craniopharyngioma in children (2025)."
+  },
+  "42625269": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Pediatric Hyperlipidemia Guidelines: A Comprehensive Review of Screening, Diagnosis, and Management."
+  },
+  "42637901": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "From guidelines to practice: antihypertensive prescribing preferences in Türkiye-the APP-Türkiye study."
+  },
+  "42645708": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Ultra-Processed Foods and Metabolic Dysfunction: Mechanisms, Clinical Implications, and Public Health Perspectives. Position Paper of the Italian Association of"
+  },
+  "42653816": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Effects of Incretin-Based Therapies on Testosterone Levels and Incretin Response in Men with Hypogonadism: A Systematic Literature Review Following PRISMA 2020 "
+  },
+  "42669047": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Diagnosis and management of very rare primary arrhythmia syndromes in children and adults: a Clinical Consensus Statement of the European Heart Rhythm Associati"
+  },
+  "42697817": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "French treatment recommendations for malignant non-seminomatous germ cell tumours in children and adolescents."
+  },
+  "42699451": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "borderline",
+   "title": "Rapid review of gender-affirming healthcare for children and adolescents: Evidence synthesis (2021-2025) and recommendations for South Africa."
+  },
+  "42711215": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Delayed gastric emptying in adolescent patients on GLP-1 receptor agonists with standard preoperative fasting guidelines: a prospective cohort study."
+  },
+  "42723760": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Using evidence-based models of human behaviour to reduce endocrine-disrupting chemicals exposure: recommendations for strengthening interventions."
+  },
+  "42733377": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "[Clinical practice guidelines \"Congenital hyperinsulinism\"]."
+  },
+  "42738956": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Beverage Consumption Patterns, Beverage-Derived Energy Intake, and Adherence to Fluid Intake Recommendations Among Polish Adolescents: A Cross-Sectional Study U"
+  },
+  "42743690": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Peri-operative management of patients having day surgery: a consensus statement from the Association of Anaesthetists, British Association for Day Surgery and t"
+  },
+  "42779363": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "International Guideline on the Diagnosis, Treatment, and Monitoring of Long-Chain Fatty Acid Oxidation Disorders (LC-FAOD)."
+  },
+  "42779667": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Dietary management of pediatric patients with kidney disease: recommendations by the Korean Society of Pediatric Nephrology and the Korean Society of Clinical N"
+  },
+  "42792716": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Pharmacokinetics Modelling Reveals Inconsistency Between the US and European Vitamin D Safety Guidelines."
+  },
+  "42820462": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "'Paraganglioma and pheochromocytoma: a review of current guidelines, new diagnostic and therapeutic approaches'."
+  },
+  "42823987": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Consensus statement on the management of Achondroplasia in the Middle East."
+  },
+  "42824961": {
+   "decision": "approved",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "accept",
+   "title": "Clinical consensus guidelines for the management of Noonan syndrome in Japan."
+  },
+  "42845119": {
+   "decision": "rejected",
+   "decided_on": "2026-10-13",
+   "agent_verdict": "reject",
+   "title": "Associations of Sleep Duration and Adherence to Age-Specific Sleep Recommendations with Body Fat and Related Anthropometric Characteristics in Children and Adol"
   }
  }
 }

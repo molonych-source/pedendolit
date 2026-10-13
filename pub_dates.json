@@ -7030,6 +7030,4461 @@
    "pub_date": "2026-07-22",
    "precision": "day",
    "source": "article"
+  },
+  "37382585": {
+   "pub_date": "2023-07-06",
+   "precision": "day",
+   "source": "article"
+  },
+  "37752373": {
+   "pub_date": "2023-09-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "37867270": {
+   "pub_date": "2024-01-01",
+   "precision": "year",
+   "source": "journal"
+  },
+  "38078582": {
+   "pub_date": "2024-01-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "38154971": {
+   "pub_date": "2024-01-02",
+   "precision": "day",
+   "source": "journal"
+  },
+  "38193204": {
+   "pub_date": "2024-01-09",
+   "precision": "day",
+   "source": "article"
+  },
+  "38211570": {
+   "pub_date": "2024-01-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "38240484": {
+   "pub_date": "2024-01-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "38253221": {
+   "pub_date": "2024-01-20",
+   "precision": "day",
+   "source": "article"
+  },
+  "38307712": {
+   "pub_date": "2024-05-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "38336003": {
+   "pub_date": "2024-02-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "38376731": {
+   "pub_date": "2024-02-20",
+   "precision": "day",
+   "source": "article"
+  },
+  "38552173": {
+   "pub_date": "2024-03-30",
+   "precision": "day",
+   "source": "journal"
+  },
+  "38561783": {
+   "pub_date": "2024-04-02",
+   "precision": "day",
+   "source": "article"
+  },
+  "38598969": {
+   "pub_date": "2024-03-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "38637868": {
+   "pub_date": "2024-04-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "38655793": {
+   "pub_date": "2024-04-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "38677287": {
+   "pub_date": "2024-04-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "38706696": {
+   "pub_date": "2024-04-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "38710228": {
+   "pub_date": "2024-05-06",
+   "precision": "day",
+   "source": "article"
+  },
+  "38894740": {
+   "pub_date": "2024-06-04",
+   "precision": "day",
+   "source": "article"
+  },
+  "38910151": {
+   "pub_date": "2024-09-01",
+   "precision": "month",
+   "source": "journal"
+  },
+  "38912694": {
+   "pub_date": "2024-08-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "38960811": {
+   "pub_date": "2024-05-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "39002896": {
+   "pub_date": "2024-07-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "39143767": {
+   "pub_date": "2024-08-20",
+   "precision": "day",
+   "source": "journal"
+  },
+  "39147856": {
+   "pub_date": "2024-08-15",
+   "precision": "day",
+   "source": "article"
+  },
+  "39289684": {
+   "pub_date": "2024-09-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "39438674": {
+   "pub_date": "2024-10-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "39451186": {
+   "pub_date": "2024-01-01",
+   "precision": "year",
+   "source": "journal"
+  },
+  "39506343": {
+   "pub_date": "2024-10-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "39527371": {
+   "pub_date": "2024-11-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "39645505": {
+   "pub_date": "2024-12-06",
+   "precision": "day",
+   "source": "article"
+  },
+  "39651980": {
+   "pub_date": "2025-01-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "39653802": {
+   "pub_date": "2025-02-01",
+   "precision": "month",
+   "source": "journal"
+  },
+  "39672599": {
+   "pub_date": "2025-03-17",
+   "precision": "day",
+   "source": "journal"
+  },
+  "39689218": {
+   "pub_date": "2024-12-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "39818293": {
+   "pub_date": "2025-01-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "39950999": {
+   "pub_date": "2025-02-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "39967943": {
+   "pub_date": "2024-11-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "40069730": {
+   "pub_date": "2025-03-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "40073966": {
+   "pub_date": "2025-03-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "40094399": {
+   "pub_date": "2025-03-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "40103414": {
+   "pub_date": "2025-03-27",
+   "precision": "day",
+   "source": "journal"
+  },
+  "40106739": {
+   "pub_date": "2025-03-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "40152409": {
+   "pub_date": "2025-03-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "40159903": {
+   "pub_date": "2025-03-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "40186499": {
+   "pub_date": "2025-04-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "40207786": {
+   "pub_date": "2025-04-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "40208229": {
+   "pub_date": "2025-04-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "40219621": {
+   "pub_date": "2025-04-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "40260699": {
+   "pub_date": "2025-04-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "40265636": {
+   "pub_date": "2025-04-23",
+   "precision": "day",
+   "source": "article"
+  },
+  "40269620": {
+   "pub_date": "2025-04-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "40331898": {
+   "pub_date": "2025-05-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "40335774": {
+   "pub_date": "2025-05-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "40337990": {
+   "pub_date": "2025-05-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "40357670": {
+   "pub_date": "2025-05-13",
+   "precision": "day",
+   "source": "article"
+  },
+  "40387306": {
+   "pub_date": "2025-05-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "40393750": {
+   "pub_date": "2025-06-02",
+   "precision": "day",
+   "source": "journal"
+  },
+  "40439625": {
+   "pub_date": "2025-05-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "40444808": {
+   "pub_date": "2025-05-30",
+   "precision": "day",
+   "source": "article"
+  },
+  "40492130": {
+   "pub_date": "2025-06-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "40520848": {
+   "pub_date": "2025-06-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "40523372": {
+   "pub_date": "2025-06-13",
+   "precision": "day",
+   "source": "article"
+  },
+  "40555795": {
+   "pub_date": "2025-06-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "40560659": {
+   "pub_date": "2025-09-02",
+   "precision": "day",
+   "source": "journal"
+  },
+  "40591205": {
+   "pub_date": "2025-07-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "40607635": {
+   "pub_date": "2025-07-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "40665778": {
+   "pub_date": "2025-07-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "40719244": {
+   "pub_date": "2025-07-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "40746619": {
+   "pub_date": "2025-07-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "40820604": {
+   "pub_date": "2025-08-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "40820605": {
+   "pub_date": "2025-08-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "40899768": {
+   "pub_date": "2025-09-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "40946023": {
+   "pub_date": "2025-09-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "40959584": {
+   "pub_date": "2025-09-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "40996024": {
+   "pub_date": "2025-09-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "41057893": {
+   "pub_date": "2025-10-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "41087837": {
+   "pub_date": "2025-10-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "41091474": {
+   "pub_date": "2025-10-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "41099075": {
+   "pub_date": "2025-10-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "41108035": {
+   "pub_date": "2025-10-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "41109845": {
+   "pub_date": "2025-10-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "41111054": {
+   "pub_date": "2025-10-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "41117702": {
+   "pub_date": "2025-10-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "41118079": {
+   "pub_date": "2025-10-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "41125535": {
+   "pub_date": "2025-10-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "41177980": {
+   "pub_date": "2025-11-02",
+   "precision": "day",
+   "source": "article"
+  },
+  "41215667": {
+   "pub_date": "2025-11-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "41233124": {
+   "pub_date": "2025-12-02",
+   "precision": "day",
+   "source": "journal"
+  },
+  "41261973": {
+   "pub_date": "2025-11-26",
+   "precision": "day",
+   "source": "journal"
+  },
+  "41367096": {
+   "pub_date": "2025-10-15",
+   "precision": "day",
+   "source": "article"
+  },
+  "41427034": {
+   "pub_date": "2025-12-04",
+   "precision": "day",
+   "source": "article"
+  },
+  "41459635": {
+   "pub_date": "2025-12-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "41509147": {
+   "pub_date": "2025-12-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "41519847": {
+   "pub_date": "2026-01-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "41693442": {
+   "pub_date": "2026-02-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "41762432": {
+   "pub_date": "2026-02-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "41770448": {
+   "pub_date": "2026-03-02",
+   "precision": "day",
+   "source": "article"
+  },
+  "41821267": {
+   "pub_date": "2026-03-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "41860303": {
+   "pub_date": "2026-08-13",
+   "precision": "day",
+   "source": "journal"
+  },
+  "41984406": {
+   "pub_date": "2026-04-15",
+   "precision": "day",
+   "source": "article"
+  },
+  "42001194": {
+   "pub_date": "2026-04-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "42051156": {
+   "pub_date": "2026-04-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "42055464": {
+   "pub_date": "2026-04-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "42179051": {
+   "pub_date": "2026-07-07",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42227833": {
+   "pub_date": "2026-06-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42246651": {
+   "pub_date": "2026-06-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42251204": {
+   "pub_date": "2026-06-06",
+   "precision": "day",
+   "source": "article"
+  },
+  "42251767": {
+   "pub_date": "2026-10-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42262529": {
+   "pub_date": "2026-06-09",
+   "precision": "day",
+   "source": "article"
+  },
+  "42271169": {
+   "pub_date": "2026-06-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "42276035": {
+   "pub_date": "2026-01-01",
+   "precision": "year",
+   "source": "journal"
+  },
+  "42296202": {
+   "pub_date": "2026-06-15",
+   "precision": "day",
+   "source": "article"
+  },
+  "42296296": {
+   "pub_date": "2026-06-15",
+   "precision": "day",
+   "source": "article"
+  },
+  "42306887": {
+   "pub_date": "2026-09-16",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42340621": {
+   "pub_date": "2026-06-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42341802": {
+   "pub_date": "2026-06-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42374900": {
+   "pub_date": "2026-06-30",
+   "precision": "day",
+   "source": "article"
+  },
+  "42375004": {
+   "pub_date": "2026-09-16",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42380651": {
+   "pub_date": "2026-06-30",
+   "precision": "day",
+   "source": "article"
+  },
+  "42413072": {
+   "pub_date": "2026-07-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42432282": {
+   "pub_date": "2026-07-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "42432283": {
+   "pub_date": "2026-07-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "42473852": {
+   "pub_date": "2026-07-20",
+   "precision": "day",
+   "source": "article"
+  },
+  "42482329": {
+   "pub_date": "2026-09-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42507670": {
+   "pub_date": "2026-10-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42517336": {
+   "pub_date": "2026-07-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "42538214": {
+   "pub_date": "2026-07-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "42546086": {
+   "pub_date": "2026-08-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42546728": {
+   "pub_date": "2026-08-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42560028": {
+   "pub_date": "2026-08-06",
+   "precision": "day",
+   "source": "article"
+  },
+  "42562800": {
+   "pub_date": "2026-08-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "42564970": {
+   "pub_date": "2026-07-02",
+   "precision": "day",
+   "source": "article"
+  },
+  "42565336": {
+   "pub_date": "2026-08-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42566297": {
+   "pub_date": "2026-10-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42566303": {
+   "pub_date": "2026-10-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42568280": {
+   "pub_date": "2026-08-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "42568329": {
+   "pub_date": "2026-08-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "42576447": {
+   "pub_date": "2026-08-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "42576450": {
+   "pub_date": "2026-08-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "42576608": {
+   "pub_date": "2026-08-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42577041": {
+   "pub_date": "2026-07-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "42579641": {
+   "pub_date": "2026-08-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "42582486": {
+   "pub_date": "2026-07-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "42583728": {
+   "pub_date": "2026-08-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42585121": {
+   "pub_date": "2026-08-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42586961": {
+   "pub_date": "2026-08-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42586963": {
+   "pub_date": "2026-08-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42586971": {
+   "pub_date": "2026-08-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42590786": {
+   "pub_date": "2026-08-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "42592648": {
+   "pub_date": "2026-08-13",
+   "precision": "day",
+   "source": "article"
+  },
+  "42592850": {
+   "pub_date": "2026-08-13",
+   "precision": "day",
+   "source": "article"
+  },
+  "42594337": {
+   "pub_date": "2026-10-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42599836": {
+   "pub_date": "2026-08-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "42605188": {
+   "pub_date": "2026-08-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "42606340": {
+   "pub_date": "2026-10-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42608745": {
+   "pub_date": "2026-08-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "42610198": {
+   "pub_date": "2026-08-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "42610331": {
+   "pub_date": "2026-08-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "42610662": {
+   "pub_date": "2026-08-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "42612686": {
+   "pub_date": "2026-10-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42613860": {
+   "pub_date": "2026-08-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "42613861": {
+   "pub_date": "2026-08-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "42615123": {
+   "pub_date": "2026-08-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "42615219": {
+   "pub_date": "2026-08-20",
+   "precision": "day",
+   "source": "article"
+  },
+  "42615379": {
+   "pub_date": "2026-08-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "42616687": {
+   "pub_date": "2026-08-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "42616834": {
+   "pub_date": "2026-08-20",
+   "precision": "day",
+   "source": "article"
+  },
+  "42618522": {
+   "pub_date": "2026-08-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "42618811": {
+   "pub_date": "2026-08-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "42619456": {
+   "pub_date": "2026-08-20",
+   "precision": "day",
+   "source": "article"
+  },
+  "42619468": {
+   "pub_date": "2026-08-20",
+   "precision": "day",
+   "source": "article"
+  },
+  "42619604": {
+   "pub_date": "2026-08-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "42619607": {
+   "pub_date": "2026-08-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "42619639": {
+   "pub_date": "2026-08-20",
+   "precision": "day",
+   "source": "article"
+  },
+  "42625298": {
+   "pub_date": "2026-08-28",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42626886": {
+   "pub_date": "2026-08-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "42627334": {
+   "pub_date": "2026-08-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "42636181": {
+   "pub_date": "2026-08-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42638268": {
+   "pub_date": "2026-08-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42638350": {
+   "pub_date": "2026-08-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "42638530": {
+   "pub_date": "2026-08-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "42640099": {
+   "pub_date": "2026-08-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "42640742": {
+   "pub_date": "2026-08-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "42642831": {
+   "pub_date": "2026-08-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "42643908": {
+   "pub_date": "2026-08-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42648724": {
+   "pub_date": "2026-08-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "42648725": {
+   "pub_date": "2026-08-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "42655994": {
+   "pub_date": "2026-08-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "42657772": {
+   "pub_date": "2026-08-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "42657773": {
+   "pub_date": "2026-08-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "42657774": {
+   "pub_date": "2026-08-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "42658741": {
+   "pub_date": "2026-08-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "42658751": {
+   "pub_date": "2026-08-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "42658770": {
+   "pub_date": "2026-08-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "42661143": {
+   "pub_date": "2026-08-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "42661266": {
+   "pub_date": "2026-08-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "42662043": {
+   "pub_date": "2026-08-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "42662067": {
+   "pub_date": "2026-08-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "42663626": {
+   "pub_date": "2026-08-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "42665003": {
+   "pub_date": "2026-08-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "42665282": {
+   "pub_date": "2026-08-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "42665942": {
+   "pub_date": "2026-08-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "42670714": {
+   "pub_date": "2026-09-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "42671070": {
+   "pub_date": "2026-08-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "42671978": {
+   "pub_date": "2026-08-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "42676236": {
+   "pub_date": "2026-08-28",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42678022": {
+   "pub_date": "2026-08-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "42678028": {
+   "pub_date": "2026-09-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "42678892": {
+   "pub_date": "2026-09-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "42678900": {
+   "pub_date": "2026-09-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "42684963": {
+   "pub_date": "2026-09-02",
+   "precision": "day",
+   "source": "article"
+  },
+  "42684977": {
+   "pub_date": "2026-09-02",
+   "precision": "day",
+   "source": "article"
+  },
+  "42689341": {
+   "pub_date": "2026-09-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42689548": {
+   "pub_date": "2026-08-28",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42692441": {
+   "pub_date": "2026-09-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42695140": {
+   "pub_date": "2026-09-04",
+   "precision": "day",
+   "source": "article"
+  },
+  "42696487": {
+   "pub_date": "2026-09-04",
+   "precision": "day",
+   "source": "article"
+  },
+  "42696488": {
+   "pub_date": "2026-09-04",
+   "precision": "day",
+   "source": "article"
+  },
+  "42696489": {
+   "pub_date": "2026-09-04",
+   "precision": "day",
+   "source": "article"
+  },
+  "42700411": {
+   "pub_date": "2026-09-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42700419": {
+   "pub_date": "2026-09-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42700433": {
+   "pub_date": "2026-09-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42702015": {
+   "pub_date": "2026-09-06",
+   "precision": "day",
+   "source": "article"
+  },
+  "42702017": {
+   "pub_date": "2026-09-06",
+   "precision": "day",
+   "source": "article"
+  },
+  "42702813": {
+   "pub_date": "2026-09-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42703509": {
+   "pub_date": "2026-08-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "42704479": {
+   "pub_date": "2026-09-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42704757": {
+   "pub_date": "2026-09-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42708237": {
+   "pub_date": "2026-09-09",
+   "precision": "day",
+   "source": "article"
+  },
+  "42711746": {
+   "pub_date": "2026-09-09",
+   "precision": "day",
+   "source": "article"
+  },
+  "42711790": {
+   "pub_date": "2026-09-09",
+   "precision": "day",
+   "source": "article"
+  },
+  "42716813": {
+   "pub_date": "2026-09-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42716814": {
+   "pub_date": "2026-09-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42717884": {
+   "pub_date": "2026-09-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "42719011": {
+   "pub_date": "2026-09-09",
+   "precision": "day",
+   "source": "article"
+  },
+  "42719887": {
+   "pub_date": "2026-09-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "42719944": {
+   "pub_date": "2026-09-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "42720320": {
+   "pub_date": "2026-09-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "42720523": {
+   "pub_date": "2026-09-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "42720752": {
+   "pub_date": "2026-09-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "42720753": {
+   "pub_date": "2026-09-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "42721063": {
+   "pub_date": "2026-09-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "42723858": {
+   "pub_date": "2026-09-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "42726276": {
+   "pub_date": "2026-09-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "42726682": {
+   "pub_date": "2026-09-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "42726692": {
+   "pub_date": "2026-09-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "42730771": {
+   "pub_date": "2026-09-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "42731057": {
+   "pub_date": "2026-09-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "42731068": {
+   "pub_date": "2026-09-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42731069": {
+   "pub_date": "2026-09-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42731072": {
+   "pub_date": "2026-09-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42732089": {
+   "pub_date": "2026-09-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "42733377": {
+   "pub_date": "2026-09-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "42734244": {
+   "pub_date": "2026-09-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "42734653": {
+   "pub_date": "2026-09-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "42741830": {
+   "pub_date": "2026-09-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "42746746": {
+   "pub_date": "2026-09-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "42747047": {
+   "pub_date": "2026-09-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "42747940": {
+   "pub_date": "2026-09-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "42750888": {
+   "pub_date": "2026-09-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "42755695": {
+   "pub_date": "2026-09-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "42762166": {
+   "pub_date": "2026-09-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "42762173": {
+   "pub_date": "2026-09-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "42763793": {
+   "pub_date": "2026-09-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "42764621": {
+   "pub_date": "2026-09-20",
+   "precision": "day",
+   "source": "article"
+  },
+  "42764665": {
+   "pub_date": "2026-09-20",
+   "precision": "day",
+   "source": "article"
+  },
+  "42764719": {
+   "pub_date": "2026-09-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "42765166": {
+   "pub_date": "2026-09-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "42765682": {
+   "pub_date": "2026-09-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "42767635": {
+   "pub_date": "2026-09-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "42767636": {
+   "pub_date": "2026-09-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "42767637": {
+   "pub_date": "2026-09-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "42767638": {
+   "pub_date": "2026-09-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "42767639": {
+   "pub_date": "2026-09-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "42771567": {
+   "pub_date": "2026-09-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "42773924": {
+   "pub_date": "2026-09-23",
+   "precision": "day",
+   "source": "article"
+  },
+  "42778655": {
+   "pub_date": "2026-09-23",
+   "precision": "day",
+   "source": "article"
+  },
+  "42779083": {
+   "pub_date": "2026-09-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42779363": {
+   "pub_date": "2026-09-01",
+   "precision": "month",
+   "source": "journal"
+  },
+  "42779506": {
+   "pub_date": "2026-10-05",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42784528": {
+   "pub_date": "2026-09-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "42786561": {
+   "pub_date": "2026-09-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42787575": {
+   "pub_date": "2026-09-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42788197": {
+   "pub_date": "2026-09-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "42788328": {
+   "pub_date": "2026-09-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "42788331": {
+   "pub_date": "2026-09-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "42788333": {
+   "pub_date": "2026-09-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "42789535": {
+   "pub_date": "2026-10-05",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42790437": {
+   "pub_date": "2026-09-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "42800888": {
+   "pub_date": "2026-09-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "42803468": {
+   "pub_date": "2026-09-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "42806034": {
+   "pub_date": "2026-09-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "42806816": {
+   "pub_date": "2026-09-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "42808186": {
+   "pub_date": "2026-09-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "42808984": {
+   "pub_date": "2026-09-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "42810859": {
+   "pub_date": "2026-09-30",
+   "precision": "day",
+   "source": "article"
+  },
+  "42812901": {
+   "pub_date": "2026-09-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "42814642": {
+   "pub_date": "2026-09-30",
+   "precision": "day",
+   "source": "article"
+  },
+  "42815502": {
+   "pub_date": "2026-09-30",
+   "precision": "day",
+   "source": "article"
+  },
+  "42816947": {
+   "pub_date": "2026-09-30",
+   "precision": "day",
+   "source": "article"
+  },
+  "42820933": {
+   "pub_date": "2026-10-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "42820967": {
+   "pub_date": "2026-09-30",
+   "precision": "day",
+   "source": "article"
+  },
+  "42821443": {
+   "pub_date": "2026-10-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "42821490": {
+   "pub_date": "2026-10-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "42821504": {
+   "pub_date": "2026-10-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "42822480": {
+   "pub_date": "2026-10-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "42823987": {
+   "pub_date": "2026-09-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "42824961": {
+   "pub_date": "2026-05-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "42828498": {
+   "pub_date": "2026-10-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42828507": {
+   "pub_date": "2026-10-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42829473": {
+   "pub_date": "2026-10-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42829806": {
+   "pub_date": "2026-10-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42829813": {
+   "pub_date": "2026-10-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42832437": {
+   "pub_date": "2026-10-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42832439": {
+   "pub_date": "2026-10-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42832449": {
+   "pub_date": "2026-10-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42832458": {
+   "pub_date": "2026-10-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42834487": {
+   "pub_date": "2026-10-04",
+   "precision": "day",
+   "source": "article"
+  },
+  "42834488": {
+   "pub_date": "2026-10-04",
+   "precision": "day",
+   "source": "article"
+  },
+  "42834489": {
+   "pub_date": "2026-10-04",
+   "precision": "day",
+   "source": "article"
+  },
+  "42834490": {
+   "pub_date": "2026-10-04",
+   "precision": "day",
+   "source": "article"
+  },
+  "42834491": {
+   "pub_date": "2026-10-04",
+   "precision": "day",
+   "source": "article"
+  },
+  "42834492": {
+   "pub_date": "2026-10-04",
+   "precision": "day",
+   "source": "article"
+  },
+  "42834493": {
+   "pub_date": "2026-10-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42834494": {
+   "pub_date": "2026-10-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42835423": {
+   "pub_date": "2026-09-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "42836443": {
+   "pub_date": "2026-10-06",
+   "precision": "day",
+   "source": "article"
+  },
+  "42839825": {
+   "pub_date": "2026-10-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42842317": {
+   "pub_date": "2026-10-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "42842326": {
+   "pub_date": "2026-10-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "42842500": {
+   "pub_date": "2026-10-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42844149": {
+   "pub_date": "2026-10-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42844763": {
+   "pub_date": "2026-10-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42847278": {
+   "pub_date": "2026-10-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "42852473": {
+   "pub_date": "2026-10-09",
+   "precision": "day",
+   "source": "article"
+  },
+  "42853710": {
+   "pub_date": "2026-10-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42854204": {
+   "pub_date": "2026-10-09",
+   "precision": "day",
+   "source": "article"
+  },
+  "42856902": {
+   "pub_date": "2026-10-09",
+   "precision": "day",
+   "source": "article"
+  },
+  "42857337": {
+   "pub_date": "2026-10-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "42857932": {
+   "pub_date": "2026-10-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "42859385": {
+   "pub_date": "2026-10-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42859396": {
+   "pub_date": "2026-10-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42860242": {
+   "pub_date": "2026-10-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "42860641": {
+   "pub_date": "2026-10-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "42861846": {
+   "pub_date": "2026-10-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42861851": {
+   "pub_date": "2026-10-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42861866": {
+   "pub_date": "2026-10-13",
+   "precision": "day",
+   "source": "article"
+  },
+  "42862792": {
+   "pub_date": "2026-10-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42862800": {
+   "pub_date": "2026-10-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42864817": {
+   "pub_date": "2026-10-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42864836": {
+   "pub_date": "2026-10-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "39044531": {
+   "pub_date": "2024-07-23",
+   "precision": "day",
+   "source": "article"
+  },
+  "39075889": {
+   "pub_date": "2024-07-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "39075942": {
+   "pub_date": "2024-07-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "39076151": {
+   "pub_date": "2024-07-30",
+   "precision": "day",
+   "source": "article"
+  },
+  "39080863": {
+   "pub_date": "2024-07-30",
+   "precision": "day",
+   "source": "article"
+  },
+  "39091237": {
+   "pub_date": "2024-08-02",
+   "precision": "day",
+   "source": "article"
+  },
+  "39096188": {
+   "pub_date": "2024-08-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "39143688": {
+   "pub_date": "2024-08-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "39143692": {
+   "pub_date": "2024-08-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "39155529": {
+   "pub_date": "2024-08-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "39180292": {
+   "pub_date": "2024-08-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "39254103": {
+   "pub_date": "2024-09-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "39282925": {
+   "pub_date": "2024-09-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "39311445": {
+   "pub_date": "2024-09-23",
+   "precision": "day",
+   "source": "article"
+  },
+  "39311452": {
+   "pub_date": "2024-09-23",
+   "precision": "day",
+   "source": "article"
+  },
+  "39369310": {
+   "pub_date": "2024-10-06",
+   "precision": "day",
+   "source": "article"
+  },
+  "39397750": {
+   "pub_date": "2024-10-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "39397773": {
+   "pub_date": "2024-10-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "39422158": {
+   "pub_date": "2024-10-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "39508277": {
+   "pub_date": "2024-11-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "39523580": {
+   "pub_date": "2024-11-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "39535135": {
+   "pub_date": "2024-11-13",
+   "precision": "day",
+   "source": "article"
+  },
+  "39540398": {
+   "pub_date": "2024-11-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "39558481": {
+   "pub_date": "2024-11-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "39605250": {
+   "pub_date": "2024-11-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "39614645": {
+   "pub_date": "2024-11-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "39616994": {
+   "pub_date": "2024-11-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "39657622": {
+   "pub_date": "2024-12-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "39667350": {
+   "pub_date": "2024-12-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "39668758": {
+   "pub_date": "2024-12-13",
+   "precision": "day",
+   "source": "article"
+  },
+  "39675347": {
+   "pub_date": "2024-12-13",
+   "precision": "day",
+   "source": "article"
+  },
+  "39691964": {
+   "pub_date": "2024-12-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "39707843": {
+   "pub_date": "2024-12-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "39709960": {
+   "pub_date": "2024-12-20",
+   "precision": "day",
+   "source": "article"
+  },
+  "39761666": {
+   "pub_date": "2025-01-06",
+   "precision": "day",
+   "source": "article"
+  },
+  "39761670": {
+   "pub_date": "2025-01-06",
+   "precision": "day",
+   "source": "article"
+  },
+  "39773553": {
+   "pub_date": "2025-01-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "39778536": {
+   "pub_date": "2025-01-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "39799940": {
+   "pub_date": "2025-01-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "39827856": {
+   "pub_date": "2025-01-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "39827859": {
+   "pub_date": "2025-01-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "39862065": {
+   "pub_date": "2025-01-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "39864410": {
+   "pub_date": "2025-01-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "39864412": {
+   "pub_date": "2025-01-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "39864424": {
+   "pub_date": "2025-01-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "39881439": {
+   "pub_date": "2025-01-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "39929154": {
+   "pub_date": "2025-02-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "39947153": {
+   "pub_date": "2025-02-13",
+   "precision": "day",
+   "source": "article"
+  },
+  "39987906": {
+   "pub_date": "2025-02-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "40015262": {
+   "pub_date": "2025-02-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "40031891": {
+   "pub_date": "2025-03-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "40049149": {
+   "pub_date": "2025-03-06",
+   "precision": "day",
+   "source": "article"
+  },
+  "40058338": {
+   "pub_date": "2025-03-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "40064156": {
+   "pub_date": "2025-03-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "40068640": {
+   "pub_date": "2025-03-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "40071788": {
+   "pub_date": "2025-03-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "40096834": {
+   "pub_date": "2025-03-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "40112797": {
+   "pub_date": "2025-03-20",
+   "precision": "day",
+   "source": "article"
+  },
+  "40119663": {
+   "pub_date": "2025-03-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "40127627": {
+   "pub_date": "2025-03-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "40132568": {
+   "pub_date": "2025-03-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "40138490": {
+   "pub_date": "2025-03-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "40139169": {
+   "pub_date": "2025-03-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "40243921": {
+   "pub_date": "2025-04-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "40245859": {
+   "pub_date": "2025-04-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "40272924": {
+   "pub_date": "2026-01-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "40273897": {
+   "pub_date": "2025-04-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "40324364": {
+   "pub_date": "2025-05-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "40337988": {
+   "pub_date": "2025-05-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "40357642": {
+   "pub_date": "2025-05-13",
+   "precision": "day",
+   "source": "article"
+  },
+  "40380800": {
+   "pub_date": "2025-05-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "40383119": {
+   "pub_date": "2025-05-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "40383122": {
+   "pub_date": "2025-05-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "40393423": {
+   "pub_date": "2025-05-20",
+   "precision": "day",
+   "source": "article"
+  },
+  "40393445": {
+   "pub_date": "2025-05-20",
+   "precision": "day",
+   "source": "article"
+  },
+  "40414205": {
+   "pub_date": "2025-05-23",
+   "precision": "day",
+   "source": "article"
+  },
+  "40418898": {
+   "pub_date": "2025-05-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "40433847": {
+   "pub_date": "2025-05-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "40451143": {
+   "pub_date": "2025-05-30",
+   "precision": "day",
+   "source": "article"
+  },
+  "40494338": {
+   "pub_date": "2025-06-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "40517764": {
+   "pub_date": "2025-06-13",
+   "precision": "day",
+   "source": "article"
+  },
+  "40577229": {
+   "pub_date": "2026-01-21",
+   "precision": "day",
+   "source": "journal"
+  },
+  "40698417": {
+   "pub_date": "2025-07-23",
+   "precision": "day",
+   "source": "article"
+  },
+  "40711947": {
+   "pub_date": "2025-07-23",
+   "precision": "day",
+   "source": "article"
+  },
+  "40754784": {
+   "pub_date": "2025-08-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "40803664": {
+   "pub_date": "2026-02-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "40899799": {
+   "pub_date": "2025-09-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "40903014": {
+   "pub_date": "2026-02-20",
+   "precision": "day",
+   "source": "journal"
+  },
+  "40908825": {
+   "pub_date": "2025-09-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "40921719": {
+   "pub_date": "2026-02-20",
+   "precision": "day",
+   "source": "journal"
+  },
+  "40932405": {
+   "pub_date": "2025-09-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "40958410": {
+   "pub_date": "2025-09-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "40993932": {
+   "pub_date": "2026-06-17",
+   "precision": "day",
+   "source": "journal"
+  },
+  "40995656": {
+   "pub_date": "2026-02-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "41100425": {
+   "pub_date": "2025-10-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "41115851": {
+   "pub_date": "2025-10-20",
+   "precision": "day",
+   "source": "article"
+  },
+  "41121532": {
+   "pub_date": "2025-10-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "41177992": {
+   "pub_date": "2025-11-02",
+   "precision": "day",
+   "source": "article"
+  },
+  "41186140": {
+   "pub_date": "2025-11-04",
+   "precision": "day",
+   "source": "article"
+  },
+  "41196654": {
+   "pub_date": "2026-01-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "41216978": {
+   "pub_date": "2025-10-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "41246962": {
+   "pub_date": "2025-11-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "41248115": {
+   "pub_date": "2025-11-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "41252199": {
+   "pub_date": "2026-01-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "41271215": {
+   "pub_date": "2025-11-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "41296499": {
+   "pub_date": "2026-06-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "41307093": {
+   "pub_date": "2025-11-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "41307096": {
+   "pub_date": "2025-11-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "41311212": {
+   "pub_date": "2025-11-20",
+   "precision": "day",
+   "source": "article"
+  },
+  "41313663": {
+   "pub_date": "2025-11-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "41335420": {
+   "pub_date": "2026-01-20",
+   "precision": "day",
+   "source": "journal"
+  },
+  "41355750": {
+   "pub_date": "2025-12-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "41399256": {
+   "pub_date": "2025-12-15",
+   "precision": "day",
+   "source": "article"
+  },
+  "41420342": {
+   "pub_date": "2025-12-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "41456571": {
+   "pub_date": "2025-12-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "41468096": {
+   "pub_date": "2025-12-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "41468097": {
+   "pub_date": "2025-12-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "41468105": {
+   "pub_date": "2025-12-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "41476919": {
+   "pub_date": "2025-12-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "41480351": {
+   "pub_date": "2025-12-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "41480354": {
+   "pub_date": "2025-12-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "41480357": {
+   "pub_date": "2025-12-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "41488135": {
+   "pub_date": "2025-12-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "41488142": {
+   "pub_date": "2025-12-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "41488143": {
+   "pub_date": "2025-12-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "41488144": {
+   "pub_date": "2025-12-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "41489154": {
+   "pub_date": "2026-01-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "41489212": {
+   "pub_date": "2025-11-26",
+   "precision": "day",
+   "source": "journal"
+  },
+  "41489247": {
+   "pub_date": "2026-01-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "41495925": {
+   "pub_date": "2025-10-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "41496498": {
+   "pub_date": "2026-01-06",
+   "precision": "day",
+   "source": "article"
+  },
+  "41496501": {
+   "pub_date": "2026-01-06",
+   "precision": "day",
+   "source": "article"
+  },
+  "41499094": {
+   "pub_date": "2026-01-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "41508750": {
+   "pub_date": "2025-12-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "41508751": {
+   "pub_date": "2025-12-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "41508752": {
+   "pub_date": "2025-12-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "41508753": {
+   "pub_date": "2025-12-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "41508754": {
+   "pub_date": "2025-12-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "41508755": {
+   "pub_date": "2025-12-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "41508756": {
+   "pub_date": "2025-12-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "41508757": {
+   "pub_date": "2025-12-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "41508758": {
+   "pub_date": "2025-12-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "41525084": {
+   "pub_date": "2026-03-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "41529840": {
+   "pub_date": "2026-01-13",
+   "precision": "day",
+   "source": "article"
+  },
+  "41530911": {
+   "pub_date": "2026-04-22",
+   "precision": "day",
+   "source": "journal"
+  },
+  "41540796": {
+   "pub_date": "2026-01-15",
+   "precision": "day",
+   "source": "article"
+  },
+  "41548894": {
+   "pub_date": "2026-01-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "41553367": {
+   "pub_date": "2026-01-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "41564354": {
+   "pub_date": "2026-03-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "41571285": {
+   "pub_date": "2026-01-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "41571286": {
+   "pub_date": "2026-01-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "41585414": {
+   "pub_date": "2025-04-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "41606799": {
+   "pub_date": "2026-06-17",
+   "precision": "day",
+   "source": "journal"
+  },
+  "41615464": {
+   "pub_date": "2026-01-30",
+   "precision": "day",
+   "source": "article"
+  },
+  "41618961": {
+   "pub_date": "2026-01-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "41636283": {
+   "pub_date": "2026-02-04",
+   "precision": "day",
+   "source": "article"
+  },
+  "41652653": {
+   "pub_date": "2026-02-06",
+   "precision": "day",
+   "source": "article"
+  },
+  "41662565": {
+   "pub_date": "2026-04-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "41678364": {
+   "pub_date": "2026-06-17",
+   "precision": "day",
+   "source": "journal"
+  },
+  "41689466": {
+   "pub_date": "2026-06-17",
+   "precision": "day",
+   "source": "journal"
+  },
+  "41689852": {
+   "pub_date": "2026-02-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "41689855": {
+   "pub_date": "2026-02-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "41693148": {
+   "pub_date": "2026-06-17",
+   "precision": "day",
+   "source": "journal"
+  },
+  "41693150": {
+   "pub_date": "2026-06-17",
+   "precision": "day",
+   "source": "journal"
+  },
+  "41693672": {
+   "pub_date": "2026-02-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "41711662": {
+   "pub_date": "2026-04-22",
+   "precision": "day",
+   "source": "journal"
+  },
+  "41711664": {
+   "pub_date": "2026-04-22",
+   "precision": "day",
+   "source": "journal"
+  },
+  "41718722": {
+   "pub_date": "2026-04-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "41724659": {
+   "pub_date": "2026-02-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "41727686": {
+   "pub_date": "2026-02-06",
+   "precision": "day",
+   "source": "article"
+  },
+  "41729832": {
+   "pub_date": "2026-04-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "41747741": {
+   "pub_date": "2026-02-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "41762065": {
+   "pub_date": "2026-02-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "41764031": {
+   "pub_date": "2026-02-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "41764080": {
+   "pub_date": "2026-02-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "41764081": {
+   "pub_date": "2026-02-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "41766631": {
+   "pub_date": "2026-03-02",
+   "precision": "day",
+   "source": "article"
+  },
+  "41773692": {
+   "pub_date": "2026-03-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "41775457": {
+   "pub_date": "2026-03-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "41797564": {
+   "pub_date": "2026-03-09",
+   "precision": "day",
+   "source": "article"
+  },
+  "41807128": {
+   "pub_date": "2026-03-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "41807129": {
+   "pub_date": "2026-03-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "41809577": {
+   "pub_date": "2025-04-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "41861142": {
+   "pub_date": "2026-04-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "41863835": {
+   "pub_date": "2026-03-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "41871528": {
+   "pub_date": "2026-03-23",
+   "precision": "day",
+   "source": "article"
+  },
+  "41890190": {
+   "pub_date": "2026-03-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "41905764": {
+   "pub_date": "2026-03-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "41922972": {
+   "pub_date": "2026-04-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "41933482": {
+   "pub_date": "2026-04-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "41933485": {
+   "pub_date": "2026-04-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "41956341": {
+   "pub_date": "2026-04-09",
+   "precision": "day",
+   "source": "article"
+  },
+  "42007571": {
+   "pub_date": "2026-04-20",
+   "precision": "day",
+   "source": "article"
+  },
+  "42008009": {
+   "pub_date": "2026-06-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42029052": {
+   "pub_date": "2026-04-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42035352": {
+   "pub_date": "2026-04-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "42035425": {
+   "pub_date": "2026-04-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "42077432": {
+   "pub_date": "2026-04-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "42077449": {
+   "pub_date": "2026-04-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "42077456": {
+   "pub_date": "2026-04-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "42087872": {
+   "pub_date": "2026-04-20",
+   "precision": "day",
+   "source": "article"
+  },
+  "42100194": {
+   "pub_date": "2026-04-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "42100195": {
+   "pub_date": "2026-04-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "42100199": {
+   "pub_date": "2026-04-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "42100207": {
+   "pub_date": "2026-04-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "42109734": {
+   "pub_date": "2026-04-23",
+   "precision": "day",
+   "source": "article"
+  },
+  "42109749": {
+   "pub_date": "2026-04-23",
+   "precision": "day",
+   "source": "article"
+  },
+  "42117517": {
+   "pub_date": "2026-05-04",
+   "precision": "day",
+   "source": "article"
+  },
+  "42118256": {
+   "pub_date": "2026-05-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42125227": {
+   "pub_date": "2026-04-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "42125228": {
+   "pub_date": "2026-04-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "42125231": {
+   "pub_date": "2026-04-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "42128807": {
+   "pub_date": "2026-05-13",
+   "precision": "day",
+   "source": "article"
+  },
+  "42137348": {
+   "pub_date": "2026-04-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "42137355": {
+   "pub_date": "2026-04-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "42137356": {
+   "pub_date": "2026-04-30",
+   "precision": "day",
+   "source": "article"
+  },
+  "42137361": {
+   "pub_date": "2026-04-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "42147099": {
+   "pub_date": "2026-05-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "42147112": {
+   "pub_date": "2026-04-30",
+   "precision": "day",
+   "source": "article"
+  },
+  "42147117": {
+   "pub_date": "2026-05-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "42158912": {
+   "pub_date": "2026-05-04",
+   "precision": "day",
+   "source": "article"
+  },
+  "42160598": {
+   "pub_date": "2026-06-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42160603": {
+   "pub_date": "2026-06-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42160611": {
+   "pub_date": "2026-06-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42165018": {
+   "pub_date": "2026-05-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42165021": {
+   "pub_date": "2026-05-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42165022": {
+   "pub_date": "2026-05-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42169725": {
+   "pub_date": "2026-04-23",
+   "precision": "day",
+   "source": "article"
+  },
+  "42178737": {
+   "pub_date": "2026-05-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42178926": {
+   "pub_date": "2026-05-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "42181174": {
+   "pub_date": "2026-05-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "42181181": {
+   "pub_date": "2026-05-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "42181188": {
+   "pub_date": "2026-05-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42181193": {
+   "pub_date": "2026-05-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "42181195": {
+   "pub_date": "2026-05-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "42181197": {
+   "pub_date": "2026-05-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42181202": {
+   "pub_date": "2026-05-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "42181203": {
+   "pub_date": "2026-05-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "42181673": {
+   "pub_date": "2026-05-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42199787": {
+   "pub_date": "2026-05-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "42199795": {
+   "pub_date": "2026-05-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "42199801": {
+   "pub_date": "2026-05-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "42200559": {
+   "pub_date": "2026-05-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "42201849": {
+   "pub_date": "2026-05-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "42205253": {
+   "pub_date": "2026-05-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42205254": {
+   "pub_date": "2026-05-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42205257": {
+   "pub_date": "2026-05-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42207920": {
+   "pub_date": "2026-05-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "42210521": {
+   "pub_date": "2026-05-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "42211457": {
+   "pub_date": "2026-05-13",
+   "precision": "day",
+   "source": "article"
+  },
+  "42211461": {
+   "pub_date": "2026-05-13",
+   "precision": "day",
+   "source": "article"
+  },
+  "42212575": {
+   "pub_date": "2026-06-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42222071": {
+   "pub_date": "2026-05-15",
+   "precision": "day",
+   "source": "article"
+  },
+  "42222075": {
+   "pub_date": "2026-05-15",
+   "precision": "day",
+   "source": "article"
+  },
+  "42222081": {
+   "pub_date": "2026-05-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "42222091": {
+   "pub_date": "2026-05-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "42222098": {
+   "pub_date": "2026-05-15",
+   "precision": "day",
+   "source": "article"
+  },
+  "42224388": {
+   "pub_date": "2026-06-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "42226352": {
+   "pub_date": "2026-06-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "42232529": {
+   "pub_date": "2026-05-15",
+   "precision": "day",
+   "source": "article"
+  },
+  "42232752": {
+   "pub_date": "2026-05-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "42232755": {
+   "pub_date": "2026-05-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "42234600": {
+   "pub_date": "2026-06-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42238235": {
+   "pub_date": "2026-05-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "42238241": {
+   "pub_date": "2026-05-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "42238247": {
+   "pub_date": "2026-05-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "42238253": {
+   "pub_date": "2026-03-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "42238256": {
+   "pub_date": "2026-04-06",
+   "precision": "day",
+   "source": "article"
+  },
+  "42238257": {
+   "pub_date": "2026-03-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42244940": {
+   "pub_date": "2026-05-20",
+   "precision": "day",
+   "source": "article"
+  },
+  "42246488": {
+   "pub_date": "2026-06-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42249186": {
+   "pub_date": "2026-06-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42255431": {
+   "pub_date": "2026-06-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "42255433": {
+   "pub_date": "2026-05-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "42255436": {
+   "pub_date": "2026-05-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "42257315": {
+   "pub_date": "2026-06-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "42260725": {
+   "pub_date": "2026-06-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "42267295": {
+   "pub_date": "2026-05-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "42267298": {
+   "pub_date": "2026-05-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "42267299": {
+   "pub_date": "2026-05-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "42267303": {
+   "pub_date": "2026-05-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "42267304": {
+   "pub_date": "2026-05-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "42267588": {
+   "pub_date": "2026-06-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "42267680": {
+   "pub_date": "2026-06-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "42267693": {
+   "pub_date": "2026-06-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "42268779": {
+   "pub_date": "2026-06-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "42268786": {
+   "pub_date": "2026-06-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "42272804": {
+   "pub_date": "2026-05-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "42272807": {
+   "pub_date": "2026-05-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "42275273": {
+   "pub_date": "2026-06-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "42277554": {
+   "pub_date": "2026-06-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "42284237": {
+   "pub_date": "2026-06-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42284239": {
+   "pub_date": "2026-06-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42286892": {
+   "pub_date": "2026-06-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42287669": {
+   "pub_date": "2026-06-13",
+   "precision": "day",
+   "source": "article"
+  },
+  "42290637": {
+   "pub_date": "2026-06-15",
+   "precision": "day",
+   "source": "article"
+  },
+  "42290838": {
+   "pub_date": "2026-05-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "42290841": {
+   "pub_date": "2026-05-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "42290846": {
+   "pub_date": "2026-05-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "42290850": {
+   "pub_date": "2026-05-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "42290852": {
+   "pub_date": "2026-05-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "42290860": {
+   "pub_date": "2026-05-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "42290865": {
+   "pub_date": "2026-05-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "42290875": {
+   "pub_date": "2026-05-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "42295008": {
+   "pub_date": "2026-07-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42301022": {
+   "pub_date": "2026-06-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "42301945": {
+   "pub_date": "2026-06-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "42301958": {
+   "pub_date": "2026-06-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "42301959": {
+   "pub_date": "2026-06-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "42305261": {
+   "pub_date": "2026-06-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "42305262": {
+   "pub_date": "2026-06-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "42305263": {
+   "pub_date": "2026-06-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "42308140": {
+   "pub_date": "2026-06-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "42308549": {
+   "pub_date": "2026-06-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42310494": {
+   "pub_date": "2026-06-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "42312209": {
+   "pub_date": "2026-06-02",
+   "precision": "day",
+   "source": "article"
+  },
+  "42316351": {
+   "pub_date": "2026-06-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "42318209": {
+   "pub_date": "2026-06-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42318221": {
+   "pub_date": "2026-06-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42318222": {
+   "pub_date": "2026-06-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42318224": {
+   "pub_date": "2026-06-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42319874": {
+   "pub_date": "2026-06-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "42325617": {
+   "pub_date": "2026-06-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42339084": {
+   "pub_date": "2026-06-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "42339090": {
+   "pub_date": "2026-06-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "42339091": {
+   "pub_date": "2026-06-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "42339093": {
+   "pub_date": "2026-06-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "42344417": {
+   "pub_date": "2026-06-09",
+   "precision": "day",
+   "source": "article"
+  },
+  "42358677": {
+   "pub_date": "2026-06-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "42359572": {
+   "pub_date": "2026-07-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42369057": {
+   "pub_date": "2026-06-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "42369060": {
+   "pub_date": "2026-06-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42369064": {
+   "pub_date": "2026-06-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42369065": {
+   "pub_date": "2026-06-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42375327": {
+   "pub_date": "2026-06-15",
+   "precision": "day",
+   "source": "article"
+  },
+  "42375328": {
+   "pub_date": "2026-06-02",
+   "precision": "day",
+   "source": "article"
+  },
+  "42375338": {
+   "pub_date": "2026-06-15",
+   "precision": "day",
+   "source": "article"
+  },
+  "42381876": {
+   "pub_date": "2026-06-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "42388856": {
+   "pub_date": "2026-06-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "42388858": {
+   "pub_date": "2026-06-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "42388864": {
+   "pub_date": "2026-06-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "42388865": {
+   "pub_date": "2026-06-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "42388872": {
+   "pub_date": "2026-06-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "42388880": {
+   "pub_date": "2026-06-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "42395175": {
+   "pub_date": "2026-06-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "42395180": {
+   "pub_date": "2026-06-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "42404340": {
+   "pub_date": "2026-06-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "42411586": {
+   "pub_date": "2026-07-01",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42416902": {
+   "pub_date": "2026-06-23",
+   "precision": "day",
+   "source": "article"
+  },
+  "42422420": {
+   "pub_date": "2026-06-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42422431": {
+   "pub_date": "2026-06-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42434302": {
+   "pub_date": "2026-06-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "42440435": {
+   "pub_date": "2026-06-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "42440439": {
+   "pub_date": "2026-06-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "42440719": {
+   "pub_date": "2026-06-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "42445874": {
+   "pub_date": "2026-06-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "42445883": {
+   "pub_date": "2026-06-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "42445886": {
+   "pub_date": "2026-06-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "42453499": {
+   "pub_date": "2026-06-30",
+   "precision": "day",
+   "source": "article"
+  },
+  "42453500": {
+   "pub_date": "2026-06-30",
+   "precision": "day",
+   "source": "article"
+  },
+  "42453509": {
+   "pub_date": "2026-06-30",
+   "precision": "day",
+   "source": "article"
+  },
+  "42460314": {
+   "pub_date": "2026-07-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "42460316": {
+   "pub_date": "2026-07-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "42466340": {
+   "pub_date": "2026-07-02",
+   "precision": "day",
+   "source": "article"
+  },
+  "42483667": {
+   "pub_date": "2026-07-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42483672": {
+   "pub_date": "2026-07-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42483680": {
+   "pub_date": "2026-07-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42483685": {
+   "pub_date": "2026-07-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42488004": {
+   "pub_date": "2026-07-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "42488009": {
+   "pub_date": "2026-07-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "42490787": {
+   "pub_date": "2026-07-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42491250": {
+   "pub_date": "2026-07-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42500132": {
+   "pub_date": "2026-07-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "42500133": {
+   "pub_date": "2026-07-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "42516754": {
+   "pub_date": "2026-07-13",
+   "precision": "day",
+   "source": "article"
+  },
+  "42518540": {
+   "pub_date": "2026-07-06",
+   "precision": "day",
+   "source": "article"
+  },
+  "42528668": {
+   "pub_date": "2026-07-15",
+   "precision": "day",
+   "source": "article"
+  },
+  "42528706": {
+   "pub_date": "2026-07-15",
+   "precision": "day",
+   "source": "article"
+  },
+  "42534783": {
+   "pub_date": "2026-07-16",
+   "precision": "day",
+   "source": "article"
+  },
+  "42539507": {
+   "pub_date": "2026-07-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "42543500": {
+   "pub_date": "2026-08-02",
+   "precision": "day",
+   "source": "article"
+  },
+  "42543523": {
+   "pub_date": "2026-08-03",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42543894": {
+   "pub_date": "2026-08-02",
+   "precision": "day",
+   "source": "article"
+  },
+  "42544393": {
+   "pub_date": "2026-08-04",
+   "precision": "day",
+   "source": "article"
+  },
+  "42544397": {
+   "pub_date": "2026-08-04",
+   "precision": "day",
+   "source": "article"
+  },
+  "42544825": {
+   "pub_date": "2026-08-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42544851": {
+   "pub_date": "2026-08-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42548444": {
+   "pub_date": "2026-07-20",
+   "precision": "day",
+   "source": "article"
+  },
+  "42548527": {
+   "pub_date": "2026-07-20",
+   "precision": "day",
+   "source": "article"
+  },
+  "42549990": {
+   "pub_date": "2026-08-04",
+   "precision": "day",
+   "source": "article"
+  },
+  "42553050": {
+   "pub_date": "2026-07-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "42553053": {
+   "pub_date": "2026-07-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "42553082": {
+   "pub_date": "2026-07-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "42553126": {
+   "pub_date": "2026-07-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "42553132": {
+   "pub_date": "2026-07-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "42554577": {
+   "pub_date": "2026-08-03",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42554593": {
+   "pub_date": "2026-08-03",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42554596": {
+   "pub_date": "2026-08-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42558174": {
+   "pub_date": "2026-07-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "42558224": {
+   "pub_date": "2026-07-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "42558297": {
+   "pub_date": "2026-07-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "42558309": {
+   "pub_date": "2026-07-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "42558337": {
+   "pub_date": "2026-07-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "42558362": {
+   "pub_date": "2026-07-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "42558385": {
+   "pub_date": "2026-07-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "42558395": {
+   "pub_date": "2026-07-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "42560052": {
+   "pub_date": "2026-08-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42563988": {
+   "pub_date": "2026-07-23",
+   "precision": "day",
+   "source": "article"
+  },
+  "42563989": {
+   "pub_date": "2026-07-23",
+   "precision": "day",
+   "source": "article"
+  },
+  "42564057": {
+   "pub_date": "2026-07-23",
+   "precision": "day",
+   "source": "article"
+  },
+  "42564140": {
+   "pub_date": "2026-07-23",
+   "precision": "day",
+   "source": "article"
+  },
+  "42566298": {
+   "pub_date": "2026-08-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42568388": {
+   "pub_date": "2026-07-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42568422": {
+   "pub_date": "2026-07-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42568473": {
+   "pub_date": "2026-07-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42568647": {
+   "pub_date": "2026-07-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42573163": {
+   "pub_date": "2026-08-03",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42577229": {
+   "pub_date": "2026-07-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "42577304": {
+   "pub_date": "2026-07-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "42582489": {
+   "pub_date": "2026-07-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "42591870": {
+   "pub_date": "2026-07-29",
+   "precision": "day",
+   "source": "article"
+  },
+  "42597118": {
+   "pub_date": "2026-07-30",
+   "precision": "day",
+   "source": "article"
+  },
+  "42597194": {
+   "pub_date": "2026-07-30",
+   "precision": "day",
+   "source": "article"
+  },
+  "42597412": {
+   "pub_date": "2026-07-30",
+   "precision": "day",
+   "source": "article"
+  },
+  "42601853": {
+   "pub_date": "2026-07-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "42609307": {
+   "pub_date": "2026-08-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42609542": {
+   "pub_date": "2026-08-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42620571": {
+   "pub_date": "2026-08-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42620602": {
+   "pub_date": "2026-08-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42620613": {
+   "pub_date": "2026-08-05",
+   "precision": "day",
+   "source": "article"
+  },
+  "42625675": {
+   "pub_date": "2026-08-06",
+   "precision": "day",
+   "source": "article"
+  },
+  "42625712": {
+   "pub_date": "2026-08-06",
+   "precision": "day",
+   "source": "article"
+  },
+  "42630198": {
+   "pub_date": "2026-08-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42630200": {
+   "pub_date": "2026-08-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42639006": {
+   "pub_date": "2026-08-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "42643340": {
+   "pub_date": "2026-08-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "42657209": {
+   "pub_date": "2026-08-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42661681": {
+   "pub_date": "2026-08-13",
+   "precision": "day",
+   "source": "article"
+  },
+  "42661684": {
+   "pub_date": "2026-08-13",
+   "precision": "day",
+   "source": "article"
+  },
+  "42661711": {
+   "pub_date": "2026-08-13",
+   "precision": "day",
+   "source": "article"
+  },
+  "42666156": {
+   "pub_date": "2026-08-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "42666255": {
+   "pub_date": "2026-08-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "42676347": {
+   "pub_date": "2026-08-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "42676382": {
+   "pub_date": "2026-08-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "42683205": {
+   "pub_date": "2026-08-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "42687935": {
+   "pub_date": "2026-08-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "42688021": {
+   "pub_date": "2026-08-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "42688199": {
+   "pub_date": "2026-08-19",
+   "precision": "day",
+   "source": "article"
+  },
+  "42694689": {
+   "pub_date": "2026-08-20",
+   "precision": "day",
+   "source": "article"
+  },
+  "42698448": {
+   "pub_date": "2026-08-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "42705654": {
+   "pub_date": "2026-08-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "42705655": {
+   "pub_date": "2026-08-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "42705656": {
+   "pub_date": "2026-08-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "42705657": {
+   "pub_date": "2026-08-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "42705658": {
+   "pub_date": "2026-08-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "42707268": {
+   "pub_date": "2026-08-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42707585": {
+   "pub_date": "2026-08-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42713069": {
+   "pub_date": "2026-08-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "42718414": {
+   "pub_date": "2026-08-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "42718762": {
+   "pub_date": "2026-08-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "42718806": {
+   "pub_date": "2026-08-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "42718842": {
+   "pub_date": "2026-08-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "42723824": {
+   "pub_date": "2026-08-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "42723843": {
+   "pub_date": "2026-08-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "42725052": {
+   "pub_date": "2026-08-27",
+   "precision": "day",
+   "source": "article"
+  },
+  "42729112": {
+   "pub_date": "2026-08-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "42729307": {
+   "pub_date": "2026-08-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "42729636": {
+   "pub_date": "2026-08-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "42729771": {
+   "pub_date": "2026-08-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "42740977": {
+   "pub_date": "2026-08-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "42741058": {
+   "pub_date": "2026-08-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "42741127": {
+   "pub_date": "2026-08-31",
+   "precision": "day",
+   "source": "article"
+  },
+  "42745756": {
+   "pub_date": "2026-09-01",
+   "precision": "day",
+   "source": "article"
+  },
+  "42751562": {
+   "pub_date": "2026-09-02",
+   "precision": "day",
+   "source": "article"
+  },
+  "42752791": {
+   "pub_date": "2026-08-28",
+   "precision": "day",
+   "source": "journal"
+  },
+  "42755462": {
+   "pub_date": "2026-09-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42755517": {
+   "pub_date": "2026-09-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42755564": {
+   "pub_date": "2026-09-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42760922": {
+   "pub_date": "2026-09-04",
+   "precision": "day",
+   "source": "article"
+  },
+  "42761164": {
+   "pub_date": "2026-09-04",
+   "precision": "day",
+   "source": "article"
+  },
+  "42769034": {
+   "pub_date": "2026-09-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42769063": {
+   "pub_date": "2026-09-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42769082": {
+   "pub_date": "2026-09-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42769090": {
+   "pub_date": "2026-09-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42769128": {
+   "pub_date": "2026-09-07",
+   "precision": "day",
+   "source": "article"
+  },
+  "42774051": {
+   "pub_date": "2026-09-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "42774188": {
+   "pub_date": "2026-09-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "42780339": {
+   "pub_date": "2026-09-09",
+   "precision": "day",
+   "source": "article"
+  },
+  "42780458": {
+   "pub_date": "2026-09-09",
+   "precision": "day",
+   "source": "article"
+  },
+  "42780480": {
+   "pub_date": "2026-09-09",
+   "precision": "day",
+   "source": "article"
+  },
+  "42780516": {
+   "pub_date": "2026-09-09",
+   "precision": "day",
+   "source": "article"
+  },
+  "42781351": {
+   "pub_date": "2026-09-09",
+   "precision": "day",
+   "source": "article"
+  },
+  "42787014": {
+   "pub_date": "2026-09-10",
+   "precision": "day",
+   "source": "article"
+  },
+  "42798566": {
+   "pub_date": "2026-09-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "42803210": {
+   "pub_date": "2026-04-03",
+   "precision": "day",
+   "source": "article"
+  },
+  "42807012": {
+   "pub_date": "2026-09-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "42812136": {
+   "pub_date": "2026-07-23",
+   "precision": "day",
+   "source": "article"
+  },
+  "42812137": {
+   "pub_date": "2026-06-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "42812138": {
+   "pub_date": "2026-06-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42812139": {
+   "pub_date": "2026-06-11",
+   "precision": "day",
+   "source": "article"
+  },
+  "42812140": {
+   "pub_date": "2026-06-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "42812142": {
+   "pub_date": "2026-09-08",
+   "precision": "day",
+   "source": "article"
+  },
+  "42812143": {
+   "pub_date": "2026-08-12",
+   "precision": "day",
+   "source": "article"
+  },
+  "42812149": {
+   "pub_date": "2026-09-02",
+   "precision": "day",
+   "source": "article"
+  },
+  "42812206": {
+   "pub_date": "2026-08-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "42824033": {
+   "pub_date": "2026-09-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "42824042": {
+   "pub_date": "2026-09-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "42824093": {
+   "pub_date": "2026-09-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "42824137": {
+   "pub_date": "2026-09-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "42824143": {
+   "pub_date": "2026-09-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "42824167": {
+   "pub_date": "2026-09-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "42824923": {
+   "pub_date": "2026-09-17",
+   "precision": "day",
+   "source": "article"
+  },
+  "42827605": {
+   "pub_date": "2026-09-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "42827615": {
+   "pub_date": "2026-09-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "42827629": {
+   "pub_date": "2026-09-18",
+   "precision": "day",
+   "source": "article"
+  },
+  "42834495": {
+   "pub_date": "2026-09-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42834496": {
+   "pub_date": "2026-09-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42834497": {
+   "pub_date": "2026-09-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42834498": {
+   "pub_date": "2026-09-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42834499": {
+   "pub_date": "2026-09-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42835056": {
+   "pub_date": "2026-09-21",
+   "precision": "day",
+   "source": "article"
+  },
+  "42839943": {
+   "pub_date": "2026-09-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "42840623": {
+   "pub_date": "2026-09-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "42840695": {
+   "pub_date": "2026-09-22",
+   "precision": "day",
+   "source": "article"
+  },
+  "42845917": {
+   "pub_date": "2026-09-23",
+   "precision": "day",
+   "source": "article"
+  },
+  "42846858": {
+   "pub_date": "2026-09-15",
+   "precision": "day",
+   "source": "article"
+  },
+  "42851325": {
+   "pub_date": "2026-09-24",
+   "precision": "day",
+   "source": "article"
+  },
+  "42853730": {
+   "pub_date": "2026-10-09",
+   "precision": "day",
+   "source": "article"
+  },
+  "42856855": {
+   "pub_date": "2026-09-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "42856873": {
+   "pub_date": "2026-09-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "42856903": {
+   "pub_date": "2026-09-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "42857425": {
+   "pub_date": "2026-09-26",
+   "precision": "day",
+   "source": "article"
+  },
+  "42857505": {
+   "pub_date": "2026-09-25",
+   "precision": "day",
+   "source": "article"
+  },
+  "42865251": {
+   "pub_date": "2026-10-14",
+   "precision": "day",
+   "source": "article"
+  },
+  "42865399": {
+   "pub_date": "2026-09-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "42865505": {
+   "pub_date": "2026-09-28",
+   "precision": "day",
+   "source": "article"
+  },
+  "42865515": {
+   "pub_date": "2026-09-28",
+   "precision": "day",
+   "source": "article"
   }
  }
 }

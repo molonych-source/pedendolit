@@ -208,6 +208,114 @@ def bone_mineral_subtopic(tl, text):
     return best
 
 
+# Growth and Pituitary subtopics (2026-10-13). Same scoring as Bone/Mineral (2 per
+# term in the title, 1 per term anywhere), but a minimum score of 2: one passing
+# mention in an abstract ("born small for gestational age") does not set a subtopic.
+# Earlier entries win ties, so the more specific subtopic is listed first.
+_GROWTH_SUBTOPICS = (
+    ("Syndromic short stature", ("turner syndrome", "noonan", "prader-willi", "silver-russell",
+                                 "small for gestational age", "achondroplasia", "hypochondroplasia",
+                                 "skeletal dysplasia", "shox", "vosoritide", "aggrecan", "acan ")),
+    ("GH deficiency & therapy", ("growth hormone deficiency", "gh deficiency", "ghd", "long-acting growth hormone",
+                                 "somatrogon", "somapacitan", "lonapegsomatropin", "somatropin", "rhgh",
+                                 "growth hormone therapy", "growth hormone treatment", "gh therapy",
+                                 "gh treatment", "growth hormone stimulation", "gh stimulation")),
+    ("Short stature evaluation", ("idiopathic short stature", "short stature", "growth chart", "growth reference",
+                                  "bone age", "height velocity", "adult height", "final height",
+                                  "constitutional delay", "familial short stature", "tall stature")),
+)
+_PITUITARY_SUBTOPICS = (
+    ("Hypopituitarism", ("hypopituitarism", "pituitary hormone deficienc", "pituitary insufficiency",
+                         "septo-optic", "optic nerve hypoplasia", "pituitary stalk", "ectopic posterior pituitary",
+                         "cphd", "central hypothyroidism", "central adrenal insufficiency", "hypophysitis")),
+    ("Pituitary tumors", ("craniopharyngioma", "pituitary adenoma", "pituitary tumor", "pituitary tumour",
+                          "prolactinoma", "macroadenoma", "microadenoma", "germinoma", "rathke",
+                          "acromegaly", "gigantism", "cushing disease", "cushing's disease")),
+)
+
+
+_ADRENAL_SUBTOPICS = (
+    ("CAH", ("congenital adrenal hyperplasia", "21-hydroxylase", "11-beta-hydroxylase", "11β-hydroxylase",
+             "17-hydroxyprogesterone", "crinecerfont", "(cah)", " cah ", " cah.", " cah:", " cah,",
+             "lipoid cah", "classic cah", "salt-wasting")),
+    ("Adrenal tumors & Cushing", ("cushing", "hypercortisolism", "adrenocortical", "pheochromocytoma",
+                                  "phaeochromocytoma", "paraganglioma", "adrenal tumor", "adrenal tumour",
+                                  "adrenal mass", "incidentaloma", "mitotane")),
+    ("Adrenal insufficiency", ("adrenal insufficiency", "addison", "adrenal crisis", "adrenoleukodystrophy",
+                               "glucocorticoid deficiency", "hydrocortisone replacement", "stress dos",
+                               "stress-dose", "acth stimulation", "cosyntropin", "synacthen")),
+    ("Mineralocorticoid & aldosterone", ("aldosterone", "aldosteronism", "mineralocorticoid excess",
+                                         "pseudohypoaldosteronism", "hypoaldosteronism", "renin",
+                                         "apparent mineralocorticoid")),
+)
+_THYROID_SUBTOPICS = (
+    ("Nodules & cancer", ("thyroid nodule", "nodules", "thyroid cancer", "thyroid carcinoma", "papillary",
+                          "medullary", "follicular carcinoma", "differentiated thyroid", "ti-rads",
+                          "fine-needle", "fine needle")),
+    ("Congenital hypothyroidism", ("congenital hypothyroidism", "newborn screening", "neonatal screening",
+                                   "thyroid dysgenesis", "dyshormonogenesis", "neonatal tsh")),
+    ("Hyperthyroidism & Graves", ("graves", "hyperthyroid", "thyrotoxicosis", "antithyroid", "methimazole",
+                                  "carbimazole", "propylthiouracil", "trab", "tsh receptor antibod")),
+    ("Autoimmune & acquired hypothyroidism", ("hashimoto", "autoimmune thyroiditis", "thyroiditis",
+                                              "subclinical hypothyroidism", "acquired hypothyroidism",
+                                              "thyroid autoimmunity", "tpo antibod", "anti-tpo")),
+)
+_PUBERTY_SUBTOPICS = (
+    ("Precocious puberty", ("precocious", "early puberty", "gnrh agonist", "gnrha", "gnrh analog",
+                            "leuprolide", "leuprorelin", "triptorelin", "histrelin", "premature thelarche",
+                            "adrenarche", "early menarche")),
+    ("Delayed puberty & hypogonadism", ("delayed puberty", "constitutional delay", "hypogonadotropic",
+                                        "hypogonadism", "kallmann", "puberty induction", "pubertal induction",
+                                        "klinefelter", "ovarian insufficiency", "testosterone therapy",
+                                        "testosterone replacement")),
+    ("Pubertal timing & physiology", ("pubertal timing", "puberty timing", "timing of puberty", "minipuberty",
+                                      "mini-puberty", "menarche", "pubertal onset", "onset of puberty",
+                                      "pubertal development", "tanner stage", "gonadotropin", "thelarche")),
+)
+
+
+def _score_subtopic(tl, text, table, default="General", minimum=2):
+    best, best_score = default, minimum - 1
+    for name, terms in table:
+        score = sum((2 if t in tl else 0) + (1 if t in text else 0) for t in terms)
+        if score > best_score:
+            best, best_score = name, score
+    return best
+
+
+def refine_subtopic(topic, subtopic, tl, text):
+    """Subtopic for topics whose branch does not set one. Water balance (set by the
+    Pituitary branches) is kept; Diabetes and Bone/Mineral are untouched."""
+    if topic == "Growth" and not subtopic:
+        return _score_subtopic(tl, text, _GROWTH_SUBTOPICS)
+    if topic == "Pituitary" and not subtopic:
+        return _score_subtopic(tl, text, _PITUITARY_SUBTOPICS)
+    table = {"Adrenal": _ADRENAL_SUBTOPICS, "Thyroid": _THYROID_SUBTOPICS,
+             "Puberty": _PUBERTY_SUBTOPICS}.get(topic)
+    if table and not subtopic:
+        return _score_subtopic(tl, text, table)
+    return subtopic
+
+
+# Posterior pituitary / AVP terms, including the 2022 renaming of diabetes insipidus
+# to arginine vasopressin deficiency (AVP-D) and resistance (AVP-R).
+_WB_AVP = ("diabetes insipidus", "arginine vasopressin deficiency", "arginine vasopressin resistance",
+           "vasopressin deficiency", "vasopressin resistance", "avp-d", "avp-r", "avp deficiency",
+           "avp resistance", "nephrogenic diabetes", "siadh", "inappropriate antidiuretic",
+           "inappropriate antidiuresis", "polyuria-polydipsia", "polyuria and polydipsia",
+           "adipsic", "desmopressin test", "water deprivation test")
+
+
+def _copeptin_subject(tl):
+    """Copeptin in the title means a water-balance paper unless the title puts it in a
+    diabetes-mellitus, cardiovascular or kidney context, where it is a risk biomarker."""
+    return "copeptin" in tl and not has(tl, "type 1 diabetes", "type 2 diabetes", "diabetes mellitus",
+                                          "cardiovascular", "cardiac", "heart", "kidney", "renal")
+
+
+_WB_AVP_RE = re.compile("|".join(re.escape(t) for t in sorted(_WB_AVP, key=len, reverse=True)))
+
+
 def classify_topic(art, trace=False):
     """Returns (topic, subtopic), or (topic, subtopic, trace_info) when trace=True.
     trace_info = {"branch": "10", "branch_label": "...", "matched": [...], "matched_in": "title|abstract|mixed|unknown"}.
@@ -325,16 +433,30 @@ def classify_topic(art, trace=False):
             _m6 = list(dict.fromkeys(_m6 + ["transition to adult care", "multiple endocrine"]))
         return _ret("General Endocrinology", None, "6", "General Endocrinology pre-check (multi-endocrine/APS)", _m6)
 
-    # 7. Pituitary (before Growth/Adrenal); specific pathology only
-    if has(text, "craniopharyngioma", "pituitary adenoma", "pituitary tumor", "prolactinoma",
-           "hypophysitis", "hypopituitarism", "acromegaly", "diabetes insipidus", "avp-d",
-           "siadh", "central hypothyroidism", "central adrenal insufficiency", "copeptin",
-           "septo-optic dysplasia"):
-        return _ret("Pituitary", None, "7", "Pituitary",
-                     _hits(text, "craniopharyngioma", "pituitary adenoma", "pituitary tumor", "prolactinoma",
-                           "hypophysitis", "hypopituitarism", "acromegaly", "diabetes insipidus", "avp-d",
-                           "siadh", "central hypothyroidism", "central adrenal insufficiency", "copeptin",
-                           "septo-optic dysplasia"))
+    # 7. Pituitary (before Growth/Adrenal); specific pathology only.
+    # Water balance (DI/AVP, SIADH) moved to 7b on 2026-10-13 so it gets a subtopic and
+    # a subject guard. A craniopharyngioma paper whose TITLE is about AVP deficiency is
+    # tagged Water balance here; otherwise the subtopic stays empty.
+    _pit7 = ("craniopharyngioma", "pituitary adenoma", "pituitary tumor", "prolactinoma",
+             "hypophysitis", "hypopituitarism", "acromegaly", "central hypothyroidism",
+             "central adrenal insufficiency", "septo-optic dysplasia")
+    if has(text, *_pit7):
+        return _ret("Pituitary", "Water balance" if (has(tl, *_WB_AVP) or _copeptin_subject(tl)) else None,
+                    "7", "Pituitary", _hits(text, *_pit7))
+
+    # 7b. Water balance: posterior pituitary and renal water handling, filed under
+    # Pituitary with subtopic "Water balance" (2026-10-13; replaces the orphan
+    # Water/Electrolytes topic of old branch 21). Runs before Diabetes so "diabetes
+    # insipidus" can never read as diabetes mellitus. Subject guard: a term in the
+    # TITLE, or AVP terms at least twice in title+abstract, so a single mention in a
+    # differential diagnosis does not claim the article. Copeptin counts only in the
+    # title, because it is also studied as a cardiovascular biomarker.
+    # One regex, longest term first, so "arginine vasopressin deficiency" counts once
+    # rather than also counting its substring "vasopressin deficiency".
+    _wb_count = len(_WB_AVP_RE.findall(text))
+    if has(tl, *_WB_AVP) or _copeptin_subject(tl) or _wb_count >= 2:
+        return _ret("Pituitary", "Water balance", "7b", "Water balance (AVP/DI/SIADH)",
+                    _hits(text, *_WB_AVP, "copeptin"))
 
     # 8. Hyperinsulinism pre-check (before Diabetes)
     # Bare "hyperinsulinism" is included here, not just the phrase forms, because
@@ -537,12 +659,17 @@ def classify_topic(art, trace=False):
             _m20 = ["hypercholesterolemia", "lipid"]
         return _ret("Lipids", None, "20", "Lipids (main)", _m20)
 
-    # 21. Water/Electrolytes
-    if has(text, "hyponatremia", "hypernatremia", "desmopressin", "water balance",
-           "anti-diuretic hormone", "salt-wasting"):
-        return _ret("Water/Electrolytes", None, "21", "Water/Electrolytes",
-                     _hits(text, "hyponatremia", "hypernatremia", "desmopressin", "water balance",
-                           "anti-diuretic hormone", "salt-wasting"))
+    # 21. Water balance: sodium disorders (2026-10-13; was the orphan Water/Electrolytes
+    # topic, now Pituitary + subtopic "Water balance"). Kept late in the waterfall so a
+    # DKA or CAH paper that mentions hyponatremia stays with Diabetes or Adrenal.
+    # Same subject guard as 7b. "salt-wasting" alone is dropped: it almost always means
+    # CAH salt-wasting crisis. Desmopressin alone is dropped: it is also an enuresis
+    # and bleeding-disorder drug.
+    _wb21 = ("hyponatremia", "hypernatremia", "water balance", "cerebral salt wasting",
+             "water deprivation test", "osmoregulation")
+    if has(tl, *_wb21) or sum(text.count(t) for t in _wb21) >= 2:
+        return _ret("Pituitary", "Water balance", "21", "Water balance (sodium)",
+                    _hits(text, *_wb21))
 
     # 22. Bone/Mineral (main) — the merged domain: PTH axis, calcium and phosphate
     # homeostasis, vitamin D, and skeletal fragility. Formerly branches 22a and 22b.
@@ -646,6 +773,8 @@ def diabetes_subtype(text):
 # ---------------------------------------------------------------------------
 
 def classify_study_type(art):
+    if art.get("approved_guideline"):
+        return "Guideline/Consensus", 1
     pts = [p.lower() for p in (art.get("pub_types") or [])]
     title = (art.get("title") or "")
     tl = title.lower()
@@ -686,7 +815,20 @@ def classify_study_type(art):
         r"\b(consensus|position|practice)\s+(statement|paper|report|recommendations?)\b",
         r"\bexpert (consensus|panel|opinion|recommendations?)\b",
         r"\bclinical recommendations?\b",
-        r"\bguidelines?\s*$")
+        r"\bguidelines?\s*$",
+        # 2026-10-13 spot check: consensus documents and mid-title guideline names
+        # that the patterns above missed ("International consensus guidance for ...",
+        # "International Delphi-based Consensus: ...", "Updated Dutch 2026 ... Guideline: ...").
+        r"\b(international|joint|national) consensus\b",
+        r"\bconsensus guidance\b",
+        r"\bdelphi[\s\-]*(based )?consensus\b",
+        r"\bconsensus[\s\-]based recommendations?\b",
+        r"^(updated|revised)\b[^:]*\bguidelines?\b")
+    # PubMed occasionally tags a study that COMPARES guidelines as "Practice Guideline"
+    # (e.g. Kwak vs ACR TI-RADS performance). A Comparative Study whose title opens
+    # with "comparison" is a study, whatever the other tag says.
+    if is_guideline_pt and "comparative study" in pts and tl.lstrip().startswith("comparison"):
+        is_guideline_pt = False
     if is_guideline_pt or (is_guideline_title and not about_guidelines):
         return "Guideline/Consensus", 1
     if "meta-analysis" in pts or "meta-analysis" in text:
@@ -1056,6 +1198,8 @@ def generate_tags(art, topic, subtopic, study_type, impact, board, text, title_l
     if has(text, "telemedicine", "telehealth", "remote monitoring", "digital health",
            "mobile health", "mhealth"):
         tags.append("#DigitalHealth")
+    if subtopic == "Water balance":
+        tags.append("#WaterBalance")
     if subtopic == "Technology":
         tags.append("#Technology")
     stmap = {"Guideline/Consensus": "#Guidelines", "RCT": "#RCT", "Meta-analysis": "#MetaAnalysis",
@@ -1182,7 +1326,9 @@ def impact_rationale(impact, study_type, journal, topic, n, societies):
 
 def classify(art):
     """Full pipeline. Returns dict of classification fields (or {'excluded': reason})."""
-    excl = is_excluded_v2(art)
+    # A physician-approved guideline (set by build_dataset from guideline_decisions.json)
+    # has already been judged in scope; the exclusion rules must not overrule that.
+    excl = None if art.get("approved_guideline") else is_excluded_v2(art)
     if excl:
         return {"excluded": True, "exclude_reason": excl}
 
@@ -1193,6 +1339,7 @@ def classify(art):
     journal_abbr = art.get("journal_abbr") or ""
 
     topic, subtopic = classify_topic(art)
+    subtopic = refine_subtopic(topic, subtopic, title_l, text)
     study_type, ev_level = classify_study_type(art)
     impact = classify_impact(art, study_type, journal)
     dm_sub = diabetes_subtype(text) if topic == "Diabetes" else None
