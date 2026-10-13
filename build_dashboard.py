@@ -778,6 +778,7 @@ function cardHTML(a,opt){
   const isNew=isNewToMe(a)?`<span title="New since your last visit" style="color:var(--accent)">&#10022; </span>`:'';
   const t=TIER_BY_KEY[a.impact];
   const tier=(opt.tier&&t)?`<span class="tierpill gname ${t.cls}">${t.label}</span> · `:'';
+  const reg=(a.regions&&a.regions.length)?` · ${esc(a.regions.join(', '))}`:'';
   // The note box only appears for articles this person has actually saved —
   // showing it on every card would be noise, and there is nothing to attach
   // a note to until a save row exists.
@@ -803,7 +804,7 @@ function cardHTML(a,opt){
     <div class="chead" data-card="${a.pmid}" role="button" tabindex="0" aria-expanded="${open}">
       <div class="cmain">
         ${head}
-        <div class="cmeta">${tier}${[`<em>${esc(a.journal_abbr||a.journal)}</em>`,fmtDate(a.pub_date,a.pub_date_precision),esc(authorStr(a)),esc(a.study_type)].filter(Boolean).join(' · ')}${sub}</div>
+        <div class="cmeta">${tier}${[`<em>${esc(a.journal_abbr||a.journal)}</em>`,fmtDate(a.pub_date,a.pub_date_precision),esc(authorStr(a)),esc(a.study_type)].filter(Boolean).join(' · ')}${reg}${sub}</div>
       </div>
       <div class="cact">
         ${AUTH_ON?`<button type="button" class="savebtn" data-save="${esc(a.pmid)}"></button>`:''}
@@ -871,15 +872,26 @@ function renderQueue(){
 // No impact tiers here: the classifier rates every guideline Practice-Altering,
 // so the tier would say nothing.
 // ---------------------------------------------------------------------------
+// Region = who issued the guideline (classifier.guideline_regions). Multi-valued, so a
+// joint Endocrine Society / ESE guideline shows under both United States and Europe.
+const REGION_ORDER=['United States','Canada','International','Europe','Asia-Pacific','Latin America','Middle East & Africa'];
+let glRegion='All';
 function renderGuidelines(){
-  const G=ART.filter(a=>a.study_type==='Guideline/Consensus')
-             .sort((x,y)=>(y.pub_date||'').localeCompare(x.pub_date||''));
+  const ALLG=ART.filter(a=>a.study_type==='Guideline/Consensus');
+  const rc={};ALLG.forEach(a=>{const r=a.regions||[];(r.length?r:['Unspecified']).forEach(x=>rc[x]=(rc[x]||0)+1);});
+  const regionsShown=REGION_ORDER.filter(r=>rc[r]).concat(rc['Unspecified']?['Unspecified']:[]);
+  const inRegion=a=>glRegion==='All'||(glRegion==='Unspecified'?!(a.regions||[]).length:(a.regions||[]).includes(glRegion));
+  const G=ALLG.filter(inRegion).sort((x,y)=>(y.pub_date||'').localeCompare(x.pub_date||''));
   const groups=TOPICS.map(t=>[t,G.filter(a=>a.topic===t)]).filter(g=>g[1].length);
   document.getElementById('qhead').innerHTML=
     `<a class="back" href="#/">&#8249; All topics</a>
      <h1 class="qtitle">Guidelines</h1>
-     <div class="qsub">${G.length} clinical practice guidelines and consensus statements across ${groups.length} topics, newest first within each topic.</div>
-     <p class="gnote">Covers guidelines published in the monitored journals, plus those added through the monthly guideline sweep. A guideline published elsewhere appears only if the sweep finds it.</p>
+     <div class="qsub">${G.length} clinical practice guidelines and consensus statements${glRegion==='All'?'':' (issuer: '+esc(glRegion)+')'} across ${groups.length} topics, newest first within each topic.</div>
+     <div class="toolbar"><label class="fld">Issued by <select id="gl-region">
+       <option value="All">All regions (${ALLG.length})</option>
+       ${regionsShown.map(r=>`<option value="${esc(r)}"${r===glRegion?' selected':''}>${esc(r)} (${rc[r]})</option>`).join('')}
+     </select></label></div>
+     <p class="gnote">Region is the society or country that issued the guideline; joint guidelines count under each. "Unspecified" means the record does not name its issuer. Covers guidelines published in the monitored journals, plus those added through the monthly guideline sweep. A guideline published elsewhere appears only if the sweep finds it.</p>
      <div class="jump">${groups.map((g,i)=>`<button type="button" class="chip" data-jump="g-${i}">${esc(g[0])} (${g[1].length})</button>`).join('')}</div>`;
   document.getElementById('groups').innerHTML=groups.map((g,i)=>
     `<div class="group" id="g-${i}">
@@ -888,6 +900,7 @@ function renderGuidelines(){
       <div class="gbody">${g[1].map(a=>cardHTML(a)).join('')}</div>
     </div>`).join('');
   syncSaveButtons();
+  document.getElementById('gl-region').addEventListener('change',e=>{glRegion=e.target.value;renderGuidelines();});
 }
 document.getElementById('qhead').addEventListener('click',e=>{
   const j=e.target.closest('[data-jump]');
