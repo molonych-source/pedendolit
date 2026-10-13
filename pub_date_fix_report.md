@@ -1,95 +1,96 @@
 # pub_date repair
 
-APPLIED. Checked 537, changed 422, already correct 115, no usable date 0.
+APPLIED. Checked 8724, changed 6540, already correct 2184, no usable date 0.
 
-405 articles move to a different month bucket, which is what any date filter or newest-first sort reads.
+6052 articles move to a different month bucket, which is what any date filter or newest-first sort reads.
 
 | precision | articles |
 |---|---|
-| day | 537 |
+| day | 8480 |
+| month | 244 |
 
 ## Changes (first 80)
 
 | PMID | old | new | precision | source | title |
 |---|---|---|---|---|---|
-| 39044531 | `2026-01` | `2024-07-23` | day | article | Systematic Improvement of a Bolus Calculator That Is on the Market: A  |
-| 39075889 | `2026-01` | `2024-07-29` | day | article | Differences Between Glycated Hemoglobin and Glucose Management Indicat |
-| 39075942 | `2026-01` | `2024-07-29` | day | article | Accuracy and Feasibility of a Novel Glucose/Lactate Continuous Multi-A |
-| 39076151 | `2026-01` | `2024-07-30` | day | article | Modeling Glucose, Insulin, C-Peptide, and Lactate Interplay in Adolesc |
-| 39080863 | `2026-01` | `2024-07-30` | day | article | Unlocking Potential: Personalized Lifestyle Therapy for Type 2 Diabete |
-| 39091237 | `2026-01` | `2024-08-02` | day | article | Machine Learning-Driven Prediction of Comorbidities and Mortality in A |
-| 39096188 | `2026-03` | `2024-08-03` | day | article | Electronic Glycemic Management System Improved Glycemic Control and Re |
-| 39143688 | `2026-01` | `2024-08-14` | day | article | Time for a Reframe: Shifting Focus From Continuous Glucose Monitor Upt |
-| 39143692 | `2026-01` | `2024-08-14` | day | article | Refining Insulin on Board with netIOB for Automated Insulin Delivery. |
-| 39155529 | `2026-01` | `2024-08-18` | day | article | Connected Pens or Smart Pens: Technology Needs Context. |
-| 39180292 | `2026-01` | `2024-08-24` | day | article | Real-Life Use of Automated Insulin Delivery in Individuals With Type 2 |
-| 39254103 | `2026-03` | `2024-09-10` | day | article | Batteries Within Diabetes Devices: A Narrative Review on Recycling, En |
-| 39282925 | `2026-03` | `2024-09-16` | day | article | Diabetic Peripheral Neuropathy: Emerging Treatments of Neuropathic Pai |
-| 39311445 | `2026-01` | `2024-09-23` | day | article | HIT4HYPOS Continuous Glucose Monitoring Data Analysis: The Effects of  |
-| 39311452 | `2026-03` | `2024-09-23` | day | article | Estimating Breakfast Characteristics Using Continuous Glucose Monitori |
-| 39369310 | `2026-01` | `2024-10-06` | day | article | High-Frequency 10-kHz Spinal Cord Stimulation Provides Long-term (24-M |
-| 39397750 | `2026-03` | `2024-10-14` | day | article | Closed-Loop Therapy and Sleep in Young People Newly Diagnosed With Typ |
-| 39397773 | `2026-01` | `2024-10-14` | day | article | Association of Continuous Glucose Monitoring-Derived Glycemia Risk Ind |
-| 39422158 | `2026-03` | `2024-10-18` | day | article | Impact of Ultra-Rapid Insulin on Boost and Ease-Off in the Cambridge H |
-| 39508277 | `2026-03` | `2024-11-07` | day | article | The Effectiveness of Digital Health Lifestyle Interventions on Weight  |
-| 39523580 | `2026-03` | `2024-11-10` | day | article | Identifying the Relationship Between Continuous Glucose Monitor Time i |
-| 39535135 | `2026-03` | `2024-11-13` | day | article | Can Digital Technology Revolutionize Continuous Education in Diabetes  |
-| 39540398 | `2026-01` | `2024-11-14` | day | article | The Need for Standardization of Continuous Glucose Monitoring Performa |
-| 39558481 | `2026-01` | `2024-11-18` | day | article | Addressing Inequity in Continuous Glucose Monitoring Access: Leveragin |
-| 39605250 | `2026-03` | `2024-11-28` | day | article | The Application of Continuous Glucose Monitoring Endpoints in Clinical |
-| 39614645 | `2026-03` | `2024-11-29` | day | article | Improvement of Glycemia Risk Index and Continuous Glucose Monitoring M |
-| 39616994 | `2026` | `2024-11-29` | day | article | Contribution of Sex Steroids in Management of Tall Stature: Is It Effe |
-| 39657622 | `2026` | `2024-12-10` | day | article | Long-Term Treatment for Laron Syndrome with IGF-1 Injection over 22 Ye |
-| 39667350 | `2026` | `2024-12-12` | day | article | Regional Deprivation and Diabetic Ketoacidosis at Type 1 Diabetes Diag |
-| 39668758 | `2026-03` | `2024-12-13` | day | article | Heat-Stable Insulins: Any Progress? |
-| 39675347 | `2026` | `2024-12-13` | day | article | Differential Methylation of CYP11B1 in Girls with High DHEAS Levels an |
-| 39691964 | `2026-03` | `2024-12-18` | day | article | Continuous Glucose Monitoring in Comorbid Dementia and Diabetes: The E |
-| 39707843 | `2026-01` | `2024-12-21` | day | article | How the Diabetes Research Hub Will Modernize and Enhance Diabetes Data |
-| 39709960 | `2026` | `2024-12-20` | day | article | Genetic Investigation of Regulatory Regions of <italic>MKRN3</italic>  |
-| 39761666 | `2026` | `2025-01-06` | day | article | Diagnostic Utility of Low-Dose Cosyntropin Stimulation Test for Centra |
-| 39761670 | `2026` | `2025-01-06` | day | article | Rarity of Congenital Adrenal Hyperplasia in Children Born Very Preterm |
-| 39773553 | `2026` | `2025-01-07` | day | article | Metabolic and Bariatric Surgery in Adolescents: A Single-Center Study  |
-| 39778536 | `2026` | `2025-01-08` | day | article | Congenital Hyperinsulinism and Long QT Syndrome Attributable to a Vari |
-| 39799940 | `2026` | `2025-01-10` | day | article | The Endocrine Chameleon: Expanding the Phenotype of Pseudohypoparathyr |
-| 39827856 | `2026` | `2025-01-17` | day | article | Recovery from Atrophic Autoimmune Thyroiditis in a Child: Thyroid Stim |
-| 39827859 | `2026` | `2025-01-17` | day | article | Contribution of Clinical and Biological Mini-Puberty and Genetic Analy |
-| 39862065 | `2026-03` | `2025-01-25` | day | article | Analysis of "Dose Accuracy and Reliability of a Connected Insulin Pen  |
-| 39864410 | `2026` | `2025-01-25` | day | article | Real-World Safety and Effectiveness of Vosoritide in Children with Ach |
-| 39864412 | `2026` | `2025-01-25` | day | article | New Features in a Rare Monogenic Obesity: Carboxypeptidase E Deficienc |
-| 39864424 | `2026` | `2025-01-24` | day | article | Clinical and Demographic Factors Associated with a Delayed Thyroid-Sti |
-| 39881439 | `2026-03` | `2025-01-29` | day | article | Dose Accuracy and Reliability of a Connected Insulin Pen System. |
-| 39929154 | `2026` | `2025-02-10` | day | article | Case Report and Literature Review: A 46,XX Infant with Atypical Genita |
-| 39947153 | `2026` | `2025-02-13` | day | article | Hypothyroidism in Infants after Enteral Administration of Iodinated Co |
-| 39987906 | `2026` | `2025-02-21` | day | article | Familial Non-Autoimmune Hyperthyroidism Caused by an Extracellular Dom |
-| 40015262 | `2026` | `2025-02-27` | day | article | Prolonged Pubertal Suppression due to Retained Histrelin Implant in Th |
-| 40031891 | `2026` | `2025-03-03` | day | article | Optimal Low-Dose Synacthen Stimulation Test Sampling Time for Diagnosi |
-| 40049149 | `2026` | `2025-03-06` | day | article | Children with Growth Hormone Deficiency Treated with Lonapegsomatropin |
-| 40058338 | `2026` | `2025-03-08` | day | article | A Novel Variant in an Intron Splicing Enhancer Associated with Familia |
-| 40064156 | `2026` | `2025-03-10` | day | article | Fertility in Non-Classic Lipoid CAH: A Case Report and Review of the L |
-| 40068640 | `2026` | `2025-03-11` | day | article | Impaired Dietary Decision-Making in Children and Adolescents with Cong |
-| 40071788 | `2026-01` | `2025-03-12` | day | article | Automated Insulin Delivery in Pregnancies Complicated by Type 1 Diabet |
-| 40096834 | `2026` | `2025-03-17` | day | article | Parental Perception of Quality of Life and Impact of Short Stature in  |
-| 40112797 | `2026` | `2025-03-20` | day | article | Physical Activity in Very Young Children Living with Type 1 Diabetes. |
-| 40119663 | `2026-01` | `2025-03-22` | day | article | Impact of Automated Insulin Delivery on Glycemic Profile and Maternal/ |
-| 40127627 | `2026` | `2025-03-24` | day | article | SKIN-PEDIC: A Worldwide Assessment of Skin Problems in Children and Ad |
-| 40132568 | `2026` | `2025-03-25` | day | article | Nonmalignant Adrenocorticotrophic Hormone-Independent Cushing's Syndro |
-| 40138490 | `2026-01` | `2025-03-26` | day | article | Review of Patient Perspectives and Psychosocial Experiences With Autom |
-| 40139169 | `2026` | `2025-03-26` | day | article | Transition between Pediatric and Adult Diabetes Healthcare Services: A |
-| 40243921 | `2026-01` | `2025-04-17` | day | article | Navigating Automated Insulin Delivery for Type 1 Diabetes Management D |
-| 40245859 | `2026` | `2025-04-17` | day | article | Increasing Contribution of Adolescent Type 1 Diabetes Drives Incidence |
-| 40273897 | `2026` | `2025-04-24` | day | article | Numeracy Skills and Glycemic Control in an Observational, Multicenter, |
-| 40324364 | `2026` | `2025-05-05` | day | article | Somapacitan Is Effective and Well Tolerated in Chinese Children with G |
-| 40337988 | `2026-01` | `2025-05-08` | day | article | Provider Perspective on Automated Insulin Devices in Pregnancy and Con |
-| 40357642 | `2026-01` | `2025-05-13` | day | article | Practical Approach to Continuous Glucose Monitoring Interpretation and |
-| 40380800 | `2026-01` | `2025-05-17` | day | article | Supported Open-Source Automated Insulin Delivery for Management of Typ |
-| 40383119 | `2026` | `2025-05-17` | day | article | Co-Occurrence of Dysembryoplastic Neuroepithelial Tumor and Hodgkin Ly |
-| 40383122 | `2026` | `2025-05-16` | day | article | Persistent Hyperparathyroidism in Vitamin D-Dependent Rickets Type 2A  |
-| 40393423 | `2026` | `2025-05-20` | day | article | Exploring the Heterogeneity of Pediatric Neuroendocrine Tumors: Single |
-| 40393445 | `2026` | `2025-05-20` | day | article | Type 1 Diabetes Polygenic Scores Improve Diagnostic Accuracy in Pediat |
-| 40414205 | `2026` | `2025-05-23` | day | article | Hepatic Steatosis and Stiffness in Adolescent Obesity Are Linked to An |
-| 40418898 | `2026` | `2025-05-26` | day | article | A Dual Etiology of Neonatal Hypoglycemia Secondary to FOXA2 Heterozygo |
-| 40433847 | `2026-01` | `2025-05-28` | day | article | Effect of Automated Insulin Delivery Using Hybrid Closed Loops in the  |
-| 40451143 | `2026` | `2025-05-30` | day | article | Use of Aromatase Inhibitors in Short Children and Adolescents to Incre |
-| 40494338 | `2026` | `2025-06-10` | day | article | Glycaemic Control and Body Mass Index in Children with Type 1 Diabetes |
-| 40517764 | `2026` | `2025-06-13` | day | article | Endocrine Comorbidities in Survivors of Childhood Brain Tumors: Insigh |
-| … | *+342 more* | | | | |
+| 30782004 | `2020-01` | `2019-02-19` | day | article | NMR Spectroscopic Analysis to Evaluate the Quality of Insulin: Concent |
+| 30862242 | `2020-03` | `2019-03-12` | day | article | A Clinical Training Program for Hybrid Closed Loop Therapy in a Pediat |
+| 30929401 | `2020-03-19` | `2019-04-01` | day | article | Hypophosphatasia: A Novel Mutation Associated with an Atypical Newborn |
+| 30968677 | `2020-03-19` | `2019-04-10` | day | article | Syndromic Disorders Caused by Disturbed Human Imprinting. |
+| 30968679 | `2020-03-19` | `2019-04-10` | day | article | Aromatase Deficiency in Two Siblings with 46,XX Karyotype Raised as Di |
+| 31088041 | `2020-03-19` | `2019-05-15` | day | article | A Neurofibromatosis Noonan Syndrome Patient Presenting with Abnormal E |
+| 31113238 | `2020-01` | `2019-05-21` | day | article | Development of a Novel Tool to Support Engagement With Continuous Gluc |
+| 31113250 | `2020-01` | `2019-05-21` | day | article | User Satisfaction and Insulin Pump Handling With a Prefilled Insulin C |
+| 31117334 | `2020-03-19` | `2019-05-23` | day | article | An Unusual Presentation of Carney Complex. |
+| 31208160 | `2020-06-03` | `2019-06-18` | day | article | Catecholamine-induced Myocarditis in a Child with Pheochromocytoma. |
+| 31208161 | `2020-06-03` | `2019-06-18` | day | article | A Rare Etiology of 46,XY Disorder of Sex Development and Adrenal Insuf |
+| 31216873 | `2020-01` | `2019-06-19` | day | article | Cellular-Enabled Glucometers and Maternal Glucose Control: A Quality I |
+| 31227585 | `2020-02` | `2019-06-21` | day | article | Effects of Exercise in Addition to a Family-Based Lifestyle Interventi |
+| 31308020 | `2020-01` | `2019-07-15` | day | article | Distinct Patterns of Daily Glucose Variability by Pubertal Status in Y |
+| 31315446 | `2020-01` | `2019-07-17` | day | article | Monthly Video-Consultation for Children With Type 1 Diabetes Using a C |
+| 31339256 | `2020-03-19` | `2019-07-24` | day | article | Can Nesfatin-1 Predict Hypertension in Obese Children? |
+| 31339259 | `2020-03-19` | `2019-07-24` | day | article | An Iranian Patient with Maroteaux Type Acromesomelic Dysplasia, Showin |
+| 31347350 | `2020-03-19` | `2019-07-26` | day | article | Treatment with Depot Leuprolide Acetate in Girls with Idiopathic Preco |
+| 31375031 | `2020-03` | `2019-08-02` | day | article | Patient Satisfaction With a New, High Accuracy Blood Glucose Meter Tha |
+| 31414586 | `2020-03-19` | `2019-08-15` | day | article | The Significance of Thiol/Disulfide Homeostasis and Ischemia-modified  |
+| 31434460 | `2020-03-19` | `2019-08-22` | day | article | Prevalence of Obesity and Metabolic Syndrome in Children with Type 1 D |
+| 31434461 | `2020-03-19` | `2019-08-22` | day | article | Macular Variability in Children and Adolescents with Metabolic Syndrom |
+| 31434462 | `2020-03-19` | `2019-08-22` | day | article | Current Diagnosis, Treatment and Clinical Challenges in the Management |
+| 31441324 | `2020-03` | `2019-08-23` | day | article | The Impact of Externally Worn Diabetes Technology on Sexual Behavior a |
+| 31448769 | `2020-06-03` | `2019-08-26` | day | article | Hypoprolactinemia as a Clue to Diagnosis of Mild Central Hypothyroidis |
+| 31448886 | `2020-06-03` | `2019-08-26` | day | article | A Novel Missense Mutation in Human Receptor Roundabout-1 (ROBO1) Gene  |
+| 31448952 | `2020-01` | `2019-09-18` | day | article | Home Visits for Children and Adolescents with Uncontrolled Type 1 Diab |
+| 31464516 | `2020-01` | `2020-01-01` | month | journal | High Prevalence of Skin Reactions Among Pediatric Patients with Type 1 |
+| 31475508 | `2020-03-19` | `2019-09-02` | day | article | Growth and Adult Height during Human Growth Hormone Treatment in Chine |
+| 31475509 | `2020-03-19` | `2019-09-02` | day | article | Assessment of Bisphenol A Levels in Preschool Children: Results of a H |
+| 31475510 | `2020-03-19` | `2019-09-02` | day | article | Effects of 5-Hydroxymethylfurfural on Pubertal Development of Female W |
+| 31475511 | `2020-06-03` | `2019-09-02` | day | article | New Features for Child Metrics: Further Growth References and Blood Pr |
+| 31476840 | `2020-09-02` | `2019-09-03` | day | article | A Duplication Upstream of SOX9 Associated with SRY Negative 46,XX Ovot |
+| 31484666 | `2020-01` | `2019-09-04` | day | article | Predictors of Recurrent Severe Hypoglycemia in Adults With Type 1 Diab |
+| 31486329 | `2020-06-03` | `2019-09-05` | day | article | Evaluation of Thyroid Function Tests in Children with Chronic Liver Di |
+| 31486330 | `2020-03-19` | `2019-09-05` | day | article | Evaluation of Turner Syndrome Knowledge among Physicians and Parents. |
+| 31498940 | `2020-02` | `2019-11-14` | day | article | Differences in sleep architecture according to body mass index in chil |
+| 31514489 | `2020-06-03` | `2019-09-13` | day | article | Soluble Receptor for Glycation End-products Concentration Increases Fo |
+| 31514490 | `2020-06-03` | `2019-09-13` | day | article | Nationwide Turkish Cohort Study of Hypophosphatemic Rickets. |
+| 31514491 | `2020-06-03` | `2019-09-13` | day | article | The Effect of Pubertal Stage on the Concentrations of the Novel Adipom |
+| 31517512 | `2020-01` | `2019-11-13` | day | article | An Intervention to Reduce Hypoglycemia Fear in Parents of Young Kids w |
+| 31538817 | `2020-05` | `2019-09-20` | day | article | Usage of Hydrocolloid-Based Plasters in Patients Who Have Developed Al |
+| 31552725 | `2020-06-03` | `2019-09-25` | day | article | Association of Total and High Molecular Weight Adiponectin with Compon |
+| 31552726 | `2020-06-03` | `2019-09-25` | day | article | The Incidence and Demographic Distribution of Type 1 Diabetes Mellitus |
+| 31558544 | `2020-01` | `2019-09-26` | day | article | Genetic Variants Predisposing Most Strongly to Type 1 Diabetes Diagnos |
+| 31560217 | `2020-02` | `2019-12-30` | day | article | Glucose Sensor Accuracy After Subcutaneous Glucagon Injections Near to |
+| 31561709 | `2021-01` | `2019-09-27` | day | article | Capacity of Infusion Lines for Insulin Adsorption: Effect of Flow Rate |
+| 31573414 | `2020-07` | `2019-10-01` | day | article | Extrathyroidal Extension is an Important Predictor of Regional Lymph N |
+| 31584229 | `2020-02` | `2019-10-22` | day | article | Time in range and HbA1C after 6 months with a multidisciplinary progra |
+| 31589350 | `2020-02` | `2019-11-12` | day | article | Glycemic control and self-rated health among ethnically diverse adoles |
+| 31591105 | `2020-01` | `2019-10-07` | day | article | Longitudinal Pattern of First-Phase Insulin Response Is Associated Wit |
+| 31591761 | `2020-02` | `2019-10-16` | day | article | Temporal trends in incidence of pediatric type 1 diabetes in Alabama:  |
+| 31596127 | `2020-03` | `2019-10-25` | day | article | The Efficacy of Basal Rate and Carbohydrate Ratio Learning Algorithm f |
+| 31596130 | `2020-03` | `2019-10-29` | day | article | Safety and Performance of the Omnipod Hybrid Closed-Loop System in Adu |
+| 31597639 | `2020-01` | `2019-10-09` | day | article | Temporal Analysis of Amylase Expression in Control, Autoantibody-Posit |
+| 31599085 | `2020-02` | `2019-10-27` | day | article | Bone Health Index and bone turnover in pediatric patients with type 1  |
+| 31601636 | `2020-01` | `2019-10-10` | day | article | Maternal Gestational Diabetes Mellitus and Newborn DNA Methylation: Fi |
+| 31601639 | `2020-01` | `2019-10-10` | day | article | Diabetic Ketoacidosis at Diagnosis of Type 1 Diabetes in Colorado Chil |
+| 31603351 | `2020-03` | `2019-11-15` | day | article | Demonstrated Cost-Effectiveness of a Telehomecare Program for Gestatio |
+| 31603620 | `2020-02` | `2019-10-23` | day | article | Identity and treatment adherence in predominantly ethnic minority teen |
+| 31604004 | `2020-02` | `2019-11-10` | day | article | Next generation sequencing targeted gene panel in Greek MODY patients  |
+| 31605416 | `2020-02` | `2019-10-16` | day | article | Five years of improving diabetes control in Czech children after the e |
+| 31608650 | `2021-03` | `2019-10-14` | day | article | Modeling Ketogenesis for Use in Pediatric Diabetes Simulation. |
+| 31610036 | `2020-01` | `2019-10-30` | day | article | Primary adrenal insufficiency: New genetic causes and their long-term  |
+| 31610073 | `2020-02` | `2019-11-03` | day | article | Intervention to reduce hypoglycemia fear in parents of young kids usin |
+| 31617648 | `2020-02` | `2019-11-06` | day | article | Addressing health disparities in type 1 diabetes through peer mentorsh |
+| 31618523 | `2020-02` | `2019-10-25` | day | article | Screening for retinopathy in children with type 1 diabetes in Denmark. |
+| 31619071 | `2021-03` | `2019-10-16` | day | article | Five-Month Follow-up Shows No Improvement in Dermatological Complicati |
+| 31621408 | `2020-02` | `2020-01-09` | day | article | Maternal and Neonatal Health Outcomes Associated with the Use of Glicl |
+| 31626728 | `2020-01` | `2019-11-12` | day | article | Single gland excision for MEN1-associated primary hyperparathyroidism. |
+| 31628116 | `2020-01` | `2019-10-18` | day | article | Cannabis Use Is Associated With Increased Risk for Diabetic Ketoacidos |
+| 31628775 | `2020-02` | `2019-11-11` | day | article | Mandatory notifications of type 1 diabetes incident cases in Chilean c |
+| 31628818 | `2020-02` | `2019-11-06` | day | article | Identifying sources of support and barriers to physical activity in pe |
+| 31631358 | `2020-01` | `2019-11-12` | day | article | High prescription rate of oral glucocorticoids in children and adults: |
+| 31635966 | `2020-02` | `2019-10-18` | day | article | Diabetes: a metabolic and reproductive disorder in women. |
+| 31636081 | `2020-01` | `2019-10-21` | day | article | Muscle Oxygen Supply and Use in Type 1 Diabetes, From Ambient Air to t |
+| 31644828 | `2020-02` | `2019-11-06` | day | article | Depression in context: Important considerations for youth with type 1  |
+| 31648184 | `2020-01` | `2020-01-01` | month | journal | Immune checkpoint inhibitor-associated thyroid dysfunction: a dispropo |
+| 31649097 | `2020-05` | `2019-10-24` | day | article | The Impact of Medicaid Expansion on Diabetes Management. |
+| 31658436 | `2020-01` | `2020-01-01` | month | journal | 'Isolated' germline mosaicism in the phenotypically normal father of a |
+| … | *+6460 more* | | | | |

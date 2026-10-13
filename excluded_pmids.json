@@ -650,6 +650,1896 @@
    "reason": "hard-exclude:ivf",
    "first_seen": "2026-10-13",
    "title": "Cleavage-stage stratification reveals the clinical and developmental potential of 0PN embryos compared with 2PN embryos "
+  },
+  "31665361": {
+   "reason": "hard-exclude:endometrial receptivity",
+   "first_seen": "2026-10-13",
+   "title": "Endometrial Liquid Biopsy Provides a miRNA Roadmap of the Secretory Phase of the Human Endometrium."
+  },
+  "31673697": {
+   "reason": "pure basic science",
+   "first_seen": "2026-10-13",
+   "title": "Stem Leydig Cells in the Adult Testis: Characterization, Regulation and Potential Applications."
+  },
+  "31676897": {
+   "reason": "hard-exclude:postmenopausal women",
+   "first_seen": "2026-10-13",
+   "title": "Bone Mineral Density across the Lifespan in Patients with Type 1 Diabetes."
+  },
+  "31720688": {
+   "reason": "hard-exclude:postmenopausal women",
+   "first_seen": "2026-10-13",
+   "title": "Sex-specific Estrogen Levels and Reference Intervals from Infancy to Late Adulthood Determined by LC-MS/MS."
+  },
+  "31797737": {
+   "reason": "hard-exclude:zebrafish",
+   "first_seen": "2026-10-13",
+   "title": "Glis3 as a Critical Regulator of Thyroid Primordium Specification."
+  },
+  "31797746": {
+   "reason": "hard-exclude:zebrafish",
+   "first_seen": "2026-10-13",
+   "title": "Neural Alterations and Hyperactivity of the Hypothalamic-Pituitary-Thyroid Axis in Oatp1c1 Deficiency."
+  },
+  "31801416": {
+   "reason": "pure basic science",
+   "first_seen": "2026-10-13",
+   "title": "Impaired Gene Expression Due to Iodine Excess in the Development and Differentiation of Endoderm and Thyroid Is Associat"
+  },
+  "31822224": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Free Thyroxine Concentrations in Sera of Individuals with Familial Dysalbuminemic Hyperthyroxinemia: A Comparison of Thr"
+  },
+  "31882407": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Redesigning Primary Care to Improve Diabetes Outcomes (the UNITED Study)."
+  },
+  "31898388": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Obesity and type 2 diabetes are associated with elevated PCSK9 levels in young women."
+  },
+  "31898389": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Psychosocial benefits of insulin pump therapy in children with diabetes type 1 and their families: The pumpkin multicent"
+  },
+  "31910097": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Thyroid Function and the Risk of Fibrosis of the Liver, Heart, and Lung in Humans: A Systematic Review and Meta-Analysis"
+  },
+  "31910102": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Investigating the Effect of Thyroid Nodule Location on the Risk of Thyroid Cancer."
+  },
+  "31920991": {
+   "reason": "hard-exclude:alzheimer",
+   "first_seen": "2026-10-13",
+   "title": "Intraluminal Farnesol and Farnesal in the Mealworm's Alimentary Canal: An Unusual Storage Site Uncovering Hidden Eukaryo"
+  },
+  "31926007": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "ERRATUM FOR \"Delayed Puberty-Phenotypic Diversity, Molecular Genetic Mechanisms, and Recent Discoveries\"."
+  },
+  "31928166": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Impact of Thyroid Autoimmunity on Ovarian Reserve, Pregnancy Outcomes, and Offspring Health in Euthyroid Women Following"
+  },
+  "31940279": {
+   "reason": "hard-exclude:colorectal cancer",
+   "first_seen": "2026-10-13",
+   "title": "Clinicopathological features of colorectal polyps and risk of colorectal cancer in acromegaly."
+  },
+  "31945198": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Prognostic role of parafibromin staining and CDC73 mutation in patients with parathyroid carcinoma: A systematic review "
+  },
+  "31952464": {
+   "reason": "hard-exclude:zebrafish",
+   "first_seen": "2026-10-13",
+   "title": "Generation of Novel Genetic Models to Dissect Resistance to Thyroid Hormone Receptor α in Zebrafish."
+  },
+  "31958338": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "CORRIGENDUM FOR \"Hepatic De Novo Lipogenesis in Obese Youth Is Modulated by a Common Variant in the GCKR Gene\"."
+  },
+  "31973681": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Patterns of Use, Efficacy, and Safety of Treatment Options for Patients with Graves' Disease: A Nationwide Population-Ba"
+  },
+  "32032540": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Time-varying risk of microvascular complications in latent autoimmune diabetes of adulthood compared with type 2 diabete"
+  },
+  "32047479": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Is Embryo Cryopreservation Causing Macrosomia-and What Else?"
+  },
+  "32061160": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Testosterone replacement therapy in men who conceived with intracytoplasmic sperm injection: nationwide register study."
+  },
+  "32063884": {
+   "reason": "hard-exclude:erectile dysfunction",
+   "first_seen": "2026-10-13",
+   "title": "Low Testosterone in Adolescents & Young Adults."
+  },
+  "32064669": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Management of Insulin Autoimmune Hypoglycaemia: Single-centre experience from Western India with systematic review of wo"
+  },
+  "32075540": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Efficacy and Safety of Long-Term Universal Salt Iodization on Thyroid Disorders: Epidemiological Evidence from 31 Provin"
+  },
+  "32119078": {
+   "reason": "pure basic science",
+   "first_seen": "2026-10-13",
+   "title": "Interleukin-6 (IL-6) Activates the NOTCH1 Signaling Pathway Through E-Proteins in Endometriotic Lesions."
+  },
+  "32119099": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Serum Androgens Are Independent Predictors of Insulin Clearance but Not of Insulin Secretion in Women With PCOS."
+  },
+  "32132977": {
+   "reason": "hard-exclude:prostate cancer",
+   "first_seen": "2026-10-13",
+   "title": "Pre- and Post-diagnosis Diabetes as a Risk Factor for All-Cause and Cancer-Specific Mortality in Breast, Prostate, and C"
+  },
+  "32140135": {
+   "reason": "hard-exclude:platelet-rich plasma",
+   "first_seen": "2026-10-13",
+   "title": "Live Birth in Woman With Premature Ovarian Insufficiency Receiving Ovarian Administration of Platelet-Rich Plasma (PRP) "
+  },
+  "32153506": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "The Future of Cryopreservation in Assisted Reproductive Technologies."
+  },
+  "32174887": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Patterns of Obesity and Overweight in the Iranian Population: Findings of STEPs 2016."
+  },
+  "32191422": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "32203405": {
+   "reason": "hard-exclude:prostate cancer",
+   "first_seen": "2026-10-13",
+   "title": "11-Oxygenated androgens in health and disease."
+  },
+  "32204688": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "The Influence of Cosmetic Concerns on Patient Preferences for Approaches to Thyroid Lobectomy: A Discrete Choice Experim"
+  },
+  "32210917": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Severe Phenotype of APECED (APS1) Increases Risk for Structural Bone Alterations."
+  },
+  "32219329": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Randomized 52-week Phase 2 Trial of Albiglutide Versus Placebo in Adult Patients With Newly Diagnosed Type 1 Diabetes."
+  },
+  "32242832": {
+   "reason": "hard-exclude:alzheimer",
+   "first_seen": "2026-10-13",
+   "title": "Gesell Developmental Schedules scores and the relevant factors in children with Down syndrome."
+  },
+  "32265836": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Determinants of the hCG Concentration in the Early Luteal Phase After Final Maturation of Follicles With Bolus Trigger o"
+  },
+  "32286704": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Weight gain after curative parathyroidectomy predicts increase in bone mineral density in patients with symptomatic prim"
+  },
+  "32292388": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Melatonin Application in Assisted Reproductive Technology: A Systematic Review and Meta-Analysis of Randomized Trials."
+  },
+  "32304308": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum to: The effects of a 12-week jump rope exercise program on body composition, insulin sensitivity, and academ"
+  },
+  "32324286": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Phenotypic and genotypic features of a large kindred with a germline AIP variant."
+  },
+  "32324865": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "CORRIGENDUM for \"Treatment of Children With GH in the United States and Europe: Long-Term Follow-Up From NordiNet® IOS a"
+  },
+  "32328028": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Cumulative Live Birth Rates According to Maternal Body Mass Index After First Ovarian Stimulation for in vitro Fertiliza"
+  },
+  "32345652": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Acrylamide Exposure and Oxidative DNA Damage, Lipid Peroxidation, and Fasting Plasma Glucose Alteration: Association and"
+  },
+  "32346987": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "CORRIGENDUM."
+  },
+  "32390942": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Self-Detection of the LH Surge in Urine After GnRH Agonist Trigger in IVF-How to Minimize Failure to Retrieve Oocytes."
+  },
+  "32424541": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Complex interaction of fasting glucose, body mass index, age and sex on all-cause mortality: a cohort study in 15 millio"
+  },
+  "32430931": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Development and validation of a Web-based malignancy risk-stratification system of thyroid nodules."
+  },
+  "32540924": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "The Association Between Age of Onset of Type 2 Diabetes and the Long-term Risk of End-Stage Kidney Disease: A National R"
+  },
+  "32559474": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Effects of the SGLT2 inhibitor dapagliflozin on proteinuria in non-diabetic patients with chronic kidney disease (DIAMON"
+  },
+  "32618420": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Optimal predictive low glucose management settings during physical exercise in adolescents with type 1 diabetes."
+  },
+  "32687163": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Riedel Thyroiditis."
+  },
+  "32707118": {
+   "reason": "hard-exclude:prostate cancer",
+   "first_seen": "2026-10-13",
+   "title": "Endocrine-disrupting chemicals: implications for human health."
+  },
+  "32754750": {
+   "reason": "hard-exclude:prostate cancer",
+   "first_seen": "2026-10-13",
+   "title": "Marked Increase in Incident Gynecomastia: A 20-Year National Registry Study, 1998 to 2017."
+  },
+  "32757153": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Increased risk of metabolic dysfunction in children conceived by assisted reproductive technology."
+  },
+  "32760347": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum: Low Testosterone in Adolescents & Young Adults."
+  },
+  "32781944": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Iodine Deficiency and Mortality in Spanish Adults: Di@bet.es Study."
+  },
+  "32840096": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Clinical Management in Systemic Type Pseudohypoaldosteronism Due to SCNN1B Variant and Literature Review."
+  },
+  "32849269": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "The Association Between Previous TORCH Infections and Pregnancy and Neonatal Outcomes in IVF/ICSI-ET: A Retrospective Co"
+  },
+  "32885921": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "32905598": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum to: \"Once-Weekly Somapacitan vs Daily GH in Children With GH Deficiency: Results From a Randomized Phase 2 T"
+  },
+  "32978181": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum. Longitudinal Study of Depressive Symptoms and Progression of Insulin Resistance in Youth at Risk for Adult Obes"
+  },
+  "33027053": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Are we ignoring coexisting rhabdomyolysis as an important aggravating factor for acute kidney injury among childhood dia"
+  },
+  "33084970": {
+   "reason": "pure basic science",
+   "first_seen": "2026-10-13",
+   "title": "Presumption of guilt for T cells in type 1 diabetes: lead culprits or partners in crime depending on age of onset?"
+  },
+  "33089545": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Older age does not influence the success of weight loss through the implementation of lifestyle modification."
+  },
+  "33097559": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Type 2 Diabetes and COVID-19-Related Mortality in the Critical Care Setting: A National Cohort Study in England, March-J"
+  },
+  "33101197": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "Effect of the Interaction Between Pre-pregnancy Body Mass Index and Fresh/Frozen Embryo Transfer on Perinatal Outcomes o"
+  },
+  "33101210": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Pregnancy Outcomes of Women With Polycystic Ovary Syndrome for the First In Vitro Fertilization Treatment: A Retrospecti"
+  },
+  "33117277": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Preterm Birth in Assisted Reproductive Technology: An Analysis of More Than 20,000 Singleton Newborns."
+  },
+  "33146765": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: Urinary podocyte-derived microparticles in youth with type 1 and type 2 diabetes."
+  },
+  "33236107": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "The Hypothalamic-Pituitary-Thyroid Axis in Cushing Syndrome Before and After Curative Surgery."
+  },
+  "33245776": {
+   "reason": "hard-exclude:postmenopausal women",
+   "first_seen": "2026-10-13",
+   "title": "Efficacy of Micronized Progesterone for Sleep: A Systematic Review and Meta-analysis of Randomized Controlled Trial Data"
+  },
+  "33247906": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Description of the Follicular Fluid Cytokine and Hormone Profiles in Human Physiological Natural Cycles."
+  },
+  "33329395": {
+   "reason": "hard-exclude:prostate cancer",
+   "first_seen": "2026-10-13",
+   "title": "Therapeutic Perspectives on the Modulation of G-Protein Coupled Estrogen Receptor, GPER, Function."
+  },
+  "33343505": {
+   "reason": "hard-exclude:crinone",
+   "first_seen": "2026-10-13",
+   "title": "Progesterone Intramuscularly or Vaginally Administration May Not Change Live Birth Rate or Neonatal Outcomes in Artifici"
+  },
+  "33382882": {
+   "reason": "hard-exclude:platelet-rich plasma",
+   "first_seen": "2026-10-13",
+   "title": "Procoagulant Imbalance in Klinefelter Syndrome Assessed by Thrombin Generation Assay and Whole-Blood Thromboelastometry."
+  },
+  "33401886": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum: Eating speed and the risk of type 2 diabetes: explorations based on real-world evidence."
+  },
+  "33519714": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Cumulative Live Birth Rate and Cost-Effectiveness Analysis of Gonadotropin Releasing Hormone-Antagonist Protocol and Mul"
+  },
+  "33560351": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Statins Decrease the Risk of Orbitopathy in Newly Diagnosed Patients with Graves Disease."
+  },
+  "33574799": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Effect and Relationship of Seasons on the High Risk of Ovarian Hyperstimulation Syndrome After Oocyte Retrieval in Patie"
+  },
+  "33763025": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Association Between Low T3 Syndrome and Poor Prognosis in Adult Patients With Acute Myocarditis."
+  },
+  "33763032": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Serum Lipid Levels and Treatment Outcomes in Women Undergoing Assisted Reproduction: A Retrospective Cohort Study."
+  },
+  "33784196": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "One Year Real-World Use of the Control-IQ Advanced Hybrid Closed-Loop Technology."
+  },
+  "33827076": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "33846740": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Effectiveness and Safety of Thermal Ablation in the Treatment of Primary Hyperparathyroidism: A Multicenter Study."
+  },
+  "33870426": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Foregut Exclusion Enhances Incretin and Insulin Secretion After Roux-en-Y Gastric Bypass in Adults With Type 2 Diabetes."
+  },
+  "33890059": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Impaired Function and Altered Morphology in the Skeletal Muscles of Adult Men and Women With Type 1 Diabetes."
+  },
+  "33905345": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Incremental Dental Expenditures Associated With Diabetes Among Noninstitutionalized U.S. Adults Aged ≥18 Years Old in 20"
+  },
+  "33912899": {
+   "reason": "hard-exclude:zebrafish",
+   "first_seen": "2026-10-13",
+   "title": "A Novel SLC5A5 Variant Reveals the Crucial Role of Kinesin Light Chain 2 in Thyroid Hormonogenesis."
+  },
+  "33912912": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Incidence of Complications in 25 Adult Patients With X-linked Hypophosphatemia."
+  },
+  "33935971": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Pituitary Apoplexy: A Retrospective Study of 33 Cases From a Single Center."
+  },
+  "33935972": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Comparison of Pregnancy and Neonatal Outcomes of Single Frozen Blastocyst Transfer Between Letrozole-Induction and HRT C"
+  },
+  "33995268": {
+   "reason": "hard-exclude:embryo transfer cycle",
+   "first_seen": "2026-10-13",
+   "title": "Predicting the Likelihood of Live Birth in Assisted Reproductive Technology According to the Number of Oocytes Retrieved"
+  },
+  "33999174": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum to: \"Prevention and Treatment of Pediatric Obesity: An Endocrine Society Clinical Practice Guideline Based o"
+  },
+  "34000029": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum to: \"Phase 3 Trial of a Small-Volume Subcutaneous 6-Month Duration Leuprolide Acetate Treatment for Central "
+  },
+  "34001535": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Barriers to Technology Use and Endocrinology Care for Underserved Communities With Type 1 Diabetes."
+  },
+  "34025582": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Effects of Early Cumulus Cell Removal on Treatment Outcomes in Patients Undergoing In Vitro Fertilization: A Retrospecti"
+  },
+  "34046010": {
+   "reason": "hard-exclude:embryo transfer cycle",
+   "first_seen": "2026-10-13",
+   "title": "Effect of Day 3 and Day 5/6 Embryo Quality on the Reproductive Outcomes in the Single Vitrified Embryo Transfer Cycles."
+  },
+  "34051936": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Cognitive performance declines in older adults with type 1 diabetes: results from 32 years of follow-up in the DCCT and "
+  },
+  "34079517": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Effect of Endometrium Thickness on Clinical Outcomes in Luteal Phase Short-Acting GnRH-a Long Protocol and GnRH-Ant Prot"
+  },
+  "34082490": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "34082491": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "34082497": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "34173650": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum to: \"Genotype-Phenotype Correlations in Central Precocious Puberty Caused by MKRN3 Mutations\"."
+  },
+  "34262531": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum: Usefulness and Potential Pitfalls of Long-Acting Growth Hormone Analogues."
+  },
+  "34305815": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "Preparation of the Endometrium for Frozen Embryo Transfer: A Systematic Review."
+  },
+  "34305818": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Impact of Thyroid Autoimmunity on In Vitro Fertilization/Intracytoplasmic Sperm Injection Outcomes and Fetal Weight."
+  },
+  "34309689": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: Youth-onset type 2 diabetes: translating epidemiology into clinical trials."
+  },
+  "34321290": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum. Associations Between Exposure to Gestational Diabetes Mellitus In Utero and Daily Energy Intake, Brain Response"
+  },
+  "34326811": {
+   "reason": "hard-exclude:colorectal cancer",
+   "first_seen": "2026-10-13",
+   "title": "Co-Occurrence of Familial Non-Medullary Thyroid Cancer (FNMTC) and Hereditary Non-Polyposis Colorectal Cancer (HNPCC) As"
+  },
+  "34368894": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Fenofibrate increases circulating haematopoietic stem cells in people with diabetic retinopathy: a randomised, placebo-c"
+  },
+  "34374649": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Shrinkage by the third month predicts long-term response of macroprolactinoma after cabergoline."
+  },
+  "34379772": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Metastatic Medullary Thyroid Cancer: The Role of 68Gallium-DOTA-Somatostatin Analogue PET/CT and Peptide Receptor Radion"
+  },
+  "34388953": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Healthcare Utilization, Costs, and Adverse Events of Real-Time Continuous Glucose Monitoring versus Traditional Blood Gl"
+  },
+  "34415990": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Blastocyst Transfer: A Risk Factor for Gestational Diabetes Mellitus in Women Undergoing In Vitro Fertilization."
+  },
+  "34475032": {
+   "reason": "hard-exclude:postmenopausal women",
+   "first_seen": "2026-10-13",
+   "title": "Early Menopause and Cardiovascular Disease Risk in Women With or Without Type 2 Diabetes: A Pooled Analysis of 9,374 Pos"
+  },
+  "34484116": {
+   "reason": "hard-exclude:colorectal cancer",
+   "first_seen": "2026-10-13",
+   "title": "GH and IGF System: The Regulatory Role of miRNAs and lncRNAs in Cancer."
+  },
+  "34518378": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum. Spike in Diabetic Ketoacidosis Rates in Pediatric Type 2 Diabetes During the COVID-19 Pandemic. Diabetes Care 2"
+  },
+  "34524701": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Testosterone and androstenedione are positively associated with anti-Müllerian hormone in premenopausal women."
+  },
+  "34524979": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "The broad phenotypic spectrum of 17α-hydroxylase/17,20-lyase (CYP17A1) deficiency: a case series."
+  },
+  "34552564": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Insulin Resistance Adversely Affect IVF Outcomes in Lean Women Without PCOS."
+  },
+  "34585037": {
+   "reason": "hard-exclude:prostate cancer",
+   "first_seen": "2026-10-13",
+   "title": "Identification and Functional Characterization of a Novel Androgen Receptor Coregulator, EAP1."
+  },
+  "34603202": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum: Glycated Hemoglobin (HbA1c) Concentrations Among Children and Adolescents With Diabetes in Middle- and Low-"
+  },
+  "34605772": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Pituitary surgery as alternative to dopamine agonists treatment for microprolactinomas: a cohort study."
+  },
+  "34650517": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Comparison of Cumulative Live Birth Rate Between Aged PCOS Women and Controls in IVF/ICSI Cycles."
+  },
+  "34716200": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum. The First Genome-Wide Association Study for Type 2 Diabetes in Youth: The Progress in Diabetes Genetics in Yout"
+  },
+  "34733238": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "Endometrial Preparation for Frozen-Thawed Embryo Transfer With or Without Pretreatment With GnRH Agonist: A Randomized C"
+  },
+  "34735370": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Thyroid hormone resistance index and mortality in euthyroid subjects: Di@bet.es study."
+  },
+  "34740910": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Hypoglycemic and Hyperglycemic Crises Among U.S. Adults With Diabetes and End-stage Kidney Disease: Population-Based Stu"
+  },
+  "34740911": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Emotional Correlates of the COVID-19 Pandemic in Individuals With and Without Diabetes."
+  },
+  "34777241": {
+   "reason": "hard-exclude:embryo transfer cycle",
+   "first_seen": "2026-10-13",
+   "title": "The Impact of Embryo Storage Time on Pregnancy and Perinatal Outcomes and the Time Limit of Vitrification: A Retrospecti"
+  },
+  "34791338": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum to: \"The Use of Morning Urinary Gonadotropins and Sex Hormones in the Management of Early Puberty in Chinese"
+  },
+  "34806412": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Change in Thyroid Hormone Metabolite Concentrations Across Different Thyroid States."
+  },
+  "34811782": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Challenges in the diagnosis and management of glucocorticoid-induced osteoporosis in younger and older adults."
+  },
+  "34816471": {
+   "reason": "hard-exclude:prostate cancer",
+   "first_seen": "2026-10-13",
+   "title": "Clinical characteristics and comorbidities associated with testosterone prescribing in men."
+  },
+  "34823335": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "34867777": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Is It Possible to Expand Oocyte Donors by Decreasing Number of Oocytes for Own Use? Insights From a Large Single-Center "
+  },
+  "34867789": {
+   "reason": "hard-exclude:elderly patients",
+   "first_seen": "2026-10-13",
+   "title": "Self-Care Experiences of Empty-Nest Elderly Living With Type 2 Diabetes Mellitus: A Qualitative Study From China."
+  },
+  "34867824": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Integrated Analysis of Hub Genes and MicroRNAs in Human Placental Tissues from In Vitro Fertilization-Embryo Transfer."
+  },
+  "34877883": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "The Effect of Ophthalmic Surgery for Graves' Orbitopathy on Quality of Life: A Systematic Review and Meta-Analysis."
+  },
+  "34899592": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Partial Clinical Remission Reduces Lipid-Based Cardiovascular Risk in Adult Patients With Type 1 Diabetes."
+  },
+  "34917027": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Associations of Sex Hormones and Hormonal Status With Arterial Stiffness in a Female Sample From Reproductive Years to M"
+  },
+  "34927327": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "ERRATUM."
+  },
+  "34956097": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Elevated Anti-Müllerian Hormone Is an Independent Risk Factor for Preterm Birth Among Patients With Overweight Polycysti"
+  },
+  "35001492": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum."
+  },
+  "35027911": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum: Reduced Effectiveness and Comparable Safety in Biweekly vs. Weekly PEGylated Recombinant Human Growth Hormo"
+  },
+  "35090169": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Prevalence of Vertebral Fractures in Adults With Type 1 Diabetes: DenSiFy Study (Diabetes Spine Fractures)."
+  },
+  "35134190": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum to: Predicting Malignancy in Pediatric Thyroid Nodules: Early Experience With Machine Learning for Clinical "
+  },
+  "35211088": {
+   "reason": "hard-exclude:recurrent implantation failure",
+   "first_seen": "2026-10-13",
+   "title": "History of Recurrent Implantation Failure is Associated With the Incidence of Adverse Perinatal Outcomes in Singleton Li"
+  },
+  "35222282": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Evaluation of Bone Mineral Density in Children Conceived via Assisted Reproductive Technology."
+  },
+  "35250858": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Trophectoderm Biopsy Differentially Influences the Level of Serum β-Human Chorionic Gonadotropin With Different Embryoni"
+  },
+  "35250875": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Non-Assisted Hatching Trophectoderm Biopsy Does Not Increase The Risks of Most Adverse Maternal and Neonatal Outcome and"
+  },
+  "35289028": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum."
+  },
+  "35345469": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "Impact of Maternal Age on Singleton Birthweight in Frozen Embryo Transfer Cycles."
+  },
+  "35370976": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "Comparison of Perinatal Outcomes of Letrozole-Induced Ovulation and Hormone Replacement Therapy Protocols in Patients Wi"
+  },
+  "35370978": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Optimal Follow-Up Duration for Assessment of Birth Defects After In Vitro Fertilization-Embryo Transfer: A Multicenter 5"
+  },
+  "35370987": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "The Influence of the Vanishing Twin on the Perinatal Outcome of Surviving Singleton in IVF Pregnancy."
+  },
+  "35402761": {
+   "reason": "hard-exclude:postmenopausal women",
+   "first_seen": "2026-10-13",
+   "title": "Association Between Asthma and Reduced Androgen Receptor Expression in Airways."
+  },
+  "35411580": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "CORRIGENDUM."
+  },
+  "35419870": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Different FT3/TSH correlation in acquired and congenital hypothyroid patients reveals a different hypothalamic set-point"
+  },
+  "35421229": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum. COVID-19-Related Multisystem Inflammatory Syndrome in Children Presenting With New-Onset Type 1 Diabetes in Sev"
+  },
+  "35464055": {
+   "reason": "hard-exclude:erectile dysfunction",
+   "first_seen": "2026-10-13",
+   "title": "Evaluation of the Effect on Sexual Performance of a Nutraceutical Combination Containing Alpha Lipoic Acid, Vitis vinife"
+  },
+  "35498421": {
+   "reason": "hard-exclude:embryo transfer cycle",
+   "first_seen": "2026-10-13",
+   "title": "Insulin Resistance is a Risk Factor for Early Miscarriage and Macrosomia in Patients With Polycystic Ovary Syndrome From"
+  },
+  "35536660": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: BMI and Contraceptives Affect New Age-, Sex-, and Puberty-adjusted IGF-I and IGFBP-3 Reference Ranges Acr"
+  },
+  "35585761": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Postoperative intensive care management and residual endocrinopathy of pediatric supratentorial brain tumors: a retrospe"
+  },
+  "35685207": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "Birthweight After Frozen Embryos Formed on the Fifth Day Versus the Sixth Day: A Retrospective Analysis Including 17,127"
+  },
+  "35707464": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Pathological and Prognostic Characterization of Craniopharyngioma Based on the Expression of TrkA, β-Catenin, Cell Cycle"
+  },
+  "35721747": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Association of Polycystic Ovary Syndrome Phenotypes With Adverse Pregnancy Outcomes After In-Vitro Fertilization/Intracy"
+  },
+  "35733765": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "The Reproductive Outcome of Women with Hypogonadotropic Hypogonadism in IVF."
+  },
+  "35784527": {
+   "reason": "hard-exclude:postmenopausal women",
+   "first_seen": "2026-10-13",
+   "title": "Prolactin: The Third Hormone in Breast Cancer."
+  },
+  "35784567": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Intracytoplasmic Sperm Injection May Not Improve Clinical Outcomes Despite Its Positive Effect on Embryo Results: A Retr"
+  },
+  "35784578": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Homeostatic Model Assessment for Insulin Resistance Is Associated With Late Miscarriage in Non-Dyslipidemic Women Underg"
+  },
+  "35800429": {
+   "reason": "hard-exclude:embryo transfer cycle",
+   "first_seen": "2026-10-13",
+   "title": "Effects of Anticoagulants and Immune Agents on Pregnancy Outcomes and Offspring Safety in Frozen-Thawed Embryo Transfer "
+  },
+  "35813622": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Fetal Reduction Could Improve but Not Completely Reverse the Pregnancy Outcomes of Multiple Pregnancies: Experience From"
+  },
+  "35846290": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Placental Abnormalities and Placenta-Related Complications Following In-Vitro Fertilization: Based on National Hospitali"
+  },
+  "35846307": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "GnRH Antagonist Protocol Versus GnRH Agonist Long Protocol: A Retrospective Cohort Study on Clinical Outcomes and Matern"
+  },
+  "35865308": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Risk of Higher Blood Pressure in 3 to 6 Years Old Singleton Born From OHSS Patients Undergone With Fresh IVF/ICSI."
+  },
+  "35909529": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Prognosis of Congenital Anomalies in Conceptions Following In Vitro Fertilization: A Multicenter Retrospective Cohort St"
+  },
+  "35925783": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: Deterioration of Glycemic Control in Youth-Onset Type 2 Diabetes: What Are the Early and Late Predictors?"
+  },
+  "35979436": {
+   "reason": "pure basic science",
+   "first_seen": "2026-10-13",
+   "title": "Isolation and in vitro characterization of murine young-adult long bone skeletal progenitors."
+  },
+  "35983794": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum."
+  },
+  "35992097": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Analysis of cumulative live birth rate and perinatal outcomes in young patients with low anti-müllerian hormone levels u"
+  },
+  "35992112": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum: The silent epidemic of diabetic ketoacidosis at diagnosis of type 1 diabetes in children and adolescents in"
+  },
+  "36034419": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "\"Double Frozen Transfer\" Could Influence the Perinatal and Children's Growth: A Nested Case-Control Study of 6705 Live B"
+  },
+  "36046783": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "Ovulation induction regimens are associated with a higher rate of livebirth after frozen single-blastocyst transfer amon"
+  },
+  "36059021": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Temporal trends in the prevalence and incidence of depression and the interplay of comorbidities in patients with young-"
+  },
+  "36093101": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Nomogram for the cumulative live birth in women undergoing the first IVF cycle: Base on 26, 689 patients in China."
+  },
+  "36112402": {
+   "reason": "pure basic science",
+   "first_seen": "2026-10-13",
+   "title": "Cervical MUC5B and MUC5AC are Barriers to Ascending Pathogens During Pregnancy."
+  },
+  "36133317": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "It is not worth postponing frozen embryo transfers after oocyte pickup: A retrospective cohort study based on propensity"
+  },
+  "36203270": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "RETRACTION: Mayer-Rokitansky-Kuster-Hauser (MRKH) Syndrome in a Child with Idiopathic Precocious Puberty."
+  },
+  "36213265": {
+   "reason": "pure basic science",
+   "first_seen": "2026-10-13",
+   "title": "15-Deoxy-Delta-12,14-prostaglandin J2 modulates pro-labour and pro-inflammatory responses in human myocytes, vaginal and"
+  },
+  "36214833": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Metabolomic Profile of Children Conceived With Medically Assisted Technologies."
+  },
+  "36237196": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum: GH responsiveness is not correlated to IGF1 P2 promoter methylation in children with Turner syndrome, GHD a"
+  },
+  "36246905": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Optimal waiting period for frozen embryo transfer after hysteroscopic polypectomy: A propensity score matching analysis."
+  },
+  "36387864": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "Natural cycle increases the live-birth rate compared with hormone replacement treatment for frozen-thawed single euploid"
+  },
+  "36387913": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Endometrial thickness is associated with low birthweight in frozen embryo transfer cycles: A retrospective cohort study "
+  },
+  "36440198": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Neonatal outcomes and congenital malformations in children born after progestin-primed ovarian stimulation protocol."
+  },
+  "36483000": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "A combination containing natural extracts of clove, Sophora flower bud, and yam improves fertility in aged female mice v"
+  },
+  "36506040": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum: Sex differences in metabolically healthy and metabolically unhealthy obesity among Chinese children and ado"
+  },
+  "36517456": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Two cases of MEGDHEL syndrome diagnosed with hyperammonemia."
+  },
+  "36524341": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Effect of Conventional Treatment on Dental Complications and Ectopic Ossifications Among 30 Adults With XLH."
+  },
+  "36525595": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to \"Clinical, Endocrine and Neuroimaging Findings in Girls With Central Precocious Puberty\"."
+  },
+  "36531452": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Effect of a 60-day weight reduction intervention prior to IVF/ICSI on perinatal outcomes in overweight or obese infertil"
+  },
+  "36531504": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Perinatal outcomes of singleton live births after late moderate-to-severe ovarian hyperstimulation syndrome: A propensit"
+  },
+  "36568107": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Insulin-like growth factor-1 levels are associated with interventricular septal thickening."
+  },
+  "36589794": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Comparison of different insulin resistance surrogates to predict hyperuricemia among U.S. non-diabetic adults."
+  },
+  "36589796": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "The levels of BMI and patterns of obesity and overweight during the COVID-19 pandemic: Experience from the Iran STEPs 20"
+  },
+  "36589797": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Ovarian Hyperstimulation Syndrome (OHSS) requiring Intensive Care Unit (ICU) admission between 1996-2020 in England, Wal"
+  },
+  "36589799": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "The effect of total cholesterol/high-density lipoprotein cholesterol ratio on mortality risk in the general population."
+  },
+  "36619565": {
+   "reason": "pure basic science",
+   "first_seen": "2026-10-13",
+   "title": "Interleukin-6 is dispensable in pituitary normal development and homeostasis but needed for pituitary stem cell activati"
+  },
+  "36619579": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Infertility treatment for Chinese women with P450 oxidoreductase deficiency: Prospect on clinical management from IVF to"
+  },
+  "36656052": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: \"The Congenital and Acquired Mechanisms Implicated in the Etiology of Central Precocious Puberty\"."
+  },
+  "36686453": {
+   "reason": "hard-exclude:erectile dysfunction",
+   "first_seen": "2026-10-13",
+   "title": "Impact of body composition analysis on male sexual function: A metabolic age study."
+  },
+  "36714561": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Vanishing twin syndrome is associated with first-trimester intrauterine hematoma in twin pregnancies after in vitro fert"
+  },
+  "36755921": {
+   "reason": "hard-exclude:zebrafish",
+   "first_seen": "2026-10-13",
+   "title": "Zebrafish Tric-b is required for skeletal development and bone cells differentiation."
+  },
+  "36762944": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: Somapacitan in children born small for gestational age: a multi-centre, open-label, controlled phase 2 st"
+  },
+  "36763508": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Trends in the Prevalence of Lean Diabetes Among U.S. Adults, 2015-2020."
+  },
+  "36881927": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Sex Differences in Cardiovascular Disease and Cardiovascular Risk Estimation in Patients With Type 1 Diabetes."
+  },
+  "36896183": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Serum anti-Müllerian hormone levels are associated with perinatal outcomes in women undergoing IVF/ICSI: A multicenter r"
+  },
+  "36950679": {
+   "reason": "hard-exclude:zebrafish",
+   "first_seen": "2026-10-13",
+   "title": "Enhanced contrast synchrotron X-ray microtomography for describing skeleton-associated soft tissue defects in zebrafish "
+  },
+  "36967754": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Analysis of cumulative outcomes and influencing factors of patients with discrepancies between age and AMH levels in the"
+  },
+  "36967775": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Adipokines as predictive factor of cardiac function in pediatric patients with chronic kidney disease."
+  },
+  "37000669": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: Copeptin improves prediction of treatment response in children with monosymptomatic nocturnal enuresis."
+  },
+  "37008905": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum: Case Report: Uncommon cause of limp in the 21st century."
+  },
+  "37008915": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum: Pubertal timing in children with Silver Russell syndrome compared to those born small for gestational age."
+  },
+  "37008955": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum: Navigating disrupted puberty: Development and evaluation of a mobile-health transition passport for Klinefelter"
+  },
+  "37051204": {
+   "reason": "pure basic science",
+   "first_seen": "2026-10-13",
+   "title": "Effects of aging and macrophages on mice stem Leydig cell proliferation and differentiation in vitro."
+  },
+  "37065757": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Cumulative live birth rates and birth outcomes after IVF/ICSI treatment cycles in young POSEIDON patients: A real-world "
+  },
+  "37171126": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Head-to-Head Comparison of [68Ga]Ga-DOTA.SA.FAPi and [68Ga]Ga-DOTANOC Positron Emission Tomography/Computed Tomography I"
+  },
+  "37181034": {
+   "reason": "hard-exclude:postmenopausal women",
+   "first_seen": "2026-10-13",
+   "title": "Effect of adipokine and ghrelin levels on BMD and fracture risk: an updated systematic review and meta-analysis."
+  },
+  "37186023": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to \"β-Cell Function and Insulin Sensitivity in Youth With Early Type 1 Diabetes From a 2-Hour 7-Sample OGTT\"."
+  },
+  "37235781": {
+   "reason": "hard-exclude:prostate cancer",
+   "first_seen": "2026-10-13",
+   "title": "Serum Insulin-like Factor 3, Testosterone, and LH in Experimental and Therapeutic Testicular Suppression."
+  },
+  "37251681": {
+   "reason": "hard-exclude:prostate cancer",
+   "first_seen": "2026-10-13",
+   "title": "Abiraterone acetate and prednisone in metastatic castration-resistant prostate cancer: a real-world retrospective study "
+  },
+  "37261390": {
+   "reason": "hard-exclude:alzheimer",
+   "first_seen": "2026-10-13",
+   "title": "New Horizons: Gonadotropin-Releasing Hormone and Cognition."
+  },
+  "37274330": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Nomogram for predicting the risk of preterm delivery after IVF/ICSI treatment: an analysis of 11513 singleton births."
+  },
+  "37303008": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Low birthweight is associated with a higher incidence of type 2 diabetes over two decades independent of adult BMI and g"
+  },
+  "37307379": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Diagnosis of adrenal insufficiency in children: a survey among pediatric endocrinologists in North America."
+  },
+  "37334951": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "37334953": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "37334958": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "37361525": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Retraction: Effect of weekly long-acting growth hormone replacement therapy compared to daily growth hormone on children"
+  },
+  "37361532": {
+   "reason": "hard-exclude:adenomyosis",
+   "first_seen": "2026-10-13",
+   "title": "Reproductive outcomes and risk factors of women with septate uterus after hysteroscopic metroplasty."
+  },
+  "37388214": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "High anti-Mullerian hormone level is adversely associated with cumulative live birth rates of two embryo transfers after"
+  },
+  "37396165": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "Comparison of the neonatal outcomes of progestin-primed ovarian stimulation and flexible GnRH antagonist protocols: a pr"
+  },
+  "37409227": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Lights and shadows on the use of metformin in pregnancy: from the preconception phase to breastfeeding and beyond."
+  },
+  "37461224": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Predictors of pituitary tumour behaviour: an analysis from long-term follow-up in 2 tertiary centres."
+  },
+  "37490875": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "37497927": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "37497938": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "37497953": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "37497955": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "37497965": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "37497978": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "37529616": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "The effect of peak serum estradiol level during ovarian stimulation on cumulative live birth and obstetric outcomes in f"
+  },
+  "37538795": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Cinacalcet use in secondary hyperparathyroidism: a machine learning-based systematic review."
+  },
+  "37547302": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "The duration of estrogen treatment before progesterone application does not affect neonatal and perinatal outcomes in fr"
+  },
+  "37547323": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Effect of vaginal microbiota on pregnancy outcomes of women from Northern China who conceived after IVF."
+  },
+  "37619571": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: \"Effective GH Replacement With Somapacitan in Children With GHD: REAL4 2-year Results and After Switch Fr"
+  },
+  "37635957": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Diagnostic challenges and management advances in cytochrome P450 oxidoreductase deficiency, a rare form of congenital ad"
+  },
+  "37646011": {
+   "reason": "pure basic science",
+   "first_seen": "2026-10-13",
+   "title": "Srd5a1 is Differentially Regulated and Methylated During Prepubertal Development in the Ovary and Hypothalamus."
+  },
+  "37654559": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum: Sarcopenic obesity in children and adolescents: a systematic review."
+  },
+  "37664838": {
+   "reason": "hard-exclude:embryo transfer cycle",
+   "first_seen": "2026-10-13",
+   "title": "The influence of embryo stage on obstetric complications and perinatal outcomes following programmed compared to natural"
+  },
+  "37670148": {
+   "reason": "hard-exclude:postmenopausal women",
+   "first_seen": "2026-10-13",
+   "title": "Diagnosis and management of prolactin-secreting pituitary adenomas: a Pituitary Society international Consensus Statemen"
+  },
+  "37705573": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Impact of thyroid-stimulating hormone levels after controlled ovarian hyperstimulation on in vitro fertilization/intracy"
+  },
+  "37711892": {
+   "reason": "hard-exclude:endometrial receptivity",
+   "first_seen": "2026-10-13",
+   "title": "Finding of the optimal preparation and timing of endometrium in frozen-thawed embryo transfer: a literature review of cl"
+  },
+  "37766680": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "The association between body mass index and live birth and maternal and perinatal outcomes after in-vitro fertilization:"
+  },
+  "37766684": {
+   "reason": "pure basic science",
+   "first_seen": "2026-10-13",
+   "title": "Next step in the development of mesoprogestins: the preclinical profile of EC313."
+  },
+  "37795363": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Efficacy of progestin-primed ovarian stimulation in women with polycystic ovary syndrome undergoing in vitro fertilizati"
+  },
+  "37798898": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Combination therapy of liothyronine and levothyroxine for hypothyroidism-induced dilated cardiomyopathy."
+  },
+  "37800141": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Factors affecting male-to-female ratio at birth in frozen-thawed embryo transfer cycles: a large retrospective cohort st"
+  },
+  "37842305": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Physical exercise as treatment for adults with type 2 diabetes: a rapid review."
+  },
+  "37843554": {
+   "reason": "hard-exclude:zebrafish",
+   "first_seen": "2026-10-13",
+   "title": "Adjudin improves beta cell maturation, hepatic glucose uptake and glucose homeostasis."
+  },
+  "37867517": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Efficiency and safety of vitrification of surplus oocytes following superovulation: a comparison of different clinical i"
+  },
+  "38008939": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "38027125": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum: Prevalence of overweight and obesity among saudi children: a comparison of two widely used international st"
+  },
+  "38027191": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Impact of 2.5 mg versus 5 mg letrozole co-treatment in an antagonist protocol for IVF: a retrospective study."
+  },
+  "38049643": {
+   "reason": "hard-exclude:prostate cancer",
+   "first_seen": "2026-10-13",
+   "title": "Metabolic control of puberty: 60 years in the footsteps of Kennedy and Mitra's seminal work."
+  },
+  "38075071": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Analysis of risk factors for recurrence in infertile endometrial cancer patients after in vitro fertilization treatment."
+  },
+  "38075073": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Effects of the Zishen Yutai Pill compared with placebo on pregnancy outcomes among women in a fresh embryo transfer cycl"
+  },
+  "38113531": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: \"Clinical Profiles and Genetic Spectra of 814 Chinese Children With Short Stature\"."
+  },
+  "38130395": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Intraoperative cricothyroid muscle electromyography may contribute to the monitorization of the external branch of the s"
+  },
+  "38262375": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Puberty Today, Gone Tomorrow: Transient Refractory Central Precocious Puberty in a Toddler with End-Stage Kidney Disease"
+  },
+  "38277166": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Real-World Continuous Glucose Monitoring Data from a Population with Type 1 Diabetes in South Korea: Nationwide Single-S"
+  },
+  "38287910": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Prognostic Impact of Hypothalamic Perforation in Adult Patients With Craniopharyngioma: A Cohort Study."
+  },
+  "38303979": {
+   "reason": "hard-exclude:prostate cancer",
+   "first_seen": "2026-10-13",
+   "title": "Bioactive compounds as potential alternative treatments to prevent cancer therapy-induced male infertility."
+  },
+  "38324774": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: \"Nodal Metastases Associated With Fusion Oncogenes Are Age Dependent in Young Adult Patients With Thyroid"
+  },
+  "38348415": {
+   "reason": "pure basic science",
+   "first_seen": "2026-10-13",
+   "title": "Functional GnRH receptor signaling regulates striatal cholinergic neurons in neonatal but not in adult mice."
+  },
+  "38419955": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Association between vitamin D status and cardiometabolic risk factors in adults with type 2 diabetes in Shenzhen, China."
+  },
+  "38517399": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Surgical treatment of secondary hyperparathyroidism in children with chronic kidney disease. Experience in 19 patients."
+  },
+  "38532894": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Developmental potential of non- and mono-pronuclear zygotes and associated clinical outcomes in IVF cycles."
+  },
+  "38630308": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Growth after pediatric kidney transplantation: a 25-year study in a pediatric kidney transplant center."
+  },
+  "38652803": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Apparent mineralocorticoid excess in Israel: a case series and literature review."
+  },
+  "38654471": {
+   "reason": "hard-exclude:zebrafish",
+   "first_seen": "2026-10-13",
+   "title": "Identification of Eukaryotic Translation Initiation Factor 4B as a Novel Candidate Gene for Congenital Hypothyroidism."
+  },
+  "38696538": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Clinical management and outcome of head and neck paragangliomas (HNPGLs): A single centre retrospective study."
+  },
+  "38805186": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Metabolic Profiles of Offspring Born From Biopsied Embryos from Toddlerhood to Preschool Age."
+  },
+  "38832947": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Nonpronuclear- and Monopronuclear-derived Blastocysts Do Not Impair Subsequent Perinatal and Maternal Outcomes."
+  },
+  "38870918": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "38898800": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Timing of onset of menses after GnRH agonist treatment for central precocious puberty."
+  },
+  "38913692": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "The Association of Female and Male Preconception Dyslipidemia With Live Birth in Couples Seeking Fertility Treatment."
+  },
+  "38933826": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "Embryo transfer impact: a comprehensive national cohort analysis comparing maternal and neonatal outcomes across varied "
+  },
+  "38956757": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Pediatric management challenges of hyperglycemic hyperosmolar state: case series of Korean adolescents with type 2 diabe"
+  },
+  "39078099": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: \"Pubertal Girls With Overweight/Obesity Have Higher Androgen Levels-Can Metabolomics Tell us Why?\"."
+  },
+  "39092286": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Perinatal complications and neonatal outcomes in in vitro fertilization/intracytoplasmic sperm injection: a propensity s"
+  },
+  "39099670": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Efficacy of electro-acupuncture on pregnancy outcomes for women undergoing in vitro fertilization: study protocol for a "
+  },
+  "39158197": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "A successful liver transplantation in a patient with neonatal-onset carbamoyl phosphate synthetase-1 deficiency."
+  },
+  "39191988": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Author Correction: International consensus statement on the diagnosis and management of phaeochromocytoma and paragangli"
+  },
+  "39207747": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum. 189-OR: Food Insecurity and Inability to Obtain Recommended Medications, Diabetes Technology, and Multidiscipli"
+  },
+  "39224458": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Effects of Metabolic Syndrome on Pregnancy Outcomes in Women Without Polycystic Ovary Syndrome."
+  },
+  "39258421": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "New data supporting that early diagnosis and treatment are possible and necessary in intracellular cobalamin depletion: "
+  },
+  "39288170": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: \"The Role of Early Pregnancy Maternal pGCD59 Levels in Predicting Neonatal Hypoglycemia-Subanalysis of th"
+  },
+  "39383320": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "High Estradiol Environment After IVF Causes Increased Risk of Glucose Metabolic Dysfunction in Offspring."
+  },
+  "39413011": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: \"Pediatric Papillary Thyroid Carcinoma: Outcomes After Surgery Without Adjuvant Radioactive Iodine\"."
+  },
+  "39439569": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Comparative analysis of the bioaccumulation of bisphenol A in the blood serum and follicular fluid of women living in tw"
+  },
+  "39441964": {
+   "reason": "pure basic science",
+   "first_seen": "2026-10-13",
+   "title": "IER3IP1 Mutations Cause Neonatal Diabetes Due to Impaired Proinsulin Trafficking."
+  },
+  "39574947": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Analysis of factors influencing prevalence and malignancy of thyroid nodules in various iodine uptake areas."
+  },
+  "39574950": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Comparative study on pregnancy complications: PGT-A vs. IVF-ET with gender-specific outcomes."
+  },
+  "39607408": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Differential Ultrasound Rates Mirror Sex Disparities in Thyroid Cancer."
+  },
+  "39629051": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Impact of Ureaplasma urealyticum infection on semen parameters and in vitro fertilization outcomes in infertile men."
+  },
+  "39657019": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Health-related Quality of Life, Social, and Psychological Well-Being of 109 Adult Patients With Genetic Lipodystrophy."
+  },
+  "39667018": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Associations Between Subclinical Thyroid Dysfunction and Cardiovascular Risk Factors According to Age and Sex."
+  },
+  "39672549": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: \"Weight-Specific Grip Strength as a Novel Indicator Associated With Cardiometabolic Risk in Children: The"
+  },
+  "39702980": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "How Does Thyroid Hormone Profile Differ on and Off Replacement Treatment?"
+  },
+  "39736859": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Effect of freezing and thawing on ejaculated sperm and subsequent pregnancy and neonatal outcomes in IVF."
+  },
+  "39749017": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum: The role of oxidized lipid species in insulin resistance and NASH in children."
+  },
+  "39804201": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Accuracy of Continuous Glucose Monitoring in Adults with Type 1 Diabetes Admitted to Hospital: A Real-World Multicenter "
+  },
+  "39877841": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "Impact of endometrial thickness and its combined effect with maternal age on singleton adverse neonatal outcomes in froz"
+  },
+  "39877844": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "The effects of growth hormone on the outcomes of in vitro fertilization and embryo transfer in age-grouped patients with"
+  },
+  "39882266": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "No improvement in pregnancy and perinatal outcomes with combined luteal support in modified natural cycle frozen embryo "
+  },
+  "39906032": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Impact of sperm DNA fragmentation index on assisted reproductive outcomes: a retrospective analysis."
+  },
+  "39980335": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Income and work loss in patients with Addison's disease: a nationwide population-based study."
+  },
+  "40012910": {
+   "reason": "hard-exclude:alzheimer",
+   "first_seen": "2026-10-13",
+   "title": "The Unfolding Story of Protein Misfolding Causing Alzheimer Disease in Recipients of Human Pituitary Growth Hormone."
+  },
+  "40024241": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Erratum."
+  },
+  "40053396": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: \"Long-Acting Growth Hormone Therapy in Pediatric Growth Hormone Deficiency: A Consensus Statement\"."
+  },
+  "40110546": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum: Meta-analysis of machine learning models for the diagnosis of central precocious puberty based on clinical,"
+  },
+  "40206600": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Epidemiological trends and risk factors of CKD-T1DM in children and adolescents across 204 countries and territories (19"
+  },
+  "40213104": {
+   "reason": "hard-exclude:ivf",
+   "first_seen": "2026-10-13",
+   "title": "Embryological and pregnancy outcomes of IVF-ET in overweight/obese and normal-weight women with PCOS."
+  },
+  "40261707": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: \"Adult Height Following Prepubertal Treatment With Antiandrogen, Aromatase Inhibitor, and Reduced Hydroco"
+  },
+  "40335046": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Author Correction: Age of menarche and final height in patients with permanent congenital hypothyroidism."
+  },
+  "40352966": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: \"Disparities in Diabetes Technology Uptake in Youth and Young Adults With Type 1 Diabetes: A Global Persp"
+  },
+  "40365231": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Oocytes with aggregates of smooth endoplasmic reticulum may not affect reproductive outcomes in split IVF-ICSI inseminat"
+  },
+  "40372814": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: \"Basal and Stimulated Inhibin B in Pubertal Disorders\"."
+  },
+  "40433408": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Chinese burdens and trends of diabetic retinopathy 1990-2021 and 15 years forecast: results from the Global Burden of Di"
+  },
+  "40453584": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum: Epidemiological analysis of turner syndrome in children aged 0-14 years: global, regional, and national per"
+  },
+  "40491598": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "Effectiveness, safety, and practicality of intramuscular progesterone in restoring pregnancy outcomes during frozen embr"
+  },
+  "40519518": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "A thinner endometrium is associated with a greater risk of preterm delivery after fresh cleavage embryo transfer but not"
+  },
+  "40535342": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Assessment of hypothalamic-pituitary-adrenal axis impairment and effects of hydrocortisone treatment in adults with Prad"
+  },
+  "40556827": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "The impact of inoculation with the inactivated COVID-19 vaccine on the outcomes of in vitro fertilization and embryo tra"
+  },
+  "40556830": {
+   "reason": "hard-exclude:menopausal hormone therapy",
+   "first_seen": "2026-10-13",
+   "title": "Avoiding touching until 60 min-contamination of transdermal estradiol gel after physical contact."
+  },
+  "40556831": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "All-cause mortality in patients with medullary thyroid carcinoma of different ages: an inverse L-curve analysis study."
+  },
+  "40568521": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: \"Serum Phoenixin Levels and Their Diagnostic Significance in Girls With Precocious Puberty\"."
+  },
+  "40589507": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "Evaluation of day 5 versus day 6 blastocyst biopsy in preimplantation genetic testing: clinical and neonatal outcomes."
+  },
+  "40609566": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Effects of retatrutide on body composition in people with type 2 diabetes: a substudy of a phase 2, double-blind, parall"
+  },
+  "40612438": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum: Nickel oxide nanoparticles exposure as a risk factor for male infertility: \"In vitro\" effects on porcine pr"
+  },
+  "40619842": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Unraveling the Puzzle of Bone Health in Klinefelter Syndrome: Association Between DXA-Derived Lumbar Bone Strain Index a"
+  },
+  "40655402": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Real-World effectiveness of eculizumab in atypical hemolytic uremic syndrome: a retrospective study from Western China."
+  },
+  "40758070": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: \"Anti-Androgen and Aromatase Inhibitor Do Not Enhance Height in Children With CAH\"."
+  },
+  "40761819": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Efficacy of combined rigid and flexible ureteroscopy for complex ureteral stones in type 2 diabetes mellitus."
+  },
+  "40771270": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Safety enhancement of improved hydrodissection for microwave ablation in lymph node metastasis from papillary thyroid ca"
+  },
+  "40786177": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Global, regional, and national burden of endocrine, metabolic, blood, and immune disorders from 1990 to 2021, and projec"
+  },
+  "40791993": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Melatonin biosynthesis and regulation in reproduction."
+  },
+  "40804506": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Author Correction: International consensus statement on the diagnosis and management of phaeochromocytoma and paragangli"
+  },
+  "40815238": {
+   "reason": "pure basic science",
+   "first_seen": "2026-10-13",
+   "title": "Activated Protein C Suppresses Cardiomyocyte Senescence in Diabetic Cardiomyopathy via PAR1/PAR3-P85-CaMKIIδ Axis."
+  },
+  "40822963": {
+   "reason": "hard-exclude:elderly patients",
+   "first_seen": "2026-10-13",
+   "title": "Case Report: Whining toddler: could it be a serious illness."
+  },
+  "40854315": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Efficacy and safety of cAMP-biased GLP-1 receptor agonist ecnoglutide versus dulaglutide in patients with type 2 diabete"
+  },
+  "40895168": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Corrigendum to \"ISPAD Clinical Practice Consensus Guidelines 2022: Type 2 Diabetes in Children and Adolescents\"."
+  },
+  "40971918": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction to: \"Central Precocious Puberty in Males, GnRH Analog Treated or Untreated, Did Not Impact Fertility and Heal"
+  },
+  "41019330": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction: Inflammatory markers as potential mediators on the negative association between training load and bone miner"
+  },
+  "41030853": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-13",
+   "title": "Characteristics and influencing factors of neuroendocrine dysfunction in patients with adult-onset craniopharyngioma."
+  },
+  "41104473": {
+   "reason": "hard-exclude:prostate cancer",
+   "first_seen": "2026-10-13",
+   "title": "EndoCompass project: research roadmap for endocrine causes and consequences of cancer."
+  },
+  "41113709": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Association of Placental Growth Factor with the risk of adverse pregnancy outcomes: a prospective cohort study in Chines"
+  },
+  "41169464": {
+   "reason": "hard-exclude:in vitro fertilization",
+   "first_seen": "2026-10-13",
+   "title": "Associations between serum 25- hydroxyvitamin D concentrations and assisted reproductive technology outcomes in women wi"
+  },
+  "41196035": {
+   "reason": "hard-exclude:dialysis",
+   "first_seen": "2026-10-13",
+   "title": "Free T4 Age-Specific Reference Intervals from Birth to the 10th Decade of Life Using Direct Dialysis."
+  },
+  "41296658": {
+   "reason": "hard-exclude:prostate cancer",
+   "first_seen": "2026-10-13",
+   "title": "EndoCompass Project: Research Roadmap for Endocrine Causes and Consequences of Cancers."
+  },
+  "41446632": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-10-13",
+   "title": "Correction: Determinants of adverse event occurrence in children with short stature born small for gestational age treat"
+  },
+  "41446635": {
+   "reason": "hard-exclude:frozen embryo transfer",
+   "first_seen": "2026-10-13",
+   "title": "Effectiveness of preimplantation genetic testing for aneuploidy in improving clinical and neonatal outcomes for patients"
   }
  }
 }

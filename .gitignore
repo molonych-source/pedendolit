@@ -21,3 +21,4 @@ classifier_qa_review.html
 # classifier_qa_sample.round*.json + classifier_qa_verdicts.round*.json, which ARE
 # versioned. The repo already carries a size problem (see DECISIONS.md).
 classifier_qa_review.round*.html
+_work/
