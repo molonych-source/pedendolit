@@ -255,6 +255,8 @@ input.inl{font-size:.82em}
 .cmain{flex:1;min-width:0}
 .bl-head{font-family:var(--serif);font-size:18.5px;line-height:1.38;font-weight:500;margin:0 0 5px;color:var(--ink)}
 .bl-head.is-title{font-weight:600}
+.bl-sum{font-size:14px;line-height:1.5;color:var(--ink2);margin:0 0 4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card.open .bl-sum{display:block;-webkit-line-clamp:unset;overflow:visible}
 .bl-head{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .card.open .bl-head{display:block;-webkit-line-clamp:unset;overflow:visible}
 .blrest{font-family:var(--serif);font-size:15px;line-height:1.55;color:var(--ink2);margin:0 0 12px;max-width:70ch}
@@ -712,12 +714,11 @@ function renderHome(){
     const arts=ART.filter(a=>a.topic===t);
     const fresh=arts.filter(a=>a.is_new);
     const lead=(fresh.length?fresh:arts)[0];     // ART is already ranked: impact tier, then newest
-    const b=blInfo(lead);
     const rule=TIER_BY_KEY[lead.impact]?TIER_BY_KEY[lead.impact].dot:'var(--line)';
     return `<a class="tile" href="#/t/${encodeURIComponent(t)}" style="--rule:${rule}">
       <div class="t-head"><span class="t-name">${esc(t)}</span>${sparkSVG(t)}</div>
       <div class="t-new${fresh.length?'':' none'}">${fresh.length?fresh.length+' new this week':'Nothing new this week'}</div>
-      <p class="t-lead">${esc(b.weak?lead.title:b.text)}</p>
+      <p class="t-lead">${esc(lead.title)}</p>
       <div class="t-foot">${arts.length.toLocaleString()} article${arts.length===1?'':'s'}</div>
     </a>`;}).join('');
   updateCatchNote();
@@ -787,9 +788,9 @@ function cardHTML(a,opt){
   }
   const why=(a.impact_rationale&&RAT_COUNT.get(a.impact_rationale)<5)
     ? `<div class="why">${esc(a.impact_rationale)}</div>`:'';
-  const head=b.weak
-    ? `<h3 class="bl-head is-title">${isNew}${esc(a.title)}</h3>`
-    : `<h3 class="bl-head">${isNew}${esc(headTxt)}</h3><div class="ctitle">${esc(a.title)}</div>`;
+  // The article title is the headline; the one-sentence takeaway sits beneath it.
+  const head=`<h3 class="bl-head is-title">${isNew}${esc(a.title)}</h3>`
+    +(b.weak?'':`<div class="bl-sum">${esc(headTxt)}</div>`);
   return `<div class="card${open?' open':''}" data-pmid="${a.pmid}">
     <div class="chead" data-card="${a.pmid}" role="button" tabindex="0" aria-expanded="${open}">
       <div class="cmain">
