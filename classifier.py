@@ -208,6 +208,25 @@ def bone_mineral_subtopic(tl, text):
     return best
 
 
+# Posterior pituitary / AVP terms, including the 2022 renaming of diabetes insipidus
+# to arginine vasopressin deficiency (AVP-D) and resistance (AVP-R).
+_WB_AVP = ("diabetes insipidus", "arginine vasopressin deficiency", "arginine vasopressin resistance",
+           "vasopressin deficiency", "vasopressin resistance", "avp-d", "avp-r", "avp deficiency",
+           "avp resistance", "nephrogenic diabetes", "siadh", "inappropriate antidiuretic",
+           "inappropriate antidiuresis", "polyuria-polydipsia", "polyuria and polydipsia",
+           "adipsic", "desmopressin test", "water deprivation test")
+
+
+def _copeptin_subject(tl):
+    """Copeptin in the title means a water-balance paper unless the title puts it in a
+    diabetes-mellitus, cardiovascular or kidney context, where it is a risk biomarker."""
+    return "copeptin" in tl and not has(tl, "type 1 diabetes", "type 2 diabetes", "diabetes mellitus",
+                                          "cardiovascular", "cardiac", "heart", "kidney", "renal")
+
+
+_WB_AVP_RE = re.compile("|".join(re.escape(t) for t in sorted(_WB_AVP, key=len, reverse=True)))
+
+
 def classify_topic(art, trace=False):
     """Returns (topic, subtopic), or (topic, subtopic, trace_info) when trace=True.
     trace_info = {"branch": "10", "branch_label": "...", "matched": [...], "matched_in": "title|abstract|mixed|unknown"}.
@@ -325,16 +344,30 @@ def classify_topic(art, trace=False):
             _m6 = list(dict.fromkeys(_m6 + ["transition to adult care", "multiple endocrine"]))
         return _ret("General Endocrinology", None, "6", "General Endocrinology pre-check (multi-endocrine/APS)", _m6)
 
-    # 7. Pituitary (before Growth/Adrenal); specific pathology only
-    if has(text, "craniopharyngioma", "pituitary adenoma", "pituitary tumor", "prolactinoma",
-           "hypophysitis", "hypopituitarism", "acromegaly", "diabetes insipidus", "avp-d",
-           "siadh", "central hypothyroidism", "central adrenal insufficiency", "copeptin",
-           "septo-optic dysplasia"):
-        return _ret("Pituitary", None, "7", "Pituitary",
-                     _hits(text, "craniopharyngioma", "pituitary adenoma", "pituitary tumor", "prolactinoma",
-                           "hypophysitis", "hypopituitarism", "acromegaly", "diabetes insipidus", "avp-d",
-                           "siadh", "central hypothyroidism", "central adrenal insufficiency", "copeptin",
-                           "septo-optic dysplasia"))
+    # 7. Pituitary (before Growth/Adrenal); specific pathology only.
+    # Water balance (DI/AVP, SIADH) moved to 7b on 2026-10-13 so it gets a subtopic and
+    # a subject guard. A craniopharyngioma paper whose TITLE is about AVP deficiency is
+    # tagged Water balance here; otherwise the subtopic stays empty.
+    _pit7 = ("craniopharyngioma", "pituitary adenoma", "pituitary tumor", "prolactinoma",
+             "hypophysitis", "hypopituitarism", "acromegaly", "central hypothyroidism",
+             "central adrenal insufficiency", "septo-optic dysplasia")
+    if has(text, *_pit7):
+        return _ret("Pituitary", "Water balance" if (has(tl, *_WB_AVP) or _copeptin_subject(tl)) else None,
+                    "7", "Pituitary", _hits(text, *_pit7))
+
+    # 7b. Water balance: posterior pituitary and renal water handling, filed under
+    # Pituitary with subtopic "Water balance" (2026-10-13; replaces the orphan
+    # Water/Electrolytes topic of old branch 21). Runs before Diabetes so "diabetes
+    # insipidus" can never read as diabetes mellitus. Subject guard: a term in the
+    # TITLE, or AVP terms at least twice in title+abstract, so a single mention in a
+    # differential diagnosis does not claim the article. Copeptin counts only in the
+    # title, because it is also studied as a cardiovascular biomarker.
+    # One regex, longest term first, so "arginine vasopressin deficiency" counts once
+    # rather than also counting its substring "vasopressin deficiency".
+    _wb_count = len(_WB_AVP_RE.findall(text))
+    if has(tl, *_WB_AVP) or _copeptin_subject(tl) or _wb_count >= 2:
+        return _ret("Pituitary", "Water balance", "7b", "Water balance (AVP/DI/SIADH)",
+                    _hits(text, *_WB_AVP, "copeptin"))
 
     # 8. Hyperinsulinism pre-check (before Diabetes)
     # Bare "hyperinsulinism" is included here, not just the phrase forms, because
@@ -537,12 +570,17 @@ def classify_topic(art, trace=False):
             _m20 = ["hypercholesterolemia", "lipid"]
         return _ret("Lipids", None, "20", "Lipids (main)", _m20)
 
-    # 21. Water/Electrolytes
-    if has(text, "hyponatremia", "hypernatremia", "desmopressin", "water balance",
-           "anti-diuretic hormone", "salt-wasting"):
-        return _ret("Water/Electrolytes", None, "21", "Water/Electrolytes",
-                     _hits(text, "hyponatremia", "hypernatremia", "desmopressin", "water balance",
-                           "anti-diuretic hormone", "salt-wasting"))
+    # 21. Water balance: sodium disorders (2026-10-13; was the orphan Water/Electrolytes
+    # topic, now Pituitary + subtopic "Water balance"). Kept late in the waterfall so a
+    # DKA or CAH paper that mentions hyponatremia stays with Diabetes or Adrenal.
+    # Same subject guard as 7b. "salt-wasting" alone is dropped: it almost always means
+    # CAH salt-wasting crisis. Desmopressin alone is dropped: it is also an enuresis
+    # and bleeding-disorder drug.
+    _wb21 = ("hyponatremia", "hypernatremia", "water balance", "cerebral salt wasting",
+             "water deprivation test", "osmoregulation")
+    if has(tl, *_wb21) or sum(text.count(t) for t in _wb21) >= 2:
+        return _ret("Pituitary", "Water balance", "21", "Water balance (sodium)",
+                    _hits(text, *_wb21))
 
     # 22. Bone/Mineral (main) — the merged domain: PTH axis, calcium and phosphate
     # homeostasis, vitamin D, and skeletal fragility. Formerly branches 22a and 22b.
@@ -1071,6 +1109,8 @@ def generate_tags(art, topic, subtopic, study_type, impact, board, text, title_l
     if has(text, "telemedicine", "telehealth", "remote monitoring", "digital health",
            "mobile health", "mhealth"):
         tags.append("#DigitalHealth")
+    if subtopic == "Water balance":
+        tags.append("#WaterBalance")
     if subtopic == "Technology":
         tags.append("#Technology")
     stmap = {"Guideline/Consensus": "#Guidelines", "RCT": "#RCT", "Meta-analysis": "#MetaAnalysis",
