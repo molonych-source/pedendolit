@@ -1324,6 +1324,101 @@ def impact_rationale(impact, study_type, journal, topic, n, societies):
 # Orchestrator
 # ---------------------------------------------------------------------------
 
+# ---------------------------------------------------------------------------
+# Guideline region (2026-10-13): which body or country issued a guideline, so the
+# Guidelines page can filter to e.g. US guidelines. Multi-valued: a joint Endocrine
+# Society / European Society of Endocrinology guideline is both United States and
+# Europe. Signals, strongest first: issuing society or country named in the title or
+# the opening of the abstract; then a national journal as a fallback. Author
+# affiliations are deliberately NOT used: ISPAD guidelines have many US authors but
+# are not US guidelines. Returns [] when nothing identifies the issuer.
+# ---------------------------------------------------------------------------
+_NATIONALITY = ("french", "italian", "chinese", "japanese", "korean", "indian", "british", "european",
+                "spanish", "german", "polish", "australian", "australasian", "brazilian", "mexican",
+                "turkish", "russian", "swiss", "dutch", "belgian", "nordic", "latin", "canadian", "arab",
+                "saudi", "egyptian", "argentine", "argentinian", "chilean", "colombian", "taiwanese",
+                "thai", "malaysian", "pakistani", "iranian", "israeli", "greek", "portuguese", "austrian",
+                "czech", "hungarian", "romanian", "danish", "swedish", "norwegian", "finnish", "irish",
+                "scottish", "philippine", "vietnamese", "indonesian", "singapore", "hellenic")
+
+
+def _us_endocrine_society(t):
+    """'Endocrine Society' / 'Pediatric Endocrine Society' meaning the US bodies, not
+    the French Endocrine Society or the Endocrine Society of Bengal / of Australia."""
+    for m in re.finditer(r"(pediatric |paediatric )?endocrine society", t):
+        before = t[:m.start()].split()[-1:] or [""]
+        after = t[m.end():m.end() + 4]
+        if before[0].strip("(,") in _NATIONALITY or after.startswith(" of"):
+            continue
+        return True
+    return False
+
+
+_REGION_RULES = (
+    ("United States", (r"american diabetes association", r"standards of (medical )?care in diabetes",
+                       r"american academy of pediatrics", r"american thyroid association",
+                       r"american association of clinical endocrinolog", r"\baace\b",
+                       r"national lipid association", r"(?<!latin )american college of", r"(?<!latin )american heart association",
+                       r"(?<!latin )american society (of|for)", r"\bacog\b", r"us preventive services",
+                       r"u\.s\. preventive", r"\buspstf\b", r"united states", r"\bu\.s\.\b",
+                       r"lawson wilkins", r"\basco\b", r"american psychological")),
+    ("Canada", (r"\bcanad(a|ian)\b",)),
+    ("International", (r"\bispad\b", r"international society for pediatric", r"\binternational\b",
+                       r"\bglobal\b", r"world health organization", r"\bworldwide\b",
+                       r"growth hormone research society")),
+    ("Europe", (r"\beurop(e|ean)\b", r"\bespe\b", r"\beasd\b", r"\bespghan\b", r"endo-ern", r"\bern\b",
+                r"\buk\b", r"united kingdom", r"society for endocrinology", r"diabetes uk", r"\bbritish\b", r"\bbsped\b", r"\bnice\b", r"\bital(y|ian)\b",
+                r"\bspain\b", r"\bspanish\b", r"\bfrance\b", r"\bfrench\b", r"\bgerman(y)?\b",
+                r"\bpoland\b", r"\bpolish\b", r"\bdutch\b", r"netherlands", r"\bnordic\b", r"\bswed",
+                r"\bdan(ish|mark)\b", r"\bnorw", r"\bfinn", r"\bswiss\b", r"switzerland", r"\baustria",
+                r"\bbelgi", r"\bportug", r"\bgree(k|ce)\b", r"\bczech", r"\bhungar", r"\bturk(ey|ish)\b",
+                r"\brussia", r"\bsiedp\b", r"\bsiams\b", r"\bseep\b", r"\bddg\b", r"ödg")),
+    ("Asia-Pacific", (r"\bchin(a|ese)\b", r"\bjapan(ese)?\b", r"\bkorea(n)?\b", r"\bindia(n)?\b",
+                      r"\btaiwan", r"\bsingapore", r"\bmalaysia", r"\bthai(land)?\b", r"\bvietnam",
+                      r"\bindonesia", r"\bpakistan", r"\bbengal\b", r"\baustralia", r"new zealand",
+                      r"\bphilippin", r"asia-pacific", r"asian pacific")),
+    ("Latin America", (r"\bmexic", r"\bbrazil", r"\bargentin", r"\bchile(an)?\b", r"\bcolombia",
+                       r"\bperu(vian)?\b", r"latin america", r"\blaspghan\b", r"\bslep\b")),
+    ("Middle East & Africa", (r"middle east", r"\bsaudi\b", r"\bgulf\b", r"\bemirates\b", r"\begypt",
+                              r"\biran", r"\bisrael", r"\bafrica", r"\barab")),
+)
+
+# Fallback when the text names no issuer: journals that are a national society's own.
+_JOURNAL_REGION = {
+    "pediatrics": "United States", "am psychol": "United States", "cmaj": "Canada",
+    "endokrynol pol": "Europe", "can j diabetes": "Canada", "paediatr child health": "Canada",
+    "med j aust": "Asia-Pacific", "j paediatr child health": "Asia-Pacific",
+    "indian pediatr": "Asia-Pacific", "indian j pediatr": "Asia-Pacific", "endocr j": "Asia-Pacific",
+    "clin pediatr endocrinol": "Asia-Pacific", "ann pediatr endocrinol metab": "Asia-Pacific",
+    "arch argent pediatr": "Latin America", "an pediatr (engl ed)": "Europe", "an pediatr (barc)": "Europe",
+    "ann endocrinol (paris)": "Europe", "arch pediatr": "Europe", "gesundheitswesen": "Europe",
+    "exp clin endocrinol diabetes": "Europe", "monatsschr kinderheilkd": "Europe",
+    "j endocrinol invest": "Europe", "ital j pediatr": "Europe", "probl endokrinol (mosk)": "Europe",
+}
+
+
+def _regions_in(t):
+    out = ["United States"] if _us_endocrine_society(t) else []
+    for name, pats in _REGION_RULES:
+        if name not in out and any(re.search(p, t) for p in pats):
+            out.append(name)
+    return out
+
+
+def guideline_regions(art):
+    # Title first. The abstract is read only when the title names no issuer, because
+    # abstracts cite OTHER societies' guidelines ("in line with the AAP guideline").
+    title = (art.get("title") or "").lower()
+    out = _regions_in(title) or _regions_in(title + " " + (art.get("abstract") or "")[:400].lower())
+    if not out:
+        j = (art.get("journal_abbr") or "").lower()
+        if j.startswith("zhonghua"):
+            out.append("Asia-Pacific")
+        elif j in _JOURNAL_REGION:
+            out.append(_JOURNAL_REGION[j])
+    return out
+
+
 def classify(art):
     """Full pipeline. Returns dict of classification fields (or {'excluded': reason})."""
     # A physician-approved guideline (set by build_dataset from guideline_decisions.json)
@@ -1356,6 +1451,7 @@ def classify(art):
         "excluded": False,
         "topic": topic,
         "subtopic": subtopic,
+        "regions": guideline_regions(art) if study_type == "Guideline/Consensus" else [],
         "diabetes_subtype": dm_sub,
         "study_type": study_type,
         "ev_level": ev_level,
