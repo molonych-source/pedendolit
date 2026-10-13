@@ -244,6 +244,11 @@ input.inl{font-size:.82em}
 .group.collapsed .gchev{transform:rotate(-90deg)}
 .group.collapsed .gbody{display:none}
 .gbody{border-top:1px solid var(--line)}
+.group{scroll-margin-top:84px}
+.ghead.gstatic{cursor:default}
+.ghead.gstatic:hover{background:transparent}
+.gnote{font-size:13px;color:var(--muted);margin:10px 0 0;max-width:70ch}
+.jump{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 16px}
 .morebtn{display:block;width:100%;border:0;border-top:1px solid var(--line);background:var(--soft);color:var(--ink);font:inherit;font-size:13.5px;padding:12px;cursor:pointer}
 .morebtn:hover{background:var(--line)}
 
@@ -388,6 +393,7 @@ input.inl{font-size:.82em}
     <nav class="nav" aria-label="Main">
       <a href="#/" data-nav="home">Topics</a>
       <a href="#/saved" data-nav="saved" id="tab-btn-saved" style="display:none">Saved</a>
+      <a href="#/guidelines" data-nav="guidelines">Guidelines</a>
       <a href="#/analytics" data-nav="analytics">Analytics</a>
     </nav>
     <div class="search"><input type="search" id="q" placeholder="Search all articles" aria-label="Search all articles" autocomplete="off"/></div>
@@ -558,7 +564,7 @@ const TIERS=[
 ];
 const TIER_BY_KEY=Object.fromEntries(TIERS.map(t=>[t.key,t]));
 const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const authorStr=a=>{const au=a.authors||[];if(!au.length)return '';return au.length<=3?au.join(', '):au.slice(0,3).join(', ')+' et al.';};
+const authorStr=a=>{const au=(a.authors||[]).filter(x=>x&&String(x).trim());if(!au.length)return '';return au.length<=3?au.join(', '):au.slice(0,3).join(', ')+' et al.';};
 const _MON={jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,oct:10,nov:11,dec:12};
 // Format a pub_date as mm/dd/yyyy, honouring how precise the date actually is.
 // Since the 2026-08-06 repair, pub_date is ALWAYS a full sortable ISO date — a
@@ -858,8 +864,37 @@ function renderQueue(){
   root.innerHTML=html;
   syncSaveButtons();
 }
+// ---------------------------------------------------------------------------
+// Guidelines: every Guideline/Consensus article, grouped by topic, newest first.
+// No impact tiers here: the classifier rates every guideline Practice-Altering,
+// so the tier would say nothing.
+// ---------------------------------------------------------------------------
+function renderGuidelines(){
+  const G=ART.filter(a=>a.study_type==='Guideline/Consensus')
+             .sort((x,y)=>(y.pub_date||'').localeCompare(x.pub_date||''));
+  const groups=TOPICS.map(t=>[t,G.filter(a=>a.topic===t)]).filter(g=>g[1].length);
+  document.getElementById('qhead').innerHTML=
+    `<a class="back" href="#/">&#8249; All topics</a>
+     <h1 class="qtitle">Guidelines</h1>
+     <div class="qsub">${G.length} clinical practice guidelines and consensus statements across ${groups.length} topics, newest first within each topic.</div>
+     <p class="gnote">Covers guidelines published in the monitored journals, plus those added through the monthly guideline sweep. A guideline published elsewhere appears only if the sweep finds it.</p>
+     <div class="jump">${groups.map((g,i)=>`<button type="button" class="chip" data-jump="g-${i}">${esc(g[0])} (${g[1].length})</button>`).join('')}</div>`;
+  document.getElementById('groups').innerHTML=groups.map((g,i)=>
+    `<div class="group" id="g-${i}">
+      <div class="ghead gstatic"><span class="gname low">${esc(g[0])}</span>
+        <span class="gcount">${g[1].length} guideline${g[1].length===1?'':'s'}</span></div>
+      <div class="gbody">${g[1].map(a=>cardHTML(a)).join('')}</div>
+    </div>`).join('');
+  syncSaveButtons();
+}
+document.getElementById('qhead').addEventListener('click',e=>{
+  const j=e.target.closest('[data-jump]');
+  if(j){const el=document.getElementById(j.dataset.jump);if(el)el.scrollIntoView({block:'start'});}
+});
+
 function render(){
-  if(viewNow==='queue'||viewNow==='search')renderQueue();
+  if(viewNow==='guidelines')renderGuidelines();
+  else if(viewNow==='queue'||viewNow==='search')renderQueue();
   else if(viewNow==='home')renderHome();
 }
 
@@ -949,9 +984,10 @@ function setParam(k,v){
 let lastKey=null;
 function setView(v){
   viewNow=v;
-  const pane={home:'home',queue:'queue',search:'queue',saved:'saved',analytics:'analytics'}[v];
+  const pane={home:'home',queue:'queue',search:'queue',guidelines:'queue',saved:'saved',analytics:'analytics'}[v];
   ['home','queue','saved','analytics'].forEach(k=>{document.getElementById('v-'+k).hidden=(k!==pane);});
-  const navFor={home:'home',queue:'home',search:'',saved:'saved',analytics:'analytics'}[v];
+  const navFor={home:'home',queue:'home',search:'',guidelines:'guidelines',saved:'saved',analytics:'analytics'}[v];
+  document.getElementById('qtools').hidden=(v==='guidelines');
   document.querySelectorAll('.nav a').forEach(a=>{
     if(a.dataset.nav===navFor)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
 }
@@ -969,6 +1005,7 @@ function route(keepScroll){
   if(r.name==='t'&&TOPIC_SET.has(r.arg)){v='queue';state.topic=r.arg;}
   else if(r.name==='all'){v='queue';}
   else if(r.name==='search'){v='search';state.q=(r.p.get('q')||'').trim();}
+  else if(r.name==='guidelines'){v='guidelines';}
   else if(r.name==='saved'){v='saved';}
   else if(r.name==='analytics'){v='analytics';}
   state.since=(v==='queue')?(r.p.get('since')||''):'';
@@ -985,8 +1022,9 @@ function route(keepScroll){
   if(v==='search'){if(document.activeElement!==qbox)qbox.value=state.q;}
   else if(document.activeElement!==qbox)qbox.value='';
   syncTools();
-  document.title=(state.topic?state.topic+' · ':v==='saved'?'Saved · ':v==='analytics'?'Analytics · ':'')+'PedsEndoBrief: Pediatric Endocrinology Literature';
+  document.title=(state.topic?state.topic+' · ':v==='saved'?'Saved · ':v==='guidelines'?'Guidelines · ':v==='analytics'?'Analytics · ':'')+'PedsEndoBrief: Pediatric Endocrinology Literature';
   if(v==='home')renderHome();
+  else if(v==='guidelines')renderGuidelines();
   else if(v==='queue'||v==='search')renderQueue();
   else if(v==='saved')renderSaved();
   else if(v==='analytics')drawCharts();
