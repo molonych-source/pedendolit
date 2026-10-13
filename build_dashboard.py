@@ -426,6 +426,7 @@ input.inl{font-size:.82em}
       <label class="fld">Published since <input type="date" id="f-since"/></label>
       <label class="fld">Age
         <select id="f-age"><option>All</option><option>Neonatal</option><option>Infant</option><option>Child</option><option>Adolescent</option><option>Transition</option></select></label>
+      <label class="fld" id="f-sub-wrap" hidden>Subtopic <select id="f-sub"></select></label>
       <label class="fld" id="f-dm-wrap" hidden>Diabetes type
         <select id="f-dm"><option>All</option><option>T1D</option><option>T1D·Stage</option><option>T2D</option><option>Technology</option><option>MODY/Monogenic</option><option>CFRD</option><option>GDM</option><option>Steroid-induced</option><option>General</option></select></label>
       <button type="button" class="chip" data-flag="since" id="chip-since" style="display:none">New since your last visit</button>
@@ -650,7 +651,7 @@ function blInfo(a){
 // ---------------------------------------------------------------------------
 // State
 // ---------------------------------------------------------------------------
-const state={topic:null,q:'',since:'',flags:new Set(),dm:'All',age:'All'};
+const state={topic:null,q:'',since:'',flags:new Set(),dm:'All',age:'All',sub:'All'};
 const defaultCollapsed=()=>({'PRACTICE-ALTERING':false,'HIGH':false,'MODERATE':false,'LOW':true});
 let collapsed=defaultCollapsed();
 const openCards=new Set();
@@ -675,6 +676,7 @@ function matches(a){
     if(state.dm==='Technology'){if(a.subtopic!=='Technology')return false;}
     else if(a.diabetes_subtype!==state.dm)return false;
   }
+  if(state.sub!=='All'&&(a.subtopic||'General')!==state.sub)return false;
   if(state.age!=='All'&&!(a.age_range||[]).includes(state.age))return false;
   if(state.since&&(a.pub_date||'')<state.since)return false;
   if(state.flags.has('board')&&a.board_relevant!==1)return false;
@@ -758,7 +760,7 @@ function cardHTML(a,opt){
   opt=opt||{};
   const open=openCards.has(a.pmid);
   const b=blInfo(a);
-  const sub=a.subtopic?` · <span class="subt">${esc(a.subtopic)}</span>`:'';
+  const sub=(a.subtopic&&a.subtopic!=='General')?` · <span class="subt">${esc(a.subtopic)}</span>`:'';
   const tags=(a.tags||[]).slice(0,8).map(t=>`<span class="tag">${esc(t)}</span>`).join('');
   const soc=(a.society&&a.society.length)?`<span class="tag">${a.society.map(esc).join(', ')}</span>`:'';
   const hasAbs=(a.abstract||'').trim().length>=40;
@@ -996,6 +998,20 @@ function syncTools(){
   document.getElementById('f-age').value=state.age;
   document.getElementById('f-dm').value=state.dm;
   document.getElementById('f-dm-wrap').hidden=(state.topic!=='Diabetes');
+  // Subtopic choices come from the data for this topic, largest first; unlabeled
+  // articles are offered last as "Other". Diabetes keeps its own type filter.
+  const subWrap=document.getElementById('f-sub-wrap'), subSel=document.getElementById('f-sub');
+  const subs={};
+  if(state.topic&&state.topic!=='Diabetes')
+    ART.forEach(a=>{if(a.topic===state.topic&&a.subtopic&&a.subtopic!=='General')subs[a.subtopic]=(subs[a.subtopic]||0)+1;});
+  const names=Object.keys(subs).sort((x,y)=>subs[y]-subs[x]);
+  subWrap.hidden=!names.length;
+  if(names.length){
+    const other=ART.filter(a=>a.topic===state.topic&&(!a.subtopic||a.subtopic==='General')).length;
+    subSel.innerHTML='<option value="All">All</option>'+names.map(n=>`<option value="${esc(n)}">${esc(n)} (${subs[n]})</option>`).join('')
+      +(other?`<option value="General">Other (${other})</option>`:'');
+    subSel.value=state.sub;
+  }
   document.querySelectorAll('#qtools .chip').forEach(c=>c.classList.toggle('on',state.flags.has(c.dataset.flag)));
 }
 function route(keepScroll){
@@ -1011,7 +1027,7 @@ function route(keepScroll){
   state.since=(v==='queue')?(r.p.get('since')||''):'';
   const key=v+'|'+(state.topic||'')+'|'+state.q;
   if(key!==lastKey){      // a new list starts with clean filters
-    state.flags.clear();state.dm='All';state.age='All';
+    state.flags.clear();state.dm='All';state.age='All';state.sub='All';
     for(const k in shownN)delete shownN[k];
     collapsed=defaultCollapsed();
     if(v==='search')for(const k in collapsed)collapsed[k]=false;
@@ -1057,6 +1073,7 @@ document.querySelectorAll('#qtools .chip[data-flag]').forEach(c=>c.addEventListe
 }));
 document.getElementById('f-since').addEventListener('change',e=>setParam('since',e.target.value));
 document.getElementById('f-age').addEventListener('change',e=>{state.age=e.target.value;for(const k in shownN)delete shownN[k];render();});
+document.getElementById('f-sub').addEventListener('change',e=>{state.sub=e.target.value;for(const k in shownN)delete shownN[k];render();});
 document.getElementById('f-dm').addEventListener('change',e=>{state.dm=e.target.value;for(const k in shownN)delete shownN[k];render();});
 
 // ---- Analytics charts ----
