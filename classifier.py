@@ -234,6 +234,46 @@ _PITUITARY_SUBTOPICS = (
 )
 
 
+_ADRENAL_SUBTOPICS = (
+    ("CAH", ("congenital adrenal hyperplasia", "21-hydroxylase", "11-beta-hydroxylase", "11β-hydroxylase",
+             "17-hydroxyprogesterone", "crinecerfont", "(cah)", " cah ", " cah.", " cah:", " cah,",
+             "lipoid cah", "classic cah", "salt-wasting")),
+    ("Adrenal tumors & Cushing", ("cushing", "hypercortisolism", "adrenocortical", "pheochromocytoma",
+                                  "phaeochromocytoma", "paraganglioma", "adrenal tumor", "adrenal tumour",
+                                  "adrenal mass", "incidentaloma", "mitotane")),
+    ("Adrenal insufficiency", ("adrenal insufficiency", "addison", "adrenal crisis", "adrenoleukodystrophy",
+                               "glucocorticoid deficiency", "hydrocortisone replacement", "stress dos",
+                               "stress-dose", "acth stimulation", "cosyntropin", "synacthen")),
+    ("Mineralocorticoid & aldosterone", ("aldosterone", "aldosteronism", "mineralocorticoid excess",
+                                         "pseudohypoaldosteronism", "hypoaldosteronism", "renin",
+                                         "apparent mineralocorticoid")),
+)
+_THYROID_SUBTOPICS = (
+    ("Nodules & cancer", ("thyroid nodule", "nodules", "thyroid cancer", "thyroid carcinoma", "papillary",
+                          "medullary", "follicular carcinoma", "differentiated thyroid", "ti-rads",
+                          "fine-needle", "fine needle")),
+    ("Congenital hypothyroidism", ("congenital hypothyroidism", "newborn screening", "neonatal screening",
+                                   "thyroid dysgenesis", "dyshormonogenesis", "neonatal tsh")),
+    ("Hyperthyroidism & Graves", ("graves", "hyperthyroid", "thyrotoxicosis", "antithyroid", "methimazole",
+                                  "carbimazole", "propylthiouracil", "trab", "tsh receptor antibod")),
+    ("Autoimmune & acquired hypothyroidism", ("hashimoto", "autoimmune thyroiditis", "thyroiditis",
+                                              "subclinical hypothyroidism", "acquired hypothyroidism",
+                                              "thyroid autoimmunity", "tpo antibod", "anti-tpo")),
+)
+_PUBERTY_SUBTOPICS = (
+    ("Precocious puberty", ("precocious", "early puberty", "gnrh agonist", "gnrha", "gnrh analog",
+                            "leuprolide", "leuprorelin", "triptorelin", "histrelin", "premature thelarche",
+                            "adrenarche", "early menarche")),
+    ("Delayed puberty & hypogonadism", ("delayed puberty", "constitutional delay", "hypogonadotropic",
+                                        "hypogonadism", "kallmann", "puberty induction", "pubertal induction",
+                                        "klinefelter", "ovarian insufficiency", "testosterone therapy",
+                                        "testosterone replacement")),
+    ("Pubertal timing & physiology", ("pubertal timing", "puberty timing", "timing of puberty", "minipuberty",
+                                      "mini-puberty", "menarche", "pubertal onset", "onset of puberty",
+                                      "pubertal development", "tanner stage", "gonadotropin", "thelarche")),
+)
+
+
 def _score_subtopic(tl, text, table, default="General", minimum=2):
     best, best_score = default, minimum - 1
     for name, terms in table:
@@ -250,6 +290,10 @@ def refine_subtopic(topic, subtopic, tl, text):
         return _score_subtopic(tl, text, _GROWTH_SUBTOPICS)
     if topic == "Pituitary" and not subtopic:
         return _score_subtopic(tl, text, _PITUITARY_SUBTOPICS)
+    table = {"Adrenal": _ADRENAL_SUBTOPICS, "Thyroid": _THYROID_SUBTOPICS,
+             "Puberty": _PUBERTY_SUBTOPICS}.get(topic)
+    if table and not subtopic:
+        return _score_subtopic(tl, text, table)
     return subtopic
 
 
