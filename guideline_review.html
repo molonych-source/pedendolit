@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PedsEndoBrief — guideline approvals</title>
+<style>
+:root{
+  --bg:#faf9f5; --surface:#ffffff; --ink:#1f1e1c; --muted:#6b6a64; --line:#e6e4dc; --soft:#f4f2ec;
+  --accent:#0f6e56; --accent-bg:#e1f5ee; --ok:#0f6e56; --mid:#b8791f; --no:#9a5c4a;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#1a1916; --surface:#26241f; --ink:#ece9e1; --muted:#a3a098; --line:#3a382f; --soft:#2c2a25;
+         --accent:#5dcaa5; --accent-bg:#0f3a30; --ok:#5dcaa5; --mid:#e0b060; --no:#f0997b;}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.5;font-size:15px}
+.wrap{max-width:1100px;margin:0 auto;padding:28px 20px 120px}
+h1{font-size:24px;margin:0 0 4px}
+.sub{color:var(--muted);font-size:14px;margin-bottom:22px}
+.sec{margin:26px 0 10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.sec h2{font-size:16px;margin:0}
+.count{color:var(--muted);font-size:13px}
+.mini{background:none;border:0;padding:0;color:var(--muted);font-size:12px;text-decoration:underline;cursor:pointer}
+.mini:hover{color:var(--ink)}
+.card{background:var(--surface);border:0.5px solid var(--line);border-radius:10px;
+  padding:13px 15px;margin-bottom:9px;display:flex;gap:12px;align-items:flex-start}
+.card.on{border-color:var(--accent);background:var(--accent-bg)}
+.card input[type=checkbox]{margin-top:3px;width:17px;height:17px;flex:none;cursor:pointer;accent-color:var(--accent)}
+.body{min-width:0;flex:1}
+.title{font-weight:600;margin-bottom:3px}
+.title a{color:inherit;text-decoration:none}
+.title a:hover{text-decoration:underline}
+.meta{color:var(--muted);font-size:12.5px;margin-bottom:7px}
+.reason{font-size:13.5px;padding:7px 10px;border-left:2.5px solid var(--line);background:var(--soft);border-radius:0 6px 6px 0}
+.reason .who{font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);display:block;margin-bottom:2px}
+.ev{font-size:12px;color:var(--muted);margin-top:6px}
+.ev code{background:var(--soft);border-radius:4px;padding:1px 5px;font-size:11.5px}
+.badge{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:2px 8px;
+  border-radius:20px;border:1px solid currentColor;white-space:nowrap}
+.badge.ok{color:var(--ok)} .badge.mid{color:var(--mid)} .badge.no{color:var(--no)}
+details.abs{margin-top:7px}
+details.abs summary{cursor:pointer;font-size:12.5px;color:var(--muted)}
+details.abs p{font-size:13.5px;margin:7px 0 0;color:var(--ink)}
+details.grp>summary{cursor:pointer;color:var(--muted);font-size:13px;margin-bottom:10px}
+.bar{position:fixed;left:0;right:0;bottom:0;background:var(--surface);border-top:0.5px solid var(--line);
+  padding:13px 20px;display:flex;align-items:center;gap:14px;justify-content:center;flex-wrap:wrap}
+.bar b{font-size:15px}
+button.go{background:var(--accent);color:#fff;border:0;border-radius:8px;padding:10px 22px;
+  font:inherit;font-size:15px;font-weight:600;cursor:pointer}
+button.go:hover{opacity:.92}
+button.alt{background:var(--surface);color:var(--ink);border:0.5px solid var(--line);
+  border-radius:8px;padding:10px 16px;font:inherit;cursor:pointer}
+.done{color:var(--accent);font-size:13.5px}
+</style></head><body>
+<div class="wrap">
+  <h1>Guideline candidates for approval</h1>
+  <div class="sub">0 guidelines found outside the 19 monitored journals.
+  A review agent judged each one against the digest's scope; its reasoning is shown below.
+  Tick what belongs, then Submit — that downloads <code>approved_pmids.json</code>. Built 2026-10-13.</div>
+  <form id="f">
+    
+    
+    
+  </form>
+</div>
+<div class="bar">
+  <b><span id="n">0</span> selected</b>
+  <button type="button" class="go" id="submit">Submit approvals</button>
+  <button type="button" class="alt" id="copy">Copy PMIDs</button>
+  <span class="done" id="msg"></span>
+</div>
+<script>
+const f=document.getElementById('f'), n=document.getElementById('n'), msg=document.getElementById('msg');
+const boxes=()=>[...f.querySelectorAll('input[type=checkbox]')];
+const picked=()=>boxes().filter(b=>b.checked).map(b=>b.value);
+function sync(){
+  n.textContent=picked().length;
+  boxes().forEach(b=>b.closest('.card').classList.toggle('on',b.checked));
+}
+f.addEventListener('change',sync);
+// select all / none act on the section the button sits in
+document.querySelectorAll('[data-all],[data-none]').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const on=btn.hasAttribute('data-all');
+    let el=btn.closest('.sec').nextElementSibling, hit=[];
+    while(el && !el.classList.contains('sec')){
+      hit.push(...el.querySelectorAll('input[type=checkbox]'));
+      if(el.matches('input,label')&&el.querySelector) hit.push(...el.querySelectorAll('input'));
+      el=el.nextElementSibling;
+    }
+    hit.forEach(b=>b.checked=on); sync();
+  });
+});
+document.getElementById('submit').addEventListener('click',()=>{
+  const approved=picked();
+  const rejected=boxes().filter(b=>!b.checked).map(b=>b.value);
+  const blob=new Blob([JSON.stringify({approved,rejected,
+      reviewed_at:new Date().toISOString()},null,1)],{type:'application/json'});
+  const u=URL.createObjectURL(blob), a=document.createElement('a');
+  a.href=u; a.download='approved_pmids.json'; a.click(); URL.revokeObjectURL(u);
+  msg.textContent='Downloaded approved_pmids.json ('+approved.length+' approved) — tell Claude it is ready.';
+});
+document.getElementById('copy').addEventListener('click',async()=>{
+  try{ await navigator.clipboard.writeText(picked().join(' ')); msg.textContent='PMIDs copied.'; }
+  catch(e){ msg.textContent='Could not copy — use Submit instead.'; }
+});
+sync();
+</script></body></html>
