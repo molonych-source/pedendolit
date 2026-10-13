@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-11T08:06:23",
+ "generated": "2026-10-13T18:24:55",
  "review_period": "October 2026",
  "articles": [
   {
@@ -114597,7 +114597,7 @@
    "impact_rationale": "Observational/Cohort on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -114655,7 +114655,7 @@
    "impact_rationale": "Observational/Cohort on Bone/Mineral. Background reading for clinical awareness.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -114707,7 +114707,7 @@
    "impact_rationale": "Observational/Cohort on Growth. Background reading for clinical awareness.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -114759,7 +114759,7 @@
    "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -114818,7 +114818,7 @@
    "impact_rationale": "Observational study on Diabetes. Cohort size n = 662. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -114881,7 +114881,7 @@
    "impact_rationale": "Observational study on Pituitary. Cohort size n = 254. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -114951,7 +114951,7 @@
    "impact_rationale": "Observational study on Adrenal. Cohort size n = 119. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -115012,7 +115012,7 @@
    "impact_rationale": "Observational study on Cancer Late Effects. Cohort size n = 820. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -115082,7 +115082,7 @@
    "impact_rationale": "Observational study on Pituitary. Cohort size n = 18. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -115145,7 +115145,7 @@
    "impact_rationale": "Observational/Cohort on Growth. Background reading for clinical awareness.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -115209,7 +115209,7 @@
    "impact_rationale": "Other on Adrenal. Background reading for clinical awareness.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -115269,7 +115269,7 @@
    "impact_rationale": "Observational/Cohort on Thyroid. Background reading for clinical awareness.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -115331,7 +115331,7 @@
    "impact_rationale": "Other on Thyroid. Background reading for clinical awareness.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -115392,7 +115392,7 @@
    "impact_rationale": "Official guideline or consensus statement. Directly informs clinical protocols and management standards.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -115451,7 +115451,7 @@
    "impact_rationale": "Cross-Sectional on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -115511,7 +115511,7 @@
    "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -115574,7 +115574,7 @@
    "impact_rationale": "Prospective Study on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -115637,7 +115637,7 @@
    "impact_rationale": "Survey/Questionnaire on DSD. Background reading for clinical awareness.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -115696,7 +115696,7 @@
    "impact_rationale": "Other on Growth. Background reading for clinical awareness.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -115795,7 +115795,7 @@
    "impact_rationale": "Other on Diabetes. Background reading for clinical awareness.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -115860,7 +115860,7 @@
    "impact_rationale": "Observational study on Growth. Cohort size n = 212. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -115928,7 +115928,7 @@
    "impact_rationale": "Observational study on Thyroid. Cohort size n not reported. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -115989,7 +115989,7 @@
    "impact_rationale": "Review on Growth. Background reading for clinical awareness.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -116048,7 +116048,7 @@
    "impact_rationale": "Small case series. Hypothesis-generating but lacks the power to guide practice changes in Diabetes.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -116105,7 +116105,7 @@
    "impact_rationale": "Review on Thyroid. Background reading for clinical awareness.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -116153,7 +116153,7 @@
    "impact_rationale": "Expert letter or commentary. No new primary data; provides perspective on General Endocrinology but does not independently change practice.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -116213,7 +116213,7 @@
    "impact_rationale": "Small case series. Hypothesis-generating but lacks the power to guide practice changes in Adrenal.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -116270,7 +116270,7 @@
    "impact_rationale": "Real-world evidence study (n = 1699) on Diabetes. Reflects clinical practice conditions; no randomization.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -116324,7 +116324,7 @@
    "impact_rationale": "Observational study on Bone/Mineral. Cohort size n = 139. Clinically informative but limited by non-randomized design.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -116381,7 +116381,7 @@
    "impact_rationale": "Other on Adrenal. Background reading for clinical awareness.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
-   "is_new": true,
+   "is_new": false,
    "is_archived": false
   },
   {
@@ -116441,9 +116441,722 @@
    "impact_rationale": "Observational/Cohort on Growth. Background reading for clinical awareness.",
    "review_date": "2026-10-11",
    "review_period": "October 2026",
+   "is_new": false,
+   "is_archived": false
+  },
+  {
+   "pmid": "42857337",
+   "title": "Correlation between the thyrotropin-thyroxine resistance index and insulin resistance in polycystic ovary syndrome patients with phlegm-dampness syndrome.",
+   "abstract": "Polycystic ovary syndrome (PCOS) patients classified as the phlegm-dampness syndrome typically suffer from metabolic dysfunction mainly driven by insulin resistance (IR). Indices evaluating thyroid hormone responsiveness have emerged as promising biomarkers for metabolic disease research. However, limited research has investigated the thyrotropin-thyroxine resistance index (TT4RI), a marker quantifying central pituitary thyroid sensitivity, in this distinct PCOS subgroup. This study aimed to explore the association between TT4RI and IR in PCOS patients with phlegm-dampness syndrome.\n\nWe enrolled 486 PCOS patients with complete baseline data in the present study. Among them, 264 patients were diagnosed with PCOS accompanied by phlegm-dampness syndrome. The 264 patients were further subdivided into two subgroups: with IR (n=208) and without IR (n=56), and clinical indicators were compared between the two subgroups. We evenly stratified the 264 phlegm-dampness syndrome PCOS patients into three groups to perform intergroup comparisons. Spearman's correlation and multivariate linear regression analyses were used to investigate the association. ROC curves were also employed to compare the discriminatory performance of TT4RI, thyroid-stimulating hormone index(TSHI), and FT3/FT4 in identifying insulin resistance in these patients(n=264). The sole primary outcome of this study was HOMA-IR.\n\nRelative to the subgroup without IR (n=56), the subgroup with IR (n=208) patients displayed significantly higher blood pressure, obesity-related anthropometric values, triglycerides (TG), fasting plasma glucose (FPG), fasting insulin (FINS), homeostasis model assessment of insulin resistance (HOMA-IR),free triiodothyronine (FT3), thyroid-stimulating hormone (TSH) and TT4RI (P<0.05).Patients in the high TT4RI tertile group exhibited a relatively more prominent phenotype of IR. TT4RI exhibited positive correlations with weight, body mass index (BMI), FPG, FINS, HOMA-IR, free thyroxine (FT4), and TSH (P<0.05).In the multiple linear regression model, after adjusting for age, BMI, systolic blood pressure(SBP) and SHBG, only a marginally significant association was observed between HTT4RI group and IR. ROC analysis indicates that TT4RI exhibits limited discriminatory performance for identifying IR among PCOS patients with phlegm-dampness syndrome.\n\nAmong phlegm-dampness syndrome PCOS women, diminished central pituitary thyroid hormone sensitivity is associated with increased insulin resistance. Further prospective research is needed to confirm these findings and explore clinical relevance.",
+   "journal": "Frontiers in endocrinology",
+   "journal_abbr": "Front Endocrinol (Lausanne)",
+   "authors": [
+    "Liu Y",
+    "Zhang M",
+    "Wang Y",
+    "Lv X",
+    "Ma S",
+    "Yu J",
+    "Kuang H",
+    "Hou L",
+    "Song Q"
+   ],
+   "doi": "10.3389/fendo.2026.1940904",
+   "pub_date": "2026-10-08",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [
+    "Humans",
+    "Female",
+    "Polycystic Ovary Syndrome",
+    "Insulin Resistance",
+    "Thyrotropin",
+    "Thyroxine",
+    "Adult",
+    "Biomarkers",
+    "Young Adult"
+   ],
+   "keywords": [
+    "TT4RI",
+    "correlation analysis",
+    "insulin resistance",
+    "metabolic disorders",
+    "phlegm-dampness syndrome",
+    "polycystic ovary syndrome",
+    "subclinical hypothyroidism",
+    "thyroid hormone sensitivity"
+   ],
+   "volume": "17",
+   "issue": "",
+   "pages": "1940904",
+   "pmc": "PMC13650464",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42857337/",
+   "doi_url": "https://doi.org/10.3389/fendo.2026.1940904",
+   "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13650464/",
+   "excluded": false,
+   "topic": "PCOS",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Prospective Study",
+   "ev_level": 3,
+   "impact": "MODERATE",
+   "age_range": [
+    "Adult"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 208,
+   "tags": [
+    "#PCOS",
+    "#Obesity"
+   ],
+   "access": "Open",
+   "clinical_bottom_line": "Among phlegm-dampness syndrome PCOS women, diminished central pituitary thyroid hormone sensitivity is associated with increased insulin resistance. Further prospective research is needed to confirm these findings and explore clinical relevance.",
+   "impact_rationale": "Observational study on PCOS. Cohort size n = 208. Clinically informative but limited by non-randomized design.",
+   "review_date": "2026-10-13",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42859385",
+   "title": "Serum FGF-21 levels and stature in children and adolescents with celiac disease on a gluten-free diet.",
+   "abstract": "To evaluate stature in patients with celiac disease (CD) adherent to a gluten-free diet (GFD), determine the prevalence of growth hormone deficiency (GHD), and assess the associations between stature and serum insulin-like growth factor-1 (IGF-1), insulin-like growth factor-binding protein 3 (IGFBP-3), and FGF 21 levels.\n\nIn this prospective cross-sectional study, 141 pediatric patients with CD (79 females) who had adhered to a GFD for at least 2 years were included. Anthropometric and clinical data were obtained from medical records. Serum IGF-1, IGFBP-3, and FGF21 levels were measured in fasting samples. Growth hormone stimulation tests (L-dopa and clonidine) were performed in patients with a height >1.5 SDS below target height (TH).\n\nTwelve patients (8.5 %) had persistent short stature despite long-term adherence to a GFD. Growth hormone deficiency was diagnosed in three patients (2.1 % of the entire cohort; 25 % of patients with persistent short stature). Patients with persistent short stature without GHD had significantly lower serum IGF-1 and IGFBP-3 standard deviation scores than those with normal stature, whereas serum FGF21 concentrations did not differ significantly between the groups. Serum FGF21 concentrations were not significantly correlated with height SDS, IGF-1, IGFBP-3, or other anthropometric variables.\n\nPersistent short stature may occur despite long-term adherence to a GFD in a small proportion of children and adolescents with CD. GHD was identified in 2.1 % of patients, emphasizing the importance of growth monitoring. Lower IGF-1 and IGFBP-3 SDS in patients with persistent short stature without GHD suggest alterations within the GH-IGF axis. Serum FGF21 concentrations were not associated with stature, suggesting that persistent growth impairment in treated CD is likely multifactorial and is not explained by circulating FGF21 alone.",
+   "journal": "Journal of pediatric endocrinology & metabolism : JPEM",
+   "journal_abbr": "J Pediatr Endocrinol Metab",
+   "authors": [
+    "Kaya F",
+    "Urgancı N",
+    "Uçar A",
+    "Akbay ÖP",
+    "Usta AM",
+    "Celik S",
+    "Kasım MS"
+   ],
+   "doi": "10.1515/jpem-2026-0244",
+   "pub_date": "2026-10-12",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "IGF-1",
+    "celiac disease",
+    "fibroblast growth factor 21",
+    "gluten-free diet adherence",
+    "growth hormone deficiency",
+    "stature"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42859385/",
+   "doi_url": "https://doi.org/10.1515/jpem-2026-0244",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Growth",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "LOW",
+   "age_range": [
+    "Child",
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Growth"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Lower IGF-1 and IGFBP-3 SDS in patients with persistent short stature without GHD suggest alterations within the GH-IGF axis. Serum FGF21 concentrations were not associated with stature, suggesting that persistent growth impairment in treated CD is likely multifactorial and is not explained by circulating FGF21 alone.",
+   "impact_rationale": "Observational/Cohort on Growth. Background reading for clinical awareness.",
+   "review_date": "2026-10-13",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42859396",
+   "title": "Rapid decline in smart insulin pen decision-support use in youth with type 1 diabetes: a randomized crossover pilot trial.",
+   "abstract": "[Abstract not available]",
+   "journal": "Journal of pediatric endocrinology & metabolism : JPEM",
+   "journal_abbr": "J Pediatr Endocrinol Metab",
+   "authors": [
+    "Murphy S",
+    "Kumar S",
+    "Al Nofal A",
+    "Hentz R",
+    "Pittock ST",
+    "Creo AL"
+   ],
+   "doi": "10.1515/jpem-2026-0532",
+   "pub_date": "2026-10-12",
+   "pub_types": [
+    "Letter"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "adolescents",
+    "diabetes distress",
+    "smart insulin pen"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42859396/",
+   "doi_url": "https://doi.org/10.1515/jpem-2026-0532",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "General",
+   "diabetes_subtype": "T1D",
+   "study_type": "RCT",
+   "ev_level": 2,
+   "impact": "HIGH",
+   "age_range": [
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes",
+    "#RCT"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "[Abstract not available]",
+   "impact_rationale": "Randomized controlled trial (n not reported). Level II evidence with direct applicability to clinical decision-making.",
+   "review_date": "2026-10-13",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42860242",
+   "title": "Somatrogon versus somatropin in children with growth hormone deficiency: a real-world matched-cohort study.",
+   "abstract": "Somatrogon is a once-weekly growth hormone (GH) analog approved for GH deficiency (GHD), but real-world head-to-head data are limited. Using a matched-cohort design with a protocol-defined IGF-1 sampling time, we compared first-year growth outcomes and safety of somatrogon and daily somatropin in children with GHD.\n\nWe conducted a retrospective matched-cohort study in 30 children with GHD (15 per group) at a single center. Groups were matched by age (±1 year), sex, and pubertal stage. Annual height velocity (AHV), height standard deviation score (SDS) gain, insulin-like growth factor 1 (IGF-1) SDS, insulin-like growth factor binding protein 3 (IGFBP-3), bone age advancement, and metabolic parameters were assessed at 12 months.\n\nAHV was similar in both groups (8.96±1.67 vs 8.84±1.57 cm/year; p=0.841). Height SDS gain did not differ (0.60±0.36 vs 0.53±0.33; p=0.569). IGF-1 SDS was numerically higher in the somatrogon group (+0.59 vs -0.14; p=0.132) but remained within safe limits in all patients. Bone age advancement, glucose, and insulin levels were similar between groups. No adverse events or injection-site reactions were documented during follow-up.\n\nIn this matched cohort, no significant differences in growth or safety outcomes were observed between somatrogon and somatropin at one year. Somatrogon appears to be a reasonable alternative to daily GH therapy in children with GHD.",
+   "journal": "Annals of pediatric endocrinology & metabolism",
+   "journal_abbr": "Ann Pediatr Endocrinol Metab",
+   "authors": [
+    "Orman B",
+    "Kücükali GK",
+    "Keskin M",
+    "Erdeve ŞS"
+   ],
+   "doi": "10.6065/apem.2652382.191",
+   "pub_date": "2026-10-11",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "Growth hormone deficiency",
+    "Somatrogon",
+    "Somatropin"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42860242/",
+   "doi_url": "https://doi.org/10.6065/apem.2652382.191",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Growth",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "LOW",
+   "age_range": [
+    "Child",
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 30,
+   "tags": [
+    "#Growth"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "In this matched cohort, no significant differences in growth or safety outcomes were observed between somatrogon and somatropin at one year. Somatrogon appears to be a reasonable alternative to daily GH therapy in children with GHD.",
+   "impact_rationale": "Observational/Cohort on Growth. Background reading for clinical awareness.",
+   "review_date": "2026-10-13",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42860641",
+   "title": "Cortisol Cutoffs for Adrenal Insufficiency Using Elecsys II: A Systematic Review.",
+   "abstract": "Adrenal insufficiency (AI) is associated with increased risk of morbidity and mortality if improperly managed. Adrenocorticotrophin (ACTH) stimulation testing is the most widely used AI diagnostic test. Historically, a serum cortisol threshold of 500 nmol/L (18.1 µg/dL), derived using polyclonal assays, was widely used. Improved monoclonal immunoassays show reduced cross-reactivity and lower cortisol values, but no universally accepted ACTH-stimulated cortisol threshold exists. Suggestions ranging between 348 and 485 nmol/L [12.6-17.6 µg/dL] reflect methodology and cohort differences. Our objective was to systematically review the literature and recommend a revised cortisol threshold.\n\nWe searched MEDLINE, Web of Science, and Google Scholar for English language studies published between January 2016 and 19 September 2023 (PROSPERO CRD42023479405). Eligible studies reported original data, used the Roche Elecsys II assay, and recommended a cortisol threshold. Quality of evidence was assessed using the GRADE framework, and risk of bias with the ArRoWS questionnaire. Multiple suggested thresholds based on ROC, sensitivity/specificity, or regression analysis were identified.\n\nSix studies involving 1799 samples from 430 adult and paediatric patients were included. A serum cortisol cutoff of 405 nmol/L (14.7 µg/dL) was defined based on synthesis, sensitivity analysis, and a conservative approach to reduce false‑negatives.\n\nWe affirm recommendations to lower the cortisol threshold for AI when using monoclonal assays. A peak threshold of 405 nmol/L (14.7 µg/dL) is suggested for a standard-dose ACTH test on the Elecsys II assay for diagnosis of AI, acknowledging limitations related to the small number and GRADE quality of included studies.",
+   "journal": "Clinical endocrinology",
+   "journal_abbr": "Clin Endocrinol (Oxf)",
+   "authors": [
+    "Haunton S",
+    "Leppinen N",
+    "MacDonald H",
+    "Tobin RA",
+    "Rooman R",
+    "Ward LM",
+    "Ahmet A",
+    "Dang UJ"
+   ],
+   "doi": "10.1111/cen.70218",
+   "pub_date": "2026-10-11",
+   "pub_types": [
+    "Journal Article",
+    "Review"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "ACTH",
+    "adrenal insufficiency",
+    "cortisol",
+    "diagnostic tests",
+    "immunoassay",
+    "reference values",
+    "sensitivity and specificity"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42860641/",
+   "doi_url": "https://doi.org/10.1111/cen.70218",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Adrenal",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Systematic Review",
+   "ev_level": 1,
+   "impact": "HIGH",
+   "age_range": [
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 1,
+   "sample_n": null,
+   "tags": [
+    "#Adrenal",
+    "#BoardRelevant",
+    "#SystematicReview"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "We affirm recommendations to lower the cortisol threshold for AI when using monoclonal assays. A peak threshold of 405 nmol/L (14.7 µg/dL) is suggested for a standard-dose ACTH test on the Elecsys II assay for diagnosis of AI, acknowledging limitations related to the small number and GRADE quality of included studies.",
+   "impact_rationale": "Systematic review of Adrenal evidence. Level I synthesis; strongest available summary short of a guideline.",
+   "review_date": "2026-10-13",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42861846",
+   "title": "Beyond the Enzyme: Toward Integrated Design of Clinically Reliable Continuous Glucose Sensor.",
+   "abstract": "[Abstract not available]",
+   "journal": "Journal of diabetes science and technology",
+   "journal_abbr": "J Diabetes Sci Technol",
+   "authors": [
+    "Lorenzo AM",
+    "Lumibao CM",
+    "Alejo W",
+    "Ariola R",
+    "Briones JJ"
+   ],
+   "doi": "10.1177/19322968261496305",
+   "pub_date": "2026-10-12",
+   "pub_types": [
+    "Letter"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "continuous glucose monitoring",
+    "direct electron transfer",
+    "glucose biosensors",
+    "glucose oxidoreductases",
+    "sensor integration"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "19322968261496305",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42861846/",
+   "doi_url": "https://doi.org/10.1177/19322968261496305",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "General Endocrinology",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Letter/Correspondence",
+   "ev_level": 6,
+   "impact": "LOW",
+   "age_range": [
+    "Adult"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#GeneralEndo"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "[Abstract not available]",
+   "impact_rationale": "Expert letter or commentary. No new primary data; provides perspective on General Endocrinology but does not independently change practice.",
+   "review_date": "2026-10-13",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42861851",
+   "title": "Association of HbA1c with Time in Range, Time in Tight Range, Empirically Derived Continuous Glucose Monitoring Glucose Ranges, and Mean Glucose.",
+   "abstract": "To evaluate how continuous glucose monitoring (CGM) glucose thresholds, sampling duration, and statistical modeling influence associations between CGM-derived range metrics and HbA1c, and to compare empirically derived glucose ranges with time in range (TIR) and time in tight range (TITR).\n\nOut of 8160 HbA1c-matched CGM datasets from 1584 adults, CGM data from the 14, 30, and 90 days preceding each HbA1c measurement were evaluated. Associations between HbA1c and 7790 CGM glucose ranges were assessed across varying lower and upper glucose thresholds. Linear and log-linear mixed-effects models adjusted for age and race with participant-level random intercepts were compared using root mean square error and marginal. Participant-level derivation (80%) and validation (20%) cohorts were used for cross-validated threshold selection and discrimination analyses for HbA1c ≤7.0%.\n\nNinety-day CGM sampling showed the strongest associations with HbA1c. Log-linear models frequently provided comparable or improved fit, particularly for glucose ranges with upper thresholds below 180 mg/dL. Stronger HbA1c associations clustered around upper glucose thresholds of 155-175 mg/dL. In validation analyses, empirically derived ranges demonstrated strong discrimination of HbA1c ≤7.0% (area under the receiver operating characteristic curve [AUC] 0.909-0.915), compared with 0.903 for TIR and 0.905 for TITR, although absolute differences were small. Mean glucose demonstrated the strongest explanatory performance for continuous HbA1c (marginal= 0.74) and similarly strong discrimination (AUC 0.913).\n\nCGM-HbA1c relationships are influenced by glucose range, sampling duration, and statistical modeling. Our findings reinforce TIR and TITR as robust CGM metrics with strong associations with HbA1c, while also showing that selected empirically derived glucose ranges can provide modestly stronger statistical alignment. These results support the continued use of TIR and TITR while highlighting how glucose range definition may refine interpretation of CGM-based endpoints in future research.",
+   "journal": "Diabetes technology & therapeutics",
+   "journal_abbr": "Diabetes Technol Ther",
+   "authors": [
+    "Akturk HK",
+    "Karakus KE",
+    "Mason E",
+    "Yilmaz ZY",
+    "Garg SK",
+    "Cengiz D"
+   ],
+   "doi": "10.1177/15209156261496613",
+   "pub_date": "2026-10-12",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "HbA1c",
+    "continuous glucose monitoring",
+    "glycemic metrics",
+    "time in range",
+    "time in tight range",
+    "type 1 diabetes"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "15209156261496613",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42861851/",
+   "doi_url": "https://doi.org/10.1177/15209156261496613",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "Technology",
+   "diabetes_subtype": "General",
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "LOW",
+   "age_range": [
+    "Adult"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes",
+    "#Technology"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Our findings reinforce TIR and TITR as robust CGM metrics with strong associations with HbA1c, while also showing that selected empirically derived glucose ranges can provide modestly stronger statistical alignment. These results support the continued use of TIR and TITR while highlighting how glucose range definition may refine interpretation of CGM-based endpoints in future research.",
+   "impact_rationale": "Observational/Cohort on Diabetes. Background reading for clinical awareness.",
+   "review_date": "2026-10-13",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42861866",
+   "title": "Permanent congenital hypothyroidism withp.Leu187Pro: clinical follow-up data and epigenetic insights.",
+   "abstract": "variants have recently been identified as a novel cause of congenital hypothyroidism (CH), but the clinical spectrum remains incompletely defined. Longitudinal data on methylation dynamics at cg12054698, an open-sea CpG site within the5' untranslated region (5' UTR), and normative methylation levels in euthyroid controls are lacking.\n\nWe identified three unrelated CH probands carrying the heterozygousp.Leu187Pro variant by trio whole-exome sequencing and systematically screened 61 known CH-related genes. Clinical phenotypes and longitudinal outcomes data were collected. For epigenetic analysis, cg12054698 methylation was quantified by pyrosequencing in the three probands, their carrier parents, 30 age-stratified euthyroid controls (newborns, toddlers, and adults), 10 CH patients withoutvariants, and paired longitudinal samples from two probands.\n\nAll three probands presented with moderate-to-severe CH at neonatal diagnosis. Thyroid ultrasonography revealed heterogeneous phenotypes, including a normalgland, thyroid agenesis, and a normal-sized gland with diffuse hypoechogenicity. All three cases were confirmed as permanent CH. In euthyroid controls, cg12054698 methylation was significantly higher in newborns than in toddlers and adults (p<0.001). Neonatal methylation levels did not differ significantly among probands withvariants, CH patients withoutvariants, and euthyroid controls (p=0.260).\n\nIn this cohort,-associated CH was permanent and showed a marked phenotypic heterogeneity. cg12054698 was hypermethylated during the neonatal period across study groups, supporting a developmentally regulated, stage-specific epigenetic pattern rather than a disease-specific pathogenic \"second hit.\"",
+   "journal": "Journal of pediatric endocrinology & metabolism : JPEM",
+   "journal_abbr": "J Pediatr Endocrinol Metab",
+   "authors": [
+    "Cui D",
+    "Liu S",
+    "Chen X",
+    "Zheng Q",
+    "Zhao J",
+    "Wang L"
+   ],
+   "doi": "10.1515/jpem-2026-0478",
+   "pub_date": "2026-10-13",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "GBP1",
+    "DNA methylation",
+    "congenital hypothyroidism",
+    "epigenetic regulation",
+    "genotype–phenotype correlation"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42861866/",
+   "doi_url": "https://doi.org/10.1515/jpem-2026-0478",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Thyroid",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "LOW",
+   "age_range": [
+    "Neonatal",
+    "Infant"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Thyroid"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "In this cohort,-associated CH was permanent and showed a marked phenotypic heterogeneity. cg12054698 was hypermethylated during the neonatal period across study groups, supporting a developmentally regulated, stage-specific epigenetic pattern rather than a disease-specific pathogenic \"second hit.\"",
+   "impact_rationale": "Observational/Cohort on Thyroid. Background reading for clinical awareness.",
+   "review_date": "2026-10-13",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42862792",
+   "title": "Weight Maintenance Following Discontinuation of Semaglutide in an Adolescent with Antipsychotic-Associated Weight Gain: A Case Report.",
+   "abstract": "Antipsychotic-induced weight gain (AIWG) presents a significant clinical challenge in pediatric psychiatry, often leading to Class II or III obesity and metabolic comorbidities. While treatment with metformin is the current standard of care, its efficacy is often modest. Preclinical and translational data suggest that, by targeting the underlying cause of AIWG, GLP-1Ras may help restore satiety signaling that is disrupted in patients taking antipsychotics.\n\nWe describe an adolescent who experienced profound weight gain following aripiprazole treatment which was successfully managed with semaglutide. Notably, after achieving therapeutic goals of normalization of body mass index (BMI) and hemoglobin A1c, the patient was able to discontinue semaglutide while maintaining her weight loss and normalization of hemoglobin A1c over six months of follow-up.\n\nThis single case raises the hypothesis that GLP-1RAs could serve as a temporary \"bridge therapy\" to counteract iatrogenic metabolic insults; given the confounding factors discussed below, this observation is hypothesis-generating and requires confirmation in larger, prospective studies before broader clinical application.",
+   "journal": "Hormone research in paediatrics",
+   "journal_abbr": "Horm Res Paediatr",
+   "authors": [
+    "Griffing E",
+    "Dabrowski E"
+   ],
+   "doi": "10.1159/hrp/adaag040",
+   "pub_date": "2026-10-12",
+   "pub_types": [
+    "Case Reports",
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [],
+   "volume": "",
+   "issue": "",
+   "pages": "1",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42862792/",
+   "doi_url": "https://doi.org/10.1159/hrp/adaag040",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Obesity/Metabolic",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Prospective Study",
+   "ev_level": 3,
+   "impact": "LOW",
+   "age_range": [
+    "Child",
+    "Adolescent"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Obesity"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Notably, after achieving therapeutic goals of normalization of body mass index (BMI) and hemoglobin A1c, the patient was able to discontinue semaglutide while maintaining her weight loss and normalization of hemoglobin A1c over six months of follow-up. This single case raises the hypothesis that GLP-1RAs could serve as a temporary \"bridge therapy\" to counteract iatrogenic metabolic insults; given the confounding factors discussed below, this observation is hypothesis-generating and requires confirmation in larger, prospective studies before broader clinical application.",
+   "impact_rationale": "Prospective Study on Obesity/Metabolic. Background reading for clinical awareness.",
+   "review_date": "2026-10-13",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42862800",
+   "title": "Thyroid Abnormalities in a Prospective Longitudinal Cohort of Pediatric Patients following SARS-CoV-2 infection.",
+   "abstract": "Introduction Thyroid dysfunction has been reported in adults and children following COVID-19. We evaluated thyroid function in children following SARS-CoV-2 infection compared to uninfected controls over at least one year of follow up. Methods Thyroid function tests (TSH, Free T4) were analyzed in pediatric participants enrolled in the Pediatric SARS CoV-2 Long Term Outcome Study (PECOS), a diverse, prospective, longitudinal, multicenter cohort study. Assessments were conducted at baseline, and at follow-up visits for both infected and uninfected cohorts. Results Among 505 participants with non-missing data at baseline and 12-months, no significant differences were noted in proportion of TSH or Free T4 abnormalities among the infected vs. uninfected participants. Among infected participants 5% (25/464) developed subclinical hypothyroidism (high TSH and normal free T4) following recovery from SARS-CoV-2 infection, compared with 4.9% (2/41), a similar proportion in the uninfected group (p=1). Within the infected subgroup during 36-month follow up, three were treated with levothyroxine for persistent TSH elevation or goiter and 2/3 had positive thyroid antibodies consistent with autoimmune thyroid disease. Neither the number of SARS-CoV-2 reinfections nor number of COVID-19 vaccination status predicted the occurrence of TSH abnormalities. Conclusion Children infected with COVID-19 did not have increased thyroid dysfunction compared to uninfected controls during 12 months of follow up. A small proportion (5%) developed mild subclinical hypothyroidism that was transient in both groups, and only 3 infected participants (with TSH>10mcIU/mL or thyromegaly) needed levothyroxine replacement after 36-month follow up in this subgroup. Risk of thyroid autoimmunity compared to the uninfected population needs further study.",
+   "journal": "Hormone research in paediatrics",
+   "journal_abbr": "Horm Res Paediatr",
+   "authors": [
+    "Kanakatti Shankar R",
+    "Vaidyanathan P",
+    "Montealegre Sanchez G",
+    "Chu E",
+    "Weyers S",
+    "Wolff M",
+    "Bost JE",
+    "Notarangelo LD",
+    "Liang CJ",
+    "DeBiasi R",
+    "Barron K"
+   ],
+   "doi": "10.1159/hrp/adaag041",
+   "pub_date": "2026-10-12",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [],
+   "volume": "",
+   "issue": "",
+   "pages": "1",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42862800/",
+   "doi_url": "https://doi.org/10.1159/hrp/adaag041",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Thyroid",
+   "subtopic": null,
+   "diabetes_subtype": null,
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "MODERATE",
+   "age_range": [
+    "Child"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": 505,
+   "tags": [
+    "#Thyroid"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "A small proportion (5%) developed mild subclinical hypothyroidism that was transient in both groups, and only 3 infected participants (with TSH>10mcIU/mL or thyromegaly) needed levothyroxine replacement after 36-month follow up in this subgroup. Risk of thyroid autoimmunity compared to the uninfected population needs further study.",
+   "impact_rationale": "Observational study on Thyroid. Cohort size n = 505. Clinically informative but limited by non-randomized design.",
+   "review_date": "2026-10-13",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42864817",
+   "title": "Pediatric Inpatient Continuous Glucose Monitoring: Development and Implementation of a Hospital Policy for Accuracy-Validated Insulin Dosing.",
+   "abstract": "We assessed the safety, clinical accuracy, glycemic outcomes, user outcomes, and implementation of a pediatric hospital-wide continuous glucose monitor (CGM) policy.\n\nWe used the Model for Improvement to develop a pediatric hospital policy supporting CGM-based insulin dosing with accuracy validation using capillary finger-stick blood glucose (FSBG) and then retrospectively evaluated the program's clinical effectiveness and implementation outcomes with the Simplified Implementation Logic Model to connect contextual determinants, support strategies, and outcomes.\n\nFrom September 2024 to October 2025, 60 people with diabetes used the CGM policy in 93 hospital encounters, including 46.7% (28/60) people with type 1 diabetes and 38.7% (36/93) encounters with automated insulin delivery use. The most used CGMs were Dexcom G7 (49.5%) and Abbott Libre 3 or 3 Plus (31.2%). Accuracy validation using the %20/20 criteria was successful in 81.5% of attempts, and the mean absolute relative difference was 12.6%, with 1207 paired CGM and reference FSBG values. Nurses responded appropriately after 97.8% (218/223) of failed CGM validation attempts. CGM time in range (70-180 mg/dL) was 54.8%, and time in level 2 hypoglycemia (<54 mg/dL) was 0.8% for the 58 out of 93 encounters with complete CGM data downloads. Nurses preferred using CGM with policy support instead of FSBG for insulin dosing (adjusted= 0.046). Factors contributing to nursing preference included ease of use, system integration, and the ability to learn the system quickly.\n\nWe translated an inpatient CGM policy from an adult to pediatric hospital setting, supporting high levels of protocol adherence, clinical accuracy, safety, and improved experiences for clinicians. Program evaluation informs connections between contextual determinants, support strategies, and outcomes of implementing a hospital CGM program. These data offer a roadmap for implementing pediatric hospital CGM at other centers.",
+   "journal": "Diabetes technology & therapeutics",
+   "journal_abbr": "Diabetes Technol Ther",
+   "authors": [
+    "Lee MY",
+    "Ortega HI",
+    "Chow-Parmer C",
+    "Belanger K",
+    "Jones S",
+    "Ritter V",
+    "Chadwick W",
+    "Lee JJ",
+    "Kingston K",
+    "Suarez C",
+    "McGovern M",
+    "Maahs DM",
+    "Prahalad P",
+    "Shah S",
+    "Lal R",
+    "Hughes MS"
+   ],
+   "doi": "10.1177/15209156261489912",
+   "pub_date": "2026-10-12",
+   "pub_types": [
+    "Journal Article"
+   ],
+   "mesh_terms": [],
+   "keywords": [
+    "CGM",
+    "implementation evaluation",
+    "inpatient",
+    "pediatric diabetes",
+    "policy"
+   ],
+   "volume": "",
+   "issue": "",
+   "pages": "15209156261489912",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42864817/",
+   "doi_url": "https://doi.org/10.1177/15209156261489912",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "Technology",
+   "diabetes_subtype": "T1D",
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "LOW",
+   "age_range": [
+    "Child"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes",
+    "#Technology"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "Program evaluation informs connections between contextual determinants, support strategies, and outcomes of implementing a hospital CGM program. These data offer a roadmap for implementing pediatric hospital CGM at other centers.",
+   "impact_rationale": "Observational/Cohort on Diabetes. Background reading for clinical awareness.",
+   "review_date": "2026-10-13",
+   "review_period": "October 2026",
+   "is_new": true,
+   "is_archived": false
+  },
+  {
+   "pmid": "42864836",
+   "title": "\"Natural History of Mild Non-Proliferative Diabetic Retinopathy in Adults with Type 1 Diabetes Under Contemporary Diabetes Care\".",
+   "abstract": "[Abstract not available]",
+   "journal": "Diabetes technology & therapeutics",
+   "journal_abbr": "Diabetes Technol Ther",
+   "authors": [
+    "Cabading ER",
+    "Alejo MJS"
+   ],
+   "doi": "10.1177/15209156261497212",
+   "pub_date": "2026-10-12",
+   "pub_types": [
+    "Letter"
+   ],
+   "mesh_terms": [],
+   "keywords": [],
+   "volume": "",
+   "issue": "",
+   "pages": "15209156261497212",
+   "pmc": "",
+   "url": "https://pubmed.ncbi.nlm.nih.gov/42864836/",
+   "doi_url": "https://doi.org/10.1177/15209156261497212",
+   "pmc_url": "",
+   "excluded": false,
+   "topic": "Diabetes",
+   "subtopic": "General",
+   "diabetes_subtype": "T1D",
+   "study_type": "Letter/Correspondence",
+   "ev_level": 6,
+   "impact": "LOW",
+   "age_range": [
+    "Adult"
+   ],
+   "society": [],
+   "board_relevant": 0,
+   "sample_n": null,
+   "tags": [
+    "#Diabetes"
+   ],
+   "access": "Subscription",
+   "clinical_bottom_line": "[Abstract not available]",
+   "impact_rationale": "Expert letter or commentary. No new primary data; provides perspective on Diabetes but does not independently change practice.",
+   "review_date": "2026-10-13",
+   "review_period": "October 2026",
    "is_new": true,
    "is_archived": false
   }
  ],
- "last_run_date": "2026-10-11"
+ "last_run_date": "2026-10-13"
 }
