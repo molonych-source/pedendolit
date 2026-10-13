@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Every article carries a real one-or-two-sentence clinical takeaway, so the redesign can promote that field to headline position without exposing abstract fragments.
+**Goal:** Every article carries a real one-or-two-sentence clinical takeaway, so the redesign can show that field beneath each title without exposing abstract fragments. (2026-10-13: the redesign leads with the title rather than the bottom line, so this plan is no longer a blocker.)
 
 **Architecture:** Mirrors the two patterns this repo already uses for corrected data. Generation is done by Sonnet subagents in batches (the pattern from the classifier QA judges); the result is stored in a side file and re-applied on every build by a small function in `build_dataset.py` (the pattern from `pub_dates.json` / `apply_pub_dates()`), so a `--rebuild` cannot silently restore the weak text. `classifier.clinical_bottom_line()` is left untouched — it produces good output on structured abstracts and remains the default.
 

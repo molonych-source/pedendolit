@@ -5,6 +5,16 @@ reviewing the three prototypes in `mockups/`: **topic catch-up as the primary su
 triage queue as the secondary.** Supersedes the open questions in `REDESIGN_BRIEF.md`; that
 document's four measured constraints still apply and are referenced below.
 
+> **Revised 2026-10-13 (built on branch `redesign`):** Christian chose the **article title as the
+> headline**, with the one-sentence bottom line beneath it in smaller type (first sentence only;
+> the rest shows when a row is opened). This supersedes "bottom line as the headline" below,
+> including the card-content table and the blocking-dependency section. Because the title leads,
+> weak bottom lines no longer block the redesign: a row whose bottom line is empty, a
+> placeholder, cut off, a mid-argument fragment, or the abstract's opening words (344 of 1,676 on
+> 2026-10-13, computed by `blInfo()` in the template) simply shows no summary line. Generating
+> real bottom lines is still worth doing, but it is now polish, not a gate. The ASCII wireframes
+> below predate this and show the old layout.
+
 ## The job this page does
 
 The site's primary job is a **weekly keep-up brief**, with a secondary "catch me up on
@@ -63,7 +73,7 @@ LANDING                              AFTER CLICKING "Thyroid"
 ### Topic queue
 
 - Scoped to one topic. Ranked by **impact tier first, then newest**.
-- Each row: **bottom line as the headline** (largest text on the row), title beneath it in
+- Each row: ~~bottom line as the headline~~ **(superseded 2026-10-13: the title is the headline, bottom line beneath)** (largest text on the row), title beneath it in
   smaller type, then journal · date · tier. Save (☆) and mark-read (✓) per row.
   This inverts the current card, where the title dominates and the bottom line — the single
   most valuable field — is hidden behind a click.
@@ -88,7 +98,7 @@ From the 2026-08-05 clinician review (full list in `MEMORY.md` → "Known UI pro
 
 | Problem | Resolution |
 |---|---|
-| Bottom line buried behind a click | Promoted to headline |
+| Bottom line buried behind a click | Shown beneath the title (2026-10-13; originally planned as the headline) |
 | Uniform 13–15px type, nothing to scan by | Real hierarchy: bottom line > title > metadata |
 | Tier badge repeated inside its own tier group | Shown once per group |
 | `Why PRACTICE-ALTERING` byte-identical on all 150 guidelines | Removed — it carries no information |
@@ -99,7 +109,7 @@ From the 2026-08-05 clinician review (full list in `MEMORY.md` → "Known UI pro
 **Keep:** the palette, the tier colours, and the general restraint. The clinician review
 judged these good and they are not in scope to change.
 
-## Blocking dependency: real bottom lines
+## ~~Blocking dependency~~ Real bottom lines (no longer blocking, see the 2026-10-13 note at the top)
 
 Promoting the bottom line to headline position exposes a data problem. **261 of 1,406
 (19%) are not usable takeaways** — measured 2026-08-06 across five rules: 119 placeholder,
