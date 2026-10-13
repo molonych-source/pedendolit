@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13T15:44:49",
+ "generated": "2026-10-13T15:59:28",
  "review_period": "October 2026",
  "articles": [
   {
@@ -11745,7 +11745,7 @@
    "pmc_url": "",
    "excluded": false,
    "topic": "Pituitary",
-   "subtopic": null,
+   "subtopic": "Water balance",
    "diabetes_subtype": null,
    "study_type": "Observational/Cohort",
    "ev_level": 3,
@@ -11758,7 +11758,8 @@
    "board_relevant": 0,
    "sample_n": null,
    "tags": [
-    "#Pituitary"
+    "#Pituitary",
+    "#WaterBalance"
    ],
    "access": "Subscription",
    "clinical_bottom_line": "ROC analysis resulted in a cut-off of 3.0 pmol/L for maximum copeptin (91.7% sensitivity, 94.1% specificity) for the diagnosis of AVD. Our results suggest that insulin-stimulated serum copeptin concentrations are a sensitive and specific diagnostic tool for AVD in paediatric patients, which allows us to test multiple pituitary hormone axes simultaneously in a single test.",
@@ -13788,7 +13789,7 @@
    "approved_guideline": true,
    "excluded": false,
    "topic": "Pituitary",
-   "subtopic": null,
+   "subtopic": "Water balance",
    "diabetes_subtype": null,
    "study_type": "Guideline/Consensus",
    "ev_level": 1,
@@ -13803,6 +13804,7 @@
    "tags": [
     "#Pituitary",
     "#BoardRelevant",
+    "#WaterBalance",
     "#Guidelines"
    ],
    "access": "Subscription",
@@ -40584,7 +40586,7 @@
    "pmc_url": "",
    "excluded": false,
    "topic": "Pituitary",
-   "subtopic": null,
+   "subtopic": "Water balance",
    "diabetes_subtype": null,
    "study_type": "Meta-analysis",
    "ev_level": 1,
@@ -40599,6 +40601,7 @@
    "tags": [
     "#Pituitary",
     "#BoardRelevant",
+    "#WaterBalance",
     "#MetaAnalysis"
    ],
    "access": "Subscription",
@@ -61673,7 +61676,7 @@
    "pmc_url": "",
    "excluded": false,
    "topic": "Pituitary",
-   "subtopic": null,
+   "subtopic": "Water balance",
    "diabetes_subtype": null,
    "study_type": "Letter/Correspondence",
    "ev_level": 6,
@@ -61685,7 +61688,8 @@
    "board_relevant": 0,
    "sample_n": null,
    "tags": [
-    "#Pituitary"
+    "#Pituitary",
+    "#WaterBalance"
    ],
    "access": "Subscription",
    "clinical_bottom_line": "[Abstract not available]",
@@ -74638,7 +74642,7 @@
    "pmc_url": "",
    "excluded": false,
    "topic": "Pituitary",
-   "subtopic": null,
+   "subtopic": "Water balance",
    "diabetes_subtype": null,
    "study_type": "Other",
    "ev_level": 5,
@@ -74650,7 +74654,8 @@
    "board_relevant": 0,
    "sample_n": null,
    "tags": [
-    "#Pituitary"
+    "#Pituitary",
+    "#WaterBalance"
    ],
    "access": "Subscription",
    "clinical_bottom_line": "To our knowledge, this is the first reported case in Türkiye successfully managed with hemin during an acute porphyria-like episode in HT1 and only the second documented case of SIADH in this context. This case underscores the importance of recognizing SIADH and optimizing fluid management in patients with HT1 presenting with acute neurological crises.",
@@ -126345,7 +126350,7 @@
    "doi_url": "https://doi.org/10.3389/fendo.2026.1841630",
    "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13290554/",
    "excluded": false,
-   "topic": "Water/Electrolytes",
+   "topic": "Adrenal",
    "subtopic": null,
    "diabetes_subtype": null,
    "study_type": "Other",
@@ -126360,12 +126365,12 @@
    "board_relevant": 0,
    "sample_n": null,
    "tags": [
-    "#WaterElectrolytes",
+    "#Adrenal",
     "#Genetics"
    ],
    "access": "Open",
    "clinical_bottom_line": "The coexistence of 21-hydroxylase deficiency and GS in a neonate has rarely been reported. These two pathologies determine the opposite values of potassium (hyperkalemia in 21-hydroxylase deficiency and hypokalemia in GS).",
-   "impact_rationale": "Other on Water/Electrolytes. Background reading for clinical awareness.",
+   "impact_rationale": "Other on Adrenal. Background reading for clinical awareness.",
    "review_date": "2026-10-13",
    "review_period": "October 2026",
    "is_new": false,
@@ -127025,7 +127030,7 @@
    "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13303367/",
    "excluded": false,
    "topic": "Pituitary",
-   "subtopic": null,
+   "subtopic": "Water balance",
    "diabetes_subtype": null,
    "study_type": "Other",
    "ev_level": 5,
@@ -127038,7 +127043,8 @@
    "board_relevant": 0,
    "sample_n": null,
    "tags": [
-    "#Pituitary"
+    "#Pituitary",
+    "#WaterBalance"
    ],
    "access": "Open",
    "clinical_bottom_line": "GST is safe and effective at enhancing copeptin secretion in children with intact neurohypophysial function, and further studies are warranted to assess its accuracy in the differential diagnosis of PPS.",
@@ -147038,7 +147044,7 @@
    "pmc_url": "",
    "excluded": false,
    "topic": "Pituitary",
-   "subtopic": null,
+   "subtopic": "Water balance",
    "diabetes_subtype": null,
    "study_type": "Other",
    "ev_level": 5,
@@ -147051,7 +147057,8 @@
    "board_relevant": 0,
    "sample_n": null,
    "tags": [
-    "#Pituitary"
+    "#Pituitary",
+    "#WaterBalance"
    ],
    "access": "Subscription",
    "clinical_bottom_line": "Emerging biomarkers, including neurophysin I and oxytocin, may further refine the assessment of hypothalamic-neurohypophyseal dysfunction but remain investigational in children. Ultimately, AVP-D should be viewed not as the end of the diagnostic process but as its beginning, with clinical assessment, neuroimaging, endocrine evaluation, and structured surveillance integrated to achieve the earliest possible etiological diagnosis.",
@@ -162051,7 +162058,7 @@
    "pmc_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC13635868/",
    "excluded": false,
    "topic": "Pituitary",
-   "subtopic": null,
+   "subtopic": "Water balance",
    "diabetes_subtype": null,
    "study_type": "Observational/Cohort",
    "ev_level": 3,
@@ -162064,6 +162071,7 @@
    "sample_n": 18,
    "tags": [
     "#Pituitary",
+    "#WaterBalance",
     "#Adrenal"
    ],
    "access": "Open",

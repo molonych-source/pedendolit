@@ -1,5 +1,5 @@
 {
- "comment": "PMIDs already ruled on in a classifier QA round. A PMID is re-eligible for sampling once the store's topic for it changes away from topic_at_review \u2014 see classifier_qa_sample.py. residual_accepted (see apply_classifier_qa.py --accept-residual) closes a PMID out of pending_fix without a code change.",
+ "comment": "PMIDs already ruled on in a classifier QA round. A PMID is re-eligible for sampling once the store's topic for it changes away from topic_at_review — see classifier_qa_sample.py. residual_accepted (see apply_classifier_qa.py --accept-residual) closes a PMID out of pending_fix without a code change.",
  "decisions": {
   "30093549": {
    "topic_at_review": "Diabetes",
@@ -169,7 +169,7 @@
    "confidence": "high",
    "decided_on": "2026-08-05",
    "decided_by": "human",
-   "title": "[Automated insulin delivery (AID) systems, physical activity and sports in type 1 diabetes mellitus: joint guidelines of the DDG and \u00d6DG]."
+   "title": "[Automated insulin delivery (AID) systems, physical activity and sports in type 1 diabetes mellitus: joint guidelines of the DDG and ÖDG]."
   },
   "40555215": {
    "topic_at_review": "General Endocrinology",
@@ -179,7 +179,7 @@
    "confidence": "high",
    "decided_on": "2026-08-06",
    "decided_by": "human",
-   "title": "International Consensus Guideline on the Diagnosis and Management of Endocrine Complications of \u03b2 and \u03b1 Thalassemia in Children and Adolescents."
+   "title": "International Consensus Guideline on the Diagnosis and Management of Endocrine Complications of β and α Thalassemia in Children and Adolescents."
   },
   "30084519": {
    "topic_at_review": "Diabetes",
@@ -485,7 +485,7 @@
    "confidence": "high",
    "decided_on": "2026-08-05",
    "decided_by": "human",
-   "title": "Pediatric Endocrine Society Statement on Considerations for Use of Teplizumab (Tzield\u2122) in Clinical Practice."
+   "title": "Pediatric Endocrine Society Statement on Considerations for Use of Teplizumab (Tzield™) in Clinical Practice."
   },
   "30295419": {
    "topic_at_review": "Diabetes",
@@ -1038,7 +1038,7 @@
    "confidence": "medium",
    "decided_on": "2026-08-06",
    "decided_by": "human",
-   "title": "Ovarian Insufficiency in Adolescent Females with Transfusion-Dependent \u03b2-Thalassemia: Pituitary versus Ovarian Iron Overload."
+   "title": "Ovarian Insufficiency in Adolescent Females with Transfusion-Dependent β-Thalassemia: Pituitary versus Ovarian Iron Overload."
   },
   "39270074": {
    "topic_at_review": "Genetics",
@@ -1278,7 +1278,7 @@
    "confidence": "high",
    "decided_on": "2026-08-06",
    "decided_by": "human",
-   "title": "A Novel SRD5A2 Loss-of-Function Variant in a Chinese Child with 5\u03b1-reductase Type 2 Deficiency."
+   "title": "A Novel SRD5A2 Loss-of-Function Variant in a Chinese Child with 5α-reductase Type 2 Deficiency."
   },
   "40064154": {
    "topic_at_review": "Cancer Late Effects",
@@ -1378,7 +1378,7 @@
    "confidence": "high",
    "decided_on": "2026-08-06",
    "decided_by": "human",
-   "title": "ESHRE good practice recommendations on fertility preservation involving testicular tissue cryopreservation in children receiving gonadotoxic therapies\u2020."
+   "title": "ESHRE good practice recommendations on fertility preservation involving testicular tissue cryopreservation in children receiving gonadotoxic therapies†."
   },
   "40578837": {
    "topic_at_review": "PCOS",
@@ -1468,7 +1468,7 @@
    "confidence": "high",
    "decided_on": "2026-08-06",
    "decided_by": "human",
-   "title": "Real-World Experience from T\u00fcrkiye: Genetic and Therapeutic Insights in Pediatric Heterozygous Familial Hypercholesterolemia."
+   "title": "Real-World Experience from Türkiye: Genetic and Therapeutic Insights in Pediatric Heterozygous Familial Hypercholesterolemia."
   },
   "40922648": {
    "topic_at_review": "Diabetes",
@@ -1598,7 +1598,7 @@
    "confidence": "high",
    "decided_on": "2026-08-06",
    "decided_by": "human",
-   "title": "Positive neonatal screening test for congenital adrenal hyperplasia in a case with 3\u03b2-hydroxysteroid dehydrogenase type 2 deficiency."
+   "title": "Positive neonatal screening test for congenital adrenal hyperplasia in a case with 3β-hydroxysteroid dehydrogenase type 2 deficiency."
   },
   "41134091": {
    "topic_at_review": "Adrenal",
@@ -1608,7 +1608,7 @@
    "confidence": "high",
    "decided_on": "2026-08-06",
    "decided_by": "human",
-   "title": "Challenges in Sex Assignment in 46,XX Congenital Adrenal Hyperplasia due to 21-hydroxylase Deficiency and 11\u03b2-hydroxylase Deficiency in Developing Countries: In"
+   "title": "Challenges in Sex Assignment in 46,XX Congenital Adrenal Hyperplasia due to 21-hydroxylase Deficiency and 11β-hydroxylase Deficiency in Developing Countries: In"
   },
   "41137448": {
    "topic_at_review": "Bone/Mineral",
@@ -2258,7 +2258,7 @@
    "confidence": "high",
    "decided_on": "2026-08-06",
    "decided_by": "human",
-   "title": "Rare phenotypic spectrum of 17\u03b2-hydroxysteroid dehydrogenase 3 deficiency: case series from infancy to adolescence."
+   "title": "Rare phenotypic spectrum of 17β-hydroxysteroid dehydrogenase 3 deficiency: case series from infancy to adolescence."
   },
   "41585787": {
    "topic_at_review": "Obesity/Metabolic",
@@ -4204,7 +4204,7 @@
    "confidence": "low",
    "decided_on": "2026-08-06",
    "decided_by": "human",
-   "title": "Maternal \u03b2-hCG and neonatal hormone profiles as predictors of anogenital distance: assessing the fetal reproductive axis."
+   "title": "Maternal β-hCG and neonatal hormone profiles as predictors of anogenital distance: assessing the fetal reproductive axis."
   },
   "42138266": {
    "topic_at_review": "General Endocrinology",
@@ -4294,7 +4294,7 @@
    "confidence": "high",
    "decided_on": "2026-08-06",
    "decided_by": "human",
-   "title": "Glycemic Concordance of Simplera Sync\u2122 and Instinct\u2122 Sensors in MiniMed\u2122 780G System Users: A Randomized Crossover Feasibility Study."
+   "title": "Glycemic Concordance of Simplera Sync™ and Instinct™ Sensors in MiniMed™ 780G System Users: A Randomized Crossover Feasibility Study."
   },
   "42171631": {
    "topic_at_review": "General Endocrinology",
@@ -4980,6 +4980,17 @@
    "residual_accepted": true,
    "residual_reason": "Hepatic fuel-metabolism review; classified Growth on a single abstract mention of 'growth hormone'. The general fix (a title-or-twice guard on branch 13) was measured and rejected: 1 fix for 1 regression, and it pushed a stress/bone-health paper to Adrenal.",
    "residual_decided_on": "2026-08-06"
+  },
+  "42358677": {
+   "topic_at_review": "Water/Electrolytes",
+   "verdict": "wrong",
+   "target_topic": "Adrenal",
+   "decided_on": "2026-10-13",
+   "decided_by": "human",
+   "title": "Coexistence of 21-hydroxylase deficiency and Gitelman syndrome in a neonate presenting with severe hyponatremia",
+   "residual_accepted": true,
+   "residual_reason": "Neonatal CAH (21-hydroxylase deficiency) case; Adrenal rules do not list 21-hydroxylase and widening them for one case report risks collateral moves. Set during the 2026-10-13 water-balance change, when the article left the retired Water/Electrolytes topic.",
+   "residual_decided_on": "2026-10-13"
   }
  }
 }
