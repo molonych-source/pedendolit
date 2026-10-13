@@ -93,9 +93,14 @@ def is_excluded_v2(art):
     pts = [p.lower() for p in (art.get("pub_types") or [])]
 
     # Erratum / retraction
-    if tl.startswith("erratum") or tl.startswith("correction:") or tl.startswith("retraction:"):
+    if tl.startswith("erratum") or tl.startswith("correction:") or \
+            re.match(r"(retraction( statement| notice| of publication)?\s*[.:]|withdrawn:|withdrawal of:)", tl.strip()):
         return "erratum/retraction"
-    if any(x in pts for x in ("erratum", "published erratum", "retraction of publication")):
+    # 2026-10-13: PubMed tags the retracted paper itself "Retracted Publication" and the
+    # notice "Retraction Notice"; only "retraction of publication" was listed, so six
+    # retracted or withdrawn records reached the site.
+    if any(x in pts for x in ("erratum", "published erratum", "retraction of publication",
+                              "retraction notice", "retracted publication")):
         return "erratum/retraction"
 
     # Hard-exclusion topics  (word-boundary for short/ambiguous tokens)

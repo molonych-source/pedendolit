@@ -26,6 +26,9 @@ What fails vs. what only informs:
   * the monthly guideline sweep is overdue (guideline_sweep_state.json older than
     SWEEP_MAX_AGE_DAYS)                                -> FAIL. It silently stopped for
     ten weeks after it was built; the weekly run is the one step that always happens.
+  * an article removed on purpose (e.g. a retraction) -> not a failure once acknowledged:
+        python3 check_classifier_regressions.py --accept-removal PMID "reason"
+    which records it in removal_decisions.json.
   * study_type / impact changed                       -> reported, never fails. These
     legitimately shift whenever classification improves and no ledger records intent
     for them, so failing on them would cry wolf on every real improvement. But a
@@ -139,6 +142,28 @@ def bless(ledger_path, items, after_by_pmid):
     print(f"  wrote {os.path.basename(ledger_path)} ({len(doc['decisions'])} decisions on record)")
 
 
+REMOVALS_PATH = os.path.join(HERE, "removal_decisions.json")
+
+
+def load_removals():
+    try:
+        return json.load(open(REMOVALS_PATH)).get("removals", {})
+    except (OSError, ValueError):
+        return {}
+
+
+def accept_removals(items):
+    try:
+        led = json.load(open(REMOVALS_PATH))
+    except (OSError, ValueError):
+        led = {"comment": "Articles deliberately removed from the store (retractions, etc.). "
+                          "check_classifier_regressions.py does not fail on these.", "removals": {}}
+    for pmid, reason in items:
+        led["removals"][str(pmid)] = {"reason": reason, "decided_on": datetime.date.today().isoformat()}
+        print(f"accepted removal {pmid}: {reason}")
+    json.dump(led, open(REMOVALS_PATH, "w"), indent=1, ensure_ascii=False)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--ref", default="HEAD",
@@ -148,9 +173,15 @@ def main():
     ap.add_argument("--bless", nargs=2, action="append", default=[],
                     metavar=("PMID", "REASON"),
                     help="record a PMID's current topic as reviewed-correct. Repeatable.")
+    ap.add_argument("--accept-removal", nargs=2, action="append", default=[],
+                    metavar=("PMID", "REASON"),
+                    help="record a deliberate removal (e.g. a retraction). Repeatable.")
     ap.add_argument("--limit", type=int, default=25,
                     help="max examples to print per section (default 25)")
     args = ap.parse_args()
+    if args.accept_removal:
+        accept_removals(args.accept_removal)
+        return 0
 
     store_path = os.path.join(HERE, args.store)
     ledger_path = os.path.join(HERE, args.decisions)
@@ -198,7 +229,12 @@ def main():
                 info_changed[f].append((pmid, b_art.get(f), a_art.get(f),
                                         (a_art.get("title") or "")[:70]))
 
-    removed = sorted(set(before_by_pmid) - set(after_by_pmid))
+    removed_all = sorted(set(before_by_pmid) - set(after_by_pmid))
+    accepted_removals = load_removals()
+    removed = [p for p in removed_all if p not in accepted_removals]
+    for p in removed_all:
+        if p in accepted_removals:
+            print(f"  removed as intended: {p} ({accepted_removals[p].get('reason', '')[:70]})")
 
     lost = []   # (pmid, field, title)
     for pmid, a_art in after_by_pmid.items():

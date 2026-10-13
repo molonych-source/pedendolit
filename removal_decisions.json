@@ -1,0 +1,29 @@
+{
+ "comment": "Articles deliberately removed from the store (retractions, etc.). check_classifier_regressions.py does not fail on these.",
+ "removals": {
+  "28627221": {
+   "reason": "Retraction notice",
+   "decided_on": "2026-10-13"
+  },
+  "34554125": {
+   "reason": "Retraction notice",
+   "decided_on": "2026-10-13"
+  },
+  "34912293": {
+   "reason": "PubMed: Retracted Publication",
+   "decided_on": "2026-10-13"
+  },
+  "35763327": {
+   "reason": "Withdrawn article (bionic pancreas, youth)",
+   "decided_on": "2026-10-13"
+  },
+  "35776687": {
+   "reason": "Withdrawal notice for the bionic pancreas article",
+   "decided_on": "2026-10-13"
+  },
+  "39834161": {
+   "reason": "PubMed: Retracted Publication",
+   "decided_on": "2026-10-13"
+  }
+ }
+}
