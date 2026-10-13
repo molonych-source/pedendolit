@@ -686,7 +686,20 @@ def classify_study_type(art):
         r"\b(consensus|position|practice)\s+(statement|paper|report|recommendations?)\b",
         r"\bexpert (consensus|panel|opinion|recommendations?)\b",
         r"\bclinical recommendations?\b",
-        r"\bguidelines?\s*$")
+        r"\bguidelines?\s*$",
+        # 2026-10-13 spot check: consensus documents and mid-title guideline names
+        # that the patterns above missed ("International consensus guidance for ...",
+        # "International Delphi-based Consensus: ...", "Updated Dutch 2026 ... Guideline: ...").
+        r"\b(international|joint|national) consensus\b",
+        r"\bconsensus guidance\b",
+        r"\bdelphi[\s\-]*(based )?consensus\b",
+        r"\bconsensus[\s\-]based recommendations?\b",
+        r"^(updated|revised)\b[^:]*\bguidelines?\b")
+    # PubMed occasionally tags a study that COMPARES guidelines as "Practice Guideline"
+    # (e.g. Kwak vs ACR TI-RADS performance). A Comparative Study whose title opens
+    # with "comparison" is a study, whatever the other tag says.
+    if is_guideline_pt and "comparative study" in pts and tl.lstrip().startswith("comparison"):
+        is_guideline_pt = False
     if is_guideline_pt or (is_guideline_title and not about_guidelines):
         return "Guideline/Consensus", 1
     if "meta-analysis" in pts or "meta-analysis" in text:
