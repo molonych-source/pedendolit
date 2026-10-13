@@ -214,9 +214,12 @@ the generated HTML**, which is overwritten on every build.
   entirely on Row-Level Security.** That's the correct design, but it means any change to
   the policies must be re-verified with a two-account isolation test. A broken policy
   would leak every user's list while looking completely normal in the UI.
-- Email confirmation is OFF (Supabase's built-in sender is rate-limited), so addresses
-  are unverified and signup is open. There is no password-reset UI; reset a user from
-  the Supabase dashboard under Authentication → Users.
+- *(Corrected 2026-10-13, verified against the live auth settings: `mailer_autoconfirm`
+  is false.)* Email confirmation is **ON**, with a six-digit code at signup, and there is
+  a password-reset UI using six-digit email codes; both send through Resend on
+  `pedsendobrief.org` (live since 2026-08-04, see `TASKS.md`). Signup is open. Google
+  sign-in is enabled. Anonymous REST reads and writes to `saved_articles` and
+  `user_prefs` are refused (HTTP 401, verified 2026-10-13).
 - The page now fetches `@supabase/supabase-js` (pinned) from jsdelivr, so it is no longer
   strictly self-contained. If the CDN is blocked the dashboard still renders and accounts
   silently turn off.
