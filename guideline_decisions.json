@@ -656,10 +656,12 @@
    "title": "2018 Cholesterol Clinical Practice Guidelines: Synopsis of the 2018 American Heart Association/American College of Cardiology/Multisociety Cholesterol Guideline"
   },
   "31154502": {
-   "decision": "approved",
+   "decision": "rejected",
    "decided_on": "2026-08-04",
    "agent_verdict": "accept",
-   "title": "Comparison of the diagnostic performance of the 2017 ACR TI-RADS guideline to the Kwak guideline in children with thyroid nodules."
+   "title": "Comparison of the diagnostic performance of the 2017 ACR TI-RADS guideline to the Kwak guideline in children with thyroid nodules.",
+   "revoked_on": "2026-10-13",
+   "revoke_reason": "A comparative diagnostic-accuracy study of two TI-RADS systems, not a guideline. Approved 2026-08-04 on the strength of a PubMed Practice Guideline tag."
   },
   "31202666": {
    "decision": "rejected",
@@ -1217,7 +1219,7 @@
    "decision": "rejected",
    "decided_on": "2026-10-13",
    "agent_verdict": "borderline",
-   "title": "Tall stature and gigantism in transition\u00a0age: clinical and genetic aspects-a literature review and recommendations."
+   "title": "Tall stature and gigantism in transition age: clinical and genetic aspects-a literature review and recommendations."
   },
   "37918624": {
    "decision": "rejected",
@@ -1427,7 +1429,7 @@
    "decision": "rejected",
    "decided_on": "2026-10-13",
    "agent_verdict": "borderline",
-   "title": "[A consensus report by the Working Group on Eating Disorders of Sociedad Espa\u00f1ola de Nutrici\u00f3n Cl\u00ednica y Metabolismo (GTTCA-SENPE). Evaluation, medical and nutr"
+   "title": "[A consensus report by the Working Group on Eating Disorders of Sociedad Española de Nutrición Clínica y Metabolismo (GTTCA-SENPE). Evaluation, medical and nutr"
   },
   "38336003": {
    "decision": "approved",
@@ -1805,7 +1807,7 @@
    "decision": "rejected",
    "decided_on": "2026-10-13",
    "agent_verdict": "reject",
-   "title": "Assessment of the American College of Radiology Thyroid Imaging Reporting and Data System (ACR TI-RADS\u2122) with modification of the management recommendations for"
+   "title": "Assessment of the American College of Radiology Thyroid Imaging Reporting and Data System (ACR TI-RADS™) with modification of the management recommendations for"
   },
   "39002896": {
    "decision": "approved",
@@ -2519,13 +2521,13 @@
    "decision": "rejected",
    "decided_on": "2026-10-13",
    "agent_verdict": "reject",
-   "title": "Evidence and unknowns for the relevancy of applying current parenteral nutrition support recommendations among infants born less than 750\u2009g or younger than 25 w"
+   "title": "Evidence and unknowns for the relevancy of applying current parenteral nutrition support recommendations among infants born less than 750 g or younger than 25 w"
   },
   "40241473": {
    "decision": "rejected",
    "decided_on": "2026-10-13",
    "agent_verdict": "reject",
-   "title": "Applicability of ESPGHAN Biopsy-Free Guidelines for Celiac Disease Diagnosis: Insights from T\u00fcrkiye."
+   "title": "Applicability of ESPGHAN Biopsy-Free Guidelines for Celiac Disease Diagnosis: Insights from Türkiye."
   },
   "40245041": {
    "decision": "rejected",
@@ -2561,7 +2563,7 @@
    "decision": "approved",
    "decided_on": "2026-10-13",
    "agent_verdict": "accept",
-   "title": "Consensus and controversies about\u00a0diagnosing\u00a0GH\u00a0deficiency: a Delphi survey by the GH research society."
+   "title": "Consensus and controversies about diagnosing GH deficiency: a Delphi survey by the GH research society."
   },
   "40335981": {
    "decision": "rejected",
@@ -2837,7 +2839,7 @@
    "decision": "rejected",
    "decided_on": "2026-10-13",
    "agent_verdict": "reject",
-   "title": "Assessment of Guideline-Recommended Laboratory Screening for Obesity-Related Chronic Conditions in US Youth 10-18\u2009Years."
+   "title": "Assessment of Guideline-Recommended Laboratory Screening for Obesity-Related Chronic Conditions in US Youth 10-18 Years."
   },
   "40758315": {
    "decision": "rejected",
@@ -2849,7 +2851,7 @@
    "decision": "rejected",
    "decided_on": "2026-10-13",
    "agent_verdict": "reject",
-   "title": "Nutritional status of preschoolers in the public school system of Maca\u00e9: a panel study conducted between 2012-2014 and 2017-2019 in the context of the oil crisi"
+   "title": "Nutritional status of preschoolers in the public school system of Macaé: a panel study conducted between 2012-2014 and 2017-2019 in the context of the oil crisi"
   },
   "40773023": {
    "decision": "rejected",
@@ -3035,7 +3037,7 @@
    "decision": "approved",
    "decided_on": "2026-10-13",
    "agent_verdict": "accept",
-   "title": "[Expert consensus on the management of obesity in infants and young children\u200b\u200b (2025)]."
+   "title": "[Expert consensus on the management of obesity in infants and young children​​ (2025)]."
   },
   "41091474": {
    "decision": "approved",
@@ -3059,7 +3061,7 @@
    "decision": "rejected",
    "decided_on": "2026-10-13",
    "agent_verdict": "borderline",
-   "title": "First 1000\u2009Days Strategies to Prevent Childhood Obesity: A Narrative Review and Recommendations From the EndObesity Consortium."
+   "title": "First 1000 Days Strategies to Prevent Childhood Obesity: A Narrative Review and Recommendations From the EndObesity Consortium."
   },
   "41111054": {
    "decision": "approved",
@@ -3329,7 +3331,7 @@
    "decision": "rejected",
    "decided_on": "2026-10-13",
    "agent_verdict": "reject",
-   "title": "Maternal-to-Infant Transfer of Medications for Type 2 Diabetes Mellitus Via Breastmilk: A\u00a0Systematic Review of Available Evidence and\u00a0Clinical Guidelines."
+   "title": "Maternal-to-Infant Transfer of Medications for Type 2 Diabetes Mellitus Via Breastmilk: A Systematic Review of Available Evidence and Clinical Guidelines."
   },
   "41674374": {
    "decision": "rejected",
@@ -3581,7 +3583,7 @@
    "decision": "rejected",
    "decided_on": "2026-10-13",
    "agent_verdict": "reject",
-   "title": "THR-\u03b2 Agonists vs Incretin Therapies for Noncirrhotic Metabolic Dysfunction-Associated Steatohepatitis (MASH): A Biopsy-Anchored Systematic Review With Grading "
+   "title": "THR-β Agonists vs Incretin Therapies for Noncirrhotic Metabolic Dysfunction-Associated Steatohepatitis (MASH): A Biopsy-Anchored Systematic Review With Grading "
   },
   "42055464": {
    "decision": "approved",
@@ -3677,13 +3679,13 @@
    "decision": "approved",
    "decided_on": "2026-10-13",
    "agent_verdict": "accept",
-   "title": "Diagnostic criteria for growth disorders requiring growth hormone therapy: updated consensus from the Sociedad Mexicana de Endocrinolog\u00eda Pedi\u00e1trica."
+   "title": "Diagnostic criteria for growth disorders requiring growth hormone therapy: updated consensus from the Sociedad Mexicana de Endocrinología Pediátrica."
   },
   "42277449": {
    "decision": "rejected",
    "decided_on": "2026-10-13",
    "agent_verdict": "reject",
-   "title": "Global Variability in Children and Adolescent Metabolic Bariatric Surgery Guidelines: A Worldwide IFSO\u00a0Survey."
+   "title": "Global Variability in Children and Adolescent Metabolic Bariatric Surgery Guidelines: A Worldwide IFSO Survey."
   },
   "42297593": {
    "decision": "rejected",
@@ -3725,7 +3727,7 @@
    "decision": "rejected",
    "decided_on": "2026-10-13",
    "agent_verdict": "reject",
-   "title": "Adherence to WHO severe acute malnutrition guidelines and mortality in critically ill children \u2012 A cohort study in a pediatric intensive care unit."
+   "title": "Adherence to WHO severe acute malnutrition guidelines and mortality in critically ill children ‒ A cohort study in a pediatric intensive care unit."
   },
   "42378432": {
    "decision": "rejected",
@@ -3779,7 +3781,7 @@
    "decision": "rejected",
    "decided_on": "2026-10-13",
    "agent_verdict": "reject",
-   "title": "Compliance with the Netherlands' vitamin D supplementation recommendation for three at-risk groups: young children, women over 50\u00a0years, and elderly."
+   "title": "Compliance with the Netherlands' vitamin D supplementation recommendation for three at-risk groups: young children, women over 50 years, and elderly."
   },
   "42422417": {
    "decision": "rejected",
@@ -3833,7 +3835,7 @@
    "decision": "rejected",
    "decided_on": "2026-10-13",
    "agent_verdict": "reject",
-   "title": "Complementary feeding in Mexico by 2026: a review and recommendations from the Academia Mexicana de Pediatr\u00eda."
+   "title": "Complementary feeding in Mexico by 2026: a review and recommendations from the Academia Mexicana de Pediatría."
   },
   "42485883": {
    "decision": "rejected",
@@ -3923,7 +3925,7 @@
    "decision": "rejected",
    "decided_on": "2026-10-13",
    "agent_verdict": "reject",
-   "title": "From guidelines to practice: antihypertensive prescribing preferences in T\u00fcrkiye-the APP-T\u00fcrkiye study."
+   "title": "From guidelines to practice: antihypertensive prescribing preferences in Türkiye-the APP-Türkiye study."
   },
   "42645708": {
    "decision": "rejected",

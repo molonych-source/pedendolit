@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-13T15:20:02",
+ "generated": "2026-10-13T15:21:07",
  "review_period": "October 2026",
  "articles": [
   {
@@ -2518,28 +2518,25 @@
    "url": "https://pubmed.ncbi.nlm.nih.gov/31154502/",
    "doi_url": "https://doi.org/10.1007/s00247-019-04385-6",
    "pmc_url": "",
-   "approved_guideline": true,
    "excluded": false,
    "topic": "Thyroid",
    "subtopic": null,
    "diabetes_subtype": null,
-   "study_type": "Guideline/Consensus",
-   "ev_level": 1,
-   "impact": "PRACTICE-ALTERING",
+   "study_type": "Observational/Cohort",
+   "ev_level": 3,
+   "impact": "LOW",
    "age_range": [
     "Child"
    ],
    "society": [],
-   "board_relevant": 1,
+   "board_relevant": 0,
    "sample_n": 75,
    "tags": [
-    "#Thyroid",
-    "#BoardRelevant",
-    "#Guidelines"
+    "#Thyroid"
    ],
    "access": "Subscription",
    "clinical_bottom_line": "Both the Kwak-TI-RADS and ACR TI-RADS guidelines provide moderate malignancy risk stratification for thyroid nodules in the pediatric population, with better inter-rater agreement for the ACR TI-RADS guideline. Further work to adjust the recommendations for pediatric patients is necessary.",
-   "impact_rationale": "Official guideline or consensus statement. Directly informs clinical protocols and management standards.",
+   "impact_rationale": "Observational/Cohort on Thyroid. Background reading for clinical awareness.",
    "review_date": "2026-08-04",
    "review_period": "August 2026",
    "is_new": false,
