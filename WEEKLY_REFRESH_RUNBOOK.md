@@ -16,6 +16,11 @@ large results to files under `.claude/projects/.../tool-results/`; parse those w
 Python and print only counts and titles. The raw-file format IS the MCP metadata record
 verbatim, so assembling a raw file is a JSON concatenation, not a transformation.
 
+> **Correction, 2026-10-13:** the section below says the shell cannot reach NCBI. That was
+> already corrected in `CLAUDE.md` on 2026-08-05: E-utilities answers directly over HTTPS.
+> The monthly guideline sweep now fetches with a plain script (`guideline_fetch.py`). The
+> weekly fetch still uses the MCP as described.
+
 ## Why a Claude task and not a plain cron
 PubMed (NCBI E-utilities) is reachable from the **PubMed MCP tool**, which only the
 Claude agent can call — the sandbox shell cannot reach NCBI directly. So the weekly
@@ -42,15 +47,24 @@ classifies and rebuilds the dashboard. No Perplexity, no external server.
    The MCP persists large results to files under `.claude/projects/.../tool-results/`;
    read those from the sandbox rather than pulling into context.
 5. Assemble `raw_articles.json` from the fetched metadata (dedupe by PMID).
+   > **Known gap (2026-10-13):** a `[pdat]` window misses articles whose PubMed
+   > publication date is year-only (online-first journals such as Front Endocrinol and
+   > J Diabetes Sci Technol): PubMed files them as Jan 1, outside any recent window. A
+   > coverage audit found ~600 such 2026 articles never fetched. Fix pending; see TASKS.md.
 6. Run: `python3 build_dataset.py --run-date <YYYY-MM-DD>`
    - This MERGES (does not rebuild): existing PMIDs are skipped, only new ones added.
    - It applies the 60-day archive cutoff and resets `is_new` so only this week's
      additions are flagged NEW.
+6a. Run: `python3 fix_pub_dates.py --apply --only-missing` — repairs this week's
+   publication dates against PubMed. Skipping it left 354 articles with dates like
+   `2026-Aug-13` between August and October 2026.
+6b. Run: `python3 check_classifier_regressions.py` — must exit 0 before committing.
+   It also fails when the monthly guideline sweep is more than 45 days old.
 7. Run: `python3 build_dashboard.py` to regenerate the HTML.
 8. **Publish** — the site is live, so this step is no longer optional:
    `git add -A && git commit -m "Weekly refresh <YYYY-MM-DD>" && git push`
    GitHub Pages redeploys on its own within a minute or two (~10 min CDN cache).
-   Live at https://molonych-source.github.io/pedendolit/
+   Live at https://pedsendobrief.org
 9. Report: new article count, new practice-altering items, exclusions fired.
 
 Nothing in the weekly refresh touches Supabase — user accounts and saved lists are
@@ -65,8 +79,15 @@ the safety net. It is **publication-type-scoped across all journals** and its re
 are **reviewed, never auto-merged** — the query runs about 35% precision (the rest is
 dermatology, urology, nephrology, ophthalmology).
 
-1. Call `search_articles` with a rolling **60-day** window (overlapping, so nothing
-   falls between runs), `max_results = 200`:
+1. `python3 guideline_fetch.py` — searches PubMed directly over the last 60 days by
+   Entrez date (overlapping, so nothing falls between runs), with two arms: publication
+   type AND title wording. Writes `sweep_raw.json` and stamps
+   `guideline_sweep_state.json`. **This replaces the MCP query below (2026-10-13)**,
+   which is kept for reference only: it saw just PubMed-tagged guidelines and missed 25
+   of the 70 found missing on 2026-10-13. After any edit to the queries, run
+   `python3 check_guideline_recall.py` (must PASS).
+
+   Superseded MCP query:
 
 ```
 (Practice Guideline[Publication Type] OR Guideline[Publication Type] OR Consensus Development Conference[Publication Type])
@@ -79,8 +100,7 @@ AND (endocrin*[tiab] OR diabetes[tiab] OR thyroid[tiab] OR puberty[tiab]
 
    Note: the MCP caps a query at **20 boolean operators** — split into two searches if
    you extend the term list.
-2. Fetch metadata for the PMIDs, assemble them into `sweep_raw.json` (a plain list of
-   MCP records — no transformation).
+2. (Superseded by step 1, which already writes `sweep_raw.json`.)
 3. `python3 guideline_sweep.py --raw sweep_raw.json`
    Drops PMIDs already in the store **and** any already ruled on in
    `guideline_decisions.json`, classifies the rest, writes `guideline_candidates.json`

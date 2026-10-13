@@ -100,8 +100,9 @@ The full weekly procedure (date windows, MCP batching, PMID dedup) is in
   before any `--rebuild`. It seeds from the current store first so a rebuild cannot
   delete an article that exists only in `pedendolit-data.json`.
 - **Monthly guideline sweep** — triage for guidelines published outside the 19 monitored
-  journals (the pipeline is journal-scoped and structurally cannot see them). Four parts:
-  `guideline_sweep.py` (dedup vs store + `guideline_decisions.json`, classify) → a **Sonnet
+  journals (the pipeline is journal-scoped and structurally cannot see them). Five parts:
+  `guideline_fetch.py` (direct PubMed search by publication type AND title wording, since
+  2026-10-13; also stamps `guideline_sweep_state.json`) → `guideline_sweep.py` (dedup vs store + `guideline_decisions.json`, classify) → a **Sonnet
   review subagent** that judges pediatric-ness and endocrine-ness and writes
   `guideline_verdicts.json` → `build_review_page.py` (self-contained `guideline_review.html`
   with checkboxes; Submit downloads `approved_pmids.json`) → `apply_approvals.py` (records
@@ -115,7 +116,9 @@ The full weekly procedure (date windows, MCP batching, PMID dedup) is in
   store; exits 1 if any topic changed without a `classifier_qa_decisions.json` entry whose
   `target_topic` matches the new topic, if an article disappeared entirely, or (since
   2026-10-13) if any article lost metadata it had: abstract, authors, DOI, volume/issue/pages,
-  PMC, publication types. Reports
+  PMC, publication types; if any pub_date is not ISO or lacks its precision; or if the
+  guideline sweep is over 45 days old. `check_guideline_recall.py` separately guards the
+  sweep's query against losing known guidelines. Reports
   `study_type`/`impact` drift without failing. `--bless PMID "reason"` records a correct-
   but-unpredicted change into the same ledger. **Run it after a rebuild and before
   committing** — it compares against `git HEAD`, so committing destroys the comparison.

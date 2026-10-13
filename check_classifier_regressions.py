@@ -21,6 +21,11 @@ What fails vs. what only informs:
     publication types)                                -> FAIL. Added 2026-10-13 after a
     --rebuild silently wiped citation fields on 140 articles while this check passed.
     Accept a deliberate loss by adding the PMID to METADATA_LOSS_OK.
+  * any pub_date not a full ISO date, or missing pub_date_precision -> FAIL (2026-10-13:
+    354 weekly additions had skipped fix_pub_dates.py and carried "2026-Aug-13" or "2024")
+  * the monthly guideline sweep is overdue (guideline_sweep_state.json older than
+    SWEEP_MAX_AGE_DAYS)                                -> FAIL. It silently stopped for
+    ten weeks after it was built; the weekly run is the one step that always happens.
   * study_type / impact changed                       -> reported, never fails. These
     legitimately shift whenever classification improves and no ledger records intent
     for them, so failing on them would cry wolf on every real improvement. But a
@@ -43,7 +48,7 @@ Usage:
   python3 check_classifier_regressions.py [--ref HEAD] [--store pedendolit-data.json]
   python3 check_classifier_regressions.py --bless PMID "reason" [--bless PMID "reason" ...]
 """
-import json, os, sys, argparse, datetime, subprocess
+import json, os, re, sys, argparse, datetime, subprocess
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
@@ -55,6 +60,8 @@ INFO_FIELDS = ("study_type", "impact")
 # not a classification change, so it always fails unless the PMID is listed below.
 METADATA_FIELDS = ("abstract", "authors", "doi", "volume", "issue", "pages", "pmc", "pub_types")
 METADATA_LOSS_OK = set()   # PMIDs whose metadata loss a human has confirmed is correct
+
+SWEEP_MAX_AGE_DAYS = 45
 
 
 # Taxonomy renames: {old topic: new topic}. An article whose topic changed only because
@@ -284,11 +291,33 @@ def main():
             print(f"  ... and {len(lost) - args.limit} more")
         print()
 
+    bad_dates = [a for a in after_by_pmid.values()
+                 if not re.match(r"^\d{4}-\d{2}-\d{2}$", a.get("pub_date") or "")
+                 or not a.get("pub_date_precision")]
+    if bad_dates:
+        failures += len(bad_dates)
+        print(f"UNREPAIRED DATES: {len(bad_dates)} article(s) lack an ISO pub_date or its precision.")
+        print("Run:  python3 fix_pub_dates.py --apply --only-missing")
+        for a in bad_dates[:5]:
+            print(f"  !!  {a.get('pmid')}: {a.get('pub_date')!r}")
+        print()
+
+    try:
+        st = json.load(open(os.path.join(HERE, "guideline_sweep_state.json")))
+        age = (datetime.date.today() - datetime.date.fromisoformat(st["last_fetch"])).days
+    except (OSError, ValueError, KeyError):
+        age = None
+    if age is None or age > SWEEP_MAX_AGE_DAYS:
+        failures += 1
+        print(f"GUIDELINE SWEEP OVERDUE: last run {('never' if age is None else str(age) + ' days ago')} "
+              f"(limit {SWEEP_MAX_AGE_DAYS}). Run the monthly sweep in WEEKLY_REFRESH_RUNBOOK.md.")
+        print()
+
     if failures:
         print(f"FAIL — {failures} change(s) need a human decision.")
         return 1
 
-    print("PASS — every topic change was predicted, nothing disappeared, and no metadata was lost.")
+    print("PASS — topic changes predicted, nothing disappeared, no metadata lost, dates clean, sweep current.")
     return 0
 
 

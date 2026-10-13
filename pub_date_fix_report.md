@@ -1,97 +1,91 @@
 # pub_date repair
 
-APPLIED. Checked 1406, changed 496, already correct 910, no usable date 0.
+APPLIED. Checked 354, changed 75, already correct 279, no usable date 0.
 
-469 articles move to a different month bucket, which is what any date filter or newest-first sort reads.
+68 articles move to a different month bucket, which is what any date filter or newest-first sort reads.
 
 | precision | articles |
 |---|---|
-| day | 1335 |
-| month | 61 |
-| year | 10 |
+| day | 348 |
+| month | 3 |
+| year | 3 |
 
 ## Changes (first 80)
 
 | PMID | old | new | precision | source | title |
 |---|---|---|---|---|---|
-| 29504223 | `2018-Mar` | `2018-03-01` | month | journal | Consensus guidelines on the use of bisphosphonate therapy in children  |
-| 29869358 | `2018-Oct` | `2018-10-01` | month | journal | ISPAD Clinical Practice Consensus Guidelines 2018: Assessment and mana |
-| 29900641 | `2018-Oct` | `2018-10-01` | month | journal | ISPAD Clinical Practice Consensus Guidelines 2018: Diabetic ketoacidos |
-| 29900653 | `2018-Oct` | `2018-10-01` | month | journal | ISPAD Clinical Practice Consensus Guidelines 2018: Diabetes in adolesc |
-| 29982476 | `2018-Aug-01` | `2018-08-01` | day | journal | Hypothalamic-Pituitary and Growth Disorders in Survivors of Childhood  |
-| 29999222 | `2018-Oct` | `2018-10-01` | month | journal | ISPAD Clinical Practice Consensus Guidelines 2018: Insulin treatment i |
-| 29999228 | `2018-Oct` | `2018-10-01` | month | journal | ISPAD Clinical Practice Consensus Guidelines 2018: Type 2 diabetes mel |
-| 30039513 | `2018-Oct` | `2018-10-01` | month | journal | ISPAD Clinical Practice Consensus Guidelines 2018: Diabetes technologi |
-| 30039617 | `2018-Oct` | `2018-10-01` | month | journal | ISPAD Clinical Practice Consensus Guidelines 2018: Management of child |
-| 30051639 | `2018-Oct` | `2018-10-01` | month | journal | ISPAD Clinical Practice Consensus Guidelines 2018: Stages of type 1 di |
-| 30058221 | `2018-Oct` | `2018-10-01` | month | journal | ISPAD Clinical Practice Consensus Guidelines 2018: Glycemic control ta |
-| 30058247 | `2018-Oct` | `2018-10-01` | month | journal | ISPAD Clinical Practice Consensus Guidelines 2018: Psychological care  |
-| 30062718 | `2018-Oct` | `2018-10-01` | month | journal | ISPAD Clinical Practice Consensus Guidelines 2018: Nutritional managem |
-| 30066458 | `2018-Oct` | `2018-10-01` | month | journal | ISPAD Clinical Practice Consensus Guidelines 2018: Other complications |
-| 30079506 | `2018-Oct` | `2018-10-01` | month | journal | ISPAD Clinical Practice Consensus Guidelines 2018: Sick day management |
-| 30079595 | `2018-Oct` | `2018-10-01` | month | journal | ISPAD Clinical Practice Consensus Guidelines 2018: Microvascular and m |
-| 30084519 | `2018-Oct` | `2018-10-01` | month | journal | ISPAD Clinical Practice Consensus Guidelines 2018: Management and supp |
-| 30094886 | `2018-Oct` | `2018-10-01` | month | journal | ISPAD Clinical Practice Consensus Guidelines 2018: Management of cysti |
-| 30133095 | `2018-Oct` | `2018-10-01` | month | journal | ISPAD Clinical Practice Consensus Guidelines 2018: Exercise in childre |
-| 30144259 | `2018-Oct` | `2018-10-01` | month | journal | ISPAD Clinical Practice Consensus Guidelines 2018: The delivery of amb |
-| 30175451 | `2018-Oct` | `2018-10-01` | month | journal | ISPAD Clinical Practice Consensus Guidelines 2018: Diabetes education  |
-| 30209800 | `2018` | `2018-01-01` | year | journal | The polycystic ovary syndrome: a position statement from the Polish So |
-| 30209801 | `2018` | `2018-01-01` | year | journal | Management of Prader-Willi Syndrome (PWS) in adults - what an endocrin |
-| 30225972 | `2018-Oct` | `2018-10-01` | month | journal | ISPAD Clinical Practice Consensus Guidelines 2018: The diagnosis and m |
-| 30226024 | `2018-Oct` | `2018-10-01` | month | journal | ISPAD Clinical Practice Consensus Guidelines 2018: Definition, epidemi |
-| 30276975 | `2018-Oct` | `2018-10-01` | month | journal | ISPAD Clinical Practice Consensus Guidelines 2018: Limited Care Guidan |
-| 30289543 | `2018-Nov-01` | `2018-11-01` | day | journal | Adrenoleukodystrophy: Guidance for Adrenal Surveillance in Males Ident |
-| 30295419 | `2018-Nov` | `2018-11-01` | month | journal | ISPAD Position Statement on Type 1 Diabetes in Schools. |
-| 31568365 | `2019-Oct` | `2019-10-01` | month | journal | Screening and Management of the Hyperandrogenic Adolescent: ACOG Commi |
-| 31688079 | `2020-Apr` | `2020-04-01` | month | journal | Perioperative Management of Pediatric Patients With Type 1 Diabetes Me |
-| 31862756 | `2020-Jan` | `2020-01-01` | month | journal | 13. Children and Adolescents:. |
-| 32052993 | `2020` | `2020-01-01` | year | journal | Summary of the clinical practice guideline for multicomponent behavior |
-| 32614332 | `2020` | `2020-01-01` | year | journal | Puberty blockade: Clinical guideline for the diagnosis and treatment o |
-| 32614333 | `2020` | `2020-01-01` | year | journal | Diagnosis of precocious puberty: clinical guideline for the diagnosis  |
-| 32614335 | `2020` | `2020-01-01` | year | journal | Diagnosis of secondary causes of precocious puberty: Clinical guidelin |
-| 32614336 | `2020` | `2020-01-01` | year | journal | Adjuvant interventions in the treatment of precocious puberty: Clinica |
-| 32614338 | `2020` | `2020-01-01` | year | journal | Monitoring during the treatment of precocious puberty: Clinical guidel |
-| 32810255 | `2020-Dec-01` | `2020-12-01` | day | journal | Management and Appropriate Use of Diazoxide in Infants and Children wi |
-| 33272083 | `2021-Mar` | `2021-03-01` | month | journal | Congenital Hypothyroidism: A 2020-2021 Consensus Guidelines Update-An  |
-| 34511234 | `2021-Oct` | `2021-10-01` | month | journal | Blood Glucose Monitoring in Adults and Children with Diabetes: Update  |
-| 36098719 | `2022-Sep-13` | `2022-09-13` | day | journal | Screening for Prediabetes and Type 2 Diabetes in Children and Adolesce |
-| 36477488 | `2023-Feb-15` | `2023-02-15` | day | journal | Management of Individuals With Diabetes at High Risk for Hypoglycemia: |
-| 36622115 | `2023-Feb-01` | `2023-02-01` | day | journal | Clinical Practice Guideline for the Evaluation and Treatment of Childr |
-| 36635911 | `2023-May-08` | `2023-05-08` | day | journal | International Consensus Guideline on Small for Gestational Age: Etiolo |
-| 37580861 | `2023-Aug-02` | `2023-08-02` | day | journal | Recommendations from the 2023 international evidence-based guideline f |
-| 37705267 | `2023-Sep-15` | `2023-09-15` | day | journal | American Academy of Pediatrics, 2023: Guideline for the Evaluation and |
-| 38084047 | `2026-03-13` | `2023-12-12` | day | article | Atypical Presentation and Course of ACTH-Independent Cushing’s Syndrom |
-| 38212959 | `2026-03-13` | `2024-01-12` | day | article | Schwartz-Jampel Syndrome Type 1: Compound Heterozygosity of Two Novel  |
-| 38230957 | `2026-03-13` | `2024-01-17` | day | article | Floating-Harbor Syndrome in a Korean Patient with Short Stature and Ea |
-| 38344969 | `2026-03-13` | `2024-02-12` | day | article | Hyperinsulinemia in Sotos Syndrome with a de novo NSD1 Deletion. |
-| 38571460 | `2024-Mar-30` | `2024-03-30` | day | journal | Familial hyperaldosteronism: an European Reference Network on Rare End |
-| 38714321 | `2024-May-02` | `2024-05-02` | day | journal | European Society of Endocrinology and Endocrine Society Joint Clinical |
-| 38724043 | `2024-Jun-17` | `2024-06-17` | day | journal | European Society of Endocrinology and Endocrine Society Joint Clinical |
-| 38748847 | `2024-Jun-05` | `2024-06-05` | day | journal | Clinical practice guidelines for the care of girls and women with Turn |
-| 38828931 | `2024-Jul-12` | `2024-07-12` | day | journal | Vitamin D for the Prevention of Disease: An Endocrine Society Clinical |
-| 38869512 | `2024-Nov` | `2024-11-01` | month | journal | EASL-EASD-EASO Clinical Practice Guidelines on the management of metab |
-| 38912718 | `2026-05-22` | `2024-10-10` | day | article | A Rare Presentation of 17α-Hydroxylase/17,20-Lyase Deficiency in a Pat |
-| 39012089 | `2026-05-22` | `2024-07-16` | day | article | Autosomal Recessive Hypophosphatemic Rickets Type 2 Associated with a  |
-| 39038449 | `2026-07-22` | `2024-07-22` | day | article | Obesity Is Associated with Increased 11-Oxyandrogen Serum Concentratio |
-| 39186929 | `2026-08-26` | `2024-08-26` | day | article | Defining Success in the Delivery of Fertility-Related Care for Patient |
-| 39250908 | `2026-09-09` | `2024-09-09` | day | article | Ovarian Insufficiency in Adolescent Females with Transfusion-Dependent |
-| 39270074 | `2025-Jun-01` | `2025-06-01` | day | journal | [Cryptorchidism: An update of advances in its diagnosis and treatment] |
-| 39293420 | `2026-09-18` | `2024-09-18` | day | article | Insulin-Induced Copeptin Response in Children and Adolescents to Diagn |
-| 39311599 | `2026-05-22` | `2024-09-23` | day | article | Hereditary Pheochromocytoma as a Major Manifestation of von Hippel Lin |
-| 39311760 | `2026-05-22` | `2024-09-23` | day | article | A Rare Cause of Proportional Short Stature and Puberty Precocity: Floa |
-| 39348816 | `2026-09-30` | `2024-09-30` | day | article | Surveying Current Practices in the Use of Gadolinium-Based Contrast Ag |
-| 39362204 | `2026-10-03` | `2024-10-03` | day | article | ISPAD Position Statement on Type 1 Diabetes in Schools. |
-| 39362209 | `2026-10-03` | `2024-10-03` | day | article | Variability in Body Mass Index during 2018-2021 for People with Type 1 |
-| 39369697 | `2026-10-04` | `2024-10-04` | day | article | Strategies for Equitable Recruitment to Engage Underrepresented Youth  |
-| 39378853 | `2026-10-08` | `2024-10-08` | day | article | Genetic Analyses in a Cohort of Pediatric Patients with Congenital Hyp |
-| 39387353 | `2026-05-22` | `2024-10-10` | day | article | Gonadoblastoma with Dysgerminoma in a Virilized Adolescent with Karyot |
-| 39396497 | `2026-10-12` | `2024-10-12` | day | article | Associations of Co-Exposure to Polycyclic Aromatic Hydrocarbons and He |
-| 39406189 | `2026-10-15` | `2024-10-15` | day | article | Ketone Management in Pediatric Diabetes Centers in the USA: Current Pr |
-| 39415662 | `2026-05-22` | `2024-10-17` | day | article | Unraveling a Genetic Puzzle: Could MAP3K7 Be a Candidate Gene for RASo |
-| 39419009 | `2026-10-17` | `2024-10-17` | day | article | The Role of DLK1 Deficiency in Central Precocious Puberty and Associat |
-| 39427650 | `2026-10-18` | `2024-10-18` | day | article | Phase 2 Trial of Vosoritide Use in Patients with Hypochondroplasia: A  |
-| 39437749 | `2026-10-22` | `2024-10-22` | day | article | Novel Insights: A Novel PHIP Variant in a Family with Severe Early-Ons |
-| 39447557 | `2026-10-24` | `2024-10-24` | day | article | Recognition of Hyperinsulinaemic Hypoglycaemia in Infants with Congeni |
-| 39462490 | `2026-10-25` | `2024-10-25` | day | article | Novel Protocol for the Use of Advanced Hybrid Closed-Loop System in Ad |
-| 39462987 | `2026-05-22` | `2024-10-28` | day | article | A Rare Coexistence of Turner Syndrome and Mycosis Fungoides: A Case Re |
-| … | *+416 more* | | | | |
+| 37382585 | `2024-04-01` | `2023-07-06` | day | article | Guidelines for the prevention and treatment of glucocorticoid-induced  |
+| 37752373 | `2024-03` | `2023-09-26` | day | article | The diagnosis of hypophosphatasia in children as a multidisciplinary e |
+| 37867270 | `2024` | `2024-01-01` | year | journal | Risk Stratification in People with Diabetes for Fasting During Ramadan |
+| 38193204 | `2024-03-30` | `2024-01-09` | day | article | Obesity in Children and Adolescents: 2022 Update of Clinical Practice  |
+| 38211570 | `2025` | `2024-01-11` | day | article | Invited Mini Review Metabolic Bone Disease of Prematurity: Overview an |
+| 38240484 | `2024-04-01` | `2024-01-19` | day | article | Society of Critical Care Medicine Guidelines on Glycemic Control for C |
+| 38253221 | `2024-07` | `2024-01-20` | day | article | Consensus statement by the French Society of Endocrinology (SFE) and F |
+| 38336003 | `2024-07` | `2024-02-08` | day | article | Canadian Society of Clinical Chemists Harmonized Pediatric Lipid Repor |
+| 38376731 | `2024-07` | `2024-02-20` | day | article | Transition from pediatric to adult care in patients with Turner syndro |
+| 38598969 | `2024-05` | `2024-03-27` | day | article | Clinical practice recommendations on lipoprotein apheresis for childre |
+| 38655793 | `2024-08-01` | `2024-04-05` | day | article | Practical guidelines for eating disorder risk mitigation in patients u |
+| 38677287 | `2024-07-12` | `2024-04-26` | day | article | An international multidisciplinary consensus on pediatric metabolic dy |
+| 38706696 | `2024` | `2024-04-19` | day | article | Diagnosis, treatment, and management of rickets: a position statement  |
+| 38710228 | `2025-01` | `2024-05-06` | day | article | [Early Detection Of Type 1 Diabetes By Islet Autoantibody Screening: A |
+| 38894740 | `2024` | `2024-06-04` | day | article | Recommendations for recognizing, risk stratifying, treating, and manag |
+| 38910151 | `2024-09` | `2024-09-01` | month | journal | Consensus guidance for monitoring individuals with islet autoantibody- |
+| 38960811 | `2024-10` | `2024-05-31` | day | article | Exercise in the management of polycystic ovary syndrome: A position st |
+| 39002896 | `2025-02` | `2024-07-11` | day | article | Diagnosis and management of children and adult craniopharyngiomas: A F |
+| 39147856 | `2024-12` | `2024-08-15` | day | article | International consensus statement on the diagnosis and management of p |
+| 39438674 | `2025-02` | `2024-10-22` | day | article | International expert consensus statement on the diagnosis and manageme |
+| 39451186 | `2024` | `2024-01-01` | year | journal | Guidelines of the Polish Society of Pediatric Endocrinology and Diabet |
+| 39506343 | `2024-10` | `2024-10-31` | day | article | Diagnostic approach to rickets: an Endocrine Society of Bengal (ESB) c |
+| 39527371 | `2025-03` | `2024-11-11` | day | article | SID/SIEDP expert consensus on optimizing clinical strategies for early |
+| 39645505 | `2024-12` | `2024-12-06` | day | article | Expert consensus for the management of patients with achondroplasia in |
+| 39653802 | `2025-02` | `2025-02-01` | month | journal | The use of automated insulin delivery around physical activity and exe |
+| 39689218 | `2025-03` | `2024-12-17` | day | article | Towards standardization of person-reported outcomes (PROs) in pediatri |
+| 39818293 | `2025-02` | `2025-01-14` | day | article | Chapter 7: The different forms of primary hyperparathyroidism at diffe |
+| 39950999 | `2025-04` | `2025-02-14` | day | article | Composition and Priorities of Multidisciplinary Pediatric Thyroid Prog |
+| 39967943 | `2024` | `2024-11-22` | day | article | 2024 Polish recommendations for the management of familial hypercholes |
+| 40073966 | `2025-05` | `2025-03-10` | day | article | Practical implementation of automated insulin delivery systems in 2025 |
+| 40094399 | `2025-05-01` | `2025-03-26` | day | article | PERSPECTIVE: Treatment with hydrocortisone modified-release capsules i |
+| 40106739 | `2025-04-20` | `2025-03-19` | day | article | Fertility Preservation in People With Cancer: ASCO Guideline Update. |
+| 40387306 | `2025-09` | `2025-05-19` | day | article | The Importance of National Monitoring of Children's Growth: Consensus  |
+| 40520848 | `2025-06` | `2025-06-12` | day | article | Consensus Statement on Metabolic Dysfunction-Associated Steatotic Live |
+| 40523372 | `2025-08` | `2025-06-13` | day | article | Multiple endocrine neoplasia type 1 (MEN1): recommendations and guidel |
+| 40555795 | `2025-10` | `2025-06-24` | day | article | Pituitary incidentaloma: a Pituitary Society international consensus g |
+| 40591205 | `2025-10` | `2025-07-01` | day | article | Experts' consensus on the management and treatment of individuals with |
+| 40746619 | `2025-12` | `2025-07-29` | day | article | Clinical guidelines for women with a history of gestational diabetes a |
+| 40946023 | `2025` | `2025-09-12` | day | article | Consensus on the diagnosis, treatment, and follow-up in children and a |
+| 41111054 | `2025-11` | `2025-10-18` | day | article | Executive summary. Screening, staging and follow-up of type 1 diabetes |
+| 41118079 | `2026-02` | `2025-10-21` | day | article | Bridging the gap: recommendations to accomplish transition from pediat |
+| 41125535 | `2026-01` | `2025-10-22` | day | article | Parental Communication in the Prevention and Treatment of Child and Ad |
+| 41427034 | `2025` | `2025-12-04` | day | article | Delphi-based Spanish consensus on the use of long-acting growth hormon |
+| 41509147 | `2026-01` | `2025-12-03` | day | article | Clinical practice guidelines for the management of differences of sex  |
+| 41762432 | `2026-07` | `2026-02-28` | day | article | Management of andrological disorders from childhood and adolescence to |
+| 41770448 | `2026-10` | `2026-03-02` | day | article | Optimizing diagnosis and management of patients with ENPP1 deficiency: |
+| 41821267 | `2026-05` | `2026-03-12` | day | article | An international consensus on screening and monitoring early-stage typ |
+| 41860303 | `2026-Aug-13` | `2026-08-13` | day | journal | Novel CYP17A1 variants and functional validation in a large Chinese co |
+| 41984406 | `2026-08` | `2026-04-15` | day | article | Thyroid function and ultrasound surveillance in childhood cancer survi |
+| 42051156 | `2026-07` | `2026-04-29` | day | article | Considerations for the clinical use of teplizumab in stage 2 Type 1 di |
+| 42055464 | `2026` | `2026-04-27` | day | article | Executive summary of the consensus document on management of the trans |
+| 42251767 | `2026-Oct-01` | `2026-10-01` | day | journal | Early Pregnancy Glycemic Testing for Prediction of Gestational Diabete |
+| 42276035 | `2026` | `2026-01-01` | year | journal | Diagnostic criteria for growth disorders requiring growth hormone ther |
+| 42306887 | `2026-Sep-16` | `2026-09-16` | day | journal | Thyroid-joint crosstalk: a systematic review and meta-analysis of thyr |
+| 42340621 | `2026-09` | `2026-06-24` | day | article | Practical approach to the diagnosis, management, and treatment of pedi |
+| 42374900 | `2026-09` | `2026-06-30` | day | article | European Society for Pediatric Gastroenterology, Hepatology and Nutrit |
+| 42375004 | `2026-Sep-16` | `2026-09-16` | day | journal | From premature adrenarche to adult metabolic risk and hyperandrogenism |
+| 42482329 | `2026-Sep-01` | `2026-09-01` | day | journal | Effects of Menstrual Cycle on Insulin Sensitivity in Type 1 Diabetes:  |
+| 42507670 | `2026-Oct-01` | `2026-10-01` | day | journal | Fracture Risk Is Increased in Type 1 Diabetes and Is the Highest in In |
+| 42538214 | `2026-08` | `2026-07-31` | day | article | Clinical recommendations for the management of patients with type 1 di |
+| 42564970 | `2026` | `2026-07-02` | day | article | India Specific Consensus Guidelines for the Management of Differences  |
+| 42566297 | `2026-Oct-01` | `2026-10-01` | day | journal | A Pediatric Therapeutic Gap in the Emerging Stage-Specific Treatment o |
+| 42566303 | `2026-Oct-01` | `2026-10-01` | day | journal | Islet Autoantibody Patterns Vary by Race and Ethnicity and Area Depriv |
+| 42576608 | `2026-08-10` | `2026-08-12` | day | article | Real-world effectiveness of tirzepatide among youth with type 2 diabet |
+| 42594337 | `2026-08-13` | `2026-10-01` | day | journal | Adult Complications of Childhood-Onset Type 1 Diabetes Vary With Age a |
+| 42606340 | `2026-08-17` | `2026-10-01` | day | journal | Body Composition-Driven Phenotyping Reveals Obesity and Cardiometaboli |
+| 42612686 | `2026-08-18` | `2026-10-01` | day | journal | Clinical Utility of a Type 1 Diabetes Genetic Risk Score Measured as P |
+| 42625298 | `2026-Aug-28` | `2026-08-28` | day | journal | Biochemical control in young women with congenital adrenal hyperplasia |
+| 42676236 | `2026-09-01` | `2026-08-28` | day | journal | Long-acting growth hormone: An updated Growth Hormone Research Society |
+| 42689548 | `2026-09-03` | `2026-08-28` | day | journal | Adverse health outcomes across the life course in individuals with six |
+| 42779363 | `2026-09` | `2026-09-01` | month | journal | International Guideline on the Diagnosis, Treatment, and Monitoring of |
+| 42779506 | `2026-09-24` | `2026-10-05` | day | journal | Transition to once-weekly growth hormone in paediatric isolated growth |
+| 42789535 | `2026-09-25` | `2026-10-05` | day | journal | Off-label palopegteriparatide for severe pediatric postsurgical hypoca |
+| 42823987 | `2026` | `2026-09-17` | day | article | Consensus statement on the management of Achondroplasia in the Middle  |
+| 42824961 | `2026-10` | `2026-05-21` | day | article | Clinical consensus guidelines for the management of Noonan syndrome in |

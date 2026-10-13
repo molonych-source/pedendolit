@@ -1,0 +1,7 @@
+{
+ "last_fetch": "2026-10-13",
+ "window": ["2024/01/01", "2026/10/13"],
+ "datetype": "pdat",
+ "candidates_fetched": 604,
+ "note": "Seeded by the 2026-10-13 guideline gap search (two-arm query, 487 reviewed, 84 approved). guideline_fetch.py overwrites this on every run."
+}
