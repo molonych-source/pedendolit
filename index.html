@@ -3,55 +3,83 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>PedsEndoBrief — Pediatric Endocrinology Literature</title>
+<title>PedsEndoBrief: Pediatric Endocrinology Literature</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#faf9f5; --surface:#ffffff; --ink:#1f1e1c; --muted:#6b6a64; --line:#e6e4dc; --soft:#f4f2ec;
+  --bg:#faf9f5; --surface:#ffffff; --ink:#1f1e1c; --ink2:#45443f; --muted:#6b6a64; --line:#e6e4dc; --soft:#f4f2ec;
   --pa:#993c1d; --pa-bg:#faece7; --pa-dot:#d85a30;
   --high:#0c447c; --high-bg:#e6f1fb; --high-dot:#378add;
   --mod:#854f0b; --mod-bg:#faeeda; --mod-dot:#ba7517;
   --low:#5f5e5a; --low-bg:#f1efe8; --low-dot:#888780;
   --accent:#0f6e56; --accent-bg:#e1f5ee;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
 @media (prefers-color-scheme: dark){
-  :root{ --bg:#1a1916; --surface:#26241f; --ink:#ece9e1; --muted:#a3a098; --line:#3a382f; --soft:#2c2a25;
+  :root{ --bg:#1a1916; --surface:#26241f; --ink:#ece9e1; --ink2:#cfccc3; --muted:#a3a098; --line:#3a382f; --soft:#2c2a25;
     --pa-bg:#3a1d12; --high-bg:#0c2438; --mod-bg:#3a2a10; --low-bg:#2c2a25;
     --pa:#f0997b; --high:#85b7eb; --mod:#ef9f27; --low:#b4b2a9; --accent:#5dcaa5; --accent-bg:#0f3a30;}
 }
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.5;font-size:15px}
-.wrap{max-width:1180px;margin:0 auto;padding:24px 20px 80px}
-header h1{font-size:22px;font-weight:600;margin:0 0 2px}
-header .sub{color:var(--muted);font-size:13px}
-.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:10px;margin:18px 0}
-.metric{background:var(--surface);border:0.5px solid var(--line);border-radius:10px;padding:11px 13px}
-.metric .lab{font-size:12px;color:var(--muted)}
-.metric .val{font-size:23px;font-weight:600;margin-top:2px}
-.tabs{display:flex;gap:4px;border-bottom:0.5px solid var(--line);margin:18px 0 4px}
-.tab{border:none;background:none;color:var(--muted);font-size:14px;font-weight:500;padding:9px 16px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
-.tab:hover{color:var(--ink)}
-.tab.on{color:var(--accent);border-bottom-color:var(--accent)}
-.charts{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:14px 0 16px}
-@media(max-width:760px){.charts{grid-template-columns:1fr}}
-.panel{background:var(--surface);border:0.5px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:16px}
-.panel h2{font-size:14px;font-weight:600;margin:0 0 12px;color:var(--muted)}
-.bar-row{display:flex;align-items:center;gap:8px;margin:6px 0;font-size:13px}
-.bar-row .name{width:150px;flex:none;color:var(--ink)}
-.bar-track{flex:1;background:var(--low-bg);border-radius:6px;height:16px;overflow:hidden}
-.bar-fill{height:100%;border-radius:6px}
-.bar-row .num{width:40px;text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
-.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:16px 0 8px}
-.controls input[type=search]{flex:1;min-width:220px;padding:9px 12px;border:0.5px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font-size:14px}
-.chip{border:0.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 12px;font-size:13px;cursor:pointer;user-select:none}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.5;font-size:15px}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px 80px}
+
+/* ---- top bar: brand, destinations, search, account ---- */
+.top{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+.top-in{max-width:1180px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:8px 18px;flex-wrap:wrap}
+.brand{font-family:var(--serif);font-weight:600;font-size:22px;letter-spacing:-.01em;text-decoration:none;color:var(--ink)}
+.nav{display:flex;gap:2px}
+.nav a{padding:7px 12px;border-radius:8px;color:var(--muted);text-decoration:none;font-size:14px;font-weight:500}
+.nav a:hover{color:var(--ink);background:var(--soft)}
+.nav a[aria-current=page]{color:var(--accent);background:var(--accent-bg)}
+.search{flex:1;min-width:180px;max-width:440px}
+.search input{width:100%;padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:inherit;font-size:14px}
+.authbar{display:flex;gap:8px;align-items:center;margin-left:auto}
+.authwho{font-size:12px;color:var(--muted);max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+
+/* ---- landing ---- */
+.hero{padding:36px 0 4px}
+.hero-q{font-family:var(--serif);font-size:30px;line-height:1.5;font-weight:400;margin:0;letter-spacing:-.005em}
+.inl{font:inherit;color:var(--accent);background:transparent;border:0;border-bottom:2px solid var(--accent);border-radius:0;padding:0 2px;cursor:pointer;appearance:none;-webkit-appearance:none}
+select.inl{padding-right:22px;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%230f6e56' stroke-width='2.5'><path d='M6 9l6 6 6-6'/></svg>");background-repeat:no-repeat;background-position:right 2px center}
+input.inl{font-size:.82em}
+.go{font:inherit;font-family:var(--sans);font-size:15px;font-weight:600;background:var(--accent);color:#fff;border:0;border-radius:8px;padding:9px 16px;cursor:pointer;margin-left:6px;vertical-align:middle}
+.go:hover{opacity:.92}
+.coverage{font-size:13.5px;color:var(--muted);max-width:70ch;border-left:3px solid var(--line);padding:2px 0 2px 12px;margin:18px 0 0}
+.coverage.warn{color:var(--ink);background:var(--mod-bg);border-left-color:var(--mod-dot);padding:10px 14px;border-radius:0 8px 8px 0}
+.statline{font-size:13px;color:var(--muted);margin:12px 0 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;margin:26px 0 10px}
+.tile{display:flex;flex-direction:column;gap:7px;padding:15px 16px 13px;background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--rule,var(--line));border-radius:10px;text-decoration:none;color:var(--ink)}
+.tile:hover{border-color:var(--muted);border-left-color:var(--rule,var(--muted))}
+.t-head{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.t-name{font-weight:600;font-size:16px;line-height:1.3}
+.spark{flex:none;color:var(--muted);margin-top:3px}
+.t-new{font-size:13px;font-weight:600;color:var(--accent)}
+.t-new.none{color:var(--muted);font-weight:400}
+.t-lead{font-family:var(--serif);font-size:14.5px;line-height:1.42;margin:0;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.t-foot{margin-top:auto;padding-top:4px;font-size:12px;color:var(--muted)}
+
+/* ---- topic queue ---- */
+.qhead{padding:22px 0 4px}
+.back{font-size:13.5px;color:var(--muted);text-decoration:none}
+.back:hover{color:var(--ink);text-decoration:underline}
+.qtitle{font-family:var(--serif);font-size:34px;font-weight:600;margin:4px 0 2px;letter-spacing:-.01em;line-height:1.2}
+.qsub{color:var(--muted);font-size:14px}
+.toolbar{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;margin:14px 0 14px}
+.fld{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--muted)}
+.fld select,.fld input{font:inherit;font-size:13px;padding:5px 10px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink)}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:5px 12px;font:inherit;font-size:13px;cursor:pointer}
+.chip:hover{border-color:var(--muted)}
 .chip.on{background:var(--accent-bg);color:var(--accent);border-color:var(--accent)}
-.rowlabel{font-size:12px;color:var(--muted);align-self:center;margin-right:2px}
-.msel{font-size:13px;padding:6px 28px 6px 12px;border:0.5px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);cursor:pointer;appearance:none;
-  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b6a64' stroke-width='2'><path d='M6 9l6 6 6-6'/></svg>");background-repeat:no-repeat;background-position:right 9px center}
-.msel:focus{outline:none;border-color:var(--accent)}
-.count-line{color:var(--muted);font-size:13px;margin:8px 2px 14px}
-/* tier group accordion */
-.group{margin-bottom:14px;border:0.5px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface)}
-.ghead{display:flex;align-items:center;gap:10px;padding:12px 16px;cursor:pointer;user-select:none}
+.empty{text-align:center;color:var(--muted);padding:36px;font-size:14px}
+/* tier group accordion: the tier is named once here, not on every row */
+.group{margin-bottom:14px;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--surface)}
+.ghead{display:flex;align-items:center;gap:10px;padding:12px 18px;cursor:pointer;user-select:none}
 .ghead:hover{background:var(--soft)}
 .dot{width:13px;height:13px;border-radius:50%;flex:none}
 .gname{font-weight:600;font-size:14px;padding:3px 10px;border-radius:6px}
@@ -61,40 +89,63 @@ header .sub{color:var(--muted);font-size:13px}
 .gchev{margin-left:auto;color:var(--muted);transition:transform .15s;font-size:18px;line-height:1}
 .group.collapsed .gchev{transform:rotate(-90deg)}
 .group.collapsed .gbody{display:none}
-.gbody{border-top:0.5px solid var(--line)}
-/* article card */
-.card{border-bottom:0.5px solid var(--line)}
+.gbody{border-top:1px solid var(--line)}
+.group{scroll-margin-top:84px}
+.ghead.gstatic{cursor:default}
+.ghead.gstatic:hover{background:transparent}
+.gnote{font-size:13px;color:var(--muted);margin:10px 0 0;max-width:70ch}
+.jump{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 16px}
+.morebtn{display:block;width:100%;border:0;border-top:1px solid var(--line);background:var(--soft);color:var(--ink);font:inherit;font-size:13.5px;padding:12px;cursor:pointer}
+.morebtn:hover{background:var(--line)}
+
+/* ---- article row: bottom line is the headline ---- */
+.card{border-bottom:1px solid var(--line)}
 .card:last-child{border-bottom:none}
-.chead{display:flex;gap:10px;align-items:flex-start;padding:12px 16px;cursor:pointer}
+.chead{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;cursor:pointer}
 .chead:hover{background:var(--soft)}
-.cchev{color:var(--muted);font-size:16px;line-height:1.4;flex:none;transition:transform .15s}
-.card.open .cchev{transform:rotate(90deg)}
-.award{color:var(--accent);font-size:14px;flex:none;margin-top:2px}
 .cmain{flex:1;min-width:0}
-.ctitle{font-size:15px;font-weight:600;margin:0 0 3px}
-.cmeta{font-size:13px;color:var(--muted)}
-.cmeta .badge{margin-left:2px}
-.badge{font-size:11px;font-weight:600;padding:2px 8px;border-radius:6px;letter-spacing:.02em;vertical-align:1px}
-.b-pa{background:var(--pa-bg);color:var(--pa)} .b-high{background:var(--high-bg);color:var(--high)}
-.b-mod{background:var(--mod-bg);color:var(--mod)} .b-low{background:var(--low-bg);color:var(--low)}
-.subt{font-size:12px;color:var(--accent)}
-.cbody{display:none;padding:0 16px 16px 42px}
+.bl-head{font-family:var(--serif);font-size:18.5px;line-height:1.38;font-weight:500;margin:0 0 5px;color:var(--ink)}
+.bl-head.is-title{font-weight:600}
+.bl-sum{font-size:14px;line-height:1.5;color:var(--ink2);margin:0 0 4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card.open .bl-sum{display:block;-webkit-line-clamp:unset;overflow:visible}
+.bl-head{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card.open .bl-head{display:block;-webkit-line-clamp:unset;overflow:visible}
+.blrest{font-family:var(--serif);font-size:15px;line-height:1.55;color:var(--ink2);margin:0 0 12px;max-width:70ch}
+.ctitle{font-size:13.5px;line-height:1.45;color:var(--ink2);margin:0 0 4px}
+.cmeta{font-size:12.5px;color:var(--muted)}
+.cact{display:flex;align-items:center;gap:6px;flex:none}
+.cchev{color:var(--muted);font-size:15px;transition:transform .15s}
+.card.open .cchev{transform:rotate(90deg)}
+.tierpill{font-size:11px;font-weight:600;padding:1px 7px;border-radius:5px}
+.subt{color:var(--accent)}
+.cbody{display:none;padding:0 18px 18px}
 .card.open .cbody{display:block}
-.bl{font-size:13.5px;background:var(--soft);border-radius:8px;padding:10px 12px;margin:4px 0 8px}
-.bl b{font-weight:600}
 .why{font-size:12.5px;color:var(--muted);font-style:italic;margin:0 0 10px}
 .tags{display:flex;flex-wrap:wrap;gap:5px;margin:0 0 10px}
 .tag{font-size:11px;color:var(--muted);background:var(--low-bg);border-radius:5px;padding:2px 7px}
 .abswrap{margin:4px 0 10px}
-.absbtn{border:0.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:7px;padding:6px 12px;font-size:13px;cursor:pointer}
+.absbtn{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:7px;padding:6px 12px;font-size:13px;cursor:pointer}
 .absbtn:hover{background:var(--soft)}
 .abshead{font-size:11px;font-weight:600;letter-spacing:.06em;color:var(--muted);margin:10px 0 4px}
-.abstext{font-size:13.5px;color:var(--ink);line-height:1.6;white-space:pre-wrap}
+.abstext{font-size:14px;color:var(--ink);line-height:1.6;white-space:pre-wrap;max-width:75ch}
 .abstext.none{color:var(--muted);font-style:italic}
 .links a{font-size:13px;color:var(--accent);text-decoration:none;margin-right:14px}
 .links a:hover{text-decoration:underline}
 .pmid{float:right;color:var(--muted);font-size:12px}
-.foot{margin-top:30px;color:var(--muted);font-size:12px;border-top:0.5px solid var(--line);padding-top:14px}
+
+/* ---- analytics ---- */
+.charts{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0 16px}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin-bottom:16px}
+.panel h2{font-size:14px;font-weight:600;margin:0 0 12px;color:var(--muted)}
+.bar-row{display:flex;align-items:center;gap:8px;margin:6px 0;font-size:13px}
+.bar-row .name{width:150px;flex:none;color:var(--ink)}
+.bar-track{flex:1;background:var(--low-bg);border-radius:6px;height:16px;overflow:hidden}
+.bar-fill{height:100%;border-radius:6px}
+.bar-row .num{width:40px;text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+
+.pagehead{padding:22px 0 4px}
+.foot{margin-top:40px;color:var(--muted);font-size:12px;border-top:1px solid var(--line);padding-top:14px}
+.foot .reportbtn{margin-top:10px}
 .reportbtn{display:inline-block;border:0.5px solid var(--line);background:var(--surface);color:var(--ink);border-radius:7px;padding:6px 12px;font-size:13px;cursor:pointer}
 .reportbtn:hover{background:var(--soft)}
 .modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.45);display:none;align-items:center;justify-content:center;z-index:50;padding:16px}
@@ -151,15 +202,30 @@ header .sub{color:var(--muted);font-size:13px}
 .exportbtns{display:flex;gap:8px;flex-wrap:wrap}
 .minibtn{background:var(--surface);border:0.5px solid var(--line);color:var(--ink);border-radius:8px;padding:8px 12px;font:inherit;font-size:12px;cursor:pointer;min-height:36px}
 .minibtn:hover{border-color:var(--muted)}
-/* ---- Phase 3C: phone ergonomics ---- */
-.tabs{flex-wrap:wrap}
-@media(max-width:760px){
-  .chip{padding:9px 14px;font-size:13px}       /* was ~27px tall, under the 44px target */
+/* ---- phone ---- */
+.tabs{display:none}
+@media(max-width:700px){
+  .top-in{padding:8px 14px;gap:8px 12px}
+  .brand{order:1;font-size:20px}
+  .authbar{order:2}
+  .authwho{display:none}
+  .search{order:3;flex-basis:100%;max-width:none}
+  .nav{order:4;flex-basis:100%}
+  .wrap{padding:0 14px 60px}
+  .hero{padding-top:24px}
+  .hero-q{font-size:22px}
+  .go{margin:8px 0 0 0;display:block}
+  .grid{grid-template-columns:1fr}
+  .qtitle{font-size:27px}
+  .bl-head{font-size:17px}
+  .chead{padding:14px 12px;gap:10px}
+  .cbody{padding:0 12px 16px}
+  .chip{padding:9px 14px}
   .savebtn,.citebtn,.minibtn{min-height:40px}
-  .cbody{padding:0 14px 16px 16px}             /* the 42px indent ate a phone's width */
+  .charts{grid-template-columns:1fr}
   .bar-row .name{width:110px}
-  .controls input[type=search]{min-width:100%}
 }
+@media (prefers-reduced-motion: reduce){*{transition:none!important}}
 </style>
 <!-- Supabase browser client (auth + saved lists). Loaded from CDN; if it fails
      to load the dashboard still works, just without accounts. Version is pinned
@@ -167,72 +233,85 @@ header .sub{color:var(--muted);font-size:13px}
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.112.0"></script>
 </head>
 <body>
-<div class="wrap">
-  <header style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px">
-    <div>
-      <h1>PedsEndoBrief</h1>
-      <div class="sub">Pediatric endocrinology literature dashboard · <span id="period"></span></div>
-    </div>
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#/" id="brand">PedsEndoBrief</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#/" data-nav="home">Topics</a>
+      <a href="#/saved" data-nav="saved" id="tab-btn-saved" style="display:none">Saved</a>
+      <a href="#/guidelines" data-nav="guidelines">Guidelines</a>
+      <a href="#/analytics" data-nav="analytics">Analytics</a>
+    </nav>
+    <div class="search"><input type="search" id="q" placeholder="Search all articles" aria-label="Search all articles" autocomplete="off"/></div>
     <div class="authbar">
       <span class="authwho" id="auth-who" style="display:none"></span>
       <button class="reportbtn" id="auth-btn" style="display:none">Sign in</button>
-      <button class="reportbtn" id="open-report">Report a bug or leave a comment</button>
     </div>
-  </header>
-
-  <div class="metrics" id="metrics"></div>
-
-  <div class="tabs">
-    <button class="tab on" data-tab="feed">Feed</button>
-    <button class="tab" data-tab="saved" id="tab-btn-saved" style="display:none">My Saved Articles</button>
-    <button class="tab" data-tab="analytics">Analytics</button>
   </div>
+</header>
 
-  <div id="tab-feed">
-    <div class="controls">
-      <input type="search" id="q" placeholder="Search title, author, journal, takeaway…"/>
-      <span class="chip" data-flag="since" id="chip-since" style="display:none">✦ New since your last visit</span>
-      <span class="chip" data-flag="mine" id="chip-mine" style="display:none">★ Saved</span>
-      <span class="chip" data-flag="guidelines">Guidelines</span>
-      <span class="chip" data-flag="new">New this period</span>
-      <span class="chip" data-flag="board">Board-relevant</span>
-      <span class="chip" data-flag="open">Open access</span>
-    </div>
-    <div id="topic-chips" class="controls" style="margin-top:0"><span class="rowlabel">Topic:</span></div>
-    <div id="dm-chips" class="controls" style="margin-top:0;display:none"><span class="rowlabel">Diabetes subtype:</span></div>
-    <div id="age-chips" class="controls" style="margin-top:0"><span class="rowlabel">Age:</span></div>
-    <div class="controls" style="margin-top:0">
-      <span class="rowlabel">Month:</span>
-      <select id="month-select" class="msel"><option value="All">All months</option></select>
-    </div>
+<div class="wrap">
+  <main id="main">
 
-    <div class="count-line" id="count"></div>
+  <section id="v-home">
+    <div class="hero">
+      <p class="hero-q">What's new in
+        <select id="c-topic" class="inl" aria-label="Topic"></select>
+        since <input type="date" id="c-since" class="inl" aria-label="Since date"/>
+        <button type="button" class="go" id="c-go">Show articles</button>
+      </p>
+      <div id="c-note" role="status"></div>
+      <p class="statline" id="statline"></p>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="v-queue" hidden>
+    <div class="qhead" id="qhead"></div>
+    <div class="toolbar" id="qtools">
+      <label class="fld">Published since <input type="date" id="f-since"/></label>
+      <label class="fld">Age
+        <select id="f-age"><option>All</option><option>Neonatal</option><option>Infant</option><option>Child</option><option>Adolescent</option><option>Transition</option></select></label>
+      <label class="fld" id="f-sub-wrap" hidden>Subtopic <select id="f-sub"></select></label>
+      <label class="fld" id="f-dm-wrap" hidden>Diabetes type
+        <select id="f-dm"><option>All</option><option>T1D</option><option>T1D·Stage</option><option>T2D</option><option>Technology</option><option>MODY/Monogenic</option><option>CFRD</option><option>GDM</option><option>Steroid-induced</option><option>General</option></select></label>
+      <button type="button" class="chip" data-flag="since" id="chip-since" style="display:none">New since your last visit</button>
+      <button type="button" class="chip" data-flag="mine" id="chip-mine" style="display:none">Saved only</button>
+      <button type="button" class="chip" data-flag="new">Added this week</button>
+      <button type="button" class="chip" data-flag="guidelines">Guidelines</button>
+      <button type="button" class="chip" data-flag="board">Board-relevant</button>
+      <button type="button" class="chip" data-flag="open">Open access</button>
+    </div>
     <div id="groups"></div>
-  </div>
+  </section>
 
-  <div id="tab-saved" style="display:none">
-    <div class="savedbar">
-      <div class="count-line" id="saved-count"></div>
-      <div class="exportbtns">
-        <button type="button" class="minibtn" id="export-txt" title="Copy all saved citations as plain text">Copy citations</button>
-        <button type="button" class="minibtn" id="export-ris" title="Download as .ris for Zotero, EndNote or Mendeley">Export to Zotero (.ris)</button>
-      </div>
+  <section id="v-saved" hidden>
+    <div class="pagehead"><h1 class="qtitle">Saved articles</h1></div>
+    <div class="toolbar">
+      <div class="qsub" id="saved-count"></div>
+      <span style="flex:1"></span>
+      <button type="button" class="minibtn" id="export-txt" title="Copy all saved citations as plain text">Copy citations</button>
+      <button type="button" class="minibtn" id="export-ris" title="Download as .ris for Zotero, EndNote or Mendeley">Export to Zotero (.ris)</button>
     </div>
     <div id="saved-list"></div>
-  </div>
+  </section>
 
-  <div id="tab-analytics" style="display:none">
+  <section id="v-analytics" hidden>
+    <div class="pagehead"><h1 class="qtitle">Analytics</h1></div>
     <div class="charts">
       <div class="panel"><h2>Topic distribution</h2><div id="chart-topic"></div></div>
       <div class="panel"><h2>Evidence impact</h2><div id="chart-impact"></div></div>
     </div>
     <div class="panel"><h2>Articles by journal</h2><div id="chart-journal"></div></div>
-  </div>
+  </section>
+
+  </main>
 
   <div class="foot">
     Data source: PubMed (NCBI E-utilities). Classified with the PedsEndoBrief classifier v2.5.
     Generated <span id="gen"></span>. Article links open PubMed; DOI / Full Text open the publisher.
     This is a literature-surveillance aid, not medical advice.
+    <div><button type="button" class="reportbtn" id="open-report">Report a bug or leave a comment</button></div>
   </div>
 </div>
 
@@ -322,7 +401,6 @@ const AUTH_ON = SUPA_URL.indexOf('http')===0 && SUPA_KEY.length>20
                 && typeof window.supabase!=='undefined';
 let SB=null;      // Supabase client
 let USER=null;    // signed-in user, or null
-document.getElementById('period').textContent=D.review_period||'';
 document.getElementById('gen').textContent=(D.generated||'').replace('T',' ');
 
 const TIERS=[
@@ -331,9 +409,9 @@ const TIERS=[
   {key:'MODERATE',label:'Moderate',cls:'mod',dot:'var(--mod-dot)'},
   {key:'LOW',label:'Low',cls:'low',dot:'var(--low-dot)'},
 ];
-const impClass={'PRACTICE-ALTERING':'b-pa','HIGH':'b-high','MODERATE':'b-mod','LOW':'b-low'};
+const TIER_BY_KEY=Object.fromEntries(TIERS.map(t=>[t.key,t]));
 const esc=s=>(s||'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const authorStr=a=>{const au=a.authors||[];if(!au.length)return '';return au.length<=3?au.join(', '):au.slice(0,3).join(', ')+' et al.';};
+const authorStr=a=>{const au=(a.authors||[]).filter(x=>x&&String(x).trim());if(!au.length)return '';return au.length<=3?au.join(', '):au.slice(0,3).join(', ')+' et al.';};
 const _MON={jan:1,feb:2,mar:3,apr:4,may:5,jun:6,jul:7,aug:8,sep:9,oct:10,nov:11,dec:12};
 // Format a pub_date as mm/dd/yyyy, honouring how precise the date actually is.
 // Since the 2026-08-06 repair, pub_date is ALWAYS a full sortable ISO date — a
@@ -353,42 +431,81 @@ function fmtDate(s, prec){
   if(mo&&mo>=1&&mo<=12)return `${String(mo).padStart(2,'0')}/${y}`;
   return y;
 }
+const MONTH_NAMES=['January','February','March','April','May','June','July','August','September','October','November','December'];
+function fmtLong(iso){   // 2026-07-01 -> "Jul 1, 2026"
+  const m=/^(\d{4})-(\d{2})-(\d{2})/.exec(iso||'');if(!m)return iso||'';
+  return MONTH_NAMES[+m[2]-1].slice(0,3)+' '+(+m[3])+', '+m[1];
+}
+function monthLabel(key){const m=/^(\d{4})-(\d{2})/.exec(key||'');return m?MONTH_NAMES[+m[2]-1]+' '+m[1]:key;}
+function prevMonth(key){let y=+key.slice(0,4),m=+key.slice(5,7)-1;if(m<1){m=12;y--;}return y+'-'+String(m).padStart(2,'0');}
+function isoMinusDays(iso,n){const d=new Date(iso+'T00:00:00Z');d.setUTCDate(d.getUTCDate()-n);return d.toISOString().slice(0,10);}
 
-function metrics(){
-  const n=ART.length;
-  const m=[['Active articles',n],
-    ['Practice-altering',ART.filter(a=>a.impact==='PRACTICE-ALTERING').length],
-    ['High impact',ART.filter(a=>a.impact==='HIGH').length],
-    ['Board-relevant',ART.filter(a=>a.board_relevant===1).length],
-    ['New this period',ART.filter(a=>a.is_new).length]];
-  document.getElementById('metrics').innerHTML=m.map(([l,v])=>
-    `<div class="metric"><div class="lab">${l}</div><div class="val">${v}</div></div>`).join('');
+// ---------------------------------------------------------------------------
+// Dataset-derived facts. Everything here is computed from ART at load, never typed
+// in, so it stays true as the corpus grows.
+// ---------------------------------------------------------------------------
+const LASTRUN=(D.last_run_date||'').slice(0,10)||new Date().toISOString().slice(0,10);
+const CUR_MONTH=LASTRUN.slice(0,7);
+const TOPIC_ORDER=['Diabetes','Growth','Puberty','Thyroid','Adrenal','Obesity/Metabolic','Bone/Mineral','Pituitary',
+  'Hyperinsulinism','PCOS','Genetics','DSD','Gender Medicine','Cancer Late Effects','Lipids','General Endocrinology'];
+const TOPIC_SET=new Set(ART.map(a=>a.topic));
+const TOPICS=TOPIC_ORDER.filter(t=>TOPIC_SET.has(t)).concat([...TOPIC_SET].filter(t=>!TOPIC_ORDER.includes(t)).sort());
+
+// Coverage floor: the earliest month from which every complete month holds at least
+// half the median of the last six complete months. Walks calendar months (a month
+// with no articles counts as zero, it does not get skipped).
+const MC={};ART.forEach(a=>{const k=(a.pub_date||'').slice(0,7);if(k)MC[k]=(MC[k]||0)+1;});
+const COV=(function(){
+  const recent=[];let k=prevMonth(CUR_MONTH);
+  for(let i=0;i<6;i++){recent.push(MC[k]||0);k=prevMonth(k);}
+  recent.sort((a,b)=>a-b);
+  const med=(recent[2]+recent[3])/2, thr=med/2;
+  let floor=null;k=prevMonth(CUR_MONTH);
+  for(let i=0;i<240;i++){if((MC[k]||0)>=thr){floor=k;k=prevMonth(k);}else break;}
+  if(!floor)return null;
+  let sum=0,n=0;for(k=floor;k<CUR_MONTH;){sum+=MC[k]||0;n++;const y=+k.slice(0,4),m=+k.slice(5,7);k=m===12?(y+1)+'-01':y+'-'+String(m+1).padStart(2,'0');}
+  const date=floor+'-01';
+  const pre=ART.filter(a=>(a.pub_date||'')<date);
+  return {floor,date,label:monthLabel(floor),avg:Math.round(sum/Math.max(1,n)),
+          pre:pre.length,preGuidelines:pre.filter(a=>a.study_type==='Guideline/Consensus').length};
+})();
+
+// The same impact_rationale text appears verbatim on every guideline. Text that repeats
+// that often carries no information about THIS article, so it is not shown.
+const RAT_COUNT=new Map();
+ART.forEach(a=>{if(a.impact_rationale)RAT_COUNT.set(a.impact_rationale,(RAT_COUNT.get(a.impact_rationale)||0)+1);});
+
+// A bottom line is only fit to be a headline if it reads as a takeaway. Weak ones
+// (empty, placeholder, a fragment, cut off mid-sentence, or just the abstract's
+// opening words) fall back to the title rather than showing broken text at 18px.
+// This is a stopgap for the real fix, generating proper bottom lines (PLAN_bottom_lines.md).
+const _norm=s=>(s||'').toLowerCase().replace(/\s+/g,' ').trim();
+function blInfo(a){
+  if(a._bl)return a._bl;
+  const bl=(a.clinical_bottom_line||'').trim();
+  let weak=null;
+  if(!bl)weak='empty';
+  else if(/^\[/.test(bl))weak='placeholder';
+  else if(bl.length<25)weak='short';
+  else if(!/[.!?)"'”’%]$/.test(bl))weak='truncated';
+  else if(/^(furthermore|moreover|additionally|notably|however|thus|therefore|in addition|also)\b/i.test(bl))weak='fragment';   // starts mid-argument, so it cannot stand alone
+  else if(a.abstract){const b=_norm(bl),ab=_norm(a.abstract),n=Math.min(60,b.length);
+    if(n>=25&&ab.startsWith(b.slice(0,n)))weak='extractive';}
+  return (a._bl={text:bl,weak:weak});
 }
 
-// filter chip rows
-const topics=[...new Set(ART.map(a=>a.topic))].sort();
-document.getElementById('topic-chips').insertAdjacentHTML('beforeend',
-  topics.map(t=>`<span class="chip" data-topic="${esc(t)}">${esc(t)}</span>`).join(''));
-const DM_SUBS=['All','T1D','T1D·Stage','T2D','Technology','MODY/Monogenic','CFRD','GDM','Steroid-induced','General'];
-document.getElementById('dm-chips').insertAdjacentHTML('beforeend',
-  DM_SUBS.map(s=>`<span class="chip${s==='All'?' on':''}" data-dm="${esc(s)}">${esc(s)}</span>`).join(''));
-const AGES=['All','Neonatal','Infant','Child','Adolescent','Transition'];
-document.getElementById('age-chips').insertAdjacentHTML('beforeend',
-  AGES.map(a=>`<span class="chip${a==='All'?' on':''}" data-age="${esc(a)}">${esc(a)}</span>`).join(''));
-
-// month dropdown, populated from the publication months present in the data (newest first)
-const MONTHS=D.months||[];
-document.getElementById('month-select').insertAdjacentHTML('beforeend',
-  MONTHS.map(m=>`<option value="${esc(m.key)}">${esc(m.label)}</option>`).join(''));
-
-const state={q:'',flags:new Set(),topic:null,dm:'All',age:'All',month:'All'};
-// LOW group collapsed by default; others open. Persists during session.
-const collapsed={'PRACTICE-ALTERING':false,'HIGH':false,'MODERATE':false,'LOW':true};
+// ---------------------------------------------------------------------------
+// State
+// ---------------------------------------------------------------------------
+const state={topic:null,q:'',since:'',flags:new Set(),dm:'All',age:'All',sub:'All'};
+const defaultCollapsed=()=>({'PRACTICE-ALTERING':false,'HIGH':false,'MODERATE':false,'LOW':true});
+let collapsed=defaultCollapsed();
 const openCards=new Set();
 // Abstracts need their own state Set for the same reason cards do: without it,
-// any re-render (which now includes every keystroke) silently re-collapses every
-// abstract the reader had opened.
+// any re-render silently re-collapses every abstract the reader had opened.
 const openAbstracts=new Set();
+const PAGE=50, shownN={};      // rows rendered per tier before "Show more"
+let viewNow='home';
 
 // Populated from user_prefs once signed in; null means "we don't know yet", which
 // is different from "nothing is new".
@@ -405,8 +522,9 @@ function matches(a){
     if(state.dm==='Technology'){if(a.subtopic!=='Technology')return false;}
     else if(a.diabetes_subtype!==state.dm)return false;
   }
+  if(state.sub!=='All'&&(a.subtopic||'General')!==state.sub)return false;
   if(state.age!=='All'&&!(a.age_range||[]).includes(state.age))return false;
-  if(state.month!=='All'&&a.month_key!==state.month)return false;
+  if(state.since&&(a.pub_date||'')<state.since)return false;
   if(state.flags.has('board')&&a.board_relevant!==1)return false;
   if(state.flags.has('open')&&a.access!=='Open')return false;
   if(state.flags.has('new')&&!a.is_new)return false;
@@ -418,32 +536,97 @@ function matches(a){
   return true;
 }
 
+// ---------------------------------------------------------------------------
+// Coverage notice. Adapts to what was asked: a date earlier than the corpus goes
+// gets a statement of what the answer can and cannot see, before any articles.
+// ---------------------------------------------------------------------------
+function coverageHTML(since,topic){
+  if(!COV)return '';
+  if(since&&since<COV.date){
+    const n=ART.filter(a=>a.pub_date>=since&&a.pub_date<COV.date&&(!topic||a.topic===topic)).length;
+    return `<div class="coverage warn"><b>Coverage is thin before ${esc(COV.label)}.</b> From ${esc(fmtLong(since))} to then, the site holds ${n} ${topic?esc(topic)+' ':''}article${n===1?'':'s'}, against about ${COV.avg} a month since. Read the results as what we have, not everything published.</div>`;
+  }
+  return `<div class="coverage">Steady monthly coverage starts in ${esc(COV.label)}, at about ${COV.avg} articles a month. Before that the site holds ${COV.pre} articles in all (${COV.preGuidelines} of them guidelines), so an earlier start date returns a sample.</div>`;
+}
+
+// ---------------------------------------------------------------------------
+// Landing: catch-up sentence + one tile per topic
+// ---------------------------------------------------------------------------
+function sparkSVG(topic){
+  const keys=[];let k=CUR_MONTH;for(let i=0;i<12;i++){keys.unshift(k);k=prevMonth(k);}
+  const c=keys.map(m=>ART.filter(a=>a.topic===topic&&(a.pub_date||'').slice(0,7)===m).length);
+  const mx=Math.max(1,...c);
+  const bars=c.map((v,i)=>{const h=v?Math.max(2,Math.round(v/mx*20)):1;
+    return `<rect x="${i*6}" y="${22-h}" width="4" height="${h}" rx="1" fill="currentColor"${i===11?' opacity=".45"':''}/>`;}).join('');
+  return `<svg class="spark" width="70" height="22" viewBox="0 0 70 22" role="img" aria-label="${esc(topic)} articles per month, ${esc(monthLabel(keys[0]))} to ${esc(monthLabel(keys[11]))}">${bars}</svg>`;
+}
+function renderHome(){
+  const jr=new Set(ART.map(a=>a.journal_abbr||a.journal)).size;
+  document.getElementById('statline').textContent=
+    `${ART.length.toLocaleString()} articles from ${jr} journals. Updated ${fmtLong(LASTRUN)}.`;
+  document.getElementById('grid').innerHTML=TOPICS.map(t=>{
+    const arts=ART.filter(a=>a.topic===t);
+    const fresh=arts.filter(a=>a.is_new);
+    const lead=(fresh.length?fresh:arts)[0];     // ART is already ranked: impact tier, then newest
+    const rule=TIER_BY_KEY[lead.impact]?TIER_BY_KEY[lead.impact].dot:'var(--line)';
+    return `<a class="tile" href="#/t/${encodeURIComponent(t)}" style="--rule:${rule}">
+      <div class="t-head"><span class="t-name">${esc(t)}</span>${sparkSVG(t)}</div>
+      <div class="t-new${fresh.length?'':' none'}">${fresh.length?fresh.length+' new this week':'Nothing new this week'}</div>
+      <p class="t-lead">${esc(lead.title)}</p>
+      <div class="t-foot">${arts.length.toLocaleString()} article${arts.length===1?'':'s'}</div>
+    </a>`;}).join('');
+  updateCatchNote();
+}
+function catchTopic(){return document.getElementById('c-topic').value;}
+function updateCatchNote(){
+  document.getElementById('c-note').innerHTML=coverageHTML(document.getElementById('c-since').value,catchTopic());
+}
+(function initCatch(){
+  const sel=document.getElementById('c-topic');
+  sel.innerHTML='<option value="">any topic</option>'+TOPICS.map(t=>`<option value="${esc(t)}">${esc(t)}</option>`).join('');
+  const dt=document.getElementById('c-since');
+  dt.max=LASTRUN;dt.value=isoMinusDays(LASTRUN,7);
+  sel.addEventListener('change',updateCatchNote);
+  dt.addEventListener('input',updateCatchNote);
+  document.getElementById('c-go').addEventListener('click',()=>{
+    const t=sel.value, s=dt.value;
+    const qs=s?'?since='+encodeURIComponent(s):'';
+    location.hash=(t?'#/t/'+encodeURIComponent(t):'#/all')+qs;
+  });
+})();
+
+// ---------------------------------------------------------------------------
+// Article row
+// ---------------------------------------------------------------------------
 function absText(a){
   return `<div class="abshead">ABSTRACT</div><div class="abstext">${esc(a.abstract)}</div>`;
 }
 
-function cardHTML(a){
-  const open=openCards.has(a.pmid)?' open':'';
-  const award=a.impact==='PRACTICE-ALTERING'?`<span class="award" title="Practice-altering">&#9733;</span>`:`<span class="award" style="visibility:hidden">&#9733;</span>`;
-  const sub=a.subtopic?` <span class="subt">${esc(a.subtopic)}</span>`:'';
-  const tags=(a.tags||[]).slice(0,10).map(t=>`<span class="tag">${esc(t)}</span>`).join('');
+function cardHTML(a,opt){
+  opt=opt||{};
+  const open=openCards.has(a.pmid);
+  const b=blInfo(a);
+  const sub=(a.subtopic&&a.subtopic!=='General')?` · <span class="subt">${esc(a.subtopic)}</span>`:'';
+  const tags=(a.tags||[]).slice(0,8).map(t=>`<span class="tag">${esc(t)}</span>`).join('');
   const soc=(a.society&&a.society.length)?`<span class="tag">${a.society.map(esc).join(', ')}</span>`:'';
   const hasAbs=(a.abstract||'').trim().length>=40;
-  // NB: no id= on the abstract body. The same card can be rendered twice (Feed and
-  // My Saved Articles), and duplicate ids would make one copy toggle the other.
+  // NB: no id= on the abstract body. The same card can be rendered twice (a topic
+  // list and the Saved list), and duplicate ids would make one copy toggle the other.
   const absOpen=openAbstracts.has(a.pmid);
-  // Abstract text is only put in the DOM once opened. It is the largest piece of
-  // text on a card, and emitting ~1130 of them up front was most of the page's
-  // node count for content that is hidden by default. absText() fills it lazily.
+  // Abstract text is only put in the DOM once opened: it is the largest text on a
+  // card and was most of the page's node count for content hidden by default.
   const ab  = hasAbs
     ? `<div class="abswrap"><button class="absbtn" data-abs="${a.pmid}">${absOpen?'Hide abstract':'Show abstract'}</button>
          <div class="absbody" style="display:${absOpen?'block':'none'}">${absOpen?absText(a):''}</div></div>`
     : `<div class="abswrap"><div class="abshead">ABSTRACT</div><div class="abstext none">Abstract not available in PubMed for this record.</div></div>`;
   const doi=a.doi_url?`<a href="${esc(a.doi_url)}" target="_blank" rel="noopener">Full Text &#8599;</a>`:'';
   const pm=a.url?`<a href="${esc(a.url)}" target="_blank" rel="noopener">PubMed &#8599;</a>`:'';
-  const isNew=isNewToMe(a)?`<span class="newdot" title="New since your last visit">&#10022;</span>`:'';
+  const isNew=isNewToMe(a)?`<span title="New since your last visit" style="color:var(--accent)">&#10022; </span>`:'';
+  const t=TIER_BY_KEY[a.impact];
+  const tier=(opt.tier&&t)?`<span class="tierpill gname ${t.cls}">${t.label}</span> · `:'';
+  const reg=(a.regions&&a.regions.length)?` · ${esc(a.regions.join(', '))}`:'';
   // The note box only appears for articles this person has actually saved —
-  // showing it on all ~1300 cards would be noise, and there is nothing to attach
+  // showing it on every card would be noise, and there is nothing to attach
   // a note to until a save row exists.
   const noteBox=(AUTH_ON&&USER&&savedPmids.has(a.pmid))
     ? `<div class="notewrap"><label class="notelbl">Your note</label>
@@ -451,20 +634,32 @@ function cardHTML(a){
            placeholder="Why did you save this? (only you can see it)">${esc(noteFor(a.pmid))}</textarea>
          <span class="notestat" data-notestat="${esc(a.pmid)}"></span></div>`
     : '';
-  return `<div class="card${open}" data-pmid="${a.pmid}">
-    <div class="chead" data-card="${a.pmid}">
-      <span class="cchev">&#9656;</span>${award}
+  // A bottom line over ~170 characters is a paragraph, not a headline: lead with its
+  // first sentence and keep the remainder for when the row is opened.
+  let headTxt=b.text, rest='';
+  if(!b.weak&&b.text.length>170){
+    const m=/^(.{25,}?[.!?])\s+(?=[A-Z])/.exec(b.text);
+    if(m){headTxt=m[1];rest=b.text.slice(m[0].length);}
+  }
+  const why=(a.impact_rationale&&RAT_COUNT.get(a.impact_rationale)<5)
+    ? `<div class="why">${esc(a.impact_rationale)}</div>`:'';
+  // The article title is the headline; the one-sentence takeaway sits beneath it.
+  const head=`<h3 class="bl-head is-title">${isNew}${esc(a.title)}</h3>`
+    +(b.weak?'':`<div class="bl-sum">${esc(headTxt)}</div>`);
+  return `<div class="card${open?' open':''}" data-pmid="${a.pmid}">
+    <div class="chead" data-card="${a.pmid}" role="button" tabindex="0" aria-expanded="${open}">
       <div class="cmain">
-        <div class="ctitle">${isNew}${esc(a.title)}</div>
-        <div class="cmeta"><em>${esc(a.journal_abbr||a.journal)}</em> · ${fmtDate(a.pub_date,a.pub_date_precision)} · ${esc(authorStr(a))}
-          · <span class="badge ${impClass[a.impact]}">${esc(a.impact)}</span>
-          · ${esc(a.study_type)}${sub}</div>
+        ${head}
+        <div class="cmeta">${tier}${[`<em>${esc(a.journal_abbr||a.journal)}</em>`,fmtDate(a.pub_date,a.pub_date_precision),esc(authorStr(a)),esc(a.study_type)].filter(Boolean).join(' · ')}${reg}${sub}</div>
       </div>
-      ${AUTH_ON?`<button type="button" class="savebtn" data-save="${esc(a.pmid)}"></button>`:''}
+      <div class="cact">
+        ${AUTH_ON?`<button type="button" class="savebtn" data-save="${esc(a.pmid)}"></button>`:''}
+        <span class="cchev" aria-hidden="true">&#9656;</span>
+      </div>
     </div>
     <div class="cbody">
-      ${a.clinical_bottom_line?`<div class="bl"><b>Bottom line:</b> ${esc(a.clinical_bottom_line)}</div>`:''}
-      ${a.impact_rationale?`<div class="why"><b>Why ${esc(a.impact)}:</b> ${esc(a.impact_rationale)}</div>`:''}
+      ${rest?`<p class="blrest">${esc(rest)}</p>`:''}
+      ${why}
       <div class="tags">${soc}${tags}</div>
       ${noteBox}
       ${ab}
@@ -474,45 +669,113 @@ function cardHTML(a){
   </div>`;
 }
 
-function render(){
+// ---------------------------------------------------------------------------
+// Queue: tier groups, ranked impact first then newest (ART is pre-sorted)
+// ---------------------------------------------------------------------------
+function rowsHTML(tierKey,items){
+  const n=shownN[tierKey]||PAGE;
+  const rest=items.length-n;
+  return items.slice(0,n).map(a=>cardHTML(a)).join('')
+    +(rest>0?`<button type="button" class="morebtn" data-more="${tierKey}">Show ${Math.min(PAGE,rest)} more (${rest} not shown)</button>`:'');
+}
+function queueTitle(){
+  if(viewNow==='search')return state.q?`Search: ${state.q}`:'Search';
+  return state.topic||'All topics';
+}
+function renderQueue(){
   const shown=ART.filter(matches);
-  document.getElementById('count').textContent=`${shown.length} of ${ART.length} articles`;
+  const fresh=shown.filter(a=>a.is_new).length;
+  let sub=`${shown.length.toLocaleString()} article${shown.length===1?'':'s'}`;
+  if(state.since)sub+=`, published since ${fmtLong(state.since)}`;
+  if(fresh)sub+=`. ${fresh} added this week`;
+  document.getElementById('qhead').innerHTML=
+    `<a class="back" href="#/">&#8249; All topics</a>
+     <h1 class="qtitle">${esc(queueTitle())}</h1>
+     <div class="qsub">${sub}</div>
+     ${(viewNow==='search')?'':coverageHTML(state.since,state.topic)}`;
   const root=document.getElementById('groups');
-  if(!shown.length){root.innerHTML='<div class="empty">No articles match the current filters.</div>';return;}
+  if(!shown.length){root.innerHTML='<div class="empty">No articles match. Clear a filter or choose an earlier start date.</div>';return;}
   let html='';
   for(const t of TIERS){
     const items=shown.filter(a=>a.impact===t.key);
     if(!items.length)continue;
     const col=collapsed[t.key]?' collapsed':'';
     html+=`<div class="group${col}" data-tier="${t.key}">
-      <div class="ghead" data-tier="${t.key}">
+      <div class="ghead" data-tier="${t.key}" role="button" tabindex="0">
         <span class="dot" style="background:${t.dot}"></span>
         <span class="gname ${t.cls}">${t.label}</span>
         <span class="gcount">${items.length} article${items.length===1?'':'s'}</span>
         <span class="gchev">&#9662;</span>
       </div>
-      <div class="gbody" data-tier="${t.key}">${collapsed[t.key]?'':items.map(cardHTML).join('')}</div>
+      <div class="gbody" data-tier="${t.key}">${collapsed[t.key]?'':rowsHTML(t.key,items)}</div>
     </div>`;
   }
   root.innerHTML=html;
   syncSaveButtons();
 }
+// ---------------------------------------------------------------------------
+// Guidelines: every Guideline/Consensus article, grouped by topic, newest first.
+// No impact tiers here: the classifier rates every guideline Practice-Altering,
+// so the tier would say nothing.
+// ---------------------------------------------------------------------------
+// Region = who issued the guideline (classifier.guideline_regions). Multi-valued, so a
+// joint Endocrine Society / ESE guideline shows under both United States and Europe.
+const REGION_ORDER=['United States','Canada','International','Europe','Asia-Pacific','Latin America','Middle East & Africa'];
+let glRegion='All';
+function renderGuidelines(){
+  const ALLG=ART.filter(a=>a.study_type==='Guideline/Consensus');
+  const rc={};ALLG.forEach(a=>{const r=a.regions||[];(r.length?r:['Unspecified']).forEach(x=>rc[x]=(rc[x]||0)+1);});
+  const regionsShown=REGION_ORDER.filter(r=>rc[r]).concat(rc['Unspecified']?['Unspecified']:[]);
+  const inRegion=a=>glRegion==='All'||(glRegion==='Unspecified'?!(a.regions||[]).length:(a.regions||[]).includes(glRegion));
+  const G=ALLG.filter(inRegion).sort((x,y)=>(y.pub_date||'').localeCompare(x.pub_date||''));
+  const groups=TOPICS.map(t=>[t,G.filter(a=>a.topic===t)]).filter(g=>g[1].length);
+  document.getElementById('qhead').innerHTML=
+    `<a class="back" href="#/">&#8249; All topics</a>
+     <h1 class="qtitle">Guidelines</h1>
+     <div class="qsub">${G.length} clinical practice guidelines and consensus statements${glRegion==='All'?'':' (issuer: '+esc(glRegion)+')'} across ${groups.length} topics, newest first within each topic.</div>
+     <div class="toolbar"><label class="fld">Issued by <select id="gl-region">
+       <option value="All">All regions (${ALLG.length})</option>
+       ${regionsShown.map(r=>`<option value="${esc(r)}"${r===glRegion?' selected':''}>${esc(r)} (${rc[r]})</option>`).join('')}
+     </select></label></div>
+     <p class="gnote">Region is the society or country that issued the guideline; joint guidelines count under each. "Unspecified" means the record does not name its issuer. Covers guidelines published in the monitored journals, plus those added through the monthly guideline sweep. A guideline published elsewhere appears only if the sweep finds it.</p>
+     <div class="jump">${groups.map((g,i)=>`<button type="button" class="chip" data-jump="g-${i}">${esc(g[0])} (${g[1].length})</button>`).join('')}</div>`;
+  document.getElementById('groups').innerHTML=groups.map((g,i)=>
+    `<div class="group" id="g-${i}">
+      <div class="ghead gstatic"><span class="gname low">${esc(g[0])}</span>
+        <span class="gcount">${g[1].length} guideline${g[1].length===1?'':'s'}</span></div>
+      <div class="gbody">${g[1].map(a=>cardHTML(a)).join('')}</div>
+    </div>`).join('');
+  syncSaveButtons();
+  document.getElementById('gl-region').addEventListener('change',e=>{glRegion=e.target.value;renderGuidelines();});
+}
+document.getElementById('qhead').addEventListener('click',e=>{
+  const j=e.target.closest('[data-jump]');
+  if(j){const el=document.getElementById(j.dataset.jump);if(el)el.scrollIntoView({block:'start'});}
+});
 
-// Build a collapsed tier's cards the first time it is opened. Rendering every
-// tier up front meant ~760 of ~1270 cards (the whole LOW group, collapsed by
-// default) were constructed and then hidden by CSS — most of the DOM cost for
-// something nobody had asked to see.
+function render(){
+  if(viewNow==='guidelines')renderGuidelines();
+  else if(viewNow==='queue'||viewNow==='search')renderQueue();
+  else if(viewNow==='home')renderHome();
+}
+
+// Build a collapsed tier's rows the first time it is opened.
 function fillGroup(tierKey,groupEl){
   const body=groupEl.querySelector('.gbody');
   if(!body||body.firstChild)return;
-  body.innerHTML=ART.filter(a=>a.impact===tierKey&&matches(a)).map(cardHTML).join('');
+  body.innerHTML=rowsHTML(tierKey,ART.filter(a=>a.impact===tierKey&&matches(a)));
   syncSaveButtons();
 }
 
-// event delegation — shared by the Feed and the My Saved Articles list
+// event delegation — shared by the topic list and the Saved list
 function cardClick(e){
   const sv=e.target.closest('.savebtn');
   if(sv){toggleSave(sv.dataset.save);return;}
+  const more=e.target.closest('.morebtn');
+  if(more){const k=more.dataset.more;shownN[k]=(shownN[k]||PAGE)+PAGE;
+    const body=more.closest('.gbody');
+    body.innerHTML=rowsHTML(k,ART.filter(a=>a.impact===k&&matches(a)));
+    syncSaveButtons();return;}
   const gh=e.target.closest('.ghead');
   if(gh){const k=gh.dataset.tier;if(!k)return;
     collapsed[k]=!collapsed[k];
@@ -522,9 +785,7 @@ function cardClick(e){
     return;}
   const absBtn=e.target.closest('.absbtn');
   if(absBtn){const p=absBtn.dataset.abs;if(!p)return;
-    // Record it in openAbstracts, then apply to every copy of this card, exactly
-    // like the card-open toggle below. Driving this off inline style alone meant
-    // the next render wiped it.
+    // Record it in openAbstracts, then apply to every copy of this card.
     const willOpen=!openAbstracts.has(p);
     if(willOpen)openAbstracts.add(p);else openAbstracts.delete(p);
     const art=BY_PMID.get(String(p));
@@ -539,51 +800,140 @@ function cardClick(e){
   if(e.target.closest('.links'))return;
   const ch=e.target.closest('.chead');
   if(ch){const p=ch.dataset.card;if(!p)return;
-    // An article can be on screen twice (Feed and My Saved Articles). Drive the
+    // An article can be on screen twice (a topic list and Saved). Drive the
     // toggle off this card's own state, then keep every copy of it in step.
     const willOpen=!ch.closest('.card').classList.contains('open');
     if(willOpen)openCards.add(p);else openCards.delete(p);
-    document.querySelectorAll('.card[data-pmid="'+p+'"]')
-      .forEach(c=>c.classList.toggle('open',willOpen));}
+    document.querySelectorAll('.card[data-pmid="'+p+'"]').forEach(c=>{
+      c.classList.toggle('open',willOpen);
+      const h=c.querySelector('.chead');if(h)h.setAttribute('aria-expanded',willOpen);});}
 }
-document.getElementById('groups').addEventListener('click',cardClick);
-document.getElementById('saved-list').addEventListener('click',cardClick);
+function cardKey(e){
+  if(e.key!=='Enter'&&e.key!==' ')return;
+  const el=e.target;
+  if(!(el.classList&&(el.classList.contains('chead')||el.classList.contains('ghead'))))return;
+  e.preventDefault();cardClick({target:el});
+}
+['groups','saved-list'].forEach(id=>{
+  const el=document.getElementById(id);
+  el.addEventListener('click',cardClick);
+  el.addEventListener('keydown',cardKey);
+});
 
-// Debounced. render() re-filters ~1300 articles and rebuilds the whole list, so
-// firing it on every keystroke made typing visibly janky on a phone.
+// ---------------------------------------------------------------------------
+// Routing. The hash IS the state, so Back/Forward and shared links work.
+//   #/                      landing
+//   #/t/<Topic>?since=ISO   topic queue        #/all?since=ISO   every topic
+//   #/search?q=text         search all         #/saved   #/analytics
+// ---------------------------------------------------------------------------
+function parseHash(){
+  const h=location.hash.replace(/^#\/?/,'');
+  const qi=h.indexOf('?');
+  const path=qi<0?h:h.slice(0,qi), qs=qi<0?'':h.slice(qi+1);
+  const seg=path.split('/');
+  let arg='';try{arg=decodeURIComponent(seg.slice(1).join('/'));}catch(e){arg=seg.slice(1).join('/');}
+  return {name:seg[0]||'home',arg,p:new URLSearchParams(qs)};
+}
+function setParam(k,v){
+  const r=parseHash();
+  if(v)r.p.set(k,v);else r.p.delete(k);
+  const qs=r.p.toString();
+  const base=location.hash.replace(/\?.*$/,'')||'#/';
+  history.replaceState(null,'',base+(qs?'?'+qs:''));
+  route(true);
+}
+let lastKey=null;
+function setView(v){
+  viewNow=v;
+  const pane={home:'home',queue:'queue',search:'queue',guidelines:'queue',saved:'saved',analytics:'analytics'}[v];
+  ['home','queue','saved','analytics'].forEach(k=>{document.getElementById('v-'+k).hidden=(k!==pane);});
+  const navFor={home:'home',queue:'home',search:'',guidelines:'guidelines',saved:'saved',analytics:'analytics'}[v];
+  document.getElementById('qtools').hidden=(v==='guidelines');
+  document.querySelectorAll('.nav a').forEach(a=>{
+    if(a.dataset.nav===navFor)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+}
+function syncTools(){
+  document.getElementById('f-since').value=state.since;
+  document.getElementById('f-age').value=state.age;
+  document.getElementById('f-dm').value=state.dm;
+  document.getElementById('f-dm-wrap').hidden=(state.topic!=='Diabetes');
+  // Subtopic choices come from the data for this topic, largest first; unlabeled
+  // articles are offered last as "Other". Diabetes keeps its own type filter.
+  const subWrap=document.getElementById('f-sub-wrap'), subSel=document.getElementById('f-sub');
+  const subs={};
+  if(state.topic&&state.topic!=='Diabetes')
+    ART.forEach(a=>{if(a.topic===state.topic&&a.subtopic&&a.subtopic!=='General')subs[a.subtopic]=(subs[a.subtopic]||0)+1;});
+  const names=Object.keys(subs).sort((x,y)=>subs[y]-subs[x]);
+  subWrap.hidden=!names.length;
+  if(names.length){
+    const other=ART.filter(a=>a.topic===state.topic&&(!a.subtopic||a.subtopic==='General')).length;
+    subSel.innerHTML='<option value="All">All</option>'+names.map(n=>`<option value="${esc(n)}">${esc(n)} (${subs[n]})</option>`).join('')
+      +(other?`<option value="General">Other (${other})</option>`:'');
+    subSel.value=state.sub;
+  }
+  document.querySelectorAll('#qtools .chip').forEach(c=>c.classList.toggle('on',state.flags.has(c.dataset.flag)));
+}
+function route(keepScroll){
+  const r=parseHash();
+  let v='home';
+  state.topic=null;state.q='';
+  if(r.name==='t'&&TOPIC_SET.has(r.arg)){v='queue';state.topic=r.arg;}
+  else if(r.name==='all'){v='queue';}
+  else if(r.name==='search'){v='search';state.q=(r.p.get('q')||'').trim();}
+  else if(r.name==='guidelines'){v='guidelines';}
+  else if(r.name==='saved'){v='saved';}
+  else if(r.name==='analytics'){v='analytics';}
+  state.since=(v==='queue')?(r.p.get('since')||''):'';
+  const key=v+'|'+(state.topic||'')+'|'+state.q;
+  if(key!==lastKey){      // a new list starts with clean filters
+    state.flags.clear();state.dm='All';state.age='All';state.sub='All';
+    for(const k in shownN)delete shownN[k];
+    collapsed=defaultCollapsed();
+    if(v==='search')for(const k in collapsed)collapsed[k]=false;
+    lastKey=key;
+  }
+  setView(v);
+  const qbox=document.getElementById('q');
+  if(v==='search'){if(document.activeElement!==qbox)qbox.value=state.q;}
+  else if(document.activeElement!==qbox)qbox.value='';
+  syncTools();
+  document.title=(state.topic?state.topic+' · ':v==='saved'?'Saved · ':v==='guidelines'?'Guidelines · ':v==='analytics'?'Analytics · ':'')+'PedsEndoBrief: Pediatric Endocrinology Literature';
+  if(v==='home')renderHome();
+  else if(v==='guidelines')renderGuidelines();
+  else if(v==='queue'||v==='search')renderQueue();
+  else if(v==='saved')renderSaved();
+  else if(v==='analytics')drawCharts();
+  if(!keepScroll)window.scrollTo(0,0);
+}
+window.addEventListener('hashchange',()=>route());
+
+// Search lives in the header and always searches every article. While typing it
+// rewrites the current history entry instead of adding one per keystroke.
 let qTimer=null;
 document.getElementById('q').addEventListener('input',e=>{
-  state.q=e.target.value;
+  const val=e.target.value.trim();
   clearTimeout(qTimer);
-  qTimer=setTimeout(render,160);
+  qTimer=setTimeout(()=>{
+    const onSearch=(viewNow==='search');
+    if(!val){if(onSearch)location.hash='#/';return;}
+    const h='#/search?q='+encodeURIComponent(val);
+    if(onSearch){history.replaceState(null,'',h);route(true);}
+    else location.hash=h;
+  },200);
 });
-document.querySelectorAll('.chip[data-flag]').forEach(c=>c.addEventListener('click',()=>{
+
+// queue toolbar
+document.querySelectorAll('#qtools .chip[data-flag]').forEach(c=>c.addEventListener('click',()=>{
   const f=c.dataset.flag;
-  if(state.flags.has(f)){state.flags.delete(f);c.classList.remove('on');}
-  else{state.flags.add(f);c.classList.add('on');}
+  if(state.flags.has(f))state.flags.delete(f);else state.flags.add(f);
+  c.classList.toggle('on',state.flags.has(f));
+  for(const k in shownN)delete shownN[k];
   render();
 }));
-document.querySelectorAll('.chip[data-topic]').forEach(c=>c.addEventListener('click',()=>{
-  const t=c.dataset.topic;
-  document.querySelectorAll('.chip[data-topic]').forEach(x=>x.classList.remove('on'));
-  if(state.topic===t){state.topic=null;}else{state.topic=t;c.classList.add('on');}
-  const dmRow=document.getElementById('dm-chips');
-  if(state.topic==='Diabetes')dmRow.style.display='flex';
-  else{dmRow.style.display='none';state.dm='All';
-    document.querySelectorAll('.chip[data-dm]').forEach(x=>x.classList.toggle('on',x.dataset.dm==='All'));}
-  render();
-}));
-document.querySelectorAll('.chip[data-dm]').forEach(c=>c.addEventListener('click',()=>{
-  document.querySelectorAll('.chip[data-dm]').forEach(x=>x.classList.remove('on'));
-  c.classList.add('on');state.dm=c.dataset.dm;render();
-}));
-document.querySelectorAll('.chip[data-age]').forEach(c=>c.addEventListener('click',()=>{
-  document.querySelectorAll('.chip[data-age]').forEach(x=>x.classList.remove('on'));
-  c.classList.add('on');state.age=c.dataset.age;render();
-}));
-document.getElementById('month-select').addEventListener('change',e=>{
-  state.month=e.target.value;render();
-});
+document.getElementById('f-since').addEventListener('change',e=>setParam('since',e.target.value));
+document.getElementById('f-age').addEventListener('change',e=>{state.age=e.target.value;for(const k in shownN)delete shownN[k];render();});
+document.getElementById('f-sub').addEventListener('change',e=>{state.sub=e.target.value;for(const k in shownN)delete shownN[k];render();});
+document.getElementById('f-dm').addEventListener('change',e=>{state.dm=e.target.value;for(const k in shownN)delete shownN[k];render();});
 
 // ---- Analytics charts ----
 function countBy(arr,key){const o={};arr.forEach(a=>{const v=a[key]||'—';o[v]=(o[v]||0)+1});return o;}
@@ -615,19 +965,6 @@ function drawCharts(){
   distBar('chart-journal',countBy(ART,'journal_abbr'),()=>'#1d9e75');
   chartsDrawn=true;
 }
-
-// ---- tab switching ----
-document.querySelectorAll('.tab').forEach(t=>t.addEventListener('click',()=>{
-  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('on'));
-  t.classList.add('on');
-  const which=t.dataset.tab;
-  ['feed','saved','analytics'].forEach(k=>{
-    const el=document.getElementById('tab-'+k);
-    if(el)el.style.display = (k===which?'block':'none');
-  });
-  if(which==='analytics')drawCharts();
-  if(which==='saved')renderSaved();
-}));
 
 // ---- feedback / bug-report modal ----
 const W3KEY="bb727558-afe2-4799-9fda-90cd430b6a40";
@@ -868,7 +1205,7 @@ function renderSaved(){
   if(!AUTH_ON){host.innerHTML='<div class="empty">Accounts are not set up on this site yet.</div>';return;}
   if(!USER){host.innerHTML='<div class="empty">Sign in to start building your saved list.</div>';return;}
   if(!savedOrder.length){
-    host.innerHTML='<div class="empty">No saved articles yet. Click &#9734; Save on any article in the Feed.</div>';return;}
+    host.innerHTML='<div class="empty">No saved articles yet. Click &#9734; Save on any article.</div>';return;}
   // An article you saved may be gone from this week's dataset (archived after
   // 60 days, or dropped by a source journal). Show it as a stub with a working
   // PubMed link instead of silently losing it.
@@ -1201,7 +1538,7 @@ if(expTxt)expTxt.addEventListener('click',async()=>{
   toast(ok?'Citations copied to the clipboard.':'Could not copy.',!ok);
 });
 
-metrics();render();renderSaved();
+route();
 </script>
 </body>
 </html>
