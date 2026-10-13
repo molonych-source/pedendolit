@@ -208,6 +208,51 @@ def bone_mineral_subtopic(tl, text):
     return best
 
 
+# Growth and Pituitary subtopics (2026-10-13). Same scoring as Bone/Mineral (2 per
+# term in the title, 1 per term anywhere), but a minimum score of 2: one passing
+# mention in an abstract ("born small for gestational age") does not set a subtopic.
+# Earlier entries win ties, so the more specific subtopic is listed first.
+_GROWTH_SUBTOPICS = (
+    ("Syndromic short stature", ("turner syndrome", "noonan", "prader-willi", "silver-russell",
+                                 "small for gestational age", "achondroplasia", "hypochondroplasia",
+                                 "skeletal dysplasia", "shox", "vosoritide", "aggrecan", "acan ")),
+    ("GH deficiency & therapy", ("growth hormone deficiency", "gh deficiency", "ghd", "long-acting growth hormone",
+                                 "somatrogon", "somapacitan", "lonapegsomatropin", "somatropin", "rhgh",
+                                 "growth hormone therapy", "growth hormone treatment", "gh therapy",
+                                 "gh treatment", "growth hormone stimulation", "gh stimulation")),
+    ("Short stature evaluation", ("idiopathic short stature", "short stature", "growth chart", "growth reference",
+                                  "bone age", "height velocity", "adult height", "final height",
+                                  "constitutional delay", "familial short stature", "tall stature")),
+)
+_PITUITARY_SUBTOPICS = (
+    ("Hypopituitarism", ("hypopituitarism", "pituitary hormone deficienc", "pituitary insufficiency",
+                         "septo-optic", "optic nerve hypoplasia", "pituitary stalk", "ectopic posterior pituitary",
+                         "cphd", "central hypothyroidism", "central adrenal insufficiency", "hypophysitis")),
+    ("Pituitary tumors", ("craniopharyngioma", "pituitary adenoma", "pituitary tumor", "pituitary tumour",
+                          "prolactinoma", "macroadenoma", "microadenoma", "germinoma", "rathke",
+                          "acromegaly", "gigantism", "cushing disease", "cushing's disease")),
+)
+
+
+def _score_subtopic(tl, text, table, default="General", minimum=2):
+    best, best_score = default, minimum - 1
+    for name, terms in table:
+        score = sum((2 if t in tl else 0) + (1 if t in text else 0) for t in terms)
+        if score > best_score:
+            best, best_score = name, score
+    return best
+
+
+def refine_subtopic(topic, subtopic, tl, text):
+    """Subtopic for topics whose branch does not set one. Water balance (set by the
+    Pituitary branches) is kept; Diabetes and Bone/Mineral are untouched."""
+    if topic == "Growth" and not subtopic:
+        return _score_subtopic(tl, text, _GROWTH_SUBTOPICS)
+    if topic == "Pituitary" and not subtopic:
+        return _score_subtopic(tl, text, _PITUITARY_SUBTOPICS)
+    return subtopic
+
+
 # Posterior pituitary / AVP terms, including the 2022 renaming of diabetes insipidus
 # to arginine vasopressin deficiency (AVP-D) and resistance (AVP-R).
 _WB_AVP = ("diabetes insipidus", "arginine vasopressin deficiency", "arginine vasopressin resistance",
@@ -1250,6 +1295,7 @@ def classify(art):
     journal_abbr = art.get("journal_abbr") or ""
 
     topic, subtopic = classify_topic(art)
+    subtopic = refine_subtopic(topic, subtopic, title_l, text)
     study_type, ev_level = classify_study_type(art)
     impact = classify_impact(art, study_type, journal)
     dm_sub = diabetes_subtype(text) if topic == "Diabetes" else None

@@ -115,6 +115,7 @@ def apply_topic_overrides(store):
         # so blanking would strip them from every overridden article in that topic.
         a["subtopic"] = (clf.bone_mineral_subtopic(title_l, text)
                          if new_topic == "Bone/Mineral" else None)
+        a["subtopic"] = clf.refine_subtopic(new_topic, a["subtopic"], title_l, text)
         a["diabetes_subtype"] = clf.diabetes_subtype(text) if new_topic == "Diabetes" else None
         a["tags"] = clf.generate_tags(a, new_topic, a["subtopic"], a.get("study_type"),
                                        a.get("impact"), a.get("board_relevant"), text, title_l)
