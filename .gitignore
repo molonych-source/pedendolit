@@ -22,3 +22,5 @@ classifier_qa_review.html
 # versioned. The repo already carries a size problem (see DECISIONS.md).
 classifier_qa_review.round*.html
 _work/
+ai_labels/queue.json
+ai_labels/batch_out.json
