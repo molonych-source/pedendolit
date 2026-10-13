@@ -141,7 +141,13 @@ def store_as_raw(store_path):
             authors.append({"last_name": parts[0], "initials": parts[1] if len(parts) > 1 else ""})
         y, m_, d_ = (str(a.get("pub_date") or "").split("-") + ["", ""])[:3]
         out.append({
-            "identifiers": {"pmid": pmid, "doi": a.get("doi") or ""},
+            "identifiers": {"pmid": pmid, "doi": a.get("doi") or "", "pmc": a.get("pmc") or ""},
+            # Citation details reach the store from more than one path (weekly fetch,
+            # backfill_legacy_metadata.py). Omitting them here meant a --rebuild wiped
+            # volume/issue/pages/PMC on every article whose raw file lacked them
+            # (140 articles on 2026-10-13).
+            "citation": {"volume": a.get("volume") or "", "issue": a.get("issue") or "",
+                         "pages": a.get("pages") or ""},
             "title": a.get("title") or "",
             "abstract": a.get("abstract") or "",
             "journal": {"title": a.get("journal") or "",

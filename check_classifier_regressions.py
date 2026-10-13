@@ -17,6 +17,10 @@ What fails vs. what only informs:
   * topic changed with no ledger entry predicting it  -> FAIL
   * an article disappeared from the store             -> FAIL (a classifier change can
     make exclusion rules newly fire and silently drop content)
+  * an article lost metadata it had (abstract, authors, DOI, volume/issue/pages, PMC,
+    publication types)                                -> FAIL. Added 2026-10-13 after a
+    --rebuild silently wiped citation fields on 140 articles while this check passed.
+    Accept a deliberate loss by adding the PMID to METADATA_LOSS_OK.
   * study_type / impact changed                       -> reported, never fails. These
     legitimately shift whenever classification improves and no ledger records intent
     for them, so failing on them would cry wolf on every real improvement. But a
@@ -46,6 +50,11 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 # Changed values in these fields are reported but never fail the check — see the
 # module docstring for why intent can't be verified for them.
 INFO_FIELDS = ("study_type", "impact")
+
+# Fields that should never go from filled to empty. Losing one is a pipeline bug,
+# not a classification change, so it always fails unless the PMID is listed below.
+METADATA_FIELDS = ("abstract", "authors", "doi", "volume", "issue", "pages", "pmc", "pub_types")
+METADATA_LOSS_OK = set()   # PMIDs whose metadata loss a human has confirmed is correct
 
 
 # Taxonomy renames: {old topic: new topic}. An article whose topic changed only because
@@ -183,6 +192,15 @@ def main():
                                         (a_art.get("title") or "")[:70]))
 
     removed = sorted(set(before_by_pmid) - set(after_by_pmid))
+
+    lost = []   # (pmid, field, title)
+    for pmid, a_art in after_by_pmid.items():
+        b_art = before_by_pmid.get(pmid)
+        if not b_art or pmid in METADATA_LOSS_OK:
+            continue
+        for f in METADATA_FIELDS:
+            if b_art.get(f) and not a_art.get(f):
+                lost.append((pmid, f, (a_art.get("title") or "")[:60]))
     added = sorted(set(after_by_pmid) - set(before_by_pmid))
 
     print(f"=== classifier regression check (vs. git {args.ref}) ===")
@@ -251,11 +269,26 @@ def main():
             print(f"  ... and {len(removed) - args.limit} more")
         print()
 
+    if lost:
+        failures += len(lost)
+        by_field = {}
+        for _, f, _t in lost:
+            by_field[f] = by_field.get(f, 0) + 1
+        print(f"METADATA LOST: {len(lost)} field(s) went from filled to empty "
+              f"({', '.join(f'{k} {v}' for k, v in sorted(by_field.items()))})")
+        print("This is a pipeline bug, not a classification change. Find where the field")
+        print("was dropped before committing:")
+        for pmid, f, title in lost[:args.limit]:
+            print(f"  !!  {pmid}: lost {f}  | {title}")
+        if len(lost) > args.limit:
+            print(f"  ... and {len(lost) - args.limit} more")
+        print()
+
     if failures:
         print(f"FAIL — {failures} change(s) need a human decision.")
         return 1
 
-    print("PASS — every topic change was predicted, and nothing disappeared.")
+    print("PASS — every topic change was predicted, nothing disappeared, and no metadata was lost.")
     return 0
 
 

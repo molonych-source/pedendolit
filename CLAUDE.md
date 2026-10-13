@@ -113,7 +113,9 @@ The full weekly procedure (date windows, MCP batching, PMID dedup) is in
 - **`check_classifier_regressions.py`** — the deterministic, zero-LLM layer of classifier
   QA. Diffs topics between the last published store (`git HEAD`) and the working-tree
   store; exits 1 if any topic changed without a `classifier_qa_decisions.json` entry whose
-  `target_topic` matches the new topic, or if an article disappeared entirely. Reports
+  `target_topic` matches the new topic, if an article disappeared entirely, or (since
+  2026-10-13) if any article lost metadata it had: abstract, authors, DOI, volume/issue/pages,
+  PMC, publication types. Reports
   `study_type`/`impact` drift without failing. `--bless PMID "reason"` records a correct-
   but-unpredicted change into the same ledger. **Run it after a rebuild and before
   committing** — it compares against `git HEAD`, so committing destroys the comparison.
