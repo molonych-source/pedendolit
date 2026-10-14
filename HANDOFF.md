@@ -1,5 +1,97 @@
 # PedsEndoBrief — Session Handoff
 
+**Rewritten 2026-10-13, superseding the 2026-08-05 handoff (kept below for history).**
+Paste this into a new session and say "continue from this handoff."
+
+Repo: `~/dev/pedendolit` (live at https://pedsendobrief.org, GitHub Pages from `main`).
+Read the repo's `CLAUDE.md`, `MEMORY.md`, `TASKS.md`, `WEEKLY_REFRESH_RUNBOOK.md` first;
+they were updated during this session. `git log --oneline -40` is the full record of what
+shipped (redesign, guideline sweep, 2020 backfill, subtopics, regions, retraction rule,
+size guard, AI labeling tools). This doc covers only what is in flight.
+
+State at handoff: `main` == `origin/main` at `838619c`, working tree clean. Live site:
+11,015 articles, redesign layout. Merged feature branches can be deleted; the two
+unmerged ones are listed below.
+
+## In flight
+
+### 1. AI labeling backfill (running unattended)
+- Cloud routine "PedsEndoBrief AI labeling backfill", id `trig_01Y6MdeR12XpQoAtfGaN7FLf`,
+  model `claude-haiku-5-5`, cron `12 */4 * * *` (UTC). First run 2026-10-14 00:12 UTC.
+  ~23 runs of 500 to label all 11,015 articles.
+- Each run: branch `claude/ai-labels` (merges `origin/main`), `ai_label_queue.py --next 500`,
+  labels per `ai_labels/PROMPT.md` (v2.1), `ai_label_apply.py --model claude-haiku-5-5`
+  validates and merges into `ai_labels/labels.json`, pushes. Todoist task only on failure.
+- **Next action:** check the first run (`RemoteTrigger list_runs` then `get_run_log`;
+  `git ls-remote origin claude/ai-labels`; `python3 ai_label_queue.py --status` on that
+  branch). Watch for: validator rejections, push collisions between runs, plan usage
+  limits (if so, move the cron to every 8 hours), label quality drift in long sessions.
+- Do NOT trust the labeler's own "validation passed": in the v2 pilot Haiku claimed a
+  pass while `ai_label_apply.py` found 51 invalid study-type strings.
+
+### 2. Build the reviewed "apply AI labels" step (not started)
+User-approved direction:
+- Topic and subtopic from AI; where AI and rules disagree, put the article on a review
+  list rather than silently picking one.
+- Pediatric/human gate: exclude articles AI marks `pediatric: no` or `human: no`, reversibly
+  (record in `excluded_pmids.json` or a new ledger), and show the user a sample before it
+  goes live. Pilot suggests ~15-20% of articles could go (est. 1,500-2,000); the user kept
+  1 of 15 flagged (an oncofertility review), so expect some false positives.
+- Takeaway: use the AI takeaway only where the current `clinical_bottom_line` is weak or
+  missing (blind review: AI better 10, current 7, both 1, neither 1). The weakness
+  detector is `blInfo()` in `build_dashboard.py`.
+- Impact tier stays rule-based (`classify_impact`), optionally fed by AI `participants`
+  and `primary_outcome_met`.
+- Must apply on every build like `apply_pub_dates()` / `apply_topic_overrides()` in
+  `build_dataset.py`, and pass `check_classifier_regressions.py` (topic changes will need a
+  ledger mechanism, e.g. treat AI labels as predicted targets).
+- Pilot evidence: answer key = 480 human topic decisions in `classifier_qa_decisions.json`;
+  200-article pilot in `_work/pilot/` (gitignored; `key.json`, `labels_*.json`, `score.py`).
+  The user's review answers were downloaded to the user's Downloads folder as
+  `ai_pilot_review.json` (10 of 14 disagreements went to the models). Corrected scores:
+  rules 104/200, Haiku v1 189, Sonnet 187, Opus 185, Haiku v2 191.
+
+### 3. "How it works" methods page (branch `methods-page`, unpublished)
+- Commits `1eaacf2`, `81ba0a9`; based on an older `main`, so merge `main` in first.
+- User asked to drop the error-rate figure (done). Open question to the user: add an
+  authorship line ("maintained by a pediatric endocrinologist", with or without name)?
+- Once AI labels are applied, the page must say AI assigns topics and screens articles;
+  today it says no AI reads the articles. Re-verify every rule statement against code.
+
+### 4. Smaller open items
+- Test branch `claude/guideline-sweep-2026-10` (from the monthly guideline routine
+  `trig_01HHXcypBqg4fmwGBRcbh7oB` test run): user has not said whether to delete it.
+- A stuck GitHub Pages re-run (`gh run` id 38463711110, commit `ed788bb`) sits "queued"
+  and cannot be cancelled. If the live site ever shows an old layout, push to redeploy.
+- User should test sign-in, saving, notes, and two-account isolation on the live site;
+  anonymous RLS checks all passed.
+- ~100 adult articles from J Diabetes Sci Technol / Diabetes Technol Ther remain from
+  before their peds filter (the AI pediatric gate in item 2 would cover them).
+- `build_dashboard.py` `OUT_ROOT` resolves to `~/PedEndoLit-Dashboard.html` (assumed an old
+  vault folder layout); harmless but worth pointing somewhere sensible or removing.
+- Page size guard trips at 45 MB per published file (`index.html` is 37.5 MB at 11,015
+  articles); the remedy when it trips is moving abstracts out of the page.
+
+## Working conventions the user expects
+- Every change goes on a branch, is dry-run diffed, passes `check_classifier_regressions.py`
+  before commit, and is published only on the user's explicit OK.
+- Before `--rebuild`: `merge_raw_sources.py`. After adding articles:
+  `fix_pub_dates.py --apply --only-missing`. Catch-up merges use `build_dataset.py --backfill`.
+- Plain-language reports; gloss technical terms once; no em dashes in site copy.
+
+## Suggested skills
+- `schedule`: inspect, run, or adjust the two cloud routines.
+- `claude-api`: only if the user switches the backfill to the Batch API.
+- `frontend-design`: when adding the AI-label review UI or changing the methods page.
+- `code-review`: before publishing the apply-AI-labels step.
+- `screenshot`: the user often shows UI problems this way.
+
+---
+
+## Superseded: handoff of 2026-08-05
+
+*Kept for history. Much of what it lists as next steps shipped on 2026-10-13; see `git log`.*
+
 **Rewritten 2026-08-05 (evening), superseding the 2026-08-04 handoff.** Paste this into a new
 session and say "continue from this handoff."
 
@@ -8,7 +100,7 @@ session and say "continue from this handoff."
 `_log.md` (what happened when) → `TASKS.md` (what's open). Weekly procedure lives in
 `WEEKLY_REFRESH_RUNBOOK.md`; classifier QA in `CLASSIFIER_QA_RUNBOOK.md`.
 
-## Where the project lives
+### Where the project lives
 
 - **Working directory (the git repo):**
   `/Users/christianmolony/Documents/Claude Cowork OS 1.0/01_Clinical_Research/Resources/PedEndoLit/`
@@ -18,13 +110,13 @@ session and say "continue from this handoff."
 - **Supabase:** `oiafndmmdplvitrttene` · **Google Cloud:** `indigo-cider-471318-p8` ·
   **Resend:** account under molonych@gmail.com
 
-## What this is
+### What this is
 
 A pediatric-endocrinology literature digest: 19 PubMed journals → rules-based classifier →
 one self-contained `index.html` (**1,406 articles, 149 guidelines**), plus accounts with saved
 articles and private notes. Built for a clinician audience, meant to be shared at conferences.
 
-## Current state: two things are waiting on Christian, nothing is broken
+### Current state: two things are waiting on Christian, nothing is broken
 
 Auth/email stack is live and verified. Guideline coverage is done (2018 onward). The live site
 is unchanged and healthy.
@@ -39,7 +131,7 @@ Three things want a human:
    confirm. Apply *after* the review, in the runbook's order.
 3. **`REDESIGN_BRIEF.md`** — read before any redesign work starts.
 
-## What happened overnight 2026-08-05/06 (uncommitted)
+### What happened overnight 2026-08-05/06 (uncommitted)
 
 Full detail in `_log.md`. Three findings, in order of how much they change the plan.
 
@@ -78,7 +170,7 @@ said, zero regressions**.
 Redesign prep also landed: `REDESIGN_BRIEF.md` and three prototypes in `mockups/`. **B still
 starts with a brainstorm** — these are inputs to react to, not a design.
 
-## What happened 2026-08-05 (two sessions' worth, both committed)
+### What happened 2026-08-05 (two sessions' worth, both committed)
 
 1. **Classifier QA pipeline built, round 1 closed** (`82c19ce`). A clinician-visible bug —
    Guidelines + Diabetes surfacing non-diabetes guidelines — turned out to be two real
@@ -91,7 +183,7 @@ starts with a brainstorm** — these are inputs to react to, not a design.
    `check_classifier_regressions.py`. Plus: corrected a false claim in `CLAUDE.md`, and fixed
    the Analytics impact chart, which sorted an ordinal scale by count.
 
-## Two findings that change future plans
+### Two findings that change future plans
 
 - **NCBI E-utilities is reachable directly from the sandbox.** `CLAUDE.md` said otherwise for
   months, which is the only reason every fetch is an agent-mediated MCP step. `efetch` takes
@@ -102,7 +194,7 @@ starts with a brainstorm** — these are inputs to react to, not a design.
   at 100 MB. `.git` is already 53 MB after 8 commits for the same reason. See `DECISIONS.md`.
   > **Correction, 2026-10-13:** two numbers here were wrong. (1) The `.git` size came from unpacked loose objects; after `git gc` the repo is 37 MB locally and 25 MB on GitHub with 43 page versions, because git stores each new version as a delta. History is not a constraint. (2) Visitors download the page gzip-compressed: 39 MB raw is 9.6 MB transferred at 11,021 articles, so the bandwidth estimate per visit was about 4x too high. The single-file cap still stands: `build_dashboard.py` now fails if a published file exceeds 45 MB (about 14,000 articles).
 
-## What's next, in order (mirrors TASKS.md)
+### What's next, in order (mirrors TASKS.md)
 
 > **Order changed overnight.** Before B, two items now have evidence behind them: review the
 > round 2 QA verdicts (and fix the Diabetes branch), and decide the `pub_date` question. The
@@ -127,7 +219,7 @@ Agreed roadmap: the site's primary job is a **weekly keep-up brief**, plus a "ca
 7. Leftovers: public share links; delete the old unused Google client secret; confirm the
    rendering-perf fix on a real phone.
 
-## The traps most likely to bite next (full list in MEMORY.md → Operational traps)
+### The traps most likely to bite next (full list in MEMORY.md → Operational traps)
 
 - **Run `check_classifier_regressions.py` after a rebuild and BEFORE committing** — it diffs
   against `git HEAD`, so committing destroys the comparison it needs.
@@ -143,7 +235,7 @@ Agreed roadmap: the site's primary job is a **weekly keep-up brief**, plus a "ca
 - **`gh auth refresh` needs `--hostname github.com` and a real TTY** — the `!` prefix in Claude
   Code isn't interactive enough for the device-code flow.
 
-## Working style that fits this project
+### Working style that fits this project
 
 Christian is a pediatric endocrinologist, not a developer. Do the code, git, SQL and CLI work
 directly rather than handing over instructions. Reserve for him only what genuinely needs his
