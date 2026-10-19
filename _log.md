@@ -6,6 +6,28 @@ git history (33 commits to that date) and the dated sections formerly in `MEMORY
 
 ---
 
+### [2026-10-18] weekly-refresh
+
+Scheduled run, Mac mini. Followed the current runbook path (`weekly_fetch.py`, Entrez-date
+window 2026-09-27 -> 2026-10-18, all 19 journals) rather than the older MCP `pdat` steps in the
+scheduled-task prompt, since the runbook is authoritative. **No fetch errors**; 117 PMIDs across
+15 journals (4 journals returned 0, normal). 94 already stored, 4 excluded (2 erratum/retraction,
+1 IVF hard-exclude, 1 dialysis hard-exclude), **19 new articles added and flagged NEW**.
+
+- `audit_coverage.py` first **FAILED**: 9 PMIDs from the last 90 days never fetched (8 J Clin
+  Endocrinol Metab, 1 Lancet Diabetes Endocrinol). Fetched into `backfill_raw.json` and merged
+  with `--backfill`: 7 added (not flagged NEW), 2 excluded (zebrafish, adult-only). Re-audit PASS.
+- `fix_pub_dates.py`: 5 of 19 dates corrected (month bucket moved); backfill 7/7 already correct.
+- `check_classifier_regressions.py` PASS; store 11015 -> 11041 (+26), 0 archived. All scripts exit 0.
+- **0 PRACTICE-ALTERING.** New 19: 8 MODERATE, 11 LOW; Diabetes 8, Growth 4, Puberty 3,
+  Bone/Mineral 2, Pituitary 1, Thyroid 1.
+- Classifier follow-ups: adult/pregnancy records still slipping in via JCEM and Front Endocrinol
+  (42530032 adult T1D pump outcomes, 42530028 women with PCOS, 42888987 second-trimester pregnant
+  women, 42128812 recurrent hypoglycemia in T1D adults). Topic oddities: 42867915 (alkaline
+  phosphatase) filed under Puberty, 42872568 (iodine contrast thyroid function) under Growth,
+  42886620 (Triple A syndrome) under Growth rather than Adrenal.
+- Note: the 2026-10-13 refresh commit (32752a3) has no `_log.md` entry.
+
 ### [2026-10-11] weekly-refresh
 
 Window 2026-09-27 -> 2026-10-11 (`pdat`), all 19 journals queried, **no errors**. 0 results

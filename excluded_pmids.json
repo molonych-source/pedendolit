@@ -2575,6 +2575,16 @@
    "reason": "erratum/retraction",
    "first_seen": "2026-10-13",
    "title": "Effects of Maternal Vitamin D Supplementation on Childhood Health."
+  },
+  "42192612": {
+   "reason": "hard-exclude:zebrafish",
+   "first_seen": "2026-10-18",
+   "title": "First large-scale screening of Notch biallelic variants implicates novel candidate genes in congenital hypothyroidism."
+  },
+  "42628555": {
+   "reason": "adult-only",
+   "first_seen": "2026-10-18",
+   "title": "Efficacy and safety of mazdutide in adults with obesity or overweight: a US-based, multicentre, phase 2, randomised, pla"
   }
  }
 }
