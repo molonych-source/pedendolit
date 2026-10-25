@@ -2585,6 +2585,11 @@
    "reason": "adult-only",
    "first_seen": "2026-10-18",
    "title": "Efficacy and safety of mazdutide in adults with obesity or overweight: a US-based, multicentre, phase 2, randomised, pla"
+  },
+  "42908665": {
+   "reason": "hard-exclude:adenomyosis",
+   "first_seen": "2026-10-25",
+   "title": "The relationship between symptoms of adenomyosis and current ultrasonographic diagnostic criteria."
   }
  }
 }
