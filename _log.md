@@ -6,6 +6,32 @@ git history (33 commits to that date) and the dated sections formerly in `MEMORY
 
 ---
 
+### [2026-10-25] weekly-refresh
+
+Scheduled run, Mac mini. Followed the current runbook path (`weekly_fetch.py`, Entrez-date
+window 2026-10-04 -> 2026-10-25, all 19 journals) rather than the older MCP `pdat` steps in the
+scheduled-task prompt, since the runbook is authoritative. **No fetch errors**; 127 PMIDs across
+14 journals (0 results, normal: Pediatr Diabetes, Endocr Rev, Nat Rev Endocrinol, Lancet Diabetes
+Endocrinol, Diabetologia). 80 already stored, 3 excluded (1 erratum/retraction, 1 dialysis
+hard-exclude, 1 adenomyosis hard-exclude), **44 new articles added and flagged NEW**.
+
+- `audit_coverage.py` first **FAILED**: 4 PMIDs from the last 90 days never fetched (3 Diabetes,
+  1 Diabetes Care). Fetched into `backfill_raw.json` and merged with `--backfill`: 4 added (not
+  flagged NEW), 0 excluded. Re-audit PASS.
+- `fix_pub_dates.py`: 17 of 48 dates corrected (all moved month bucket).
+- `check_classifier_regressions.py` PASS; store 11041 -> 11089 (+48), 0 archived. All scripts exit 0.
+  Size check: `pedendolit-data.json` 40.0 MB of the 45 MB limit.
+- **0 PRACTICE-ALTERING.** 48 total: 2 HIGH, 13 MODERATE, 33 LOW. Weekly 44 by topic: Diabetes 15,
+  Puberty 7, Thyroid 4, Bone/Mineral 3, PCOS 2, DSD 2, General Endocrinology 2, Pituitary 2,
+  Growth 2, Genetics 1, Cancer Late Effects 1, Adrenal 1, Obesity/Metabolic 1, Hyperinsulinism 1.
+  HIGH: 42610933 (teplizumab response metabolites, Diabetes, backfill), 42900651 (*Type 1 Diabetes
+  in the Youngest*, Horm Res Paediatr).
+- Classifier follow-ups: 42900651 reads as a review but is typed RCT/HIGH. Adult/reproductive
+  records still slipping in via Front Endocrinol: 42908548 (IVF hCG-day progesterone, filed under
+  Puberty; IVF hard-exclude did not fire), 42909326 (fertility counselling in women with cancer),
+  42899007 (INSL3 in men), 42920910 (PCOS assisted reproduction). Topic oddities: 42920592 (free T3
+  in ADHD) under Puberty, 42923075 (case report) typed Review.
+
 ### [2026-10-18] weekly-refresh
 
 Scheduled run, Mac mini. Followed the current runbook path (`weekly_fetch.py`, Entrez-date
