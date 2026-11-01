@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PedsEndoBrief — guideline approvals</title>
+<style>
+:root{
+  --bg:#faf9f5; --surface:#ffffff; --ink:#1f1e1c; --muted:#6b6a64; --line:#e6e4dc; --soft:#f4f2ec;
+  --accent:#0f6e56; --accent-bg:#e1f5ee; --ok:#0f6e56; --mid:#b8791f; --no:#9a5c4a;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#1a1916; --surface:#26241f; --ink:#ece9e1; --muted:#a3a098; --line:#3a382f; --soft:#2c2a25;
+         --accent:#5dcaa5; --accent-bg:#0f3a30; --ok:#5dcaa5; --mid:#e0b060; --no:#f0997b;}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  line-height:1.5;font-size:15px}
+.wrap{max-width:1100px;margin:0 auto;padding:28px 20px 120px}
+h1{font-size:24px;margin:0 0 4px}
+.sub{color:var(--muted);font-size:14px;margin-bottom:22px}
+.sec{margin:26px 0 10px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.sec h2{font-size:16px;margin:0}
+.count{color:var(--muted);font-size:13px}
+.mini{background:none;border:0;padding:0;color:var(--muted);font-size:12px;text-decoration:underline;cursor:pointer}
+.mini:hover{color:var(--ink)}
+.card{background:var(--surface);border:0.5px solid var(--line);border-radius:10px;
+  padding:13px 15px;margin-bottom:9px;display:flex;gap:12px;align-items:flex-start}
+.card.on{border-color:var(--accent);background:var(--accent-bg)}
+.card input[type=checkbox]{margin-top:3px;width:17px;height:17px;flex:none;cursor:pointer;accent-color:var(--accent)}
+.body{min-width:0;flex:1}
+.title{font-weight:600;margin-bottom:3px}
+.title a{color:inherit;text-decoration:none}
+.title a:hover{text-decoration:underline}
+.meta{color:var(--muted);font-size:12.5px;margin-bottom:7px}
+.reason{font-size:13.5px;padding:7px 10px;border-left:2.5px solid var(--line);background:var(--soft);border-radius:0 6px 6px 0}
+.reason .who{font-weight:600;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);display:block;margin-bottom:2px}
+.ev{font-size:12px;color:var(--muted);margin-top:6px}
+.ev code{background:var(--soft);border-radius:4px;padding:1px 5px;font-size:11.5px}
+.badge{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:2px 8px;
+  border-radius:20px;border:1px solid currentColor;white-space:nowrap}
+.badge.ok{color:var(--ok)} .badge.mid{color:var(--mid)} .badge.no{color:var(--no)}
+details.abs{margin-top:7px}
+details.abs summary{cursor:pointer;font-size:12.5px;color:var(--muted)}
+details.abs p{font-size:13.5px;margin:7px 0 0;color:var(--ink)}
+details.grp>summary{cursor:pointer;color:var(--muted);font-size:13px;margin-bottom:10px}
+.bar{position:fixed;left:0;right:0;bottom:0;background:var(--surface);border-top:0.5px solid var(--line);
+  padding:13px 20px;display:flex;align-items:center;gap:14px;justify-content:center;flex-wrap:wrap}
+.bar b{font-size:15px}
+button.go{background:var(--accent);color:#fff;border:0;border-radius:8px;padding:10px 22px;
+  font:inherit;font-size:15px;font-weight:600;cursor:pointer}
+button.go:hover{opacity:.92}
+button.alt{background:var(--surface);color:var(--ink);border:0.5px solid var(--line);
+  border-radius:8px;padding:10px 16px;font:inherit;cursor:pointer}
+.done{color:var(--accent);font-size:13.5px}
+</style></head><body>
+<div class="wrap">
+  <h1>Guideline candidates for approval</h1>
+  <div class="sub">9 guidelines found outside the 19 monitored journals.
+  A review agent judged each one against the digest's scope; its reasoning is shown below.
+  Tick what belongs, then Submit — that downloads <code>approved_pmids.json</code>. Built 2026-11-01.</div>
+  <form id="f">
+    <div class="sec"><h2>Recommended</h2><span class="count">2 · agent says these are core peds endo — pre-ticked</span><button type="button" class="mini" data-all>select all</button><button type="button" class="mini" data-none>select none</button></div><label class="card on"><input type="checkbox" value="42948146" checked><div class="body"><div class="title"><a href="https://pubmed.ncbi.nlm.nih.gov/42948146/" target="_blank" rel="noopener">Synopsis of the World Health Organization Guidelines on Childhood and Adolescent Obesity Management.</a></div><div class="meta">Clin Public Health Guidel · 2026-10 · PMID 42948146 · classifier: Guideline/Consensus / Obesity/Metabolic</div><div class="reason"><span class="who">Review agent · high confidence</span>Synopsis of the WHO guidelines on management of obesity in children and adolescents, with recommendations on behavioral, pharmacologic and surgical care.</div><details class="abs"><summary>Abstract</summary><p>Childhood and adolescent obesity is a complex, multifactorial condition resulting in long-term health issues alongside diminished quality of life, educational attainment and overall wellbeing. The World Health Organization (WHO) prioritised the development of two guidelines on people-centred, integrated management and care of (1) children and (2) adolescents with obesity. Key topics included dietary, physical activity, and behaviour changing interventions, multimodal approaches, digital health interventions, pharmacotherapy and bariatric surgery. WHO strongly recommends a multidisciplinary approach to obesity management delivered and supervised by health workers, including dietary, physical activity and behaviour changing interventions delivered individually or as part of multimodal interventions. WHO conditionally recommends digital health interventions under strict parental supervision on content and recreational screen time. Pharmacotherapy and bariatric surgery are not recommended for children. These interventions may be considered for adolescents after close consideration of physical and psychological development and should be prescribed and delivered in a specialised multidisciplinary setting. All WHO regions and countries are eligible for the implementation of these guidelines. They should be integrated into a continuum-of-care approach within existing child and adolescent health programmes, with strong intersectoral collaboration to enhance sustainability and scale-up. The development of these guidelines followed a living methodology; future updates will consider em</p></details></div><span class="badge ok">Recommended</span></label><label class="card on"><input type="checkbox" value="42887691" checked><div class="body"><div class="title"><a href="https://pubmed.ncbi.nlm.nih.gov/42887691/" target="_blank" rel="noopener">A Real-World Beta-Cell Preservation Framework in Type 1 Diabetes: Consensus from the T1D Exchange (T1DX-QI).</a></div><div class="meta">Endocr Pract · 2026-10-16 · PMID 42887691 · classifier: Review / Diabetes</div><div class="reason"><span class="who">Review agent · medium confidence</span>US expert consensus (pediatric and adult endocrinologists) on beta-cell preservation and autoantibody screening in presymptomatic and early type 1 diabetes.</div><details class="abs"><summary>Abstract</summary><p>OBJECTIVE: Type 1 diabetes (T1D) follows a trajectory defined by four stages. Autoantibody screening and disease-modifying therapy (DMT) strategies to preserve beta-cell function are rapidly emerging. Clinical implementation guidance is limited.
+METHODS: A national group of pediatric and adult endocrinology experts was formed through invitation by a nonprofit network of over 60 centers. Experts were invited based on their expertise in autoantibody (AAB) screening for T1D and treating children and adults at risk for T1D. The group comprised 22 experts from 13 academic medical centers across the U.S. Group meetings were held from November 2025 to February 2026 to agree on topics for inclusion, form writing groups, and develop evidence-based statements using a targeted literature search.
+RESULTS: Topics covered include current guidelines, AAB screening framework, early stage and stage 3 T1D, clinical protocol for T1D screening, treatment and Quality Improvement framework, education, social and behavioral considerations, and the implementation gap. Early identification of T1D through screening allows additional time for families to receive comprehensive diabetes education and appropriate psychological support. This provides a smoother transition to stage 3 disease while reducing hospitalizations, length of stay, and allowing consideration of DMT in early stage or stage 3 T1D. Guidance on real-world clinical implementation of T1D AAB screening and DMT remains limited.
+CONCLUSION: This article provides a national consensus from T1DX-QI on the clinical implementation of T1D AAB sc</p></details></div><span class="badge ok">Recommended</span></label>
+    <div class="sec"><h2>Needs your call</h2><span class="count">1 · endocrine relevance is real but peripheral</span><button type="button" class="mini" data-all>select all</button><button type="button" class="mini" data-none>select none</button></div><label class="card"><input type="checkbox" value="42947898"><div class="body"><div class="title"><a href="https://pubmed.ncbi.nlm.nih.gov/42947898/" target="_blank" rel="noopener">Recommendations for transitioning diabetes, epilepsy, and ADHD youth. The TransiDEA Project.</a></div><div class="meta">Paediatr Child Health · 2026-11 · PMID 42947898 · classifier: Survey/Questionnaire / Diabetes</div><div class="reason"><span class="who">Review agent · medium confidence</span>Italian Delphi consensus recommendations for transition of youth with T1D, epilepsy and ADHD; formal recommendations but only one of three conditions is endocrine.</div><details class="abs"><summary>Abstract</summary><p>INTRODUCTION: The transition from pediatric to adult health care is a critical yet often challenging process for young adults with chronic conditions, marked by fragmented communication, scarce resources, and a lack of standardized guidelines. The Italian TransiDEA project aimed to address these gaps by developing tailored transition recommendations for three clinical populations: young adults with Attention-Deficit/Hyperactivity Disorder (ADHD), Type 1 diabetes (T1D), or epilepsy.
+METHODS: Using a Delphi consensus method, three multidisciplinary panels including clinicians, young adults, caregivers, and association members were conducted in parallel, each addressing one of the three clinical targets. Participants assessed and revised the transition guidelines adapted from international frameworks over two rounds of evaluation.
+RESULTS: After the first round, the overall agreement was above 75% for all three chronic conditions. The changes made to the statements based on the ratings and suggestions, led to high agreement (100%) in the second round.
+DISCUSSION: The final recommendations share key elements, including early transition planning (starting around age 16), the assignment of a named transition worker, and using standardized tools (e.g., transition readiness questionnaires). Condition-specific adaptations addressed unique needs, such as psychological support in ADHD, tailoring the process on a case-by-case basis depending on the clinical picture in epilepsy, and extended transition timelines (up to age 22) in T1D.
+CONCLUSION: The TransiDEA project demonstrates the f</p></details></div><span class="badge mid">Your call</span></label>
+    <div class="sec"><h2>Not relevant</h2><span class="count">6 · agent says another specialty — tick any you disagree with</span><button type="button" class="mini" data-all>select all</button><button type="button" class="mini" data-none>select none</button></div><details class="grp"><summary>show 6 (you can still tick any of these)</summary><label class="card"><input type="checkbox" value="42912401"><div class="body"><div class="title"><a href="https://pubmed.ncbi.nlm.nih.gov/42912401/" target="_blank" rel="noopener">WHO Publishes First Guidelines for Managing Obesity in Children.</a></div><div class="meta">JAMA · 2026-10-23 · PMID 42912401 · classifier: Guideline/Consensus / Obesity/Metabolic</div><div class="reason"><span class="who">Review agent · medium confidence</span>News item reporting the WHO childhood obesity guidelines, not the guideline itself.</div></div><span class="badge no">Not relevant</span></label><label class="card"><input type="checkbox" value="42922180"><div class="body"><div class="title"><a href="https://pubmed.ncbi.nlm.nih.gov/42922180/" target="_blank" rel="noopener">Taiwan GEST-TASL-TMASO Joint Position Statement in Managing Metabolic Dysfunction-Associated Steatotic Liver Disease and Obesity.</a></div><div class="meta">Liver Int · 2026-11 · PMID 42922180 · classifier: Guideline/Consensus / Obesity/Metabolic</div><div class="reason"><span class="who">Review agent · medium confidence</span>Taiwanese MASLD-with-obesity position statement addressing adults; pediatric patients are not a main population.</div><div class="ev">endocrine MeSH: <code>Obesity</code></div><details class="abs"><summary>Abstract</summary><p>Metabolic dysfunction-associated steatotic liver disease (MASLD) and obesity share common pathogenesis and are increasingly relevant in clinical care. This joint statement addresses the need for comprehensive guidance in Taiwan for MASLD patients with obesity. The Gastroenterological Society of Taiwan, the Taiwan Association for the Study of the Liver, and the Taiwan Medical Association for the Study of Obesity conducted an evidence-based review, integrating epidemiological data, clinical trial outcomes, and expert consensus to develop position statements covering diagnosis, disease burden, pathogenesis, surveillance, and therapeutic strategies. MASLD prevalence in Taiwanese adults is 30%-45%, reaching 60%-70% in individuals with obesity, with similar high prevalence in children and adolescents. Obesity accelerates hepatic and extrahepatic disease progression, including cirrhosis, hepatocellular carcinoma, and cardiovascular complications. Lifestyle interventions, glucagon-like peptide-1 receptor agonists, resmetirom, and bariatric surgery demonstrate efficacy in improving hepatic and metabolic outcomes. Risk stratification using noninvasive tools such as Fibrosis-4 and vibration-controlled transient elastography effectively guides referral and management. A multidisciplinary, precision-based approach, integrating lifestyle modification, pharmacotherapy, surgical options, and risk stratification, is essential for effective MASLD management in patients with obesity, while research into artificial intelligence-driven biomarkers, gut microbiota modulation, and genetic factors </p></details></div><span class="badge no">Not relevant</span></label><label class="card"><input type="checkbox" value="42902704"><div class="body"><div class="title"><a href="https://pubmed.ncbi.nlm.nih.gov/42902704/" target="_blank" rel="noopener">Changes in the diagnosis and management of polycystic ovary syndrome in adolescents based on recommendations of scientific societies over the last decade.</a></div><div class="meta">Pediatr Endocrinol Diabetes Metab · 2026 · PMID 42902704 · classifier: Systematic Review / PCOS</div><div class="reason"><span class="who">Review agent · high confidence</span>Systematic review comparing existing PCOS guidelines, not a guideline itself.</div><div class="ev">endocrine MeSH: <code>Polycystic Ovary Syndrome</code> <code>Hyperandrogenism</code> &nbsp;·&nbsp; pediatric MeSH: <code>Adolescent</code></div><details class="abs"><summary>Abstract</summary><p>INTRODUCTION: he paper presents a systematic review of current guidelines from scientific societies regarding polycystic ovary syndrome (PCOS) in adolescents published over the past decade.
+AIM OF THE STUDY: To summarize and compare recent international and national PCOS guidelines with emphasis on areas of consensus and divergence.
+MATERIAL AND METHODS: A systematic review of guidelines published between 2015 and 2025 was conducted in accordance with the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) 2020 statement. Ultimately, twelve documents containing adolescent-specific content were included.
+RESULTS: In adolescents with PCOS, clinical symptoms of hyperandrogenism and menstrual irregularities are the main diagnostic criteria, whereas polycystic ovarian morphology and anti-Müllerian hormone concentration are not considered reliable indicators in adolescents. The current approach to PCOS also emphasizes the assessment and management of metabolic and psychological comorbidities.
+CONCLUSIONS: The diagnosis and treatment of PCOS in girls require a separate approach related to age and ongoing puberty. According to the latest recommendations, lifestyle changes should be a mandatory part of therapy regardless of the background of the presented disorder. The pharmacological treatment should be tailored to the dominant symptoms.</p></details></div><span class="badge no">Not relevant</span></label><label class="card"><input type="checkbox" value="42948520"><div class="body"><div class="title"><a href="https://pubmed.ncbi.nlm.nih.gov/42948520/" target="_blank" rel="noopener">Rigorous Guidelines Deserve to Be Read: WHO New Guidance on Obesity in Children and Adolescents, and Our First Guideline Summary.</a></div><div class="meta">Clin Public Health Guidel · 2026-10 · PMID 42948520 · classifier: Editorial/Commentary / Obesity/Metabolic</div><div class="reason"><span class="who">Review agent · high confidence</span>Editorial about the WHO guideline, not a guideline.</div></div><span class="badge no">Not relevant</span></label><label class="card"><input type="checkbox" value="42944644"><div class="body"><div class="title"><a href="https://pubmed.ncbi.nlm.nih.gov/42944644/" target="_blank" rel="noopener">National clinical audits as distributed diabetes surveillance infrastructure: Consensus lessons from Ireland.</a></div><div class="meta">Diabet Med · 2026-10-27 · PMID 42944644 · classifier: Review / Diabetes</div><div class="reason"><span class="who">Review agent · high confidence</span>Narrative review of Irish national clinical audits, not a clinical guideline.</div><details class="abs"><summary>Abstract</summary><p>BACKGROUND: Diabetes increasingly shapes acute-care demand through cardiovascular disease, critical illness, frailty, stroke and preventable metabolic emergencies. Yet in health systems without mature diabetes registries, much of this burden may be visible only indirectly through national clinical audits and registries.
+AIM: To assess how Ireland&#x27;s National Office of Clinical Audit (NOCA) captures diabetes-related intelligence across major healthcare pathways and what this reveals about national chronic disease surveillance capacity.
+METHODS: A structured narrative review of publicly available NOCA reports and audit publications from 2021 to 2025 was undertaken. Eligible reports had direct diabetes relevance or addressed conditions in which diabetes is a major comorbidity, risk factor or outcome modifier. Data extraction focused on population coverage, diabetes-related variables, temporal trends, hospital-level variation and reporting limitations.
+RESULTS: Diabetes-specific reporting was recent and uneven. The 2022 paediatric diabetes feasibility study identified 3332 children and young people with type 1 diabetes across 19 centres, with major variation in multidisciplinary staffing, transition pathways, HbA1c measurement and data systems. Paediatric critical care reporting identified 232 DKA admissions among 15,288 admissions during 2014-2023. In adult acute care, diabetes was recorded in 430/1615 STEMI cases in 2024, rising from 18% in 2021 to 27% in 2024, while overall timely reperfusion declined from 67% in 2017 to 58% in 2024. Stroke, ICU, hip fracture and mortality au</p></details></div><span class="badge no">Not relevant</span></label><label class="card"><input type="checkbox" value="42896604"><div class="body"><div class="title"><a href="https://pubmed.ncbi.nlm.nih.gov/42896604/" target="_blank" rel="noopener">Lived Experiences of Mothers With Children Diagnosed With Type 1 Diabetes: Recommendations for School Support Systems.</a></div><div class="meta">Child Care Health Dev · 2026-11 · PMID 42896604 · classifier: Health Economics / Diabetes</div><div class="reason"><span class="who">Review agent · high confidence</span>Qualitative interview study of mothers; school-support recommendations are study-derived, not a guideline.</div><div class="ev">endocrine MeSH: <code>Diabetes Mellitus, Type 1</code> &nbsp;·&nbsp; pediatric MeSH: <code>Child</code> <code>Child, Preschool</code></div><details class="abs"><summary>Abstract</summary><p>BACKGROUND: School environments are crucial in managing type 1 diabetes mellitus (T1DM) in young children. In India, mothers, especially those from low-socioeconomic backgrounds, bear the responsibility of ensuring care during school hours. This study, conducted in India, aims to explore the lived experiences of mothers with children with T1DM regarding school-related management difficulties that they face, their expectations from schools, the emotional impacts of the current school-based support they receive and to suggest recommendations for school-based diabetes management.
+METHODS: Semi-structured interviews were conducted with 10 mothers of children aged 3-10 years with T1DM. Data were analysed thematically to identify shared patterns of meaning in their experiences.
+RESULTS: Seven themes emerged: hurdles before school admission, lack of school preparedness, disruption of routines, challenges in glycaemic management, premature reliance on child self-management, non-inclusive environments and emotional difficulties. Limited school preparedness intensified maternal burden and disrupted daily routines, eroding trust in schools. Mothers compensated with increased vigilance, which reduced anxiety about the child but increased maternal burden. This led to early promotion of self-reliance on the child&#x27;s part that raised concerns about safety and proper medical management. Using Bronfenbrenner&#x27;s ecological framework, the study shows how deficits in family, school and policy contexts compound stress and shape outcomes.
+CONCLUSION: School-based support for children with T1DM is </p></details></div><span class="badge no">Not relevant</span></label></details>
+  </form>
+</div>
+<div class="bar">
+  <b><span id="n">0</span> selected</b>
+  <button type="button" class="go" id="submit">Submit approvals</button>
+  <button type="button" class="alt" id="copy">Copy PMIDs</button>
+  <span class="done" id="msg"></span>
+</div>
+<script>
+const f=document.getElementById('f'), n=document.getElementById('n'), msg=document.getElementById('msg');
+const boxes=()=>[...f.querySelectorAll('input[type=checkbox]')];
+const picked=()=>boxes().filter(b=>b.checked).map(b=>b.value);
+function sync(){
+  n.textContent=picked().length;
+  boxes().forEach(b=>b.closest('.card').classList.toggle('on',b.checked));
+}
+f.addEventListener('change',sync);
+// select all / none act on the section the button sits in
+document.querySelectorAll('[data-all],[data-none]').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const on=btn.hasAttribute('data-all');
+    let el=btn.closest('.sec').nextElementSibling, hit=[];
+    while(el && !el.classList.contains('sec')){
+      hit.push(...el.querySelectorAll('input[type=checkbox]'));
+      if(el.matches('input,label')&&el.querySelector) hit.push(...el.querySelectorAll('input'));
+      el=el.nextElementSibling;
+    }
+    hit.forEach(b=>b.checked=on); sync();
+  });
+});
+document.getElementById('submit').addEventListener('click',()=>{
+  const approved=picked();
+  const rejected=boxes().filter(b=>!b.checked).map(b=>b.value);
+  const blob=new Blob([JSON.stringify({approved,rejected,
+      reviewed_at:new Date().toISOString()},null,1)],{type:'application/json'});
+  const u=URL.createObjectURL(blob), a=document.createElement('a');
+  a.href=u; a.download='approved_pmids.json'; a.click(); URL.revokeObjectURL(u);
+  msg.textContent='Downloaded approved_pmids.json ('+approved.length+' approved) — tell Claude it is ready.';
+});
+document.getElementById('copy').addEventListener('click',async()=>{
+  try{ await navigator.clipboard.writeText(picked().join(' ')); msg.textContent='PMIDs copied.'; }
+  catch(e){ msg.textContent='Could not copy — use Submit instead.'; }
+});
+sync();
+</script></body></html>
