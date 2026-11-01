@@ -1,1 +1,716 @@
-[]
+[
+ {
+  "identifiers": {
+   "pmid": "42948146",
+   "doi": "10.1002/gin2.70094",
+   "pmc": "PMC13711247"
+  },
+  "title": "Synopsis of the World Health Organization Guidelines on Childhood and Adolescent Obesity Management.",
+  "abstract": "Childhood and adolescent obesity is a complex, multifactorial condition resulting in long-term health issues alongside diminished quality of life, educational attainment and overall wellbeing. The World Health Organization (WHO) prioritised the development of two guidelines on people-centred, integrated management and care of (1) children and (2) adolescents with obesity. Key topics included dietary, physical activity, and behaviour changing interventions, multimodal approaches, digital health interventions, pharmacotherapy and bariatric surgery. WHO strongly recommends a multidisciplinary approach to obesity management delivered and supervised by health workers, including dietary, physical activity and behaviour changing interventions delivered individually or as part of multimodal interventions. WHO conditionally recommends digital health interventions under strict parental supervision on content and recreational screen time. Pharmacotherapy and bariatric surgery are not recommended for children. These interventions may be considered for adolescents after close consideration of physical and psychological development and should be prescribed and delivered in a specialised multidisciplinary setting. All WHO regions and countries are eligible for the implementation of these guidelines. They should be integrated into a continuum-of-care approach within existing child and adolescent health programmes, with strong intersectoral collaboration to enhance sustainability and scale-up. The development of these guidelines followed a living methodology; future updates will consider emerging evidence on interventions, indicators, dosages, values and preferences, human rights, equity and gender considerations, intervention coverage, impact of new technologies and social media and the need for recommendations for specific populations.",
+  "journal": {
+   "title": "Clinical and public health guidelines",
+   "iso_abbreviation": "Clin Public Health Guidel"
+  },
+  "authors": [
+   {
+    "last_name": "Garcia-Casal",
+    "initials": "MN"
+   },
+   {
+    "last_name": "Pardo-Hernandez",
+    "initials": "H"
+   }
+  ],
+  "publication_date": {
+   "year": "2026",
+   "month": "10",
+   "day": ""
+  },
+  "article_types": [
+   "Journal Article"
+  ],
+  "mesh_terms": [],
+  "keywords": [
+   "adolescents",
+   "children",
+   "obesity management"
+  ],
+  "citation": {
+   "volume": "3",
+   "issue": "4",
+   "pages": "e70094"
+  },
+  "language": [
+   "eng"
+  ],
+  "indexing_status": "PubMed-not-MEDLINE"
+ },
+ {
+  "identifiers": {
+   "pmid": "42912401",
+   "doi": "10.1001/jama.2026.20033",
+   "pmc": ""
+  },
+  "title": "WHO Publishes First Guidelines for Managing Obesity in Children.",
+  "abstract": "",
+  "journal": {
+   "title": "JAMA",
+   "iso_abbreviation": "JAMA"
+  },
+  "authors": [
+   {
+    "last_name": "Anderer",
+    "initials": "S"
+   }
+  ],
+  "publication_date": {
+   "year": "2026",
+   "month": "10",
+   "day": "23"
+  },
+  "article_types": [
+   "Journal Article"
+  ],
+  "mesh_terms": [],
+  "keywords": [],
+  "citation": {
+   "volume": "",
+   "issue": "",
+   "pages": ""
+  },
+  "language": [
+   "eng"
+  ],
+  "indexing_status": "Publisher"
+ },
+ {
+  "identifiers": {
+   "pmid": "42922180",
+   "doi": "10.1111/liv.70926",
+   "pmc": ""
+  },
+  "title": "Taiwan GEST-TASL-TMASO Joint Position Statement in Managing Metabolic Dysfunction-Associated Steatotic Liver Disease and Obesity.",
+  "abstract": "Metabolic dysfunction-associated steatotic liver disease (MASLD) and obesity share common pathogenesis and are increasingly relevant in clinical care. This joint statement addresses the need for comprehensive guidance in Taiwan for MASLD patients with obesity. The Gastroenterological Society of Taiwan, the Taiwan Association for the Study of the Liver, and the Taiwan Medical Association for the Study of Obesity conducted an evidence-based review, integrating epidemiological data, clinical trial outcomes, and expert consensus to develop position statements covering diagnosis, disease burden, pathogenesis, surveillance, and therapeutic strategies. MASLD prevalence in Taiwanese adults is 30%-45%, reaching 60%-70% in individuals with obesity, with similar high prevalence in children and adolescents. Obesity accelerates hepatic and extrahepatic disease progression, including cirrhosis, hepatocellular carcinoma, and cardiovascular complications. Lifestyle interventions, glucagon-like peptide-1 receptor agonists, resmetirom, and bariatric surgery demonstrate efficacy in improving hepatic and metabolic outcomes. Risk stratification using noninvasive tools such as Fibrosis-4 and vibration-controlled transient elastography effectively guides referral and management. A multidisciplinary, precision-based approach, integrating lifestyle modification, pharmacotherapy, surgical options, and risk stratification, is essential for effective MASLD management in patients with obesity, while research into artificial intelligence-driven biomarkers, gut microbiota modulation, and genetic factors represents future directions.",
+  "journal": {
+   "title": "Liver international : official journal of the International Association for the Study of the Liver",
+   "iso_abbreviation": "Liver Int"
+  },
+  "authors": [
+   {
+    "last_name": "Cheng",
+    "initials": "PN"
+   },
+   {
+    "last_name": "Lu",
+    "initials": "CW"
+   },
+   {
+    "last_name": "Lin",
+    "initials": "CL"
+   },
+   {
+    "last_name": "Chiang",
+    "initials": "CH"
+   },
+   {
+    "last_name": "Yang",
+    "initials": "HI"
+   },
+   {
+    "last_name": "Kao",
+    "initials": "HH"
+   },
+   {
+    "last_name": "Wang",
+    "initials": "CC"
+   },
+   {
+    "last_name": "Chou",
+    "initials": "TJ"
+   },
+   {
+    "last_name": "Chang",
+    "initials": "ML"
+   },
+   {
+    "last_name": "Hsiao",
+    "initials": "TJ"
+   },
+   {
+    "last_name": "Peng",
+    "initials": "CY"
+   },
+   {
+    "last_name": "Huang",
+    "initials": "JF"
+   },
+   {
+    "last_name": "Chen",
+    "initials": "TP"
+   },
+   {
+    "last_name": "Dai",
+    "initials": "CY"
+   },
+   {
+    "last_name": "Yu",
+    "initials": "ML"
+   },
+   {
+    "last_name": "Huang",
+    "initials": "KC"
+   },
+   {
+    "last_name": "Kao",
+    "initials": "JH"
+   },
+   {
+    "last_name": "Lin",
+    "initials": "WY"
+   },
+   {
+    "last_name": "Liu",
+    "initials": "CJ"
+   }
+  ],
+  "publication_date": {
+   "year": "2026",
+   "month": "11",
+   "day": ""
+  },
+  "article_types": [
+   "Journal Article",
+   "Consensus Statement",
+   "Review"
+  ],
+  "mesh_terms": [
+   "Humans",
+   "Taiwan",
+   "Obesity",
+   "Bariatric Surgery",
+   "Non-alcoholic Fatty Liver Disease",
+   "Fatty Liver",
+   "Societies, Medical",
+   "Prevalence"
+  ],
+  "keywords": [
+   "GLP\u20101 receptor agonists",
+   "bariatric surgery",
+   "cardiometabolic risk",
+   "fibrosis",
+   "gut microbiota",
+   "hepatic steatosis",
+   "lean MASLD",
+   "liver disease",
+   "nonalcoholic steatohepatitis",
+   "precision medicine"
+  ],
+  "citation": {
+   "volume": "46",
+   "issue": "11",
+   "pages": ""
+  },
+  "language": [
+   "eng"
+  ],
+  "indexing_status": "MEDLINE"
+ },
+ {
+  "identifiers": {
+   "pmid": "42902704",
+   "doi": "10.5114/pedm.2026.163212",
+   "pmc": "PMC13628202"
+  },
+  "title": "Changes in the diagnosis and management of polycystic ovary syndrome in adolescents based on recommendations of scientific societies over the last decade.",
+  "abstract": "INTRODUCTION: he paper presents a systematic review of current guidelines from scientific societies regarding polycystic ovary syndrome (PCOS) in adolescents published over the past decade.\nAIM OF THE STUDY: To summarize and compare recent international and national PCOS guidelines with emphasis on areas of consensus and divergence.\nMATERIAL AND METHODS: A systematic review of guidelines published between 2015 and 2025 was conducted in accordance with the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) 2020 statement. Ultimately, twelve documents containing adolescent-specific content were included.\nRESULTS: In adolescents with PCOS, clinical symptoms of hyperandrogenism and menstrual irregularities are the main diagnostic criteria, whereas polycystic ovarian morphology and anti-M\u00fcllerian hormone concentration are not considered reliable indicators in adolescents. The current approach to PCOS also emphasizes the assessment and management of metabolic and psychological comorbidities.\nCONCLUSIONS: The diagnosis and treatment of PCOS in girls require a separate approach related to age and ongoing puberty. According to the latest recommendations, lifestyle changes should be a mandatory part of therapy regardless of the background of the presented disorder. The pharmacological treatment should be tailored to the dominant symptoms.",
+  "journal": {
+   "title": "Pediatric endocrinology, diabetes, and metabolism",
+   "iso_abbreviation": "Pediatr Endocrinol Diabetes Metab"
+  },
+  "authors": [
+   {
+    "last_name": "Kami\u0144ska",
+    "initials": "G"
+   },
+   {
+    "last_name": "Chmiela",
+    "initials": "S"
+   },
+   {
+    "last_name": "Kucharska",
+    "initials": "A"
+   }
+  ],
+  "publication_date": {
+   "year": "2026",
+   "month": "",
+   "day": ""
+  },
+  "article_types": [
+   "Journal Article",
+   "Systematic Review"
+  ],
+  "mesh_terms": [
+   "Humans",
+   "Female",
+   "Polycystic Ovary Syndrome",
+   "Adolescent",
+   "Practice Guidelines as Topic",
+   "Societies, Scientific",
+   "Hyperandrogenism"
+  ],
+  "keywords": [
+   "PCOS",
+   "adolescents.",
+   "clinical practice guideline",
+   "polycystic ovary syndrome"
+  ],
+  "citation": {
+   "volume": "32",
+   "issue": "3",
+   "pages": "201-218"
+  },
+  "language": [
+   "eng"
+  ],
+  "indexing_status": "MEDLINE"
+ },
+ {
+  "identifiers": {
+   "pmid": "42948520",
+   "doi": "10.1002/gin2.70095",
+   "pmc": "PMC13711250"
+  },
+  "title": "Rigorous Guidelines Deserve to Be Read: WHO New Guidance on Obesity in Children and Adolescents, and Our First Guideline Summary.",
+  "abstract": "",
+  "journal": {
+   "title": "Clinical and public health guidelines",
+   "iso_abbreviation": "Clin Public Health Guidel"
+  },
+  "authors": [
+   {
+    "last_name": "Florez",
+    "initials": "ID"
+   }
+  ],
+  "publication_date": {
+   "year": "2026",
+   "month": "10",
+   "day": ""
+  },
+  "article_types": [
+   "Editorial"
+  ],
+  "mesh_terms": [],
+  "keywords": [],
+  "citation": {
+   "volume": "3",
+   "issue": "4",
+   "pages": "e70095"
+  },
+  "language": [
+   "eng"
+  ],
+  "indexing_status": "PubMed-not-MEDLINE"
+ },
+ {
+  "identifiers": {
+   "pmid": "42887691",
+   "doi": "10.1016/j.eprac.2026.10.003",
+   "pmc": ""
+  },
+  "title": "A Real-World Beta-Cell Preservation Framework in Type 1 Diabetes: Consensus from the T1D Exchange (T1DX-QI).",
+  "abstract": "OBJECTIVE: Type 1 diabetes (T1D) follows a trajectory defined by four stages. Autoantibody screening and disease-modifying therapy (DMT) strategies to preserve beta-cell function are rapidly emerging. Clinical implementation guidance is limited.\nMETHODS: A national group of pediatric and adult endocrinology experts was formed through invitation by a nonprofit network of over 60 centers. Experts were invited based on their expertise in autoantibody (AAB) screening for T1D and treating children and adults at risk for T1D. The group comprised 22 experts from 13 academic medical centers across the U.S. Group meetings were held from November 2025 to February 2026 to agree on topics for inclusion, form writing groups, and develop evidence-based statements using a targeted literature search.\nRESULTS: Topics covered include current guidelines, AAB screening framework, early stage and stage 3 T1D, clinical protocol for T1D screening, treatment and Quality Improvement framework, education, social and behavioral considerations, and the implementation gap. Early identification of T1D through screening allows additional time for families to receive comprehensive diabetes education and appropriate psychological support. This provides a smoother transition to stage 3 disease while reducing hospitalizations, length of stay, and allowing consideration of DMT in early stage or stage 3 T1D. Guidance on real-world clinical implementation of T1D AAB screening and DMT remains limited.\nCONCLUSION: This article provides a national consensus from T1DX-QI on the clinical implementation of T1D AAB screening in those at risk and DMT for beta-cell preservation for individuals in stage 2 and new onset stage 3 T1D.",
+  "journal": {
+   "title": "Endocrine practice : official journal of the American College of Endocrinology and the American Association of Clinical Endocrinologists",
+   "iso_abbreviation": "Endocr Pract"
+  },
+  "authors": [
+   {
+    "last_name": "Demeterco-Berggren",
+    "initials": "C"
+   },
+   {
+    "last_name": "Broome",
+    "initials": "DT"
+   },
+   {
+    "last_name": "Alonso",
+    "initials": "GT"
+   },
+   {
+    "last_name": "Sherr",
+    "initials": "JL"
+   },
+   {
+    "last_name": "DeSalvo",
+    "initials": "DJ"
+   },
+   {
+    "last_name": "Simmons",
+    "initials": "K"
+   },
+   {
+    "last_name": "Culbreth",
+    "initials": "L"
+   },
+   {
+    "last_name": "Rapp",
+    "initials": "AK"
+   },
+   {
+    "last_name": "Gelick",
+    "initials": "B"
+   },
+   {
+    "last_name": "Lonier",
+    "initials": "J"
+   },
+   {
+    "last_name": "Fogel",
+    "initials": "NR"
+   },
+   {
+    "last_name": "Levin",
+    "initials": "L"
+   },
+   {
+    "last_name": "McCauley",
+    "initials": "M"
+   },
+   {
+    "last_name": "Tuttle",
+    "initials": "AR"
+   },
+   {
+    "last_name": "Raman",
+    "initials": "V"
+   },
+   {
+    "last_name": "Choudhary",
+    "initials": "A"
+   },
+   {
+    "last_name": "Ilkowitz",
+    "initials": "J"
+   },
+   {
+    "last_name": "Gallagher",
+    "initials": "MP"
+   },
+   {
+    "last_name": "Majidi",
+    "initials": "S"
+   },
+   {
+    "last_name": "Holly",
+    "initials": "SL"
+   },
+   {
+    "last_name": "Rainey",
+    "initials": "C"
+   },
+   {
+    "last_name": "Rioles",
+    "initials": "N"
+   },
+   {
+    "last_name": "Wright",
+    "initials": "T"
+   },
+   {
+    "last_name": "Jacobsen",
+    "initials": "LM"
+   }
+  ],
+  "publication_date": {
+   "year": "2026",
+   "month": "10",
+   "day": "16"
+  },
+  "article_types": [
+   "Journal Article",
+   "Review"
+  ],
+  "mesh_terms": [],
+  "keywords": [
+   "consensus",
+   "prevention",
+   "screening",
+   "teplizumab",
+   "type 1 diabetes"
+  ],
+  "citation": {
+   "volume": "",
+   "issue": "",
+   "pages": ""
+  },
+  "language": [
+   "eng"
+  ],
+  "indexing_status": "Publisher"
+ },
+ {
+  "identifiers": {
+   "pmid": "42944644",
+   "doi": "10.1111/dme.70499",
+   "pmc": ""
+  },
+  "title": "National clinical audits as distributed diabetes surveillance infrastructure: Consensus lessons from Ireland.",
+  "abstract": "BACKGROUND: Diabetes increasingly shapes acute-care demand through cardiovascular disease, critical illness, frailty, stroke and preventable metabolic emergencies. Yet in health systems without mature diabetes registries, much of this burden may be visible only indirectly through national clinical audits and registries.\nAIM: To assess how Ireland's National Office of Clinical Audit (NOCA) captures diabetes-related intelligence across major healthcare pathways and what this reveals about national chronic disease surveillance capacity.\nMETHODS: A structured narrative review of publicly available NOCA reports and audit publications from 2021 to 2025 was undertaken. Eligible reports had direct diabetes relevance or addressed conditions in which diabetes is a major comorbidity, risk factor or outcome modifier. Data extraction focused on population coverage, diabetes-related variables, temporal trends, hospital-level variation and reporting limitations.\nRESULTS: Diabetes-specific reporting was recent and uneven. The 2022 paediatric diabetes feasibility study identified 3332 children and young people with type 1 diabetes across 19 centres, with major variation in multidisciplinary staffing, transition pathways, HbA1c measurement and data systems. Paediatric critical care reporting identified 232 DKA admissions among 15,288 admissions during 2014-2023. In adult acute care, diabetes was recorded in 430/1615 STEMI cases in 2024, rising from 18% in 2021 to 27% in 2024, while overall timely reperfusion declined from 67% in 2017 to 58% in 2024. Stroke, ICU, hip fracture and mortality audits were highly diabetes-relevant but did not publish diabetes-stratified outcomes.\nCONCLUSIONS: National clinical audit infrastructures may function as distributed chronic disease intelligence systems even in the absence of mature integrated diabetes registries.",
+  "journal": {
+   "title": "Diabetic medicine : a journal of the British Diabetic Association",
+   "iso_abbreviation": "Diabet Med"
+  },
+  "authors": [
+   {
+    "last_name": "El Hadidi",
+    "initials": "S"
+   },
+   {
+    "last_name": "Dinneen",
+    "initials": "SF"
+   },
+   {
+    "last_name": "Valentelyte",
+    "initials": "G"
+   },
+   {
+    "last_name": "Churchill",
+    "initials": "L"
+   },
+   {
+    "last_name": "Murphy",
+    "initials": "NP"
+   },
+   {
+    "last_name": "Hamilton",
+    "initials": "K"
+   },
+   {
+    "last_name": "Gregg",
+    "initials": "EW"
+   }
+  ],
+  "publication_date": {
+   "year": "2026",
+   "month": "10",
+   "day": "27"
+  },
+  "article_types": [
+   "Journal Article",
+   "Review"
+  ],
+  "mesh_terms": [],
+  "keywords": [
+   "Ireland",
+   "cardiovascular disease",
+   "clinical audit",
+   "diabetes mellitus",
+   "diabetic ketoacidosis",
+   "national registries"
+  ],
+  "citation": {
+   "volume": "",
+   "issue": "",
+   "pages": ""
+  },
+  "language": [
+   "eng"
+  ],
+  "indexing_status": "Publisher"
+ },
+ {
+  "identifiers": {
+   "pmid": "42896604",
+   "doi": "10.1111/cch.70367",
+   "pmc": ""
+  },
+  "title": "Lived Experiences of Mothers With Children Diagnosed With Type 1 Diabetes: Recommendations for School Support Systems.",
+  "abstract": "BACKGROUND: School environments are crucial in managing type 1 diabetes mellitus (T1DM) in young children. In India, mothers, especially those from low-socioeconomic backgrounds, bear the responsibility of ensuring care during school hours. This study, conducted in India, aims to explore the lived experiences of mothers with children with T1DM regarding school-related management difficulties that they face, their expectations from schools, the emotional impacts of the current school-based support they receive and to suggest recommendations for school-based diabetes management.\nMETHODS: Semi-structured interviews were conducted with 10 mothers of children aged 3-10\u2009years with T1DM. Data were analysed thematically to identify shared patterns of meaning in their experiences.\nRESULTS: Seven themes emerged: hurdles before school admission, lack of school preparedness, disruption of routines, challenges in glycaemic management, premature reliance on child self-management, non-inclusive environments and emotional difficulties. Limited school preparedness intensified maternal burden and disrupted daily routines, eroding trust in schools. Mothers compensated with increased vigilance, which reduced anxiety about the child but increased maternal burden. This led to early promotion of self-reliance on the child's part that raised concerns about safety and proper medical management. Using Bronfenbrenner's ecological framework, the study shows how deficits in family, school and policy contexts compound stress and shape outcomes.\nCONCLUSION: School-based support for children with T1DM is crucial for child health and maternal well-being. Addressing challenges requires shifting from parent-dependent arrangements to coordinated school health frameworks. Strengthening teacher training, emergency protocols, inclusive practices and health-education collaboration are vital to ensuring the rights and wellbeing of children with T1DM in India.",
+  "journal": {
+   "title": "Child: care, health and development",
+   "iso_abbreviation": "Child Care Health Dev"
+  },
+  "authors": [
+   {
+    "last_name": "Potnis",
+    "initials": "R"
+   },
+   {
+    "last_name": "Deuskar",
+    "initials": "M"
+   },
+   {
+    "last_name": "Kulkarni",
+    "initials": "A"
+   },
+   {
+    "last_name": "Pallerla",
+    "initials": "S"
+   },
+   {
+    "last_name": "Keerthi",
+    "initials": "A"
+   },
+   {
+    "last_name": "Bhor",
+    "initials": "S"
+   },
+   {
+    "last_name": "Khadilkar",
+    "initials": "A"
+   }
+  ],
+  "publication_date": {
+   "year": "2026",
+   "month": "11",
+   "day": ""
+  },
+  "article_types": [
+   "Journal Article"
+  ],
+  "mesh_terms": [
+   "Humans",
+   "Diabetes Mellitus, Type 1",
+   "Female",
+   "Child",
+   "Mothers",
+   "India",
+   "Child, Preschool",
+   "Social Support",
+   "Self Care",
+   "School Health Services",
+   "Adult",
+   "Schools",
+   "Qualitative Research"
+  ],
+  "keywords": [
+   "India",
+   "chronic illness management",
+   "inclusion",
+   "maternal caregiving",
+   "parental anxiety",
+   "school preparedness",
+   "type 1 diabetes mellitus"
+  ],
+  "citation": {
+   "volume": "52",
+   "issue": "6",
+   "pages": "e70367"
+  },
+  "language": [
+   "eng"
+  ],
+  "indexing_status": "MEDLINE"
+ },
+ {
+  "identifiers": {
+   "pmid": "42947898",
+   "doi": "10.1093/pch/pxag068",
+   "pmc": "PMC13710181"
+  },
+  "title": "Recommendations for transitioning diabetes, epilepsy, and ADHD youth. The TransiDEA Project.",
+  "abstract": "INTRODUCTION: The transition from pediatric to adult health care is a critical yet often challenging process for young adults with chronic conditions, marked by fragmented communication, scarce resources, and a lack of standardized guidelines. The Italian TransiDEA project aimed to address these gaps by developing tailored transition recommendations for three clinical populations: young adults with Attention-Deficit/Hyperactivity Disorder (ADHD), Type 1 diabetes (T1D), or epilepsy.\nMETHODS: Using a Delphi consensus method, three multidisciplinary panels including clinicians, young adults, caregivers, and association members were conducted in parallel, each addressing one of the three clinical targets. Participants assessed and revised the transition guidelines adapted from international frameworks over two rounds of evaluation.\nRESULTS: After the first round, the overall agreement was above 75% for all three chronic conditions. The changes made to the statements based on the ratings and suggestions, led to high agreement (100%) in the second round.\nDISCUSSION: The final recommendations share key elements, including early transition planning (starting around age 16), the assignment of a named transition worker, and using standardized tools (e.g., transition readiness questionnaires). Condition-specific adaptations addressed unique needs, such as psychological support in ADHD, tailoring the process on a case-by-case basis depending on the clinical picture in epilepsy, and extended transition timelines (up to age 22) in T1D.\nCONCLUSION: The TransiDEA project demonstrates the feasibility of structured yet flexible recommendations for transition pathways across chronic conditions, while encouraging systemic improvements to enhance care continuity. Despite these advances, challenges remain, including the need for future validation of the guidelines and tools and increased resource and institutional support to ensure equitable access.",
+  "journal": {
+   "title": "Paediatrics & child health",
+   "iso_abbreviation": "Paediatr Child Health"
+  },
+  "authors": [
+   {
+    "last_name": "Roberti",
+    "initials": "E"
+   },
+   {
+    "last_name": "Clavenna",
+    "initials": "A"
+   },
+   {
+    "last_name": "Graziani",
+    "initials": "V"
+   },
+   {
+    "last_name": "Marchetti",
+    "initials": "F"
+   },
+   {
+    "last_name": "Suprani",
+    "initials": "T"
+   },
+   {
+    "last_name": "Di Bartolo",
+    "initials": "P"
+   },
+   {
+    "last_name": "Canevini",
+    "initials": "MP"
+   },
+   {
+    "last_name": "Vigan\u00f2",
+    "initials": "I"
+   },
+   {
+    "last_name": "Ricci",
+    "initials": "E"
+   },
+   {
+    "last_name": "Costantino",
+    "initials": "I"
+   },
+   {
+    "last_name": "Tessarollo",
+    "initials": "V"
+   },
+   {
+    "last_name": "Basso",
+    "initials": "E"
+   },
+   {
+    "last_name": "Scarpellini",
+    "initials": "F"
+   },
+   {
+    "last_name": "Campi",
+    "initials": "R"
+   },
+   {
+    "last_name": "Giardino",
+    "initials": "M"
+   },
+   {
+    "last_name": "Zanetti",
+    "initials": "M"
+   },
+   {
+    "last_name": "Bonati",
+    "initials": "M"
+   }
+  ],
+  "publication_date": {
+   "year": "2026",
+   "month": "11",
+   "day": ""
+  },
+  "article_types": [
+   "Journal Article"
+  ],
+  "mesh_terms": [],
+  "keywords": [
+   "ADHD",
+   "Delphi consensus",
+   "Epilepsy",
+   "Shared recommendations",
+   "Transition care",
+   "Type 1 Diabetes"
+  ],
+  "citation": {
+   "volume": "31",
+   "issue": "7",
+   "pages": "771-785"
+  },
+  "language": [
+   "eng"
+  ],
+  "indexing_status": "PubMed-not-MEDLINE"
+ }
+]
