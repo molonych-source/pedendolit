@@ -2590,6 +2590,11 @@
    "reason": "hard-exclude:adenomyosis",
    "first_seen": "2026-10-25",
    "title": "The relationship between symptoms of adenomyosis and current ultrasonographic diagnostic criteria."
+  },
+  "42985547": {
+   "reason": "erratum/retraction",
+   "first_seen": "2026-11-08",
+   "title": "Correction: Retinoic acid signaling in growth plate development: receptor-specific effects, antagonist evidence, and ped"
   }
  }
 }

@@ -6,6 +6,33 @@ git history (33 commits to that date) and the dated sections formerly in `MEMORY
 
 ---
 
+### [2026-11-08] weekly-refresh
+
+Scheduled run, Mac mini. Followed the current runbook path (`weekly_fetch.py`, Entrez-date
+window 2026-10-18 -> 2026-11-08, all 19 journals) rather than the older MCP `pdat` steps in the
+scheduled-task prompt, since the runbook is authoritative. No 2026-11-01 run exists in git; the
+21-day window overlaps the 2026-10-25 run, so that week is covered. **No fetch errors**; 97 PMIDs
+across 12 journals. 43 already stored, 2 excluded (1 erratum/retraction, 1 adenomyosis
+hard-exclude), **52 new articles added and flagged NEW**.
+
+- `audit_coverage.py` first **FAILED**: 3 PMIDs from the last 90 days never fetched (2 Diabetes
+  Care, 1 Thyroid: 42319764, 42378410, 42764528). Fetched into `backfill_raw.json` and merged with
+  `--backfill`: 3 added (not flagged NEW), 0 excluded. Re-audit PASS.
+- `fix_pub_dates.py`: 30 of 55 dates corrected (all moved month bucket).
+- `check_classifier_regressions.py` PASS; store 11089 -> 11144 (+55), 0 archived. All scripts exit 0.
+  Size check: `pedendolit-data.json` 40.2 MB of the 45 MB limit.
+- **0 PRACTICE-ALTERING.** Weekly 52: 1 HIGH, 12 MODERATE, 39 LOW. By topic: Diabetes 11, Growth 9,
+  Puberty 8, Bone/Mineral 5, Thyroid 4, Genetics 3, Hyperinsulinism 3, Obesity/Metabolic 3,
+  Pituitary 2, Adrenal 2, PCOS 1, General Endocrinology 1.
+  HIGH: 42961956 (GDM diagnostic criteria and outcomes, meta-analysis, JCEM).
+- Classifier follow-ups: the lone HIGH (42961956) is maternal GDM, likely adult-only. Other
+  adult/pregnancy or off-topic records: 42935518 (hyperparathyroidism in pregnancy), 42969211
+  (pregnancy in PGM1-CDG), 42990895 (pregnancy vitamin D metabolites), 42974652 (young and
+  middle-aged adults), 42978667 (NIPT discordance), 42959019 (Dubin-Johnson). Topic oddities under
+  Puberty: 42964114 (post-weaning probiotic), 42989601 (scoliosis bone accrual), 42993160 (adrenal
+  hypoplasia, should be Adrenal); 42974807 (paediatric T2D) under PCOS; 42978565 (acromegaly-type
+  case) and 42990775 (pituitary volume) under Growth.
+
 ### [2026-10-25] weekly-refresh
 
 Scheduled run, Mac mini. Followed the current runbook path (`weekly_fetch.py`, Entrez-date
