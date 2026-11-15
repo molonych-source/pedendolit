@@ -6,6 +6,29 @@ git history (33 commits to that date) and the dated sections formerly in `MEMORY
 
 ---
 
+### [2026-11-15] weekly-refresh
+
+Scheduled run, Mac mini. Followed the current runbook path (`weekly_fetch.py`, Entrez-date
+window 2026-10-25 -> 2026-11-15, all 19 journals) rather than the older MCP `pdat` steps in the
+scheduled-task prompt, since the runbook is authoritative. **No fetch errors**; 93 PMIDs across
+15 journals (4 journals returned 0, normal). 61 already stored, 2 excluded (erratum/retraction),
+**30 new articles added and flagged NEW**.
+
+- `audit_coverage.py` PASS on first run (609 PMIDs over 90 days, 0 never fetched); no backfill needed.
+- `fix_pub_dates.py`: 17 of 30 dates corrected (9 moved month bucket).
+- `check_classifier_regressions.py` PASS; store 11144 -> 11174 (+30), 0 archived. All scripts exit 0.
+  Size check: `pedendolit-data.json` 40.3 MB of the 45 MB limit.
+- **0 PRACTICE-ALTERING, 0 HIGH.** 30 total: 5 MODERATE, 25 LOW. By topic: Diabetes 10, Puberty 7,
+  Bone/Mineral 4, Hyperinsulinism 2, PCOS 2, Adrenal 1, Obesity/Metabolic 1, Growth 1, Thyroid 1,
+  Genetics 1.
+- Classifier follow-ups: 43012423 (*Clinical Guidance for Disease-Modifying Immunotherapy in
+  Children and Adolescents*, Diabetes Care) is a clinical guidance document typed Other/LOW; likely
+  should be Guideline with higher impact. Adult/pregnancy or off-topic records: 42970573 (primary
+  aldosteronism sickness absence, MODERATE), 43005031 (fetal reduction outcomes, filed Diabetes,
+  MODERATE), 43021933 (KBG syndrome in an adult), 43000825 (cord-blood TSH filed under Diabetes,
+  should be Thyroid). 43003909 (hypothalamic astrocytes, basic science) filed under Puberty as
+  MODERATE review.
+
 ### [2026-11-08] weekly-refresh
 
 Scheduled run, Mac mini. Followed the current runbook path (`weekly_fetch.py`, Entrez-date
